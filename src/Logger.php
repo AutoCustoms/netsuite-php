@@ -6,9 +6,52 @@ class Logger
 {
     private $path;
 
+    /**
+     * Logger constructor.
+     *
+     * @param null $path
+     */
     public function __construct($path = null)
     {
         $this->path = $path ?: __DIR__.'/../logs';
+    }
+
+    /**
+     * Log the request body to a file
+     *
+     * @param string $message   The xml body to log
+     * @param string $operation The operation being logged
+     */
+    public function logRequest($message, $operation)
+    {
+        $this->doLog($message, $operation, 'request');
+    }
+
+    /**
+     * Log the response body to a file
+     *
+     * @param string $message   The xml body to log
+     * @param string $operation The operation being logged
+     */
+    public function logResponse($message, $operation)
+    {
+        $this->doLog($message, $operation, 'response');
+    }
+
+    /**
+     * @param string $message   The xml body to log
+     * @param string $operation The operation being logged
+     * @param string $type      Either request or response
+     */
+    protected function doLog($message, $operation, $type)
+    {
+        if (file_exists($this->path)) {
+            $fullPath = "%s/ryanwinchester-netsuite-php-%s-%s-%s.xml";
+            $fullPath = sprintf($fullPath, $this->path, date("Ymd.His"), $operation, $type);
+            $handle   = fopen($fullPath, 'w');
+            fwrite($handle, $message);
+            fclose($handle);
+        }
     }
 
     /**

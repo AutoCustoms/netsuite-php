@@ -28,39 +28,48 @@ class NetSuiteClient
      * @var array
      */
     private $config;
+
     /**
      * @var SoapClient
      */
     private $client;
+
     /**
      * @var array
      */
     private $soapHeaders = array();
 
     /**
+     * @var mixed
+     * @access protected
+     */
+    protected $logger;
+
+    /**
      * @param array $config
      * @param array $options
      * @param SoapClient $client
      */
-    public function __construct($config, $options = array(), $client = null)
+    public function __construct($config, $options = array(), $client = null, $logger = null)
     {
         $this->config = $config;
-        $options = $this->createOptions($this->config, $options);
-        $wsdl = $this->createWsdl($this->config);
+        $options      = $this->createOptions($this->config, $options);
+        $wsdl         = $this->createWsdl($this->config);
         $this->client = $client ?: new SoapClient($wsdl, $options);
+        $this->logger = $logger;
     }
 
     public static function createFromEnv($options = array(), $client = null)
     {
         $config = array(
             'endpoint' => getenv('NETSUITE_ENDPOINT') ?: '2016_1',
-            'host' => getenv('NETSUITE_HOST') ?: 'https://webservices.sandbox.netsuite.com',
-            'email' => getenv('NETSUITE_EMAIL'),
+            'host'     => getenv('NETSUITE_HOST') ?: 'https://webservices.sandbox.netsuite.com',
+            'email'    => getenv('NETSUITE_EMAIL'),
             'password' => getenv('NETSUITE_PASSWORD'),
-            'role' => getenv('NETSUITE_ROLE') ?: '3',
-            'account' => getenv('NETSUITE_ACCOUNT'),
-            'app_id' => getenv('NETSUITE_APP_ID') ?: '4AD027CA-88B3-46EC-9D3E-41C6E6A325E2',
-            'logging' => getenv('NETSUITE_LOGGING'),
+            'role'     => getenv('NETSUITE_ROLE') ?: '3',
+            'account'  => getenv('NETSUITE_ACCOUNT'),
+            'app_id'   => getenv('NETSUITE_APP_ID') ?: '4AD027CA-88B3-46EC-9D3E-41C6E6A325E2',
+            'logging'  => getenv('NETSUITE_LOGGING'),
             'log_path' => getenv('NETSUITE_LOG_PATH'),
         );
 
@@ -298,18 +307,99 @@ class NetSuiteClient
     }
 
     /**
-     * Log the last SOAP call.
+     * Log the last SOAP call using either the native logger or an injected PSR-3 compliant logger
      *
      * @param string $operation
      */
     private function logSoapCall($operation)
     {
         if (isset($this->config['logging']) && $this->config['logging']) {
-            $logger = new Logger(
-                isset($this->config['log_path']) ? $this->config['log_path'] : null
-            );
-            $logger->logSoapCall($this->client, $operation);
+
+            $lastRequestBody  = $this->client->__getLastRequest();
+            $requestMsg       = $this->getRequestMessage($lastRequestBody);
+            $lastResponseBody = $this->client->__getLastResponse();
+            $responseMsg      = $this->getResponseMessage($lastResponseBody);
+
+            if (null === $this->logger) {
+                $path   = isset($this->config['log_path']) ? $this->config['log_path'] : null;
+                $logger = new Logger($path);
+                $logger->logRequest($requestMsg, $operation);
+                $logger->logResponse($responseMsg, $operation);
+            } else {
+                $logger->debug('',
+                    [
+                        'xml'       => $requestMsg,
+                        'operation' => $operation,
+                        'type'      => 'request',
+                        'source'    => 'NetSuite',
+                    ]
+                );
+                $logger->debug('',
+                    [
+                        'xml'       => $responseMsg,
+                        'operation' => $operation,
+                        'type'      => 'response',
+                        'source'    => 'NetSuite',
+                    ]
+                );
+            }
         }
+    }
+
+    /**
+     * @return mixed|Logger|null
+     */
+    protected function getLogger()
+    {
+        if (null === $this->logger) {
+            $path = isset($this->config['log_path']) ? $this->config['log_path'] : null;
+            $this->logger = new Logger($path);
+        }
+
+        return $this->logger;
+    }
+
+    /**
+     * @param $body
+     *
+     * @return mixed
+     */
+    protected function getRequestMessage($body)
+    {
+        $body = cleanUpNamespaces($body);
+        $xml = simplexml_load_string($body, 'SimpleXMLElement', LIBXML_NOCDATA);
+
+        $privateFieldXpaths = array(
+            '//password',
+            '//password2',
+            '//currentPassword',
+            '//newPassword',
+            '//newPassword2',
+            '//ccNumber',
+            '//ccSecurityCode',
+            '//socialSecurityNumber',
+        );
+
+        $privateFields = $xml->xpath(implode(" | ", $privateFieldXpaths));
+
+        foreach ($privateFields as &$field) {
+            $field[0] = "[Content Removed for Security Reasons]";
+        }
+
+        $stringCustomFields = $xml->xpath("//customField[@xsitype='StringCustomFieldRef']");
+
+        foreach ($stringCustomFields as $field) {
+            $field->value = "[Content Removed for Security Reasons]";
+        }
+
+        $xmlString = str_replace('xsitype', 'xsi:type', $xml->asXML());
+
+        return $xmlString;
+    }
+
+    protected function getResponseMessage($body)
+    {
+
     }
 
     /**
