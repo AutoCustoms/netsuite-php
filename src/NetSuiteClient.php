@@ -397,9 +397,16 @@ class NetSuiteClient
         return $xmlString;
     }
 
+    /**
+     * Return the response message to be logged
+     *
+     * @param string $body
+     *
+     * @return string
+     */
     protected function getResponseMessage($body)
     {
-
+        return $body;
     }
 
     /**
