@@ -326,7 +326,7 @@ class NetSuiteClient
                 $logger->logRequest($requestMsg, $operation);
                 $logger->logResponse($responseMsg, $operation);
             } else {
-                $logger->debug('',
+                $this->logger->debug('',
                     [
                         'xml'       => $requestMsg,
                         'operation' => $operation,
@@ -334,7 +334,7 @@ class NetSuiteClient
                         'source'    => 'NetSuite',
                     ]
                 );
-                $logger->debug('',
+                $this->logger->debug('',
                     [
                         'xml'       => $responseMsg,
                         'operation' => $operation,
