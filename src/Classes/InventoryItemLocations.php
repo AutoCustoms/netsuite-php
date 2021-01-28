@@ -14,51 +14,175 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class InventoryItemLocations {
+    /**
+     * @var string
+     */
     public $location;
+    /**
+     * @var float
+     */
     public $quantityOnHand;
+    /**
+     * @var float
+     */
     public $onHandValueMli;
+    /**
+     * @var float
+     */
     public $averageCostMli;
+    /**
+     * @var float
+     */
     public $lastPurchasePriceMli;
+    /**
+     * @var float
+     */
     public $reorderPoint;
+    /**
+     * @var boolean
+     */
     public $locationAllowStorePickup;
+    /**
+     * @var float
+     */
+    public $locationStorePickupBufferStock;
+    /**
+     * @var float
+     */
     public $locationQtyAvailForStorePickup;
+    /**
+     * @var float
+     */
     public $preferredStockLevel;
+    /**
+     * @var integer
+     */
     public $leadTime;
+    /**
+     * @var float
+     */
     public $defaultReturnCost;
+    /**
+     * @var float
+     */
     public $safetyStockLevel;
+    /**
+     * @var float
+     */
     public $cost;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $inventoryCostTemplate;
+    /**
+     * @var float
+     */
     public $buildTime;
+    /**
+     * @var string
+     */
     public $lastInvtCountDate;
+    /**
+     * @var string
+     */
     public $nextInvtCountDate;
+    /**
+     * @var boolean
+     */
     public $isWip;
+    /**
+     * @var integer
+     */
     public $invtCountInterval;
+    /**
+     * @var \NetSuite\Classes\ItemInvtClassification
+     */
     public $invtClassification;
+    /**
+     * @var float
+     */
     public $costingLotSize;
+    /**
+     * @var float
+     */
     public $quantityOnOrder;
+    /**
+     * @var float
+     */
     public $quantityCommitted;
+    /**
+     * @var float
+     */
     public $quantityAvailable;
+    /**
+     * @var float
+     */
     public $quantityBackOrdered;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $locationId;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $supplyReplenishmentMethod;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $alternateDemandSourceItem;
+    /**
+     * @var float
+     */
     public $fixedLotSize;
+    /**
+     * @var \NetSuite\Classes\PeriodicLotSizeType
+     */
     public $periodicLotSizeType;
+    /**
+     * @var integer
+     */
     public $periodicLotSizeDays;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $supplyType;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $supplyLotSizingMethod;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $demandSource;
+    /**
+     * @var integer
+     */
     public $backwardConsumptionDays;
+    /**
+     * @var integer
+     */
     public $forwardConsumptionDays;
+    /**
+     * @var integer
+     */
     public $demandTimeFence;
+    /**
+     * @var integer
+     */
     public $supplyTimeFence;
+    /**
+     * @var integer
+     */
     public $rescheduleInDays;
+    /**
+     * @var integer
+     */
     public $rescheduleOutDays;
     static $paramtypesmap = array(
         "location" => "string",
@@ -68,6 +192,7 @@ class InventoryItemLocations {
         "lastPurchasePriceMli" => "float",
         "reorderPoint" => "float",
         "locationAllowStorePickup" => "boolean",
+        "locationStorePickupBufferStock" => "float",
         "locationQtyAvailForStorePickup" => "float",
         "preferredStockLevel" => "float",
         "leadTime" => "integer",

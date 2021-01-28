@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
@@ -30,10 +30,16 @@ class TransactionLineType {
     const _countQuantity = "_countQuantity";
     const _dropshipExpense = "_dropshipExpense";
     const _gainLoss = "_gainLoss";
+    const _inTransit = "_inTransit";
     const _item = "_item";
     const _materialOverhead = "_materialOverhead";
     const _nonReimbursuableExpenseOffset = "_nonReimbursuableExpenseOffset";
     const _nonReimbursuableExpenseOriginal = "_nonReimbursuableExpenseOriginal";
+    const _outsourcingCharge = "_outsourcingCharge";
+    const _ownershipTransfer = "_ownershipTransfer";
+    const _personalExpensesNettingLine = "_personalExpensesNettingLine";
+    const _personalExpensesTheExpenseLine = "_personalExpensesTheExpenseLine";
+    const _pickingLine = "_pickingLine";
     const _productionPriceVariance = "_productionPriceVariance";
     const _productionQuantityVariance = "_productionQuantityVariance";
     const _purchasePriceVariance = "_purchasePriceVariance";
@@ -43,6 +49,7 @@ class TransactionLineType {
     const _scrap = "_scrap";
     const _shipping = "_shipping";
     const _snapshotQuantity = "_snapshotQuantity";
+    const _stagingLine = "_stagingLine";
     const _totalBillVariance = "_totalBillVariance";
     const _unbuildVariance = "_unbuildVariance";
     const _workInProcess = "_workInProcess";

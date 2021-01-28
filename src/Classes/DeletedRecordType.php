@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
@@ -22,6 +22,7 @@ namespace NetSuite\Classes;
 class DeletedRecordType {
     static $paramtypesmap = array(
     );
+    const advInterCompanyJournalEntry = "advInterCompanyJournalEntry";
     const assemblyBuild = "assemblyBuild";
     const assemblyItem = "assemblyItem";
     const assemblyUnbuild = "assemblyUnbuild";
@@ -29,6 +30,8 @@ class DeletedRecordType {
     const bin = "bin";
     const binTransfer = "binTransfer";
     const binWorksheet = "binWorksheet";
+    const bom = "bom";
+    const bomRevision = "bomRevision";
     const calendarEvent = "calendarEvent";
     const campaign = "campaign";
     const cashRefund = "cashRefund";
@@ -41,7 +44,9 @@ class DeletedRecordType {
     const couponCode = "couponCode";
     const creditMemo = "creditMemo";
     const currencyRate = "currencyRate";
+    const customPurchase = "customPurchase";
     const customRecord = "customRecord";
+    const customSale = "customSale";
     const customTransaction = "customTransaction";
     const customer = "customer";
     const customerCategory = "customerCategory";
@@ -50,6 +55,7 @@ class DeletedRecordType {
     const customerPayment = "customerPayment";
     const customerRefund = "customerRefund";
     const customerStatus = "customerStatus";
+    const customerSubsidiaryRelationship = "customerSubsidiaryRelationship";
     const deposit = "deposit";
     const depositApplication = "depositApplication";
     const descriptionItem = "descriptionItem";
@@ -89,6 +95,7 @@ class DeletedRecordType {
     const manufacturingCostTemplate = "manufacturingCostTemplate";
     const manufacturingOperationTask = "manufacturingOperationTask";
     const manufacturingRouting = "manufacturingRouting";
+    const merchandiseHierarchyNode = "merchandiseHierarchyNode";
     const nexus = "nexus";
     const nonInventoryPurchaseItem = "nonInventoryPurchaseItem";
     const nonInventoryResaleItem = "nonInventoryResaleItem";
@@ -101,9 +108,11 @@ class DeletedRecordType {
     const otherChargeSaleItem = "otherChargeSaleItem";
     const otherNameCategory = "otherNameCategory";
     const partner = "partner";
+    const paycheck = "paycheck";
     const paymentItem = "paymentItem";
     const paymentMethod = "paymentMethod";
     const payrollItem = "payrollItem";
+    const periodEndJournal = "periodEndJournal";
     const phoneCall = "phoneCall";
     const priceLevel = "priceLevel";
     const pricingGroup = "pricingGroup";
@@ -138,6 +147,7 @@ class DeletedRecordType {
     const vendorCredit = "vendorCredit";
     const vendorPayment = "vendorPayment";
     const vendorReturnAuthorization = "vendorReturnAuthorization";
+    const vendorSubsidiaryRelationship = "vendorSubsidiaryRelationship";
     const winLossReason = "winLossReason";
     const workOrder = "workOrder";
     const workOrderIssue = "workOrderIssue";

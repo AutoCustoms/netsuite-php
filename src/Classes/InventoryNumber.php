@@ -14,21 +14,51 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class InventoryNumber extends Record {
+    /**
+     * @var string
+     */
     public $inventoryNumber;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $item;
+    /**
+     * @var string
+     */
     public $status;
+    /**
+     * @var string
+     */
     public $units;
+    /**
+     * @var string
+     */
     public $expirationDate;
+    /**
+     * @var string
+     */
     public $memo;
+    /**
+     * @var \NetSuite\Classes\InventoryNumberLocationsList
+     */
     public $locationsList;
+    /**
+     * @var \NetSuite\Classes\CustomFieldList
+     */
     public $customFieldList;
+    /**
+     * @var string
+     */
     public $internalId;
+    /**
+     * @var string
+     */
     public $externalId;
     static $paramtypesmap = array(
         "inventoryNumber" => "string",

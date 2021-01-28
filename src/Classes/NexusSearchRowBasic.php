@@ -14,19 +14,48 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class NexusSearchRowBasic extends SearchRowBasic {
+    /**
+     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     */
     public $country;
+    /**
+     * @var \NetSuite\Classes\SearchColumnStringField[]
+     */
     public $description;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
     public $externalId;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $isInactive;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
     public $parentNexus;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
     public $state;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
+    public $taxAgency;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
+    public $taxDateFromFulfillment;
     static $paramtypesmap = array(
         "country" => "SearchColumnEnumSelectField[]",
         "description" => "SearchColumnStringField[]",
@@ -35,5 +64,7 @@ class NexusSearchRowBasic extends SearchRowBasic {
         "isInactive" => "SearchColumnBooleanField[]",
         "parentNexus" => "SearchColumnSelectField[]",
         "state" => "SearchColumnSelectField[]",
+        "taxAgency" => "SearchColumnSelectField[]",
+        "taxDateFromFulfillment" => "SearchColumnBooleanField[]",
     );
 }

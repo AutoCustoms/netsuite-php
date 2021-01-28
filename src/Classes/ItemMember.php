@@ -14,30 +14,87 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ItemMember {
+    /**
+     * @var string
+     */
     public $memberDescr;
+    /**
+     * @var float
+     */
     public $componentYield;
+    /**
+     * @var float
+     */
     public $bomQuantity;
+    /**
+     * @var \NetSuite\Classes\ItemSource
+     */
     public $itemSource;
+    /**
+     * @var float
+     */
     public $quantity;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $memberUnit;
+    /**
+     * @var \NetSuite\Classes\VsoeDeferral
+     */
     public $vsoeDeferral;
+    /**
+     * @var \NetSuite\Classes\VsoePermitDiscount
+     */
     public $vsoePermitDiscount;
+    /**
+     * @var boolean
+     */
     public $vsoeDelivered;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $taxSchedule;
+    /**
+     * @var string
+     */
     public $taxcode;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $item;
+    /**
+     * @var float
+     */
     public $taxrate;
+    /**
+     * @var string
+     */
     public $effectiveDate;
+    /**
+     * @var string
+     */
     public $obsoleteDate;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $effectiveRevision;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $obsoleteRevision;
+    /**
+     * @var integer
+     */
     public $lineNumber;
+    /**
+     * @var string
+     */
     public $memberKey;
     static $paramtypesmap = array(
         "memberDescr" => "string",
@@ -45,7 +102,7 @@ class ItemMember {
         "bomQuantity" => "float",
         "itemSource" => "ItemSource",
         "quantity" => "float",
-        "memberUnit" => "string",
+        "memberUnit" => "RecordRef",
         "vsoeDeferral" => "VsoeDeferral",
         "vsoePermitDiscount" => "VsoePermitDiscount",
         "vsoeDelivered" => "boolean",

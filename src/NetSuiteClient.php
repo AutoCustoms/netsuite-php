@@ -13,6 +13,7 @@
 namespace NetSuite;
 
 use NetSuite\Classes\ApplicationInfo;
+use NetSuite\Classes\GetDataCenterUrlsRequest;
 use NetSuite\Classes\Passport;
 use NetSuite\Classes\Preferences;
 use NetSuite\Classes\RecordRef;
@@ -35,34 +36,137 @@ class NetSuiteClient
     /**
      * @var array
      */
+    private $clientOptions = array();
+    /**
+     * @var array
+     */
     private $soapHeaders = array();
+    /**
+     * @var \NetSuite\Logger
+     */
+    private $logger;
 
     /**
      * @param array $config
      * @param array $options
      * @param SoapClient $client
      */
-    public function __construct($config, $options = array(), $client = null)
+    public function __construct($config = null, $options = [], $client = null)
     {
-        $this->config = $config;
-        $options = $this->createOptions($this->config, $options);
-        $wsdl = $this->createWsdl($this->config);
-        $this->client = $client ?: new SoapClient($wsdl, $options);
+        if ($config) {
+            $this->config = $config;
+        } else {
+            $this->config = self::getEnvConfig();
+        }
+        $this->validateConfig($this->config);
+        $this->clientOptions = $options;
+        if (isset($client)) {
+          $this->client = $client;
+        }
+        $this->logger = new Logger(
+            isset($this->config['log_path']) ? $this->config['log_path'] : NULL
+        );
+
     }
 
-    public static function createFromEnv($options = array(), $client = null)
+    /**
+     * Set the data center URL for the configured NetSuite account
+     *
+     * @param array $config
+     *
+     * @return void
+     */
+    public function setDataCenterUrl(array $config)
     {
-        $config = array(
-            'endpoint' => getenv('NETSUITE_ENDPOINT') ?: '2017_1',
-            'host' => getenv('NETSUITE_HOST') ?: 'https://webservices.sandbox.netsuite.com',
-            'email' => getenv('NETSUITE_EMAIL'),
-            'password' => getenv('NETSUITE_PASSWORD'),
-            'role' => getenv('NETSUITE_ROLE') ?: '3',
-            'account' => getenv('NETSUITE_ACCOUNT'),
-            'app_id' => getenv('NETSUITE_APP_ID') ?: '4AD027CA-88B3-46EC-9D3E-41C6E6A325E2',
-            'logging' => getenv('NETSUITE_LOGGING'),
-            'log_path' => getenv('NETSUITE_LOG_PATH'),
-        );
+        $params = new GetDataCenterUrlsRequest();
+        $params->account = $config['account'];
+        $result = $this->getDataCenterUrls($params)->getDataCenterUrlsResult;
+        $domain = $result->dataCenterUrls->webservicesDomain;
+        $dataCenterUrl = $domain.'/services/NetSuitePort_'.$config['endpoint'];
+        $this->getClient()->__setLocation($dataCenterUrl);
+    }
+
+    /**
+     * Create a configuration array by inspecting the $_ENV superglobal.
+     *
+     * @return array
+     */
+    public static function getEnvConfig()
+    {
+        $config = [
+            'endpoint'           => getenv('NETSUITE_ENDPOINT') ?: '2019_1',
+            'host'               => getenv('NETSUITE_HOST') ?: 'https://webservices.sandbox.netsuite.com',
+            'email'              => getenv('NETSUITE_EMAIL'),
+            'password'           => getenv('NETSUITE_PASSWORD'),
+            'role'               => getenv('NETSUITE_ROLE') ?: '3',
+            'account'            => getenv('NETSUITE_ACCOUNT'),
+            'app_id'             => getenv('NETSUITE_APP_ID') ?: '4AD027CA-88B3-46EC-9D3E-41C6E6A325E2',
+            'logging'            => getenv('NETSUITE_LOGGING'),
+            'log_path'           => getenv('NETSUITE_LOG_PATH'),
+        ];
+
+        // These config keys aren't required by all users, but if they are
+        // defined in the config array, then they must be correct, thus we
+        // will omit ones that have been left empty in the .env file.
+        $optKeys = [
+            'NETSUITE_CONSUMER_KEY'    => 'consumerKey',
+            'NETSUITE_CONSUMER_SECRET' => 'consumerSecret',
+            'NETSUITE_TOKEN_KEY'       => 'token',
+            'NETSUITE_TOKEN_SECRET'    => 'tokenSecret',
+            'NETSUITE_HASH_TYPE'       => 'signatureAlgorithm'
+        ];
+        foreach ($optKeys as $optKey => $cfgKey) {
+            if ($optVal = getenv($optKey)) {
+                $config[$cfgKey] = $optVal;
+            }
+        }
+
+        return $config;
+    }
+
+    /**
+     * Make sure that this client object has at least the basic required
+     * configuration values defined or else throw a runtime exception.
+     *
+     * @param array $config
+     *
+     * @return void
+     */
+    public function validateConfig(array $config)
+    {
+        $requiredParams = [
+            'endpoint',
+            'host',
+            'account',
+        ];
+        foreach ($requiredParams as $key) {
+            if (!isset($config[$key]) || empty($config[$key])) {
+                throw new \RuntimeException('Config key missing: '.$key);
+            }
+        }
+    }
+
+    /**
+     * Alternate way to instantiate the NetSuiteClient. This method is
+     * superfluous now that the constructor will intelligently look for ENV
+     * configuration when it isn't given explicit configuration. This static
+     * method is retained for compatibility with those users who might
+     * currently be using this method.
+     *
+     * This method will be removed in some future version.
+     *
+     * @deprecated
+     *
+     * @param array $options
+     * @param \SoapClient $client
+     *
+     * @return \NetSuite\NetSuiteClient
+     */
+    public static function createFromEnv(
+        array $options = [],
+        \SoapClient $client = null
+    ) {
+        $config = self::getEnvConfig();
 
         return new static($config, $options, $client);
     }
@@ -85,9 +189,8 @@ class NetSuiteClient
             $this->addHeader("passport", $this->createPassportFromConfig($this->config));
         }
 
-
         try {
-            $response = $this->client->__soapCall($operation, array($parameter), null, $this->soapHeaders);
+            $response = $this->getClient()->__soapCall($operation, array($parameter), null, $this->soapHeaders);
             $this->logSoapCall($operation);
             return $response;
         } catch (\Exception $e) {
@@ -274,7 +377,29 @@ class NetSuiteClient
      */
     private function fixWtfCookieBug()
     {
-        $this->client->__setCookie("JSESSIONID");
+        $this->getClient()->__setCookie('JSESSIONID');
+    }
+
+    /**
+     * Get the current soap client.
+     *
+     * @return \SoapClient
+     * @throws \SoapFault
+     */
+    public function getClient()
+    {
+        if (!isset($this->client)) {
+            $options = $this->createOptions($this->config, $this->clientOptions);
+            $wsdl = $this->createWsdl($this->config);
+            $this->client = new SoapClient($wsdl, $options);
+        }
+        if (isset($this->config['host']) && $this->config['host'] == 'https://webservices.netsuite.com') {
+            // Fetch the data center URL for this account because the user
+            // provided the legacy webservices URL.
+            unset($this->config['host']);
+            $this->setDataCenterUrl($this->config);
+        }
+        return $this->client;
     }
 
     /**
@@ -295,6 +420,7 @@ class NetSuiteClient
     public function setLogPath($logPath)
     {
         $this->config['log_path'] = $logPath;
+        $this->logger = new Logger($logPath);
     }
 
     /**
@@ -305,10 +431,7 @@ class NetSuiteClient
     private function logSoapCall($operation)
     {
         if (isset($this->config['logging']) && $this->config['logging']) {
-            $logger = new Logger(
-                isset($this->config['log_path']) ? $this->config['log_path'] : null
-            );
-            $logger->logSoapCall($this->client, $operation);
+            $this->logger->logSoapCall($this->getClient(), $operation);
         }
     }
 

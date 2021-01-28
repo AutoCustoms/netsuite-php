@@ -14,18 +14,39 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ContactAccessRoles {
+    /**
+     * @var boolean
+     */
     public $giveAccess;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $contact;
+    /**
+     * @var string
+     */
     public $email;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $role;
+    /**
+     * @var string
+     */
     public $password;
+    /**
+     * @var string
+     */
     public $password2;
+    /**
+     * @var boolean
+     */
     public $sendEmail;
     static $paramtypesmap = array(
         "giveAccess" => "boolean",

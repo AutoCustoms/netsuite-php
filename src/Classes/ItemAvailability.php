@@ -14,22 +14,55 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ItemAvailability {
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $item;
+    /**
+     * @var string
+     */
     public $lastQtyAvailableChange;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $locationId;
+    /**
+     * @var float
+     */
     public $quantityOnHand;
+    /**
+     * @var float
+     */
     public $onHandValueMli;
+    /**
+     * @var float
+     */
     public $reorderPoint;
+    /**
+     * @var float
+     */
     public $preferredStockLevel;
+    /**
+     * @var float
+     */
     public $quantityOnOrder;
+    /**
+     * @var float
+     */
     public $quantityCommitted;
+    /**
+     * @var float
+     */
     public $quantityBackOrdered;
+    /**
+     * @var float
+     */
     public $quantityAvailable;
     static $paramtypesmap = array(
         "item" => "RecordRef",

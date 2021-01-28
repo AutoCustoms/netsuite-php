@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
@@ -28,6 +28,8 @@ class SearchRecordType {
     const billingAccount = "billingAccount";
     const billingSchedule = "billingSchedule";
     const bin = "bin";
+    const bom = "bom";
+    const bomRevision = "bomRevision";
     const budget = "budget";
     const calendarEvent = "calendarEvent";
     const campaign = "campaign";
@@ -44,6 +46,7 @@ class SearchRecordType {
     const customerCategory = "customerCategory";
     const customerMessage = "customerMessage";
     const customerStatus = "customerStatus";
+    const customerSubsidiaryRelationship = "customerSubsidiaryRelationship";
     const customList = "customList";
     const customRecord = "customRecord";
     const department = "department";
@@ -55,6 +58,8 @@ class SearchRecordType {
     const folder = "folder";
     const giftCertificate = "giftCertificate";
     const globalAccountMapping = "globalAccountMapping";
+    const hcmJob = "hcmJob";
+    const inboundShipment = "inboundShipment";
     const inventoryNumber = "inventoryNumber";
     const item = "item";
     const itemAccountMapping = "itemAccountMapping";
@@ -69,6 +74,7 @@ class SearchRecordType {
     const manufacturingCostTemplate = "manufacturingCostTemplate";
     const manufacturingOperationTask = "manufacturingOperationTask";
     const manufacturingRouting = "manufacturingRouting";
+    const merchandiseHierarchyNode = "merchandiseHierarchyNode";
     const message = "message";
     const nexus = "nexus";
     const note = "note";
@@ -77,6 +83,7 @@ class SearchRecordType {
     const otherNameCategory = "otherNameCategory";
     const partner = "partner";
     const partnerCategory = "partnerCategory";
+    const paycheck = "paycheck";
     const paymentMethod = "paymentMethod";
     const payrollItem = "payrollItem";
     const phoneCall = "phoneCall";
@@ -105,5 +112,6 @@ class SearchRecordType {
     const usage = "usage";
     const vendor = "vendor";
     const vendorCategory = "vendorCategory";
+    const vendorSubsidiaryRelationship = "vendorSubsidiaryRelationship";
     const winLossReason = "winLossReason";
 }

@@ -14,21 +14,55 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class Nexus extends Record {
+    /**
+     * @var \NetSuite\Classes\Country
+     */
     public $country;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $state;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $taxAgency;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $taxAgencyPst;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $taxCode;
+    /**
+     * @var string
+     */
     public $description;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $parentNexus;
+    /**
+     * @var boolean
+     */
     public $isInactive;
+    /**
+     * @var boolean
+     */
+    public $taxDateFromFulfillment;
+    /**
+     * @var string
+     */
     public $internalId;
+    /**
+     * @var string
+     */
     public $externalId;
     static $paramtypesmap = array(
         "country" => "Country",
@@ -39,6 +73,7 @@ class Nexus extends Record {
         "description" => "string",
         "parentNexus" => "RecordRef",
         "isInactive" => "boolean",
+        "taxDateFromFulfillment" => "boolean",
         "internalId" => "string",
         "externalId" => "string",
     );

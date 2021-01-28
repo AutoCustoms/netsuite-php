@@ -14,25 +14,67 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class Address extends Record {
+    /**
+     * @var string
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\Country
+     */
     public $country;
+    /**
+     * @var string
+     */
     public $attention;
+    /**
+     * @var string
+     */
     public $addressee;
+    /**
+     * @var string
+     */
     public $addrPhone;
+    /**
+     * @var string
+     */
     public $addr1;
+    /**
+     * @var string
+     */
     public $addr2;
+    /**
+     * @var string
+     */
     public $addr3;
+    /**
+     * @var string
+     */
     public $city;
+    /**
+     * @var string
+     */
     public $state;
+    /**
+     * @var string
+     */
     public $zip;
+    /**
+     * @var string
+     */
     public $addrText;
+    /**
+     * @var boolean
+     */
     public $override;
+    /**
+     * @var \NetSuite\Classes\CustomFieldList
+     */
     public $customFieldList;
     static $paramtypesmap = array(
         "internalId" => "string",

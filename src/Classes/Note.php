@@ -14,31 +14,91 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class Note extends Record {
+    /**
+     * @var string
+     */
     public $title;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $noteType;
+    /**
+     * @var \NetSuite\Classes\NoteDirection
+     */
     public $direction;
+    /**
+     * @var string
+     */
     public $noteDate;
+    /**
+     * @var string
+     */
     public $note;
+    /**
+     * @var string
+     */
     public $lastModifiedDate;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $activity;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $author;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $entity;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $folder;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $item;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $media;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $record;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $recordType;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $topic;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $transaction;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $customForm;
+    /**
+     * @var \NetSuite\Classes\CustomFieldList
+     */
     public $customFieldList;
+    /**
+     * @var string
+     */
     public $internalId;
+    /**
+     * @var string
+     */
     public $externalId;
     static $paramtypesmap = array(
         "title" => "string",

@@ -14,17 +14,35 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class RevRecScheduleSearchRow extends SearchRow {
+    /**
+     * @var \NetSuite\Classes\RevRecScheduleSearchRowBasic
+     */
     public $basic;
+    /**
+     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     */
     public $appliedToTransactionJoin;
+    /**
+     * @var \NetSuite\Classes\CustomerSearchRowBasic
+     */
     public $customerJoin;
+    /**
+     * @var \NetSuite\Classes\ItemSearchRowBasic
+     */
     public $itemJoin;
+    /**
+     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     */
     public $transactionJoin;
+    /**
+     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     */
     public $userJoin;
     static $paramtypesmap = array(
         "basic" => "RevRecScheduleSearchRowBasic",

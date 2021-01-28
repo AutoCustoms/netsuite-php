@@ -14,20 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class CouponCodeSearchRowBasic extends SearchRowBasic {
+    /**
+     * @var \NetSuite\Classes\SearchColumnStringField[]
+     */
     public $code;
+    /**
+     * @var \NetSuite\Classes\SearchColumnDateField[]
+     */
     public $dateSent;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
     public $externalId;
+    /**
+     * @var \NetSuite\Classes\SearchColumnLongField[]
+     */
     public $id;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchColumnStringField[]
+     */
     public $promotion;
+    /**
+     * @var \NetSuite\Classes\SearchColumnStringField[]
+     */
     public $recipient;
+    /**
+     * @var \NetSuite\Classes\SearchColumnLongField[]
+     */
     public $useCount;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $used;
     static $paramtypesmap = array(
         "code" => "SearchColumnStringField[]",

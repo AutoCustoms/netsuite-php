@@ -14,27 +14,75 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class AccountingPeriodSearchRowBasic extends SearchRowBasic {
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $allLocked;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $allowNonGLChanges;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $apLocked;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $arLocked;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $closed;
+    /**
+     * @var \NetSuite\Classes\SearchColumnDateField[]
+     */
     public $closedOnDate;
+    /**
+     * @var \NetSuite\Classes\SearchColumnDateField[]
+     */
     public $endDate;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $isAdjust;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $isInactive;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $isQuarter;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $isYear;
+    /**
+     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     */
     public $parent;
+    /**
+     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     */
     public $payrollLocked;
+    /**
+     * @var \NetSuite\Classes\SearchColumnStringField[]
+     */
     public $periodName;
+    /**
+     * @var \NetSuite\Classes\SearchColumnDateField[]
+     */
     public $startDate;
     static $paramtypesmap = array(
         "allLocked" => "SearchColumnBooleanField[]",

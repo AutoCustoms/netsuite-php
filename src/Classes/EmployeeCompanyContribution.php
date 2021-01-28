@@ -14,17 +14,35 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeCompanyContribution {
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $payrollItem;
+    /**
+     * @var string
+     */
     public $rate;
+    /**
+     * @var float
+     */
     public $limit;
+    /**
+     * @var boolean
+     */
     public $inactive;
+    /**
+     * @var string
+     */
     public $effectiveDate;
+    /**
+     * @var string
+     */
     public $expirationDate;
     static $paramtypesmap = array(
         "payrollItem" => "RecordRef",

@@ -14,74 +14,267 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class TransactionBodyCustomField extends CustomFieldType {
+    /**
+     * @var string
+     */
     public $label;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $owner;
+    /**
+     * @var string
+     */
     public $description;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $selectRecordType;
+    /**
+     * @var boolean
+     */
     public $storeValue;
+    /**
+     * @var boolean
+     */
     public $showInList;
+    /**
+     * @var boolean
+     */
     public $globalSearch;
+    /**
+     * @var boolean
+     */
     public $isParent;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $insertBefore;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $subtab;
+    /**
+     * @var boolean
+     */
     public $availableToSso;
+    /**
+     * @var \NetSuite\Classes\CustomizationDisplayType
+     */
     public $displayType;
+    /**
+     * @var integer
+     */
     public $displayWidth;
+    /**
+     * @var integer
+     */
     public $displayHeight;
+    /**
+     * @var string
+     */
     public $help;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $parentSubtab;
+    /**
+     * @var string
+     */
     public $linkText;
+    /**
+     * @var boolean
+     */
     public $isMandatory;
+    /**
+     * @var boolean
+     */
     public $checkSpelling;
+    /**
+     * @var integer
+     */
     public $maxLength;
+    /**
+     * @var float
+     */
     public $minValue;
+    /**
+     * @var float
+     */
     public $maxValue;
+    /**
+     * @var boolean
+     */
     public $defaultChecked;
+    /**
+     * @var string
+     */
     public $defaultValue;
+    /**
+     * @var boolean
+     */
     public $isFormula;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $defaultSelection;
+    /**
+     * @var \NetSuite\Classes\CustomizationDynamicDefault
+     */
     public $dynamicDefault;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $searchDefault;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $searchCompareField;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $sourceList;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $sourceFrom;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $sourceFilterBy;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
+    public $customSegment;
+    /**
+     * @var boolean
+     */
     public $bodyPurchase;
+    /**
+     * @var boolean
+     */
     public $bodySale;
+    /**
+     * @var boolean
+     */
     public $bodyOpportunity;
+    /**
+     * @var boolean
+     */
     public $bodyJournal;
+    /**
+     * @var boolean
+     */
     public $bodyExpenseReport;
+    /**
+     * @var boolean
+     */
     public $bodyStore;
+    /**
+     * @var boolean
+     */
     public $bodyTransferOrder;
+    /**
+     * @var boolean
+     */
     public $bodyItemReceipt;
+    /**
+     * @var boolean
+     */
     public $bodyItemReceiptOrder;
+    /**
+     * @var boolean
+     */
     public $bodyItemFulfillment;
+    /**
+     * @var boolean
+     */
     public $bodyItemFulfillmentOrder;
+    /**
+     * @var boolean
+     */
     public $bodyInventoryAdjustment;
+    /**
+     * @var boolean
+     */
     public $bodyBTegata;
+    /**
+     * @var boolean
+     */
     public $bodyAssemblyBuild;
+    /**
+     * @var boolean
+     */
     public $bodyPrintFlag;
+    /**
+     * @var boolean
+     */
     public $bodyPickingTicket;
+    /**
+     * @var boolean
+     */
     public $bodyOtherTransaction;
+    /**
+     * @var boolean
+     */
     public $bodyPrintPackingSlip;
+    /**
+     * @var boolean
+     */
     public $bodyCustomerPayment;
+    /**
+     * @var boolean
+     */
     public $bodyVendorPayment;
+    /**
+     * @var boolean
+     */
     public $bodyDeposit;
+    /**
+     * @var boolean
+     */
     public $bodyBom;
+    /**
+     * @var boolean
+     */
     public $bodyPrintStatement;
+    /**
+     * @var \NetSuite\Classes\TransactionBodyCustomFieldFilterList
+     */
     public $filterList;
+    /**
+     * @var \NetSuite\Classes\CustomizationAccessLevel
+     */
     public $accessLevel;
+    /**
+     * @var \NetSuite\Classes\CustomizationSearchLevel
+     */
     public $searchLevel;
+    /**
+     * @var \NetSuite\Classes\CustomFieldRoleAccessList
+     */
     public $roleAccessList;
+    /**
+     * @var \NetSuite\Classes\CustomFieldDepartmentAccessList
+     */
     public $deptAccessList;
+    /**
+     * @var \NetSuite\Classes\CustomFieldSubAccessList
+     */
     public $subAccessList;
+    /**
+     * @var \NetSuite\Classes\CustomFieldTranslationsList
+     */
     public $translationsList;
+    /**
+     * @var string
+     */
     public $internalId;
     static $paramtypesmap = array(
         "label" => "string",
@@ -116,6 +309,7 @@ class TransactionBodyCustomField extends CustomFieldType {
         "sourceList" => "RecordRef",
         "sourceFrom" => "RecordRef",
         "sourceFilterBy" => "RecordRef",
+        "customSegment" => "RecordRef",
         "bodyPurchase" => "boolean",
         "bodySale" => "boolean",
         "bodyOpportunity" => "boolean",

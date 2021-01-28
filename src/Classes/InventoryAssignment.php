@@ -14,20 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class InventoryAssignment {
+    /**
+     * @var string
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $issueInventoryNumber;
+    /**
+     * @var string
+     */
     public $receiptInventoryNumber;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $binNumber;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $toBinNumber;
+    /**
+     * @var float
+     */
     public $quantity;
+    /**
+     * @var string
+     */
     public $expirationDate;
+    /**
+     * @var float
+     */
     public $quantityAvailable;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
+    public $inventoryStatus;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
+    public $toInventoryStatus;
     static $paramtypesmap = array(
         "internalId" => "string",
         "issueInventoryNumber" => "RecordRef",
@@ -37,5 +69,7 @@ class InventoryAssignment {
         "quantity" => "float",
         "expirationDate" => "dateTime",
         "quantityAvailable" => "float",
+        "inventoryStatus" => "RecordRef",
+        "toInventoryStatus" => "RecordRef",
     );
 }

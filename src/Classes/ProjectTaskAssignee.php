@@ -14,20 +14,48 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ProjectTaskAssignee {
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $resource;
+    /**
+     * @var float
+     */
     public $units;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $serviceItem;
+    /**
+     * @var float
+     */
     public $estimatedWork;
+    /**
+     * @var float
+     */
     public $unitCost;
+    /**
+     * @var float
+     */
     public $unitPrice;
+    /**
+     * @var float
+     */
     public $cost;
+    /**
+     * @var float
+     */
     public $price;
+    /**
+     * @var float
+     */
+    public $plannedWork;
     static $paramtypesmap = array(
         "resource" => "RecordRef",
         "units" => "float",
@@ -37,5 +65,6 @@ class ProjectTaskAssignee {
         "unitPrice" => "float",
         "cost" => "float",
         "price" => "float",
+        "plannedWork" => "float",
     );
 }

@@ -14,38 +14,119 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ChargeSearchBasic extends SearchRecordBasic {
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $amount;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $billingAccount;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $billingItem;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $billTo;
+    /**
+     * @var \NetSuite\Classes\SearchDateField
+     */
     public $chargeDate;
-    public $class;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $chargeType;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
+    public $class;
+    /**
+     * @var \NetSuite\Classes\SearchDateField
+     */
     public $createdDate;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $currency;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $department;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $externalId;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $externalIdString;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchLongField
+     */
     public $internalIdNumber;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $location;
+    /**
+     * @var \NetSuite\Classes\SearchDateField
+     */
     public $modifiedDate;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $postingPeriod;
+    /**
+     * @var \NetSuite\Classes\PostingPeriodDate
+     */
     public $postingPeriodRelative;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $quantity;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $rate;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $rule;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $runId;
+    /**
+     * @var \NetSuite\Classes\SearchLongField
+     */
     public $salesOrder;
+    /**
+     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     */
     public $stage;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $subscriptionLine;
+    /**
+     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     */
     public $use;
+    /**
+     * @var \NetSuite\Classes\SearchCustomFieldList
+     */
     public $customFieldList;
     static $paramtypesmap = array(
         "amount" => "SearchDoubleField",
@@ -53,8 +134,8 @@ class ChargeSearchBasic extends SearchRecordBasic {
         "billingItem" => "SearchMultiSelectField",
         "billTo" => "SearchMultiSelectField",
         "chargeDate" => "SearchDateField",
-        "class" => "SearchMultiSelectField",
         "chargeType" => "SearchMultiSelectField",
+        "class" => "SearchMultiSelectField",
         "createdDate" => "SearchDateField",
         "currency" => "SearchMultiSelectField",
         "department" => "SearchMultiSelectField",

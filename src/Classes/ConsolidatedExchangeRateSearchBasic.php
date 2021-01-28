@@ -14,21 +14,51 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ConsolidatedExchangeRateSearchBasic extends SearchRecordBasic {
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $accountingBook;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $externalId;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $externalIdString;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $fromSubsidiary;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchLongField
+     */
     public $internalIdNumber;
+    /**
+     * @var \NetSuite\Classes\SearchBooleanField
+     */
     public $isDerivedRate;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $period;
+    /**
+     * @var \NetSuite\Classes\SearchDateField
+     */
     public $periodStartDate;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $toSubsidiary;
     static $paramtypesmap = array(
         "accountingBook" => "SearchMultiSelectField",

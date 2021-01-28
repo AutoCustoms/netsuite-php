@@ -14,39 +14,131 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class TransferOrderItem {
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $item;
+    /**
+     * @var integer
+     */
     public $line;
+    /**
+     * @var float
+     */
     public $quantityAvailable;
+    /**
+     * @var float
+     */
     public $quantityOnHand;
+    /**
+     * @var float
+     */
     public $quantityBackOrdered;
+    /**
+     * @var float
+     */
     public $quantityCommitted;
+    /**
+     * @var float
+     */
     public $quantityFulfilled;
+    /**
+     * @var float
+     */
     public $quantityPacked;
+    /**
+     * @var float
+     */
     public $quantityPicked;
+    /**
+     * @var float
+     */
     public $quantityReceived;
+    /**
+     * @var float
+     */
     public $quantity;
+    /**
+     * @var float
+     */
     public $rate;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $units;
+    /**
+     * @var float
+     */
     public $amount;
+    /**
+     * @var string
+     */
     public $description;
+    /**
+     * @var \NetSuite\Classes\InventoryDetail
+     */
     public $inventoryDetail;
+    /**
+     * @var string
+     */
     public $serialNumbers;
+    /**
+     * @var \NetSuite\Classes\TransferOrderItemCommitInventory
+     */
     public $commitInventory;
+    /**
+     * @var float
+     */
     public $orderPriority;
+    /**
+     * @var \NetSuite\Classes\CustomFieldList
+     */
     public $options;
+    /**
+     * @var boolean
+     */
     public $isClosed;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $department;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $class;
+    /**
+     * @var float
+     */
     public $lastPurchasePrice;
+    /**
+     * @var float
+     */
     public $averageCost;
+    /**
+     * @var string
+     */
     public $expectedShipDate;
+    /**
+     * @var string
+     */
     public $expectedReceiptDate;
+    /**
+     * @var string
+     */
+    public $requestedDate;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
+    public $orderAllocationStrategy;
+    /**
+     * @var \NetSuite\Classes\CustomFieldList
+     */
     public $customFieldList;
     static $paramtypesmap = array(
         "item" => "RecordRef",
@@ -76,6 +168,8 @@ class TransferOrderItem {
         "averageCost" => "float",
         "expectedShipDate" => "dateTime",
         "expectedReceiptDate" => "dateTime",
+        "requestedDate" => "dateTime",
+        "orderAllocationStrategy" => "RecordRef",
         "customFieldList" => "CustomFieldList",
     );
 }

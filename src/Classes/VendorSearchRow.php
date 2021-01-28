@@ -14,25 +14,83 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class VendorSearchRow extends SearchRow {
+    /**
+     * @var \NetSuite\Classes\VendorSearchRowBasic
+     */
     public $basic;
+    /**
+     * @var \NetSuite\Classes\AccountSearchRowBasic
+     */
     public $accountJoin;
+    /**
+     * @var \NetSuite\Classes\CampaignSearchRowBasic
+     */
     public $campaignResponseJoin;
+    /**
+     * @var \NetSuite\Classes\ContactSearchRowBasic
+     */
     public $contactJoin;
+    /**
+     * @var \NetSuite\Classes\ContactSearchRowBasic
+     */
     public $contactPrimaryJoin;
+    /**
+     * @var \NetSuite\Classes\AccountSearchRowBasic
+     */
     public $expAccountJoin;
+    /**
+     * @var \NetSuite\Classes\FileSearchRowBasic
+     */
     public $fileJoin;
+    /**
+     * @var \NetSuite\Classes\LocationSearchRowBasic
+     */
+    public $manufacturingLocationsJoin;
+    /**
+     * @var \NetSuite\Classes\MessageSearchRowBasic
+     */
     public $messagesJoin;
+    /**
+     * @var \NetSuite\Classes\MessageSearchRowBasic
+     */
     public $messagesFromJoin;
+    /**
+     * @var \NetSuite\Classes\MessageSearchRowBasic
+     */
     public $messagesToJoin;
+    /**
+     * @var \NetSuite\Classes\MseSubsidiarySearchRowBasic
+     */
+    public $mseSubsidiaryJoin;
+    /**
+     * @var \NetSuite\Classes\EntityTaxRegistrationSearchRowBasic
+     */
+    public $taxRegistrationJoin;
+    /**
+     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     */
+    public $timeApproverJoin;
+    /**
+     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     */
     public $transactionJoin;
+    /**
+     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     */
     public $userJoin;
+    /**
+     * @var \NetSuite\Classes\NoteSearchRowBasic
+     */
     public $userNotesJoin;
+    /**
+     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     */
     public $customSearchJoin;
     static $paramtypesmap = array(
         "basic" => "VendorSearchRowBasic",
@@ -42,9 +100,13 @@ class VendorSearchRow extends SearchRow {
         "contactPrimaryJoin" => "ContactSearchRowBasic",
         "expAccountJoin" => "AccountSearchRowBasic",
         "fileJoin" => "FileSearchRowBasic",
+        "manufacturingLocationsJoin" => "LocationSearchRowBasic",
         "messagesJoin" => "MessageSearchRowBasic",
         "messagesFromJoin" => "MessageSearchRowBasic",
         "messagesToJoin" => "MessageSearchRowBasic",
+        "mseSubsidiaryJoin" => "MseSubsidiarySearchRowBasic",
+        "taxRegistrationJoin" => "EntityTaxRegistrationSearchRowBasic",
+        "timeApproverJoin" => "EmployeeSearchRowBasic",
         "transactionJoin" => "TransactionSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
         "userNotesJoin" => "NoteSearchRowBasic",

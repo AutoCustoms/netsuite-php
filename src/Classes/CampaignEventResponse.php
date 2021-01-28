@@ -14,25 +14,67 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class CampaignEventResponse {
+    /**
+     * @var string
+     */
     public $name;
+    /**
+     * @var string
+     */
     public $type;
+    /**
+     * @var string
+     */
     public $dateSent;
+    /**
+     * @var float
+     */
     public $sent;
+    /**
+     * @var float
+     */
     public $opened;
+    /**
+     * @var float
+     */
     public $openedRatio;
+    /**
+     * @var float
+     */
     public $clickedThru;
+    /**
+     * @var float
+     */
     public $clickedThruRatio;
+    /**
+     * @var integer
+     */
     public $responded;
+    /**
+     * @var float
+     */
     public $respondedRatio;
+    /**
+     * @var integer
+     */
     public $unsubscribed;
+    /**
+     * @var float
+     */
     public $unsubscribedRatio;
+    /**
+     * @var integer
+     */
     public $bounced;
+    /**
+     * @var float
+     */
     public $bouncedRatio;
     static $paramtypesmap = array(
         "name" => "string",

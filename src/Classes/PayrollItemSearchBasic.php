@@ -14,29 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class PayrollItemSearchBasic extends SearchRecordBasic {
-    public $externalId;
-    public $externalIdString;
-    public $internalId;
-    public $internalIdNumber;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $expenseAccount;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     */
     public $itemTypeNoHierarchy;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $liabilityAccount;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $name;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $subsidiary;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $vendor;
+    /**
+     * @var \NetSuite\Classes\SearchCustomFieldList
+     */
     public $customFieldList;
     static $paramtypesmap = array(
+        "expenseAccount" => "SearchMultiSelectField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",
         "internalId" => "SearchMultiSelectField",
         "internalIdNumber" => "SearchLongField",
-        "expenseAccount" => "SearchMultiSelectField",
         "itemTypeNoHierarchy" => "SearchEnumMultiSelectField",
         "liabilityAccount" => "SearchMultiSelectField",
         "name" => "SearchStringField",

@@ -14,15 +14,27 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class PricingGroupSearchAdvanced extends SearchRecord {
+    /**
+     * @var \NetSuite\Classes\PricingGroupSearch
+     */
     public $criteria;
+    /**
+     * @var \NetSuite\Classes\PricingGroupSearchRow
+     */
     public $columns;
+    /**
+     * @var string
+     */
     public $savedSearchId;
+    /**
+     * @var string
+     */
     public $savedSearchScriptId;
     static $paramtypesmap = array(
         "criteria" => "PricingGroupSearch",

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
@@ -33,5 +33,6 @@ class CostCategoryItemCostType {
     const _machineSetupOverhead = "_machineSetupOverhead";
     const _material = "_material";
     const _materialOverhead = "_materialOverhead";
+    const _outsourcingCharge = "_outsourcingCharge";
     const _service = "_service";
 }

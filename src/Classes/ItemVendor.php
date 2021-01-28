@@ -14,19 +14,43 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ItemVendor {
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $vendor;
+    /**
+     * @var string
+     */
     public $vendorCode;
+    /**
+     * @var string
+     */
     public $vendorCurrencyName;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $vendorCurrency;
+    /**
+     * @var float
+     */
     public $purchasePrice;
+    /**
+     * @var boolean
+     */
     public $preferredVendor;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $schedule;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
     public $subsidiary;
     static $paramtypesmap = array(
         "vendor" => "RecordRef",
@@ -36,6 +60,6 @@ class ItemVendor {
         "purchasePrice" => "float",
         "preferredVendor" => "boolean",
         "schedule" => "RecordRef",
-        "subsidiary" => "string",
+        "subsidiary" => "RecordRef",
     );
 }

@@ -14,17 +14,35 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class TokenPassport {
+    /**
+     * @var string
+     */
     public $account;
+    /**
+     * @var string
+     */
     public $consumerKey;
+    /**
+     * @var string
+     */
     public $token;
+    /**
+     * @var string
+     */
     public $nonce;
+    /**
+     * @var integer
+     */
     public $timestamp;
+    /**
+     * @var \NetSuite\Classes\TokenPassportSignature
+     */
     public $signature;
     static $paramtypesmap = array(
         "account" => "string",

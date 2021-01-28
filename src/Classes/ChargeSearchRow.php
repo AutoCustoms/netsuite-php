@@ -14,31 +14,81 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ChargeSearchRow extends SearchRow {
+    /**
+     * @var \NetSuite\Classes\ChargeSearchRowBasic
+     */
     public $basic;
+    /**
+     * @var \NetSuite\Classes\BillingAccountSearchRowBasic
+     */
     public $billingAccountJoin;
+    /**
+     * @var \NetSuite\Classes\BillingScheduleSearchRowBasic
+     */
+    public $billingScheduleJoin;
+    /**
+     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     */
     public $chargeEmployeeJoin;
+    /**
+     * @var \NetSuite\Classes\CustomerSearchRowBasic
+     */
+    public $customerJoin;
+    /**
+     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     */
     public $invoiceJoin;
+    /**
+     * @var \NetSuite\Classes\ItemSearchRowBasic
+     */
+    public $itemJoin;
+    /**
+     * @var \NetSuite\Classes\JobSearchRowBasic
+     */
     public $jobJoin;
+    /**
+     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     */
     public $salesOrderJoin;
+    /**
+     * @var \NetSuite\Classes\TimeBillSearchRowBasic
+     */
     public $timeJoin;
+    /**
+     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     */
     public $transactionJoin;
+    /**
+     * @var \NetSuite\Classes\UsageSearchRowBasic
+     */
+    public $usageJoin;
+    /**
+     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     */
     public $userJoin;
+    /**
+     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     */
     public $customSearchJoin;
     static $paramtypesmap = array(
         "basic" => "ChargeSearchRowBasic",
         "billingAccountJoin" => "BillingAccountSearchRowBasic",
+        "billingScheduleJoin" => "BillingScheduleSearchRowBasic",
         "chargeEmployeeJoin" => "EmployeeSearchRowBasic",
+        "customerJoin" => "CustomerSearchRowBasic",
         "invoiceJoin" => "TransactionSearchRowBasic",
+        "itemJoin" => "ItemSearchRowBasic",
         "jobJoin" => "JobSearchRowBasic",
         "salesOrderJoin" => "TransactionSearchRowBasic",
         "timeJoin" => "TimeBillSearchRowBasic",
         "transactionJoin" => "TransactionSearchRowBasic",
+        "usageJoin" => "UsageSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );

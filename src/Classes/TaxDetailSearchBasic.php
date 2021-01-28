@@ -14,20 +14,44 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class TaxDetailSearchBasic extends SearchRecordBasic {
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $account;
+    /**
+     * @var \NetSuite\Classes\SearchLongField
+     */
     public $lineNumber;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $taxAmount;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $taxBasis;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $taxCode;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $taxRate;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $taxType;
-    public $tranNumber;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
+    public $tranId;
     static $paramtypesmap = array(
         "account" => "SearchMultiSelectField",
         "lineNumber" => "SearchLongField",
@@ -36,6 +60,6 @@ class TaxDetailSearchBasic extends SearchRecordBasic {
         "taxCode" => "SearchMultiSelectField",
         "taxRate" => "SearchDoubleField",
         "taxType" => "SearchMultiSelectField",
-        "tranNumber" => "SearchMultiSelectField",
+        "tranId" => "SearchMultiSelectField",
     );
 }

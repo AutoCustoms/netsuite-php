@@ -14,34 +14,111 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ProjectTaskAssignmentSearchBasic extends SearchRecordBasic {
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $actualWork;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $cost;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $costBase;
+    /**
+     * @var \NetSuite\Classes\SearchDateField
+     */
     public $endDate;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $estimatedWork;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $estimatedWorkBaseline;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $grossProfit;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $grossProfitBase;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchLongField
+     */
     public $internalIdNumber;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
+    public $plannedWork;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
+    public $plannedWorkBaseline;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $price;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $priceBase;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $resource;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $resourceName;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $serviceItem;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $serviceItemDesc;
+    /**
+     * @var \NetSuite\Classes\SearchDateField
+     */
     public $startDate;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $unitCost;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $unitCostBase;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $unitPrice;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $unitPriceBase;
+    /**
+     * @var \NetSuite\Classes\SearchDoubleField
+     */
     public $units;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $workCalendar;
     static $paramtypesmap = array(
         "actualWork" => "SearchDoubleField",
@@ -54,6 +131,8 @@ class ProjectTaskAssignmentSearchBasic extends SearchRecordBasic {
         "grossProfitBase" => "SearchDoubleField",
         "internalId" => "SearchMultiSelectField",
         "internalIdNumber" => "SearchLongField",
+        "plannedWork" => "SearchDoubleField",
+        "plannedWorkBaseline" => "SearchDoubleField",
         "price" => "SearchDoubleField",
         "priceBase" => "SearchDoubleField",
         "resource" => "SearchMultiSelectField",

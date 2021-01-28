@@ -14,29 +14,83 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class AddressSearchBasic extends SearchRecordBasic {
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $address;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $address1;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $address2;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $address3;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $addressee;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $attention;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $city;
+    /**
+     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     */
     public $country;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $countryCode;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $externalId;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $externalIdString;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchLongField
+     */
     public $internalIdNumber;
+    /**
+     * @var \NetSuite\Classes\SearchBooleanField
+     */
     public $override;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $phone;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $state;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $zip;
+    /**
+     * @var \NetSuite\Classes\SearchCustomFieldList
+     */
     public $customFieldList;
     static $paramtypesmap = array(
         "address" => "SearchStringField",

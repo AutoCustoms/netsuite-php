@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
@@ -29,13 +29,17 @@ class TransactionPaymentEventHoldReason {
     const _confirmationOfTheOperationIsPending = "_confirmationOfTheOperationIsPending";
     const _externalFraudRejection = "_externalFraudRejection";
     const _externalFraudReview = "_externalFraudReview";
+    const _failedToPrimeDevice = "_failedToPrimeDevice";
     const _fatalError = "_fatalError";
     const _forwardedToPayerAuthentication = "_forwardedToPayerAuthentication";
     const _forwardRequested = "_forwardRequested";
+    const _forwardToAuthenticateDevice = "_forwardToAuthenticateDevice";
+    const _forwardToChallengeShopper = "_forwardToChallengeShopper";
     const _gatewayAsynchronousNotification = "_gatewayAsynchronousNotification";
     const _gatewayError = "_gatewayError";
     const _generalHold = "_generalHold";
     const _generalReject = "_generalReject";
+    const _notRequired = "_notRequired";
     const _operationWasSuccessful = "_operationWasSuccessful";
     const _operationWasTerminated = "_operationWasTerminated";
     const _overridenBy = "_overridenBy";

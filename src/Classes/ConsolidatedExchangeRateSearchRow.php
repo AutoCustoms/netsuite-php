@@ -14,16 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-12-11 06:57:10 PM PST
  */
 
 namespace NetSuite\Classes;
 
 class ConsolidatedExchangeRateSearchRow extends SearchRow {
+    /**
+     * @var \NetSuite\Classes\ConsolidatedExchangeRateSearchRowBasic
+     */
     public $basic;
+    /**
+     * @var \NetSuite\Classes\SubsidiarySearchRowBasic
+     */
+    public $fromSubsidiaryJoin;
+    /**
+     * @var \NetSuite\Classes\AccountingPeriodSearchRowBasic
+     */
+    public $periodJoin;
+    /**
+     * @var \NetSuite\Classes\SubsidiarySearchRowBasic
+     */
+    public $toSubsidiaryJoin;
+    /**
+     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     */
     public $userJoin;
     static $paramtypesmap = array(
         "basic" => "ConsolidatedExchangeRateSearchRowBasic",
+        "fromSubsidiaryJoin" => "SubsidiarySearchRowBasic",
+        "periodJoin" => "AccountingPeriodSearchRowBasic",
+        "toSubsidiaryJoin" => "SubsidiarySearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
     );
 }
