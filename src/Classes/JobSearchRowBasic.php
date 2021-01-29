@@ -14,496 +14,581 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class JobSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $accountNumber;
+    protected array $accountNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $actualTime;
+    protected array $actualTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address;
+    protected array $address;
+
+    protected $address1;
+    protected $address2;
+    protected $address3;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address1;
+    protected array $addressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address2;
+    protected array $addressInternalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address3;
+    protected array $addressLabel;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $addressee;
+    protected array $addressPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $addressInternalId;
+    protected array $allocatePayrollExpenses;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $addressLabel;
+    protected array $allowAllResourcesForTasks;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $addressPhone;
+    protected array $allowExpenses;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $allocatePayrollExpenses;
+    protected array $allowTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $allowAllResourcesForTasks;
+    protected array $altContact;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $allowExpenses;
+    protected array $altEmail;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $allowTime;
+    protected array $altName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $altContact;
+    protected array $altPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $altEmail;
+    protected array $attention;
+
+    protected $billAddress1;
+    protected $billAddress2;
+    protected $billAddress3;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $altName;
+    protected array $billAddressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $altPhone;
+    protected array $billAttention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $attention;
+    protected array $billCity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $billAddress1;
+    protected array $billCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress2;
+    protected array $billCountryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billAddress3;
+    protected array $billingRateCard;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billAddressee;
+    protected array $billingSchedule;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAttention;
+    protected array $billPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billCity;
+    protected array $billState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $billCountry;
+    protected array $billZipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $billCountryCode;
+    protected array $calculatedEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $billingRateCard;
+    protected array $calculatedEndDateBaseline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $billingSchedule;
+    protected array $calculatedStartDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billPhone;
+    protected array $category;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billState;
+    protected array $city;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billZipCode;
+    protected array $comments;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $calculatedEndDate;
+    protected array $companyName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $calculatedEndDateBaseline;
+    protected array $contact;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $calculatedStartDate;
+    protected array $country;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $category;
+    protected array $countryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $city;
+    protected array $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $comments;
+    protected array $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $companyName;
+    protected array $defaultTaxReg;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $contact;
+    protected array $email;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $country;
+    protected array $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $countryCode;
+    protected array $entityId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnLongField[]
      */
-    public $customer;
+    protected array $entityNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $dateCreated;
+    protected array $entityStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $defaultTaxReg;
+    protected array $estimatedCost;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $email;
+    protected array $estimatedGrossProfit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $endDate;
+    protected array $estimatedGrossProfitPercent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $entityId;
+    protected array $estimatedLaborCost;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $entityNumber;
+    protected array $estimatedLaborCostBaseline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $entityStatus;
+    protected array $estimatedLaborRevenue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $estimatedCost;
+    protected array $estimatedRevenue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $estimatedGrossProfit;
+    protected array $estimatedTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $estimatedGrossProfitPercent;
+    protected array $estimatedTimeOverride;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $estimatedLaborCost;
+    protected array $estimatedTimeOverrideBaseline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $estimatedLaborCostBaseline;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $estimatedLaborRevenue;
+    protected array $fax;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $estimatedRevenue;
+    protected array $globalSubscriptionStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $estimatedTime;
+    protected array $image;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $estimatedTimeOverride;
+    protected array $includeCrmTasksInTotals;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $estimatedTimeOverrideBaseline;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $externalId;
+    protected array $isDefaultBilling;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $fax;
+    protected array $isDefaultShipping;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $globalSubscriptionStatus;
+    protected array $isExemptTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $image;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $includeCrmTasksInTotals;
+    protected array $isProductiveTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $internalId;
+    protected array $isUtilizedTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $isDefaultBilling;
+    protected array $jobBillingType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $isDefaultShipping;
+    protected array $jobItem;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $isExemptTime;
+    protected array $jobPrice;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $isInactive;
+    protected array $jobResource;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $isProductiveTime;
+    protected array $jobResourceRole;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $isUtilizedTime;
+    protected array $language;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $jobBillingType;
+    protected array $lastBaselineDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $jobItem;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $jobPrice;
+    protected array $level;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $jobResource;
+    protected array $limitTimeToAssignees;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $jobResourceRole;
+    protected array $materializeTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $language;
+    protected array $percentComplete;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $lastBaselineDate;
+    protected array $percentTimeComplete;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $lastModifiedDate;
+    protected array $permission;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $level;
+    protected array $phone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $limitTimeToAssignees;
+    protected array $phoneticName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $materializeTime;
+    protected array $plannedWork;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $percentComplete;
+    protected array $plannedWorkBaseline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $percentTimeComplete;
+    protected array $projectedEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $permission;
+    protected array $projectedEndDateBaseline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $phone;
+    protected array $projectExpenseType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $phoneticName;
+    protected array $projectManager;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $plannedWork;
+    protected array $revRecForecastRule;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $plannedWorkBaseline;
+    protected array $scheduledEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $projectedEndDate;
+    protected array $schedulingMethod;
+
+    protected $shipAddress1;
+    protected $shipAddress2;
+    protected $shipAddress3;
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $projectedEndDateBaseline;
+    protected array $shipAddressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $projectExpenseType;
+    protected array $shipAttention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $projectManager;
+    protected array $shipCity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $revRecForecastRule;
+    protected array $shipCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $scheduledEndDate;
+    protected array $shipCountryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $schedulingMethod;
+    protected array $shipPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress1;
+    protected array $shipState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress2;
+    protected array $shipZip;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $shipAddress3;
+    protected array $sourceServiceItemFromRateCard;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $shipAddressee;
+    protected array $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $shipAttention;
+    protected array $startDateBaseline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipCity;
+    protected array $state;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipCountry;
+    protected array $subscription;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $shipCountryCode;
+    protected array $subscriptionDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $shipPhone;
+    protected array $subscriptionStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipState;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipZip;
+    protected array $timeApproval;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $sourceServiceItemFromRateCard;
+    protected array $timeRemaining;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $startDate;
+    protected array $usePercentCompleteOverride;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $startDateBaseline;
+    protected array $zipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnCustomFieldList
      */
-    public $state;
-    /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $subscription;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
-     */
-    public $subscriptionDate;
-    /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
-     */
-    public $subscriptionStatus;
-    /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $timeApproval;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
-     */
-    public $timeRemaining;
-    /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
-     */
-    public $usePercentCompleteOverride;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $zipCode;
-    /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "accountNumber" => "SearchColumnStringField[]",
         "actualTime" => "SearchColumnDoubleField[]",
@@ -627,4 +712,2021 @@ class JobSearchRowBasic extends SearchRowBasic {
         "zipCode" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnStringField[] $accountNumber
+     * @return JobSearchRowBasic
+     */
+    public function setAccountNumber(SearchColumnStringField $accountNumber): JobSearchRowBasic
+    {
+        $this->accountNumber[] = $accountNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAccountNumber(): array
+    {
+        return $this->accountNumber;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $actualTime
+     * @return JobSearchRowBasic
+     */
+    public function setActualTime(SearchColumnDoubleField $actualTime): JobSearchRowBasic
+    {
+        $this->actualTime[] = $actualTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getActualTime(): array
+    {
+        return $this->actualTime;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $address
+     * @return JobSearchRowBasic
+     */
+    public function setAddress(SearchColumnStringField $address): JobSearchRowBasic
+    {
+        $this->address[] = $address;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddress(): array
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressee
+     * @return JobSearchRowBasic
+     */
+    public function setAddressee(SearchColumnStringField $addressee): JobSearchRowBasic
+    {
+        $this->addressee[] = $addressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressee(): array
+    {
+        return $this->addressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressInternalId
+     * @return JobSearchRowBasic
+     */
+    public function setAddressInternalId(SearchColumnStringField $addressInternalId): JobSearchRowBasic
+    {
+        $this->addressInternalId[] = $addressInternalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressInternalId(): array
+    {
+        return $this->addressInternalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressLabel
+     * @return JobSearchRowBasic
+     */
+    public function setAddressLabel(SearchColumnStringField $addressLabel): JobSearchRowBasic
+    {
+        $this->addressLabel[] = $addressLabel;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressLabel(): array
+    {
+        return $this->addressLabel;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressPhone
+     * @return JobSearchRowBasic
+     */
+    public function setAddressPhone(SearchColumnStringField $addressPhone): JobSearchRowBasic
+    {
+        $this->addressPhone[] = $addressPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressPhone(): array
+    {
+        return $this->addressPhone;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $allocatePayrollExpenses
+     * @return JobSearchRowBasic
+     */
+    public function setAllocatePayrollExpenses(SearchColumnBooleanField $allocatePayrollExpenses): JobSearchRowBasic
+    {
+        $this->allocatePayrollExpenses[] = $allocatePayrollExpenses;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAllocatePayrollExpenses(): array
+    {
+        return $this->allocatePayrollExpenses;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $allowAllResourcesForTasks
+     * @return JobSearchRowBasic
+     */
+    public function setAllowAllResourcesForTasks(SearchColumnBooleanField $allowAllResourcesForTasks): JobSearchRowBasic
+    {
+        $this->allowAllResourcesForTasks[] = $allowAllResourcesForTasks;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAllowAllResourcesForTasks(): array
+    {
+        return $this->allowAllResourcesForTasks;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $allowExpenses
+     * @return JobSearchRowBasic
+     */
+    public function setAllowExpenses(SearchColumnBooleanField $allowExpenses): JobSearchRowBasic
+    {
+        $this->allowExpenses[] = $allowExpenses;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAllowExpenses(): array
+    {
+        return $this->allowExpenses;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $allowTime
+     * @return JobSearchRowBasic
+     */
+    public function setAllowTime(SearchColumnBooleanField $allowTime): JobSearchRowBasic
+    {
+        $this->allowTime[] = $allowTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAllowTime(): array
+    {
+        return $this->allowTime;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altContact
+     * @return JobSearchRowBasic
+     */
+    public function setAltContact(SearchColumnStringField $altContact): JobSearchRowBasic
+    {
+        $this->altContact[] = $altContact;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltContact(): array
+    {
+        return $this->altContact;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altEmail
+     * @return JobSearchRowBasic
+     */
+    public function setAltEmail(SearchColumnStringField $altEmail): JobSearchRowBasic
+    {
+        $this->altEmail[] = $altEmail;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltEmail(): array
+    {
+        return $this->altEmail;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altName
+     * @return JobSearchRowBasic
+     */
+    public function setAltName(SearchColumnStringField $altName): JobSearchRowBasic
+    {
+        $this->altName[] = $altName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltName(): array
+    {
+        return $this->altName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altPhone
+     * @return JobSearchRowBasic
+     */
+    public function setAltPhone(SearchColumnStringField $altPhone): JobSearchRowBasic
+    {
+        $this->altPhone[] = $altPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltPhone(): array
+    {
+        return $this->altPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $attention
+     * @return JobSearchRowBasic
+     */
+    public function setAttention(SearchColumnStringField $attention): JobSearchRowBasic
+    {
+        $this->attention[] = $attention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAttention(): array
+    {
+        return $this->attention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAddressee
+     * @return JobSearchRowBasic
+     */
+    public function setBillAddressee(SearchColumnStringField $billAddressee): JobSearchRowBasic
+    {
+        $this->billAddressee[] = $billAddressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAddressee(): array
+    {
+        return $this->billAddressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAttention
+     * @return JobSearchRowBasic
+     */
+    public function setBillAttention(SearchColumnStringField $billAttention): JobSearchRowBasic
+    {
+        $this->billAttention[] = $billAttention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAttention(): array
+    {
+        return $this->billAttention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billCity
+     * @return JobSearchRowBasic
+     */
+    public function setBillCity(SearchColumnStringField $billCity): JobSearchRowBasic
+    {
+        $this->billCity[] = $billCity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillCity(): array
+    {
+        return $this->billCity;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $billCountry
+     * @return JobSearchRowBasic
+     */
+    public function setBillCountry(SearchColumnEnumSelectField $billCountry): JobSearchRowBasic
+    {
+        $this->billCountry[] = $billCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getBillCountry(): array
+    {
+        return $this->billCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billCountryCode
+     * @return JobSearchRowBasic
+     */
+    public function setBillCountryCode(SearchColumnStringField $billCountryCode): JobSearchRowBasic
+    {
+        $this->billCountryCode[] = $billCountryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillCountryCode(): array
+    {
+        return $this->billCountryCode;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $billingRateCard
+     * @return JobSearchRowBasic
+     */
+    public function setBillingRateCard(SearchColumnSelectField $billingRateCard): JobSearchRowBasic
+    {
+        $this->billingRateCard[] = $billingRateCard;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillingRateCard(): array
+    {
+        return $this->billingRateCard;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $billingSchedule
+     * @return JobSearchRowBasic
+     */
+    public function setBillingSchedule(SearchColumnSelectField $billingSchedule): JobSearchRowBasic
+    {
+        $this->billingSchedule[] = $billingSchedule;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillingSchedule(): array
+    {
+        return $this->billingSchedule;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billPhone
+     * @return JobSearchRowBasic
+     */
+    public function setBillPhone(SearchColumnStringField $billPhone): JobSearchRowBasic
+    {
+        $this->billPhone[] = $billPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillPhone(): array
+    {
+        return $this->billPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billState
+     * @return JobSearchRowBasic
+     */
+    public function setBillState(SearchColumnStringField $billState): JobSearchRowBasic
+    {
+        $this->billState[] = $billState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillState(): array
+    {
+        return $this->billState;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billZipCode
+     * @return JobSearchRowBasic
+     */
+    public function setBillZipCode(SearchColumnStringField $billZipCode): JobSearchRowBasic
+    {
+        $this->billZipCode[] = $billZipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillZipCode(): array
+    {
+        return $this->billZipCode;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $calculatedEndDate
+     * @return JobSearchRowBasic
+     */
+    public function setCalculatedEndDate(SearchColumnDateField $calculatedEndDate): JobSearchRowBasic
+    {
+        $this->calculatedEndDate[] = $calculatedEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCalculatedEndDate(): array
+    {
+        return $this->calculatedEndDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $calculatedEndDateBaseline
+     * @return JobSearchRowBasic
+     */
+    public function setCalculatedEndDateBaseline(SearchColumnDateField $calculatedEndDateBaseline): JobSearchRowBasic
+    {
+        $this->calculatedEndDateBaseline[] = $calculatedEndDateBaseline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCalculatedEndDateBaseline(): array
+    {
+        return $this->calculatedEndDateBaseline;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $calculatedStartDate
+     * @return JobSearchRowBasic
+     */
+    public function setCalculatedStartDate(SearchColumnDateField $calculatedStartDate): JobSearchRowBasic
+    {
+        $this->calculatedStartDate[] = $calculatedStartDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCalculatedStartDate(): array
+    {
+        return $this->calculatedStartDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $category
+     * @return JobSearchRowBasic
+     */
+    public function setCategory(SearchColumnSelectField $category): JobSearchRowBasic
+    {
+        $this->category[] = $category;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCategory(): array
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $city
+     * @return JobSearchRowBasic
+     */
+    public function setCity(SearchColumnStringField $city): JobSearchRowBasic
+    {
+        $this->city[] = $city;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCity(): array
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $comments
+     * @return JobSearchRowBasic
+     */
+    public function setComments(SearchColumnStringField $comments): JobSearchRowBasic
+    {
+        $this->comments[] = $comments;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getComments(): array
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $companyName
+     * @return JobSearchRowBasic
+     */
+    public function setCompanyName(SearchColumnStringField $companyName): JobSearchRowBasic
+    {
+        $this->companyName[] = $companyName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCompanyName(): array
+    {
+        return $this->companyName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $contact
+     * @return JobSearchRowBasic
+     */
+    public function setContact(SearchColumnStringField $contact): JobSearchRowBasic
+    {
+        $this->contact[] = $contact;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getContact(): array
+    {
+        return $this->contact;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $country
+     * @return JobSearchRowBasic
+     */
+    public function setCountry(SearchColumnEnumSelectField $country): JobSearchRowBasic
+    {
+        $this->country[] = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCountry(): array
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $countryCode
+     * @return JobSearchRowBasic
+     */
+    public function setCountryCode(SearchColumnStringField $countryCode): JobSearchRowBasic
+    {
+        $this->countryCode[] = $countryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCountryCode(): array
+    {
+        return $this->countryCode;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $customer
+     * @return JobSearchRowBasic
+     */
+    public function setCustomer(SearchColumnSelectField $customer): JobSearchRowBasic
+    {
+        $this->customer[] = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustomer(): array
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateCreated
+     * @return JobSearchRowBasic
+     */
+    public function setDateCreated(SearchColumnDateField $dateCreated): JobSearchRowBasic
+    {
+        $this->dateCreated[] = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateCreated(): array
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $defaultTaxReg
+     * @return JobSearchRowBasic
+     */
+    public function setDefaultTaxReg(SearchColumnStringField $defaultTaxReg): JobSearchRowBasic
+    {
+        $this->defaultTaxReg[] = $defaultTaxReg;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDefaultTaxReg(): array
+    {
+        return $this->defaultTaxReg;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $email
+     * @return JobSearchRowBasic
+     */
+    public function setEmail(SearchColumnStringField $email): JobSearchRowBasic
+    {
+        $this->email[] = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEmail(): array
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $endDate
+     * @return JobSearchRowBasic
+     */
+    public function setEndDate(SearchColumnDateField $endDate): JobSearchRowBasic
+    {
+        $this->endDate[] = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEndDate(): array
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $entityId
+     * @return JobSearchRowBasic
+     */
+    public function setEntityId(SearchColumnStringField $entityId): JobSearchRowBasic
+    {
+        $this->entityId[] = $entityId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEntityId(): array
+    {
+        return $this->entityId;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $entityNumber
+     * @return JobSearchRowBasic
+     */
+    public function setEntityNumber(SearchColumnLongField $entityNumber): JobSearchRowBasic
+    {
+        $this->entityNumber[] = $entityNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getEntityNumber(): array
+    {
+        return $this->entityNumber;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $entityStatus
+     * @return JobSearchRowBasic
+     */
+    public function setEntityStatus(SearchColumnSelectField $entityStatus): JobSearchRowBasic
+    {
+        $this->entityStatus[] = $entityStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEntityStatus(): array
+    {
+        return $this->entityStatus;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedCost
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedCost(SearchColumnDoubleField $estimatedCost): JobSearchRowBasic
+    {
+        $this->estimatedCost[] = $estimatedCost;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedCost(): array
+    {
+        return $this->estimatedCost;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedGrossProfit
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedGrossProfit(SearchColumnDoubleField $estimatedGrossProfit): JobSearchRowBasic
+    {
+        $this->estimatedGrossProfit[] = $estimatedGrossProfit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedGrossProfit(): array
+    {
+        return $this->estimatedGrossProfit;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedGrossProfitPercent
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedGrossProfitPercent(SearchColumnDoubleField $estimatedGrossProfitPercent): JobSearchRowBasic
+    {
+        $this->estimatedGrossProfitPercent[] = $estimatedGrossProfitPercent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedGrossProfitPercent(): array
+    {
+        return $this->estimatedGrossProfitPercent;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedLaborCost
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedLaborCost(SearchColumnDoubleField $estimatedLaborCost): JobSearchRowBasic
+    {
+        $this->estimatedLaborCost[] = $estimatedLaborCost;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedLaborCost(): array
+    {
+        return $this->estimatedLaborCost;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedLaborCostBaseline
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedLaborCostBaseline(SearchColumnDoubleField $estimatedLaborCostBaseline): JobSearchRowBasic
+    {
+        $this->estimatedLaborCostBaseline[] = $estimatedLaborCostBaseline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedLaborCostBaseline(): array
+    {
+        return $this->estimatedLaborCostBaseline;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedLaborRevenue
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedLaborRevenue(SearchColumnDoubleField $estimatedLaborRevenue): JobSearchRowBasic
+    {
+        $this->estimatedLaborRevenue[] = $estimatedLaborRevenue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedLaborRevenue(): array
+    {
+        return $this->estimatedLaborRevenue;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedRevenue
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedRevenue(SearchColumnDoubleField $estimatedRevenue): JobSearchRowBasic
+    {
+        $this->estimatedRevenue[] = $estimatedRevenue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedRevenue(): array
+    {
+        return $this->estimatedRevenue;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedTime
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedTime(SearchColumnDoubleField $estimatedTime): JobSearchRowBasic
+    {
+        $this->estimatedTime[] = $estimatedTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedTime(): array
+    {
+        return $this->estimatedTime;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedTimeOverride
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedTimeOverride(SearchColumnDoubleField $estimatedTimeOverride): JobSearchRowBasic
+    {
+        $this->estimatedTimeOverride[] = $estimatedTimeOverride;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedTimeOverride(): array
+    {
+        return $this->estimatedTimeOverride;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estimatedTimeOverrideBaseline
+     * @return JobSearchRowBasic
+     */
+    public function setEstimatedTimeOverrideBaseline(SearchColumnDoubleField $estimatedTimeOverrideBaseline): JobSearchRowBasic
+    {
+        $this->estimatedTimeOverrideBaseline[] = $estimatedTimeOverrideBaseline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstimatedTimeOverrideBaseline(): array
+    {
+        return $this->estimatedTimeOverrideBaseline;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return JobSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): JobSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $fax
+     * @return JobSearchRowBasic
+     */
+    public function setFax(SearchColumnStringField $fax): JobSearchRowBasic
+    {
+        $this->fax[] = $fax;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFax(): array
+    {
+        return $this->fax;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $globalSubscriptionStatus
+     * @return JobSearchRowBasic
+     */
+    public function setGlobalSubscriptionStatus(SearchColumnEnumSelectField $globalSubscriptionStatus): JobSearchRowBasic
+    {
+        $this->globalSubscriptionStatus[] = $globalSubscriptionStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getGlobalSubscriptionStatus(): array
+    {
+        return $this->globalSubscriptionStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $image
+     * @return JobSearchRowBasic
+     */
+    public function setImage(SearchColumnSelectField $image): JobSearchRowBasic
+    {
+        $this->image[] = $image;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getImage(): array
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $includeCrmTasksInTotals
+     * @return JobSearchRowBasic
+     */
+    public function setIncludeCrmTasksInTotals(SearchColumnBooleanField $includeCrmTasksInTotals): JobSearchRowBasic
+    {
+        $this->includeCrmTasksInTotals[] = $includeCrmTasksInTotals;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIncludeCrmTasksInTotals(): array
+    {
+        return $this->includeCrmTasksInTotals;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return JobSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): JobSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDefaultBilling
+     * @return JobSearchRowBasic
+     */
+    public function setIsDefaultBilling(SearchColumnBooleanField $isDefaultBilling): JobSearchRowBasic
+    {
+        $this->isDefaultBilling[] = $isDefaultBilling;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDefaultBilling(): array
+    {
+        return $this->isDefaultBilling;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDefaultShipping
+     * @return JobSearchRowBasic
+     */
+    public function setIsDefaultShipping(SearchColumnBooleanField $isDefaultShipping): JobSearchRowBasic
+    {
+        $this->isDefaultShipping[] = $isDefaultShipping;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDefaultShipping(): array
+    {
+        return $this->isDefaultShipping;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isExemptTime
+     * @return JobSearchRowBasic
+     */
+    public function setIsExemptTime(SearchColumnBooleanField $isExemptTime): JobSearchRowBasic
+    {
+        $this->isExemptTime[] = $isExemptTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsExemptTime(): array
+    {
+        return $this->isExemptTime;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return JobSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): JobSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isProductiveTime
+     * @return JobSearchRowBasic
+     */
+    public function setIsProductiveTime(SearchColumnBooleanField $isProductiveTime): JobSearchRowBasic
+    {
+        $this->isProductiveTime[] = $isProductiveTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsProductiveTime(): array
+    {
+        return $this->isProductiveTime;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isUtilizedTime
+     * @return JobSearchRowBasic
+     */
+    public function setIsUtilizedTime(SearchColumnBooleanField $isUtilizedTime): JobSearchRowBasic
+    {
+        $this->isUtilizedTime[] = $isUtilizedTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsUtilizedTime(): array
+    {
+        return $this->isUtilizedTime;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $jobBillingType
+     * @return JobSearchRowBasic
+     */
+    public function setJobBillingType(SearchColumnEnumSelectField $jobBillingType): JobSearchRowBasic
+    {
+        $this->jobBillingType[] = $jobBillingType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getJobBillingType(): array
+    {
+        return $this->jobBillingType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $jobItem
+     * @return JobSearchRowBasic
+     */
+    public function setJobItem(SearchColumnSelectField $jobItem): JobSearchRowBasic
+    {
+        $this->jobItem[] = $jobItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getJobItem(): array
+    {
+        return $this->jobItem;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $jobPrice
+     * @return JobSearchRowBasic
+     */
+    public function setJobPrice(SearchColumnDoubleField $jobPrice): JobSearchRowBasic
+    {
+        $this->jobPrice[] = $jobPrice;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getJobPrice(): array
+    {
+        return $this->jobPrice;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $jobResource
+     * @return JobSearchRowBasic
+     */
+    public function setJobResource(SearchColumnSelectField $jobResource): JobSearchRowBasic
+    {
+        $this->jobResource[] = $jobResource;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getJobResource(): array
+    {
+        return $this->jobResource;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $jobResourceRole
+     * @return JobSearchRowBasic
+     */
+    public function setJobResourceRole(SearchColumnSelectField $jobResourceRole): JobSearchRowBasic
+    {
+        $this->jobResourceRole[] = $jobResourceRole;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getJobResourceRole(): array
+    {
+        return $this->jobResourceRole;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $language
+     * @return JobSearchRowBasic
+     */
+    public function setLanguage(SearchColumnEnumSelectField $language): JobSearchRowBasic
+    {
+        $this->language[] = $language;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getLanguage(): array
+    {
+        return $this->language;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastBaselineDate
+     * @return JobSearchRowBasic
+     */
+    public function setLastBaselineDate(SearchColumnDateField $lastBaselineDate): JobSearchRowBasic
+    {
+        $this->lastBaselineDate[] = $lastBaselineDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastBaselineDate(): array
+    {
+        return $this->lastBaselineDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return JobSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): JobSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $level
+     * @return JobSearchRowBasic
+     */
+    public function setLevel(SearchColumnEnumSelectField $level): JobSearchRowBasic
+    {
+        $this->level[] = $level;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getLevel(): array
+    {
+        return $this->level;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $limitTimeToAssignees
+     * @return JobSearchRowBasic
+     */
+    public function setLimitTimeToAssignees(SearchColumnBooleanField $limitTimeToAssignees): JobSearchRowBasic
+    {
+        $this->limitTimeToAssignees[] = $limitTimeToAssignees;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getLimitTimeToAssignees(): array
+    {
+        return $this->limitTimeToAssignees;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $materializeTime
+     * @return JobSearchRowBasic
+     */
+    public function setMaterializeTime(SearchColumnBooleanField $materializeTime): JobSearchRowBasic
+    {
+        $this->materializeTime[] = $materializeTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getMaterializeTime(): array
+    {
+        return $this->materializeTime;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $percentComplete
+     * @return JobSearchRowBasic
+     */
+    public function setPercentComplete(SearchColumnDoubleField $percentComplete): JobSearchRowBasic
+    {
+        $this->percentComplete[] = $percentComplete;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPercentComplete(): array
+    {
+        return $this->percentComplete;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $percentTimeComplete
+     * @return JobSearchRowBasic
+     */
+    public function setPercentTimeComplete(SearchColumnDoubleField $percentTimeComplete): JobSearchRowBasic
+    {
+        $this->percentTimeComplete[] = $percentTimeComplete;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPercentTimeComplete(): array
+    {
+        return $this->percentTimeComplete;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $permission
+     * @return JobSearchRowBasic
+     */
+    public function setPermission(SearchColumnEnumSelectField $permission): JobSearchRowBasic
+    {
+        $this->permission[] = $permission;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPermission(): array
+    {
+        return $this->permission;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $phone
+     * @return JobSearchRowBasic
+     */
+    public function setPhone(SearchColumnStringField $phone): JobSearchRowBasic
+    {
+        $this->phone[] = $phone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPhone(): array
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $phoneticName
+     * @return JobSearchRowBasic
+     */
+    public function setPhoneticName(SearchColumnStringField $phoneticName): JobSearchRowBasic
+    {
+        $this->phoneticName[] = $phoneticName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPhoneticName(): array
+    {
+        return $this->phoneticName;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $plannedWork
+     * @return JobSearchRowBasic
+     */
+    public function setPlannedWork(SearchColumnDoubleField $plannedWork): JobSearchRowBasic
+    {
+        $this->plannedWork[] = $plannedWork;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPlannedWork(): array
+    {
+        return $this->plannedWork;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $plannedWorkBaseline
+     * @return JobSearchRowBasic
+     */
+    public function setPlannedWorkBaseline(SearchColumnDoubleField $plannedWorkBaseline): JobSearchRowBasic
+    {
+        $this->plannedWorkBaseline[] = $plannedWorkBaseline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPlannedWorkBaseline(): array
+    {
+        return $this->plannedWorkBaseline;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $projectedEndDate
+     * @return JobSearchRowBasic
+     */
+    public function setProjectedEndDate(SearchColumnDateField $projectedEndDate): JobSearchRowBasic
+    {
+        $this->projectedEndDate[] = $projectedEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getProjectedEndDate(): array
+    {
+        return $this->projectedEndDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $projectedEndDateBaseline
+     * @return JobSearchRowBasic
+     */
+    public function setProjectedEndDateBaseline(SearchColumnDateField $projectedEndDateBaseline): JobSearchRowBasic
+    {
+        $this->projectedEndDateBaseline[] = $projectedEndDateBaseline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getProjectedEndDateBaseline(): array
+    {
+        return $this->projectedEndDateBaseline;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $projectExpenseType
+     * @return JobSearchRowBasic
+     */
+    public function setProjectExpenseType(SearchColumnSelectField $projectExpenseType): JobSearchRowBasic
+    {
+        $this->projectExpenseType[] = $projectExpenseType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getProjectExpenseType(): array
+    {
+        return $this->projectExpenseType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $projectManager
+     * @return JobSearchRowBasic
+     */
+    public function setProjectManager(SearchColumnSelectField $projectManager): JobSearchRowBasic
+    {
+        $this->projectManager[] = $projectManager;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getProjectManager(): array
+    {
+        return $this->projectManager;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $revRecForecastRule
+     * @return JobSearchRowBasic
+     */
+    public function setRevRecForecastRule(SearchColumnSelectField $revRecForecastRule): JobSearchRowBasic
+    {
+        $this->revRecForecastRule[] = $revRecForecastRule;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getRevRecForecastRule(): array
+    {
+        return $this->revRecForecastRule;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $scheduledEndDate
+     * @return JobSearchRowBasic
+     */
+    public function setScheduledEndDate(SearchColumnDateField $scheduledEndDate): JobSearchRowBasic
+    {
+        $this->scheduledEndDate[] = $scheduledEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getScheduledEndDate(): array
+    {
+        return $this->scheduledEndDate;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $schedulingMethod
+     * @return JobSearchRowBasic
+     */
+    public function setSchedulingMethod(SearchColumnEnumSelectField $schedulingMethod): JobSearchRowBasic
+    {
+        $this->schedulingMethod[] = $schedulingMethod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getSchedulingMethod(): array
+    {
+        return $this->schedulingMethod;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAddressee
+     * @return JobSearchRowBasic
+     */
+    public function setShipAddressee(SearchColumnStringField $shipAddressee): JobSearchRowBasic
+    {
+        $this->shipAddressee[] = $shipAddressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAddressee(): array
+    {
+        return $this->shipAddressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAttention
+     * @return JobSearchRowBasic
+     */
+    public function setShipAttention(SearchColumnStringField $shipAttention): JobSearchRowBasic
+    {
+        $this->shipAttention[] = $shipAttention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAttention(): array
+    {
+        return $this->shipAttention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipCity
+     * @return JobSearchRowBasic
+     */
+    public function setShipCity(SearchColumnStringField $shipCity): JobSearchRowBasic
+    {
+        $this->shipCity[] = $shipCity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipCity(): array
+    {
+        return $this->shipCity;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $shipCountry
+     * @return JobSearchRowBasic
+     */
+    public function setShipCountry(SearchColumnEnumSelectField $shipCountry): JobSearchRowBasic
+    {
+        $this->shipCountry[] = $shipCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getShipCountry(): array
+    {
+        return $this->shipCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipCountryCode
+     * @return JobSearchRowBasic
+     */
+    public function setShipCountryCode(SearchColumnStringField $shipCountryCode): JobSearchRowBasic
+    {
+        $this->shipCountryCode[] = $shipCountryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipCountryCode(): array
+    {
+        return $this->shipCountryCode;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipPhone
+     * @return JobSearchRowBasic
+     */
+    public function setShipPhone(SearchColumnStringField $shipPhone): JobSearchRowBasic
+    {
+        $this->shipPhone[] = $shipPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipPhone(): array
+    {
+        return $this->shipPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipState
+     * @return JobSearchRowBasic
+     */
+    public function setShipState(SearchColumnStringField $shipState): JobSearchRowBasic
+    {
+        $this->shipState[] = $shipState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipState(): array
+    {
+        return $this->shipState;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipZip
+     * @return JobSearchRowBasic
+     */
+    public function setShipZip(SearchColumnStringField $shipZip): JobSearchRowBasic
+    {
+        $this->shipZip[] = $shipZip;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipZip(): array
+    {
+        return $this->shipZip;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $sourceServiceItemFromRateCard
+     * @return JobSearchRowBasic
+     */
+    public function setSourceServiceItemFromRateCard(SearchColumnBooleanField $sourceServiceItemFromRateCard): JobSearchRowBasic
+    {
+        $this->sourceServiceItemFromRateCard[] = $sourceServiceItemFromRateCard;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getSourceServiceItemFromRateCard(): array
+    {
+        return $this->sourceServiceItemFromRateCard;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startDate
+     * @return JobSearchRowBasic
+     */
+    public function setStartDate(SearchColumnDateField $startDate): JobSearchRowBasic
+    {
+        $this->startDate[] = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartDate(): array
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startDateBaseline
+     * @return JobSearchRowBasic
+     */
+    public function setStartDateBaseline(SearchColumnDateField $startDateBaseline): JobSearchRowBasic
+    {
+        $this->startDateBaseline[] = $startDateBaseline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartDateBaseline(): array
+    {
+        return $this->startDateBaseline;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $state
+     * @return JobSearchRowBasic
+     */
+    public function setState(SearchColumnStringField $state): JobSearchRowBasic
+    {
+        $this->state[] = $state;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getState(): array
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subscription
+     * @return JobSearchRowBasic
+     */
+    public function setSubscription(SearchColumnSelectField $subscription): JobSearchRowBasic
+    {
+        $this->subscription[] = $subscription;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubscription(): array
+    {
+        return $this->subscription;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $subscriptionDate
+     * @return JobSearchRowBasic
+     */
+    public function setSubscriptionDate(SearchColumnDateField $subscriptionDate): JobSearchRowBasic
+    {
+        $this->subscriptionDate[] = $subscriptionDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getSubscriptionDate(): array
+    {
+        return $this->subscriptionDate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $subscriptionStatus
+     * @return JobSearchRowBasic
+     */
+    public function setSubscriptionStatus(SearchColumnBooleanField $subscriptionStatus): JobSearchRowBasic
+    {
+        $this->subscriptionStatus[] = $subscriptionStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getSubscriptionStatus(): array
+    {
+        return $this->subscriptionStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return JobSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): JobSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $timeApproval
+     * @return JobSearchRowBasic
+     */
+    public function setTimeApproval(SearchColumnSelectField $timeApproval): JobSearchRowBasic
+    {
+        $this->timeApproval[] = $timeApproval;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTimeApproval(): array
+    {
+        return $this->timeApproval;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $timeRemaining
+     * @return JobSearchRowBasic
+     */
+    public function setTimeRemaining(SearchColumnDoubleField $timeRemaining): JobSearchRowBasic
+    {
+        $this->timeRemaining[] = $timeRemaining;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTimeRemaining(): array
+    {
+        return $this->timeRemaining;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $usePercentCompleteOverride
+     * @return JobSearchRowBasic
+     */
+    public function setUsePercentCompleteOverride(SearchColumnBooleanField $usePercentCompleteOverride): JobSearchRowBasic
+    {
+        $this->usePercentCompleteOverride[] = $usePercentCompleteOverride;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getUsePercentCompleteOverride(): array
+    {
+        return $this->usePercentCompleteOverride;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $zipCode
+     * @return JobSearchRowBasic
+     */
+    public function setZipCode(SearchColumnStringField $zipCode): JobSearchRowBasic
+    {
+        $this->zipCode[] = $zipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getZipCode(): array
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return JobSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): JobSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

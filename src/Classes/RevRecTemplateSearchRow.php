@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class RevRecTemplateSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\RevRecTemplateSearchRowBasic
+     * @var RevRecTemplateSearchRowBasic
      */
-    public $basic;
+    protected RevRecTemplateSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "RevRecTemplateSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
     );
+
+    /**
+     * @param RevRecTemplateSearchRowBasic $basic
+     * @return RevRecTemplateSearchRow
+     */
+    public function setBasic(RevRecTemplateSearchRowBasic $basic): RevRecTemplateSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return RevRecTemplateSearchRowBasic
+     */
+    public function getBasic(): RevRecTemplateSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return RevRecTemplateSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): RevRecTemplateSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
 }

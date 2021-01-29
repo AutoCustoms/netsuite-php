@@ -14,160 +14,185 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PurchaseOrderItem {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
      * @var float
      */
-    public $quantityOnShipments;
+    protected float $quantityOnShipments;
+
     /**
      * @var string
      */
-    public $vendorName;
+    protected string $vendorName;
+
     /**
      * @var float
      */
-    public $quantityReceived;
+    protected float $quantityReceived;
+
     /**
      * @var float
      */
-    public $quantityBilled;
+    protected float $quantityBilled;
+
     /**
      * @var float
      */
-    public $quantityAvailable;
+    protected float $quantityAvailable;
+
     /**
      * @var float
      */
-    public $quantityOnHand;
+    protected float $quantityOnHand;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxCode;
-    /**
-     * @var float
-     */
-    public $taxRate1;
-    /**
-     * @var float
-     */
-    public $taxRate2;
+    protected RecordRef $taxCode;
+
+    protected $taxRate1;
+    protected $taxRate2;
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
+    protected $tax1Amt;
     /**
      * @var float
      */
-    public $tax1Amt;
+    protected float $grossAmt;
+
     /**
-     * @var float
+     * @var RecordRef
      */
-    public $grossAmt;
+    protected RecordRef $units;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var InventoryDetail
      */
-    public $units;
-    /**
-     * @var \NetSuite\Classes\InventoryDetail
-     */
-    public $inventoryDetail;
+    protected InventoryDetail $inventoryDetail;
+
     /**
      * @var string
      */
-    public $serialNumbers;
+    protected string $serialNumbers;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $purchaseContract;
+    protected RecordRef $purchaseContract;
+
     /**
      * @var string
      */
-    public $rate;
+    protected string $rate;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $options;
+    protected CustomFieldList $options;
+
     /**
      * @var float
      */
-    public $taxAmount;
+    protected float $taxAmount;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $landedCostCategory;
+    protected RecordRef $landedCostCategory;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customer;
+    protected RecordRef $customer;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isBillable;
+    protected bool $isBillable;
+
     /**
-     * @var \NetSuite\Classes\TransactionBillVarianceStatus
+     * @var TransactionBillVarianceStatus
      */
-    public $billVarianceStatus;
+    protected TransactionBillVarianceStatus $billVarianceStatus;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $matchBillToReceipt;
+    protected bool $matchBillToReceipt;
+
     /**
      * @var string
      */
-    public $expectedReceiptDate;
+    protected string $expectedReceiptDate;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isClosed;
+    protected bool $isClosed;
+
     /**
      * @var string
      */
-    public $taxDetailsReference;
+    protected string $taxDetailsReference;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $createdFrom;
+    protected RecordRef $createdFrom;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $linkedOrderList;
+    protected RecordRefList $linkedOrderList;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "item" => "RecordRef",
         "line" => "integer",
@@ -207,4 +232,617 @@ class PurchaseOrderItem {
         "linkedOrderList" => "RecordRefList",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param RecordRef $item
+     * @return PurchaseOrderItem
+     */
+    public function setItem(RecordRef $item): PurchaseOrderItem
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param int $line
+     * @return PurchaseOrderItem
+     */
+    public function setLine(int $line): PurchaseOrderItem
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param float $quantityOnShipments
+     * @return PurchaseOrderItem
+     */
+    public function setQuantityOnShipments(float $quantityOnShipments): PurchaseOrderItem
+    {
+        $this->quantityOnShipments = $quantityOnShipments;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnShipments(): float
+    {
+        return $this->quantityOnShipments;
+    }
+
+    /**
+     * @param string $vendorName
+     * @return PurchaseOrderItem
+     */
+    public function setVendorName(string $vendorName): PurchaseOrderItem
+    {
+        $this->vendorName = $vendorName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVendorName(): string
+    {
+        return $this->vendorName;
+    }
+
+    /**
+     * @param float $quantityReceived
+     * @return PurchaseOrderItem
+     */
+    public function setQuantityReceived(float $quantityReceived): PurchaseOrderItem
+    {
+        $this->quantityReceived = $quantityReceived;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityReceived(): float
+    {
+        return $this->quantityReceived;
+    }
+
+    /**
+     * @param float $quantityBilled
+     * @return PurchaseOrderItem
+     */
+    public function setQuantityBilled(float $quantityBilled): PurchaseOrderItem
+    {
+        $this->quantityBilled = $quantityBilled;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityBilled(): float
+    {
+        return $this->quantityBilled;
+    }
+
+    /**
+     * @param float $quantityAvailable
+     * @return PurchaseOrderItem
+     */
+    public function setQuantityAvailable(float $quantityAvailable): PurchaseOrderItem
+    {
+        $this->quantityAvailable = $quantityAvailable;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityAvailable(): float
+    {
+        return $this->quantityAvailable;
+    }
+
+    /**
+     * @param float $quantityOnHand
+     * @return PurchaseOrderItem
+     */
+    public function setQuantityOnHand(float $quantityOnHand): PurchaseOrderItem
+    {
+        $this->quantityOnHand = $quantityOnHand;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnHand(): float
+    {
+        return $this->quantityOnHand;
+    }
+
+    /**
+     * @param RecordRef $taxCode
+     * @return PurchaseOrderItem
+     */
+    public function setTaxCode(RecordRef $taxCode): PurchaseOrderItem
+    {
+        $this->taxCode = $taxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxCode(): RecordRef
+    {
+        return $this->taxCode;
+    }
+
+    /**
+     * @param float $quantity
+     * @return PurchaseOrderItem
+     */
+    public function setQuantity(float $quantity): PurchaseOrderItem
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param float $grossAmt
+     * @return PurchaseOrderItem
+     */
+    public function setGrossAmt(float $grossAmt): PurchaseOrderItem
+    {
+        $this->grossAmt = $grossAmt;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getGrossAmt(): float
+    {
+        return $this->grossAmt;
+    }
+
+    /**
+     * @param RecordRef $units
+     * @return PurchaseOrderItem
+     */
+    public function setUnits(RecordRef $units): PurchaseOrderItem
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnits(): RecordRef
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return PurchaseOrderItem
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): PurchaseOrderItem
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param string $serialNumbers
+     * @return PurchaseOrderItem
+     */
+    public function setSerialNumbers(string $serialNumbers): PurchaseOrderItem
+    {
+        $this->serialNumbers = $serialNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSerialNumbers(): string
+    {
+        return $this->serialNumbers;
+    }
+
+    /**
+     * @param string $description
+     * @return PurchaseOrderItem
+     */
+    public function setDescription(string $description): PurchaseOrderItem
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param RecordRef $purchaseContract
+     * @return PurchaseOrderItem
+     */
+    public function setPurchaseContract(RecordRef $purchaseContract): PurchaseOrderItem
+    {
+        $this->purchaseContract = $purchaseContract;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPurchaseContract(): RecordRef
+    {
+        return $this->purchaseContract;
+    }
+
+    /**
+     * @param string $rate
+     * @return PurchaseOrderItem
+     */
+    public function setRate(string $rate): PurchaseOrderItem
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRate(): string
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param float $amount
+     * @return PurchaseOrderItem
+     */
+    public function setAmount(float $amount): PurchaseOrderItem
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param CustomFieldList $options
+     * @return PurchaseOrderItem
+     */
+    public function setOptions(CustomFieldList $options): PurchaseOrderItem
+    {
+        $this->options = $options;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getOptions(): CustomFieldList
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param float $taxAmount
+     * @return PurchaseOrderItem
+     */
+    public function setTaxAmount(float $taxAmount): PurchaseOrderItem
+    {
+        $this->taxAmount = $taxAmount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTaxAmount(): float
+    {
+        return $this->taxAmount;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return PurchaseOrderItem
+     */
+    public function setDepartment(RecordRef $department): PurchaseOrderItem
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return PurchaseOrderItem
+     */
+    public function setClass(RecordRef $class): PurchaseOrderItem
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return PurchaseOrderItem
+     */
+    public function setLocation(RecordRef $location): PurchaseOrderItem
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $landedCostCategory
+     * @return PurchaseOrderItem
+     */
+    public function setLandedCostCategory(RecordRef $landedCostCategory): PurchaseOrderItem
+    {
+        $this->landedCostCategory = $landedCostCategory;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLandedCostCategory(): RecordRef
+    {
+        return $this->landedCostCategory;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return PurchaseOrderItem
+     */
+    public function setCustomer(RecordRef $customer): PurchaseOrderItem
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param bool $isBillable
+     * @return PurchaseOrderItem
+     */
+    public function setIsBillable(bool $isBillable): PurchaseOrderItem
+    {
+        $this->isBillable = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBillable(): bool
+    {
+        return $this->isBillable;
+    }
+
+    /**
+     * @param TransactionBillVarianceStatus $billVarianceStatus
+     * @return PurchaseOrderItem
+     */
+    public function setBillVarianceStatus(TransactionBillVarianceStatus $billVarianceStatus): PurchaseOrderItem
+    {
+        $this->billVarianceStatus = $billVarianceStatus;
+        return $this;
+    }
+
+    /**
+     * @return TransactionBillVarianceStatus
+     */
+    public function getBillVarianceStatus(): TransactionBillVarianceStatus
+    {
+        return $this->billVarianceStatus;
+    }
+
+    /**
+     * @param bool $matchBillToReceipt
+     * @return PurchaseOrderItem
+     */
+    public function setMatchBillToReceipt(bool $matchBillToReceipt): PurchaseOrderItem
+    {
+        $this->matchBillToReceipt = $matchBillToReceipt;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getMatchBillToReceipt(): bool
+    {
+        return $this->matchBillToReceipt;
+    }
+
+    /**
+     * @param string $expectedReceiptDate
+     * @return PurchaseOrderItem
+     */
+    public function setExpectedReceiptDate(string $expectedReceiptDate): PurchaseOrderItem
+    {
+        $this->expectedReceiptDate = $expectedReceiptDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExpectedReceiptDate(): string
+    {
+        return $this->expectedReceiptDate;
+    }
+
+    /**
+     * @param bool $isClosed
+     * @return PurchaseOrderItem
+     */
+    public function setIsClosed(bool $isClosed): PurchaseOrderItem
+    {
+        $this->isClosed = $isClosed;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsClosed(): bool
+    {
+        return $this->isClosed;
+    }
+
+    /**
+     * @param string $taxDetailsReference
+     * @return PurchaseOrderItem
+     */
+    public function setTaxDetailsReference(string $taxDetailsReference): PurchaseOrderItem
+    {
+        $this->taxDetailsReference = $taxDetailsReference;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxDetailsReference(): string
+    {
+        return $this->taxDetailsReference;
+    }
+
+    /**
+     * @param RecordRef $createdFrom
+     * @return PurchaseOrderItem
+     */
+    public function setCreatedFrom(RecordRef $createdFrom): PurchaseOrderItem
+    {
+        $this->createdFrom = $createdFrom;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCreatedFrom(): RecordRef
+    {
+        return $this->createdFrom;
+    }
+
+    /**
+     * @param RecordRefList $linkedOrderList
+     * @return PurchaseOrderItem
+     */
+    public function setLinkedOrderList(RecordRefList $linkedOrderList): PurchaseOrderItem
+    {
+        $this->linkedOrderList = $linkedOrderList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getLinkedOrderList(): RecordRefList
+    {
+        return $this->linkedOrderList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return PurchaseOrderItem
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): PurchaseOrderItem
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

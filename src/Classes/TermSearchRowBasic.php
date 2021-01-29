@@ -14,84 +14,102 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TermSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $dateDriven;
+    protected array $dateDriven;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $dayDiscountExpires;
+    protected array $dayDiscountExpires;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $dayOfMonthNetDue;
+    protected array $dayOfMonthNetDue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $daysUntilExpiry;
+    protected array $daysUntilExpiry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $daysUntilNetDue;
+    protected array $daysUntilNetDue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $discountPercent;
+    protected array $discountPercent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $discountPercentDateDriven;
+    protected array $discountPercentDateDriven;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $dueNextMonthIfWithinDays;
+    protected array $dueNextMonthIfWithinDays;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $installment;
+    protected array $installment;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $preferred;
+    protected array $preferred;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $recurrenceCount;
+    protected array $recurrenceCount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $recurrenceFrequency;
+    protected array $recurrenceFrequency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $repeatEvery;
+    protected array $repeatEvery;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $splitEvenly;
+    protected array $splitEvenly;
+
     static $paramtypesmap = array(
         "dateDriven" => "SearchColumnBooleanField[]",
         "dayDiscountExpires" => "SearchColumnLongField[]",
@@ -112,4 +130,329 @@ class TermSearchRowBasic extends SearchRowBasic {
         "repeatEvery" => "SearchColumnLongField[]",
         "splitEvenly" => "SearchColumnBooleanField[]",
     );
+
+    /**
+     * @param SearchColumnBooleanField[] $dateDriven
+     * @return TermSearchRowBasic
+     */
+    public function setDateDriven(SearchColumnBooleanField $dateDriven): TermSearchRowBasic
+    {
+        $this->dateDriven[] = $dateDriven;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getDateDriven(): array
+    {
+        return $this->dateDriven;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $dayDiscountExpires
+     * @return TermSearchRowBasic
+     */
+    public function setDayDiscountExpires(SearchColumnLongField $dayDiscountExpires): TermSearchRowBasic
+    {
+        $this->dayDiscountExpires[] = $dayDiscountExpires;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDayDiscountExpires(): array
+    {
+        return $this->dayDiscountExpires;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $dayOfMonthNetDue
+     * @return TermSearchRowBasic
+     */
+    public function setDayOfMonthNetDue(SearchColumnLongField $dayOfMonthNetDue): TermSearchRowBasic
+    {
+        $this->dayOfMonthNetDue[] = $dayOfMonthNetDue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDayOfMonthNetDue(): array
+    {
+        return $this->dayOfMonthNetDue;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $daysUntilExpiry
+     * @return TermSearchRowBasic
+     */
+    public function setDaysUntilExpiry(SearchColumnLongField $daysUntilExpiry): TermSearchRowBasic
+    {
+        $this->daysUntilExpiry[] = $daysUntilExpiry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDaysUntilExpiry(): array
+    {
+        return $this->daysUntilExpiry;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $daysUntilNetDue
+     * @return TermSearchRowBasic
+     */
+    public function setDaysUntilNetDue(SearchColumnLongField $daysUntilNetDue): TermSearchRowBasic
+    {
+        $this->daysUntilNetDue[] = $daysUntilNetDue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDaysUntilNetDue(): array
+    {
+        return $this->daysUntilNetDue;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $discountPercent
+     * @return TermSearchRowBasic
+     */
+    public function setDiscountPercent(SearchColumnDoubleField $discountPercent): TermSearchRowBasic
+    {
+        $this->discountPercent[] = $discountPercent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDiscountPercent(): array
+    {
+        return $this->discountPercent;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $discountPercentDateDriven
+     * @return TermSearchRowBasic
+     */
+    public function setDiscountPercentDateDriven(SearchColumnDoubleField $discountPercentDateDriven): TermSearchRowBasic
+    {
+        $this->discountPercentDateDriven[] = $discountPercentDateDriven;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDiscountPercentDateDriven(): array
+    {
+        return $this->discountPercentDateDriven;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $dueNextMonthIfWithinDays
+     * @return TermSearchRowBasic
+     */
+    public function setDueNextMonthIfWithinDays(SearchColumnLongField $dueNextMonthIfWithinDays): TermSearchRowBasic
+    {
+        $this->dueNextMonthIfWithinDays[] = $dueNextMonthIfWithinDays;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDueNextMonthIfWithinDays(): array
+    {
+        return $this->dueNextMonthIfWithinDays;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return TermSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): TermSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $installment
+     * @return TermSearchRowBasic
+     */
+    public function setInstallment(SearchColumnBooleanField $installment): TermSearchRowBasic
+    {
+        $this->installment[] = $installment;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getInstallment(): array
+    {
+        return $this->installment;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return TermSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): TermSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return TermSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): TermSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return TermSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): TermSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $preferred
+     * @return TermSearchRowBasic
+     */
+    public function setPreferred(SearchColumnBooleanField $preferred): TermSearchRowBasic
+    {
+        $this->preferred[] = $preferred;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPreferred(): array
+    {
+        return $this->preferred;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $recurrenceCount
+     * @return TermSearchRowBasic
+     */
+    public function setRecurrenceCount(SearchColumnLongField $recurrenceCount): TermSearchRowBasic
+    {
+        $this->recurrenceCount[] = $recurrenceCount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getRecurrenceCount(): array
+    {
+        return $this->recurrenceCount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $recurrenceFrequency
+     * @return TermSearchRowBasic
+     */
+    public function setRecurrenceFrequency(SearchColumnStringField $recurrenceFrequency): TermSearchRowBasic
+    {
+        $this->recurrenceFrequency[] = $recurrenceFrequency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRecurrenceFrequency(): array
+    {
+        return $this->recurrenceFrequency;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $repeatEvery
+     * @return TermSearchRowBasic
+     */
+    public function setRepeatEvery(SearchColumnLongField $repeatEvery): TermSearchRowBasic
+    {
+        $this->repeatEvery[] = $repeatEvery;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getRepeatEvery(): array
+    {
+        return $this->repeatEvery;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $splitEvenly
+     * @return TermSearchRowBasic
+     */
+    public function setSplitEvenly(SearchColumnBooleanField $splitEvenly): TermSearchRowBasic
+    {
+        $this->splitEvenly[] = $splitEvenly;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getSplitEvenly(): array
+    {
+        return $this->splitEvenly;
+    }
+
 }

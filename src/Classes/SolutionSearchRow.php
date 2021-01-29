@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SolutionSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\SolutionSearchRowBasic
+     * @var SolutionSearchRowBasic
      */
-    public $basic;
+    protected SolutionSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\SupportCaseSearchRowBasic
+     * @var SupportCaseSearchRowBasic
      */
-    public $caseJoin;
+    protected SupportCaseSearchRowBasic $caseJoin;
+
     /**
-     * @var \NetSuite\Classes\SolutionSearchRowBasic
+     * @var SolutionSearchRowBasic
      */
-    public $relatedSolutionJoin;
+    protected SolutionSearchRowBasic $relatedSolutionJoin;
+
     /**
-     * @var \NetSuite\Classes\TopicSearchRowBasic
+     * @var TopicSearchRowBasic
      */
-    public $topicJoin;
+    protected TopicSearchRowBasic $topicJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchRowBasic
+     * @var NoteSearchRowBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchRowBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "SolutionSearchRowBasic",
         "caseJoin" => "SupportCaseSearchRowBasic",
@@ -57,4 +64,131 @@ class SolutionSearchRow extends SearchRow {
         "userNotesJoin" => "NoteSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param SolutionSearchRowBasic $basic
+     * @return SolutionSearchRow
+     */
+    public function setBasic(SolutionSearchRowBasic $basic): SolutionSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return SolutionSearchRowBasic
+     */
+    public function getBasic(): SolutionSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param SupportCaseSearchRowBasic $caseJoin
+     * @return SolutionSearchRow
+     */
+    public function setCaseJoin(SupportCaseSearchRowBasic $caseJoin): SolutionSearchRow
+    {
+        $this->caseJoin = $caseJoin;
+        return $this;
+    }
+
+    /**
+     * @return SupportCaseSearchRowBasic
+     */
+    public function getCaseJoin(): SupportCaseSearchRowBasic
+    {
+        return $this->caseJoin;
+    }
+
+    /**
+     * @param SolutionSearchRowBasic $relatedSolutionJoin
+     * @return SolutionSearchRow
+     */
+    public function setRelatedSolutionJoin(SolutionSearchRowBasic $relatedSolutionJoin): SolutionSearchRow
+    {
+        $this->relatedSolutionJoin = $relatedSolutionJoin;
+        return $this;
+    }
+
+    /**
+     * @return SolutionSearchRowBasic
+     */
+    public function getRelatedSolutionJoin(): SolutionSearchRowBasic
+    {
+        return $this->relatedSolutionJoin;
+    }
+
+    /**
+     * @param TopicSearchRowBasic $topicJoin
+     * @return SolutionSearchRow
+     */
+    public function setTopicJoin(TopicSearchRowBasic $topicJoin): SolutionSearchRow
+    {
+        $this->topicJoin = $topicJoin;
+        return $this;
+    }
+
+    /**
+     * @return TopicSearchRowBasic
+     */
+    public function getTopicJoin(): TopicSearchRowBasic
+    {
+        return $this->topicJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return SolutionSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): SolutionSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchRowBasic $userNotesJoin
+     * @return SolutionSearchRow
+     */
+    public function setUserNotesJoin(NoteSearchRowBasic $userNotesJoin): SolutionSearchRow
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchRowBasic
+     */
+    public function getUserNotesJoin(): NoteSearchRowBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return SolutionSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): SolutionSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

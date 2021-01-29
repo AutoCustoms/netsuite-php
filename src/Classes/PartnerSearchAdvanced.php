@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PartnerSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PartnerSearch
+     * @var PartnerSearch
      */
-    public $criteria;
+    protected PartnerSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\PartnerSearchRow
+     * @var PartnerSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected PartnerSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "PartnerSearch",
         "columns" => "PartnerSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param PartnerSearch $criteria
+     * @return PartnerSearchAdvanced
+     */
+    public function setCriteria(PartnerSearch $criteria): PartnerSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return PartnerSearch
+     */
+    public function getCriteria(): PartnerSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param PartnerSearchRow $columns
+     * @return PartnerSearchAdvanced
+     */
+    public function setColumns(PartnerSearchRow $columns): PartnerSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return PartnerSearchRow
+     */
+    public function getColumns(): PartnerSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return PartnerSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): PartnerSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return PartnerSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): PartnerSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

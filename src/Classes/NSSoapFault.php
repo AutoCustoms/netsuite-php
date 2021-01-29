@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class NSSoapFault {
     /**
-     * @var \NetSuite\Classes\FaultCodeType
+     * @var FaultCodeType
      */
-    public $code;
+    protected FaultCodeType $code;
+
     /**
      * @var string
      */
-    public $message;
+    protected string $message;
+
     static $paramtypesmap = array(
         "code" => "FaultCodeType",
         "message" => "string",
     );
+
+    /**
+     * @param FaultCodeType $code
+     * @return NSSoapFault
+     */
+    public function setCode(FaultCodeType $code): NSSoapFault
+    {
+        $this->code = $code;
+        return $this;
+    }
+
+    /**
+     * @return FaultCodeType
+     */
+    public function getCode(): FaultCodeType
+    {
+        return $this->code;
+    }
+
+    /**
+     * @param string $message
+     * @return NSSoapFault
+     */
+    public function setMessage(string $message): NSSoapFault
+    {
+        $this->message = $message;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMessage(): string
+    {
+        return $this->message;
+    }
+
 }

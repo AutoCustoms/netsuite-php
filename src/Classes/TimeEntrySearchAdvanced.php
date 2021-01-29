@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeEntrySearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\TimeEntrySearch
+     * @var TimeEntrySearch
      */
-    public $criteria;
+    protected TimeEntrySearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\TimeEntrySearchRow
+     * @var TimeEntrySearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected TimeEntrySearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "TimeEntrySearch",
         "columns" => "TimeEntrySearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param TimeEntrySearch $criteria
+     * @return TimeEntrySearchAdvanced
+     */
+    public function setCriteria(TimeEntrySearch $criteria): TimeEntrySearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntrySearch
+     */
+    public function getCriteria(): TimeEntrySearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param TimeEntrySearchRow $columns
+     * @return TimeEntrySearchAdvanced
+     */
+    public function setColumns(TimeEntrySearchRow $columns): TimeEntrySearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntrySearchRow
+     */
+    public function getColumns(): TimeEntrySearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return TimeEntrySearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): TimeEntrySearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return TimeEntrySearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): TimeEntrySearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

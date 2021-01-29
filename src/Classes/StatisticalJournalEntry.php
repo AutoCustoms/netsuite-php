@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,71 +23,88 @@ class StatisticalJournalEntry extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $parentExpenseAlloc;
-    /**
-     * @var boolean
-     */
-    public $approved;
+    protected RecordRef $customForm;
+
     /**
      * @var string
      */
-    public $tranDate;
+    protected string $tranId;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $postingPeriod;
+    protected RecordRef $parentExpenseAlloc;
+
     /**
-     * @var string
+     * @var bool
      */
-    public $reversalDate;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var boolean
-     */
-    public $reversalDefer;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $unitsType;
-    /**
-     * @var \NetSuite\Classes\StatisticalJournalEntryLineList
-     */
-    public $lineList;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected bool $approved;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $tranDate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $postingPeriod;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $reversalDate;
+
+    /**
+     * @var string
+     */
+    protected string $memo;
+
+    /**
+     * @var bool
+     */
+    protected bool $reversalDefer;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $subsidiary;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $unitsType;
+
+    /**
+     * @var StatisticalJournalEntryLineList
+     */
+    protected StatisticalJournalEntryLineList $lineList;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
+    /**
+     * @var string
+     */
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -107,4 +124,311 @@ class StatisticalJournalEntry extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return StatisticalJournalEntry
+     */
+    public function setCreatedDate(string $createdDate): StatisticalJournalEntry
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return StatisticalJournalEntry
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): StatisticalJournalEntry
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return StatisticalJournalEntry
+     */
+    public function setCustomForm(RecordRef $customForm): StatisticalJournalEntry
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param string $tranId
+     * @return StatisticalJournalEntry
+     */
+    public function setTranId(string $tranId): StatisticalJournalEntry
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param RecordRef $parentExpenseAlloc
+     * @return StatisticalJournalEntry
+     */
+    public function setParentExpenseAlloc(RecordRef $parentExpenseAlloc): StatisticalJournalEntry
+    {
+        $this->parentExpenseAlloc = $parentExpenseAlloc;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getParentExpenseAlloc(): RecordRef
+    {
+        return $this->parentExpenseAlloc;
+    }
+
+    /**
+     * @param bool $approved
+     * @return StatisticalJournalEntry
+     */
+    public function setApproved(bool $approved): StatisticalJournalEntry
+    {
+        $this->approved = $approved;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getApproved(): bool
+    {
+        return $this->approved;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return StatisticalJournalEntry
+     */
+    public function setTranDate(string $tranDate): StatisticalJournalEntry
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param RecordRef $postingPeriod
+     * @return StatisticalJournalEntry
+     */
+    public function setPostingPeriod(RecordRef $postingPeriod): StatisticalJournalEntry
+    {
+        $this->postingPeriod = $postingPeriod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPostingPeriod(): RecordRef
+    {
+        return $this->postingPeriod;
+    }
+
+    /**
+     * @param string $reversalDate
+     * @return StatisticalJournalEntry
+     */
+    public function setReversalDate(string $reversalDate): StatisticalJournalEntry
+    {
+        $this->reversalDate = $reversalDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getReversalDate(): string
+    {
+        return $this->reversalDate;
+    }
+
+    /**
+     * @param string $memo
+     * @return StatisticalJournalEntry
+     */
+    public function setMemo(string $memo): StatisticalJournalEntry
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param bool $reversalDefer
+     * @return StatisticalJournalEntry
+     */
+    public function setReversalDefer(bool $reversalDefer): StatisticalJournalEntry
+    {
+        $this->reversalDefer = $reversalDefer;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReversalDefer(): bool
+    {
+        return $this->reversalDefer;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return StatisticalJournalEntry
+     */
+    public function setSubsidiary(RecordRef $subsidiary): StatisticalJournalEntry
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $unitsType
+     * @return StatisticalJournalEntry
+     */
+    public function setUnitsType(RecordRef $unitsType): StatisticalJournalEntry
+    {
+        $this->unitsType = $unitsType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnitsType(): RecordRef
+    {
+        return $this->unitsType;
+    }
+
+    /**
+     * @param StatisticalJournalEntryLineList $lineList
+     * @return StatisticalJournalEntry
+     */
+    public function setLineList(StatisticalJournalEntryLineList $lineList): StatisticalJournalEntry
+    {
+        $this->lineList = $lineList;
+        return $this;
+    }
+
+    /**
+     * @return StatisticalJournalEntryLineList
+     */
+    public function getLineList(): StatisticalJournalEntryLineList
+    {
+        return $this->lineList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return StatisticalJournalEntry
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): StatisticalJournalEntry
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return StatisticalJournalEntry
+     */
+    public function setInternalId(string $internalId): StatisticalJournalEntry
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return StatisticalJournalEntry
+     */
+    public function setExternalId(string $externalId): StatisticalJournalEntry
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

@@ -14,84 +14,102 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PromotionCodeSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $applyDiscountTo;
+    protected SearchEnumMultiSelectField $applyDiscountTo;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $code;
+    protected SearchStringField $code;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $description;
+    protected SearchStringField $description;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $discount;
+    protected SearchMultiSelectField $discount;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $endDate;
+    protected SearchDateField $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $freeShipItem;
+    protected SearchMultiSelectField $freeShipItem;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isInactive;
+    protected SearchBooleanField $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isPublic;
+    protected SearchBooleanField $isPublic;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $item;
+    protected SearchMultiSelectField $item;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $location;
+    protected SearchMultiSelectField $location;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $name;
+    protected SearchStringField $name;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $partner;
+    protected SearchMultiSelectField $partner;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $startDate;
+    protected SearchDateField $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
+     * @var SearchCustomFieldList
      */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "applyDiscountTo" => "SearchEnumMultiSelectField",
         "code" => "SearchStringField",
@@ -112,4 +130,329 @@ class PromotionCodeSearchBasic extends SearchRecordBasic {
         "startDate" => "SearchDateField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchEnumMultiSelectField $applyDiscountTo
+     * @return PromotionCodeSearchBasic
+     */
+    public function setApplyDiscountTo(SearchEnumMultiSelectField $applyDiscountTo): PromotionCodeSearchBasic
+    {
+        $this->applyDiscountTo = $applyDiscountTo;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getApplyDiscountTo(): SearchEnumMultiSelectField
+    {
+        return $this->applyDiscountTo;
+    }
+
+    /**
+     * @param SearchStringField $code
+     * @return PromotionCodeSearchBasic
+     */
+    public function setCode(SearchStringField $code): PromotionCodeSearchBasic
+    {
+        $this->code = $code;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getCode(): SearchStringField
+    {
+        return $this->code;
+    }
+
+    /**
+     * @param SearchStringField $description
+     * @return PromotionCodeSearchBasic
+     */
+    public function setDescription(SearchStringField $description): PromotionCodeSearchBasic
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getDescription(): SearchStringField
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchMultiSelectField $discount
+     * @return PromotionCodeSearchBasic
+     */
+    public function setDiscount(SearchMultiSelectField $discount): PromotionCodeSearchBasic
+    {
+        $this->discount = $discount;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDiscount(): SearchMultiSelectField
+    {
+        return $this->discount;
+    }
+
+    /**
+     * @param SearchDateField $endDate
+     * @return PromotionCodeSearchBasic
+     */
+    public function setEndDate(SearchDateField $endDate): PromotionCodeSearchBasic
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getEndDate(): SearchDateField
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return PromotionCodeSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): PromotionCodeSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return PromotionCodeSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): PromotionCodeSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchMultiSelectField $freeShipItem
+     * @return PromotionCodeSearchBasic
+     */
+    public function setFreeShipItem(SearchMultiSelectField $freeShipItem): PromotionCodeSearchBasic
+    {
+        $this->freeShipItem = $freeShipItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getFreeShipItem(): SearchMultiSelectField
+    {
+        return $this->freeShipItem;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return PromotionCodeSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): PromotionCodeSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return PromotionCodeSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): PromotionCodeSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isInactive
+     * @return PromotionCodeSearchBasic
+     */
+    public function setIsInactive(SearchBooleanField $isInactive): PromotionCodeSearchBasic
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsInactive(): SearchBooleanField
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchBooleanField $isPublic
+     * @return PromotionCodeSearchBasic
+     */
+    public function setIsPublic(SearchBooleanField $isPublic): PromotionCodeSearchBasic
+    {
+        $this->isPublic = $isPublic;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsPublic(): SearchBooleanField
+    {
+        return $this->isPublic;
+    }
+
+    /**
+     * @param SearchMultiSelectField $item
+     * @return PromotionCodeSearchBasic
+     */
+    public function setItem(SearchMultiSelectField $item): PromotionCodeSearchBasic
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItem(): SearchMultiSelectField
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchMultiSelectField $location
+     * @return PromotionCodeSearchBasic
+     */
+    public function setLocation(SearchMultiSelectField $location): PromotionCodeSearchBasic
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getLocation(): SearchMultiSelectField
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchStringField $name
+     * @return PromotionCodeSearchBasic
+     */
+    public function setName(SearchStringField $name): PromotionCodeSearchBasic
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getName(): SearchStringField
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchMultiSelectField $partner
+     * @return PromotionCodeSearchBasic
+     */
+    public function setPartner(SearchMultiSelectField $partner): PromotionCodeSearchBasic
+    {
+        $this->partner = $partner;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getPartner(): SearchMultiSelectField
+    {
+        return $this->partner;
+    }
+
+    /**
+     * @param SearchDateField $startDate
+     * @return PromotionCodeSearchBasic
+     */
+    public function setStartDate(SearchDateField $startDate): PromotionCodeSearchBasic
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getStartDate(): SearchDateField
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return PromotionCodeSearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): PromotionCodeSearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

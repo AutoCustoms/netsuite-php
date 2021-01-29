@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckPayEarnList {
     /**
-     * @var \NetSuite\Classes\PaycheckPayEarn[]
+     * @var PaycheckPayEarn[]
      */
-    public $paycheckPayEarn;
+    protected array $paycheckPayEarn;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "paycheckPayEarn" => "PaycheckPayEarn[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param PaycheckPayEarn[] $paycheckPayEarn
+     * @return PaycheckPayEarnList
+     */
+    public function setPaycheckPayEarn(PaycheckPayEarn $paycheckPayEarn): PaycheckPayEarnList
+    {
+        $this->paycheckPayEarn[] = $paycheckPayEarn;
+        return $this;
+    }
+
+    /**
+     * @return PaycheckPayEarn[]
+     */
+    public function getPaycheckPayEarn(): array
+    {
+        return $this->paycheckPayEarn;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return PaycheckPayEarnList
+     */
+    public function setReplaceAll(bool $replaceAll): PaycheckPayEarnList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

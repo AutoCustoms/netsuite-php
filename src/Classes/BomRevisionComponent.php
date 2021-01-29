@@ -14,48 +14,57 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BomRevisionComponent {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
      * @var float
      */
-    public $componentYield;
+    protected float $componentYield;
+
     /**
      * @var float
      */
-    public $bomQuantity;
+    protected float $bomQuantity;
+
     /**
-     * @var \NetSuite\Classes\ItemSource
+     * @var ItemSource
      */
-    public $itemSource;
+    protected ItemSource $itemSource;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $units;
+    protected RecordRef $units;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "item" => "RecordRef",
         "description" => "string",
@@ -67,4 +76,167 @@ class BomRevisionComponent {
         "internalId" => "string",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param RecordRef $item
+     * @return BomRevisionComponent
+     */
+    public function setItem(RecordRef $item): BomRevisionComponent
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param string $description
+     * @return BomRevisionComponent
+     */
+    public function setDescription(string $description): BomRevisionComponent
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param float $componentYield
+     * @return BomRevisionComponent
+     */
+    public function setComponentYield(float $componentYield): BomRevisionComponent
+    {
+        $this->componentYield = $componentYield;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getComponentYield(): float
+    {
+        return $this->componentYield;
+    }
+
+    /**
+     * @param float $bomQuantity
+     * @return BomRevisionComponent
+     */
+    public function setBomQuantity(float $bomQuantity): BomRevisionComponent
+    {
+        $this->bomQuantity = $bomQuantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBomQuantity(): float
+    {
+        return $this->bomQuantity;
+    }
+
+    /**
+     * @param ItemSource $itemSource
+     * @return BomRevisionComponent
+     */
+    public function setItemSource(ItemSource $itemSource): BomRevisionComponent
+    {
+        $this->itemSource = $itemSource;
+        return $this;
+    }
+
+    /**
+     * @return ItemSource
+     */
+    public function getItemSource(): ItemSource
+    {
+        return $this->itemSource;
+    }
+
+    /**
+     * @param float $quantity
+     * @return BomRevisionComponent
+     */
+    public function setQuantity(float $quantity): BomRevisionComponent
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param RecordRef $units
+     * @return BomRevisionComponent
+     */
+    public function setUnits(RecordRef $units): BomRevisionComponent
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnits(): RecordRef
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param string $internalId
+     * @return BomRevisionComponent
+     */
+    public function setInternalId(string $internalId): BomRevisionComponent
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return BomRevisionComponent
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): BomRevisionComponent
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

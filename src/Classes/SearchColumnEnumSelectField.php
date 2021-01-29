@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,8 +23,28 @@ class SearchColumnEnumSelectField extends SearchColumnField {
     /**
      * @var string
      */
-    public $searchValue;
+    protected string $searchValue;
+
     static $paramtypesmap = array(
         "searchValue" => "string",
     );
+
+    /**
+     * @param string $searchValue
+     * @return SearchColumnEnumSelectField
+     */
+    public function setSearchValue(string $searchValue): SearchColumnEnumSelectField
+    {
+        $this->searchValue = $searchValue;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSearchValue(): string
+    {
+        return $this->searchValue;
+    }
+
 }

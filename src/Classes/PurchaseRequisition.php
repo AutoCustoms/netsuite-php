@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,139 +23,169 @@ class PurchaseRequisition extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     /**
      * @var string
      */
-    public $source;
+    protected string $source;
+
     /**
      * @var float
      */
-    public $subTotal;
+    protected float $subTotal;
+
     /**
      * @var string
      */
-    public $currencyName;
+    protected string $currencyName;
+
     /**
      * @var float
      */
-    public $exchangeRate;
+    protected float $exchangeRate;
+
     /**
      * @var string
      */
-    public $vatRegNum;
+    protected string $vatRegNum;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $nexus;
+    protected RecordRef $nexus;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxRegNum;
+    protected RecordRef $taxRegNum;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $taxRegOverride;
+    protected bool $taxRegOverride;
+
     /**
      * @var float
      */
-    public $estimatedTotal;
+    protected float $estimatedTotal;
+
     /**
      * @var string
      */
-    public $status;
+    protected string $status;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
+    protected RecordRef $currency;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $entity;
-    /**
-     * @var string
-     */
-    public $dueDate;
-    /**
-     * @var string
-     */
-    public $tranDate;
+    protected RecordRef $entity;
+
     /**
      * @var string
      */
-    public $tranId;
+    protected string $dueDate;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $tranDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $approvalStatus;
+    protected string $tranId;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $nextApprover;
+    protected string $memo;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $approvalStatus;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $nextApprover;
+
     /**
      * @var float
      */
-    public $taxTotal;
+    protected float $taxTotal;
+
+    protected $tax2Total;
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $subsidiary;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $department;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $class;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $location;
+
     /**
      * @var float
      */
-    public $tax2Total;
+    protected float $total;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var PurchaseRequisitionItemList
      */
-    public $subsidiary;
+    protected PurchaseRequisitionItemList $itemList;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var PurchaseRequisitionExpenseList
      */
-    public $department;
+    protected PurchaseRequisitionExpenseList $expenseList;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var AccountingBookDetailList
      */
-    public $class;
+    protected AccountingBookDetailList $accountingBookDetailList;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var CustomFieldList
      */
-    public $location;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var \NetSuite\Classes\PurchaseRequisitionItemList
-     */
-    public $itemList;
-    /**
-     * @var \NetSuite\Classes\PurchaseRequisitionExpenseList
-     */
-    public $expenseList;
-    /**
-     * @var \NetSuite\Classes\AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -192,4 +222,599 @@ class PurchaseRequisition extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return PurchaseRequisition
+     */
+    public function setCreatedDate(string $createdDate): PurchaseRequisition
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return PurchaseRequisition
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): PurchaseRequisition
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return PurchaseRequisition
+     */
+    public function setCustomForm(RecordRef $customForm): PurchaseRequisition
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param string $source
+     * @return PurchaseRequisition
+     */
+    public function setSource(string $source): PurchaseRequisition
+    {
+        $this->source = $source;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSource(): string
+    {
+        return $this->source;
+    }
+
+    /**
+     * @param float $subTotal
+     * @return PurchaseRequisition
+     */
+    public function setSubTotal(float $subTotal): PurchaseRequisition
+    {
+        $this->subTotal = $subTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSubTotal(): float
+    {
+        return $this->subTotal;
+    }
+
+    /**
+     * @param string $currencyName
+     * @return PurchaseRequisition
+     */
+    public function setCurrencyName(string $currencyName): PurchaseRequisition
+    {
+        $this->currencyName = $currencyName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCurrencyName(): string
+    {
+        return $this->currencyName;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return PurchaseRequisition
+     */
+    public function setExchangeRate(float $exchangeRate): PurchaseRequisition
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param string $vatRegNum
+     * @return PurchaseRequisition
+     */
+    public function setVatRegNum(string $vatRegNum): PurchaseRequisition
+    {
+        $this->vatRegNum = $vatRegNum;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVatRegNum(): string
+    {
+        return $this->vatRegNum;
+    }
+
+    /**
+     * @param RecordRef $nexus
+     * @return PurchaseRequisition
+     */
+    public function setNexus(RecordRef $nexus): PurchaseRequisition
+    {
+        $this->nexus = $nexus;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getNexus(): RecordRef
+    {
+        return $this->nexus;
+    }
+
+    /**
+     * @param RecordRef $taxRegNum
+     * @return PurchaseRequisition
+     */
+    public function setTaxRegNum(RecordRef $taxRegNum): PurchaseRequisition
+    {
+        $this->taxRegNum = $taxRegNum;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxRegNum(): RecordRef
+    {
+        return $this->taxRegNum;
+    }
+
+    /**
+     * @param bool $taxRegOverride
+     * @return PurchaseRequisition
+     */
+    public function setTaxRegOverride(bool $taxRegOverride): PurchaseRequisition
+    {
+        $this->taxRegOverride = $taxRegOverride;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getTaxRegOverride(): bool
+    {
+        return $this->taxRegOverride;
+    }
+
+    /**
+     * @param float $estimatedTotal
+     * @return PurchaseRequisition
+     */
+    public function setEstimatedTotal(float $estimatedTotal): PurchaseRequisition
+    {
+        $this->estimatedTotal = $estimatedTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getEstimatedTotal(): float
+    {
+        return $this->estimatedTotal;
+    }
+
+    /**
+     * @param string $status
+     * @return PurchaseRequisition
+     */
+    public function setStatus(string $status): PurchaseRequisition
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return PurchaseRequisition
+     */
+    public function setCurrency(RecordRef $currency): PurchaseRequisition
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param RecordRef $entity
+     * @return PurchaseRequisition
+     */
+    public function setEntity(RecordRef $entity): PurchaseRequisition
+    {
+        $this->entity = $entity;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEntity(): RecordRef
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param string $dueDate
+     * @return PurchaseRequisition
+     */
+    public function setDueDate(string $dueDate): PurchaseRequisition
+    {
+        $this->dueDate = $dueDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDueDate(): string
+    {
+        return $this->dueDate;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return PurchaseRequisition
+     */
+    public function setTranDate(string $tranDate): PurchaseRequisition
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param string $tranId
+     * @return PurchaseRequisition
+     */
+    public function setTranId(string $tranId): PurchaseRequisition
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param string $memo
+     * @return PurchaseRequisition
+     */
+    public function setMemo(string $memo): PurchaseRequisition
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $approvalStatus
+     * @return PurchaseRequisition
+     */
+    public function setApprovalStatus(RecordRef $approvalStatus): PurchaseRequisition
+    {
+        $this->approvalStatus = $approvalStatus;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getApprovalStatus(): RecordRef
+    {
+        return $this->approvalStatus;
+    }
+
+    /**
+     * @param RecordRef $nextApprover
+     * @return PurchaseRequisition
+     */
+    public function setNextApprover(RecordRef $nextApprover): PurchaseRequisition
+    {
+        $this->nextApprover = $nextApprover;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getNextApprover(): RecordRef
+    {
+        return $this->nextApprover;
+    }
+
+    /**
+     * @param float $taxTotal
+     * @return PurchaseRequisition
+     */
+    public function setTaxTotal(float $taxTotal): PurchaseRequisition
+    {
+        $this->taxTotal = $taxTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTaxTotal(): float
+    {
+        return $this->taxTotal;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return PurchaseRequisition
+     */
+    public function setSubsidiary(RecordRef $subsidiary): PurchaseRequisition
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return PurchaseRequisition
+     */
+    public function setDepartment(RecordRef $department): PurchaseRequisition
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return PurchaseRequisition
+     */
+    public function setClass(RecordRef $class): PurchaseRequisition
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return PurchaseRequisition
+     */
+    public function setLocation(RecordRef $location): PurchaseRequisition
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param float $total
+     * @return PurchaseRequisition
+     */
+    public function setTotal(float $total): PurchaseRequisition
+    {
+        $this->total = $total;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotal(): float
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param PurchaseRequisitionItemList $itemList
+     * @return PurchaseRequisition
+     */
+    public function setItemList(PurchaseRequisitionItemList $itemList): PurchaseRequisition
+    {
+        $this->itemList = $itemList;
+        return $this;
+    }
+
+    /**
+     * @return PurchaseRequisitionItemList
+     */
+    public function getItemList(): PurchaseRequisitionItemList
+    {
+        return $this->itemList;
+    }
+
+    /**
+     * @param PurchaseRequisitionExpenseList $expenseList
+     * @return PurchaseRequisition
+     */
+    public function setExpenseList(PurchaseRequisitionExpenseList $expenseList): PurchaseRequisition
+    {
+        $this->expenseList = $expenseList;
+        return $this;
+    }
+
+    /**
+     * @return PurchaseRequisitionExpenseList
+     */
+    public function getExpenseList(): PurchaseRequisitionExpenseList
+    {
+        return $this->expenseList;
+    }
+
+    /**
+     * @param AccountingBookDetailList $accountingBookDetailList
+     * @return PurchaseRequisition
+     */
+    public function setAccountingBookDetailList(AccountingBookDetailList $accountingBookDetailList): PurchaseRequisition
+    {
+        $this->accountingBookDetailList = $accountingBookDetailList;
+        return $this;
+    }
+
+    /**
+     * @return AccountingBookDetailList
+     */
+    public function getAccountingBookDetailList(): AccountingBookDetailList
+    {
+        return $this->accountingBookDetailList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return PurchaseRequisition
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): PurchaseRequisition
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return PurchaseRequisition
+     */
+    public function setInternalId(string $internalId): PurchaseRequisition
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return PurchaseRequisition
+     */
+    public function setExternalId(string $externalId): PurchaseRequisition
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

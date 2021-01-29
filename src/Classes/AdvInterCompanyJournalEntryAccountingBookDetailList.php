@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AdvInterCompanyJournalEntryAccountingBookDetailList {
     /**
-     * @var \NetSuite\Classes\AdvInterCompanyJournalEntryAccountingBookDetail[]
+     * @var AdvInterCompanyJournalEntryAccountingBookDetail[]
      */
-    public $interCompanyJournalEntryAccountingBookDetail;
+    protected array $interCompanyJournalEntryAccountingBookDetail;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "interCompanyJournalEntryAccountingBookDetail" => "AdvInterCompanyJournalEntryAccountingBookDetail[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param AdvInterCompanyJournalEntryAccountingBookDetail[] $interCompanyJournalEntryAccountingBookDetail
+     * @return AdvInterCompanyJournalEntryAccountingBookDetailList
+     */
+    public function setInterCompanyJournalEntryAccountingBookDetail(AdvInterCompanyJournalEntryAccountingBookDetail $interCompanyJournalEntryAccountingBookDetail): AdvInterCompanyJournalEntryAccountingBookDetailList
+    {
+        $this->interCompanyJournalEntryAccountingBookDetail[] = $interCompanyJournalEntryAccountingBookDetail;
+        return $this;
+    }
+
+    /**
+     * @return AdvInterCompanyJournalEntryAccountingBookDetail[]
+     */
+    public function getInterCompanyJournalEntryAccountingBookDetail(): array
+    {
+        return $this->interCompanyJournalEntryAccountingBookDetail;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return AdvInterCompanyJournalEntryAccountingBookDetailList
+     */
+    public function setReplaceAll(bool $replaceAll): AdvInterCompanyJournalEntryAccountingBookDetailList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

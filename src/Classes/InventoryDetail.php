@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InventoryDetail extends Record {
     /**
-     * @var \NetSuite\Classes\InventoryAssignmentList
+     * @var InventoryAssignmentList
      */
-    public $inventoryAssignmentList;
+    protected InventoryAssignmentList $inventoryAssignmentList;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     static $paramtypesmap = array(
         "inventoryAssignmentList" => "InventoryAssignmentList",
         "customForm" => "RecordRef",
     );
+
+    /**
+     * @param InventoryAssignmentList $inventoryAssignmentList
+     * @return InventoryDetail
+     */
+    public function setInventoryAssignmentList(InventoryAssignmentList $inventoryAssignmentList): InventoryDetail
+    {
+        $this->inventoryAssignmentList = $inventoryAssignmentList;
+        return $this;
+    }
+
+    /**
+     * @return InventoryAssignmentList
+     */
+    public function getInventoryAssignmentList(): InventoryAssignmentList
+    {
+        return $this->inventoryAssignmentList;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return InventoryDetail
+     */
+    public function setCustomForm(RecordRef $customForm): InventoryDetail
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
 }

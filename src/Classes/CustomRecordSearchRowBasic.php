@@ -14,68 +14,82 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomRecordSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $recType;
+    protected RecordRef $recType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $altName;
+    protected array $altName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $availableOffline;
+    protected array $availableOffline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $created;
+    protected array $created;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $id;
+    protected array $id;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastModified;
+    protected array $lastModified;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $lastModifiedBy;
+    protected array $lastModifiedBy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $owner;
+    protected array $owner;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $parent;
+    protected array $parent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "recType" => "RecordRef",
         "altName" => "SearchColumnStringField[]",
@@ -92,4 +106,257 @@ class CustomRecordSearchRowBasic extends SearchRowBasic {
         "parent" => "SearchColumnSelectField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param RecordRef $recType
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setRecType(RecordRef $recType): CustomRecordSearchRowBasic
+    {
+        $this->recType = $recType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRecType(): RecordRef
+    {
+        return $this->recType;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altName
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setAltName(SearchColumnStringField $altName): CustomRecordSearchRowBasic
+    {
+        $this->altName[] = $altName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltName(): array
+    {
+        return $this->altName;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $availableOffline
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setAvailableOffline(SearchColumnBooleanField $availableOffline): CustomRecordSearchRowBasic
+    {
+        $this->availableOffline[] = $availableOffline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAvailableOffline(): array
+    {
+        return $this->availableOffline;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $created
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setCreated(SearchColumnDateField $created): CustomRecordSearchRowBasic
+    {
+        $this->created[] = $created;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCreated(): array
+    {
+        return $this->created;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): CustomRecordSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $id
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setId(SearchColumnLongField $id): CustomRecordSearchRowBasic
+    {
+        $this->id[] = $id;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getId(): array
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): CustomRecordSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): CustomRecordSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModified
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setLastModified(SearchColumnDateField $lastModified): CustomRecordSearchRowBasic
+    {
+        $this->lastModified[] = $lastModified;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModified(): array
+    {
+        return $this->lastModified;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $lastModifiedBy
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setLastModifiedBy(SearchColumnSelectField $lastModifiedBy): CustomRecordSearchRowBasic
+    {
+        $this->lastModifiedBy[] = $lastModifiedBy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLastModifiedBy(): array
+    {
+        return $this->lastModifiedBy;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): CustomRecordSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $owner
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setOwner(SearchColumnSelectField $owner): CustomRecordSearchRowBasic
+    {
+        $this->owner[] = $owner;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOwner(): array
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $parent
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setParent(SearchColumnSelectField $parent): CustomRecordSearchRowBasic
+    {
+        $this->parent[] = $parent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getParent(): array
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return CustomRecordSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): CustomRecordSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

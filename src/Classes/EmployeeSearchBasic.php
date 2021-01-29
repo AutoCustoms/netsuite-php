@@ -14,512 +14,633 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $address;
+    protected SearchStringField $address;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $addressee;
+    protected SearchStringField $addressee;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $addressLabel;
+    protected SearchStringField $addressLabel;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $addressPhone;
+    protected SearchStringField $addressPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $alienNumber;
+    protected SearchStringField $alienNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $allocation;
+    protected SearchDoubleField $allocation;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $anniversary;
+    protected SearchDateField $anniversary;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $approvalLimit;
+    protected SearchDoubleField $approvalLimit;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $approver;
+    protected SearchMultiSelectField $approver;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $attention;
+    protected SearchStringField $attention;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $authWorkDate;
+    protected SearchDateField $authWorkDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $baseWage;
+    protected SearchDoubleField $baseWage;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $baseWageType;
+    protected SearchEnumMultiSelectField $baseWageType;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $billAddress;
+    protected SearchStringField $billAddress;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $billingClass;
+    protected SearchMultiSelectField $billingClass;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $birthDate;
+    protected SearchDateField $birthDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $birthDay;
+    protected SearchDateField $birthDay;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $bonusTarget;
+    protected SearchDoubleField $bonusTarget;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $bonusTargetComment;
+    protected SearchStringField $bonusTargetComment;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $bonusTargetPayFrequency;
+    protected SearchEnumMultiSelectField $bonusTargetPayFrequency;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $bonusTargetType;
+    protected SearchEnumMultiSelectField $bonusTargetType;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $cContribution;
+    protected SearchMultiSelectField $cContribution;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $city;
+    protected SearchStringField $city;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $class;
+    protected SearchMultiSelectField $class;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $comments;
+    protected SearchStringField $comments;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $commissionPlan;
+    protected SearchMultiSelectField $commissionPlan;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $compensationCurrency;
+    protected SearchEnumMultiSelectField $compensationCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $concurrentWebServicesUser;
+    protected SearchBooleanField $concurrentWebServicesUser;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $country;
+    protected SearchEnumMultiSelectField $country;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $county;
+    protected SearchStringField $county;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $dateCreated;
+    protected SearchDateField $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $deduction;
+    protected SearchMultiSelectField $deduction;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $defaultAcctCorpCardExp;
+    protected SearchMultiSelectField $defaultAcctCorpCardExp;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $defaultExpenseReportCurrency;
+    protected SearchMultiSelectField $defaultExpenseReportCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $defaultTaxReg;
+    protected SearchMultiSelectField $defaultTaxReg;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $defaultTaxRegText;
+    protected SearchStringField $defaultTaxRegText;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $department;
+    protected SearchMultiSelectField $department;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $earning;
+    protected SearchMultiSelectField $earning;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $education;
+    protected SearchMultiSelectField $education;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $eligibleForCommission;
+    protected SearchBooleanField $eligibleForCommission;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $email;
+    protected SearchStringField $email;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $employeeStatus;
+    protected SearchMultiSelectField $employeeStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $employeeType;
+    protected SearchMultiSelectField $employeeType;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $employeeTypeKpi;
+    protected SearchBooleanField $employeeTypeKpi;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $entityId;
+    protected SearchStringField $entityId;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $ethnicity;
+    protected SearchMultiSelectField $ethnicity;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $expenseLimit;
+    protected SearchDoubleField $expenseLimit;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $expenseReportCurrency;
+    protected SearchMultiSelectField $expenseReportCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $fax;
+    protected SearchStringField $fax;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $firstName;
+    protected SearchStringField $firstName;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $gender;
+    protected SearchEnumMultiSelectField $gender;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $giveAccess;
+    protected SearchBooleanField $giveAccess;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $globalSubscriptionStatus;
+    protected SearchEnumMultiSelectField $globalSubscriptionStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $group;
+    protected SearchMultiSelectField $group;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $hireDate;
+    protected SearchDateField $hireDate;
+
+    protected $I9Verified;
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchStringField
      */
-    public $I9Verified;
+    protected SearchStringField $image;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchMultiSelectField
      */
-    public $image;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchLongField
      */
-    public $internalId;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchBooleanField
      */
-    public $internalIdNumber;
+    protected SearchBooleanField $isDefaultBilling;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isDefaultBilling;
+    protected SearchBooleanField $isDefaultShipping;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isDefaultShipping;
+    protected SearchBooleanField $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isInactive;
+    protected SearchBooleanField $isJobManager;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isJobManager;
+    protected SearchBooleanField $isJobResource;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isJobResource;
+    protected SearchBooleanField $isTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchMultiSelectField
      */
-    public $isTemplate;
+    protected SearchMultiSelectField $job;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchStringField
      */
-    public $job;
+    protected SearchStringField $jobDescription;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchDoubleField
      */
-    public $jobDescription;
+    protected SearchDoubleField $laborCost;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchEnumMultiSelectField
      */
-    public $laborCost;
+    protected SearchEnumMultiSelectField $language;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchDateField
      */
-    public $language;
+    protected SearchDateField $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchStringField
      */
-    public $lastModifiedDate;
+    protected SearchStringField $lastName;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchDateField
      */
-    public $lastName;
+    protected SearchDateField $lastPaidDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $lastPaidDate;
+    protected SearchDateField $lastReviewDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchEnumMultiSelectField
      */
-    public $lastReviewDate;
+    protected SearchEnumMultiSelectField $level;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $level;
+    protected SearchMultiSelectField $location;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $location;
+    protected SearchMultiSelectField $maritalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchStringField
      */
-    public $maritalStatus;
+    protected SearchStringField $middleName;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchDateField
      */
-    public $middleName;
+    protected SearchDateField $nextReviewDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchBooleanField
      */
-    public $nextReviewDate;
+    protected SearchBooleanField $offlineAccess;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchEnumMultiSelectField
      */
-    public $offlineAccess;
+    protected SearchEnumMultiSelectField $payFrequency;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchDateField
      */
-    public $payFrequency;
+    protected SearchDateField $permChangeDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchEnumMultiSelectField
      */
-    public $permChangeDate;
+    protected SearchEnumMultiSelectField $permission;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $permission;
+    protected SearchEnumMultiSelectField $permissionChange;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchStringField
      */
-    public $permissionChange;
+    protected SearchStringField $phone;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $phone;
+    protected SearchStringField $phoneticName;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchMultiSelectField
      */
-    public $phoneticName;
+    protected SearchMultiSelectField $positionTitle;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchDoubleField
      */
-    public $positionTitle;
+    protected SearchDoubleField $primaryEarningAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchStringField
      */
-    public $primaryEarningAmount;
+    protected SearchStringField $primaryEarningItem;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $primaryEarningItem;
+    protected SearchStringField $primaryEarningType;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchDoubleField
      */
-    public $primaryEarningType;
+    protected SearchDoubleField $purchaseOrderApprovalLimit;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchMultiSelectField
      */
-    public $purchaseOrderApprovalLimit;
+    protected SearchMultiSelectField $purchaseOrderApprover;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchDoubleField
      */
-    public $purchaseOrderApprover;
+    protected SearchDoubleField $purchaseOrderLimit;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDateField
      */
-    public $purchaseOrderLimit;
+    protected SearchDateField $releaseDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchMultiSelectField
      */
-    public $releaseDate;
+    protected SearchMultiSelectField $residentStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $residentStatus;
+    protected SearchMultiSelectField $role;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $role;
+    protected SearchMultiSelectField $roleChange;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchDateField
      */
-    public $roleChange;
+    protected SearchDateField $roleChangeDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchBooleanField
      */
-    public $roleChangeDate;
+    protected SearchBooleanField $salesRep;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchMultiSelectField
      */
-    public $salesRep;
+    protected SearchMultiSelectField $salesRole;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchStringField
      */
-    public $salesRole;
+    protected SearchStringField $salutation;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $salutation;
+    protected SearchStringField $socialSecurityNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchDateField
      */
-    public $socialSecurityNumber;
+    protected SearchDateField $startDateTimeOffCalc;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchStringField
      */
-    public $startDateTimeOffCalc;
+    protected SearchStringField $state;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchMultiSelectField
      */
-    public $state;
+    protected SearchMultiSelectField $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $supervisor;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchBooleanField
      */
-    public $supervisor;
+    protected SearchBooleanField $supportRep;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchDoubleField
      */
-    public $supportRep;
+    protected SearchDoubleField $targetUtilization;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchEnumMultiSelectField
      */
-    public $targetUtilization;
+    protected SearchEnumMultiSelectField $terminationCategory;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchStringField
      */
-    public $terminationCategory;
+    protected SearchStringField $terminationDetails;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchMultiSelectField
      */
-    public $terminationDetails;
+    protected SearchMultiSelectField $terminationReason;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $terminationReason;
+    protected SearchEnumMultiSelectField $terminationRegretted;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $terminationRegretted;
+    protected SearchMultiSelectField $timeApprover;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $timeApprover;
+    protected SearchMultiSelectField $timeOffPlan;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchStringField
      */
-    public $timeOffPlan;
+    protected SearchStringField $title;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchBooleanField
      */
-    public $title;
+    protected SearchBooleanField $usePerquest;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $usePerquest;
+    protected SearchBooleanField $useTimeData;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchDateField
      */
-    public $useTimeData;
+    protected SearchDateField $visaExpDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchMultiSelectField
      */
-    public $visaExpDate;
+    protected SearchMultiSelectField $visaType;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $visaType;
+    protected SearchMultiSelectField $withholding;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $withholding;
+    protected SearchMultiSelectField $workCalendar;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $workCalendar;
+    protected SearchMultiSelectField $workplace;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchStringField
      */
-    public $workplace;
+    protected SearchStringField $zipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchCustomFieldList
      */
-    public $zipCode;
-    /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
-     */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "address" => "SearchStringField",
         "addressee" => "SearchStringField",
@@ -647,4 +768,2237 @@ class EmployeeSearchBasic extends SearchRecordBasic {
         "zipCode" => "SearchStringField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchStringField $address
+     * @return EmployeeSearchBasic
+     */
+    public function setAddress(SearchStringField $address): EmployeeSearchBasic
+    {
+        $this->address = $address;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddress(): SearchStringField
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param SearchStringField $addressee
+     * @return EmployeeSearchBasic
+     */
+    public function setAddressee(SearchStringField $addressee): EmployeeSearchBasic
+    {
+        $this->addressee = $addressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddressee(): SearchStringField
+    {
+        return $this->addressee;
+    }
+
+    /**
+     * @param SearchStringField $addressLabel
+     * @return EmployeeSearchBasic
+     */
+    public function setAddressLabel(SearchStringField $addressLabel): EmployeeSearchBasic
+    {
+        $this->addressLabel = $addressLabel;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddressLabel(): SearchStringField
+    {
+        return $this->addressLabel;
+    }
+
+    /**
+     * @param SearchStringField $addressPhone
+     * @return EmployeeSearchBasic
+     */
+    public function setAddressPhone(SearchStringField $addressPhone): EmployeeSearchBasic
+    {
+        $this->addressPhone = $addressPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddressPhone(): SearchStringField
+    {
+        return $this->addressPhone;
+    }
+
+    /**
+     * @param SearchStringField $alienNumber
+     * @return EmployeeSearchBasic
+     */
+    public function setAlienNumber(SearchStringField $alienNumber): EmployeeSearchBasic
+    {
+        $this->alienNumber = $alienNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAlienNumber(): SearchStringField
+    {
+        return $this->alienNumber;
+    }
+
+    /**
+     * @param SearchDoubleField $allocation
+     * @return EmployeeSearchBasic
+     */
+    public function setAllocation(SearchDoubleField $allocation): EmployeeSearchBasic
+    {
+        $this->allocation = $allocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getAllocation(): SearchDoubleField
+    {
+        return $this->allocation;
+    }
+
+    /**
+     * @param SearchDateField $anniversary
+     * @return EmployeeSearchBasic
+     */
+    public function setAnniversary(SearchDateField $anniversary): EmployeeSearchBasic
+    {
+        $this->anniversary = $anniversary;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getAnniversary(): SearchDateField
+    {
+        return $this->anniversary;
+    }
+
+    /**
+     * @param SearchDoubleField $approvalLimit
+     * @return EmployeeSearchBasic
+     */
+    public function setApprovalLimit(SearchDoubleField $approvalLimit): EmployeeSearchBasic
+    {
+        $this->approvalLimit = $approvalLimit;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getApprovalLimit(): SearchDoubleField
+    {
+        return $this->approvalLimit;
+    }
+
+    /**
+     * @param SearchMultiSelectField $approver
+     * @return EmployeeSearchBasic
+     */
+    public function setApprover(SearchMultiSelectField $approver): EmployeeSearchBasic
+    {
+        $this->approver = $approver;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getApprover(): SearchMultiSelectField
+    {
+        return $this->approver;
+    }
+
+    /**
+     * @param SearchStringField $attention
+     * @return EmployeeSearchBasic
+     */
+    public function setAttention(SearchStringField $attention): EmployeeSearchBasic
+    {
+        $this->attention = $attention;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAttention(): SearchStringField
+    {
+        return $this->attention;
+    }
+
+    /**
+     * @param SearchDateField $authWorkDate
+     * @return EmployeeSearchBasic
+     */
+    public function setAuthWorkDate(SearchDateField $authWorkDate): EmployeeSearchBasic
+    {
+        $this->authWorkDate = $authWorkDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getAuthWorkDate(): SearchDateField
+    {
+        return $this->authWorkDate;
+    }
+
+    /**
+     * @param SearchDoubleField $baseWage
+     * @return EmployeeSearchBasic
+     */
+    public function setBaseWage(SearchDoubleField $baseWage): EmployeeSearchBasic
+    {
+        $this->baseWage = $baseWage;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getBaseWage(): SearchDoubleField
+    {
+        return $this->baseWage;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $baseWageType
+     * @return EmployeeSearchBasic
+     */
+    public function setBaseWageType(SearchEnumMultiSelectField $baseWageType): EmployeeSearchBasic
+    {
+        $this->baseWageType = $baseWageType;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getBaseWageType(): SearchEnumMultiSelectField
+    {
+        return $this->baseWageType;
+    }
+
+    /**
+     * @param SearchStringField $billAddress
+     * @return EmployeeSearchBasic
+     */
+    public function setBillAddress(SearchStringField $billAddress): EmployeeSearchBasic
+    {
+        $this->billAddress = $billAddress;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getBillAddress(): SearchStringField
+    {
+        return $this->billAddress;
+    }
+
+    /**
+     * @param SearchMultiSelectField $billingClass
+     * @return EmployeeSearchBasic
+     */
+    public function setBillingClass(SearchMultiSelectField $billingClass): EmployeeSearchBasic
+    {
+        $this->billingClass = $billingClass;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getBillingClass(): SearchMultiSelectField
+    {
+        return $this->billingClass;
+    }
+
+    /**
+     * @param SearchDateField $birthDate
+     * @return EmployeeSearchBasic
+     */
+    public function setBirthDate(SearchDateField $birthDate): EmployeeSearchBasic
+    {
+        $this->birthDate = $birthDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getBirthDate(): SearchDateField
+    {
+        return $this->birthDate;
+    }
+
+    /**
+     * @param SearchDateField $birthDay
+     * @return EmployeeSearchBasic
+     */
+    public function setBirthDay(SearchDateField $birthDay): EmployeeSearchBasic
+    {
+        $this->birthDay = $birthDay;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getBirthDay(): SearchDateField
+    {
+        return $this->birthDay;
+    }
+
+    /**
+     * @param SearchDoubleField $bonusTarget
+     * @return EmployeeSearchBasic
+     */
+    public function setBonusTarget(SearchDoubleField $bonusTarget): EmployeeSearchBasic
+    {
+        $this->bonusTarget = $bonusTarget;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getBonusTarget(): SearchDoubleField
+    {
+        return $this->bonusTarget;
+    }
+
+    /**
+     * @param SearchStringField $bonusTargetComment
+     * @return EmployeeSearchBasic
+     */
+    public function setBonusTargetComment(SearchStringField $bonusTargetComment): EmployeeSearchBasic
+    {
+        $this->bonusTargetComment = $bonusTargetComment;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getBonusTargetComment(): SearchStringField
+    {
+        return $this->bonusTargetComment;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $bonusTargetPayFrequency
+     * @return EmployeeSearchBasic
+     */
+    public function setBonusTargetPayFrequency(SearchEnumMultiSelectField $bonusTargetPayFrequency): EmployeeSearchBasic
+    {
+        $this->bonusTargetPayFrequency = $bonusTargetPayFrequency;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getBonusTargetPayFrequency(): SearchEnumMultiSelectField
+    {
+        return $this->bonusTargetPayFrequency;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $bonusTargetType
+     * @return EmployeeSearchBasic
+     */
+    public function setBonusTargetType(SearchEnumMultiSelectField $bonusTargetType): EmployeeSearchBasic
+    {
+        $this->bonusTargetType = $bonusTargetType;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getBonusTargetType(): SearchEnumMultiSelectField
+    {
+        return $this->bonusTargetType;
+    }
+
+    /**
+     * @param SearchMultiSelectField $cContribution
+     * @return EmployeeSearchBasic
+     */
+    public function setCContribution(SearchMultiSelectField $cContribution): EmployeeSearchBasic
+    {
+        $this->cContribution = $cContribution;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCContribution(): SearchMultiSelectField
+    {
+        return $this->cContribution;
+    }
+
+    /**
+     * @param SearchStringField $city
+     * @return EmployeeSearchBasic
+     */
+    public function setCity(SearchStringField $city): EmployeeSearchBasic
+    {
+        $this->city = $city;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getCity(): SearchStringField
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param SearchMultiSelectField $class
+     * @return EmployeeSearchBasic
+     */
+    public function setClass(SearchMultiSelectField $class): EmployeeSearchBasic
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getClass(): SearchMultiSelectField
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchStringField $comments
+     * @return EmployeeSearchBasic
+     */
+    public function setComments(SearchStringField $comments): EmployeeSearchBasic
+    {
+        $this->comments = $comments;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getComments(): SearchStringField
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param SearchMultiSelectField $commissionPlan
+     * @return EmployeeSearchBasic
+     */
+    public function setCommissionPlan(SearchMultiSelectField $commissionPlan): EmployeeSearchBasic
+    {
+        $this->commissionPlan = $commissionPlan;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCommissionPlan(): SearchMultiSelectField
+    {
+        return $this->commissionPlan;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $compensationCurrency
+     * @return EmployeeSearchBasic
+     */
+    public function setCompensationCurrency(SearchEnumMultiSelectField $compensationCurrency): EmployeeSearchBasic
+    {
+        $this->compensationCurrency = $compensationCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getCompensationCurrency(): SearchEnumMultiSelectField
+    {
+        return $this->compensationCurrency;
+    }
+
+    /**
+     * @param SearchBooleanField $concurrentWebServicesUser
+     * @return EmployeeSearchBasic
+     */
+    public function setConcurrentWebServicesUser(SearchBooleanField $concurrentWebServicesUser): EmployeeSearchBasic
+    {
+        $this->concurrentWebServicesUser = $concurrentWebServicesUser;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getConcurrentWebServicesUser(): SearchBooleanField
+    {
+        return $this->concurrentWebServicesUser;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $country
+     * @return EmployeeSearchBasic
+     */
+    public function setCountry(SearchEnumMultiSelectField $country): EmployeeSearchBasic
+    {
+        $this->country = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getCountry(): SearchEnumMultiSelectField
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchStringField $county
+     * @return EmployeeSearchBasic
+     */
+    public function setCounty(SearchStringField $county): EmployeeSearchBasic
+    {
+        $this->county = $county;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getCounty(): SearchStringField
+    {
+        return $this->county;
+    }
+
+    /**
+     * @param SearchDateField $dateCreated
+     * @return EmployeeSearchBasic
+     */
+    public function setDateCreated(SearchDateField $dateCreated): EmployeeSearchBasic
+    {
+        $this->dateCreated = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDateCreated(): SearchDateField
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchMultiSelectField $deduction
+     * @return EmployeeSearchBasic
+     */
+    public function setDeduction(SearchMultiSelectField $deduction): EmployeeSearchBasic
+    {
+        $this->deduction = $deduction;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDeduction(): SearchMultiSelectField
+    {
+        return $this->deduction;
+    }
+
+    /**
+     * @param SearchMultiSelectField $defaultAcctCorpCardExp
+     * @return EmployeeSearchBasic
+     */
+    public function setDefaultAcctCorpCardExp(SearchMultiSelectField $defaultAcctCorpCardExp): EmployeeSearchBasic
+    {
+        $this->defaultAcctCorpCardExp = $defaultAcctCorpCardExp;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDefaultAcctCorpCardExp(): SearchMultiSelectField
+    {
+        return $this->defaultAcctCorpCardExp;
+    }
+
+    /**
+     * @param SearchMultiSelectField $defaultExpenseReportCurrency
+     * @return EmployeeSearchBasic
+     */
+    public function setDefaultExpenseReportCurrency(SearchMultiSelectField $defaultExpenseReportCurrency): EmployeeSearchBasic
+    {
+        $this->defaultExpenseReportCurrency = $defaultExpenseReportCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDefaultExpenseReportCurrency(): SearchMultiSelectField
+    {
+        return $this->defaultExpenseReportCurrency;
+    }
+
+    /**
+     * @param SearchMultiSelectField $defaultTaxReg
+     * @return EmployeeSearchBasic
+     */
+    public function setDefaultTaxReg(SearchMultiSelectField $defaultTaxReg): EmployeeSearchBasic
+    {
+        $this->defaultTaxReg = $defaultTaxReg;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDefaultTaxReg(): SearchMultiSelectField
+    {
+        return $this->defaultTaxReg;
+    }
+
+    /**
+     * @param SearchStringField $defaultTaxRegText
+     * @return EmployeeSearchBasic
+     */
+    public function setDefaultTaxRegText(SearchStringField $defaultTaxRegText): EmployeeSearchBasic
+    {
+        $this->defaultTaxRegText = $defaultTaxRegText;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getDefaultTaxRegText(): SearchStringField
+    {
+        return $this->defaultTaxRegText;
+    }
+
+    /**
+     * @param SearchMultiSelectField $department
+     * @return EmployeeSearchBasic
+     */
+    public function setDepartment(SearchMultiSelectField $department): EmployeeSearchBasic
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDepartment(): SearchMultiSelectField
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchMultiSelectField $earning
+     * @return EmployeeSearchBasic
+     */
+    public function setEarning(SearchMultiSelectField $earning): EmployeeSearchBasic
+    {
+        $this->earning = $earning;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getEarning(): SearchMultiSelectField
+    {
+        return $this->earning;
+    }
+
+    /**
+     * @param SearchMultiSelectField $education
+     * @return EmployeeSearchBasic
+     */
+    public function setEducation(SearchMultiSelectField $education): EmployeeSearchBasic
+    {
+        $this->education = $education;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getEducation(): SearchMultiSelectField
+    {
+        return $this->education;
+    }
+
+    /**
+     * @param SearchBooleanField $eligibleForCommission
+     * @return EmployeeSearchBasic
+     */
+    public function setEligibleForCommission(SearchBooleanField $eligibleForCommission): EmployeeSearchBasic
+    {
+        $this->eligibleForCommission = $eligibleForCommission;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getEligibleForCommission(): SearchBooleanField
+    {
+        return $this->eligibleForCommission;
+    }
+
+    /**
+     * @param SearchStringField $email
+     * @return EmployeeSearchBasic
+     */
+    public function setEmail(SearchStringField $email): EmployeeSearchBasic
+    {
+        $this->email = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getEmail(): SearchStringField
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchMultiSelectField $employeeStatus
+     * @return EmployeeSearchBasic
+     */
+    public function setEmployeeStatus(SearchMultiSelectField $employeeStatus): EmployeeSearchBasic
+    {
+        $this->employeeStatus = $employeeStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getEmployeeStatus(): SearchMultiSelectField
+    {
+        return $this->employeeStatus;
+    }
+
+    /**
+     * @param SearchMultiSelectField $employeeType
+     * @return EmployeeSearchBasic
+     */
+    public function setEmployeeType(SearchMultiSelectField $employeeType): EmployeeSearchBasic
+    {
+        $this->employeeType = $employeeType;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getEmployeeType(): SearchMultiSelectField
+    {
+        return $this->employeeType;
+    }
+
+    /**
+     * @param SearchBooleanField $employeeTypeKpi
+     * @return EmployeeSearchBasic
+     */
+    public function setEmployeeTypeKpi(SearchBooleanField $employeeTypeKpi): EmployeeSearchBasic
+    {
+        $this->employeeTypeKpi = $employeeTypeKpi;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getEmployeeTypeKpi(): SearchBooleanField
+    {
+        return $this->employeeTypeKpi;
+    }
+
+    /**
+     * @param SearchStringField $entityId
+     * @return EmployeeSearchBasic
+     */
+    public function setEntityId(SearchStringField $entityId): EmployeeSearchBasic
+    {
+        $this->entityId = $entityId;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getEntityId(): SearchStringField
+    {
+        return $this->entityId;
+    }
+
+    /**
+     * @param SearchMultiSelectField $ethnicity
+     * @return EmployeeSearchBasic
+     */
+    public function setEthnicity(SearchMultiSelectField $ethnicity): EmployeeSearchBasic
+    {
+        $this->ethnicity = $ethnicity;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getEthnicity(): SearchMultiSelectField
+    {
+        return $this->ethnicity;
+    }
+
+    /**
+     * @param SearchDoubleField $expenseLimit
+     * @return EmployeeSearchBasic
+     */
+    public function setExpenseLimit(SearchDoubleField $expenseLimit): EmployeeSearchBasic
+    {
+        $this->expenseLimit = $expenseLimit;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getExpenseLimit(): SearchDoubleField
+    {
+        return $this->expenseLimit;
+    }
+
+    /**
+     * @param SearchMultiSelectField $expenseReportCurrency
+     * @return EmployeeSearchBasic
+     */
+    public function setExpenseReportCurrency(SearchMultiSelectField $expenseReportCurrency): EmployeeSearchBasic
+    {
+        $this->expenseReportCurrency = $expenseReportCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExpenseReportCurrency(): SearchMultiSelectField
+    {
+        return $this->expenseReportCurrency;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return EmployeeSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): EmployeeSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return EmployeeSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): EmployeeSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchStringField $fax
+     * @return EmployeeSearchBasic
+     */
+    public function setFax(SearchStringField $fax): EmployeeSearchBasic
+    {
+        $this->fax = $fax;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getFax(): SearchStringField
+    {
+        return $this->fax;
+    }
+
+    /**
+     * @param SearchStringField $firstName
+     * @return EmployeeSearchBasic
+     */
+    public function setFirstName(SearchStringField $firstName): EmployeeSearchBasic
+    {
+        $this->firstName = $firstName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getFirstName(): SearchStringField
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $gender
+     * @return EmployeeSearchBasic
+     */
+    public function setGender(SearchEnumMultiSelectField $gender): EmployeeSearchBasic
+    {
+        $this->gender = $gender;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getGender(): SearchEnumMultiSelectField
+    {
+        return $this->gender;
+    }
+
+    /**
+     * @param SearchBooleanField $giveAccess
+     * @return EmployeeSearchBasic
+     */
+    public function setGiveAccess(SearchBooleanField $giveAccess): EmployeeSearchBasic
+    {
+        $this->giveAccess = $giveAccess;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getGiveAccess(): SearchBooleanField
+    {
+        return $this->giveAccess;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $globalSubscriptionStatus
+     * @return EmployeeSearchBasic
+     */
+    public function setGlobalSubscriptionStatus(SearchEnumMultiSelectField $globalSubscriptionStatus): EmployeeSearchBasic
+    {
+        $this->globalSubscriptionStatus = $globalSubscriptionStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getGlobalSubscriptionStatus(): SearchEnumMultiSelectField
+    {
+        return $this->globalSubscriptionStatus;
+    }
+
+    /**
+     * @param SearchMultiSelectField $group
+     * @return EmployeeSearchBasic
+     */
+    public function setGroup(SearchMultiSelectField $group): EmployeeSearchBasic
+    {
+        $this->group = $group;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getGroup(): SearchMultiSelectField
+    {
+        return $this->group;
+    }
+
+    /**
+     * @param SearchDateField $hireDate
+     * @return EmployeeSearchBasic
+     */
+    public function setHireDate(SearchDateField $hireDate): EmployeeSearchBasic
+    {
+        $this->hireDate = $hireDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getHireDate(): SearchDateField
+    {
+        return $this->hireDate;
+    }
+
+    /**
+     * @param SearchStringField $image
+     * @return EmployeeSearchBasic
+     */
+    public function setImage(SearchStringField $image): EmployeeSearchBasic
+    {
+        $this->image = $image;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getImage(): SearchStringField
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return EmployeeSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): EmployeeSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return EmployeeSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): EmployeeSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isDefaultBilling
+     * @return EmployeeSearchBasic
+     */
+    public function setIsDefaultBilling(SearchBooleanField $isDefaultBilling): EmployeeSearchBasic
+    {
+        $this->isDefaultBilling = $isDefaultBilling;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsDefaultBilling(): SearchBooleanField
+    {
+        return $this->isDefaultBilling;
+    }
+
+    /**
+     * @param SearchBooleanField $isDefaultShipping
+     * @return EmployeeSearchBasic
+     */
+    public function setIsDefaultShipping(SearchBooleanField $isDefaultShipping): EmployeeSearchBasic
+    {
+        $this->isDefaultShipping = $isDefaultShipping;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsDefaultShipping(): SearchBooleanField
+    {
+        return $this->isDefaultShipping;
+    }
+
+    /**
+     * @param SearchBooleanField $isInactive
+     * @return EmployeeSearchBasic
+     */
+    public function setIsInactive(SearchBooleanField $isInactive): EmployeeSearchBasic
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsInactive(): SearchBooleanField
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchBooleanField $isJobManager
+     * @return EmployeeSearchBasic
+     */
+    public function setIsJobManager(SearchBooleanField $isJobManager): EmployeeSearchBasic
+    {
+        $this->isJobManager = $isJobManager;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsJobManager(): SearchBooleanField
+    {
+        return $this->isJobManager;
+    }
+
+    /**
+     * @param SearchBooleanField $isJobResource
+     * @return EmployeeSearchBasic
+     */
+    public function setIsJobResource(SearchBooleanField $isJobResource): EmployeeSearchBasic
+    {
+        $this->isJobResource = $isJobResource;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsJobResource(): SearchBooleanField
+    {
+        return $this->isJobResource;
+    }
+
+    /**
+     * @param SearchBooleanField $isTemplate
+     * @return EmployeeSearchBasic
+     */
+    public function setIsTemplate(SearchBooleanField $isTemplate): EmployeeSearchBasic
+    {
+        $this->isTemplate = $isTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsTemplate(): SearchBooleanField
+    {
+        return $this->isTemplate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $job
+     * @return EmployeeSearchBasic
+     */
+    public function setJob(SearchMultiSelectField $job): EmployeeSearchBasic
+    {
+        $this->job = $job;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getJob(): SearchMultiSelectField
+    {
+        return $this->job;
+    }
+
+    /**
+     * @param SearchStringField $jobDescription
+     * @return EmployeeSearchBasic
+     */
+    public function setJobDescription(SearchStringField $jobDescription): EmployeeSearchBasic
+    {
+        $this->jobDescription = $jobDescription;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getJobDescription(): SearchStringField
+    {
+        return $this->jobDescription;
+    }
+
+    /**
+     * @param SearchDoubleField $laborCost
+     * @return EmployeeSearchBasic
+     */
+    public function setLaborCost(SearchDoubleField $laborCost): EmployeeSearchBasic
+    {
+        $this->laborCost = $laborCost;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getLaborCost(): SearchDoubleField
+    {
+        return $this->laborCost;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $language
+     * @return EmployeeSearchBasic
+     */
+    public function setLanguage(SearchEnumMultiSelectField $language): EmployeeSearchBasic
+    {
+        $this->language = $language;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getLanguage(): SearchEnumMultiSelectField
+    {
+        return $this->language;
+    }
+
+    /**
+     * @param SearchDateField $lastModifiedDate
+     * @return EmployeeSearchBasic
+     */
+    public function setLastModifiedDate(SearchDateField $lastModifiedDate): EmployeeSearchBasic
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getLastModifiedDate(): SearchDateField
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchStringField $lastName
+     * @return EmployeeSearchBasic
+     */
+    public function setLastName(SearchStringField $lastName): EmployeeSearchBasic
+    {
+        $this->lastName = $lastName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getLastName(): SearchStringField
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * @param SearchDateField $lastPaidDate
+     * @return EmployeeSearchBasic
+     */
+    public function setLastPaidDate(SearchDateField $lastPaidDate): EmployeeSearchBasic
+    {
+        $this->lastPaidDate = $lastPaidDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getLastPaidDate(): SearchDateField
+    {
+        return $this->lastPaidDate;
+    }
+
+    /**
+     * @param SearchDateField $lastReviewDate
+     * @return EmployeeSearchBasic
+     */
+    public function setLastReviewDate(SearchDateField $lastReviewDate): EmployeeSearchBasic
+    {
+        $this->lastReviewDate = $lastReviewDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getLastReviewDate(): SearchDateField
+    {
+        return $this->lastReviewDate;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $level
+     * @return EmployeeSearchBasic
+     */
+    public function setLevel(SearchEnumMultiSelectField $level): EmployeeSearchBasic
+    {
+        $this->level = $level;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getLevel(): SearchEnumMultiSelectField
+    {
+        return $this->level;
+    }
+
+    /**
+     * @param SearchMultiSelectField $location
+     * @return EmployeeSearchBasic
+     */
+    public function setLocation(SearchMultiSelectField $location): EmployeeSearchBasic
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getLocation(): SearchMultiSelectField
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchMultiSelectField $maritalStatus
+     * @return EmployeeSearchBasic
+     */
+    public function setMaritalStatus(SearchMultiSelectField $maritalStatus): EmployeeSearchBasic
+    {
+        $this->maritalStatus = $maritalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getMaritalStatus(): SearchMultiSelectField
+    {
+        return $this->maritalStatus;
+    }
+
+    /**
+     * @param SearchStringField $middleName
+     * @return EmployeeSearchBasic
+     */
+    public function setMiddleName(SearchStringField $middleName): EmployeeSearchBasic
+    {
+        $this->middleName = $middleName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getMiddleName(): SearchStringField
+    {
+        return $this->middleName;
+    }
+
+    /**
+     * @param SearchDateField $nextReviewDate
+     * @return EmployeeSearchBasic
+     */
+    public function setNextReviewDate(SearchDateField $nextReviewDate): EmployeeSearchBasic
+    {
+        $this->nextReviewDate = $nextReviewDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getNextReviewDate(): SearchDateField
+    {
+        return $this->nextReviewDate;
+    }
+
+    /**
+     * @param SearchBooleanField $offlineAccess
+     * @return EmployeeSearchBasic
+     */
+    public function setOfflineAccess(SearchBooleanField $offlineAccess): EmployeeSearchBasic
+    {
+        $this->offlineAccess = $offlineAccess;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getOfflineAccess(): SearchBooleanField
+    {
+        return $this->offlineAccess;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $payFrequency
+     * @return EmployeeSearchBasic
+     */
+    public function setPayFrequency(SearchEnumMultiSelectField $payFrequency): EmployeeSearchBasic
+    {
+        $this->payFrequency = $payFrequency;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getPayFrequency(): SearchEnumMultiSelectField
+    {
+        return $this->payFrequency;
+    }
+
+    /**
+     * @param SearchDateField $permChangeDate
+     * @return EmployeeSearchBasic
+     */
+    public function setPermChangeDate(SearchDateField $permChangeDate): EmployeeSearchBasic
+    {
+        $this->permChangeDate = $permChangeDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getPermChangeDate(): SearchDateField
+    {
+        return $this->permChangeDate;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $permission
+     * @return EmployeeSearchBasic
+     */
+    public function setPermission(SearchEnumMultiSelectField $permission): EmployeeSearchBasic
+    {
+        $this->permission = $permission;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getPermission(): SearchEnumMultiSelectField
+    {
+        return $this->permission;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $permissionChange
+     * @return EmployeeSearchBasic
+     */
+    public function setPermissionChange(SearchEnumMultiSelectField $permissionChange): EmployeeSearchBasic
+    {
+        $this->permissionChange = $permissionChange;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getPermissionChange(): SearchEnumMultiSelectField
+    {
+        return $this->permissionChange;
+    }
+
+    /**
+     * @param SearchStringField $phone
+     * @return EmployeeSearchBasic
+     */
+    public function setPhone(SearchStringField $phone): EmployeeSearchBasic
+    {
+        $this->phone = $phone;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getPhone(): SearchStringField
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param SearchStringField $phoneticName
+     * @return EmployeeSearchBasic
+     */
+    public function setPhoneticName(SearchStringField $phoneticName): EmployeeSearchBasic
+    {
+        $this->phoneticName = $phoneticName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getPhoneticName(): SearchStringField
+    {
+        return $this->phoneticName;
+    }
+
+    /**
+     * @param SearchMultiSelectField $positionTitle
+     * @return EmployeeSearchBasic
+     */
+    public function setPositionTitle(SearchMultiSelectField $positionTitle): EmployeeSearchBasic
+    {
+        $this->positionTitle = $positionTitle;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getPositionTitle(): SearchMultiSelectField
+    {
+        return $this->positionTitle;
+    }
+
+    /**
+     * @param SearchDoubleField $primaryEarningAmount
+     * @return EmployeeSearchBasic
+     */
+    public function setPrimaryEarningAmount(SearchDoubleField $primaryEarningAmount): EmployeeSearchBasic
+    {
+        $this->primaryEarningAmount = $primaryEarningAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPrimaryEarningAmount(): SearchDoubleField
+    {
+        return $this->primaryEarningAmount;
+    }
+
+    /**
+     * @param SearchStringField $primaryEarningItem
+     * @return EmployeeSearchBasic
+     */
+    public function setPrimaryEarningItem(SearchStringField $primaryEarningItem): EmployeeSearchBasic
+    {
+        $this->primaryEarningItem = $primaryEarningItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getPrimaryEarningItem(): SearchStringField
+    {
+        return $this->primaryEarningItem;
+    }
+
+    /**
+     * @param SearchStringField $primaryEarningType
+     * @return EmployeeSearchBasic
+     */
+    public function setPrimaryEarningType(SearchStringField $primaryEarningType): EmployeeSearchBasic
+    {
+        $this->primaryEarningType = $primaryEarningType;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getPrimaryEarningType(): SearchStringField
+    {
+        return $this->primaryEarningType;
+    }
+
+    /**
+     * @param SearchDoubleField $purchaseOrderApprovalLimit
+     * @return EmployeeSearchBasic
+     */
+    public function setPurchaseOrderApprovalLimit(SearchDoubleField $purchaseOrderApprovalLimit): EmployeeSearchBasic
+    {
+        $this->purchaseOrderApprovalLimit = $purchaseOrderApprovalLimit;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPurchaseOrderApprovalLimit(): SearchDoubleField
+    {
+        return $this->purchaseOrderApprovalLimit;
+    }
+
+    /**
+     * @param SearchMultiSelectField $purchaseOrderApprover
+     * @return EmployeeSearchBasic
+     */
+    public function setPurchaseOrderApprover(SearchMultiSelectField $purchaseOrderApprover): EmployeeSearchBasic
+    {
+        $this->purchaseOrderApprover = $purchaseOrderApprover;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getPurchaseOrderApprover(): SearchMultiSelectField
+    {
+        return $this->purchaseOrderApprover;
+    }
+
+    /**
+     * @param SearchDoubleField $purchaseOrderLimit
+     * @return EmployeeSearchBasic
+     */
+    public function setPurchaseOrderLimit(SearchDoubleField $purchaseOrderLimit): EmployeeSearchBasic
+    {
+        $this->purchaseOrderLimit = $purchaseOrderLimit;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPurchaseOrderLimit(): SearchDoubleField
+    {
+        return $this->purchaseOrderLimit;
+    }
+
+    /**
+     * @param SearchDateField $releaseDate
+     * @return EmployeeSearchBasic
+     */
+    public function setReleaseDate(SearchDateField $releaseDate): EmployeeSearchBasic
+    {
+        $this->releaseDate = $releaseDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getReleaseDate(): SearchDateField
+    {
+        return $this->releaseDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $residentStatus
+     * @return EmployeeSearchBasic
+     */
+    public function setResidentStatus(SearchMultiSelectField $residentStatus): EmployeeSearchBasic
+    {
+        $this->residentStatus = $residentStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getResidentStatus(): SearchMultiSelectField
+    {
+        return $this->residentStatus;
+    }
+
+    /**
+     * @param SearchMultiSelectField $role
+     * @return EmployeeSearchBasic
+     */
+    public function setRole(SearchMultiSelectField $role): EmployeeSearchBasic
+    {
+        $this->role = $role;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getRole(): SearchMultiSelectField
+    {
+        return $this->role;
+    }
+
+    /**
+     * @param SearchMultiSelectField $roleChange
+     * @return EmployeeSearchBasic
+     */
+    public function setRoleChange(SearchMultiSelectField $roleChange): EmployeeSearchBasic
+    {
+        $this->roleChange = $roleChange;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getRoleChange(): SearchMultiSelectField
+    {
+        return $this->roleChange;
+    }
+
+    /**
+     * @param SearchDateField $roleChangeDate
+     * @return EmployeeSearchBasic
+     */
+    public function setRoleChangeDate(SearchDateField $roleChangeDate): EmployeeSearchBasic
+    {
+        $this->roleChangeDate = $roleChangeDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getRoleChangeDate(): SearchDateField
+    {
+        return $this->roleChangeDate;
+    }
+
+    /**
+     * @param SearchBooleanField $salesRep
+     * @return EmployeeSearchBasic
+     */
+    public function setSalesRep(SearchBooleanField $salesRep): EmployeeSearchBasic
+    {
+        $this->salesRep = $salesRep;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getSalesRep(): SearchBooleanField
+    {
+        return $this->salesRep;
+    }
+
+    /**
+     * @param SearchMultiSelectField $salesRole
+     * @return EmployeeSearchBasic
+     */
+    public function setSalesRole(SearchMultiSelectField $salesRole): EmployeeSearchBasic
+    {
+        $this->salesRole = $salesRole;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSalesRole(): SearchMultiSelectField
+    {
+        return $this->salesRole;
+    }
+
+    /**
+     * @param SearchStringField $salutation
+     * @return EmployeeSearchBasic
+     */
+    public function setSalutation(SearchStringField $salutation): EmployeeSearchBasic
+    {
+        $this->salutation = $salutation;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getSalutation(): SearchStringField
+    {
+        return $this->salutation;
+    }
+
+    /**
+     * @param SearchStringField $socialSecurityNumber
+     * @return EmployeeSearchBasic
+     */
+    public function setSocialSecurityNumber(SearchStringField $socialSecurityNumber): EmployeeSearchBasic
+    {
+        $this->socialSecurityNumber = $socialSecurityNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getSocialSecurityNumber(): SearchStringField
+    {
+        return $this->socialSecurityNumber;
+    }
+
+    /**
+     * @param SearchDateField $startDateTimeOffCalc
+     * @return EmployeeSearchBasic
+     */
+    public function setStartDateTimeOffCalc(SearchDateField $startDateTimeOffCalc): EmployeeSearchBasic
+    {
+        $this->startDateTimeOffCalc = $startDateTimeOffCalc;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getStartDateTimeOffCalc(): SearchDateField
+    {
+        return $this->startDateTimeOffCalc;
+    }
+
+    /**
+     * @param SearchStringField $state
+     * @return EmployeeSearchBasic
+     */
+    public function setState(SearchStringField $state): EmployeeSearchBasic
+    {
+        $this->state = $state;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getState(): SearchStringField
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return EmployeeSearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): EmployeeSearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchMultiSelectField $supervisor
+     * @return EmployeeSearchBasic
+     */
+    public function setSupervisor(SearchMultiSelectField $supervisor): EmployeeSearchBasic
+    {
+        $this->supervisor = $supervisor;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSupervisor(): SearchMultiSelectField
+    {
+        return $this->supervisor;
+    }
+
+    /**
+     * @param SearchBooleanField $supportRep
+     * @return EmployeeSearchBasic
+     */
+    public function setSupportRep(SearchBooleanField $supportRep): EmployeeSearchBasic
+    {
+        $this->supportRep = $supportRep;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getSupportRep(): SearchBooleanField
+    {
+        return $this->supportRep;
+    }
+
+    /**
+     * @param SearchDoubleField $targetUtilization
+     * @return EmployeeSearchBasic
+     */
+    public function setTargetUtilization(SearchDoubleField $targetUtilization): EmployeeSearchBasic
+    {
+        $this->targetUtilization = $targetUtilization;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getTargetUtilization(): SearchDoubleField
+    {
+        return $this->targetUtilization;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $terminationCategory
+     * @return EmployeeSearchBasic
+     */
+    public function setTerminationCategory(SearchEnumMultiSelectField $terminationCategory): EmployeeSearchBasic
+    {
+        $this->terminationCategory = $terminationCategory;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getTerminationCategory(): SearchEnumMultiSelectField
+    {
+        return $this->terminationCategory;
+    }
+
+    /**
+     * @param SearchStringField $terminationDetails
+     * @return EmployeeSearchBasic
+     */
+    public function setTerminationDetails(SearchStringField $terminationDetails): EmployeeSearchBasic
+    {
+        $this->terminationDetails = $terminationDetails;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getTerminationDetails(): SearchStringField
+    {
+        return $this->terminationDetails;
+    }
+
+    /**
+     * @param SearchMultiSelectField $terminationReason
+     * @return EmployeeSearchBasic
+     */
+    public function setTerminationReason(SearchMultiSelectField $terminationReason): EmployeeSearchBasic
+    {
+        $this->terminationReason = $terminationReason;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getTerminationReason(): SearchMultiSelectField
+    {
+        return $this->terminationReason;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $terminationRegretted
+     * @return EmployeeSearchBasic
+     */
+    public function setTerminationRegretted(SearchEnumMultiSelectField $terminationRegretted): EmployeeSearchBasic
+    {
+        $this->terminationRegretted = $terminationRegretted;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getTerminationRegretted(): SearchEnumMultiSelectField
+    {
+        return $this->terminationRegretted;
+    }
+
+    /**
+     * @param SearchMultiSelectField $timeApprover
+     * @return EmployeeSearchBasic
+     */
+    public function setTimeApprover(SearchMultiSelectField $timeApprover): EmployeeSearchBasic
+    {
+        $this->timeApprover = $timeApprover;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getTimeApprover(): SearchMultiSelectField
+    {
+        return $this->timeApprover;
+    }
+
+    /**
+     * @param SearchMultiSelectField $timeOffPlan
+     * @return EmployeeSearchBasic
+     */
+    public function setTimeOffPlan(SearchMultiSelectField $timeOffPlan): EmployeeSearchBasic
+    {
+        $this->timeOffPlan = $timeOffPlan;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getTimeOffPlan(): SearchMultiSelectField
+    {
+        return $this->timeOffPlan;
+    }
+
+    /**
+     * @param SearchStringField $title
+     * @return EmployeeSearchBasic
+     */
+    public function setTitle(SearchStringField $title): EmployeeSearchBasic
+    {
+        $this->title = $title;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getTitle(): SearchStringField
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param SearchBooleanField $usePerquest
+     * @return EmployeeSearchBasic
+     */
+    public function setUsePerquest(SearchBooleanField $usePerquest): EmployeeSearchBasic
+    {
+        $this->usePerquest = $usePerquest;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getUsePerquest(): SearchBooleanField
+    {
+        return $this->usePerquest;
+    }
+
+    /**
+     * @param SearchBooleanField $useTimeData
+     * @return EmployeeSearchBasic
+     */
+    public function setUseTimeData(SearchBooleanField $useTimeData): EmployeeSearchBasic
+    {
+        $this->useTimeData = $useTimeData;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getUseTimeData(): SearchBooleanField
+    {
+        return $this->useTimeData;
+    }
+
+    /**
+     * @param SearchDateField $visaExpDate
+     * @return EmployeeSearchBasic
+     */
+    public function setVisaExpDate(SearchDateField $visaExpDate): EmployeeSearchBasic
+    {
+        $this->visaExpDate = $visaExpDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getVisaExpDate(): SearchDateField
+    {
+        return $this->visaExpDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $visaType
+     * @return EmployeeSearchBasic
+     */
+    public function setVisaType(SearchMultiSelectField $visaType): EmployeeSearchBasic
+    {
+        $this->visaType = $visaType;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getVisaType(): SearchMultiSelectField
+    {
+        return $this->visaType;
+    }
+
+    /**
+     * @param SearchMultiSelectField $withholding
+     * @return EmployeeSearchBasic
+     */
+    public function setWithholding(SearchMultiSelectField $withholding): EmployeeSearchBasic
+    {
+        $this->withholding = $withholding;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getWithholding(): SearchMultiSelectField
+    {
+        return $this->withholding;
+    }
+
+    /**
+     * @param SearchMultiSelectField $workCalendar
+     * @return EmployeeSearchBasic
+     */
+    public function setWorkCalendar(SearchMultiSelectField $workCalendar): EmployeeSearchBasic
+    {
+        $this->workCalendar = $workCalendar;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getWorkCalendar(): SearchMultiSelectField
+    {
+        return $this->workCalendar;
+    }
+
+    /**
+     * @param SearchMultiSelectField $workplace
+     * @return EmployeeSearchBasic
+     */
+    public function setWorkplace(SearchMultiSelectField $workplace): EmployeeSearchBasic
+    {
+        $this->workplace = $workplace;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getWorkplace(): SearchMultiSelectField
+    {
+        return $this->workplace;
+    }
+
+    /**
+     * @param SearchStringField $zipCode
+     * @return EmployeeSearchBasic
+     */
+    public function setZipCode(SearchStringField $zipCode): EmployeeSearchBasic
+    {
+        $this->zipCode = $zipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getZipCode(): SearchStringField
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return EmployeeSearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): EmployeeSearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class MerchandiseHierarchyNodeSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $description;
+    protected array $description;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $hierarchyLevel;
+    protected array $hierarchyLevel;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $hierarchyVersion;
+    protected array $hierarchyVersion;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $parentNode;
+    protected array $parentNode;
+
     static $paramtypesmap = array(
         "description" => "SearchColumnStringField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -57,4 +64,131 @@ class MerchandiseHierarchyNodeSearchRowBasic extends SearchRowBasic {
         "name" => "SearchColumnStringField[]",
         "parentNode" => "SearchColumnSelectField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $description
+     * @return MerchandiseHierarchyNodeSearchRowBasic
+     */
+    public function setDescription(SearchColumnStringField $description): MerchandiseHierarchyNodeSearchRowBasic
+    {
+        $this->description[] = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDescription(): array
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return MerchandiseHierarchyNodeSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): MerchandiseHierarchyNodeSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $hierarchyLevel
+     * @return MerchandiseHierarchyNodeSearchRowBasic
+     */
+    public function setHierarchyLevel(SearchColumnSelectField $hierarchyLevel): MerchandiseHierarchyNodeSearchRowBasic
+    {
+        $this->hierarchyLevel[] = $hierarchyLevel;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getHierarchyLevel(): array
+    {
+        return $this->hierarchyLevel;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $hierarchyVersion
+     * @return MerchandiseHierarchyNodeSearchRowBasic
+     */
+    public function setHierarchyVersion(SearchColumnSelectField $hierarchyVersion): MerchandiseHierarchyNodeSearchRowBasic
+    {
+        $this->hierarchyVersion[] = $hierarchyVersion;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getHierarchyVersion(): array
+    {
+        return $this->hierarchyVersion;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return MerchandiseHierarchyNodeSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): MerchandiseHierarchyNodeSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return MerchandiseHierarchyNodeSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): MerchandiseHierarchyNodeSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $parentNode
+     * @return MerchandiseHierarchyNodeSearchRowBasic
+     */
+    public function setParentNode(SearchColumnSelectField $parentNode): MerchandiseHierarchyNodeSearchRowBasic
+    {
+        $this->parentNode[] = $parentNode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getParentNode(): array
+    {
+        return $this->parentNode;
+    }
+
 }

@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class MessageSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\MessageSearch
+     * @var MessageSearch
      */
-    public $criteria;
+    protected MessageSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\MessageSearchRow
+     * @var MessageSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected MessageSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "MessageSearch",
         "columns" => "MessageSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param MessageSearch $criteria
+     * @return MessageSearchAdvanced
+     */
+    public function setCriteria(MessageSearch $criteria): MessageSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return MessageSearch
+     */
+    public function getCriteria(): MessageSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param MessageSearchRow $columns
+     * @return MessageSearchAdvanced
+     */
+    public function setColumns(MessageSearchRow $columns): MessageSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return MessageSearchRow
+     */
+    public function getColumns(): MessageSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return MessageSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): MessageSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return MessageSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): MessageSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

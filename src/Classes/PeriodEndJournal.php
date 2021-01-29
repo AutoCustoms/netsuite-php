@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,91 +23,113 @@ class PeriodEndJournal extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
      * @var string
      */
-    public $transactionNumber;
+    protected string $transactionNumber;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $accountingBook;
+    protected RecordRef $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var string
-     */
-    public $trandate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $postingPeriod;
+    protected RecordRef $customForm;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $tranId;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $subsidiary;
+    protected string $trandate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $sourceSubsidiary;
+    protected RecordRef $postingPeriod;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $class;
+    protected string $memo;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $sourceSubsidiary;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $mainAccount;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
+    protected RecordRef $department;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $location;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $mainAccount;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $currency;
+
     /**
      * @var float
      */
-    public $creditTotal;
+    protected float $creditTotal;
+
     /**
      * @var float
      */
-    public $debitTotal;
+    protected float $debitTotal;
+
     /**
-     * @var \NetSuite\Classes\PeriodEndJournalLineList
+     * @var PeriodEndJournalLineList
      */
-    public $lineList;
+    protected PeriodEndJournalLineList $lineList;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -132,4 +154,401 @@ class PeriodEndJournal extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return PeriodEndJournal
+     */
+    public function setCreatedDate(string $createdDate): PeriodEndJournal
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return PeriodEndJournal
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): PeriodEndJournal
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param string $transactionNumber
+     * @return PeriodEndJournal
+     */
+    public function setTransactionNumber(string $transactionNumber): PeriodEndJournal
+    {
+        $this->transactionNumber = $transactionNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTransactionNumber(): string
+    {
+        return $this->transactionNumber;
+    }
+
+    /**
+     * @param RecordRef $accountingBook
+     * @return PeriodEndJournal
+     */
+    public function setAccountingBook(RecordRef $accountingBook): PeriodEndJournal
+    {
+        $this->accountingBook = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccountingBook(): RecordRef
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return PeriodEndJournal
+     */
+    public function setCustomForm(RecordRef $customForm): PeriodEndJournal
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param string $tranId
+     * @return PeriodEndJournal
+     */
+    public function setTranId(string $tranId): PeriodEndJournal
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param string $trandate
+     * @return PeriodEndJournal
+     */
+    public function setTrandate(string $trandate): PeriodEndJournal
+    {
+        $this->trandate = $trandate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTrandate(): string
+    {
+        return $this->trandate;
+    }
+
+    /**
+     * @param RecordRef $postingPeriod
+     * @return PeriodEndJournal
+     */
+    public function setPostingPeriod(RecordRef $postingPeriod): PeriodEndJournal
+    {
+        $this->postingPeriod = $postingPeriod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPostingPeriod(): RecordRef
+    {
+        return $this->postingPeriod;
+    }
+
+    /**
+     * @param string $memo
+     * @return PeriodEndJournal
+     */
+    public function setMemo(string $memo): PeriodEndJournal
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return PeriodEndJournal
+     */
+    public function setSubsidiary(RecordRef $subsidiary): PeriodEndJournal
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $sourceSubsidiary
+     * @return PeriodEndJournal
+     */
+    public function setSourceSubsidiary(RecordRef $sourceSubsidiary): PeriodEndJournal
+    {
+        $this->sourceSubsidiary = $sourceSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSourceSubsidiary(): RecordRef
+    {
+        return $this->sourceSubsidiary;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return PeriodEndJournal
+     */
+    public function setClass(RecordRef $class): PeriodEndJournal
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return PeriodEndJournal
+     */
+    public function setDepartment(RecordRef $department): PeriodEndJournal
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return PeriodEndJournal
+     */
+    public function setLocation(RecordRef $location): PeriodEndJournal
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $mainAccount
+     * @return PeriodEndJournal
+     */
+    public function setMainAccount(RecordRef $mainAccount): PeriodEndJournal
+    {
+        $this->mainAccount = $mainAccount;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getMainAccount(): RecordRef
+    {
+        return $this->mainAccount;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return PeriodEndJournal
+     */
+    public function setCurrency(RecordRef $currency): PeriodEndJournal
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param float $creditTotal
+     * @return PeriodEndJournal
+     */
+    public function setCreditTotal(float $creditTotal): PeriodEndJournal
+    {
+        $this->creditTotal = $creditTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCreditTotal(): float
+    {
+        return $this->creditTotal;
+    }
+
+    /**
+     * @param float $debitTotal
+     * @return PeriodEndJournal
+     */
+    public function setDebitTotal(float $debitTotal): PeriodEndJournal
+    {
+        $this->debitTotal = $debitTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getDebitTotal(): float
+    {
+        return $this->debitTotal;
+    }
+
+    /**
+     * @param PeriodEndJournalLineList $lineList
+     * @return PeriodEndJournal
+     */
+    public function setLineList(PeriodEndJournalLineList $lineList): PeriodEndJournal
+    {
+        $this->lineList = $lineList;
+        return $this;
+    }
+
+    /**
+     * @return PeriodEndJournalLineList
+     */
+    public function getLineList(): PeriodEndJournalLineList
+    {
+        return $this->lineList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return PeriodEndJournal
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): PeriodEndJournal
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return PeriodEndJournal
+     */
+    public function setInternalId(string $internalId): PeriodEndJournal
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return PeriodEndJournal
+     */
+    public function setExternalId(string $externalId): PeriodEndJournal
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

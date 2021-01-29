@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BillingScheduleMilestoneList {
     /**
-     * @var \NetSuite\Classes\BillingScheduleMilestone[]
+     * @var BillingScheduleMilestone[]
      */
-    public $billingScheduleMilestone;
+    protected array $billingScheduleMilestone;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "billingScheduleMilestone" => "BillingScheduleMilestone[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param BillingScheduleMilestone[] $billingScheduleMilestone
+     * @return BillingScheduleMilestoneList
+     */
+    public function setBillingScheduleMilestone(BillingScheduleMilestone $billingScheduleMilestone): BillingScheduleMilestoneList
+    {
+        $this->billingScheduleMilestone[] = $billingScheduleMilestone;
+        return $this;
+    }
+
+    /**
+     * @return BillingScheduleMilestone[]
+     */
+    public function getBillingScheduleMilestone(): array
+    {
+        return $this->billingScheduleMilestone;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return BillingScheduleMilestoneList
+     */
+    public function setReplaceAll(bool $replaceAll): BillingScheduleMilestoneList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class PaymentMethodVisuals {
     /**
      * @var string
      */
-    public $flags;
+    protected string $flags;
+
     /**
      * @var string
      */
-    public $location;
+    protected string $location;
+
     static $paramtypesmap = array(
         "flags" => "string",
         "location" => "string",
     );
+
+    /**
+     * @param string $flags
+     * @return PaymentMethodVisuals
+     */
+    public function setFlags(string $flags): PaymentMethodVisuals
+    {
+        $this->flags = $flags;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFlags(): string
+    {
+        return $this->flags;
+    }
+
+    /**
+     * @param string $location
+     * @return PaymentMethodVisuals
+     */
+    public function setLocation(string $location): PaymentMethodVisuals
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLocation(): string
+    {
+        return $this->location;
+    }
+
 }

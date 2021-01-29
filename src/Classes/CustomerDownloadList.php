@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerDownloadList {
     /**
-     * @var \NetSuite\Classes\CustomerDownload[]
+     * @var CustomerDownload[]
      */
-    public $download;
+    protected array $download;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "download" => "CustomerDownload[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CustomerDownload[] $download
+     * @return CustomerDownloadList
+     */
+    public function setDownload(CustomerDownload $download): CustomerDownloadList
+    {
+        $this->download[] = $download;
+        return $this;
+    }
+
+    /**
+     * @return CustomerDownload[]
+     */
+    public function getDownload(): array
+    {
+        return $this->download;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CustomerDownloadList
+     */
+    public function setReplaceAll(bool $replaceAll): CustomerDownloadList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

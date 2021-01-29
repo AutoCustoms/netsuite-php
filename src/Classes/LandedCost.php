@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class LandedCost extends Record {
     /**
-     * @var \NetSuite\Classes\LandedCostDataList
+     * @var LandedCostDataList
      */
-    public $landedCostDataList;
+    protected LandedCostDataList $landedCostDataList;
+
     static $paramtypesmap = array(
         "landedCostDataList" => "LandedCostDataList",
     );
+
+    /**
+     * @param LandedCostDataList $landedCostDataList
+     * @return LandedCost
+     */
+    public function setLandedCostDataList(LandedCostDataList $landedCostDataList): LandedCost
+    {
+        $this->landedCostDataList = $landedCostDataList;
+        return $this;
+    }
+
+    /**
+     * @return LandedCostDataList
+     */
+    public function getLandedCostDataList(): LandedCostDataList
+    {
+        return $this->landedCostDataList;
+    }
+
 }

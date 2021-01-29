@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PostingTransactionSummaryField {
     /**
-     * @var boolean
+     * @var bool
      */
-    public $period;
+    protected bool $period;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $account;
+    protected bool $account;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $parentItem;
+    protected bool $parentItem;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $item;
+    protected bool $item;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $entity;
+    protected bool $entity;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $department;
+    protected bool $department;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $class;
+    protected bool $class;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $location;
+    protected bool $location;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $subsidiary;
+    protected bool $subsidiary;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $book;
+    protected bool $book;
+
     static $paramtypesmap = array(
         "period" => "boolean",
         "account" => "boolean",
@@ -72,4 +82,185 @@ class PostingTransactionSummaryField {
         "subsidiary" => "boolean",
         "book" => "boolean",
     );
+
+    /**
+     * @param bool $period
+     * @return PostingTransactionSummaryField
+     */
+    public function setPeriod(bool $period): PostingTransactionSummaryField
+    {
+        $this->period = $period;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getPeriod(): bool
+    {
+        return $this->period;
+    }
+
+    /**
+     * @param bool $account
+     * @return PostingTransactionSummaryField
+     */
+    public function setAccount(bool $account): PostingTransactionSummaryField
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getAccount(): bool
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param bool $parentItem
+     * @return PostingTransactionSummaryField
+     */
+    public function setParentItem(bool $parentItem): PostingTransactionSummaryField
+    {
+        $this->parentItem = $parentItem;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getParentItem(): bool
+    {
+        return $this->parentItem;
+    }
+
+    /**
+     * @param bool $item
+     * @return PostingTransactionSummaryField
+     */
+    public function setItem(bool $item): PostingTransactionSummaryField
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getItem(): bool
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param bool $entity
+     * @return PostingTransactionSummaryField
+     */
+    public function setEntity(bool $entity): PostingTransactionSummaryField
+    {
+        $this->entity = $entity;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getEntity(): bool
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param bool $department
+     * @return PostingTransactionSummaryField
+     */
+    public function setDepartment(bool $department): PostingTransactionSummaryField
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getDepartment(): bool
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param bool $class
+     * @return PostingTransactionSummaryField
+     */
+    public function setClass(bool $class): PostingTransactionSummaryField
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getClass(): bool
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param bool $location
+     * @return PostingTransactionSummaryField
+     */
+    public function setLocation(bool $location): PostingTransactionSummaryField
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getLocation(): bool
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param bool $subsidiary
+     * @return PostingTransactionSummaryField
+     */
+    public function setSubsidiary(bool $subsidiary): PostingTransactionSummaryField
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSubsidiary(): bool
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param bool $book
+     * @return PostingTransactionSummaryField
+     */
+    public function setBook(bool $book): PostingTransactionSummaryField
+    {
+        $this->book = $book;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getBook(): bool
+    {
+        return $this->book;
+    }
+
 }

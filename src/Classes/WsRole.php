@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class WsRole {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $role;
+    protected RecordRef $role;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isDefault;
+    protected bool $isDefault;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isLoggedInRole;
+    protected bool $isLoggedInRole;
+
     static $paramtypesmap = array(
         "role" => "RecordRef",
         "isDefault" => "boolean",
         "isInactive" => "boolean",
         "isLoggedInRole" => "boolean",
     );
+
+    /**
+     * @param RecordRef $role
+     * @return WsRole
+     */
+    public function setRole(RecordRef $role): WsRole
+    {
+        $this->role = $role;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRole(): RecordRef
+    {
+        return $this->role;
+    }
+
+    /**
+     * @param bool $isDefault
+     * @return WsRole
+     */
+    public function setIsDefault(bool $isDefault): WsRole
+    {
+        $this->isDefault = $isDefault;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsDefault(): bool
+    {
+        return $this->isDefault;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return WsRole
+     */
+    public function setIsInactive(bool $isInactive): WsRole
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param bool $isLoggedInRole
+     * @return WsRole
+     */
+    public function setIsLoggedInRole(bool $isLoggedInRole): WsRole
+    {
+        $this->isLoggedInRole = $isLoggedInRole;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsLoggedInRole(): bool
+    {
+        return $this->isLoggedInRole;
+    }
+
 }

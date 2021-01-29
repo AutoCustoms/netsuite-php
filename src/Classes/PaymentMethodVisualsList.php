@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaymentMethodVisualsList {
     /**
-     * @var \NetSuite\Classes\PaymentMethodVisuals[]
+     * @var PaymentMethodVisuals[]
      */
-    public $paymentMethodVisuals;
+    protected array $paymentMethodVisuals;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "paymentMethodVisuals" => "PaymentMethodVisuals[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param PaymentMethodVisuals[] $paymentMethodVisuals
+     * @return PaymentMethodVisualsList
+     */
+    public function setPaymentMethodVisuals(PaymentMethodVisuals $paymentMethodVisuals): PaymentMethodVisualsList
+    {
+        $this->paymentMethodVisuals[] = $paymentMethodVisuals;
+        return $this;
+    }
+
+    /**
+     * @return PaymentMethodVisuals[]
+     */
+    public function getPaymentMethodVisuals(): array
+    {
+        return $this->paymentMethodVisuals;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return PaymentMethodVisualsList
+     */
+    public function setReplaceAll(bool $replaceAll): PaymentMethodVisualsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

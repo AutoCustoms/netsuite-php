@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InventoryNumberBinSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $binNumber;
+    protected array $binNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $inventoryNumber;
+    protected array $inventoryNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityAvailable;
+    protected array $quantityAvailable;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityOnHand;
+    protected array $quantityOnHand;
+
     static $paramtypesmap = array(
         "binNumber" => "SearchColumnSelectField[]",
         "inventoryNumber" => "SearchColumnSelectField[]",
@@ -47,4 +52,95 @@ class InventoryNumberBinSearchRowBasic extends SearchRowBasic {
         "quantityAvailable" => "SearchColumnDoubleField[]",
         "quantityOnHand" => "SearchColumnDoubleField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $binNumber
+     * @return InventoryNumberBinSearchRowBasic
+     */
+    public function setBinNumber(SearchColumnSelectField $binNumber): InventoryNumberBinSearchRowBasic
+    {
+        $this->binNumber[] = $binNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBinNumber(): array
+    {
+        return $this->binNumber;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $inventoryNumber
+     * @return InventoryNumberBinSearchRowBasic
+     */
+    public function setInventoryNumber(SearchColumnSelectField $inventoryNumber): InventoryNumberBinSearchRowBasic
+    {
+        $this->inventoryNumber[] = $inventoryNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInventoryNumber(): array
+    {
+        return $this->inventoryNumber;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return InventoryNumberBinSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): InventoryNumberBinSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityAvailable
+     * @return InventoryNumberBinSearchRowBasic
+     */
+    public function setQuantityAvailable(SearchColumnDoubleField $quantityAvailable): InventoryNumberBinSearchRowBasic
+    {
+        $this->quantityAvailable[] = $quantityAvailable;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityAvailable(): array
+    {
+        return $this->quantityAvailable;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityOnHand
+     * @return InventoryNumberBinSearchRowBasic
+     */
+    public function setQuantityOnHand(SearchColumnDoubleField $quantityOnHand): InventoryNumberBinSearchRowBasic
+    {
+        $this->quantityOnHand[] = $quantityOnHand;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityOnHand(): array
+    {
+        return $this->quantityOnHand;
+    }
+
 }

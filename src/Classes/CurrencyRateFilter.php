@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CurrencyRateFilter {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $baseCurrency;
+    protected RecordRef $baseCurrency;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $fromCurrency;
+    protected RecordRef $fromCurrency;
+
     /**
      * @var string
      */
-    public $effectiveDate;
+    protected string $effectiveDate;
+
     static $paramtypesmap = array(
         "baseCurrency" => "RecordRef",
         "fromCurrency" => "RecordRef",
         "effectiveDate" => "dateTime",
     );
+
+    /**
+     * @param RecordRef $baseCurrency
+     * @return CurrencyRateFilter
+     */
+    public function setBaseCurrency(RecordRef $baseCurrency): CurrencyRateFilter
+    {
+        $this->baseCurrency = $baseCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBaseCurrency(): RecordRef
+    {
+        return $this->baseCurrency;
+    }
+
+    /**
+     * @param RecordRef $fromCurrency
+     * @return CurrencyRateFilter
+     */
+    public function setFromCurrency(RecordRef $fromCurrency): CurrencyRateFilter
+    {
+        $this->fromCurrency = $fromCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getFromCurrency(): RecordRef
+    {
+        return $this->fromCurrency;
+    }
+
+    /**
+     * @param string $effectiveDate
+     * @return CurrencyRateFilter
+     */
+    public function setEffectiveDate(string $effectiveDate): CurrencyRateFilter
+    {
+        $this->effectiveDate = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEffectiveDate(): string
+    {
+        return $this->effectiveDate;
+    }
+
 }

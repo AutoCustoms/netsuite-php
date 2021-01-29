@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ResourceAllocationSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\ResourceAllocationSearchRowBasic
+     * @var ResourceAllocationSearchRowBasic
      */
-    public $basic;
+    protected ResourceAllocationSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchRowBasic
+     * @var CustomerSearchRowBasic
      */
-    public $customerJoin;
+    protected CustomerSearchRowBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $employeeJoin;
+    protected EmployeeSearchRowBasic $employeeJoin;
+
     /**
-     * @var \NetSuite\Classes\JobSearchRowBasic
+     * @var JobSearchRowBasic
      */
-    public $jobJoin;
+    protected JobSearchRowBasic $jobJoin;
+
     /**
-     * @var \NetSuite\Classes\ProjectTaskSearchRowBasic
+     * @var ProjectTaskSearchRowBasic
      */
-    public $projectTaskJoin;
+    protected ProjectTaskSearchRowBasic $projectTaskJoin;
+
     /**
-     * @var \NetSuite\Classes\EntitySearchRowBasic
+     * @var EntitySearchRowBasic
      */
-    public $requestedByJoin;
+    protected EntitySearchRowBasic $requestedByJoin;
+
     /**
-     * @var \NetSuite\Classes\EntitySearchRowBasic
+     * @var EntitySearchRowBasic
      */
-    public $resourceJoin;
+    protected EntitySearchRowBasic $resourceJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\VendorSearchRowBasic
+     * @var VendorSearchRowBasic
      */
-    public $vendorJoin;
+    protected VendorSearchRowBasic $vendorJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "ResourceAllocationSearchRowBasic",
         "customerJoin" => "CustomerSearchRowBasic",
@@ -72,4 +82,185 @@ class ResourceAllocationSearchRow extends SearchRow {
         "vendorJoin" => "VendorSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param ResourceAllocationSearchRowBasic $basic
+     * @return ResourceAllocationSearchRow
+     */
+    public function setBasic(ResourceAllocationSearchRowBasic $basic): ResourceAllocationSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function getBasic(): ResourceAllocationSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param CustomerSearchRowBasic $customerJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setCustomerJoin(CustomerSearchRowBasic $customerJoin): ResourceAllocationSearchRow
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchRowBasic
+     */
+    public function getCustomerJoin(): CustomerSearchRowBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $employeeJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setEmployeeJoin(EmployeeSearchRowBasic $employeeJoin): ResourceAllocationSearchRow
+    {
+        $this->employeeJoin = $employeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getEmployeeJoin(): EmployeeSearchRowBasic
+    {
+        return $this->employeeJoin;
+    }
+
+    /**
+     * @param JobSearchRowBasic $jobJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setJobJoin(JobSearchRowBasic $jobJoin): ResourceAllocationSearchRow
+    {
+        $this->jobJoin = $jobJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchRowBasic
+     */
+    public function getJobJoin(): JobSearchRowBasic
+    {
+        return $this->jobJoin;
+    }
+
+    /**
+     * @param ProjectTaskSearchRowBasic $projectTaskJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setProjectTaskJoin(ProjectTaskSearchRowBasic $projectTaskJoin): ResourceAllocationSearchRow
+    {
+        $this->projectTaskJoin = $projectTaskJoin;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskSearchRowBasic
+     */
+    public function getProjectTaskJoin(): ProjectTaskSearchRowBasic
+    {
+        return $this->projectTaskJoin;
+    }
+
+    /**
+     * @param EntitySearchRowBasic $requestedByJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setRequestedByJoin(EntitySearchRowBasic $requestedByJoin): ResourceAllocationSearchRow
+    {
+        $this->requestedByJoin = $requestedByJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntitySearchRowBasic
+     */
+    public function getRequestedByJoin(): EntitySearchRowBasic
+    {
+        return $this->requestedByJoin;
+    }
+
+    /**
+     * @param EntitySearchRowBasic $resourceJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setResourceJoin(EntitySearchRowBasic $resourceJoin): ResourceAllocationSearchRow
+    {
+        $this->resourceJoin = $resourceJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntitySearchRowBasic
+     */
+    public function getResourceJoin(): EntitySearchRowBasic
+    {
+        return $this->resourceJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): ResourceAllocationSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param VendorSearchRowBasic $vendorJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setVendorJoin(VendorSearchRowBasic $vendorJoin): ResourceAllocationSearchRow
+    {
+        $this->vendorJoin = $vendorJoin;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearchRowBasic
+     */
+    public function getVendorJoin(): VendorSearchRowBasic
+    {
+        return $this->vendorJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return ResourceAllocationSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): ResourceAllocationSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,76 @@ class ServiceItemTaskTemplates {
     /**
      * @var string
      */
-    public $taskName;
+    protected string $taskName;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $taskStartOffset;
+    protected int $taskStartOffset;
+
     /**
-     * @var \NetSuite\Classes\Duration
+     * @var Duration
      */
-    public $taskDuration;
+    protected Duration $taskDuration;
+
     static $paramtypesmap = array(
         "taskName" => "string",
         "taskStartOffset" => "integer",
         "taskDuration" => "Duration",
     );
+
+    /**
+     * @param string $taskName
+     * @return ServiceItemTaskTemplates
+     */
+    public function setTaskName(string $taskName): ServiceItemTaskTemplates
+    {
+        $this->taskName = $taskName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaskName(): string
+    {
+        return $this->taskName;
+    }
+
+    /**
+     * @param int $taskStartOffset
+     * @return ServiceItemTaskTemplates
+     */
+    public function setTaskStartOffset(int $taskStartOffset): ServiceItemTaskTemplates
+    {
+        $this->taskStartOffset = $taskStartOffset;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTaskStartOffset(): int
+    {
+        return $this->taskStartOffset;
+    }
+
+    /**
+     * @param Duration $taskDuration
+     * @return ServiceItemTaskTemplates
+     */
+    public function setTaskDuration(Duration $taskDuration): ServiceItemTaskTemplates
+    {
+        $this->taskDuration = $taskDuration;
+        return $this;
+    }
+
+    /**
+     * @return Duration
+     */
+    public function getTaskDuration(): Duration
+    {
+        return $this->taskDuration;
+    }
+
 }

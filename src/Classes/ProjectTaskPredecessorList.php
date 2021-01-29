@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ProjectTaskPredecessorList {
     /**
-     * @var \NetSuite\Classes\ProjectTaskPredecessor[]
+     * @var ProjectTaskPredecessor[]
      */
-    public $projectTaskPredecessor;
+    protected array $projectTaskPredecessor;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "projectTaskPredecessor" => "ProjectTaskPredecessor[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ProjectTaskPredecessor[] $projectTaskPredecessor
+     * @return ProjectTaskPredecessorList
+     */
+    public function setProjectTaskPredecessor(ProjectTaskPredecessor $projectTaskPredecessor): ProjectTaskPredecessorList
+    {
+        $this->projectTaskPredecessor[] = $projectTaskPredecessor;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskPredecessor[]
+     */
+    public function getProjectTaskPredecessor(): array
+    {
+        return $this->projectTaskPredecessor;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ProjectTaskPredecessorList
+     */
+    public function setReplaceAll(bool $replaceAll): ProjectTaskPredecessorList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

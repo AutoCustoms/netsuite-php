@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckPayDeduct {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $payItem;
+    protected RecordRef $payItem;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
-    /**
-     * @var float
-     */
-    public $wageBase;
+    protected int $line;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $wageBase;
+
     /**
-     * @var boolean
+     * @var float
      */
-    public $manualEntry;
+    protected float $amount;
+
+    /**
+     * @var bool
+     */
+    protected bool $manualEntry;
+
     static $paramtypesmap = array(
         "payItem" => "RecordRef",
         "line" => "integer",
@@ -47,4 +52,95 @@ class PaycheckPayDeduct {
         "amount" => "float",
         "manualEntry" => "boolean",
     );
+
+    /**
+     * @param RecordRef $payItem
+     * @return PaycheckPayDeduct
+     */
+    public function setPayItem(RecordRef $payItem): PaycheckPayDeduct
+    {
+        $this->payItem = $payItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPayItem(): RecordRef
+    {
+        return $this->payItem;
+    }
+
+    /**
+     * @param int $line
+     * @return PaycheckPayDeduct
+     */
+    public function setLine(int $line): PaycheckPayDeduct
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param float $wageBase
+     * @return PaycheckPayDeduct
+     */
+    public function setWageBase(float $wageBase): PaycheckPayDeduct
+    {
+        $this->wageBase = $wageBase;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getWageBase(): float
+    {
+        return $this->wageBase;
+    }
+
+    /**
+     * @param float $amount
+     * @return PaycheckPayDeduct
+     */
+    public function setAmount(float $amount): PaycheckPayDeduct
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param bool $manualEntry
+     * @return PaycheckPayDeduct
+     */
+    public function setManualEntry(bool $manualEntry): PaycheckPayDeduct
+    {
+        $this->manualEntry = $manualEntry;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getManualEntry(): bool
+    {
+        return $this->manualEntry;
+    }
+
 }

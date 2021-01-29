@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PostingTransactionSummaryFilter {
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $period;
+    protected RecordRefList $period;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $account;
+    protected RecordRefList $account;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $parentItem;
+    protected RecordRefList $parentItem;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $item;
+    protected RecordRefList $item;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $entity;
+    protected RecordRefList $entity;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $department;
+    protected RecordRefList $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $class;
+    protected RecordRefList $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $location;
+    protected RecordRefList $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $subsidiary;
+    protected RecordRefList $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $book;
+    protected RecordRefList $book;
+
     static $paramtypesmap = array(
         "period" => "RecordRefList",
         "account" => "RecordRefList",
@@ -72,4 +82,185 @@ class PostingTransactionSummaryFilter {
         "subsidiary" => "RecordRefList",
         "book" => "RecordRefList",
     );
+
+    /**
+     * @param RecordRefList $period
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setPeriod(RecordRefList $period): PostingTransactionSummaryFilter
+    {
+        $this->period = $period;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getPeriod(): RecordRefList
+    {
+        return $this->period;
+    }
+
+    /**
+     * @param RecordRefList $account
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setAccount(RecordRefList $account): PostingTransactionSummaryFilter
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getAccount(): RecordRefList
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param RecordRefList $parentItem
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setParentItem(RecordRefList $parentItem): PostingTransactionSummaryFilter
+    {
+        $this->parentItem = $parentItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getParentItem(): RecordRefList
+    {
+        return $this->parentItem;
+    }
+
+    /**
+     * @param RecordRefList $item
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setItem(RecordRefList $item): PostingTransactionSummaryFilter
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getItem(): RecordRefList
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param RecordRefList $entity
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setEntity(RecordRefList $entity): PostingTransactionSummaryFilter
+    {
+        $this->entity = $entity;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getEntity(): RecordRefList
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param RecordRefList $department
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setDepartment(RecordRefList $department): PostingTransactionSummaryFilter
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getDepartment(): RecordRefList
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRefList $class
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setClass(RecordRefList $class): PostingTransactionSummaryFilter
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getClass(): RecordRefList
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRefList $location
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setLocation(RecordRefList $location): PostingTransactionSummaryFilter
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getLocation(): RecordRefList
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRefList $subsidiary
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setSubsidiary(RecordRefList $subsidiary): PostingTransactionSummaryFilter
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getSubsidiary(): RecordRefList
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRefList $book
+     * @return PostingTransactionSummaryFilter
+     */
+    public function setBook(RecordRefList $book): PostingTransactionSummaryFilter
+    {
+        $this->book = $book;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getBook(): RecordRefList
+    {
+        return $this->book;
+    }
+
 }

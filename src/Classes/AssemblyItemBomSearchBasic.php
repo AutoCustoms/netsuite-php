@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AssemblyItemBomSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $assembly;
+    protected SearchMultiSelectField $assembly;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $billOfMaterials;
+    protected SearchMultiSelectField $billOfMaterials;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $default;
+    protected SearchBooleanField $default;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $locations;
+    protected SearchMultiSelectField $locations;
+
     static $paramtypesmap = array(
         "assembly" => "SearchMultiSelectField",
         "billOfMaterials" => "SearchMultiSelectField",
         "default" => "SearchBooleanField",
         "locations" => "SearchMultiSelectField",
     );
+
+    /**
+     * @param SearchMultiSelectField $assembly
+     * @return AssemblyItemBomSearchBasic
+     */
+    public function setAssembly(SearchMultiSelectField $assembly): AssemblyItemBomSearchBasic
+    {
+        $this->assembly = $assembly;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getAssembly(): SearchMultiSelectField
+    {
+        return $this->assembly;
+    }
+
+    /**
+     * @param SearchMultiSelectField $billOfMaterials
+     * @return AssemblyItemBomSearchBasic
+     */
+    public function setBillOfMaterials(SearchMultiSelectField $billOfMaterials): AssemblyItemBomSearchBasic
+    {
+        $this->billOfMaterials = $billOfMaterials;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getBillOfMaterials(): SearchMultiSelectField
+    {
+        return $this->billOfMaterials;
+    }
+
+    /**
+     * @param SearchBooleanField $default
+     * @return AssemblyItemBomSearchBasic
+     */
+    public function setDefault(SearchBooleanField $default): AssemblyItemBomSearchBasic
+    {
+        $this->default = $default;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getDefault(): SearchBooleanField
+    {
+        return $this->default;
+    }
+
+    /**
+     * @param SearchMultiSelectField $locations
+     * @return AssemblyItemBomSearchBasic
+     */
+    public function setLocations(SearchMultiSelectField $locations): AssemblyItemBomSearchBasic
+    {
+        $this->locations = $locations;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getLocations(): SearchMultiSelectField
+    {
+        return $this->locations;
+    }
+
 }

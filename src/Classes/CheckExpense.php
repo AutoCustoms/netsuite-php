@@ -14,76 +14,80 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CheckExpense {
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $category;
+    protected RecordRef $category;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $account;
+    protected RecordRef $account;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $memo;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customer;
+    protected RecordRef $customer;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isBillable;
+    protected bool $isBillable;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxCode;
-    /**
-     * @var float
-     */
-    public $taxRate1;
-    /**
-     * @var float
-     */
-    public $tax1Amt;
-    /**
-     * @var float
-     */
-    public $taxRate2;
+    protected RecordRef $taxCode;
+
+    protected $taxRate1;
+    protected $tax1Amt;
+    protected $taxRate2;
     /**
      * @var float
      */
-    public $grossAmt;
+    protected float $grossAmt;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "line" => "integer",
         "category" => "RecordRef",
@@ -102,4 +106,239 @@ class CheckExpense {
         "grossAmt" => "float",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param int $line
+     * @return CheckExpense
+     */
+    public function setLine(int $line): CheckExpense
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param RecordRef $category
+     * @return CheckExpense
+     */
+    public function setCategory(RecordRef $category): CheckExpense
+    {
+        $this->category = $category;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCategory(): RecordRef
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param RecordRef $account
+     * @return CheckExpense
+     */
+    public function setAccount(RecordRef $account): CheckExpense
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccount(): RecordRef
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param float $amount
+     * @return CheckExpense
+     */
+    public function setAmount(float $amount): CheckExpense
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param string $memo
+     * @return CheckExpense
+     */
+    public function setMemo(string $memo): CheckExpense
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return CheckExpense
+     */
+    public function setDepartment(RecordRef $department): CheckExpense
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return CheckExpense
+     */
+    public function setClass(RecordRef $class): CheckExpense
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return CheckExpense
+     */
+    public function setLocation(RecordRef $location): CheckExpense
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return CheckExpense
+     */
+    public function setCustomer(RecordRef $customer): CheckExpense
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param bool $isBillable
+     * @return CheckExpense
+     */
+    public function setIsBillable(bool $isBillable): CheckExpense
+    {
+        $this->isBillable = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBillable(): bool
+    {
+        return $this->isBillable;
+    }
+
+    /**
+     * @param RecordRef $taxCode
+     * @return CheckExpense
+     */
+    public function setTaxCode(RecordRef $taxCode): CheckExpense
+    {
+        $this->taxCode = $taxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxCode(): RecordRef
+    {
+        return $this->taxCode;
+    }
+
+    /**
+     * @param float $grossAmt
+     * @return CheckExpense
+     */
+    public function setGrossAmt(float $grossAmt): CheckExpense
+    {
+        $this->grossAmt = $grossAmt;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getGrossAmt(): float
+    {
+        return $this->grossAmt;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return CheckExpense
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): CheckExpense
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

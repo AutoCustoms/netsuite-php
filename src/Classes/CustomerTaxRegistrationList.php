@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerTaxRegistrationList {
     /**
-     * @var \NetSuite\Classes\CustomerTaxRegistration[]
+     * @var CustomerTaxRegistration[]
      */
-    public $customerTaxRegistration;
+    protected array $customerTaxRegistration;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "customerTaxRegistration" => "CustomerTaxRegistration[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CustomerTaxRegistration[] $customerTaxRegistration
+     * @return CustomerTaxRegistrationList
+     */
+    public function setCustomerTaxRegistration(CustomerTaxRegistration $customerTaxRegistration): CustomerTaxRegistrationList
+    {
+        $this->customerTaxRegistration[] = $customerTaxRegistration;
+        return $this;
+    }
+
+    /**
+     * @return CustomerTaxRegistration[]
+     */
+    public function getCustomerTaxRegistration(): array
+    {
+        return $this->customerTaxRegistration;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CustomerTaxRegistrationList
+     */
+    public function setReplaceAll(bool $replaceAll): CustomerTaxRegistrationList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

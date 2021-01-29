@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CampaignEventList {
     /**
-     * @var \NetSuite\Classes\CampaignEvent[]
+     * @var CampaignEvent[]
      */
-    public $campaignEvent;
+    protected array $campaignEvent;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "campaignEvent" => "CampaignEvent[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CampaignEvent[] $campaignEvent
+     * @return CampaignEventList
+     */
+    public function setCampaignEvent(CampaignEvent $campaignEvent): CampaignEventList
+    {
+        $this->campaignEvent[] = $campaignEvent;
+        return $this;
+    }
+
+    /**
+     * @return CampaignEvent[]
+     */
+    public function getCampaignEvent(): array
+    {
+        return $this->campaignEvent;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CampaignEventList
+     */
+    public function setReplaceAll(bool $replaceAll): CampaignEventList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

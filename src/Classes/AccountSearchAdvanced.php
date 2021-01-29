@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\AccountSearch
+     * @var AccountSearch
      */
-    public $criteria;
+    protected AccountSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchRow
+     * @var AccountSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected AccountSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "AccountSearch",
         "columns" => "AccountSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param AccountSearch $criteria
+     * @return AccountSearchAdvanced
+     */
+    public function setCriteria(AccountSearch $criteria): AccountSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearch
+     */
+    public function getCriteria(): AccountSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param AccountSearchRow $columns
+     * @return AccountSearchAdvanced
+     */
+    public function setColumns(AccountSearchRow $columns): AccountSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchRow
+     */
+    public function getColumns(): AccountSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return AccountSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): AccountSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return AccountSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): AccountSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BudgetSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\BudgetSearch
+     * @var BudgetSearch
      */
-    public $criteria;
+    protected BudgetSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\BudgetSearchRow
+     * @var BudgetSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected BudgetSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "BudgetSearch",
         "columns" => "BudgetSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param BudgetSearch $criteria
+     * @return BudgetSearchAdvanced
+     */
+    public function setCriteria(BudgetSearch $criteria): BudgetSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return BudgetSearch
+     */
+    public function getCriteria(): BudgetSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param BudgetSearchRow $columns
+     * @return BudgetSearchAdvanced
+     */
+    public function setColumns(BudgetSearchRow $columns): BudgetSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return BudgetSearchRow
+     */
+    public function getColumns(): BudgetSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return BudgetSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): BudgetSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return BudgetSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): BudgetSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemOptionsList {
     /**
-     * @var \NetSuite\Classes\RecordRef[]
+     * @var RecordRef[]
      */
-    public $itemOptions;
+    protected array $itemOptions;
+
     static $paramtypesmap = array(
         "itemOptions" => "RecordRef[]",
     );
+
+    /**
+     * @param RecordRef[] $itemOptions
+     * @return ItemOptionsList
+     */
+    public function setItemOptions(RecordRef $itemOptions): ItemOptionsList
+    {
+        $this->itemOptions[] = $itemOptions;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef[]
+     */
+    public function getItemOptions(): array
+    {
+        return $this->itemOptions;
+    }
+
 }

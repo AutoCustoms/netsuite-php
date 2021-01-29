@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PurchaseRequisitionExpenseList {
     /**
-     * @var \NetSuite\Classes\PurchaseRequisitionExpense[]
+     * @var PurchaseRequisitionExpense[]
      */
-    public $purchaseRequisitionExpense;
+    protected array $purchaseRequisitionExpense;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "purchaseRequisitionExpense" => "PurchaseRequisitionExpense[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param PurchaseRequisitionExpense[] $purchaseRequisitionExpense
+     * @return PurchaseRequisitionExpenseList
+     */
+    public function setPurchaseRequisitionExpense(PurchaseRequisitionExpense $purchaseRequisitionExpense): PurchaseRequisitionExpenseList
+    {
+        $this->purchaseRequisitionExpense[] = $purchaseRequisitionExpense;
+        return $this;
+    }
+
+    /**
+     * @return PurchaseRequisitionExpense[]
+     */
+    public function getPurchaseRequisitionExpense(): array
+    {
+        return $this->purchaseRequisitionExpense;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return PurchaseRequisitionExpenseList
+     */
+    public function setReplaceAll(bool $replaceAll): PurchaseRequisitionExpenseList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

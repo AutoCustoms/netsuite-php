@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class UnitsTypeSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $abbreviation;
+    protected array $abbreviation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $baseUnit;
+    protected array $baseUnit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $conversionRate;
+    protected array $conversionRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInActive;
+    protected array $isInActive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $pluralAbbreviation;
+    protected array $pluralAbbreviation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $pluralName;
+    protected array $pluralName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $unitName;
+    protected array $unitName;
+
     static $paramtypesmap = array(
         "abbreviation" => "SearchColumnStringField[]",
         "baseUnit" => "SearchColumnBooleanField[]",
@@ -72,4 +82,185 @@ class UnitsTypeSearchRowBasic extends SearchRowBasic {
         "pluralName" => "SearchColumnStringField[]",
         "unitName" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $abbreviation
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setAbbreviation(SearchColumnStringField $abbreviation): UnitsTypeSearchRowBasic
+    {
+        $this->abbreviation[] = $abbreviation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAbbreviation(): array
+    {
+        return $this->abbreviation;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $baseUnit
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setBaseUnit(SearchColumnBooleanField $baseUnit): UnitsTypeSearchRowBasic
+    {
+        $this->baseUnit[] = $baseUnit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getBaseUnit(): array
+    {
+        return $this->baseUnit;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $conversionRate
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setConversionRate(SearchColumnStringField $conversionRate): UnitsTypeSearchRowBasic
+    {
+        $this->conversionRate[] = $conversionRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getConversionRate(): array
+    {
+        return $this->conversionRate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): UnitsTypeSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): UnitsTypeSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInActive
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setIsInActive(SearchColumnBooleanField $isInActive): UnitsTypeSearchRowBasic
+    {
+        $this->isInActive[] = $isInActive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInActive(): array
+    {
+        return $this->isInActive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): UnitsTypeSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $pluralAbbreviation
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setPluralAbbreviation(SearchColumnStringField $pluralAbbreviation): UnitsTypeSearchRowBasic
+    {
+        $this->pluralAbbreviation[] = $pluralAbbreviation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPluralAbbreviation(): array
+    {
+        return $this->pluralAbbreviation;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $pluralName
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setPluralName(SearchColumnStringField $pluralName): UnitsTypeSearchRowBasic
+    {
+        $this->pluralName[] = $pluralName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPluralName(): array
+    {
+        return $this->pluralName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $unitName
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function setUnitName(SearchColumnStringField $unitName): UnitsTypeSearchRowBasic
+    {
+        $this->unitName[] = $unitName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getUnitName(): array
+    {
+        return $this->unitName;
+    }
+
 }

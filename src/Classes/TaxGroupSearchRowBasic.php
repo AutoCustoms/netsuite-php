@@ -14,96 +14,101 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TaxGroupSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $city;
+    protected array $city;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $country;
+    protected array $country;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $county;
+    protected array $county;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $includeChildren;
+    protected array $includeChildren;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isDefault;
+    protected array $isDefault;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $itemId;
+    protected array $itemId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $piggyBack;
+    protected array $piggyBack;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $rate;
+    protected array $rate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $state;
+    protected array $state;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $stateDisplayName;
+    protected array $stateDisplayName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiaryNoHierarchy;
+    protected array $subsidiaryNoHierarchy;
+
+    protected $taxItem1;
+    protected $taxItem2;
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $taxItem1;
+    protected array $taxType;
+
+    protected $unitPrice1;
+    protected $unitPrice2;
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $taxItem2;
-    /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $taxType;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
-     */
-    public $unitPrice1;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
-     */
-    public $unitPrice2;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $zip;
+    protected array $zip;
+
     static $paramtypesmap = array(
         "city" => "SearchColumnStringField[]",
         "country" => "SearchColumnEnumSelectField[]",
@@ -127,4 +132,311 @@ class TaxGroupSearchRowBasic extends SearchRowBasic {
         "unitPrice2" => "SearchColumnDoubleField[]",
         "zip" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $city
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setCity(SearchColumnStringField $city): TaxGroupSearchRowBasic
+    {
+        $this->city[] = $city;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCity(): array
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $country
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setCountry(SearchColumnEnumSelectField $country): TaxGroupSearchRowBasic
+    {
+        $this->country[] = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCountry(): array
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $county
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setCounty(SearchColumnStringField $county): TaxGroupSearchRowBasic
+    {
+        $this->county[] = $county;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCounty(): array
+    {
+        return $this->county;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): TaxGroupSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $includeChildren
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setIncludeChildren(SearchColumnBooleanField $includeChildren): TaxGroupSearchRowBasic
+    {
+        $this->includeChildren[] = $includeChildren;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIncludeChildren(): array
+    {
+        return $this->includeChildren;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): TaxGroupSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDefault
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setIsDefault(SearchColumnBooleanField $isDefault): TaxGroupSearchRowBasic
+    {
+        $this->isDefault[] = $isDefault;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDefault(): array
+    {
+        return $this->isDefault;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): TaxGroupSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $itemId
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setItemId(SearchColumnStringField $itemId): TaxGroupSearchRowBasic
+    {
+        $this->itemId[] = $itemId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getItemId(): array
+    {
+        return $this->itemId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $piggyBack
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setPiggyBack(SearchColumnBooleanField $piggyBack): TaxGroupSearchRowBasic
+    {
+        $this->piggyBack[] = $piggyBack;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPiggyBack(): array
+    {
+        return $this->piggyBack;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $rate
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setRate(SearchColumnDoubleField $rate): TaxGroupSearchRowBasic
+    {
+        $this->rate[] = $rate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRate(): array
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $state
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setState(SearchColumnSelectField $state): TaxGroupSearchRowBasic
+    {
+        $this->state[] = $state;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getState(): array
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $stateDisplayName
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setStateDisplayName(SearchColumnStringField $stateDisplayName): TaxGroupSearchRowBasic
+    {
+        $this->stateDisplayName[] = $stateDisplayName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getStateDisplayName(): array
+    {
+        return $this->stateDisplayName;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): TaxGroupSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiaryNoHierarchy
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setSubsidiaryNoHierarchy(SearchColumnSelectField $subsidiaryNoHierarchy): TaxGroupSearchRowBasic
+    {
+        $this->subsidiaryNoHierarchy[] = $subsidiaryNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiaryNoHierarchy(): array
+    {
+        return $this->subsidiaryNoHierarchy;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $taxType
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setTaxType(SearchColumnSelectField $taxType): TaxGroupSearchRowBasic
+    {
+        $this->taxType[] = $taxType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTaxType(): array
+    {
+        return $this->taxType;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $zip
+     * @return TaxGroupSearchRowBasic
+     */
+    public function setZip(SearchColumnStringField $zip): TaxGroupSearchRowBasic
+    {
+        $this->zip[] = $zip;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getZip(): array
+    {
+        return $this->zip;
+    }
+
 }

@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetSelectFilterByFieldValueList {
     /**
-     * @var \NetSuite\Classes\GetSelectFilterByFieldValue[]
+     * @var GetSelectFilterByFieldValue[]
      */
-    public $filterBy;
+    protected array $filterBy;
+
     static $paramtypesmap = array(
         "filterBy" => "GetSelectFilterByFieldValue[]",
     );
+
+    /**
+     * @param GetSelectFilterByFieldValue[] $filterBy
+     * @return GetSelectFilterByFieldValueList
+     */
+    public function setFilterBy(GetSelectFilterByFieldValue $filterBy): GetSelectFilterByFieldValueList
+    {
+        $this->filterBy[] = $filterBy;
+        return $this;
+    }
+
+    /**
+     * @return GetSelectFilterByFieldValue[]
+     */
+    public function getFilterBy(): array
+    {
+        return $this->filterBy;
+    }
+
 }

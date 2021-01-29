@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class UpdateInviteeStatusResponse {
     /**
-     * @var \NetSuite\Classes\WriteResponse
+     * @var WriteResponse
      */
-    public $writeResponse;
+    protected WriteResponse $writeResponse;
+
     static $paramtypesmap = array(
         "writeResponse" => "WriteResponse",
     );
+
+    /**
+     * @param WriteResponse $writeResponse
+     * @return UpdateInviteeStatusResponse
+     */
+    public function setWriteResponse(WriteResponse $writeResponse): UpdateInviteeStatusResponse
+    {
+        $this->writeResponse = $writeResponse;
+        return $this;
+    }
+
+    /**
+     * @return WriteResponse
+     */
+    public function getWriteResponse(): WriteResponse
+    {
+        return $this->writeResponse;
+    }
+
 }

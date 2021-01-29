@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerDownload {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $file;
+    protected RecordRef $file;
+
     /**
      * @var string
      */
-    public $licenseCode;
+    protected string $licenseCode;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $remainingDownloads;
+    protected int $remainingDownloads;
+
     /**
      * @var string
      */
-    public $expiration;
+    protected string $expiration;
+
     static $paramtypesmap = array(
         "file" => "RecordRef",
         "licenseCode" => "string",
         "remainingDownloads" => "integer",
         "expiration" => "dateTime",
     );
+
+    /**
+     * @param RecordRef $file
+     * @return CustomerDownload
+     */
+    public function setFile(RecordRef $file): CustomerDownload
+    {
+        $this->file = $file;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getFile(): RecordRef
+    {
+        return $this->file;
+    }
+
+    /**
+     * @param string $licenseCode
+     * @return CustomerDownload
+     */
+    public function setLicenseCode(string $licenseCode): CustomerDownload
+    {
+        $this->licenseCode = $licenseCode;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLicenseCode(): string
+    {
+        return $this->licenseCode;
+    }
+
+    /**
+     * @param int $remainingDownloads
+     * @return CustomerDownload
+     */
+    public function setRemainingDownloads(int $remainingDownloads): CustomerDownload
+    {
+        $this->remainingDownloads = $remainingDownloads;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRemainingDownloads(): int
+    {
+        return $this->remainingDownloads;
+    }
+
+    /**
+     * @param string $expiration
+     * @return CustomerDownload
+     */
+    public function setExpiration(string $expiration): CustomerDownload
+    {
+        $this->expiration = $expiration;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExpiration(): string
+    {
+        return $this->expiration;
+    }
+
 }

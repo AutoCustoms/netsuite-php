@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CostCategorySearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\CostCategorySearchRowBasic
+     * @var CostCategorySearchRowBasic
      */
-    public $basic;
+    protected CostCategorySearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchRowBasic
+     * @var AccountSearchRowBasic
      */
-    public $accountJoin;
+    protected AccountSearchRowBasic $accountJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     * @var TransactionSearchRowBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchRowBasic $transactionJoin;
+
     static $paramtypesmap = array(
         "basic" => "CostCategorySearchRowBasic",
         "accountJoin" => "AccountSearchRowBasic",
         "transactionJoin" => "TransactionSearchRowBasic",
     );
+
+    /**
+     * @param CostCategorySearchRowBasic $basic
+     * @return CostCategorySearchRow
+     */
+    public function setBasic(CostCategorySearchRowBasic $basic): CostCategorySearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return CostCategorySearchRowBasic
+     */
+    public function getBasic(): CostCategorySearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param AccountSearchRowBasic $accountJoin
+     * @return CostCategorySearchRow
+     */
+    public function setAccountJoin(AccountSearchRowBasic $accountJoin): CostCategorySearchRow
+    {
+        $this->accountJoin = $accountJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchRowBasic
+     */
+    public function getAccountJoin(): AccountSearchRowBasic
+    {
+        return $this->accountJoin;
+    }
+
+    /**
+     * @param TransactionSearchRowBasic $transactionJoin
+     * @return CostCategorySearchRow
+     */
+    public function setTransactionJoin(TransactionSearchRowBasic $transactionJoin): CostCategorySearchRow
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchRowBasic
+     */
+    public function getTransactionJoin(): TransactionSearchRowBasic
+    {
+        return $this->transactionJoin;
+    }
+
 }

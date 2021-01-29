@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class LotNumberedAssemblyItemBillOfMaterialsList {
     /**
-     * @var \NetSuite\Classes\LotNumberedAssemblyItemBillOfMaterials[]
+     * @var LotNumberedAssemblyItemBillOfMaterials[]
      */
-    public $lotNumberedAssemblyItemBillOfMaterials;
+    protected array $lotNumberedAssemblyItemBillOfMaterials;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "lotNumberedAssemblyItemBillOfMaterials" => "LotNumberedAssemblyItemBillOfMaterials[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param LotNumberedAssemblyItemBillOfMaterials[] $lotNumberedAssemblyItemBillOfMaterials
+     * @return LotNumberedAssemblyItemBillOfMaterialsList
+     */
+    public function setLotNumberedAssemblyItemBillOfMaterials(LotNumberedAssemblyItemBillOfMaterials $lotNumberedAssemblyItemBillOfMaterials): LotNumberedAssemblyItemBillOfMaterialsList
+    {
+        $this->lotNumberedAssemblyItemBillOfMaterials[] = $lotNumberedAssemblyItemBillOfMaterials;
+        return $this;
+    }
+
+    /**
+     * @return LotNumberedAssemblyItemBillOfMaterials[]
+     */
+    public function getLotNumberedAssemblyItemBillOfMaterials(): array
+    {
+        return $this->lotNumberedAssemblyItemBillOfMaterials;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return LotNumberedAssemblyItemBillOfMaterialsList
+     */
+    public function setReplaceAll(bool $replaceAll): LotNumberedAssemblyItemBillOfMaterialsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

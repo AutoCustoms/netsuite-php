@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeSheetSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\TimeSheetSearchRowBasic
+     * @var TimeSheetSearchRowBasic
      */
-    public $basic;
+    protected TimeSheetSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $employeeJoin;
+    protected EmployeeSearchRowBasic $employeeJoin;
+
     /**
-     * @var \NetSuite\Classes\TimeBillSearchRowBasic
+     * @var TimeBillSearchRowBasic
      */
-    public $timeBillJoin;
+    protected TimeBillSearchRowBasic $timeBillJoin;
+
     /**
-     * @var \NetSuite\Classes\TimeEntrySearchRowBasic
+     * @var TimeEntrySearchRowBasic
      */
-    public $timeEntryJoin;
+    protected TimeEntrySearchRowBasic $timeEntryJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "TimeSheetSearchRowBasic",
         "employeeJoin" => "EmployeeSearchRowBasic",
@@ -47,4 +52,95 @@ class TimeSheetSearchRow extends SearchRow {
         "timeEntryJoin" => "TimeEntrySearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param TimeSheetSearchRowBasic $basic
+     * @return TimeSheetSearchRow
+     */
+    public function setBasic(TimeSheetSearchRowBasic $basic): TimeSheetSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return TimeSheetSearchRowBasic
+     */
+    public function getBasic(): TimeSheetSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $employeeJoin
+     * @return TimeSheetSearchRow
+     */
+    public function setEmployeeJoin(EmployeeSearchRowBasic $employeeJoin): TimeSheetSearchRow
+    {
+        $this->employeeJoin = $employeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getEmployeeJoin(): EmployeeSearchRowBasic
+    {
+        return $this->employeeJoin;
+    }
+
+    /**
+     * @param TimeBillSearchRowBasic $timeBillJoin
+     * @return TimeSheetSearchRow
+     */
+    public function setTimeBillJoin(TimeBillSearchRowBasic $timeBillJoin): TimeSheetSearchRow
+    {
+        $this->timeBillJoin = $timeBillJoin;
+        return $this;
+    }
+
+    /**
+     * @return TimeBillSearchRowBasic
+     */
+    public function getTimeBillJoin(): TimeBillSearchRowBasic
+    {
+        return $this->timeBillJoin;
+    }
+
+    /**
+     * @param TimeEntrySearchRowBasic $timeEntryJoin
+     * @return TimeSheetSearchRow
+     */
+    public function setTimeEntryJoin(TimeEntrySearchRowBasic $timeEntryJoin): TimeSheetSearchRow
+    {
+        $this->timeEntryJoin = $timeEntryJoin;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntrySearchRowBasic
+     */
+    public function getTimeEntryJoin(): TimeEntrySearchRowBasic
+    {
+        return $this->timeEntryJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return TimeSheetSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): TimeSheetSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

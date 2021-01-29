@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FileSiteCategoryList {
     /**
-     * @var \NetSuite\Classes\FileSiteCategory[]
+     * @var FileSiteCategory[]
      */
-    public $siteCategory;
+    protected array $siteCategory;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "siteCategory" => "FileSiteCategory[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param FileSiteCategory[] $siteCategory
+     * @return FileSiteCategoryList
+     */
+    public function setSiteCategory(FileSiteCategory $siteCategory): FileSiteCategoryList
+    {
+        $this->siteCategory[] = $siteCategory;
+        return $this;
+    }
+
+    /**
+     * @return FileSiteCategory[]
+     */
+    public function getSiteCategory(): array
+    {
+        return $this->siteCategory;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return FileSiteCategoryList
+     */
+    public function setReplaceAll(bool $replaceAll): FileSiteCategoryList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

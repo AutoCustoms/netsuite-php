@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class NexusSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\NexusSearch
+     * @var NexusSearch
      */
-    public $criteria;
+    protected NexusSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\NexusSearchRow
+     * @var NexusSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected NexusSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "NexusSearch",
         "columns" => "NexusSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param NexusSearch $criteria
+     * @return NexusSearchAdvanced
+     */
+    public function setCriteria(NexusSearch $criteria): NexusSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return NexusSearch
+     */
+    public function getCriteria(): NexusSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param NexusSearchRow $columns
+     * @return NexusSearchAdvanced
+     */
+    public function setColumns(NexusSearchRow $columns): NexusSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return NexusSearchRow
+     */
+    public function getColumns(): NexusSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return NexusSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): NexusSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return NexusSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): NexusSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

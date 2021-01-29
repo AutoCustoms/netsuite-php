@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomSaleShipGroupList {
     /**
-     * @var \NetSuite\Classes\CustomSaleShipGroup[]
+     * @var CustomSaleShipGroup[]
      */
-    public $customSaleShipgroup;
+    protected array $customSaleShipgroup;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "customSaleShipgroup" => "CustomSaleShipGroup[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CustomSaleShipGroup[] $customSaleShipgroup
+     * @return CustomSaleShipGroupList
+     */
+    public function setCustomSaleShipgroup(CustomSaleShipGroup $customSaleShipgroup): CustomSaleShipGroupList
+    {
+        $this->customSaleShipgroup[] = $customSaleShipgroup;
+        return $this;
+    }
+
+    /**
+     * @return CustomSaleShipGroup[]
+     */
+    public function getCustomSaleShipgroup(): array
+    {
+        return $this->customSaleShipgroup;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CustomSaleShipGroupList
+     */
+    public function setReplaceAll(bool $replaceAll): CustomSaleShipGroupList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

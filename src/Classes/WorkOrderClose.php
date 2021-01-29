@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,83 +23,103 @@ class WorkOrderClose extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     /**
      * @var string
      */
-    public $tranId;
+    protected string $tranId;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
      * @var float
      */
-    public $orderQuantity;
+    protected float $orderQuantity;
+
     /**
      * @var float
      */
-    public $scrapQuantity;
+    protected float $scrapQuantity;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $createdFrom;
-    /**
-     * @var string
-     */
-    public $tranDate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $postingPeriod;
+    protected RecordRef $createdFrom;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $tranDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $subsidiary;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $department;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $class;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $location;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $revision;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected RecordRef $postingPeriod;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $memo;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $subsidiary;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $department;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $class;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $location;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $revision;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -122,4 +142,365 @@ class WorkOrderClose extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return WorkOrderClose
+     */
+    public function setCreatedDate(string $createdDate): WorkOrderClose
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return WorkOrderClose
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): WorkOrderClose
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return WorkOrderClose
+     */
+    public function setCustomForm(RecordRef $customForm): WorkOrderClose
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param string $tranId
+     * @return WorkOrderClose
+     */
+    public function setTranId(string $tranId): WorkOrderClose
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return WorkOrderClose
+     */
+    public function setItem(RecordRef $item): WorkOrderClose
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param float $quantity
+     * @return WorkOrderClose
+     */
+    public function setQuantity(float $quantity): WorkOrderClose
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param float $orderQuantity
+     * @return WorkOrderClose
+     */
+    public function setOrderQuantity(float $orderQuantity): WorkOrderClose
+    {
+        $this->orderQuantity = $orderQuantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOrderQuantity(): float
+    {
+        return $this->orderQuantity;
+    }
+
+    /**
+     * @param float $scrapQuantity
+     * @return WorkOrderClose
+     */
+    public function setScrapQuantity(float $scrapQuantity): WorkOrderClose
+    {
+        $this->scrapQuantity = $scrapQuantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getScrapQuantity(): float
+    {
+        return $this->scrapQuantity;
+    }
+
+    /**
+     * @param RecordRef $createdFrom
+     * @return WorkOrderClose
+     */
+    public function setCreatedFrom(RecordRef $createdFrom): WorkOrderClose
+    {
+        $this->createdFrom = $createdFrom;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCreatedFrom(): RecordRef
+    {
+        return $this->createdFrom;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return WorkOrderClose
+     */
+    public function setTranDate(string $tranDate): WorkOrderClose
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param RecordRef $postingPeriod
+     * @return WorkOrderClose
+     */
+    public function setPostingPeriod(RecordRef $postingPeriod): WorkOrderClose
+    {
+        $this->postingPeriod = $postingPeriod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPostingPeriod(): RecordRef
+    {
+        return $this->postingPeriod;
+    }
+
+    /**
+     * @param string $memo
+     * @return WorkOrderClose
+     */
+    public function setMemo(string $memo): WorkOrderClose
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return WorkOrderClose
+     */
+    public function setSubsidiary(RecordRef $subsidiary): WorkOrderClose
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return WorkOrderClose
+     */
+    public function setDepartment(RecordRef $department): WorkOrderClose
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return WorkOrderClose
+     */
+    public function setClass(RecordRef $class): WorkOrderClose
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return WorkOrderClose
+     */
+    public function setLocation(RecordRef $location): WorkOrderClose
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $revision
+     * @return WorkOrderClose
+     */
+    public function setRevision(RecordRef $revision): WorkOrderClose
+    {
+        $this->revision = $revision;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRevision(): RecordRef
+    {
+        return $this->revision;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return WorkOrderClose
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): WorkOrderClose
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return WorkOrderClose
+     */
+    public function setInternalId(string $internalId): WorkOrderClose
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return WorkOrderClose
+     */
+    public function setExternalId(string $externalId): WorkOrderClose
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

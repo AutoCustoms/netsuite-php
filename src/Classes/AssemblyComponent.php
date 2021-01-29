@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AssemblyComponent {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
      * @var float
      */
-    public $quantityOnHand;
+    protected float $quantityOnHand;
+
     /**
-     * @var \NetSuite\Classes\InventoryDetail
+     * @var InventoryDetail
      */
-    public $componentInventoryDetail;
-    /**
-     * @var string
-     */
-    public $componentNumbers;
+    protected InventoryDetail $componentInventoryDetail;
+
     /**
      * @var string
      */
-    public $binNumbers;
+    protected string $componentNumbers;
+
     /**
-     * @var integer
+     * @var string
      */
-    public $lineNumber;
+    protected string $binNumbers;
+
+    /**
+     * @var int
+     */
+    protected int $lineNumber;
+
     static $paramtypesmap = array(
         "item" => "RecordRef",
         "quantity" => "float",
@@ -57,4 +64,131 @@ class AssemblyComponent {
         "binNumbers" => "string",
         "lineNumber" => "integer",
     );
+
+    /**
+     * @param RecordRef $item
+     * @return AssemblyComponent
+     */
+    public function setItem(RecordRef $item): AssemblyComponent
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param float $quantity
+     * @return AssemblyComponent
+     */
+    public function setQuantity(float $quantity): AssemblyComponent
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param float $quantityOnHand
+     * @return AssemblyComponent
+     */
+    public function setQuantityOnHand(float $quantityOnHand): AssemblyComponent
+    {
+        $this->quantityOnHand = $quantityOnHand;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnHand(): float
+    {
+        return $this->quantityOnHand;
+    }
+
+    /**
+     * @param InventoryDetail $componentInventoryDetail
+     * @return AssemblyComponent
+     */
+    public function setComponentInventoryDetail(InventoryDetail $componentInventoryDetail): AssemblyComponent
+    {
+        $this->componentInventoryDetail = $componentInventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getComponentInventoryDetail(): InventoryDetail
+    {
+        return $this->componentInventoryDetail;
+    }
+
+    /**
+     * @param string $componentNumbers
+     * @return AssemblyComponent
+     */
+    public function setComponentNumbers(string $componentNumbers): AssemblyComponent
+    {
+        $this->componentNumbers = $componentNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getComponentNumbers(): string
+    {
+        return $this->componentNumbers;
+    }
+
+    /**
+     * @param string $binNumbers
+     * @return AssemblyComponent
+     */
+    public function setBinNumbers(string $binNumbers): AssemblyComponent
+    {
+        $this->binNumbers = $binNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBinNumbers(): string
+    {
+        return $this->binNumbers;
+    }
+
+    /**
+     * @param int $lineNumber
+     * @return AssemblyComponent
+     */
+    public function setLineNumber(int $lineNumber): AssemblyComponent
+    {
+        $this->lineNumber = $lineNumber;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLineNumber(): int
+    {
+        return $this->lineNumber;
+    }
+
 }

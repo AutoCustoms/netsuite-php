@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class JobPercentCompleteOverride {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $period;
+    protected RecordRef $period;
+
     /**
      * @var float
      */
-    public $percent;
+    protected float $percent;
+
     /**
      * @var string
      */
-    public $comments;
+    protected string $comments;
+
     static $paramtypesmap = array(
         "period" => "RecordRef",
         "percent" => "float",
         "comments" => "string",
     );
+
+    /**
+     * @param RecordRef $period
+     * @return JobPercentCompleteOverride
+     */
+    public function setPeriod(RecordRef $period): JobPercentCompleteOverride
+    {
+        $this->period = $period;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPeriod(): RecordRef
+    {
+        return $this->period;
+    }
+
+    /**
+     * @param float $percent
+     * @return JobPercentCompleteOverride
+     */
+    public function setPercent(float $percent): JobPercentCompleteOverride
+    {
+        $this->percent = $percent;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPercent(): float
+    {
+        return $this->percent;
+    }
+
+    /**
+     * @param string $comments
+     * @return JobPercentCompleteOverride
+     */
+    public function setComments(string $comments): JobPercentCompleteOverride
+    {
+        $this->comments = $comments;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getComments(): string
+    {
+        return $this->comments;
+    }
+
 }

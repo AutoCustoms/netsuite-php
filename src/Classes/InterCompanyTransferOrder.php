@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,171 +23,197 @@ class InterCompanyTransferOrder extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     /**
      * @var float
      */
-    public $shippingCost;
+    protected float $shippingCost;
+
     /**
      * @var float
      */
-    public $subTotal;
+    protected float $subTotal;
+
     /**
      * @var string
      */
-    public $status;
+    protected string $status;
+
     /**
-     * @var \NetSuite\Classes\Address
+     * @var Address
      */
-    public $shippingAddress;
+    protected Address $shippingAddress;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $shipIsResidential;
+    protected bool $shipIsResidential;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $shipAddressList;
-    /**
-     * @var string
-     */
-    public $fob;
-    /**
-     * @var string
-     */
-    public $tranDate;
+    protected RecordRef $shipAddressList;
+
     /**
      * @var string
      */
-    public $tranId;
+    protected string $fob;
+
     /**
      * @var string
      */
-    public $source;
-    /**
-     * @var \NetSuite\Classes\TransferOrderOrderStatus
-     */
-    public $orderStatus;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $toSubsidiary;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $employee;
-    /**
-     * @var boolean
-     */
-    public $useItemCostAsTransferCost;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $incoterm;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $department;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $class;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $location;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $transferLocation;
+    protected string $tranDate;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $tranId;
+
     /**
      * @var string
      */
-    public $shipDate;
+    protected string $source;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var TransferOrderOrderStatus
      */
-    public $shipMethod;
+    protected TransferOrderOrderStatus $orderStatus;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $subsidiary;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $toSubsidiary;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $employee;
+
+    /**
+     * @var bool
+     */
+    protected bool $useItemCostAsTransferCost;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $incoterm;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $department;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $class;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $location;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $transferLocation;
+
     /**
      * @var string
      */
-    public $trackingNumbers;
+    protected string $memo;
+
     /**
      * @var string
      */
-    public $linkedTrackingNumbers;
+    protected string $shipDate;
+
     /**
-     * @var boolean
+     * @var RecordRef
      */
-    public $shipComplete;
+    protected RecordRef $shipMethod;
+
+    /**
+     * @var string
+     */
+    protected string $trackingNumbers;
+
+    /**
+     * @var string
+     */
+    protected string $linkedTrackingNumbers;
+
+    /**
+     * @var bool
+     */
+    protected bool $shipComplete;
+
     /**
      * @var float
      */
-    public $altShippingCost;
+    protected float $altShippingCost;
+
+    protected $shippingTax1Rate;
+    protected $handlingTax1Rate;
+    protected $shippingTax2Rate;
+    protected $handlingTax2Rate;
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $shippingTaxCode;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $handlingTaxCode;
+
     /**
      * @var float
      */
-    public $shippingTax1Rate;
+    protected float $total;
+
     /**
-     * @var float
+     * @var InterCompanyTransferOrderItemList
      */
-    public $handlingTax1Rate;
+    protected InterCompanyTransferOrderItemList $itemList;
+
     /**
-     * @var float
+     * @var AccountingBookDetailList
      */
-    public $shippingTax2Rate;
+    protected AccountingBookDetailList $accountingBookDetailList;
+
     /**
-     * @var float
+     * @var CustomFieldList
      */
-    public $handlingTax2Rate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $shippingTaxCode;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $handlingTaxCode;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var \NetSuite\Classes\InterCompanyTransferOrderItemList
-     */
-    public $itemList;
-    /**
-     * @var \NetSuite\Classes\AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -232,4 +258,689 @@ class InterCompanyTransferOrder extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return InterCompanyTransferOrder
+     */
+    public function setCreatedDate(string $createdDate): InterCompanyTransferOrder
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return InterCompanyTransferOrder
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): InterCompanyTransferOrder
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return InterCompanyTransferOrder
+     */
+    public function setCustomForm(RecordRef $customForm): InterCompanyTransferOrder
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param float $shippingCost
+     * @return InterCompanyTransferOrder
+     */
+    public function setShippingCost(float $shippingCost): InterCompanyTransferOrder
+    {
+        $this->shippingCost = $shippingCost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getShippingCost(): float
+    {
+        return $this->shippingCost;
+    }
+
+    /**
+     * @param float $subTotal
+     * @return InterCompanyTransferOrder
+     */
+    public function setSubTotal(float $subTotal): InterCompanyTransferOrder
+    {
+        $this->subTotal = $subTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSubTotal(): float
+    {
+        return $this->subTotal;
+    }
+
+    /**
+     * @param string $status
+     * @return InterCompanyTransferOrder
+     */
+    public function setStatus(string $status): InterCompanyTransferOrder
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param Address $shippingAddress
+     * @return InterCompanyTransferOrder
+     */
+    public function setShippingAddress(Address $shippingAddress): InterCompanyTransferOrder
+    {
+        $this->shippingAddress = $shippingAddress;
+        return $this;
+    }
+
+    /**
+     * @return Address
+     */
+    public function getShippingAddress(): Address
+    {
+        return $this->shippingAddress;
+    }
+
+    /**
+     * @param bool $shipIsResidential
+     * @return InterCompanyTransferOrder
+     */
+    public function setShipIsResidential(bool $shipIsResidential): InterCompanyTransferOrder
+    {
+        $this->shipIsResidential = $shipIsResidential;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getShipIsResidential(): bool
+    {
+        return $this->shipIsResidential;
+    }
+
+    /**
+     * @param RecordRef $shipAddressList
+     * @return InterCompanyTransferOrder
+     */
+    public function setShipAddressList(RecordRef $shipAddressList): InterCompanyTransferOrder
+    {
+        $this->shipAddressList = $shipAddressList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getShipAddressList(): RecordRef
+    {
+        return $this->shipAddressList;
+    }
+
+    /**
+     * @param string $fob
+     * @return InterCompanyTransferOrder
+     */
+    public function setFob(string $fob): InterCompanyTransferOrder
+    {
+        $this->fob = $fob;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFob(): string
+    {
+        return $this->fob;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return InterCompanyTransferOrder
+     */
+    public function setTranDate(string $tranDate): InterCompanyTransferOrder
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param string $tranId
+     * @return InterCompanyTransferOrder
+     */
+    public function setTranId(string $tranId): InterCompanyTransferOrder
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param string $source
+     * @return InterCompanyTransferOrder
+     */
+    public function setSource(string $source): InterCompanyTransferOrder
+    {
+        $this->source = $source;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSource(): string
+    {
+        return $this->source;
+    }
+
+    /**
+     * @param TransferOrderOrderStatus $orderStatus
+     * @return InterCompanyTransferOrder
+     */
+    public function setOrderStatus(TransferOrderOrderStatus $orderStatus): InterCompanyTransferOrder
+    {
+        $this->orderStatus = $orderStatus;
+        return $this;
+    }
+
+    /**
+     * @return TransferOrderOrderStatus
+     */
+    public function getOrderStatus(): TransferOrderOrderStatus
+    {
+        return $this->orderStatus;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return InterCompanyTransferOrder
+     */
+    public function setSubsidiary(RecordRef $subsidiary): InterCompanyTransferOrder
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $toSubsidiary
+     * @return InterCompanyTransferOrder
+     */
+    public function setToSubsidiary(RecordRef $toSubsidiary): InterCompanyTransferOrder
+    {
+        $this->toSubsidiary = $toSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getToSubsidiary(): RecordRef
+    {
+        return $this->toSubsidiary;
+    }
+
+    /**
+     * @param RecordRef $employee
+     * @return InterCompanyTransferOrder
+     */
+    public function setEmployee(RecordRef $employee): InterCompanyTransferOrder
+    {
+        $this->employee = $employee;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEmployee(): RecordRef
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param bool $useItemCostAsTransferCost
+     * @return InterCompanyTransferOrder
+     */
+    public function setUseItemCostAsTransferCost(bool $useItemCostAsTransferCost): InterCompanyTransferOrder
+    {
+        $this->useItemCostAsTransferCost = $useItemCostAsTransferCost;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getUseItemCostAsTransferCost(): bool
+    {
+        return $this->useItemCostAsTransferCost;
+    }
+
+    /**
+     * @param RecordRef $incoterm
+     * @return InterCompanyTransferOrder
+     */
+    public function setIncoterm(RecordRef $incoterm): InterCompanyTransferOrder
+    {
+        $this->incoterm = $incoterm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getIncoterm(): RecordRef
+    {
+        return $this->incoterm;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return InterCompanyTransferOrder
+     */
+    public function setDepartment(RecordRef $department): InterCompanyTransferOrder
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return InterCompanyTransferOrder
+     */
+    public function setClass(RecordRef $class): InterCompanyTransferOrder
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return InterCompanyTransferOrder
+     */
+    public function setLocation(RecordRef $location): InterCompanyTransferOrder
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $transferLocation
+     * @return InterCompanyTransferOrder
+     */
+    public function setTransferLocation(RecordRef $transferLocation): InterCompanyTransferOrder
+    {
+        $this->transferLocation = $transferLocation;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTransferLocation(): RecordRef
+    {
+        return $this->transferLocation;
+    }
+
+    /**
+     * @param string $memo
+     * @return InterCompanyTransferOrder
+     */
+    public function setMemo(string $memo): InterCompanyTransferOrder
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param string $shipDate
+     * @return InterCompanyTransferOrder
+     */
+    public function setShipDate(string $shipDate): InterCompanyTransferOrder
+    {
+        $this->shipDate = $shipDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getShipDate(): string
+    {
+        return $this->shipDate;
+    }
+
+    /**
+     * @param RecordRef $shipMethod
+     * @return InterCompanyTransferOrder
+     */
+    public function setShipMethod(RecordRef $shipMethod): InterCompanyTransferOrder
+    {
+        $this->shipMethod = $shipMethod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getShipMethod(): RecordRef
+    {
+        return $this->shipMethod;
+    }
+
+    /**
+     * @param string $trackingNumbers
+     * @return InterCompanyTransferOrder
+     */
+    public function setTrackingNumbers(string $trackingNumbers): InterCompanyTransferOrder
+    {
+        $this->trackingNumbers = $trackingNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTrackingNumbers(): string
+    {
+        return $this->trackingNumbers;
+    }
+
+    /**
+     * @param string $linkedTrackingNumbers
+     * @return InterCompanyTransferOrder
+     */
+    public function setLinkedTrackingNumbers(string $linkedTrackingNumbers): InterCompanyTransferOrder
+    {
+        $this->linkedTrackingNumbers = $linkedTrackingNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkedTrackingNumbers(): string
+    {
+        return $this->linkedTrackingNumbers;
+    }
+
+    /**
+     * @param bool $shipComplete
+     * @return InterCompanyTransferOrder
+     */
+    public function setShipComplete(bool $shipComplete): InterCompanyTransferOrder
+    {
+        $this->shipComplete = $shipComplete;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getShipComplete(): bool
+    {
+        return $this->shipComplete;
+    }
+
+    /**
+     * @param float $altShippingCost
+     * @return InterCompanyTransferOrder
+     */
+    public function setAltShippingCost(float $altShippingCost): InterCompanyTransferOrder
+    {
+        $this->altShippingCost = $altShippingCost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAltShippingCost(): float
+    {
+        return $this->altShippingCost;
+    }
+
+    /**
+     * @param RecordRef $shippingTaxCode
+     * @return InterCompanyTransferOrder
+     */
+    public function setShippingTaxCode(RecordRef $shippingTaxCode): InterCompanyTransferOrder
+    {
+        $this->shippingTaxCode = $shippingTaxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getShippingTaxCode(): RecordRef
+    {
+        return $this->shippingTaxCode;
+    }
+
+    /**
+     * @param RecordRef $handlingTaxCode
+     * @return InterCompanyTransferOrder
+     */
+    public function setHandlingTaxCode(RecordRef $handlingTaxCode): InterCompanyTransferOrder
+    {
+        $this->handlingTaxCode = $handlingTaxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getHandlingTaxCode(): RecordRef
+    {
+        return $this->handlingTaxCode;
+    }
+
+    /**
+     * @param float $total
+     * @return InterCompanyTransferOrder
+     */
+    public function setTotal(float $total): InterCompanyTransferOrder
+    {
+        $this->total = $total;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotal(): float
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param InterCompanyTransferOrderItemList $itemList
+     * @return InterCompanyTransferOrder
+     */
+    public function setItemList(InterCompanyTransferOrderItemList $itemList): InterCompanyTransferOrder
+    {
+        $this->itemList = $itemList;
+        return $this;
+    }
+
+    /**
+     * @return InterCompanyTransferOrderItemList
+     */
+    public function getItemList(): InterCompanyTransferOrderItemList
+    {
+        return $this->itemList;
+    }
+
+    /**
+     * @param AccountingBookDetailList $accountingBookDetailList
+     * @return InterCompanyTransferOrder
+     */
+    public function setAccountingBookDetailList(AccountingBookDetailList $accountingBookDetailList): InterCompanyTransferOrder
+    {
+        $this->accountingBookDetailList = $accountingBookDetailList;
+        return $this;
+    }
+
+    /**
+     * @return AccountingBookDetailList
+     */
+    public function getAccountingBookDetailList(): AccountingBookDetailList
+    {
+        return $this->accountingBookDetailList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return InterCompanyTransferOrder
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): InterCompanyTransferOrder
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return InterCompanyTransferOrder
+     */
+    public function setInternalId(string $internalId): InterCompanyTransferOrder
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return InterCompanyTransferOrder
+     */
+    public function setExternalId(string $externalId): InterCompanyTransferOrder
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

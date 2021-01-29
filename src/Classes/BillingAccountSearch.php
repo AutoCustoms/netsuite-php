@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BillingAccountSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\BillingAccountSearchBasic
+     * @var BillingAccountSearchBasic
      */
-    public $basic;
+    protected BillingAccountSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\JobSearchBasic
+     * @var JobSearchBasic
      */
-    public $jobJoin;
+    protected JobSearchBasic $jobJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "BillingAccountSearchBasic",
         "jobJoin" => "JobSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param BillingAccountSearchBasic $basic
+     * @return BillingAccountSearch
+     */
+    public function setBasic(BillingAccountSearchBasic $basic): BillingAccountSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return BillingAccountSearchBasic
+     */
+    public function getBasic(): BillingAccountSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param JobSearchBasic $jobJoin
+     * @return BillingAccountSearch
+     */
+    public function setJobJoin(JobSearchBasic $jobJoin): BillingAccountSearch
+    {
+        $this->jobJoin = $jobJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchBasic
+     */
+    public function getJobJoin(): JobSearchBasic
+    {
+        return $this->jobJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return BillingAccountSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): BillingAccountSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,76 @@ class DataCenterUrls {
     /**
      * @var string
      */
-    public $restDomain;
+    protected string $restDomain;
+
     /**
      * @var string
      */
-    public $webservicesDomain;
+    protected string $webservicesDomain;
+
     /**
      * @var string
      */
-    public $systemDomain;
+    protected string $systemDomain;
+
     static $paramtypesmap = array(
         "restDomain" => "string",
         "webservicesDomain" => "string",
         "systemDomain" => "string",
     );
+
+    /**
+     * @param string $restDomain
+     * @return DataCenterUrls
+     */
+    public function setRestDomain(string $restDomain): DataCenterUrls
+    {
+        $this->restDomain = $restDomain;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRestDomain(): string
+    {
+        return $this->restDomain;
+    }
+
+    /**
+     * @param string $webservicesDomain
+     * @return DataCenterUrls
+     */
+    public function setWebservicesDomain(string $webservicesDomain): DataCenterUrls
+    {
+        $this->webservicesDomain = $webservicesDomain;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getWebservicesDomain(): string
+    {
+        return $this->webservicesDomain;
+    }
+
+    /**
+     * @param string $systemDomain
+     * @return DataCenterUrls
+     */
+    public function setSystemDomain(string $systemDomain): DataCenterUrls
+    {
+        $this->systemDomain = $systemDomain;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSystemDomain(): string
+    {
+        return $this->systemDomain;
+    }
+
 }

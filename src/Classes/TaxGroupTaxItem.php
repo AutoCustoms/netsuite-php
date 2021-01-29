@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TaxGroupTaxItem {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxName;
+    protected RecordRef $taxName;
+
     /**
      * @var float
      */
-    public $rate;
+    protected float $rate;
+
     /**
      * @var float
      */
-    public $basis;
+    protected float $basis;
+
     /**
      * @var string
      */
-    public $taxType;
+    protected string $taxType;
+
     static $paramtypesmap = array(
         "taxName" => "RecordRef",
         "rate" => "float",
         "basis" => "float",
         "taxType" => "string",
     );
+
+    /**
+     * @param RecordRef $taxName
+     * @return TaxGroupTaxItem
+     */
+    public function setTaxName(RecordRef $taxName): TaxGroupTaxItem
+    {
+        $this->taxName = $taxName;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxName(): RecordRef
+    {
+        return $this->taxName;
+    }
+
+    /**
+     * @param float $rate
+     * @return TaxGroupTaxItem
+     */
+    public function setRate(float $rate): TaxGroupTaxItem
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRate(): float
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param float $basis
+     * @return TaxGroupTaxItem
+     */
+    public function setBasis(float $basis): TaxGroupTaxItem
+    {
+        $this->basis = $basis;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBasis(): float
+    {
+        return $this->basis;
+    }
+
+    /**
+     * @param string $taxType
+     * @return TaxGroupTaxItem
+     */
+    public function setTaxType(string $taxType): TaxGroupTaxItem
+    {
+        $this->taxType = $taxType;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxType(): string
+    {
+        return $this->taxType;
+    }
+
 }

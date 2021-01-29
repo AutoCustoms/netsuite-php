@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InventoryItemBinNumber {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $binNumber;
+    protected RecordRef $binNumber;
+
     /**
      * @var string
      */
-    public $onHand;
+    protected string $onHand;
+
     /**
      * @var string
      */
-    public $onHandAvail;
+    protected string $onHandAvail;
+
     /**
      * @var string
      */
-    public $location;
+    protected string $location;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $preferredBin;
+    protected bool $preferredBin;
+
     static $paramtypesmap = array(
         "binNumber" => "RecordRef",
         "onHand" => "string",
@@ -47,4 +52,95 @@ class InventoryItemBinNumber {
         "location" => "string",
         "preferredBin" => "boolean",
     );
+
+    /**
+     * @param RecordRef $binNumber
+     * @return InventoryItemBinNumber
+     */
+    public function setBinNumber(RecordRef $binNumber): InventoryItemBinNumber
+    {
+        $this->binNumber = $binNumber;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBinNumber(): RecordRef
+    {
+        return $this->binNumber;
+    }
+
+    /**
+     * @param string $onHand
+     * @return InventoryItemBinNumber
+     */
+    public function setOnHand(string $onHand): InventoryItemBinNumber
+    {
+        $this->onHand = $onHand;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOnHand(): string
+    {
+        return $this->onHand;
+    }
+
+    /**
+     * @param string $onHandAvail
+     * @return InventoryItemBinNumber
+     */
+    public function setOnHandAvail(string $onHandAvail): InventoryItemBinNumber
+    {
+        $this->onHandAvail = $onHandAvail;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOnHandAvail(): string
+    {
+        return $this->onHandAvail;
+    }
+
+    /**
+     * @param string $location
+     * @return InventoryItemBinNumber
+     */
+    public function setLocation(string $location): InventoryItemBinNumber
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLocation(): string
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param bool $preferredBin
+     * @return InventoryItemBinNumber
+     */
+    public function setPreferredBin(bool $preferredBin): InventoryItemBinNumber
+    {
+        $this->preferredBin = $preferredBin;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getPreferredBin(): bool
+    {
+        return $this->preferredBin;
+    }
+
 }

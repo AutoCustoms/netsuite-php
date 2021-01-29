@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class IssueVersionList {
     /**
-     * @var \NetSuite\Classes\IssueVersion[]
+     * @var IssueVersion[]
      */
-    public $issueVersion;
+    protected array $issueVersion;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "issueVersion" => "IssueVersion[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param IssueVersion[] $issueVersion
+     * @return IssueVersionList
+     */
+    public function setIssueVersion(IssueVersion $issueVersion): IssueVersionList
+    {
+        $this->issueVersion[] = $issueVersion;
+        return $this;
+    }
+
+    /**
+     * @return IssueVersion[]
+     */
+    public function getIssueVersion(): array
+    {
+        return $this->issueVersion;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return IssueVersionList
+     */
+    public function setReplaceAll(bool $replaceAll): IssueVersionList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

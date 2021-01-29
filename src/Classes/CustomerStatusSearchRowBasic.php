@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerStatusSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $description;
+    protected array $description;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $includeInLeadReports;
+    protected array $includeInLeadReports;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $probability;
+    protected array $probability;
+
     static $paramtypesmap = array(
         "description" => "SearchColumnStringField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -57,4 +64,131 @@ class CustomerStatusSearchRowBasic extends SearchRowBasic {
         "name" => "SearchColumnStringField[]",
         "probability" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $description
+     * @return CustomerStatusSearchRowBasic
+     */
+    public function setDescription(SearchColumnStringField $description): CustomerStatusSearchRowBasic
+    {
+        $this->description[] = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDescription(): array
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return CustomerStatusSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): CustomerStatusSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $includeInLeadReports
+     * @return CustomerStatusSearchRowBasic
+     */
+    public function setIncludeInLeadReports(SearchColumnBooleanField $includeInLeadReports): CustomerStatusSearchRowBasic
+    {
+        $this->includeInLeadReports[] = $includeInLeadReports;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIncludeInLeadReports(): array
+    {
+        return $this->includeInLeadReports;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return CustomerStatusSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): CustomerStatusSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return CustomerStatusSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): CustomerStatusSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return CustomerStatusSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): CustomerStatusSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $probability
+     * @return CustomerStatusSearchRowBasic
+     */
+    public function setProbability(SearchColumnStringField $probability): CustomerStatusSearchRowBasic
+    {
+        $this->probability[] = $probability;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getProbability(): array
+    {
+        return $this->probability;
+    }
+
 }

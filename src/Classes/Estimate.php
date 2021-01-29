@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,419 +23,503 @@ class Estimate extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $nexus;
+    protected RecordRef $nexus;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $subsidiaryTaxRegNum;
+    protected RecordRef $subsidiaryTaxRegNum;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $taxRegOverride;
+    protected bool $taxRegOverride;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $taxDetailsOverride;
+    protected bool $taxDetailsOverride;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $entity;
+    protected RecordRef $entity;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $job;
-    /**
-     * @var string
-     */
-    public $tranDate;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $entityTaxRegNum;
+    protected RecordRef $job;
+
     /**
      * @var string
      */
-    public $taxPointDate;
+    protected string $tranDate;
+
     /**
      * @var string
      */
-    public $source;
+    protected string $tranId;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $currency;
+    protected RecordRef $entityTaxRegNum;
+
     /**
      * @var string
      */
-    public $title;
+    protected string $taxPointDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $entityStatus;
+    protected string $source;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $customForm;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $currency;
+
+    /**
+     * @var string
+     */
+    protected string $title;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $entityStatus;
+
     /**
      * @var float
      */
-    public $probability;
+    protected float $probability;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $includeInForecast;
+    protected bool $includeInForecast;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $forecastType;
+    protected RecordRef $forecastType;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $opportunity;
+    protected RecordRef $opportunity;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $terms;
-    /**
-     * @var string
-     */
-    public $dueDate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $location;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $billingSchedule;
+    protected RecordRef $terms;
+
     /**
      * @var string
      */
-    public $status;
+    protected string $dueDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $salesRep;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $partner;
+    protected RecordRef $subsidiary;
+
     /**
-     * @var string
+     * @var RecordRef
      */
-    public $contribPct;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $leadSource;
-    /**
-     * @var string
-     */
-    public $expectedCloseDate;
+    protected RecordRef $billingSchedule;
+
     /**
      * @var string
      */
-    public $otherRefNum;
+    protected string $status;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $salesRep;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $partner;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $contribPct;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $leadSource;
+
     /**
      * @var string
      */
-    public $endDate;
+    protected string $expectedCloseDate;
+
     /**
      * @var string
      */
-    public $startDate;
-    /**
-     * @var float
-     */
-    public $totalCostEstimate;
-    /**
-     * @var float
-     */
-    public $estGrossProfit;
-    /**
-     * @var float
-     */
-    public $estGrossProfitPercent;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $createdFrom;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
+    protected string $otherRefNum;
+
     /**
      * @var string
      */
-    public $currencyName;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $promoCode;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $discountItem;
+    protected string $memo;
+
     /**
      * @var string
      */
-    public $discountRate;
-    /**
-     * @var boolean
-     */
-    public $isTaxable;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $taxItem;
-    /**
-     * @var float
-     */
-    public $taxRate;
+    protected string $endDate;
+
     /**
      * @var string
      */
-    public $vatRegNum;
+    protected string $startDate;
+
     /**
-     * @var boolean
+     * @var float
      */
-    public $toBePrinted;
+    protected float $totalCostEstimate;
+
     /**
-     * @var boolean
+     * @var float
      */
-    public $toBeEmailed;
+    protected float $estGrossProfit;
+
+    /**
+     * @var float
+     */
+    protected float $estGrossProfitPercent;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $createdFrom;
+
+    /**
+     * @var float
+     */
+    protected float $exchangeRate;
+
     /**
      * @var string
      */
-    public $email;
+    protected string $currencyName;
+
     /**
-     * @var boolean
+     * @var RecordRef
      */
-    public $toBeFaxed;
+    protected RecordRef $promoCode;
+
     /**
-     * @var string
+     * @var RecordRef
      */
-    public $fax;
-    /**
-     * @var boolean
-     */
-    public $visibleToCustomer;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $messageSel;
+    protected RecordRef $discountItem;
+
     /**
      * @var string
      */
-    public $message;
+    protected string $discountRate;
+
     /**
-     * @var \NetSuite\Classes\Address
+     * @var bool
      */
-    public $billingAddress;
+    protected bool $isTaxable;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $billAddressList;
+    protected RecordRef $taxItem;
+
     /**
-     * @var \NetSuite\Classes\Address
+     * @var float
      */
-    public $shippingAddress;
-    /**
-     * @var boolean
-     */
-    public $shipIsResidential;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $shipAddressList;
+    protected float $taxRate;
+
     /**
      * @var string
      */
-    public $fob;
+    protected string $vatRegNum;
+
+    /**
+     * @var bool
+     */
+    protected bool $toBePrinted;
+
+    /**
+     * @var bool
+     */
+    protected bool $toBeEmailed;
+
     /**
      * @var string
      */
-    public $shipDate;
+    protected string $email;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var bool
      */
-    public $shipMethod;
-    /**
-     * @var float
-     */
-    public $shippingCost;
-    /**
-     * @var float
-     */
-    public $shippingTax1Rate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $shippingTaxCode;
+    protected bool $toBeFaxed;
+
     /**
      * @var string
      */
-    public $shippingTax2Rate;
+    protected string $fax;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var bool
      */
-    public $handlingTaxCode;
+    protected bool $visibleToCustomer;
+
     /**
-     * @var float
+     * @var RecordRef
      */
-    public $handlingTax1Rate;
-    /**
-     * @var float
-     */
-    public $handlingCost;
-    /**
-     * @var string
-     */
-    public $trackingNumbers;
+    protected RecordRef $messageSel;
+
     /**
      * @var string
      */
-    public $handlingTax2Rate;
+    protected string $message;
+
+    /**
+     * @var Address
+     */
+    protected Address $billingAddress;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $billAddressList;
+
+    /**
+     * @var Address
+     */
+    protected Address $shippingAddress;
+
+    /**
+     * @var bool
+     */
+    protected bool $shipIsResidential;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $shipAddressList;
+
     /**
      * @var string
      */
-    public $linkedTrackingNumbers;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $salesGroup;
-    /**
-     * @var boolean
-     */
-    public $syncSalesTeams;
-    /**
-     * @var float
-     */
-    public $altSalesTotal;
-    /**
-     * @var boolean
-     */
-    public $canHaveStackable;
-    /**
-     * @var float
-     */
-    public $oneTime;
-    /**
-     * @var float
-     */
-    public $recurWeekly;
-    /**
-     * @var float
-     */
-    public $recurMonthly;
-    /**
-     * @var float
-     */
-    public $recurQuarterly;
-    /**
-     * @var float
-     */
-    public $recurAnnually;
-    /**
-     * @var float
-     */
-    public $subTotal;
-    /**
-     * @var float
-     */
-    public $discountTotal;
-    /**
-     * @var float
-     */
-    public $taxTotal;
-    /**
-     * @var float
-     */
-    public $altShippingCost;
-    /**
-     * @var float
-     */
-    public $altHandlingCost;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var float
-     */
-    public $tax2Total;
-    /**
-     * @var \NetSuite\Classes\EstimateItemList
-     */
-    public $itemList;
-    /**
-     * @var \NetSuite\Classes\AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var \NetSuite\Classes\EstimateSalesTeamList
-     */
-    public $salesTeamList;
-    /**
-     * @var boolean
-     */
-    public $syncPartnerTeams;
-    /**
-     * @var \NetSuite\Classes\EstimatePartnersList
-     */
-    public $partnersList;
-    /**
-     * @var \NetSuite\Classes\PromotionsList
-     */
-    public $promotionsList;
-    /**
-     * @var \NetSuite\Classes\EstimateShipGroupList
-     */
-    public $shipGroupList;
-    /**
-     * @var \NetSuite\Classes\TaxDetailsList
-     */
-    public $taxDetailsList;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected string $fob;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $shipDate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $shipMethod;
+
+    /**
+     * @var float
+     */
+    protected float $shippingCost;
+
+    protected $shippingTax1Rate;
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $shippingTaxCode;
+
+    protected $shippingTax2Rate;
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $handlingTaxCode;
+
+    protected $handlingTax1Rate;
+    /**
+     * @var float
+     */
+    protected float $handlingCost;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $trackingNumbers;
+
+    protected $handlingTax2Rate;
+    /**
+     * @var string
+     */
+    protected string $linkedTrackingNumbers;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $salesGroup;
+
+    /**
+     * @var bool
+     */
+    protected bool $syncSalesTeams;
+
+    /**
+     * @var float
+     */
+    protected float $altSalesTotal;
+
+    /**
+     * @var bool
+     */
+    protected bool $canHaveStackable;
+
+    /**
+     * @var float
+     */
+    protected float $oneTime;
+
+    /**
+     * @var float
+     */
+    protected float $recurWeekly;
+
+    /**
+     * @var float
+     */
+    protected float $recurMonthly;
+
+    /**
+     * @var float
+     */
+    protected float $recurQuarterly;
+
+    /**
+     * @var float
+     */
+    protected float $recurAnnually;
+
+    /**
+     * @var float
+     */
+    protected float $subTotal;
+
+    /**
+     * @var float
+     */
+    protected float $discountTotal;
+
+    /**
+     * @var float
+     */
+    protected float $taxTotal;
+
+    /**
+     * @var float
+     */
+    protected float $altShippingCost;
+
+    /**
+     * @var float
+     */
+    protected float $altHandlingCost;
+
+    /**
+     * @var float
+     */
+    protected float $total;
+
+    protected $tax2Total;
+    /**
+     * @var EstimateItemList
+     */
+    protected EstimateItemList $itemList;
+
+    /**
+     * @var AccountingBookDetailList
+     */
+    protected AccountingBookDetailList $accountingBookDetailList;
+
+    /**
+     * @var EstimateSalesTeamList
+     */
+    protected EstimateSalesTeamList $salesTeamList;
+
+    /**
+     * @var bool
+     */
+    protected bool $syncPartnerTeams;
+
+    /**
+     * @var EstimatePartnersList
+     */
+    protected EstimatePartnersList $partnersList;
+
+    /**
+     * @var PromotionsList
+     */
+    protected PromotionsList $promotionsList;
+
+    /**
+     * @var EstimateShipGroupList
+     */
+    protected EstimateShipGroupList $shipGroupList;
+
+    /**
+     * @var TaxDetailsList
+     */
+    protected TaxDetailsList $taxDetailsList;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
+    /**
+     * @var string
+     */
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -542,4 +626,1787 @@ class Estimate extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return Estimate
+     */
+    public function setCreatedDate(string $createdDate): Estimate
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return Estimate
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): Estimate
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param RecordRef $nexus
+     * @return Estimate
+     */
+    public function setNexus(RecordRef $nexus): Estimate
+    {
+        $this->nexus = $nexus;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getNexus(): RecordRef
+    {
+        return $this->nexus;
+    }
+
+    /**
+     * @param RecordRef $subsidiaryTaxRegNum
+     * @return Estimate
+     */
+    public function setSubsidiaryTaxRegNum(RecordRef $subsidiaryTaxRegNum): Estimate
+    {
+        $this->subsidiaryTaxRegNum = $subsidiaryTaxRegNum;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiaryTaxRegNum(): RecordRef
+    {
+        return $this->subsidiaryTaxRegNum;
+    }
+
+    /**
+     * @param bool $taxRegOverride
+     * @return Estimate
+     */
+    public function setTaxRegOverride(bool $taxRegOverride): Estimate
+    {
+        $this->taxRegOverride = $taxRegOverride;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getTaxRegOverride(): bool
+    {
+        return $this->taxRegOverride;
+    }
+
+    /**
+     * @param bool $taxDetailsOverride
+     * @return Estimate
+     */
+    public function setTaxDetailsOverride(bool $taxDetailsOverride): Estimate
+    {
+        $this->taxDetailsOverride = $taxDetailsOverride;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getTaxDetailsOverride(): bool
+    {
+        return $this->taxDetailsOverride;
+    }
+
+    /**
+     * @param RecordRef $entity
+     * @return Estimate
+     */
+    public function setEntity(RecordRef $entity): Estimate
+    {
+        $this->entity = $entity;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEntity(): RecordRef
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param RecordRef $job
+     * @return Estimate
+     */
+    public function setJob(RecordRef $job): Estimate
+    {
+        $this->job = $job;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getJob(): RecordRef
+    {
+        return $this->job;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return Estimate
+     */
+    public function setTranDate(string $tranDate): Estimate
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param string $tranId
+     * @return Estimate
+     */
+    public function setTranId(string $tranId): Estimate
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param RecordRef $entityTaxRegNum
+     * @return Estimate
+     */
+    public function setEntityTaxRegNum(RecordRef $entityTaxRegNum): Estimate
+    {
+        $this->entityTaxRegNum = $entityTaxRegNum;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEntityTaxRegNum(): RecordRef
+    {
+        return $this->entityTaxRegNum;
+    }
+
+    /**
+     * @param string $taxPointDate
+     * @return Estimate
+     */
+    public function setTaxPointDate(string $taxPointDate): Estimate
+    {
+        $this->taxPointDate = $taxPointDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxPointDate(): string
+    {
+        return $this->taxPointDate;
+    }
+
+    /**
+     * @param string $source
+     * @return Estimate
+     */
+    public function setSource(string $source): Estimate
+    {
+        $this->source = $source;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSource(): string
+    {
+        return $this->source;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return Estimate
+     */
+    public function setCustomForm(RecordRef $customForm): Estimate
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return Estimate
+     */
+    public function setCurrency(RecordRef $currency): Estimate
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param string $title
+     * @return Estimate
+     */
+    public function setTitle(string $title): Estimate
+    {
+        $this->title = $title;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param RecordRef $entityStatus
+     * @return Estimate
+     */
+    public function setEntityStatus(RecordRef $entityStatus): Estimate
+    {
+        $this->entityStatus = $entityStatus;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEntityStatus(): RecordRef
+    {
+        return $this->entityStatus;
+    }
+
+    /**
+     * @param float $probability
+     * @return Estimate
+     */
+    public function setProbability(float $probability): Estimate
+    {
+        $this->probability = $probability;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getProbability(): float
+    {
+        return $this->probability;
+    }
+
+    /**
+     * @param bool $includeInForecast
+     * @return Estimate
+     */
+    public function setIncludeInForecast(bool $includeInForecast): Estimate
+    {
+        $this->includeInForecast = $includeInForecast;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIncludeInForecast(): bool
+    {
+        return $this->includeInForecast;
+    }
+
+    /**
+     * @param RecordRef $forecastType
+     * @return Estimate
+     */
+    public function setForecastType(RecordRef $forecastType): Estimate
+    {
+        $this->forecastType = $forecastType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getForecastType(): RecordRef
+    {
+        return $this->forecastType;
+    }
+
+    /**
+     * @param RecordRef $opportunity
+     * @return Estimate
+     */
+    public function setOpportunity(RecordRef $opportunity): Estimate
+    {
+        $this->opportunity = $opportunity;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getOpportunity(): RecordRef
+    {
+        return $this->opportunity;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return Estimate
+     */
+    public function setDepartment(RecordRef $department): Estimate
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return Estimate
+     */
+    public function setClass(RecordRef $class): Estimate
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $terms
+     * @return Estimate
+     */
+    public function setTerms(RecordRef $terms): Estimate
+    {
+        $this->terms = $terms;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTerms(): RecordRef
+    {
+        return $this->terms;
+    }
+
+    /**
+     * @param string $dueDate
+     * @return Estimate
+     */
+    public function setDueDate(string $dueDate): Estimate
+    {
+        $this->dueDate = $dueDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDueDate(): string
+    {
+        return $this->dueDate;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return Estimate
+     */
+    public function setLocation(RecordRef $location): Estimate
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return Estimate
+     */
+    public function setSubsidiary(RecordRef $subsidiary): Estimate
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $billingSchedule
+     * @return Estimate
+     */
+    public function setBillingSchedule(RecordRef $billingSchedule): Estimate
+    {
+        $this->billingSchedule = $billingSchedule;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBillingSchedule(): RecordRef
+    {
+        return $this->billingSchedule;
+    }
+
+    /**
+     * @param string $status
+     * @return Estimate
+     */
+    public function setStatus(string $status): Estimate
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param RecordRef $salesRep
+     * @return Estimate
+     */
+    public function setSalesRep(RecordRef $salesRep): Estimate
+    {
+        $this->salesRep = $salesRep;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSalesRep(): RecordRef
+    {
+        return $this->salesRep;
+    }
+
+    /**
+     * @param RecordRef $partner
+     * @return Estimate
+     */
+    public function setPartner(RecordRef $partner): Estimate
+    {
+        $this->partner = $partner;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPartner(): RecordRef
+    {
+        return $this->partner;
+    }
+
+    /**
+     * @param string $contribPct
+     * @return Estimate
+     */
+    public function setContribPct(string $contribPct): Estimate
+    {
+        $this->contribPct = $contribPct;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getContribPct(): string
+    {
+        return $this->contribPct;
+    }
+
+    /**
+     * @param RecordRef $leadSource
+     * @return Estimate
+     */
+    public function setLeadSource(RecordRef $leadSource): Estimate
+    {
+        $this->leadSource = $leadSource;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLeadSource(): RecordRef
+    {
+        return $this->leadSource;
+    }
+
+    /**
+     * @param string $expectedCloseDate
+     * @return Estimate
+     */
+    public function setExpectedCloseDate(string $expectedCloseDate): Estimate
+    {
+        $this->expectedCloseDate = $expectedCloseDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExpectedCloseDate(): string
+    {
+        return $this->expectedCloseDate;
+    }
+
+    /**
+     * @param string $otherRefNum
+     * @return Estimate
+     */
+    public function setOtherRefNum(string $otherRefNum): Estimate
+    {
+        $this->otherRefNum = $otherRefNum;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOtherRefNum(): string
+    {
+        return $this->otherRefNum;
+    }
+
+    /**
+     * @param string $memo
+     * @return Estimate
+     */
+    public function setMemo(string $memo): Estimate
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param string $endDate
+     * @return Estimate
+     */
+    public function setEndDate(string $endDate): Estimate
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndDate(): string
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param string $startDate
+     * @return Estimate
+     */
+    public function setStartDate(string $startDate): Estimate
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStartDate(): string
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param float $totalCostEstimate
+     * @return Estimate
+     */
+    public function setTotalCostEstimate(float $totalCostEstimate): Estimate
+    {
+        $this->totalCostEstimate = $totalCostEstimate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotalCostEstimate(): float
+    {
+        return $this->totalCostEstimate;
+    }
+
+    /**
+     * @param float $estGrossProfit
+     * @return Estimate
+     */
+    public function setEstGrossProfit(float $estGrossProfit): Estimate
+    {
+        $this->estGrossProfit = $estGrossProfit;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getEstGrossProfit(): float
+    {
+        return $this->estGrossProfit;
+    }
+
+    /**
+     * @param float $estGrossProfitPercent
+     * @return Estimate
+     */
+    public function setEstGrossProfitPercent(float $estGrossProfitPercent): Estimate
+    {
+        $this->estGrossProfitPercent = $estGrossProfitPercent;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getEstGrossProfitPercent(): float
+    {
+        return $this->estGrossProfitPercent;
+    }
+
+    /**
+     * @param RecordRef $createdFrom
+     * @return Estimate
+     */
+    public function setCreatedFrom(RecordRef $createdFrom): Estimate
+    {
+        $this->createdFrom = $createdFrom;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCreatedFrom(): RecordRef
+    {
+        return $this->createdFrom;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return Estimate
+     */
+    public function setExchangeRate(float $exchangeRate): Estimate
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param string $currencyName
+     * @return Estimate
+     */
+    public function setCurrencyName(string $currencyName): Estimate
+    {
+        $this->currencyName = $currencyName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCurrencyName(): string
+    {
+        return $this->currencyName;
+    }
+
+    /**
+     * @param RecordRef $promoCode
+     * @return Estimate
+     */
+    public function setPromoCode(RecordRef $promoCode): Estimate
+    {
+        $this->promoCode = $promoCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPromoCode(): RecordRef
+    {
+        return $this->promoCode;
+    }
+
+    /**
+     * @param RecordRef $discountItem
+     * @return Estimate
+     */
+    public function setDiscountItem(RecordRef $discountItem): Estimate
+    {
+        $this->discountItem = $discountItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDiscountItem(): RecordRef
+    {
+        return $this->discountItem;
+    }
+
+    /**
+     * @param string $discountRate
+     * @return Estimate
+     */
+    public function setDiscountRate(string $discountRate): Estimate
+    {
+        $this->discountRate = $discountRate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDiscountRate(): string
+    {
+        return $this->discountRate;
+    }
+
+    /**
+     * @param bool $isTaxable
+     * @return Estimate
+     */
+    public function setIsTaxable(bool $isTaxable): Estimate
+    {
+        $this->isTaxable = $isTaxable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsTaxable(): bool
+    {
+        return $this->isTaxable;
+    }
+
+    /**
+     * @param RecordRef $taxItem
+     * @return Estimate
+     */
+    public function setTaxItem(RecordRef $taxItem): Estimate
+    {
+        $this->taxItem = $taxItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxItem(): RecordRef
+    {
+        return $this->taxItem;
+    }
+
+    /**
+     * @param float $taxRate
+     * @return Estimate
+     */
+    public function setTaxRate(float $taxRate): Estimate
+    {
+        $this->taxRate = $taxRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTaxRate(): float
+    {
+        return $this->taxRate;
+    }
+
+    /**
+     * @param string $vatRegNum
+     * @return Estimate
+     */
+    public function setVatRegNum(string $vatRegNum): Estimate
+    {
+        $this->vatRegNum = $vatRegNum;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVatRegNum(): string
+    {
+        return $this->vatRegNum;
+    }
+
+    /**
+     * @param bool $toBePrinted
+     * @return Estimate
+     */
+    public function setToBePrinted(bool $toBePrinted): Estimate
+    {
+        $this->toBePrinted = $toBePrinted;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getToBePrinted(): bool
+    {
+        return $this->toBePrinted;
+    }
+
+    /**
+     * @param bool $toBeEmailed
+     * @return Estimate
+     */
+    public function setToBeEmailed(bool $toBeEmailed): Estimate
+    {
+        $this->toBeEmailed = $toBeEmailed;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getToBeEmailed(): bool
+    {
+        return $this->toBeEmailed;
+    }
+
+    /**
+     * @param string $email
+     * @return Estimate
+     */
+    public function setEmail(string $email): Estimate
+    {
+        $this->email = $email;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param bool $toBeFaxed
+     * @return Estimate
+     */
+    public function setToBeFaxed(bool $toBeFaxed): Estimate
+    {
+        $this->toBeFaxed = $toBeFaxed;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getToBeFaxed(): bool
+    {
+        return $this->toBeFaxed;
+    }
+
+    /**
+     * @param string $fax
+     * @return Estimate
+     */
+    public function setFax(string $fax): Estimate
+    {
+        $this->fax = $fax;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFax(): string
+    {
+        return $this->fax;
+    }
+
+    /**
+     * @param bool $visibleToCustomer
+     * @return Estimate
+     */
+    public function setVisibleToCustomer(bool $visibleToCustomer): Estimate
+    {
+        $this->visibleToCustomer = $visibleToCustomer;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getVisibleToCustomer(): bool
+    {
+        return $this->visibleToCustomer;
+    }
+
+    /**
+     * @param RecordRef $messageSel
+     * @return Estimate
+     */
+    public function setMessageSel(RecordRef $messageSel): Estimate
+    {
+        $this->messageSel = $messageSel;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getMessageSel(): RecordRef
+    {
+        return $this->messageSel;
+    }
+
+    /**
+     * @param string $message
+     * @return Estimate
+     */
+    public function setMessage(string $message): Estimate
+    {
+        $this->message = $message;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMessage(): string
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param Address $billingAddress
+     * @return Estimate
+     */
+    public function setBillingAddress(Address $billingAddress): Estimate
+    {
+        $this->billingAddress = $billingAddress;
+        return $this;
+    }
+
+    /**
+     * @return Address
+     */
+    public function getBillingAddress(): Address
+    {
+        return $this->billingAddress;
+    }
+
+    /**
+     * @param RecordRef $billAddressList
+     * @return Estimate
+     */
+    public function setBillAddressList(RecordRef $billAddressList): Estimate
+    {
+        $this->billAddressList = $billAddressList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBillAddressList(): RecordRef
+    {
+        return $this->billAddressList;
+    }
+
+    /**
+     * @param Address $shippingAddress
+     * @return Estimate
+     */
+    public function setShippingAddress(Address $shippingAddress): Estimate
+    {
+        $this->shippingAddress = $shippingAddress;
+        return $this;
+    }
+
+    /**
+     * @return Address
+     */
+    public function getShippingAddress(): Address
+    {
+        return $this->shippingAddress;
+    }
+
+    /**
+     * @param bool $shipIsResidential
+     * @return Estimate
+     */
+    public function setShipIsResidential(bool $shipIsResidential): Estimate
+    {
+        $this->shipIsResidential = $shipIsResidential;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getShipIsResidential(): bool
+    {
+        return $this->shipIsResidential;
+    }
+
+    /**
+     * @param RecordRef $shipAddressList
+     * @return Estimate
+     */
+    public function setShipAddressList(RecordRef $shipAddressList): Estimate
+    {
+        $this->shipAddressList = $shipAddressList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getShipAddressList(): RecordRef
+    {
+        return $this->shipAddressList;
+    }
+
+    /**
+     * @param string $fob
+     * @return Estimate
+     */
+    public function setFob(string $fob): Estimate
+    {
+        $this->fob = $fob;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFob(): string
+    {
+        return $this->fob;
+    }
+
+    /**
+     * @param string $shipDate
+     * @return Estimate
+     */
+    public function setShipDate(string $shipDate): Estimate
+    {
+        $this->shipDate = $shipDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getShipDate(): string
+    {
+        return $this->shipDate;
+    }
+
+    /**
+     * @param RecordRef $shipMethod
+     * @return Estimate
+     */
+    public function setShipMethod(RecordRef $shipMethod): Estimate
+    {
+        $this->shipMethod = $shipMethod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getShipMethod(): RecordRef
+    {
+        return $this->shipMethod;
+    }
+
+    /**
+     * @param float $shippingCost
+     * @return Estimate
+     */
+    public function setShippingCost(float $shippingCost): Estimate
+    {
+        $this->shippingCost = $shippingCost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getShippingCost(): float
+    {
+        return $this->shippingCost;
+    }
+
+    /**
+     * @param RecordRef $shippingTaxCode
+     * @return Estimate
+     */
+    public function setShippingTaxCode(RecordRef $shippingTaxCode): Estimate
+    {
+        $this->shippingTaxCode = $shippingTaxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getShippingTaxCode(): RecordRef
+    {
+        return $this->shippingTaxCode;
+    }
+
+    /**
+     * @param RecordRef $handlingTaxCode
+     * @return Estimate
+     */
+    public function setHandlingTaxCode(RecordRef $handlingTaxCode): Estimate
+    {
+        $this->handlingTaxCode = $handlingTaxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getHandlingTaxCode(): RecordRef
+    {
+        return $this->handlingTaxCode;
+    }
+
+    /**
+     * @param float $handlingCost
+     * @return Estimate
+     */
+    public function setHandlingCost(float $handlingCost): Estimate
+    {
+        $this->handlingCost = $handlingCost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getHandlingCost(): float
+    {
+        return $this->handlingCost;
+    }
+
+    /**
+     * @param string $trackingNumbers
+     * @return Estimate
+     */
+    public function setTrackingNumbers(string $trackingNumbers): Estimate
+    {
+        $this->trackingNumbers = $trackingNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTrackingNumbers(): string
+    {
+        return $this->trackingNumbers;
+    }
+
+    /**
+     * @param string $linkedTrackingNumbers
+     * @return Estimate
+     */
+    public function setLinkedTrackingNumbers(string $linkedTrackingNumbers): Estimate
+    {
+        $this->linkedTrackingNumbers = $linkedTrackingNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkedTrackingNumbers(): string
+    {
+        return $this->linkedTrackingNumbers;
+    }
+
+    /**
+     * @param RecordRef $salesGroup
+     * @return Estimate
+     */
+    public function setSalesGroup(RecordRef $salesGroup): Estimate
+    {
+        $this->salesGroup = $salesGroup;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSalesGroup(): RecordRef
+    {
+        return $this->salesGroup;
+    }
+
+    /**
+     * @param bool $syncSalesTeams
+     * @return Estimate
+     */
+    public function setSyncSalesTeams(bool $syncSalesTeams): Estimate
+    {
+        $this->syncSalesTeams = $syncSalesTeams;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSyncSalesTeams(): bool
+    {
+        return $this->syncSalesTeams;
+    }
+
+    /**
+     * @param float $altSalesTotal
+     * @return Estimate
+     */
+    public function setAltSalesTotal(float $altSalesTotal): Estimate
+    {
+        $this->altSalesTotal = $altSalesTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAltSalesTotal(): float
+    {
+        return $this->altSalesTotal;
+    }
+
+    /**
+     * @param bool $canHaveStackable
+     * @return Estimate
+     */
+    public function setCanHaveStackable(bool $canHaveStackable): Estimate
+    {
+        $this->canHaveStackable = $canHaveStackable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getCanHaveStackable(): bool
+    {
+        return $this->canHaveStackable;
+    }
+
+    /**
+     * @param float $oneTime
+     * @return Estimate
+     */
+    public function setOneTime(float $oneTime): Estimate
+    {
+        $this->oneTime = $oneTime;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOneTime(): float
+    {
+        return $this->oneTime;
+    }
+
+    /**
+     * @param float $recurWeekly
+     * @return Estimate
+     */
+    public function setRecurWeekly(float $recurWeekly): Estimate
+    {
+        $this->recurWeekly = $recurWeekly;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRecurWeekly(): float
+    {
+        return $this->recurWeekly;
+    }
+
+    /**
+     * @param float $recurMonthly
+     * @return Estimate
+     */
+    public function setRecurMonthly(float $recurMonthly): Estimate
+    {
+        $this->recurMonthly = $recurMonthly;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRecurMonthly(): float
+    {
+        return $this->recurMonthly;
+    }
+
+    /**
+     * @param float $recurQuarterly
+     * @return Estimate
+     */
+    public function setRecurQuarterly(float $recurQuarterly): Estimate
+    {
+        $this->recurQuarterly = $recurQuarterly;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRecurQuarterly(): float
+    {
+        return $this->recurQuarterly;
+    }
+
+    /**
+     * @param float $recurAnnually
+     * @return Estimate
+     */
+    public function setRecurAnnually(float $recurAnnually): Estimate
+    {
+        $this->recurAnnually = $recurAnnually;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRecurAnnually(): float
+    {
+        return $this->recurAnnually;
+    }
+
+    /**
+     * @param float $subTotal
+     * @return Estimate
+     */
+    public function setSubTotal(float $subTotal): Estimate
+    {
+        $this->subTotal = $subTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSubTotal(): float
+    {
+        return $this->subTotal;
+    }
+
+    /**
+     * @param float $discountTotal
+     * @return Estimate
+     */
+    public function setDiscountTotal(float $discountTotal): Estimate
+    {
+        $this->discountTotal = $discountTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getDiscountTotal(): float
+    {
+        return $this->discountTotal;
+    }
+
+    /**
+     * @param float $taxTotal
+     * @return Estimate
+     */
+    public function setTaxTotal(float $taxTotal): Estimate
+    {
+        $this->taxTotal = $taxTotal;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTaxTotal(): float
+    {
+        return $this->taxTotal;
+    }
+
+    /**
+     * @param float $altShippingCost
+     * @return Estimate
+     */
+    public function setAltShippingCost(float $altShippingCost): Estimate
+    {
+        $this->altShippingCost = $altShippingCost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAltShippingCost(): float
+    {
+        return $this->altShippingCost;
+    }
+
+    /**
+     * @param float $altHandlingCost
+     * @return Estimate
+     */
+    public function setAltHandlingCost(float $altHandlingCost): Estimate
+    {
+        $this->altHandlingCost = $altHandlingCost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAltHandlingCost(): float
+    {
+        return $this->altHandlingCost;
+    }
+
+    /**
+     * @param float $total
+     * @return Estimate
+     */
+    public function setTotal(float $total): Estimate
+    {
+        $this->total = $total;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotal(): float
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param EstimateItemList $itemList
+     * @return Estimate
+     */
+    public function setItemList(EstimateItemList $itemList): Estimate
+    {
+        $this->itemList = $itemList;
+        return $this;
+    }
+
+    /**
+     * @return EstimateItemList
+     */
+    public function getItemList(): EstimateItemList
+    {
+        return $this->itemList;
+    }
+
+    /**
+     * @param AccountingBookDetailList $accountingBookDetailList
+     * @return Estimate
+     */
+    public function setAccountingBookDetailList(AccountingBookDetailList $accountingBookDetailList): Estimate
+    {
+        $this->accountingBookDetailList = $accountingBookDetailList;
+        return $this;
+    }
+
+    /**
+     * @return AccountingBookDetailList
+     */
+    public function getAccountingBookDetailList(): AccountingBookDetailList
+    {
+        return $this->accountingBookDetailList;
+    }
+
+    /**
+     * @param EstimateSalesTeamList $salesTeamList
+     * @return Estimate
+     */
+    public function setSalesTeamList(EstimateSalesTeamList $salesTeamList): Estimate
+    {
+        $this->salesTeamList = $salesTeamList;
+        return $this;
+    }
+
+    /**
+     * @return EstimateSalesTeamList
+     */
+    public function getSalesTeamList(): EstimateSalesTeamList
+    {
+        return $this->salesTeamList;
+    }
+
+    /**
+     * @param bool $syncPartnerTeams
+     * @return Estimate
+     */
+    public function setSyncPartnerTeams(bool $syncPartnerTeams): Estimate
+    {
+        $this->syncPartnerTeams = $syncPartnerTeams;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSyncPartnerTeams(): bool
+    {
+        return $this->syncPartnerTeams;
+    }
+
+    /**
+     * @param EstimatePartnersList $partnersList
+     * @return Estimate
+     */
+    public function setPartnersList(EstimatePartnersList $partnersList): Estimate
+    {
+        $this->partnersList = $partnersList;
+        return $this;
+    }
+
+    /**
+     * @return EstimatePartnersList
+     */
+    public function getPartnersList(): EstimatePartnersList
+    {
+        return $this->partnersList;
+    }
+
+    /**
+     * @param PromotionsList $promotionsList
+     * @return Estimate
+     */
+    public function setPromotionsList(PromotionsList $promotionsList): Estimate
+    {
+        $this->promotionsList = $promotionsList;
+        return $this;
+    }
+
+    /**
+     * @return PromotionsList
+     */
+    public function getPromotionsList(): PromotionsList
+    {
+        return $this->promotionsList;
+    }
+
+    /**
+     * @param EstimateShipGroupList $shipGroupList
+     * @return Estimate
+     */
+    public function setShipGroupList(EstimateShipGroupList $shipGroupList): Estimate
+    {
+        $this->shipGroupList = $shipGroupList;
+        return $this;
+    }
+
+    /**
+     * @return EstimateShipGroupList
+     */
+    public function getShipGroupList(): EstimateShipGroupList
+    {
+        return $this->shipGroupList;
+    }
+
+    /**
+     * @param TaxDetailsList $taxDetailsList
+     * @return Estimate
+     */
+    public function setTaxDetailsList(TaxDetailsList $taxDetailsList): Estimate
+    {
+        $this->taxDetailsList = $taxDetailsList;
+        return $this;
+    }
+
+    /**
+     * @return TaxDetailsList
+     */
+    public function getTaxDetailsList(): TaxDetailsList
+    {
+        return $this->taxDetailsList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return Estimate
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): Estimate
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return Estimate
+     */
+    public function setInternalId(string $internalId): Estimate
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return Estimate
+     */
+    public function setExternalId(string $externalId): Estimate
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

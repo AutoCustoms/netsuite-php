@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,43 +23,53 @@ class LocationBusinessHours {
     /**
      * @var string
      */
-    public $startTime;
+    protected string $startTime;
+
     /**
      * @var string
      */
-    public $endTime;
+    protected string $endTime;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isSunday;
+    protected bool $isSunday;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isMonday;
+    protected bool $isMonday;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isTuesday;
+    protected bool $isTuesday;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isWednesday;
+    protected bool $isWednesday;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isThursday;
+    protected bool $isThursday;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isFriday;
+    protected bool $isFriday;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isSaturday;
+    protected bool $isSaturday;
+
     /**
      * @var string
      */
-    public $sameDayPickupCutOffTime;
+    protected string $sameDayPickupCutOffTime;
+
     static $paramtypesmap = array(
         "startTime" => "dateTime",
         "endTime" => "dateTime",
@@ -72,4 +82,185 @@ class LocationBusinessHours {
         "isSaturday" => "boolean",
         "sameDayPickupCutOffTime" => "dateTime",
     );
+
+    /**
+     * @param string $startTime
+     * @return LocationBusinessHours
+     */
+    public function setStartTime(string $startTime): LocationBusinessHours
+    {
+        $this->startTime = $startTime;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStartTime(): string
+    {
+        return $this->startTime;
+    }
+
+    /**
+     * @param string $endTime
+     * @return LocationBusinessHours
+     */
+    public function setEndTime(string $endTime): LocationBusinessHours
+    {
+        $this->endTime = $endTime;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndTime(): string
+    {
+        return $this->endTime;
+    }
+
+    /**
+     * @param bool $isSunday
+     * @return LocationBusinessHours
+     */
+    public function setIsSunday(bool $isSunday): LocationBusinessHours
+    {
+        $this->isSunday = $isSunday;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsSunday(): bool
+    {
+        return $this->isSunday;
+    }
+
+    /**
+     * @param bool $isMonday
+     * @return LocationBusinessHours
+     */
+    public function setIsMonday(bool $isMonday): LocationBusinessHours
+    {
+        $this->isMonday = $isMonday;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsMonday(): bool
+    {
+        return $this->isMonday;
+    }
+
+    /**
+     * @param bool $isTuesday
+     * @return LocationBusinessHours
+     */
+    public function setIsTuesday(bool $isTuesday): LocationBusinessHours
+    {
+        $this->isTuesday = $isTuesday;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsTuesday(): bool
+    {
+        return $this->isTuesday;
+    }
+
+    /**
+     * @param bool $isWednesday
+     * @return LocationBusinessHours
+     */
+    public function setIsWednesday(bool $isWednesday): LocationBusinessHours
+    {
+        $this->isWednesday = $isWednesday;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsWednesday(): bool
+    {
+        return $this->isWednesday;
+    }
+
+    /**
+     * @param bool $isThursday
+     * @return LocationBusinessHours
+     */
+    public function setIsThursday(bool $isThursday): LocationBusinessHours
+    {
+        $this->isThursday = $isThursday;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsThursday(): bool
+    {
+        return $this->isThursday;
+    }
+
+    /**
+     * @param bool $isFriday
+     * @return LocationBusinessHours
+     */
+    public function setIsFriday(bool $isFriday): LocationBusinessHours
+    {
+        $this->isFriday = $isFriday;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsFriday(): bool
+    {
+        return $this->isFriday;
+    }
+
+    /**
+     * @param bool $isSaturday
+     * @return LocationBusinessHours
+     */
+    public function setIsSaturday(bool $isSaturday): LocationBusinessHours
+    {
+        $this->isSaturday = $isSaturday;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsSaturday(): bool
+    {
+        return $this->isSaturday;
+    }
+
+    /**
+     * @param string $sameDayPickupCutOffTime
+     * @return LocationBusinessHours
+     */
+    public function setSameDayPickupCutOffTime(string $sameDayPickupCutOffTime): LocationBusinessHours
+    {
+        $this->sameDayPickupCutOffTime = $sameDayPickupCutOffTime;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSameDayPickupCutOffTime(): string
+    {
+        return $this->sameDayPickupCutOffTime;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class StatisticalJournalEntryLineList {
     /**
-     * @var \NetSuite\Classes\StatisticalJournalEntryLine[]
+     * @var StatisticalJournalEntryLine[]
      */
-    public $statisticalJournalEntryLine;
+    protected array $statisticalJournalEntryLine;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "statisticalJournalEntryLine" => "StatisticalJournalEntryLine[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param StatisticalJournalEntryLine[] $statisticalJournalEntryLine
+     * @return StatisticalJournalEntryLineList
+     */
+    public function setStatisticalJournalEntryLine(StatisticalJournalEntryLine $statisticalJournalEntryLine): StatisticalJournalEntryLineList
+    {
+        $this->statisticalJournalEntryLine[] = $statisticalJournalEntryLine;
+        return $this;
+    }
+
+    /**
+     * @return StatisticalJournalEntryLine[]
+     */
+    public function getStatisticalJournalEntryLine(): array
+    {
+        return $this->statisticalJournalEntryLine;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return StatisticalJournalEntryLineList
+     */
+    public function setReplaceAll(bool $replaceAll): StatisticalJournalEntryLineList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

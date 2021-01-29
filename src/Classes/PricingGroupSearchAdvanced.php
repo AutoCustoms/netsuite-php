@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PricingGroupSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PricingGroupSearch
+     * @var PricingGroupSearch
      */
-    public $criteria;
+    protected PricingGroupSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\PricingGroupSearchRow
+     * @var PricingGroupSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected PricingGroupSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "PricingGroupSearch",
         "columns" => "PricingGroupSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param PricingGroupSearch $criteria
+     * @return PricingGroupSearchAdvanced
+     */
+    public function setCriteria(PricingGroupSearch $criteria): PricingGroupSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return PricingGroupSearch
+     */
+    public function getCriteria(): PricingGroupSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param PricingGroupSearchRow $columns
+     * @return PricingGroupSearchAdvanced
+     */
+    public function setColumns(PricingGroupSearchRow $columns): PricingGroupSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return PricingGroupSearchRow
+     */
+    public function getColumns(): PricingGroupSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return PricingGroupSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): PricingGroupSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return PricingGroupSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): PricingGroupSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

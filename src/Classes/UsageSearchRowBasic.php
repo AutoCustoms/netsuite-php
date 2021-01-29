@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class UsageSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $customer;
+    protected array $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $date;
+    protected array $date;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memo;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantity;
+    protected array $quantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subscription;
+    protected array $subscription;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subscriptionLine;
+    protected array $subscriptionLine;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subscriptionPlan;
+    protected array $subscriptionPlan;
+
     static $paramtypesmap = array(
         "customer" => "SearchColumnSelectField[]",
         "date" => "SearchColumnDateField[]",
@@ -72,4 +82,185 @@ class UsageSearchRowBasic extends SearchRowBasic {
         "subscriptionLine" => "SearchColumnSelectField[]",
         "subscriptionPlan" => "SearchColumnSelectField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $customer
+     * @return UsageSearchRowBasic
+     */
+    public function setCustomer(SearchColumnSelectField $customer): UsageSearchRowBasic
+    {
+        $this->customer[] = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustomer(): array
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $date
+     * @return UsageSearchRowBasic
+     */
+    public function setDate(SearchColumnDateField $date): UsageSearchRowBasic
+    {
+        $this->date[] = $date;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDate(): array
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return UsageSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): UsageSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return UsageSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): UsageSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $item
+     * @return UsageSearchRowBasic
+     */
+    public function setItem(SearchColumnSelectField $item): UsageSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return UsageSearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): UsageSearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantity
+     * @return UsageSearchRowBasic
+     */
+    public function setQuantity(SearchColumnDoubleField $quantity): UsageSearchRowBasic
+    {
+        $this->quantity[] = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantity(): array
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subscription
+     * @return UsageSearchRowBasic
+     */
+    public function setSubscription(SearchColumnSelectField $subscription): UsageSearchRowBasic
+    {
+        $this->subscription[] = $subscription;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubscription(): array
+    {
+        return $this->subscription;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subscriptionLine
+     * @return UsageSearchRowBasic
+     */
+    public function setSubscriptionLine(SearchColumnSelectField $subscriptionLine): UsageSearchRowBasic
+    {
+        $this->subscriptionLine[] = $subscriptionLine;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubscriptionLine(): array
+    {
+        return $this->subscriptionLine;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subscriptionPlan
+     * @return UsageSearchRowBasic
+     */
+    public function setSubscriptionPlan(SearchColumnSelectField $subscriptionPlan): UsageSearchRowBasic
+    {
+        $this->subscriptionPlan[] = $subscriptionPlan;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubscriptionPlan(): array
+    {
+        return $this->subscriptionPlan;
+    }
+
 }

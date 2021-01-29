@@ -14,68 +14,82 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ChargeSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\ChargeSearchBasic
+     * @var ChargeSearchBasic
      */
-    public $basic;
+    protected ChargeSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\BillingAccountSearchBasic
+     * @var BillingAccountSearchBasic
      */
-    public $billingAccountJoin;
+    protected BillingAccountSearchBasic $billingAccountJoin;
+
     /**
-     * @var \NetSuite\Classes\BillingScheduleSearchBasic
+     * @var BillingScheduleSearchBasic
      */
-    public $billingScheduleJoin;
+    protected BillingScheduleSearchBasic $billingScheduleJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $chargeEmployeeJoin;
+    protected EmployeeSearchBasic $chargeEmployeeJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $customerJoin;
+    protected CustomerSearchBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $invoiceJoin;
+    protected TransactionSearchBasic $invoiceJoin;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchBasic
+     * @var ItemSearchBasic
      */
-    public $itemJoin;
+    protected ItemSearchBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\JobSearchBasic
+     * @var JobSearchBasic
      */
-    public $jobJoin;
+    protected JobSearchBasic $jobJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $salesOrderJoin;
+    protected TransactionSearchBasic $salesOrderJoin;
+
     /**
-     * @var \NetSuite\Classes\TimeBillSearchBasic
+     * @var TimeBillSearchBasic
      */
-    public $timeJoin;
+    protected TimeBillSearchBasic $timeJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\UsageSearchBasic
+     * @var UsageSearchBasic
      */
-    public $usageJoin;
+    protected UsageSearchBasic $usageJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "ChargeSearchBasic",
         "billingAccountJoin" => "BillingAccountSearchBasic",
@@ -92,4 +106,257 @@ class ChargeSearch extends SearchRecord {
         "userJoin" => "EmployeeSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param ChargeSearchBasic $basic
+     * @return ChargeSearch
+     */
+    public function setBasic(ChargeSearchBasic $basic): ChargeSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ChargeSearchBasic
+     */
+    public function getBasic(): ChargeSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param BillingAccountSearchBasic $billingAccountJoin
+     * @return ChargeSearch
+     */
+    public function setBillingAccountJoin(BillingAccountSearchBasic $billingAccountJoin): ChargeSearch
+    {
+        $this->billingAccountJoin = $billingAccountJoin;
+        return $this;
+    }
+
+    /**
+     * @return BillingAccountSearchBasic
+     */
+    public function getBillingAccountJoin(): BillingAccountSearchBasic
+    {
+        return $this->billingAccountJoin;
+    }
+
+    /**
+     * @param BillingScheduleSearchBasic $billingScheduleJoin
+     * @return ChargeSearch
+     */
+    public function setBillingScheduleJoin(BillingScheduleSearchBasic $billingScheduleJoin): ChargeSearch
+    {
+        $this->billingScheduleJoin = $billingScheduleJoin;
+        return $this;
+    }
+
+    /**
+     * @return BillingScheduleSearchBasic
+     */
+    public function getBillingScheduleJoin(): BillingScheduleSearchBasic
+    {
+        return $this->billingScheduleJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $chargeEmployeeJoin
+     * @return ChargeSearch
+     */
+    public function setChargeEmployeeJoin(EmployeeSearchBasic $chargeEmployeeJoin): ChargeSearch
+    {
+        $this->chargeEmployeeJoin = $chargeEmployeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getChargeEmployeeJoin(): EmployeeSearchBasic
+    {
+        return $this->chargeEmployeeJoin;
+    }
+
+    /**
+     * @param CustomerSearchBasic $customerJoin
+     * @return ChargeSearch
+     */
+    public function setCustomerJoin(CustomerSearchBasic $customerJoin): ChargeSearch
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $invoiceJoin
+     * @return ChargeSearch
+     */
+    public function setInvoiceJoin(TransactionSearchBasic $invoiceJoin): ChargeSearch
+    {
+        $this->invoiceJoin = $invoiceJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getInvoiceJoin(): TransactionSearchBasic
+    {
+        return $this->invoiceJoin;
+    }
+
+    /**
+     * @param ItemSearchBasic $itemJoin
+     * @return ChargeSearch
+     */
+    public function setItemJoin(ItemSearchBasic $itemJoin): ChargeSearch
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchBasic
+     */
+    public function getItemJoin(): ItemSearchBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param JobSearchBasic $jobJoin
+     * @return ChargeSearch
+     */
+    public function setJobJoin(JobSearchBasic $jobJoin): ChargeSearch
+    {
+        $this->jobJoin = $jobJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchBasic
+     */
+    public function getJobJoin(): JobSearchBasic
+    {
+        return $this->jobJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $salesOrderJoin
+     * @return ChargeSearch
+     */
+    public function setSalesOrderJoin(TransactionSearchBasic $salesOrderJoin): ChargeSearch
+    {
+        $this->salesOrderJoin = $salesOrderJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getSalesOrderJoin(): TransactionSearchBasic
+    {
+        return $this->salesOrderJoin;
+    }
+
+    /**
+     * @param TimeBillSearchBasic $timeJoin
+     * @return ChargeSearch
+     */
+    public function setTimeJoin(TimeBillSearchBasic $timeJoin): ChargeSearch
+    {
+        $this->timeJoin = $timeJoin;
+        return $this;
+    }
+
+    /**
+     * @return TimeBillSearchBasic
+     */
+    public function getTimeJoin(): TimeBillSearchBasic
+    {
+        return $this->timeJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $transactionJoin
+     * @return ChargeSearch
+     */
+    public function setTransactionJoin(TransactionSearchBasic $transactionJoin): ChargeSearch
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getTransactionJoin(): TransactionSearchBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param UsageSearchBasic $usageJoin
+     * @return ChargeSearch
+     */
+    public function setUsageJoin(UsageSearchBasic $usageJoin): ChargeSearch
+    {
+        $this->usageJoin = $usageJoin;
+        return $this;
+    }
+
+    /**
+     * @return UsageSearchBasic
+     */
+    public function getUsageJoin(): UsageSearchBasic
+    {
+        return $this->usageJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return ChargeSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): ChargeSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return ChargeSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): ChargeSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

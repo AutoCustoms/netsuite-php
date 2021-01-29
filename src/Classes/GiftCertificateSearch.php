@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GiftCertificateSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\GiftCertificateSearchBasic
+     * @var GiftCertificateSearchBasic
      */
-    public $basic;
+    protected GiftCertificateSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "GiftCertificateSearchBasic",
         "userJoin" => "EmployeeSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param GiftCertificateSearchBasic $basic
+     * @return GiftCertificateSearch
+     */
+    public function setBasic(GiftCertificateSearchBasic $basic): GiftCertificateSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return GiftCertificateSearchBasic
+     */
+    public function getBasic(): GiftCertificateSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return GiftCertificateSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): GiftCertificateSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return GiftCertificateSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): GiftCertificateSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

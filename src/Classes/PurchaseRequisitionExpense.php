@@ -14,72 +14,87 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PurchaseRequisitionExpense {
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $category;
+    protected RecordRef $category;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isClosed;
+    protected bool $isClosed;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $account;
+    protected RecordRef $account;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $poVendor;
+    protected RecordRef $poVendor;
+
     /**
      * @var float
      */
-    public $estimatedAmount;
+    protected float $estimatedAmount;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $memo;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customer;
+    protected RecordRef $customer;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $linkedOrderList;
+    protected RecordRefList $linkedOrderList;
+
     /**
      * @var string
      */
-    public $linkedOrderStatus;
+    protected string $linkedOrderStatus;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isBillable;
+    protected bool $isBillable;
+
     static $paramtypesmap = array(
         "line" => "integer",
         "category" => "RecordRef",
@@ -97,4 +112,275 @@ class PurchaseRequisitionExpense {
         "linkedOrderStatus" => "string",
         "isBillable" => "boolean",
     );
+
+    /**
+     * @param int $line
+     * @return PurchaseRequisitionExpense
+     */
+    public function setLine(int $line): PurchaseRequisitionExpense
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param RecordRef $category
+     * @return PurchaseRequisitionExpense
+     */
+    public function setCategory(RecordRef $category): PurchaseRequisitionExpense
+    {
+        $this->category = $category;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCategory(): RecordRef
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return PurchaseRequisitionExpense
+     */
+    public function setLocation(RecordRef $location): PurchaseRequisitionExpense
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param bool $isClosed
+     * @return PurchaseRequisitionExpense
+     */
+    public function setIsClosed(bool $isClosed): PurchaseRequisitionExpense
+    {
+        $this->isClosed = $isClosed;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsClosed(): bool
+    {
+        return $this->isClosed;
+    }
+
+    /**
+     * @param RecordRef $account
+     * @return PurchaseRequisitionExpense
+     */
+    public function setAccount(RecordRef $account): PurchaseRequisitionExpense
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccount(): RecordRef
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param RecordRef $poVendor
+     * @return PurchaseRequisitionExpense
+     */
+    public function setPoVendor(RecordRef $poVendor): PurchaseRequisitionExpense
+    {
+        $this->poVendor = $poVendor;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPoVendor(): RecordRef
+    {
+        return $this->poVendor;
+    }
+
+    /**
+     * @param float $estimatedAmount
+     * @return PurchaseRequisitionExpense
+     */
+    public function setEstimatedAmount(float $estimatedAmount): PurchaseRequisitionExpense
+    {
+        $this->estimatedAmount = $estimatedAmount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getEstimatedAmount(): float
+    {
+        return $this->estimatedAmount;
+    }
+
+    /**
+     * @param float $amount
+     * @return PurchaseRequisitionExpense
+     */
+    public function setAmount(float $amount): PurchaseRequisitionExpense
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param string $memo
+     * @return PurchaseRequisitionExpense
+     */
+    public function setMemo(string $memo): PurchaseRequisitionExpense
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return PurchaseRequisitionExpense
+     */
+    public function setDepartment(RecordRef $department): PurchaseRequisitionExpense
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return PurchaseRequisitionExpense
+     */
+    public function setClass(RecordRef $class): PurchaseRequisitionExpense
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return PurchaseRequisitionExpense
+     */
+    public function setCustomer(RecordRef $customer): PurchaseRequisitionExpense
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param RecordRefList $linkedOrderList
+     * @return PurchaseRequisitionExpense
+     */
+    public function setLinkedOrderList(RecordRefList $linkedOrderList): PurchaseRequisitionExpense
+    {
+        $this->linkedOrderList = $linkedOrderList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getLinkedOrderList(): RecordRefList
+    {
+        return $this->linkedOrderList;
+    }
+
+    /**
+     * @param string $linkedOrderStatus
+     * @return PurchaseRequisitionExpense
+     */
+    public function setLinkedOrderStatus(string $linkedOrderStatus): PurchaseRequisitionExpense
+    {
+        $this->linkedOrderStatus = $linkedOrderStatus;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkedOrderStatus(): string
+    {
+        return $this->linkedOrderStatus;
+    }
+
+    /**
+     * @param bool $isBillable
+     * @return PurchaseRequisitionExpense
+     */
+    public function setIsBillable(bool $isBillable): PurchaseRequisitionExpense
+    {
+        $this->isBillable = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBillable(): bool
+    {
+        return $this->isBillable;
+    }
+
 }

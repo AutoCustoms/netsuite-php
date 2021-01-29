@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PartnerPromoCode {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $promoCode;
+    protected RecordRef $promoCode;
+
     /**
      * @var string
      */
-    public $discount;
+    protected string $discount;
+
     /**
      * @var string
      */
-    public $endDate;
+    protected string $endDate;
+
     static $paramtypesmap = array(
         "promoCode" => "RecordRef",
         "discount" => "string",
         "endDate" => "dateTime",
     );
+
+    /**
+     * @param RecordRef $promoCode
+     * @return PartnerPromoCode
+     */
+    public function setPromoCode(RecordRef $promoCode): PartnerPromoCode
+    {
+        $this->promoCode = $promoCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPromoCode(): RecordRef
+    {
+        return $this->promoCode;
+    }
+
+    /**
+     * @param string $discount
+     * @return PartnerPromoCode
+     */
+    public function setDiscount(string $discount): PartnerPromoCode
+    {
+        $this->discount = $discount;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDiscount(): string
+    {
+        return $this->discount;
+    }
+
+    /**
+     * @param string $endDate
+     * @return PartnerPromoCode
+     */
+    public function setEndDate(string $endDate): PartnerPromoCode
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndDate(): string
+    {
+        return $this->endDate;
+    }
+
 }

@@ -14,56 +14,67 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InventoryTransferInventory {
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $units;
+    protected RecordRef $units;
+
     /**
      * @var float
      */
-    public $quantityOnHand;
+    protected float $quantityOnHand;
+
     /**
      * @var float
      */
-    public $adjustQtyBy;
+    protected float $adjustQtyBy;
+
     /**
      * @var string
      */
-    public $serialNumbers;
+    protected string $serialNumbers;
+
     /**
      * @var string
      */
-    public $fromBinNumbers;
+    protected string $fromBinNumbers;
+
     /**
      * @var string
      */
-    public $toBinNumbers;
+    protected string $toBinNumbers;
+
     /**
-     * @var \NetSuite\Classes\InventoryDetail
+     * @var InventoryDetail
      */
-    public $inventoryDetail;
+    protected InventoryDetail $inventoryDetail;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "line" => "integer",
         "item" => "RecordRef",
@@ -77,4 +88,203 @@ class InventoryTransferInventory {
         "inventoryDetail" => "InventoryDetail",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param int $line
+     * @return InventoryTransferInventory
+     */
+    public function setLine(int $line): InventoryTransferInventory
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return InventoryTransferInventory
+     */
+    public function setItem(RecordRef $item): InventoryTransferInventory
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param string $description
+     * @return InventoryTransferInventory
+     */
+    public function setDescription(string $description): InventoryTransferInventory
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param RecordRef $units
+     * @return InventoryTransferInventory
+     */
+    public function setUnits(RecordRef $units): InventoryTransferInventory
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnits(): RecordRef
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param float $quantityOnHand
+     * @return InventoryTransferInventory
+     */
+    public function setQuantityOnHand(float $quantityOnHand): InventoryTransferInventory
+    {
+        $this->quantityOnHand = $quantityOnHand;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnHand(): float
+    {
+        return $this->quantityOnHand;
+    }
+
+    /**
+     * @param float $adjustQtyBy
+     * @return InventoryTransferInventory
+     */
+    public function setAdjustQtyBy(float $adjustQtyBy): InventoryTransferInventory
+    {
+        $this->adjustQtyBy = $adjustQtyBy;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAdjustQtyBy(): float
+    {
+        return $this->adjustQtyBy;
+    }
+
+    /**
+     * @param string $serialNumbers
+     * @return InventoryTransferInventory
+     */
+    public function setSerialNumbers(string $serialNumbers): InventoryTransferInventory
+    {
+        $this->serialNumbers = $serialNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSerialNumbers(): string
+    {
+        return $this->serialNumbers;
+    }
+
+    /**
+     * @param string $fromBinNumbers
+     * @return InventoryTransferInventory
+     */
+    public function setFromBinNumbers(string $fromBinNumbers): InventoryTransferInventory
+    {
+        $this->fromBinNumbers = $fromBinNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFromBinNumbers(): string
+    {
+        return $this->fromBinNumbers;
+    }
+
+    /**
+     * @param string $toBinNumbers
+     * @return InventoryTransferInventory
+     */
+    public function setToBinNumbers(string $toBinNumbers): InventoryTransferInventory
+    {
+        $this->toBinNumbers = $toBinNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getToBinNumbers(): string
+    {
+        return $this->toBinNumbers;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return InventoryTransferInventory
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): InventoryTransferInventory
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return InventoryTransferInventory
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): InventoryTransferInventory
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

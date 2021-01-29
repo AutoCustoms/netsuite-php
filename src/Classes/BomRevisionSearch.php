@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BomRevisionSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\BomRevisionSearchBasic
+     * @var BomRevisionSearchBasic
      */
-    public $basic;
+    protected BomRevisionSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\BomSearchBasic
+     * @var BomSearchBasic
      */
-    public $billOfMaterialsJoin;
+    protected BomSearchBasic $billOfMaterialsJoin;
+
     /**
-     * @var \NetSuite\Classes\BomRevisionComponentSearchBasic
+     * @var BomRevisionComponentSearchBasic
      */
-    public $componentJoin;
+    protected BomRevisionComponentSearchBasic $componentJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "BomRevisionSearchBasic",
         "billOfMaterialsJoin" => "BomSearchBasic",
@@ -47,4 +52,95 @@ class BomRevisionSearch extends SearchRecord {
         "transactionJoin" => "TransactionSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param BomRevisionSearchBasic $basic
+     * @return BomRevisionSearch
+     */
+    public function setBasic(BomRevisionSearchBasic $basic): BomRevisionSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return BomRevisionSearchBasic
+     */
+    public function getBasic(): BomRevisionSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param BomSearchBasic $billOfMaterialsJoin
+     * @return BomRevisionSearch
+     */
+    public function setBillOfMaterialsJoin(BomSearchBasic $billOfMaterialsJoin): BomRevisionSearch
+    {
+        $this->billOfMaterialsJoin = $billOfMaterialsJoin;
+        return $this;
+    }
+
+    /**
+     * @return BomSearchBasic
+     */
+    public function getBillOfMaterialsJoin(): BomSearchBasic
+    {
+        return $this->billOfMaterialsJoin;
+    }
+
+    /**
+     * @param BomRevisionComponentSearchBasic $componentJoin
+     * @return BomRevisionSearch
+     */
+    public function setComponentJoin(BomRevisionComponentSearchBasic $componentJoin): BomRevisionSearch
+    {
+        $this->componentJoin = $componentJoin;
+        return $this;
+    }
+
+    /**
+     * @return BomRevisionComponentSearchBasic
+     */
+    public function getComponentJoin(): BomRevisionComponentSearchBasic
+    {
+        return $this->componentJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $transactionJoin
+     * @return BomRevisionSearch
+     */
+    public function setTransactionJoin(TransactionSearchBasic $transactionJoin): BomRevisionSearch
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getTransactionJoin(): TransactionSearchBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return BomRevisionSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): BomRevisionSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

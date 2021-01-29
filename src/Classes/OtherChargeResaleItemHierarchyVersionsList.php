@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class OtherChargeResaleItemHierarchyVersionsList {
     /**
-     * @var \NetSuite\Classes\OtherChargeResaleItemHierarchyVersions[]
+     * @var OtherChargeResaleItemHierarchyVersions[]
      */
-    public $otherChargeResaleItemHierarchyVersions;
+    protected array $otherChargeResaleItemHierarchyVersions;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "otherChargeResaleItemHierarchyVersions" => "OtherChargeResaleItemHierarchyVersions[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param OtherChargeResaleItemHierarchyVersions[] $otherChargeResaleItemHierarchyVersions
+     * @return OtherChargeResaleItemHierarchyVersionsList
+     */
+    public function setOtherChargeResaleItemHierarchyVersions(OtherChargeResaleItemHierarchyVersions $otherChargeResaleItemHierarchyVersions): OtherChargeResaleItemHierarchyVersionsList
+    {
+        $this->otherChargeResaleItemHierarchyVersions[] = $otherChargeResaleItemHierarchyVersions;
+        return $this;
+    }
+
+    /**
+     * @return OtherChargeResaleItemHierarchyVersions[]
+     */
+    public function getOtherChargeResaleItemHierarchyVersions(): array
+    {
+        return $this->otherChargeResaleItemHierarchyVersions;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return OtherChargeResaleItemHierarchyVersionsList
+     */
+    public function setReplaceAll(bool $replaceAll): OtherChargeResaleItemHierarchyVersionsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

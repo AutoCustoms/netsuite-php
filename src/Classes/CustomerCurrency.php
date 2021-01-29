@@ -14,60 +14,72 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerCurrency {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
+    protected RecordRef $currency;
+
     /**
      * @var float
      */
-    public $balance;
+    protected float $balance;
+
     /**
      * @var float
      */
-    public $consolBalance;
+    protected float $consolBalance;
+
     /**
      * @var float
      */
-    public $depositBalance;
+    protected float $depositBalance;
+
     /**
      * @var float
      */
-    public $consolDepositBalance;
+    protected float $consolDepositBalance;
+
     /**
      * @var float
      */
-    public $overdueBalance;
+    protected float $overdueBalance;
+
     /**
      * @var float
      */
-    public $consolOverdueBalance;
+    protected float $consolOverdueBalance;
+
     /**
      * @var float
      */
-    public $unbilledOrders;
+    protected float $unbilledOrders;
+
     /**
      * @var float
      */
-    public $consolUnbilledOrders;
+    protected float $consolUnbilledOrders;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $overrideCurrencyFormat;
+    protected bool $overrideCurrencyFormat;
+
     /**
      * @var string
      */
-    public $displaySymbol;
+    protected string $displaySymbol;
+
     /**
-     * @var \NetSuite\Classes\CurrencySymbolPlacement
+     * @var CurrencySymbolPlacement
      */
-    public $symbolPlacement;
+    protected CurrencySymbolPlacement $symbolPlacement;
+
     static $paramtypesmap = array(
         "currency" => "RecordRef",
         "balance" => "float",
@@ -82,4 +94,221 @@ class CustomerCurrency {
         "displaySymbol" => "string",
         "symbolPlacement" => "CurrencySymbolPlacement",
     );
+
+    /**
+     * @param RecordRef $currency
+     * @return CustomerCurrency
+     */
+    public function setCurrency(RecordRef $currency): CustomerCurrency
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param float $balance
+     * @return CustomerCurrency
+     */
+    public function setBalance(float $balance): CustomerCurrency
+    {
+        $this->balance = $balance;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBalance(): float
+    {
+        return $this->balance;
+    }
+
+    /**
+     * @param float $consolBalance
+     * @return CustomerCurrency
+     */
+    public function setConsolBalance(float $consolBalance): CustomerCurrency
+    {
+        $this->consolBalance = $consolBalance;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getConsolBalance(): float
+    {
+        return $this->consolBalance;
+    }
+
+    /**
+     * @param float $depositBalance
+     * @return CustomerCurrency
+     */
+    public function setDepositBalance(float $depositBalance): CustomerCurrency
+    {
+        $this->depositBalance = $depositBalance;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getDepositBalance(): float
+    {
+        return $this->depositBalance;
+    }
+
+    /**
+     * @param float $consolDepositBalance
+     * @return CustomerCurrency
+     */
+    public function setConsolDepositBalance(float $consolDepositBalance): CustomerCurrency
+    {
+        $this->consolDepositBalance = $consolDepositBalance;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getConsolDepositBalance(): float
+    {
+        return $this->consolDepositBalance;
+    }
+
+    /**
+     * @param float $overdueBalance
+     * @return CustomerCurrency
+     */
+    public function setOverdueBalance(float $overdueBalance): CustomerCurrency
+    {
+        $this->overdueBalance = $overdueBalance;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOverdueBalance(): float
+    {
+        return $this->overdueBalance;
+    }
+
+    /**
+     * @param float $consolOverdueBalance
+     * @return CustomerCurrency
+     */
+    public function setConsolOverdueBalance(float $consolOverdueBalance): CustomerCurrency
+    {
+        $this->consolOverdueBalance = $consolOverdueBalance;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getConsolOverdueBalance(): float
+    {
+        return $this->consolOverdueBalance;
+    }
+
+    /**
+     * @param float $unbilledOrders
+     * @return CustomerCurrency
+     */
+    public function setUnbilledOrders(float $unbilledOrders): CustomerCurrency
+    {
+        $this->unbilledOrders = $unbilledOrders;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getUnbilledOrders(): float
+    {
+        return $this->unbilledOrders;
+    }
+
+    /**
+     * @param float $consolUnbilledOrders
+     * @return CustomerCurrency
+     */
+    public function setConsolUnbilledOrders(float $consolUnbilledOrders): CustomerCurrency
+    {
+        $this->consolUnbilledOrders = $consolUnbilledOrders;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getConsolUnbilledOrders(): float
+    {
+        return $this->consolUnbilledOrders;
+    }
+
+    /**
+     * @param bool $overrideCurrencyFormat
+     * @return CustomerCurrency
+     */
+    public function setOverrideCurrencyFormat(bool $overrideCurrencyFormat): CustomerCurrency
+    {
+        $this->overrideCurrencyFormat = $overrideCurrencyFormat;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getOverrideCurrencyFormat(): bool
+    {
+        return $this->overrideCurrencyFormat;
+    }
+
+    /**
+     * @param string $displaySymbol
+     * @return CustomerCurrency
+     */
+    public function setDisplaySymbol(string $displaySymbol): CustomerCurrency
+    {
+        $this->displaySymbol = $displaySymbol;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDisplaySymbol(): string
+    {
+        return $this->displaySymbol;
+    }
+
+    /**
+     * @param CurrencySymbolPlacement $symbolPlacement
+     * @return CustomerCurrency
+     */
+    public function setSymbolPlacement(CurrencySymbolPlacement $symbolPlacement): CustomerCurrency
+    {
+        $this->symbolPlacement = $symbolPlacement;
+        return $this;
+    }
+
+    /**
+     * @return CurrencySymbolPlacement
+     */
+    public function getSymbolPlacement(): CurrencySymbolPlacement
+    {
+        return $this->symbolPlacement;
+    }
+
 }

@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ManufacturingOperationTaskSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\ManufacturingOperationTaskSearchBasic
+     * @var ManufacturingOperationTaskSearchBasic
      */
-    public $basic;
+    protected ManufacturingOperationTaskSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ManufacturingOperationTaskSearchBasic
+     * @var ManufacturingOperationTaskSearchBasic
      */
-    public $predecessorJoin;
+    protected ManufacturingOperationTaskSearchBasic $predecessorJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $workOrderJoin;
+    protected TransactionSearchBasic $workOrderJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "ManufacturingOperationTaskSearchBasic",
         "predecessorJoin" => "ManufacturingOperationTaskSearchBasic",
@@ -47,4 +52,95 @@ class ManufacturingOperationTaskSearch extends SearchRecord {
         "workOrderJoin" => "TransactionSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param ManufacturingOperationTaskSearchBasic $basic
+     * @return ManufacturingOperationTaskSearch
+     */
+    public function setBasic(ManufacturingOperationTaskSearchBasic $basic): ManufacturingOperationTaskSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ManufacturingOperationTaskSearchBasic
+     */
+    public function getBasic(): ManufacturingOperationTaskSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ManufacturingOperationTaskSearchBasic $predecessorJoin
+     * @return ManufacturingOperationTaskSearch
+     */
+    public function setPredecessorJoin(ManufacturingOperationTaskSearchBasic $predecessorJoin): ManufacturingOperationTaskSearch
+    {
+        $this->predecessorJoin = $predecessorJoin;
+        return $this;
+    }
+
+    /**
+     * @return ManufacturingOperationTaskSearchBasic
+     */
+    public function getPredecessorJoin(): ManufacturingOperationTaskSearchBasic
+    {
+        return $this->predecessorJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return ManufacturingOperationTaskSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): ManufacturingOperationTaskSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $workOrderJoin
+     * @return ManufacturingOperationTaskSearch
+     */
+    public function setWorkOrderJoin(TransactionSearchBasic $workOrderJoin): ManufacturingOperationTaskSearch
+    {
+        $this->workOrderJoin = $workOrderJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getWorkOrderJoin(): TransactionSearchBasic
+    {
+        return $this->workOrderJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return ManufacturingOperationTaskSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): ManufacturingOperationTaskSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

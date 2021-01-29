@@ -14,36 +14,42 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class RevRecScheduleSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\RevRecScheduleSearchRowBasic
+     * @var RevRecScheduleSearchRowBasic
      */
-    public $basic;
+    protected RevRecScheduleSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     * @var TransactionSearchRowBasic
      */
-    public $appliedToTransactionJoin;
+    protected TransactionSearchRowBasic $appliedToTransactionJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchRowBasic
+     * @var CustomerSearchRowBasic
      */
-    public $customerJoin;
+    protected CustomerSearchRowBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchRowBasic
+     * @var ItemSearchRowBasic
      */
-    public $itemJoin;
+    protected ItemSearchRowBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     * @var TransactionSearchRowBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchRowBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "RevRecScheduleSearchRowBasic",
         "appliedToTransactionJoin" => "TransactionSearchRowBasic",
@@ -52,4 +58,113 @@ class RevRecScheduleSearchRow extends SearchRow {
         "transactionJoin" => "TransactionSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
     );
+
+    /**
+     * @param RevRecScheduleSearchRowBasic $basic
+     * @return RevRecScheduleSearchRow
+     */
+    public function setBasic(RevRecScheduleSearchRowBasic $basic): RevRecScheduleSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return RevRecScheduleSearchRowBasic
+     */
+    public function getBasic(): RevRecScheduleSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param TransactionSearchRowBasic $appliedToTransactionJoin
+     * @return RevRecScheduleSearchRow
+     */
+    public function setAppliedToTransactionJoin(TransactionSearchRowBasic $appliedToTransactionJoin): RevRecScheduleSearchRow
+    {
+        $this->appliedToTransactionJoin = $appliedToTransactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchRowBasic
+     */
+    public function getAppliedToTransactionJoin(): TransactionSearchRowBasic
+    {
+        return $this->appliedToTransactionJoin;
+    }
+
+    /**
+     * @param CustomerSearchRowBasic $customerJoin
+     * @return RevRecScheduleSearchRow
+     */
+    public function setCustomerJoin(CustomerSearchRowBasic $customerJoin): RevRecScheduleSearchRow
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchRowBasic
+     */
+    public function getCustomerJoin(): CustomerSearchRowBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param ItemSearchRowBasic $itemJoin
+     * @return RevRecScheduleSearchRow
+     */
+    public function setItemJoin(ItemSearchRowBasic $itemJoin): RevRecScheduleSearchRow
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchRowBasic
+     */
+    public function getItemJoin(): ItemSearchRowBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param TransactionSearchRowBasic $transactionJoin
+     * @return RevRecScheduleSearchRow
+     */
+    public function setTransactionJoin(TransactionSearchRowBasic $transactionJoin): RevRecScheduleSearchRow
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchRowBasic
+     */
+    public function getTransactionJoin(): TransactionSearchRowBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return RevRecScheduleSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): RevRecScheduleSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
 }

@@ -14,156 +14,192 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EntitySearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $address;
+    protected SearchStringField $address;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $addressee;
+    protected SearchStringField $addressee;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $addressLabel;
+    protected SearchStringField $addressLabel;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $addressPhone;
+    protected SearchStringField $addressPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $attention;
+    protected SearchStringField $attention;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $city;
+    protected SearchStringField $city;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $comments;
+    protected SearchStringField $comments;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $country;
+    protected SearchEnumMultiSelectField $country;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $county;
+    protected SearchStringField $county;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $dateCreated;
+    protected SearchDateField $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $defaultTaxReg;
+    protected SearchMultiSelectField $defaultTaxReg;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $defaultTaxRegText;
+    protected SearchStringField $defaultTaxRegText;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $email;
+    protected SearchStringField $email;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $entityId;
+    protected SearchStringField $entityId;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $fax;
+    protected SearchStringField $fax;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $giveAccess;
+    protected SearchBooleanField $giveAccess;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $globalSubscriptionStatus;
+    protected SearchEnumMultiSelectField $globalSubscriptionStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $image;
+    protected SearchStringField $image;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isDefaultBilling;
+    protected SearchBooleanField $isDefaultBilling;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isDefaultShipping;
+    protected SearchBooleanField $isDefaultShipping;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isInactive;
+    protected SearchBooleanField $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $language;
+    protected SearchEnumMultiSelectField $language;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $lastModifiedDate;
+    protected SearchDateField $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $level;
+    protected SearchEnumMultiSelectField $level;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $permission;
+    protected SearchEnumMultiSelectField $permission;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $phone;
+    protected SearchStringField $phone;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $phoneticName;
+    protected SearchStringField $phoneticName;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $state;
+    protected SearchStringField $state;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $type;
+    protected SearchEnumMultiSelectField $type;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $zipCode;
+    protected SearchStringField $zipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
+     * @var SearchCustomFieldList
      */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "address" => "SearchStringField",
         "addressee" => "SearchStringField",
@@ -202,4 +238,653 @@ class EntitySearchBasic extends SearchRecordBasic {
         "zipCode" => "SearchStringField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchStringField $address
+     * @return EntitySearchBasic
+     */
+    public function setAddress(SearchStringField $address): EntitySearchBasic
+    {
+        $this->address = $address;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddress(): SearchStringField
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param SearchStringField $addressee
+     * @return EntitySearchBasic
+     */
+    public function setAddressee(SearchStringField $addressee): EntitySearchBasic
+    {
+        $this->addressee = $addressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddressee(): SearchStringField
+    {
+        return $this->addressee;
+    }
+
+    /**
+     * @param SearchStringField $addressLabel
+     * @return EntitySearchBasic
+     */
+    public function setAddressLabel(SearchStringField $addressLabel): EntitySearchBasic
+    {
+        $this->addressLabel = $addressLabel;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddressLabel(): SearchStringField
+    {
+        return $this->addressLabel;
+    }
+
+    /**
+     * @param SearchStringField $addressPhone
+     * @return EntitySearchBasic
+     */
+    public function setAddressPhone(SearchStringField $addressPhone): EntitySearchBasic
+    {
+        $this->addressPhone = $addressPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddressPhone(): SearchStringField
+    {
+        return $this->addressPhone;
+    }
+
+    /**
+     * @param SearchStringField $attention
+     * @return EntitySearchBasic
+     */
+    public function setAttention(SearchStringField $attention): EntitySearchBasic
+    {
+        $this->attention = $attention;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAttention(): SearchStringField
+    {
+        return $this->attention;
+    }
+
+    /**
+     * @param SearchStringField $city
+     * @return EntitySearchBasic
+     */
+    public function setCity(SearchStringField $city): EntitySearchBasic
+    {
+        $this->city = $city;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getCity(): SearchStringField
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param SearchStringField $comments
+     * @return EntitySearchBasic
+     */
+    public function setComments(SearchStringField $comments): EntitySearchBasic
+    {
+        $this->comments = $comments;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getComments(): SearchStringField
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $country
+     * @return EntitySearchBasic
+     */
+    public function setCountry(SearchEnumMultiSelectField $country): EntitySearchBasic
+    {
+        $this->country = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getCountry(): SearchEnumMultiSelectField
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchStringField $county
+     * @return EntitySearchBasic
+     */
+    public function setCounty(SearchStringField $county): EntitySearchBasic
+    {
+        $this->county = $county;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getCounty(): SearchStringField
+    {
+        return $this->county;
+    }
+
+    /**
+     * @param SearchDateField $dateCreated
+     * @return EntitySearchBasic
+     */
+    public function setDateCreated(SearchDateField $dateCreated): EntitySearchBasic
+    {
+        $this->dateCreated = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDateCreated(): SearchDateField
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchMultiSelectField $defaultTaxReg
+     * @return EntitySearchBasic
+     */
+    public function setDefaultTaxReg(SearchMultiSelectField $defaultTaxReg): EntitySearchBasic
+    {
+        $this->defaultTaxReg = $defaultTaxReg;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDefaultTaxReg(): SearchMultiSelectField
+    {
+        return $this->defaultTaxReg;
+    }
+
+    /**
+     * @param SearchStringField $defaultTaxRegText
+     * @return EntitySearchBasic
+     */
+    public function setDefaultTaxRegText(SearchStringField $defaultTaxRegText): EntitySearchBasic
+    {
+        $this->defaultTaxRegText = $defaultTaxRegText;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getDefaultTaxRegText(): SearchStringField
+    {
+        return $this->defaultTaxRegText;
+    }
+
+    /**
+     * @param SearchStringField $email
+     * @return EntitySearchBasic
+     */
+    public function setEmail(SearchStringField $email): EntitySearchBasic
+    {
+        $this->email = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getEmail(): SearchStringField
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchStringField $entityId
+     * @return EntitySearchBasic
+     */
+    public function setEntityId(SearchStringField $entityId): EntitySearchBasic
+    {
+        $this->entityId = $entityId;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getEntityId(): SearchStringField
+    {
+        return $this->entityId;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return EntitySearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): EntitySearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return EntitySearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): EntitySearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchStringField $fax
+     * @return EntitySearchBasic
+     */
+    public function setFax(SearchStringField $fax): EntitySearchBasic
+    {
+        $this->fax = $fax;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getFax(): SearchStringField
+    {
+        return $this->fax;
+    }
+
+    /**
+     * @param SearchBooleanField $giveAccess
+     * @return EntitySearchBasic
+     */
+    public function setGiveAccess(SearchBooleanField $giveAccess): EntitySearchBasic
+    {
+        $this->giveAccess = $giveAccess;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getGiveAccess(): SearchBooleanField
+    {
+        return $this->giveAccess;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $globalSubscriptionStatus
+     * @return EntitySearchBasic
+     */
+    public function setGlobalSubscriptionStatus(SearchEnumMultiSelectField $globalSubscriptionStatus): EntitySearchBasic
+    {
+        $this->globalSubscriptionStatus = $globalSubscriptionStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getGlobalSubscriptionStatus(): SearchEnumMultiSelectField
+    {
+        return $this->globalSubscriptionStatus;
+    }
+
+    /**
+     * @param SearchStringField $image
+     * @return EntitySearchBasic
+     */
+    public function setImage(SearchStringField $image): EntitySearchBasic
+    {
+        $this->image = $image;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getImage(): SearchStringField
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return EntitySearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): EntitySearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return EntitySearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): EntitySearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isDefaultBilling
+     * @return EntitySearchBasic
+     */
+    public function setIsDefaultBilling(SearchBooleanField $isDefaultBilling): EntitySearchBasic
+    {
+        $this->isDefaultBilling = $isDefaultBilling;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsDefaultBilling(): SearchBooleanField
+    {
+        return $this->isDefaultBilling;
+    }
+
+    /**
+     * @param SearchBooleanField $isDefaultShipping
+     * @return EntitySearchBasic
+     */
+    public function setIsDefaultShipping(SearchBooleanField $isDefaultShipping): EntitySearchBasic
+    {
+        $this->isDefaultShipping = $isDefaultShipping;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsDefaultShipping(): SearchBooleanField
+    {
+        return $this->isDefaultShipping;
+    }
+
+    /**
+     * @param SearchBooleanField $isInactive
+     * @return EntitySearchBasic
+     */
+    public function setIsInactive(SearchBooleanField $isInactive): EntitySearchBasic
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsInactive(): SearchBooleanField
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $language
+     * @return EntitySearchBasic
+     */
+    public function setLanguage(SearchEnumMultiSelectField $language): EntitySearchBasic
+    {
+        $this->language = $language;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getLanguage(): SearchEnumMultiSelectField
+    {
+        return $this->language;
+    }
+
+    /**
+     * @param SearchDateField $lastModifiedDate
+     * @return EntitySearchBasic
+     */
+    public function setLastModifiedDate(SearchDateField $lastModifiedDate): EntitySearchBasic
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getLastModifiedDate(): SearchDateField
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $level
+     * @return EntitySearchBasic
+     */
+    public function setLevel(SearchEnumMultiSelectField $level): EntitySearchBasic
+    {
+        $this->level = $level;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getLevel(): SearchEnumMultiSelectField
+    {
+        return $this->level;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $permission
+     * @return EntitySearchBasic
+     */
+    public function setPermission(SearchEnumMultiSelectField $permission): EntitySearchBasic
+    {
+        $this->permission = $permission;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getPermission(): SearchEnumMultiSelectField
+    {
+        return $this->permission;
+    }
+
+    /**
+     * @param SearchStringField $phone
+     * @return EntitySearchBasic
+     */
+    public function setPhone(SearchStringField $phone): EntitySearchBasic
+    {
+        $this->phone = $phone;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getPhone(): SearchStringField
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param SearchStringField $phoneticName
+     * @return EntitySearchBasic
+     */
+    public function setPhoneticName(SearchStringField $phoneticName): EntitySearchBasic
+    {
+        $this->phoneticName = $phoneticName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getPhoneticName(): SearchStringField
+    {
+        return $this->phoneticName;
+    }
+
+    /**
+     * @param SearchStringField $state
+     * @return EntitySearchBasic
+     */
+    public function setState(SearchStringField $state): EntitySearchBasic
+    {
+        $this->state = $state;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getState(): SearchStringField
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return EntitySearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): EntitySearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $type
+     * @return EntitySearchBasic
+     */
+    public function setType(SearchEnumMultiSelectField $type): EntitySearchBasic
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getType(): SearchEnumMultiSelectField
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param SearchStringField $zipCode
+     * @return EntitySearchBasic
+     */
+    public function setZipCode(SearchStringField $zipCode): EntitySearchBasic
+    {
+        $this->zipCode = $zipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getZipCode(): SearchStringField
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return EntitySearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): EntitySearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

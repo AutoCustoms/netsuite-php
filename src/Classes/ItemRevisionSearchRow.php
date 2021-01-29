@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemRevisionSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\ItemRevisionSearchRowBasic
+     * @var ItemRevisionSearchRowBasic
      */
-    public $basic;
+    protected ItemRevisionSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchRowBasic
+     * @var ItemSearchRowBasic
      */
-    public $itemJoin;
+    protected ItemSearchRowBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "ItemRevisionSearchRowBasic",
         "itemJoin" => "ItemSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
     );
+
+    /**
+     * @param ItemRevisionSearchRowBasic $basic
+     * @return ItemRevisionSearchRow
+     */
+    public function setBasic(ItemRevisionSearchRowBasic $basic): ItemRevisionSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function getBasic(): ItemRevisionSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ItemSearchRowBasic $itemJoin
+     * @return ItemRevisionSearchRow
+     */
+    public function setItemJoin(ItemSearchRowBasic $itemJoin): ItemRevisionSearchRow
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchRowBasic
+     */
+    public function getItemJoin(): ItemSearchRowBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return ItemRevisionSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): ItemRevisionSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
 }

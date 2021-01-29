@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BomRevisionSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\BomRevisionSearchRowBasic
+     * @var BomRevisionSearchRowBasic
      */
-    public $basic;
+    protected BomRevisionSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\BomSearchRowBasic
+     * @var BomSearchRowBasic
      */
-    public $billOfMaterialsJoin;
+    protected BomSearchRowBasic $billOfMaterialsJoin;
+
     /**
-     * @var \NetSuite\Classes\BomRevisionComponentSearchRowBasic
+     * @var BomRevisionComponentSearchRowBasic
      */
-    public $componentJoin;
+    protected BomRevisionComponentSearchRowBasic $componentJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     * @var TransactionSearchRowBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchRowBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "BomRevisionSearchRowBasic",
         "billOfMaterialsJoin" => "BomSearchRowBasic",
@@ -47,4 +52,95 @@ class BomRevisionSearchRow extends SearchRow {
         "transactionJoin" => "TransactionSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param BomRevisionSearchRowBasic $basic
+     * @return BomRevisionSearchRow
+     */
+    public function setBasic(BomRevisionSearchRowBasic $basic): BomRevisionSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return BomRevisionSearchRowBasic
+     */
+    public function getBasic(): BomRevisionSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param BomSearchRowBasic $billOfMaterialsJoin
+     * @return BomRevisionSearchRow
+     */
+    public function setBillOfMaterialsJoin(BomSearchRowBasic $billOfMaterialsJoin): BomRevisionSearchRow
+    {
+        $this->billOfMaterialsJoin = $billOfMaterialsJoin;
+        return $this;
+    }
+
+    /**
+     * @return BomSearchRowBasic
+     */
+    public function getBillOfMaterialsJoin(): BomSearchRowBasic
+    {
+        return $this->billOfMaterialsJoin;
+    }
+
+    /**
+     * @param BomRevisionComponentSearchRowBasic $componentJoin
+     * @return BomRevisionSearchRow
+     */
+    public function setComponentJoin(BomRevisionComponentSearchRowBasic $componentJoin): BomRevisionSearchRow
+    {
+        $this->componentJoin = $componentJoin;
+        return $this;
+    }
+
+    /**
+     * @return BomRevisionComponentSearchRowBasic
+     */
+    public function getComponentJoin(): BomRevisionComponentSearchRowBasic
+    {
+        return $this->componentJoin;
+    }
+
+    /**
+     * @param TransactionSearchRowBasic $transactionJoin
+     * @return BomRevisionSearchRow
+     */
+    public function setTransactionJoin(TransactionSearchRowBasic $transactionJoin): BomRevisionSearchRow
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchRowBasic
+     */
+    public function getTransactionJoin(): TransactionSearchRowBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return BomRevisionSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): BomRevisionSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

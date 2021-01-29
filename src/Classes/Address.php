@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,59 +23,61 @@ class Address extends Record {
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
-     * @var \NetSuite\Classes\Country
+     * @var Country
      */
-    public $country;
-    /**
-     * @var string
-     */
-    public $attention;
+    protected Country $country;
+
     /**
      * @var string
      */
-    public $addressee;
+    protected string $attention;
+
     /**
      * @var string
      */
-    public $addrPhone;
+    protected string $addressee;
+
     /**
      * @var string
      */
-    public $addr1;
+    protected string $addrPhone;
+
+    protected $addr1;
+    protected $addr2;
+    protected $addr3;
     /**
      * @var string
      */
-    public $addr2;
+    protected string $city;
+
     /**
      * @var string
      */
-    public $addr3;
+    protected string $state;
+
     /**
      * @var string
      */
-    public $city;
+    protected string $zip;
+
     /**
      * @var string
      */
-    public $state;
+    protected string $addrText;
+
     /**
-     * @var string
+     * @var bool
      */
-    public $zip;
+    protected bool $override;
+
     /**
-     * @var string
+     * @var CustomFieldList
      */
-    public $addrText;
-    /**
-     * @var boolean
-     */
-    public $override;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "internalId" => "string",
         "country" => "Country",
@@ -92,4 +94,203 @@ class Address extends Record {
         "override" => "boolean",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param string $internalId
+     * @return Address
+     */
+    public function setInternalId(string $internalId): Address
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param Country $country
+     * @return Address
+     */
+    public function setCountry(Country $country): Address
+    {
+        $this->country = $country;
+        return $this;
+    }
+
+    /**
+     * @return Country
+     */
+    public function getCountry(): Country
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param string $attention
+     * @return Address
+     */
+    public function setAttention(string $attention): Address
+    {
+        $this->attention = $attention;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAttention(): string
+    {
+        return $this->attention;
+    }
+
+    /**
+     * @param string $addressee
+     * @return Address
+     */
+    public function setAddressee(string $addressee): Address
+    {
+        $this->addressee = $addressee;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAddressee(): string
+    {
+        return $this->addressee;
+    }
+
+    /**
+     * @param string $addrPhone
+     * @return Address
+     */
+    public function setAddrPhone(string $addrPhone): Address
+    {
+        $this->addrPhone = $addrPhone;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAddrPhone(): string
+    {
+        return $this->addrPhone;
+    }
+
+    /**
+     * @param string $city
+     * @return Address
+     */
+    public function setCity(string $city): Address
+    {
+        $this->city = $city;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCity(): string
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param string $state
+     * @return Address
+     */
+    public function setState(string $state): Address
+    {
+        $this->state = $state;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getState(): string
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param string $zip
+     * @return Address
+     */
+    public function setZip(string $zip): Address
+    {
+        $this->zip = $zip;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getZip(): string
+    {
+        return $this->zip;
+    }
+
+    /**
+     * @param string $addrText
+     * @return Address
+     */
+    public function setAddrText(string $addrText): Address
+    {
+        $this->addrText = $addrText;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAddrText(): string
+    {
+        return $this->addrText;
+    }
+
+    /**
+     * @param bool $override
+     * @return Address
+     */
+    public function setOverride(bool $override): Address
+    {
+        $this->override = $override;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getOverride(): bool
+    {
+        return $this->override;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return Address
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): Address
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

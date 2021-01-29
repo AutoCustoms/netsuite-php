@@ -14,80 +14,97 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BomSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $availableForAllAssemblies;
+    protected array $availableForAllAssemblies;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $availableForAllLocations;
+    protected array $availableForAllLocations;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $createdDate;
+    protected array $createdDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $includeChildren;
+    protected array $includeChildren;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $legacyBomForAssembly;
+    protected array $legacyBomForAssembly;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memo;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $restrictToAssemblies;
+    protected array $restrictToAssemblies;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $restrictToLocations;
+    protected array $restrictToLocations;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $revisionName;
+    protected array $revisionName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiaryNoHierarchy;
+    protected array $subsidiaryNoHierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $useComponentYield;
+    protected array $useComponentYield;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $usedOnAssembly;
+    protected array $usedOnAssembly;
+
     static $paramtypesmap = array(
         "availableForAllAssemblies" => "SearchColumnBooleanField[]",
         "availableForAllLocations" => "SearchColumnBooleanField[]",
@@ -107,4 +124,311 @@ class BomSearchRowBasic extends SearchRowBasic {
         "useComponentYield" => "SearchColumnBooleanField[]",
         "usedOnAssembly" => "SearchColumnBooleanField[]",
     );
+
+    /**
+     * @param SearchColumnBooleanField[] $availableForAllAssemblies
+     * @return BomSearchRowBasic
+     */
+    public function setAvailableForAllAssemblies(SearchColumnBooleanField $availableForAllAssemblies): BomSearchRowBasic
+    {
+        $this->availableForAllAssemblies[] = $availableForAllAssemblies;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAvailableForAllAssemblies(): array
+    {
+        return $this->availableForAllAssemblies;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $availableForAllLocations
+     * @return BomSearchRowBasic
+     */
+    public function setAvailableForAllLocations(SearchColumnBooleanField $availableForAllLocations): BomSearchRowBasic
+    {
+        $this->availableForAllLocations[] = $availableForAllLocations;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAvailableForAllLocations(): array
+    {
+        return $this->availableForAllLocations;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $createdDate
+     * @return BomSearchRowBasic
+     */
+    public function setCreatedDate(SearchColumnDateField $createdDate): BomSearchRowBasic
+    {
+        $this->createdDate[] = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCreatedDate(): array
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return BomSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): BomSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $includeChildren
+     * @return BomSearchRowBasic
+     */
+    public function setIncludeChildren(SearchColumnBooleanField $includeChildren): BomSearchRowBasic
+    {
+        $this->includeChildren[] = $includeChildren;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIncludeChildren(): array
+    {
+        return $this->includeChildren;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return BomSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): BomSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return BomSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): BomSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $legacyBomForAssembly
+     * @return BomSearchRowBasic
+     */
+    public function setLegacyBomForAssembly(SearchColumnSelectField $legacyBomForAssembly): BomSearchRowBasic
+    {
+        $this->legacyBomForAssembly[] = $legacyBomForAssembly;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLegacyBomForAssembly(): array
+    {
+        return $this->legacyBomForAssembly;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return BomSearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): BomSearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return BomSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): BomSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $restrictToAssemblies
+     * @return BomSearchRowBasic
+     */
+    public function setRestrictToAssemblies(SearchColumnSelectField $restrictToAssemblies): BomSearchRowBasic
+    {
+        $this->restrictToAssemblies[] = $restrictToAssemblies;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getRestrictToAssemblies(): array
+    {
+        return $this->restrictToAssemblies;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $restrictToLocations
+     * @return BomSearchRowBasic
+     */
+    public function setRestrictToLocations(SearchColumnSelectField $restrictToLocations): BomSearchRowBasic
+    {
+        $this->restrictToLocations[] = $restrictToLocations;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getRestrictToLocations(): array
+    {
+        return $this->restrictToLocations;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $revisionName
+     * @return BomSearchRowBasic
+     */
+    public function setRevisionName(SearchColumnStringField $revisionName): BomSearchRowBasic
+    {
+        $this->revisionName[] = $revisionName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRevisionName(): array
+    {
+        return $this->revisionName;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return BomSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): BomSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiaryNoHierarchy
+     * @return BomSearchRowBasic
+     */
+    public function setSubsidiaryNoHierarchy(SearchColumnSelectField $subsidiaryNoHierarchy): BomSearchRowBasic
+    {
+        $this->subsidiaryNoHierarchy[] = $subsidiaryNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiaryNoHierarchy(): array
+    {
+        return $this->subsidiaryNoHierarchy;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $useComponentYield
+     * @return BomSearchRowBasic
+     */
+    public function setUseComponentYield(SearchColumnBooleanField $useComponentYield): BomSearchRowBasic
+    {
+        $this->useComponentYield[] = $useComponentYield;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getUseComponentYield(): array
+    {
+        return $this->useComponentYield;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $usedOnAssembly
+     * @return BomSearchRowBasic
+     */
+    public function setUsedOnAssembly(SearchColumnBooleanField $usedOnAssembly): BomSearchRowBasic
+    {
+        $this->usedOnAssembly[] = $usedOnAssembly;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getUsedOnAssembly(): array
+    {
+        return $this->usedOnAssembly;
+    }
+
 }

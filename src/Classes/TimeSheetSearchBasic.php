@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeSheetSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $approvalStatus;
+    protected SearchMultiSelectField $approvalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $employee;
+    protected SearchMultiSelectField $employee;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $id;
+    protected SearchLongField $id;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $timeSheetDate;
+    protected SearchDateField $timeSheetDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $totalHours;
+    protected SearchDoubleField $totalHours;
+
     /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
+     * @var SearchCustomFieldList
      */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "approvalStatus" => "SearchMultiSelectField",
         "employee" => "SearchMultiSelectField",
@@ -72,4 +82,185 @@ class TimeSheetSearchBasic extends SearchRecordBasic {
         "totalHours" => "SearchDoubleField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchMultiSelectField $approvalStatus
+     * @return TimeSheetSearchBasic
+     */
+    public function setApprovalStatus(SearchMultiSelectField $approvalStatus): TimeSheetSearchBasic
+    {
+        $this->approvalStatus = $approvalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getApprovalStatus(): SearchMultiSelectField
+    {
+        return $this->approvalStatus;
+    }
+
+    /**
+     * @param SearchMultiSelectField $employee
+     * @return TimeSheetSearchBasic
+     */
+    public function setEmployee(SearchMultiSelectField $employee): TimeSheetSearchBasic
+    {
+        $this->employee = $employee;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getEmployee(): SearchMultiSelectField
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return TimeSheetSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): TimeSheetSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return TimeSheetSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): TimeSheetSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchLongField $id
+     * @return TimeSheetSearchBasic
+     */
+    public function setId(SearchLongField $id): TimeSheetSearchBasic
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getId(): SearchLongField
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return TimeSheetSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): TimeSheetSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return TimeSheetSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): TimeSheetSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchDateField $timeSheetDate
+     * @return TimeSheetSearchBasic
+     */
+    public function setTimeSheetDate(SearchDateField $timeSheetDate): TimeSheetSearchBasic
+    {
+        $this->timeSheetDate = $timeSheetDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getTimeSheetDate(): SearchDateField
+    {
+        return $this->timeSheetDate;
+    }
+
+    /**
+     * @param SearchDoubleField $totalHours
+     * @return TimeSheetSearchBasic
+     */
+    public function setTotalHours(SearchDoubleField $totalHours): TimeSheetSearchBasic
+    {
+        $this->totalHours = $totalHours;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getTotalHours(): SearchDoubleField
+    {
+        return $this->totalHours;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return TimeSheetSearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): TimeSheetSearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

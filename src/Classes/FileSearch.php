@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FileSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\FileSearchBasic
+     * @var FileSearchBasic
      */
-    public $basic;
+    protected FileSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $shopperJoin;
+    protected CustomerSearchBasic $shopperJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "FileSearchBasic",
         "shopperJoin" => "CustomerSearchBasic",
         "userJoin" => "EmployeeSearchBasic",
     );
+
+    /**
+     * @param FileSearchBasic $basic
+     * @return FileSearch
+     */
+    public function setBasic(FileSearchBasic $basic): FileSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchBasic
+     */
+    public function getBasic(): FileSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param CustomerSearchBasic $shopperJoin
+     * @return FileSearch
+     */
+    public function setShopperJoin(CustomerSearchBasic $shopperJoin): FileSearch
+    {
+        $this->shopperJoin = $shopperJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getShopperJoin(): CustomerSearchBasic
+    {
+        return $this->shopperJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return FileSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): FileSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
 }

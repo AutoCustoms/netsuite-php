@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PromotionCodePartners {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $partner;
+    protected RecordRef $partner;
+
     /**
      * @var string
      */
-    public $code;
+    protected string $code;
+
     static $paramtypesmap = array(
         "partner" => "RecordRef",
         "code" => "string",
     );
+
+    /**
+     * @param RecordRef $partner
+     * @return PromotionCodePartners
+     */
+    public function setPartner(RecordRef $partner): PromotionCodePartners
+    {
+        $this->partner = $partner;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPartner(): RecordRef
+    {
+        return $this->partner;
+    }
+
+    /**
+     * @param string $code
+     * @return PromotionCodePartners
+     */
+    public function setCode(string $code): PromotionCodePartners
+    {
+        $this->code = $code;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCode(): string
+    {
+        return $this->code;
+    }
+
 }

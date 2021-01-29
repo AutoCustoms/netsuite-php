@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InitializeRecord {
     /**
-     * @var \NetSuite\Classes\InitializeType
+     * @var InitializeType
      */
-    public $type;
+    protected InitializeType $type;
+
     /**
-     * @var \NetSuite\Classes\InitializeRef
+     * @var InitializeRef
      */
-    public $reference;
+    protected InitializeRef $reference;
+
     /**
-     * @var \NetSuite\Classes\InitializeAuxRef
+     * @var InitializeAuxRef
      */
-    public $auxReference;
+    protected InitializeAuxRef $auxReference;
+
     /**
-     * @var \NetSuite\Classes\InitializeRefList
+     * @var InitializeRefList
      */
-    public $referenceList;
+    protected InitializeRefList $referenceList;
+
     static $paramtypesmap = array(
         "type" => "InitializeType",
         "reference" => "InitializeRef",
         "auxReference" => "InitializeAuxRef",
         "referenceList" => "InitializeRefList",
     );
+
+    /**
+     * @param InitializeType $type
+     * @return InitializeRecord
+     */
+    public function setType(InitializeType $type): InitializeRecord
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return InitializeType
+     */
+    public function getType(): InitializeType
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param InitializeRef $reference
+     * @return InitializeRecord
+     */
+    public function setReference(InitializeRef $reference): InitializeRecord
+    {
+        $this->reference = $reference;
+        return $this;
+    }
+
+    /**
+     * @return InitializeRef
+     */
+    public function getReference(): InitializeRef
+    {
+        return $this->reference;
+    }
+
+    /**
+     * @param InitializeAuxRef $auxReference
+     * @return InitializeRecord
+     */
+    public function setAuxReference(InitializeAuxRef $auxReference): InitializeRecord
+    {
+        $this->auxReference = $auxReference;
+        return $this;
+    }
+
+    /**
+     * @return InitializeAuxRef
+     */
+    public function getAuxReference(): InitializeAuxRef
+    {
+        return $this->auxReference;
+    }
+
+    /**
+     * @param InitializeRefList $referenceList
+     * @return InitializeRecord
+     */
+    public function setReferenceList(InitializeRefList $referenceList): InitializeRecord
+    {
+        $this->referenceList = $referenceList;
+        return $this;
+    }
+
+    /**
+     * @return InitializeRefList
+     */
+    public function getReferenceList(): InitializeRefList
+    {
+        return $this->referenceList;
+    }
+
 }

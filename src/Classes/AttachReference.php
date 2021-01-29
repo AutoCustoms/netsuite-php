@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AttachReference {
     /**
-     * @var \NetSuite\Classes\BaseRef
+     * @var BaseRef
      */
-    public $attachTo;
+    protected BaseRef $attachTo;
+
     static $paramtypesmap = array(
         "attachTo" => "BaseRef",
     );
+
+    /**
+     * @param BaseRef $attachTo
+     * @return AttachReference
+     */
+    public function setAttachTo(BaseRef $attachTo): AttachReference
+    {
+        $this->attachTo = $attachTo;
+        return $this;
+    }
+
+    /**
+     * @return BaseRef
+     */
+    public function getAttachTo(): BaseRef
+    {
+        return $this->attachTo;
+    }
+
 }

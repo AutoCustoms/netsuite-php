@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerSubsidiaryRelationshipSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\CustomerSubsidiaryRelationshipSearchBasic
+     * @var CustomerSubsidiaryRelationshipSearchBasic
      */
-    public $basic;
+    protected CustomerSubsidiaryRelationshipSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $customerJoin;
+    protected CustomerSearchBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\SubsidiarySearchBasic
+     * @var SubsidiarySearchBasic
      */
-    public $subsidiaryJoin;
+    protected SubsidiarySearchBasic $subsidiaryJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "CustomerSubsidiaryRelationshipSearchBasic",
         "customerJoin" => "CustomerSearchBasic",
         "subsidiaryJoin" => "SubsidiarySearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param CustomerSubsidiaryRelationshipSearchBasic $basic
+     * @return CustomerSubsidiaryRelationshipSearch
+     */
+    public function setBasic(CustomerSubsidiaryRelationshipSearchBasic $basic): CustomerSubsidiaryRelationshipSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSubsidiaryRelationshipSearchBasic
+     */
+    public function getBasic(): CustomerSubsidiaryRelationshipSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param CustomerSearchBasic $customerJoin
+     * @return CustomerSubsidiaryRelationshipSearch
+     */
+    public function setCustomerJoin(CustomerSearchBasic $customerJoin): CustomerSubsidiaryRelationshipSearch
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param SubsidiarySearchBasic $subsidiaryJoin
+     * @return CustomerSubsidiaryRelationshipSearch
+     */
+    public function setSubsidiaryJoin(SubsidiarySearchBasic $subsidiaryJoin): CustomerSubsidiaryRelationshipSearch
+    {
+        $this->subsidiaryJoin = $subsidiaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return SubsidiarySearchBasic
+     */
+    public function getSubsidiaryJoin(): SubsidiarySearchBasic
+    {
+        return $this->subsidiaryJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return CustomerSubsidiaryRelationshipSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): CustomerSubsidiaryRelationshipSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

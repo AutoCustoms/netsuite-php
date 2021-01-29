@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class Record {
     /**
-     * @var \NetSuite\Classes\NullField
+     * @var NullField
      */
-    public $nullFieldList;
+    protected NullField $nullFieldList;
+
     static $paramtypesmap = array(
         "nullFieldList" => "NullField",
     );
+
+    /**
+     * @param NullField $nullFieldList
+     * @return Record
+     */
+    public function setNullFieldList(NullField $nullFieldList): Record
+    {
+        $this->nullFieldList = $nullFieldList;
+        return $this;
+    }
+
+    /**
+     * @return NullField
+     */
+    public function getNullFieldList(): NullField
+    {
+        return $this->nullFieldList;
+    }
+
 }

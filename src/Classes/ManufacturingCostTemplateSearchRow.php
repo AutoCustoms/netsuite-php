@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ManufacturingCostTemplateSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\ManufacturingCostTemplateSearchRowBasic
+     * @var ManufacturingCostTemplateSearchRowBasic
      */
-    public $basic;
+    protected ManufacturingCostTemplateSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchRowBasic
+     * @var ItemSearchRowBasic
      */
-    public $itemJoin;
+    protected ItemSearchRowBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "ManufacturingCostTemplateSearchRowBasic",
         "itemJoin" => "ItemSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param ManufacturingCostTemplateSearchRowBasic $basic
+     * @return ManufacturingCostTemplateSearchRow
+     */
+    public function setBasic(ManufacturingCostTemplateSearchRowBasic $basic): ManufacturingCostTemplateSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ManufacturingCostTemplateSearchRowBasic
+     */
+    public function getBasic(): ManufacturingCostTemplateSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ItemSearchRowBasic $itemJoin
+     * @return ManufacturingCostTemplateSearchRow
+     */
+    public function setItemJoin(ItemSearchRowBasic $itemJoin): ManufacturingCostTemplateSearchRow
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchRowBasic
+     */
+    public function getItemJoin(): ItemSearchRowBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return ManufacturingCostTemplateSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): ManufacturingCostTemplateSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return ManufacturingCostTemplateSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): ManufacturingCostTemplateSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

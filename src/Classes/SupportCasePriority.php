@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,27 +23,33 @@ class SupportCasePriority extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $insertBefore;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var boolean
-     */
-    public $isInactive;
+    protected RecordRef $insertBefore;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $description;
+
+    /**
+     * @var bool
+     */
+    protected bool $isInactive;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "insertBefore" => "RecordRef",
@@ -52,4 +58,113 @@ class SupportCasePriority extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return SupportCasePriority
+     */
+    public function setName(string $name): SupportCasePriority
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param RecordRef $insertBefore
+     * @return SupportCasePriority
+     */
+    public function setInsertBefore(RecordRef $insertBefore): SupportCasePriority
+    {
+        $this->insertBefore = $insertBefore;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getInsertBefore(): RecordRef
+    {
+        return $this->insertBefore;
+    }
+
+    /**
+     * @param string $description
+     * @return SupportCasePriority
+     */
+    public function setDescription(string $description): SupportCasePriority
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return SupportCasePriority
+     */
+    public function setIsInactive(bool $isInactive): SupportCasePriority
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param string $internalId
+     * @return SupportCasePriority
+     */
+    public function setInternalId(string $internalId): SupportCasePriority
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return SupportCasePriority
+     */
+    public function setExternalId(string $externalId): SupportCasePriority
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

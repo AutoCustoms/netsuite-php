@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AssemblyComponentList {
     /**
-     * @var \NetSuite\Classes\AssemblyComponent[]
+     * @var AssemblyComponent[]
      */
-    public $component;
+    protected array $component;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "component" => "AssemblyComponent[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param AssemblyComponent[] $component
+     * @return AssemblyComponentList
+     */
+    public function setComponent(AssemblyComponent $component): AssemblyComponentList
+    {
+        $this->component[] = $component;
+        return $this;
+    }
+
+    /**
+     * @return AssemblyComponent[]
+     */
+    public function getComponent(): array
+    {
+        return $this->component;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return AssemblyComponentList
+     */
+    public function setReplaceAll(bool $replaceAll): AssemblyComponentList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PayrollItemSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $expenseAccount;
+    protected array $expenseAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $itemTypeNoHierarchy;
+    protected array $itemTypeNoHierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $liabilityAccount;
+    protected array $liabilityAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $vendor;
+    protected array $vendor;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "expenseAccount" => "SearchColumnStringField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -72,4 +82,185 @@ class PayrollItemSearchRowBasic extends SearchRowBasic {
         "vendor" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnStringField[] $expenseAccount
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setExpenseAccount(SearchColumnStringField $expenseAccount): PayrollItemSearchRowBasic
+    {
+        $this->expenseAccount[] = $expenseAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getExpenseAccount(): array
+    {
+        return $this->expenseAccount;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): PayrollItemSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): PayrollItemSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): PayrollItemSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $itemTypeNoHierarchy
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setItemTypeNoHierarchy(SearchColumnStringField $itemTypeNoHierarchy): PayrollItemSearchRowBasic
+    {
+        $this->itemTypeNoHierarchy[] = $itemTypeNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getItemTypeNoHierarchy(): array
+    {
+        return $this->itemTypeNoHierarchy;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $liabilityAccount
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setLiabilityAccount(SearchColumnStringField $liabilityAccount): PayrollItemSearchRowBasic
+    {
+        $this->liabilityAccount[] = $liabilityAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLiabilityAccount(): array
+    {
+        return $this->liabilityAccount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): PayrollItemSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $subsidiary
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnStringField $subsidiary): PayrollItemSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $vendor
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setVendor(SearchColumnStringField $vendor): PayrollItemSearchRowBasic
+    {
+        $this->vendor[] = $vendor;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getVendor(): array
+    {
+        return $this->vendor;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return PayrollItemSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): PayrollItemSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

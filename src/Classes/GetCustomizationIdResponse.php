@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetCustomizationIdResponse {
     /**
-     * @var \NetSuite\Classes\GetCustomizationIdResult
+     * @var GetCustomizationIdResult
      */
-    public $getCustomizationIdResult;
+    protected GetCustomizationIdResult $getCustomizationIdResult;
+
     static $paramtypesmap = array(
         "getCustomizationIdResult" => "GetCustomizationIdResult",
     );
+
+    /**
+     * @param GetCustomizationIdResult $getCustomizationIdResult
+     * @return GetCustomizationIdResponse
+     */
+    public function setGetCustomizationIdResult(GetCustomizationIdResult $getCustomizationIdResult): GetCustomizationIdResponse
+    {
+        $this->getCustomizationIdResult = $getCustomizationIdResult;
+        return $this;
+    }
+
+    /**
+     * @return GetCustomizationIdResult
+     */
+    public function getGetCustomizationIdResult(): GetCustomizationIdResult
+    {
+        return $this->getCustomizationIdResult;
+    }
+
 }

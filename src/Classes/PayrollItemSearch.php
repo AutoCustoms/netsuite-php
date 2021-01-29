@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PayrollItemSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PayrollItemSearchBasic
+     * @var PayrollItemSearchBasic
      */
-    public $basic;
+    protected PayrollItemSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "PayrollItemSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param PayrollItemSearchBasic $basic
+     * @return PayrollItemSearch
+     */
+    public function setBasic(PayrollItemSearchBasic $basic): PayrollItemSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return PayrollItemSearchBasic
+     */
+    public function getBasic(): PayrollItemSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return PayrollItemSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): PayrollItemSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

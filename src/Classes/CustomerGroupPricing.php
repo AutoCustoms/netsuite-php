@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerGroupPricing {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $group;
+    protected RecordRef $group;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $level;
+    protected RecordRef $level;
+
     static $paramtypesmap = array(
         "group" => "RecordRef",
         "level" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $group
+     * @return CustomerGroupPricing
+     */
+    public function setGroup(RecordRef $group): CustomerGroupPricing
+    {
+        $this->group = $group;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getGroup(): RecordRef
+    {
+        return $this->group;
+    }
+
+    /**
+     * @param RecordRef $level
+     * @return CustomerGroupPricing
+     */
+    public function setLevel(RecordRef $level): CustomerGroupPricing
+    {
+        $this->level = $level;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLevel(): RecordRef
+    {
+        return $this->level;
+    }
+
 }

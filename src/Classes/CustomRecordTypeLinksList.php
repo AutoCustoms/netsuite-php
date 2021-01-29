@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomRecordTypeLinksList {
     /**
-     * @var \NetSuite\Classes\CustomRecordTypeLinks[]
+     * @var CustomRecordTypeLinks[]
      */
-    public $links;
+    protected array $links;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "links" => "CustomRecordTypeLinks[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CustomRecordTypeLinks[] $links
+     * @return CustomRecordTypeLinksList
+     */
+    public function setLinks(CustomRecordTypeLinks $links): CustomRecordTypeLinksList
+    {
+        $this->links[] = $links;
+        return $this;
+    }
+
+    /**
+     * @return CustomRecordTypeLinks[]
+     */
+    public function getLinks(): array
+    {
+        return $this->links;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CustomRecordTypeLinksList
+     */
+    public function setReplaceAll(bool $replaceAll): CustomRecordTypeLinksList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

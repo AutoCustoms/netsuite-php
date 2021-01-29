@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CampaignSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\CampaignSearchRowBasic
+     * @var CampaignSearchRowBasic
      */
-    public $basic;
+    protected CampaignSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EntitySearchRowBasic
+     * @var EntitySearchRowBasic
      */
-    public $campaignRecipientJoin;
+    protected EntitySearchRowBasic $campaignRecipientJoin;
+
     /**
-     * @var \NetSuite\Classes\FileSearchRowBasic
+     * @var FileSearchRowBasic
      */
-    public $fileJoin;
+    protected FileSearchRowBasic $fileJoin;
+
     /**
-     * @var \NetSuite\Classes\MessageSearchRowBasic
+     * @var MessageSearchRowBasic
      */
-    public $messagesJoin;
+    protected MessageSearchRowBasic $messagesJoin;
+
     /**
-     * @var \NetSuite\Classes\OriginatingLeadSearchRowBasic
+     * @var OriginatingLeadSearchRowBasic
      */
-    public $originatingLeadJoin;
+    protected OriginatingLeadSearchRowBasic $originatingLeadJoin;
+
     /**
-     * @var \NetSuite\Classes\PromotionCodeSearchRowBasic
+     * @var PromotionCodeSearchRowBasic
      */
-    public $promotionCodeJoin;
+    protected PromotionCodeSearchRowBasic $promotionCodeJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     * @var TransactionSearchRowBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchRowBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchRowBasic
+     * @var NoteSearchRowBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchRowBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "CampaignSearchRowBasic",
         "campaignRecipientJoin" => "EntitySearchRowBasic",
@@ -72,4 +82,185 @@ class CampaignSearchRow extends SearchRow {
         "userNotesJoin" => "NoteSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param CampaignSearchRowBasic $basic
+     * @return CampaignSearchRow
+     */
+    public function setBasic(CampaignSearchRowBasic $basic): CampaignSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return CampaignSearchRowBasic
+     */
+    public function getBasic(): CampaignSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EntitySearchRowBasic $campaignRecipientJoin
+     * @return CampaignSearchRow
+     */
+    public function setCampaignRecipientJoin(EntitySearchRowBasic $campaignRecipientJoin): CampaignSearchRow
+    {
+        $this->campaignRecipientJoin = $campaignRecipientJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntitySearchRowBasic
+     */
+    public function getCampaignRecipientJoin(): EntitySearchRowBasic
+    {
+        return $this->campaignRecipientJoin;
+    }
+
+    /**
+     * @param FileSearchRowBasic $fileJoin
+     * @return CampaignSearchRow
+     */
+    public function setFileJoin(FileSearchRowBasic $fileJoin): CampaignSearchRow
+    {
+        $this->fileJoin = $fileJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchRowBasic
+     */
+    public function getFileJoin(): FileSearchRowBasic
+    {
+        return $this->fileJoin;
+    }
+
+    /**
+     * @param MessageSearchRowBasic $messagesJoin
+     * @return CampaignSearchRow
+     */
+    public function setMessagesJoin(MessageSearchRowBasic $messagesJoin): CampaignSearchRow
+    {
+        $this->messagesJoin = $messagesJoin;
+        return $this;
+    }
+
+    /**
+     * @return MessageSearchRowBasic
+     */
+    public function getMessagesJoin(): MessageSearchRowBasic
+    {
+        return $this->messagesJoin;
+    }
+
+    /**
+     * @param OriginatingLeadSearchRowBasic $originatingLeadJoin
+     * @return CampaignSearchRow
+     */
+    public function setOriginatingLeadJoin(OriginatingLeadSearchRowBasic $originatingLeadJoin): CampaignSearchRow
+    {
+        $this->originatingLeadJoin = $originatingLeadJoin;
+        return $this;
+    }
+
+    /**
+     * @return OriginatingLeadSearchRowBasic
+     */
+    public function getOriginatingLeadJoin(): OriginatingLeadSearchRowBasic
+    {
+        return $this->originatingLeadJoin;
+    }
+
+    /**
+     * @param PromotionCodeSearchRowBasic $promotionCodeJoin
+     * @return CampaignSearchRow
+     */
+    public function setPromotionCodeJoin(PromotionCodeSearchRowBasic $promotionCodeJoin): CampaignSearchRow
+    {
+        $this->promotionCodeJoin = $promotionCodeJoin;
+        return $this;
+    }
+
+    /**
+     * @return PromotionCodeSearchRowBasic
+     */
+    public function getPromotionCodeJoin(): PromotionCodeSearchRowBasic
+    {
+        return $this->promotionCodeJoin;
+    }
+
+    /**
+     * @param TransactionSearchRowBasic $transactionJoin
+     * @return CampaignSearchRow
+     */
+    public function setTransactionJoin(TransactionSearchRowBasic $transactionJoin): CampaignSearchRow
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchRowBasic
+     */
+    public function getTransactionJoin(): TransactionSearchRowBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return CampaignSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): CampaignSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchRowBasic $userNotesJoin
+     * @return CampaignSearchRow
+     */
+    public function setUserNotesJoin(NoteSearchRowBasic $userNotesJoin): CampaignSearchRow
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchRowBasic
+     */
+    public function getUserNotesJoin(): NoteSearchRowBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return CampaignSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): CampaignSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

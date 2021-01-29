@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TaxTypeSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\TaxTypeSearch
+     * @var TaxTypeSearch
      */
-    public $criteria;
+    protected TaxTypeSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\TaxTypeSearchRow
+     * @var TaxTypeSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected TaxTypeSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "TaxTypeSearch",
         "columns" => "TaxTypeSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param TaxTypeSearch $criteria
+     * @return TaxTypeSearchAdvanced
+     */
+    public function setCriteria(TaxTypeSearch $criteria): TaxTypeSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return TaxTypeSearch
+     */
+    public function getCriteria(): TaxTypeSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param TaxTypeSearchRow $columns
+     * @return TaxTypeSearchAdvanced
+     */
+    public function setColumns(TaxTypeSearchRow $columns): TaxTypeSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return TaxTypeSearchRow
+     */
+    public function getColumns(): TaxTypeSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return TaxTypeSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): TaxTypeSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return TaxTypeSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): TaxTypeSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,123 +23,153 @@ class WorkOrderCompletion extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     /**
      * @var string
      */
-    public $tranId;
+    protected string $tranId;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
      * @var float
      */
-    public $scrapQuantity;
+    protected float $scrapQuantity;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $units;
+    protected RecordRef $units;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isBackflush;
-    /**
-     * @var float
-     */
-    public $orderQuantity;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $createdFrom;
-    /**
-     * @var \NetSuite\Classes\InventoryDetail
-     */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $tranDate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $department;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $class;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $location;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $revision;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $startOperation;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $endOperation;
+    protected bool $isBackflush;
+
     /**
      * @var float
      */
-    public $completedQuantity;
+    protected float $orderQuantity;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var float
      */
-    public $manufacturingRouting;
+    protected float $total;
+
     /**
-     * @var \NetSuite\Classes\WorkOrderCompletionComponentList
+     * @var RecordRef
      */
-    public $componentList;
+    protected RecordRef $createdFrom;
+
     /**
-     * @var \NetSuite\Classes\WorkOrderCompletionOperationList
+     * @var InventoryDetail
      */
-    public $operationList;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
+    protected InventoryDetail $inventoryDetail;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $tranDate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $postingPeriod;
+
+    /**
+     * @var string
+     */
+    protected string $memo;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $subsidiary;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $department;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $class;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $location;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $revision;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $startOperation;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $endOperation;
+
+    /**
+     * @var float
+     */
+    protected float $completedQuantity;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $manufacturingRouting;
+
+    /**
+     * @var WorkOrderCompletionComponentList
+     */
+    protected WorkOrderCompletionComponentList $componentList;
+
+    /**
+     * @var WorkOrderCompletionOperationList
+     */
+    protected WorkOrderCompletionOperationList $operationList;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
+    /**
+     * @var string
+     */
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -172,4 +202,545 @@ class WorkOrderCompletion extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return WorkOrderCompletion
+     */
+    public function setCreatedDate(string $createdDate): WorkOrderCompletion
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return WorkOrderCompletion
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): WorkOrderCompletion
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return WorkOrderCompletion
+     */
+    public function setCustomForm(RecordRef $customForm): WorkOrderCompletion
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param string $tranId
+     * @return WorkOrderCompletion
+     */
+    public function setTranId(string $tranId): WorkOrderCompletion
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return WorkOrderCompletion
+     */
+    public function setItem(RecordRef $item): WorkOrderCompletion
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param float $quantity
+     * @return WorkOrderCompletion
+     */
+    public function setQuantity(float $quantity): WorkOrderCompletion
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param float $scrapQuantity
+     * @return WorkOrderCompletion
+     */
+    public function setScrapQuantity(float $scrapQuantity): WorkOrderCompletion
+    {
+        $this->scrapQuantity = $scrapQuantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getScrapQuantity(): float
+    {
+        return $this->scrapQuantity;
+    }
+
+    /**
+     * @param RecordRef $units
+     * @return WorkOrderCompletion
+     */
+    public function setUnits(RecordRef $units): WorkOrderCompletion
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnits(): RecordRef
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param bool $isBackflush
+     * @return WorkOrderCompletion
+     */
+    public function setIsBackflush(bool $isBackflush): WorkOrderCompletion
+    {
+        $this->isBackflush = $isBackflush;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBackflush(): bool
+    {
+        return $this->isBackflush;
+    }
+
+    /**
+     * @param float $orderQuantity
+     * @return WorkOrderCompletion
+     */
+    public function setOrderQuantity(float $orderQuantity): WorkOrderCompletion
+    {
+        $this->orderQuantity = $orderQuantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOrderQuantity(): float
+    {
+        return $this->orderQuantity;
+    }
+
+    /**
+     * @param float $total
+     * @return WorkOrderCompletion
+     */
+    public function setTotal(float $total): WorkOrderCompletion
+    {
+        $this->total = $total;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotal(): float
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param RecordRef $createdFrom
+     * @return WorkOrderCompletion
+     */
+    public function setCreatedFrom(RecordRef $createdFrom): WorkOrderCompletion
+    {
+        $this->createdFrom = $createdFrom;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCreatedFrom(): RecordRef
+    {
+        return $this->createdFrom;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return WorkOrderCompletion
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): WorkOrderCompletion
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return WorkOrderCompletion
+     */
+    public function setTranDate(string $tranDate): WorkOrderCompletion
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param RecordRef $postingPeriod
+     * @return WorkOrderCompletion
+     */
+    public function setPostingPeriod(RecordRef $postingPeriod): WorkOrderCompletion
+    {
+        $this->postingPeriod = $postingPeriod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPostingPeriod(): RecordRef
+    {
+        return $this->postingPeriod;
+    }
+
+    /**
+     * @param string $memo
+     * @return WorkOrderCompletion
+     */
+    public function setMemo(string $memo): WorkOrderCompletion
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return WorkOrderCompletion
+     */
+    public function setSubsidiary(RecordRef $subsidiary): WorkOrderCompletion
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return WorkOrderCompletion
+     */
+    public function setDepartment(RecordRef $department): WorkOrderCompletion
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return WorkOrderCompletion
+     */
+    public function setClass(RecordRef $class): WorkOrderCompletion
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return WorkOrderCompletion
+     */
+    public function setLocation(RecordRef $location): WorkOrderCompletion
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $revision
+     * @return WorkOrderCompletion
+     */
+    public function setRevision(RecordRef $revision): WorkOrderCompletion
+    {
+        $this->revision = $revision;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRevision(): RecordRef
+    {
+        return $this->revision;
+    }
+
+    /**
+     * @param RecordRef $startOperation
+     * @return WorkOrderCompletion
+     */
+    public function setStartOperation(RecordRef $startOperation): WorkOrderCompletion
+    {
+        $this->startOperation = $startOperation;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getStartOperation(): RecordRef
+    {
+        return $this->startOperation;
+    }
+
+    /**
+     * @param RecordRef $endOperation
+     * @return WorkOrderCompletion
+     */
+    public function setEndOperation(RecordRef $endOperation): WorkOrderCompletion
+    {
+        $this->endOperation = $endOperation;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEndOperation(): RecordRef
+    {
+        return $this->endOperation;
+    }
+
+    /**
+     * @param float $completedQuantity
+     * @return WorkOrderCompletion
+     */
+    public function setCompletedQuantity(float $completedQuantity): WorkOrderCompletion
+    {
+        $this->completedQuantity = $completedQuantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCompletedQuantity(): float
+    {
+        return $this->completedQuantity;
+    }
+
+    /**
+     * @param RecordRef $manufacturingRouting
+     * @return WorkOrderCompletion
+     */
+    public function setManufacturingRouting(RecordRef $manufacturingRouting): WorkOrderCompletion
+    {
+        $this->manufacturingRouting = $manufacturingRouting;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getManufacturingRouting(): RecordRef
+    {
+        return $this->manufacturingRouting;
+    }
+
+    /**
+     * @param WorkOrderCompletionComponentList $componentList
+     * @return WorkOrderCompletion
+     */
+    public function setComponentList(WorkOrderCompletionComponentList $componentList): WorkOrderCompletion
+    {
+        $this->componentList = $componentList;
+        return $this;
+    }
+
+    /**
+     * @return WorkOrderCompletionComponentList
+     */
+    public function getComponentList(): WorkOrderCompletionComponentList
+    {
+        return $this->componentList;
+    }
+
+    /**
+     * @param WorkOrderCompletionOperationList $operationList
+     * @return WorkOrderCompletion
+     */
+    public function setOperationList(WorkOrderCompletionOperationList $operationList): WorkOrderCompletion
+    {
+        $this->operationList = $operationList;
+        return $this;
+    }
+
+    /**
+     * @return WorkOrderCompletionOperationList
+     */
+    public function getOperationList(): WorkOrderCompletionOperationList
+    {
+        return $this->operationList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return WorkOrderCompletion
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): WorkOrderCompletion
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return WorkOrderCompletion
+     */
+    public function setInternalId(string $internalId): WorkOrderCompletion
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return WorkOrderCompletion
+     */
+    public function setExternalId(string $externalId): WorkOrderCompletion
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CashSaleSalesTeam {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $employee;
+    protected RecordRef $employee;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $salesRole;
+    protected RecordRef $salesRole;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isPrimary;
+    protected bool $isPrimary;
+
     /**
      * @var float
      */
-    public $contribution;
+    protected float $contribution;
+
     static $paramtypesmap = array(
         "employee" => "RecordRef",
         "salesRole" => "RecordRef",
         "isPrimary" => "boolean",
         "contribution" => "float",
     );
+
+    /**
+     * @param RecordRef $employee
+     * @return CashSaleSalesTeam
+     */
+    public function setEmployee(RecordRef $employee): CashSaleSalesTeam
+    {
+        $this->employee = $employee;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEmployee(): RecordRef
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param RecordRef $salesRole
+     * @return CashSaleSalesTeam
+     */
+    public function setSalesRole(RecordRef $salesRole): CashSaleSalesTeam
+    {
+        $this->salesRole = $salesRole;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSalesRole(): RecordRef
+    {
+        return $this->salesRole;
+    }
+
+    /**
+     * @param bool $isPrimary
+     * @return CashSaleSalesTeam
+     */
+    public function setIsPrimary(bool $isPrimary): CashSaleSalesTeam
+    {
+        $this->isPrimary = $isPrimary;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsPrimary(): bool
+    {
+        return $this->isPrimary;
+    }
+
+    /**
+     * @param float $contribution
+     * @return CashSaleSalesTeam
+     */
+    public function setContribution(float $contribution): CashSaleSalesTeam
+    {
+        $this->contribution = $contribution;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getContribution(): float
+    {
+        return $this->contribution;
+    }
+
 }

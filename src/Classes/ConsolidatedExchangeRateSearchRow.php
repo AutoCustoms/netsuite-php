@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ConsolidatedExchangeRateSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\ConsolidatedExchangeRateSearchRowBasic
+     * @var ConsolidatedExchangeRateSearchRowBasic
      */
-    public $basic;
+    protected ConsolidatedExchangeRateSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\SubsidiarySearchRowBasic
+     * @var SubsidiarySearchRowBasic
      */
-    public $fromSubsidiaryJoin;
+    protected SubsidiarySearchRowBasic $fromSubsidiaryJoin;
+
     /**
-     * @var \NetSuite\Classes\AccountingPeriodSearchRowBasic
+     * @var AccountingPeriodSearchRowBasic
      */
-    public $periodJoin;
+    protected AccountingPeriodSearchRowBasic $periodJoin;
+
     /**
-     * @var \NetSuite\Classes\SubsidiarySearchRowBasic
+     * @var SubsidiarySearchRowBasic
      */
-    public $toSubsidiaryJoin;
+    protected SubsidiarySearchRowBasic $toSubsidiaryJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "ConsolidatedExchangeRateSearchRowBasic",
         "fromSubsidiaryJoin" => "SubsidiarySearchRowBasic",
@@ -47,4 +52,95 @@ class ConsolidatedExchangeRateSearchRow extends SearchRow {
         "toSubsidiaryJoin" => "SubsidiarySearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
     );
+
+    /**
+     * @param ConsolidatedExchangeRateSearchRowBasic $basic
+     * @return ConsolidatedExchangeRateSearchRow
+     */
+    public function setBasic(ConsolidatedExchangeRateSearchRowBasic $basic): ConsolidatedExchangeRateSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function getBasic(): ConsolidatedExchangeRateSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param SubsidiarySearchRowBasic $fromSubsidiaryJoin
+     * @return ConsolidatedExchangeRateSearchRow
+     */
+    public function setFromSubsidiaryJoin(SubsidiarySearchRowBasic $fromSubsidiaryJoin): ConsolidatedExchangeRateSearchRow
+    {
+        $this->fromSubsidiaryJoin = $fromSubsidiaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return SubsidiarySearchRowBasic
+     */
+    public function getFromSubsidiaryJoin(): SubsidiarySearchRowBasic
+    {
+        return $this->fromSubsidiaryJoin;
+    }
+
+    /**
+     * @param AccountingPeriodSearchRowBasic $periodJoin
+     * @return ConsolidatedExchangeRateSearchRow
+     */
+    public function setPeriodJoin(AccountingPeriodSearchRowBasic $periodJoin): ConsolidatedExchangeRateSearchRow
+    {
+        $this->periodJoin = $periodJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountingPeriodSearchRowBasic
+     */
+    public function getPeriodJoin(): AccountingPeriodSearchRowBasic
+    {
+        return $this->periodJoin;
+    }
+
+    /**
+     * @param SubsidiarySearchRowBasic $toSubsidiaryJoin
+     * @return ConsolidatedExchangeRateSearchRow
+     */
+    public function setToSubsidiaryJoin(SubsidiarySearchRowBasic $toSubsidiaryJoin): ConsolidatedExchangeRateSearchRow
+    {
+        $this->toSubsidiaryJoin = $toSubsidiaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return SubsidiarySearchRowBasic
+     */
+    public function getToSubsidiaryJoin(): SubsidiarySearchRowBasic
+    {
+        return $this->toSubsidiaryJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return ConsolidatedExchangeRateSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): ConsolidatedExchangeRateSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
 }

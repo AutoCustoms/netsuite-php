@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class getSelectValueResponse {
     /**
-     * @var \NetSuite\Classes\GetSelectValueResult
+     * @var GetSelectValueResult
      */
-    public $getSelectValueResult;
+    protected GetSelectValueResult $getSelectValueResult;
+
     static $paramtypesmap = array(
         "getSelectValueResult" => "GetSelectValueResult",
     );
+
+    /**
+     * @param GetSelectValueResult $getSelectValueResult
+     * @return getSelectValueResponse
+     */
+    public function setGetSelectValueResult(GetSelectValueResult $getSelectValueResult): getSelectValueResponse
+    {
+        $this->getSelectValueResult = $getSelectValueResult;
+        return $this;
+    }
+
+    /**
+     * @return GetSelectValueResult
+     */
+    public function getGetSelectValueResult(): GetSelectValueResult
+    {
+        return $this->getSelectValueResult;
+    }
+
 }

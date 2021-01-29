@@ -14,48 +14,57 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BinTransferInventory {
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
-    /**
-     * @var string
-     */
-    public $description;
+    protected RecordRef $item;
+
     /**
      * @var string
      */
-    public $preferredBin;
+    protected string $description;
+
+    /**
+     * @var string
+     */
+    protected string $preferredBin;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
      * @var string
      */
-    public $itemUnitsLabel;
+    protected string $itemUnitsLabel;
+
     /**
-     * @var \NetSuite\Classes\InventoryDetail
+     * @var InventoryDetail
      */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $fromBins;
+    protected InventoryDetail $inventoryDetail;
+
     /**
      * @var string
      */
-    public $toBins;
+    protected string $fromBins;
+
+    /**
+     * @var string
+     */
+    protected string $toBins;
+
     static $paramtypesmap = array(
         "line" => "integer",
         "item" => "RecordRef",
@@ -67,4 +76,167 @@ class BinTransferInventory {
         "fromBins" => "string",
         "toBins" => "string",
     );
+
+    /**
+     * @param int $line
+     * @return BinTransferInventory
+     */
+    public function setLine(int $line): BinTransferInventory
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return BinTransferInventory
+     */
+    public function setItem(RecordRef $item): BinTransferInventory
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param string $description
+     * @return BinTransferInventory
+     */
+    public function setDescription(string $description): BinTransferInventory
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $preferredBin
+     * @return BinTransferInventory
+     */
+    public function setPreferredBin(string $preferredBin): BinTransferInventory
+    {
+        $this->preferredBin = $preferredBin;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPreferredBin(): string
+    {
+        return $this->preferredBin;
+    }
+
+    /**
+     * @param float $quantity
+     * @return BinTransferInventory
+     */
+    public function setQuantity(float $quantity): BinTransferInventory
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param string $itemUnitsLabel
+     * @return BinTransferInventory
+     */
+    public function setItemUnitsLabel(string $itemUnitsLabel): BinTransferInventory
+    {
+        $this->itemUnitsLabel = $itemUnitsLabel;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemUnitsLabel(): string
+    {
+        return $this->itemUnitsLabel;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return BinTransferInventory
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): BinTransferInventory
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param string $fromBins
+     * @return BinTransferInventory
+     */
+    public function setFromBins(string $fromBins): BinTransferInventory
+    {
+        $this->fromBins = $fromBins;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFromBins(): string
+    {
+        return $this->fromBins;
+    }
+
+    /**
+     * @param string $toBins
+     * @return BinTransferInventory
+     */
+    public function setToBins(string $toBins): BinTransferInventory
+    {
+        $this->toBins = $toBins;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getToBins(): string
+    {
+        return $this->toBins;
+    }
+
 }

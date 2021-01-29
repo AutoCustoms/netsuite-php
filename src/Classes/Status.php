@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class Status {
     /**
-     * @var \NetSuite\Classes\StatusDetail[]
+     * @var StatusDetail[]
      */
-    public $statusDetail;
+    protected array $statusDetail;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isSuccess;
+    protected bool $isSuccess;
+
     static $paramtypesmap = array(
         "statusDetail" => "StatusDetail[]",
         "isSuccess" => "boolean",
     );
+
+    /**
+     * @param StatusDetail[] $statusDetail
+     * @return Status
+     */
+    public function setStatusDetail(StatusDetail $statusDetail): Status
+    {
+        $this->statusDetail[] = $statusDetail;
+        return $this;
+    }
+
+    /**
+     * @return StatusDetail[]
+     */
+    public function getStatusDetail(): array
+    {
+        return $this->statusDetail;
+    }
+
+    /**
+     * @param bool $isSuccess
+     * @return Status
+     */
+    public function setIsSuccess(bool $isSuccess): Status
+    {
+        $this->isSuccess = $isSuccess;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsSuccess(): bool
+    {
+        return $this->isSuccess;
+    }
+
 }

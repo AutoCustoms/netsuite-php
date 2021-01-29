@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class GetSelectValueFilter {
     /**
      * @var string
      */
-    public $filterValue;
+    protected string $filterValue;
+
     /**
-     * @var \NetSuite\Classes\GetSelectValueFilterOperator
+     * @var GetSelectValueFilterOperator
      */
-    public $operator;
+    protected GetSelectValueFilterOperator $operator;
+
     static $paramtypesmap = array(
         "filterValue" => "string",
         "operator" => "GetSelectValueFilterOperator",
     );
+
+    /**
+     * @param string $filterValue
+     * @return GetSelectValueFilter
+     */
+    public function setFilterValue(string $filterValue): GetSelectValueFilter
+    {
+        $this->filterValue = $filterValue;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFilterValue(): string
+    {
+        return $this->filterValue;
+    }
+
+    /**
+     * @param GetSelectValueFilterOperator $operator
+     * @return GetSelectValueFilter
+     */
+    public function setOperator(GetSelectValueFilterOperator $operator): GetSelectValueFilter
+    {
+        $this->operator = $operator;
+        return $this;
+    }
+
+    /**
+     * @return GetSelectValueFilterOperator
+     */
+    public function getOperator(): GetSelectValueFilterOperator
+    {
+        return $this->operator;
+    }
+
 }

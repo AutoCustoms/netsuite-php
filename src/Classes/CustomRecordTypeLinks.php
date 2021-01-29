@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomRecordTypeLinks {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $linkCenter;
+    protected RecordRef $linkCenter;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $linkSection;
+    protected RecordRef $linkSection;
+
     /**
      * @var string
      */
-    public $linkLabel;
+    protected string $linkLabel;
+
     static $paramtypesmap = array(
         "linkCenter" => "RecordRef",
         "linkSection" => "RecordRef",
         "linkLabel" => "string",
     );
+
+    /**
+     * @param RecordRef $linkCenter
+     * @return CustomRecordTypeLinks
+     */
+    public function setLinkCenter(RecordRef $linkCenter): CustomRecordTypeLinks
+    {
+        $this->linkCenter = $linkCenter;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLinkCenter(): RecordRef
+    {
+        return $this->linkCenter;
+    }
+
+    /**
+     * @param RecordRef $linkSection
+     * @return CustomRecordTypeLinks
+     */
+    public function setLinkSection(RecordRef $linkSection): CustomRecordTypeLinks
+    {
+        $this->linkSection = $linkSection;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLinkSection(): RecordRef
+    {
+        return $this->linkSection;
+    }
+
+    /**
+     * @param string $linkLabel
+     * @return CustomRecordTypeLinks
+     */
+    public function setLinkLabel(string $linkLabel): CustomRecordTypeLinks
+    {
+        $this->linkLabel = $linkLabel;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkLabel(): string
+    {
+        return $this->linkLabel;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TransactionColumnCustomFieldFilterList {
     /**
-     * @var \NetSuite\Classes\TransactionColumnCustomFieldFilter[]
+     * @var TransactionColumnCustomFieldFilter[]
      */
-    public $filter;
+    protected array $filter;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "filter" => "TransactionColumnCustomFieldFilter[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param TransactionColumnCustomFieldFilter[] $filter
+     * @return TransactionColumnCustomFieldFilterList
+     */
+    public function setFilter(TransactionColumnCustomFieldFilter $filter): TransactionColumnCustomFieldFilterList
+    {
+        $this->filter[] = $filter;
+        return $this;
+    }
+
+    /**
+     * @return TransactionColumnCustomFieldFilter[]
+     */
+    public function getFilter(): array
+    {
+        return $this->filter;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return TransactionColumnCustomFieldFilterList
+     */
+    public function setReplaceAll(bool $replaceAll): TransactionColumnCustomFieldFilterList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

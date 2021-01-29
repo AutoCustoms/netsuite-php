@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BillingScheduleSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\BillingScheduleSearchRowBasic
+     * @var BillingScheduleSearchRowBasic
      */
-    public $basic;
+    protected BillingScheduleSearchRowBasic $basic;
+
     static $paramtypesmap = array(
         "basic" => "BillingScheduleSearchRowBasic",
     );
+
+    /**
+     * @param BillingScheduleSearchRowBasic $basic
+     * @return BillingScheduleSearchRow
+     */
+    public function setBasic(BillingScheduleSearchRowBasic $basic): BillingScheduleSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function getBasic(): BillingScheduleSearchRowBasic
+    {
+        return $this->basic;
+    }
+
 }

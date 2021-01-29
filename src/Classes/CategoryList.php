@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CategoryList {
     /**
-     * @var \NetSuite\Classes\RecordRef[]
+     * @var RecordRef[]
      */
-    public $category;
+    protected array $category;
+
     static $paramtypesmap = array(
         "category" => "RecordRef[]",
     );
+
+    /**
+     * @param RecordRef[] $category
+     * @return CategoryList
+     */
+    public function setCategory(RecordRef $category): CategoryList
+    {
+        $this->category[] = $category;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef[]
+     */
+    public function getCategory(): array
+    {
+        return $this->category;
+    }
+
 }

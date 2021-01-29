@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,23 +23,28 @@ class VendorCategory extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isTaxAgency;
+    protected bool $isTaxAgency;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "isTaxAgency" => "boolean",
@@ -47,4 +52,95 @@ class VendorCategory extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return VendorCategory
+     */
+    public function setName(string $name): VendorCategory
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param bool $isTaxAgency
+     * @return VendorCategory
+     */
+    public function setIsTaxAgency(bool $isTaxAgency): VendorCategory
+    {
+        $this->isTaxAgency = $isTaxAgency;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsTaxAgency(): bool
+    {
+        return $this->isTaxAgency;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return VendorCategory
+     */
+    public function setIsInactive(bool $isInactive): VendorCategory
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param string $internalId
+     * @return VendorCategory
+     */
+    public function setInternalId(string $internalId): VendorCategory
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return VendorCategory
+     */
+    public function setExternalId(string $externalId): VendorCategory
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BudgetExchangeRateFilter {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $period;
+    protected RecordRef $period;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $fromSubsidiary;
+    protected RecordRef $fromSubsidiary;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $toSubsidiary;
+    protected RecordRef $toSubsidiary;
+
     static $paramtypesmap = array(
         "period" => "RecordRef",
         "fromSubsidiary" => "RecordRef",
         "toSubsidiary" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $period
+     * @return BudgetExchangeRateFilter
+     */
+    public function setPeriod(RecordRef $period): BudgetExchangeRateFilter
+    {
+        $this->period = $period;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPeriod(): RecordRef
+    {
+        return $this->period;
+    }
+
+    /**
+     * @param RecordRef $fromSubsidiary
+     * @return BudgetExchangeRateFilter
+     */
+    public function setFromSubsidiary(RecordRef $fromSubsidiary): BudgetExchangeRateFilter
+    {
+        $this->fromSubsidiary = $fromSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getFromSubsidiary(): RecordRef
+    {
+        return $this->fromSubsidiary;
+    }
+
+    /**
+     * @param RecordRef $toSubsidiary
+     * @return BudgetExchangeRateFilter
+     */
+    public function setToSubsidiary(RecordRef $toSubsidiary): BudgetExchangeRateFilter
+    {
+        $this->toSubsidiary = $toSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getToSubsidiary(): RecordRef
+    {
+        return $this->toSubsidiary;
+    }
+
 }

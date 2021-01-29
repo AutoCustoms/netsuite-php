@@ -14,92 +14,108 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BudgetSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $account;
+    protected array $account;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $accountingBook;
+    protected array $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amount;
+    protected array $amount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $category;
+    protected array $category;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $class;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $classnohierarchy;
+    protected array $classnohierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $currency;
+    protected array $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $customer;
+    protected array $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $department;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $departmentnohierarchy;
+    protected array $departmentnohierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $global;
+    protected array $global;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $locationnohierarchy;
+    protected array $locationnohierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $subsidiarynohierarchy;
+    protected array $subsidiarynohierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $year;
+    protected array $year;
+
+    protected $year2;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnCustomFieldList
      */
-    public $year2;
-    /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "account" => "SearchColumnStringField[]",
         "accountingBook" => "SearchColumnStringField[]",
@@ -122,4 +138,347 @@ class BudgetSearchRowBasic extends SearchRowBasic {
         "year2" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnStringField[] $account
+     * @return BudgetSearchRowBasic
+     */
+    public function setAccount(SearchColumnStringField $account): BudgetSearchRowBasic
+    {
+        $this->account[] = $account;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAccount(): array
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $accountingBook
+     * @return BudgetSearchRowBasic
+     */
+    public function setAccountingBook(SearchColumnStringField $accountingBook): BudgetSearchRowBasic
+    {
+        $this->accountingBook[] = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAccountingBook(): array
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amount
+     * @return BudgetSearchRowBasic
+     */
+    public function setAmount(SearchColumnDoubleField $amount): BudgetSearchRowBasic
+    {
+        $this->amount[] = $amount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmount(): array
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $category
+     * @return BudgetSearchRowBasic
+     */
+    public function setCategory(SearchColumnStringField $category): BudgetSearchRowBasic
+    {
+        $this->category[] = $category;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCategory(): array
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $class
+     * @return BudgetSearchRowBasic
+     */
+    public function setClass(SearchColumnStringField $class): BudgetSearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $classnohierarchy
+     * @return BudgetSearchRowBasic
+     */
+    public function setClassnohierarchy(SearchColumnStringField $classnohierarchy): BudgetSearchRowBasic
+    {
+        $this->classnohierarchy[] = $classnohierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getClassnohierarchy(): array
+    {
+        return $this->classnohierarchy;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $currency
+     * @return BudgetSearchRowBasic
+     */
+    public function setCurrency(SearchColumnStringField $currency): BudgetSearchRowBasic
+    {
+        $this->currency[] = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCurrency(): array
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $customer
+     * @return BudgetSearchRowBasic
+     */
+    public function setCustomer(SearchColumnStringField $customer): BudgetSearchRowBasic
+    {
+        $this->customer[] = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCustomer(): array
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $department
+     * @return BudgetSearchRowBasic
+     */
+    public function setDepartment(SearchColumnStringField $department): BudgetSearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $departmentnohierarchy
+     * @return BudgetSearchRowBasic
+     */
+    public function setDepartmentnohierarchy(SearchColumnStringField $departmentnohierarchy): BudgetSearchRowBasic
+    {
+        $this->departmentnohierarchy[] = $departmentnohierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDepartmentnohierarchy(): array
+    {
+        return $this->departmentnohierarchy;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $global
+     * @return BudgetSearchRowBasic
+     */
+    public function setGlobal(SearchColumnBooleanField $global): BudgetSearchRowBasic
+    {
+        $this->global[] = $global;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getGlobal(): array
+    {
+        return $this->global;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return BudgetSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): BudgetSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $item
+     * @return BudgetSearchRowBasic
+     */
+    public function setItem(SearchColumnStringField $item): BudgetSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $location
+     * @return BudgetSearchRowBasic
+     */
+    public function setLocation(SearchColumnStringField $location): BudgetSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $locationnohierarchy
+     * @return BudgetSearchRowBasic
+     */
+    public function setLocationnohierarchy(SearchColumnStringField $locationnohierarchy): BudgetSearchRowBasic
+    {
+        $this->locationnohierarchy[] = $locationnohierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLocationnohierarchy(): array
+    {
+        return $this->locationnohierarchy;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $subsidiary
+     * @return BudgetSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnStringField $subsidiary): BudgetSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $subsidiarynohierarchy
+     * @return BudgetSearchRowBasic
+     */
+    public function setSubsidiarynohierarchy(SearchColumnStringField $subsidiarynohierarchy): BudgetSearchRowBasic
+    {
+        $this->subsidiarynohierarchy[] = $subsidiarynohierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSubsidiarynohierarchy(): array
+    {
+        return $this->subsidiarynohierarchy;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $year
+     * @return BudgetSearchRowBasic
+     */
+    public function setYear(SearchColumnStringField $year): BudgetSearchRowBasic
+    {
+        $this->year[] = $year;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getYear(): array
+    {
+        return $this->year;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return BudgetSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): BudgetSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

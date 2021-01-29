@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,76 @@ class RecordRef extends BaseRef {
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     /**
-     * @var \NetSuite\Classes\RecordType
+     * @var RecordType
      */
-    public $type;
+    protected RecordType $type;
+
     static $paramtypesmap = array(
         "internalId" => "string",
         "externalId" => "string",
         "type" => "RecordType",
     );
+
+    /**
+     * @param string $internalId
+     * @return RecordRef
+     */
+    public function setInternalId(string $internalId): RecordRef
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return RecordRef
+     */
+    public function setExternalId(string $externalId): RecordRef
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param RecordType $type
+     * @return RecordRef
+     */
+    public function setType(RecordType $type): RecordRef
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return RecordType
+     */
+    public function getType(): RecordType
+    {
+        return $this->type;
+    }
+
 }

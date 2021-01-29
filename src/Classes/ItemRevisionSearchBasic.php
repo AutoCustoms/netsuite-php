@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemRevisionSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $effectiveDate;
+    protected SearchDateField $effectiveDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $item;
+    protected SearchMultiSelectField $item;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $name;
+    protected SearchStringField $name;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $obsoleteDate;
+    protected SearchDateField $obsoleteDate;
+
     static $paramtypesmap = array(
         "effectiveDate" => "SearchDateField",
         "externalId" => "SearchMultiSelectField",
@@ -62,4 +70,149 @@ class ItemRevisionSearchBasic extends SearchRecordBasic {
         "name" => "SearchStringField",
         "obsoleteDate" => "SearchDateField",
     );
+
+    /**
+     * @param SearchDateField $effectiveDate
+     * @return ItemRevisionSearchBasic
+     */
+    public function setEffectiveDate(SearchDateField $effectiveDate): ItemRevisionSearchBasic
+    {
+        $this->effectiveDate = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getEffectiveDate(): SearchDateField
+    {
+        return $this->effectiveDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return ItemRevisionSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): ItemRevisionSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return ItemRevisionSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): ItemRevisionSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return ItemRevisionSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): ItemRevisionSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return ItemRevisionSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): ItemRevisionSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchMultiSelectField $item
+     * @return ItemRevisionSearchBasic
+     */
+    public function setItem(SearchMultiSelectField $item): ItemRevisionSearchBasic
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItem(): SearchMultiSelectField
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchStringField $name
+     * @return ItemRevisionSearchBasic
+     */
+    public function setName(SearchStringField $name): ItemRevisionSearchBasic
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getName(): SearchStringField
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchDateField $obsoleteDate
+     * @return ItemRevisionSearchBasic
+     */
+    public function setObsoleteDate(SearchDateField $obsoleteDate): ItemRevisionSearchBasic
+    {
+        $this->obsoleteDate = $obsoleteDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getObsoleteDate(): SearchDateField
+    {
+        return $this->obsoleteDate;
+    }
+
 }

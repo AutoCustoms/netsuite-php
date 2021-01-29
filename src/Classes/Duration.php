@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class Duration {
     /**
      * @var float
      */
-    public $timeSpan;
+    protected float $timeSpan;
+
     /**
-     * @var \NetSuite\Classes\DurationUnit
+     * @var DurationUnit
      */
-    public $unit;
+    protected DurationUnit $unit;
+
     static $paramtypesmap = array(
         "timeSpan" => "float",
         "unit" => "DurationUnit",
     );
+
+    /**
+     * @param float $timeSpan
+     * @return Duration
+     */
+    public function setTimeSpan(float $timeSpan): Duration
+    {
+        $this->timeSpan = $timeSpan;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTimeSpan(): float
+    {
+        return $this->timeSpan;
+    }
+
+    /**
+     * @param DurationUnit $unit
+     * @return Duration
+     */
+    public function setUnit(DurationUnit $unit): Duration
+    {
+        $this->unit = $unit;
+        return $this;
+    }
+
+    /**
+     * @return DurationUnit
+     */
+    public function getUnit(): DurationUnit
+    {
+        return $this->unit;
+    }
+
 }

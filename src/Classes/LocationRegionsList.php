@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class LocationRegionsList {
     /**
-     * @var \NetSuite\Classes\LocationRegions[]
+     * @var LocationRegions[]
      */
-    public $locationRegions;
+    protected array $locationRegions;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "locationRegions" => "LocationRegions[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param LocationRegions[] $locationRegions
+     * @return LocationRegionsList
+     */
+    public function setLocationRegions(LocationRegions $locationRegions): LocationRegionsList
+    {
+        $this->locationRegions[] = $locationRegions;
+        return $this;
+    }
+
+    /**
+     * @return LocationRegions[]
+     */
+    public function getLocationRegions(): array
+    {
+        return $this->locationRegions;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return LocationRegionsList
+     */
+    public function setReplaceAll(bool $replaceAll): LocationRegionsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

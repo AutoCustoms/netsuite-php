@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaymentMethodSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PaymentMethodSearchBasic
+     * @var PaymentMethodSearchBasic
      */
-    public $basic;
+    protected PaymentMethodSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "PaymentMethodSearchBasic",
         "userJoin" => "EmployeeSearchBasic",
     );
+
+    /**
+     * @param PaymentMethodSearchBasic $basic
+     * @return PaymentMethodSearch
+     */
+    public function setBasic(PaymentMethodSearchBasic $basic): PaymentMethodSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return PaymentMethodSearchBasic
+     */
+    public function getBasic(): PaymentMethodSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return PaymentMethodSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): PaymentMethodSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
 }

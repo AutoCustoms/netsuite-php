@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,76 @@ class CustomRecordTypeForms {
     /**
      * @var string
      */
-    public $formEdit;
+    protected string $formEdit;
+
     /**
      * @var string
      */
-    public $formName;
+    protected string $formName;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $formPref;
+    protected bool $formPref;
+
     static $paramtypesmap = array(
         "formEdit" => "string",
         "formName" => "string",
         "formPref" => "boolean",
     );
+
+    /**
+     * @param string $formEdit
+     * @return CustomRecordTypeForms
+     */
+    public function setFormEdit(string $formEdit): CustomRecordTypeForms
+    {
+        $this->formEdit = $formEdit;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFormEdit(): string
+    {
+        return $this->formEdit;
+    }
+
+    /**
+     * @param string $formName
+     * @return CustomRecordTypeForms
+     */
+    public function setFormName(string $formName): CustomRecordTypeForms
+    {
+        $this->formName = $formName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFormName(): string
+    {
+        return $this->formName;
+    }
+
+    /**
+     * @param bool $formPref
+     * @return CustomRecordTypeForms
+     */
+    public function setFormPref(bool $formPref): CustomRecordTypeForms
+    {
+        $this->formPref = $formPref;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getFormPref(): bool
+    {
+        return $this->formPref;
+    }
+
 }

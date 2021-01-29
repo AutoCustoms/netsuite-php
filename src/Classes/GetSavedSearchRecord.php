@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetSavedSearchRecord {
     /**
-     * @var \NetSuite\Classes\SearchRecordType
+     * @var SearchRecordType
      */
-    public $searchType;
+    protected SearchRecordType $searchType;
+
     static $paramtypesmap = array(
         "searchType" => "SearchRecordType",
     );
+
+    /**
+     * @param SearchRecordType $searchType
+     * @return GetSavedSearchRecord
+     */
+    public function setSearchType(SearchRecordType $searchType): GetSavedSearchRecord
+    {
+        $this->searchType = $searchType;
+        return $this;
+    }
+
+    /**
+     * @return SearchRecordType
+     */
+    public function getSearchType(): SearchRecordType
+    {
+        return $this->searchType;
+    }
+
 }

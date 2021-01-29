@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomListTranslations {
     /**
-     * @var \NetSuite\Classes\Language
+     * @var Language
      */
-    public $locale;
+    protected Language $locale;
+
     /**
      * @var string
      */
-    public $localeDescription;
+    protected string $localeDescription;
+
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     static $paramtypesmap = array(
         "locale" => "Language",
         "localeDescription" => "string",
         "name" => "string",
     );
+
+    /**
+     * @param Language $locale
+     * @return CustomListTranslations
+     */
+    public function setLocale(Language $locale): CustomListTranslations
+    {
+        $this->locale = $locale;
+        return $this;
+    }
+
+    /**
+     * @return Language
+     */
+    public function getLocale(): Language
+    {
+        return $this->locale;
+    }
+
+    /**
+     * @param string $localeDescription
+     * @return CustomListTranslations
+     */
+    public function setLocaleDescription(string $localeDescription): CustomListTranslations
+    {
+        $this->localeDescription = $localeDescription;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLocaleDescription(): string
+    {
+        return $this->localeDescription;
+    }
+
+    /**
+     * @param string $name
+     * @return CustomListTranslations
+     */
+    public function setName(string $name): CustomListTranslations
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
 }

@@ -14,56 +14,67 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CouponCodeSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $code;
+    protected SearchStringField $code;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $dateSent;
+    protected SearchDateField $dateSent;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $id;
+    protected SearchLongField $id;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $promotion;
+    protected SearchMultiSelectField $promotion;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $recipient;
+    protected SearchMultiSelectField $recipient;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $useCount;
+    protected SearchLongField $useCount;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $used;
+    protected SearchBooleanField $used;
+
     static $paramtypesmap = array(
         "code" => "SearchStringField",
         "dateSent" => "SearchDateField",
@@ -77,4 +88,203 @@ class CouponCodeSearchBasic extends SearchRecordBasic {
         "useCount" => "SearchLongField",
         "used" => "SearchBooleanField",
     );
+
+    /**
+     * @param SearchStringField $code
+     * @return CouponCodeSearchBasic
+     */
+    public function setCode(SearchStringField $code): CouponCodeSearchBasic
+    {
+        $this->code = $code;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getCode(): SearchStringField
+    {
+        return $this->code;
+    }
+
+    /**
+     * @param SearchDateField $dateSent
+     * @return CouponCodeSearchBasic
+     */
+    public function setDateSent(SearchDateField $dateSent): CouponCodeSearchBasic
+    {
+        $this->dateSent = $dateSent;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDateSent(): SearchDateField
+    {
+        return $this->dateSent;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return CouponCodeSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): CouponCodeSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return CouponCodeSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): CouponCodeSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchLongField $id
+     * @return CouponCodeSearchBasic
+     */
+    public function setId(SearchLongField $id): CouponCodeSearchBasic
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getId(): SearchLongField
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return CouponCodeSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): CouponCodeSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return CouponCodeSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): CouponCodeSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchMultiSelectField $promotion
+     * @return CouponCodeSearchBasic
+     */
+    public function setPromotion(SearchMultiSelectField $promotion): CouponCodeSearchBasic
+    {
+        $this->promotion = $promotion;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getPromotion(): SearchMultiSelectField
+    {
+        return $this->promotion;
+    }
+
+    /**
+     * @param SearchMultiSelectField $recipient
+     * @return CouponCodeSearchBasic
+     */
+    public function setRecipient(SearchMultiSelectField $recipient): CouponCodeSearchBasic
+    {
+        $this->recipient = $recipient;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getRecipient(): SearchMultiSelectField
+    {
+        return $this->recipient;
+    }
+
+    /**
+     * @param SearchLongField $useCount
+     * @return CouponCodeSearchBasic
+     */
+    public function setUseCount(SearchLongField $useCount): CouponCodeSearchBasic
+    {
+        $this->useCount = $useCount;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getUseCount(): SearchLongField
+    {
+        return $this->useCount;
+    }
+
+    /**
+     * @param SearchBooleanField $used
+     * @return CouponCodeSearchBasic
+     */
+    public function setUsed(SearchBooleanField $used): CouponCodeSearchBasic
+    {
+        $this->used = $used;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getUsed(): SearchBooleanField
+    {
+        return $this->used;
+    }
+
 }

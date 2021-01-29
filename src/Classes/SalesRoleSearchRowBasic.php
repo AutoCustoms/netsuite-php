@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SalesRoleSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $description;
+    protected array $description;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     static $paramtypesmap = array(
         "description" => "SearchColumnStringField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -47,4 +52,95 @@ class SalesRoleSearchRowBasic extends SearchRowBasic {
         "isInactive" => "SearchColumnBooleanField[]",
         "name" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $description
+     * @return SalesRoleSearchRowBasic
+     */
+    public function setDescription(SearchColumnStringField $description): SalesRoleSearchRowBasic
+    {
+        $this->description[] = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDescription(): array
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return SalesRoleSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): SalesRoleSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return SalesRoleSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): SalesRoleSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return SalesRoleSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): SalesRoleSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return SalesRoleSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): SalesRoleSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
 }

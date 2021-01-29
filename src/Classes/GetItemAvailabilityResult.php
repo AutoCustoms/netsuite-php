@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetItemAvailabilityResult {
     /**
-     * @var \NetSuite\Classes\Status
+     * @var Status
      */
-    public $status;
+    protected Status $status;
+
     /**
-     * @var \NetSuite\Classes\ItemAvailabilityList
+     * @var ItemAvailabilityList
      */
-    public $itemAvailabilityList;
+    protected ItemAvailabilityList $itemAvailabilityList;
+
     static $paramtypesmap = array(
         "status" => "Status",
         "itemAvailabilityList" => "ItemAvailabilityList",
     );
+
+    /**
+     * @param Status $status
+     * @return GetItemAvailabilityResult
+     */
+    public function setStatus(Status $status): GetItemAvailabilityResult
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param ItemAvailabilityList $itemAvailabilityList
+     * @return GetItemAvailabilityResult
+     */
+    public function setItemAvailabilityList(ItemAvailabilityList $itemAvailabilityList): GetItemAvailabilityResult
+    {
+        $this->itemAvailabilityList = $itemAvailabilityList;
+        return $this;
+    }
+
+    /**
+     * @return ItemAvailabilityList
+     */
+    public function getItemAvailabilityList(): ItemAvailabilityList
+    {
+        return $this->itemAvailabilityList;
+    }
+
 }

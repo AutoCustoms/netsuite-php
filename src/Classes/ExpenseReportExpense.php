@@ -14,124 +14,140 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ExpenseReportExpense {
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
      * @var string
      */
-    public $expenseDate;
+    protected string $expenseDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $category;
-    /**
-     * @var float
-     */
-    public $quantity;
+    protected RecordRef $category;
+
     /**
      * @var float
      */
-    public $rate;
+    protected float $quantity;
+
     /**
      * @var float
      */
-    public $foreignAmount;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $currency;
+    protected float $rate;
+
     /**
      * @var float
      */
-    public $exchangeRate;
+    protected float $foreignAmount;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $currency;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $exchangeRate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var float
      */
-    public $taxCode;
+    protected float $amount;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $taxCode;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $memo;
+
+    protected $taxRate1;
+    protected $tax1Amt;
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $department;
+
     /**
      * @var float
      */
-    public $taxRate1;
+    protected float $grossAmt;
+
+    protected $taxRate2;
     /**
-     * @var float
+     * @var RecordRef
      */
-    public $tax1Amt;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $customer;
+
     /**
-     * @var float
+     * @var RecordRef
      */
-    public $grossAmt;
+    protected RecordRef $location;
+
     /**
-     * @var float
+     * @var bool
      */
-    public $taxRate2;
+    protected bool $isBillable;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $expMediaItem;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var bool
      */
-    public $customer;
+    protected bool $isNonReimbursable;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var bool
      */
-    public $location;
+    protected bool $corporateCreditCard;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isBillable;
+    protected bool $receipt;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var int
      */
-    public $expMediaItem;
-    /**
-     * @var boolean
-     */
-    public $isNonReimbursable;
-    /**
-     * @var boolean
-     */
-    public $corporateCreditCard;
-    /**
-     * @var boolean
-     */
-    public $receipt;
-    /**
-     * @var integer
-     */
-    public $refNumber;
+    protected int $refNumber;
+
     /**
      * @var string
      */
-    public $taxDetailsReference;
+    protected string $taxDetailsReference;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $expenseAccount;
+    protected RecordRef $expenseAccount;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "line" => "integer",
         "expenseDate" => "dateTime",
@@ -162,4 +178,455 @@ class ExpenseReportExpense {
         "expenseAccount" => "RecordRef",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param int $line
+     * @return ExpenseReportExpense
+     */
+    public function setLine(int $line): ExpenseReportExpense
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param string $expenseDate
+     * @return ExpenseReportExpense
+     */
+    public function setExpenseDate(string $expenseDate): ExpenseReportExpense
+    {
+        $this->expenseDate = $expenseDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExpenseDate(): string
+    {
+        return $this->expenseDate;
+    }
+
+    /**
+     * @param RecordRef $category
+     * @return ExpenseReportExpense
+     */
+    public function setCategory(RecordRef $category): ExpenseReportExpense
+    {
+        $this->category = $category;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCategory(): RecordRef
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param float $quantity
+     * @return ExpenseReportExpense
+     */
+    public function setQuantity(float $quantity): ExpenseReportExpense
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param float $rate
+     * @return ExpenseReportExpense
+     */
+    public function setRate(float $rate): ExpenseReportExpense
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRate(): float
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param float $foreignAmount
+     * @return ExpenseReportExpense
+     */
+    public function setForeignAmount(float $foreignAmount): ExpenseReportExpense
+    {
+        $this->foreignAmount = $foreignAmount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getForeignAmount(): float
+    {
+        return $this->foreignAmount;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return ExpenseReportExpense
+     */
+    public function setCurrency(RecordRef $currency): ExpenseReportExpense
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return ExpenseReportExpense
+     */
+    public function setExchangeRate(float $exchangeRate): ExpenseReportExpense
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param float $amount
+     * @return ExpenseReportExpense
+     */
+    public function setAmount(float $amount): ExpenseReportExpense
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param RecordRef $taxCode
+     * @return ExpenseReportExpense
+     */
+    public function setTaxCode(RecordRef $taxCode): ExpenseReportExpense
+    {
+        $this->taxCode = $taxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxCode(): RecordRef
+    {
+        return $this->taxCode;
+    }
+
+    /**
+     * @param string $memo
+     * @return ExpenseReportExpense
+     */
+    public function setMemo(string $memo): ExpenseReportExpense
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return ExpenseReportExpense
+     */
+    public function setDepartment(RecordRef $department): ExpenseReportExpense
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param float $grossAmt
+     * @return ExpenseReportExpense
+     */
+    public function setGrossAmt(float $grossAmt): ExpenseReportExpense
+    {
+        $this->grossAmt = $grossAmt;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getGrossAmt(): float
+    {
+        return $this->grossAmt;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return ExpenseReportExpense
+     */
+    public function setClass(RecordRef $class): ExpenseReportExpense
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return ExpenseReportExpense
+     */
+    public function setCustomer(RecordRef $customer): ExpenseReportExpense
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return ExpenseReportExpense
+     */
+    public function setLocation(RecordRef $location): ExpenseReportExpense
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param bool $isBillable
+     * @return ExpenseReportExpense
+     */
+    public function setIsBillable(bool $isBillable): ExpenseReportExpense
+    {
+        $this->isBillable = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBillable(): bool
+    {
+        return $this->isBillable;
+    }
+
+    /**
+     * @param RecordRef $expMediaItem
+     * @return ExpenseReportExpense
+     */
+    public function setExpMediaItem(RecordRef $expMediaItem): ExpenseReportExpense
+    {
+        $this->expMediaItem = $expMediaItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getExpMediaItem(): RecordRef
+    {
+        return $this->expMediaItem;
+    }
+
+    /**
+     * @param bool $isNonReimbursable
+     * @return ExpenseReportExpense
+     */
+    public function setIsNonReimbursable(bool $isNonReimbursable): ExpenseReportExpense
+    {
+        $this->isNonReimbursable = $isNonReimbursable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsNonReimbursable(): bool
+    {
+        return $this->isNonReimbursable;
+    }
+
+    /**
+     * @param bool $corporateCreditCard
+     * @return ExpenseReportExpense
+     */
+    public function setCorporateCreditCard(bool $corporateCreditCard): ExpenseReportExpense
+    {
+        $this->corporateCreditCard = $corporateCreditCard;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getCorporateCreditCard(): bool
+    {
+        return $this->corporateCreditCard;
+    }
+
+    /**
+     * @param bool $receipt
+     * @return ExpenseReportExpense
+     */
+    public function setReceipt(bool $receipt): ExpenseReportExpense
+    {
+        $this->receipt = $receipt;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReceipt(): bool
+    {
+        return $this->receipt;
+    }
+
+    /**
+     * @param int $refNumber
+     * @return ExpenseReportExpense
+     */
+    public function setRefNumber(int $refNumber): ExpenseReportExpense
+    {
+        $this->refNumber = $refNumber;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRefNumber(): int
+    {
+        return $this->refNumber;
+    }
+
+    /**
+     * @param string $taxDetailsReference
+     * @return ExpenseReportExpense
+     */
+    public function setTaxDetailsReference(string $taxDetailsReference): ExpenseReportExpense
+    {
+        $this->taxDetailsReference = $taxDetailsReference;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxDetailsReference(): string
+    {
+        return $this->taxDetailsReference;
+    }
+
+    /**
+     * @param RecordRef $expenseAccount
+     * @return ExpenseReportExpense
+     */
+    public function setExpenseAccount(RecordRef $expenseAccount): ExpenseReportExpense
+    {
+        $this->expenseAccount = $expenseAccount;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getExpenseAccount(): RecordRef
+    {
+        return $this->expenseAccount;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return ExpenseReportExpense
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): ExpenseReportExpense
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

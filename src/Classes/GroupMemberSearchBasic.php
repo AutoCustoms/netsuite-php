@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GroupMemberSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $groupId;
+    protected RecordRef $groupId;
+
     static $paramtypesmap = array(
         "groupId" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $groupId
+     * @return GroupMemberSearchBasic
+     */
+    public function setGroupId(RecordRef $groupId): GroupMemberSearchBasic
+    {
+        $this->groupId = $groupId;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getGroupId(): RecordRef
+    {
+        return $this->groupId;
+    }
+
 }

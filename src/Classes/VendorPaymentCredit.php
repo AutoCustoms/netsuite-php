@@ -14,56 +14,67 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorPaymentCredit {
     /**
-     * @var boolean
+     * @var bool
      */
-    public $apply;
+    protected bool $apply;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $doc;
+    protected int $doc;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
-    /**
-     * @var string
-     */
-    public $creditDate;
-    /**
-     * @var string
-     */
-    public $type;
+    protected int $line;
+
     /**
      * @var string
      */
-    public $refNum;
+    protected string $creditDate;
+
     /**
      * @var string
      */
-    public $appliedTo;
+    protected string $type;
+
+    /**
+     * @var string
+     */
+    protected string $refNum;
+
+    /**
+     * @var string
+     */
+    protected string $appliedTo;
+
     /**
      * @var float
      */
-    public $total;
+    protected float $total;
+
     /**
      * @var float
      */
-    public $due;
+    protected float $due;
+
     /**
      * @var string
      */
-    public $currency;
+    protected string $currency;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     static $paramtypesmap = array(
         "apply" => "boolean",
         "doc" => "integer",
@@ -77,4 +88,203 @@ class VendorPaymentCredit {
         "currency" => "string",
         "amount" => "float",
     );
+
+    /**
+     * @param bool $apply
+     * @return VendorPaymentCredit
+     */
+    public function setApply(bool $apply): VendorPaymentCredit
+    {
+        $this->apply = $apply;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getApply(): bool
+    {
+        return $this->apply;
+    }
+
+    /**
+     * @param int $doc
+     * @return VendorPaymentCredit
+     */
+    public function setDoc(int $doc): VendorPaymentCredit
+    {
+        $this->doc = $doc;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDoc(): int
+    {
+        return $this->doc;
+    }
+
+    /**
+     * @param int $line
+     * @return VendorPaymentCredit
+     */
+    public function setLine(int $line): VendorPaymentCredit
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param string $creditDate
+     * @return VendorPaymentCredit
+     */
+    public function setCreditDate(string $creditDate): VendorPaymentCredit
+    {
+        $this->creditDate = $creditDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreditDate(): string
+    {
+        return $this->creditDate;
+    }
+
+    /**
+     * @param string $type
+     * @return VendorPaymentCredit
+     */
+    public function setType(string $type): VendorPaymentCredit
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $refNum
+     * @return VendorPaymentCredit
+     */
+    public function setRefNum(string $refNum): VendorPaymentCredit
+    {
+        $this->refNum = $refNum;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRefNum(): string
+    {
+        return $this->refNum;
+    }
+
+    /**
+     * @param string $appliedTo
+     * @return VendorPaymentCredit
+     */
+    public function setAppliedTo(string $appliedTo): VendorPaymentCredit
+    {
+        $this->appliedTo = $appliedTo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAppliedTo(): string
+    {
+        return $this->appliedTo;
+    }
+
+    /**
+     * @param float $total
+     * @return VendorPaymentCredit
+     */
+    public function setTotal(float $total): VendorPaymentCredit
+    {
+        $this->total = $total;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotal(): float
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param float $due
+     * @return VendorPaymentCredit
+     */
+    public function setDue(float $due): VendorPaymentCredit
+    {
+        $this->due = $due;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getDue(): float
+    {
+        return $this->due;
+    }
+
+    /**
+     * @param string $currency
+     * @return VendorPaymentCredit
+     */
+    public function setCurrency(string $currency): VendorPaymentCredit
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCurrency(): string
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param float $amount
+     * @return VendorPaymentCredit
+     */
+    public function setAmount(float $amount): VendorPaymentCredit
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
 }

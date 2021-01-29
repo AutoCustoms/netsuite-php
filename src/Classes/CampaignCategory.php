@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,35 +23,43 @@ class CampaignCategory extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $parent;
+    protected RecordRef $parent;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $leadSource;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var boolean
-     */
-    public $isexternal;
-    /**
-     * @var boolean
-     */
-    public $isInactive;
+    protected RecordRef $leadSource;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $description;
+
+    /**
+     * @var bool
+     */
+    protected bool $isexternal;
+
+    /**
+     * @var bool
+     */
+    protected bool $isInactive;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "parent" => "RecordRef",
@@ -62,4 +70,149 @@ class CampaignCategory extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return CampaignCategory
+     */
+    public function setName(string $name): CampaignCategory
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param RecordRef $parent
+     * @return CampaignCategory
+     */
+    public function setParent(RecordRef $parent): CampaignCategory
+    {
+        $this->parent = $parent;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getParent(): RecordRef
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param RecordRef $leadSource
+     * @return CampaignCategory
+     */
+    public function setLeadSource(RecordRef $leadSource): CampaignCategory
+    {
+        $this->leadSource = $leadSource;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLeadSource(): RecordRef
+    {
+        return $this->leadSource;
+    }
+
+    /**
+     * @param string $description
+     * @return CampaignCategory
+     */
+    public function setDescription(string $description): CampaignCategory
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param bool $isexternal
+     * @return CampaignCategory
+     */
+    public function setIsexternal(bool $isexternal): CampaignCategory
+    {
+        $this->isexternal = $isexternal;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsexternal(): bool
+    {
+        return $this->isexternal;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return CampaignCategory
+     */
+    public function setIsInactive(bool $isInactive): CampaignCategory
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param string $internalId
+     * @return CampaignCategory
+     */
+    public function setInternalId(string $internalId): CampaignCategory
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return CampaignCategory
+     */
+    public function setExternalId(string $externalId): CampaignCategory
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InboundShipmentLandedCostList {
     /**
-     * @var \NetSuite\Classes\InboundShipmentLandedCost[]
+     * @var InboundShipmentLandedCost[]
      */
-    public $inboundShipmentLandedCost;
+    protected array $inboundShipmentLandedCost;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "inboundShipmentLandedCost" => "InboundShipmentLandedCost[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param InboundShipmentLandedCost[] $inboundShipmentLandedCost
+     * @return InboundShipmentLandedCostList
+     */
+    public function setInboundShipmentLandedCost(InboundShipmentLandedCost $inboundShipmentLandedCost): InboundShipmentLandedCostList
+    {
+        $this->inboundShipmentLandedCost[] = $inboundShipmentLandedCost;
+        return $this;
+    }
+
+    /**
+     * @return InboundShipmentLandedCost[]
+     */
+    public function getInboundShipmentLandedCost(): array
+    {
+        return $this->inboundShipmentLandedCost;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return InboundShipmentLandedCostList
+     */
+    public function setReplaceAll(bool $replaceAll): InboundShipmentLandedCostList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

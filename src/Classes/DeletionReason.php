@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class DeletionReason {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $deletionReasonCode;
+    protected RecordRef $deletionReasonCode;
+
     /**
      * @var string
      */
-    public $deletionReasonMemo;
+    protected string $deletionReasonMemo;
+
     static $paramtypesmap = array(
         "deletionReasonCode" => "RecordRef",
         "deletionReasonMemo" => "string",
     );
+
+    /**
+     * @param RecordRef $deletionReasonCode
+     * @return DeletionReason
+     */
+    public function setDeletionReasonCode(RecordRef $deletionReasonCode): DeletionReason
+    {
+        $this->deletionReasonCode = $deletionReasonCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDeletionReasonCode(): RecordRef
+    {
+        return $this->deletionReasonCode;
+    }
+
+    /**
+     * @param string $deletionReasonMemo
+     * @return DeletionReason
+     */
+    public function setDeletionReasonMemo(string $deletionReasonMemo): DeletionReason
+    {
+        $this->deletionReasonMemo = $deletionReasonMemo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDeletionReasonMemo(): string
+    {
+        return $this->deletionReasonMemo;
+    }
+
 }

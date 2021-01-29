@@ -14,136 +14,167 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingTransactionSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $account;
+    protected array $account;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $accountingBook;
+    protected array $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $accountType;
+    protected array $accountType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $altSalesAmount;
+    protected array $altSalesAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $altSalesNetAmount;
+    protected array $altSalesNetAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amount;
+    protected array $amount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $baseCurrency;
+    protected array $baseCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $catchUpPeriod;
+    protected array $catchUpPeriod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $creditAmount;
+    protected array $creditAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $customGL;
+    protected array $customGL;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $dateCreated;
+    protected array $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $debitAmount;
+    protected array $debitAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $deferRevRec;
+    protected array $deferRevRec;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $exchangeRate;
+    protected array $exchangeRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxAmount;
+    protected array $fxAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $grossAmount;
+    protected array $grossAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastModifiedDate;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $multiSubsidiary;
+    protected array $multiSubsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $netAmount;
+    protected array $netAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $posting;
+    protected array $posting;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityRevCommitted;
+    protected array $quantityRevCommitted;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $recognizedRevenue;
+    protected array $recognizedRevenue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $revCommitStatus;
+    protected array $revCommitStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $revenueStatus;
+    protected array $revenueStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $revRecEndDate;
+    protected array $revRecEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $revRecOnRevCommitment;
+    protected array $revRecOnRevCommitment;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $revRecStartDate;
+    protected array $revRecStartDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $tranIsVsoeBundle;
+    protected array $tranIsVsoeBundle;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $vsoeAllocation;
+    protected array $vsoeAllocation;
+
     static $paramtypesmap = array(
         "account" => "SearchColumnSelectField[]",
         "accountingBook" => "SearchColumnSelectField[]",
@@ -177,4 +208,563 @@ class AccountingTransactionSearchRowBasic extends SearchRowBasic {
         "tranIsVsoeBundle" => "SearchColumnBooleanField[]",
         "vsoeAllocation" => "SearchColumnDoubleField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $account
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setAccount(SearchColumnSelectField $account): AccountingTransactionSearchRowBasic
+    {
+        $this->account[] = $account;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAccount(): array
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $accountingBook
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setAccountingBook(SearchColumnSelectField $accountingBook): AccountingTransactionSearchRowBasic
+    {
+        $this->accountingBook[] = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAccountingBook(): array
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $accountType
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setAccountType(SearchColumnStringField $accountType): AccountingTransactionSearchRowBasic
+    {
+        $this->accountType[] = $accountType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAccountType(): array
+    {
+        return $this->accountType;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $altSalesAmount
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setAltSalesAmount(SearchColumnDoubleField $altSalesAmount): AccountingTransactionSearchRowBasic
+    {
+        $this->altSalesAmount[] = $altSalesAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAltSalesAmount(): array
+    {
+        return $this->altSalesAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $altSalesNetAmount
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setAltSalesNetAmount(SearchColumnDoubleField $altSalesNetAmount): AccountingTransactionSearchRowBasic
+    {
+        $this->altSalesNetAmount[] = $altSalesNetAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAltSalesNetAmount(): array
+    {
+        return $this->altSalesNetAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amount
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setAmount(SearchColumnDoubleField $amount): AccountingTransactionSearchRowBasic
+    {
+        $this->amount[] = $amount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmount(): array
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $baseCurrency
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setBaseCurrency(SearchColumnStringField $baseCurrency): AccountingTransactionSearchRowBasic
+    {
+        $this->baseCurrency[] = $baseCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBaseCurrency(): array
+    {
+        return $this->baseCurrency;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $catchUpPeriod
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setCatchUpPeriod(SearchColumnStringField $catchUpPeriod): AccountingTransactionSearchRowBasic
+    {
+        $this->catchUpPeriod[] = $catchUpPeriod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCatchUpPeriod(): array
+    {
+        return $this->catchUpPeriod;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $creditAmount
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setCreditAmount(SearchColumnDoubleField $creditAmount): AccountingTransactionSearchRowBasic
+    {
+        $this->creditAmount[] = $creditAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getCreditAmount(): array
+    {
+        return $this->creditAmount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $customGL
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setCustomGL(SearchColumnBooleanField $customGL): AccountingTransactionSearchRowBasic
+    {
+        $this->customGL[] = $customGL;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getCustomGL(): array
+    {
+        return $this->customGL;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateCreated
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setDateCreated(SearchColumnDateField $dateCreated): AccountingTransactionSearchRowBasic
+    {
+        $this->dateCreated[] = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateCreated(): array
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $debitAmount
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setDebitAmount(SearchColumnDoubleField $debitAmount): AccountingTransactionSearchRowBasic
+    {
+        $this->debitAmount[] = $debitAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDebitAmount(): array
+    {
+        return $this->debitAmount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $deferRevRec
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setDeferRevRec(SearchColumnBooleanField $deferRevRec): AccountingTransactionSearchRowBasic
+    {
+        $this->deferRevRec[] = $deferRevRec;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getDeferRevRec(): array
+    {
+        return $this->deferRevRec;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $exchangeRate
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setExchangeRate(SearchColumnDoubleField $exchangeRate): AccountingTransactionSearchRowBasic
+    {
+        $this->exchangeRate[] = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getExchangeRate(): array
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxAmount
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setFxAmount(SearchColumnDoubleField $fxAmount): AccountingTransactionSearchRowBasic
+    {
+        $this->fxAmount[] = $fxAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxAmount(): array
+    {
+        return $this->fxAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $grossAmount
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setGrossAmount(SearchColumnDoubleField $grossAmount): AccountingTransactionSearchRowBasic
+    {
+        $this->grossAmount[] = $grossAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGrossAmount(): array
+    {
+        return $this->grossAmount;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): AccountingTransactionSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): AccountingTransactionSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $multiSubsidiary
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setMultiSubsidiary(SearchColumnBooleanField $multiSubsidiary): AccountingTransactionSearchRowBasic
+    {
+        $this->multiSubsidiary[] = $multiSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getMultiSubsidiary(): array
+    {
+        return $this->multiSubsidiary;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $netAmount
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setNetAmount(SearchColumnDoubleField $netAmount): AccountingTransactionSearchRowBasic
+    {
+        $this->netAmount[] = $netAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getNetAmount(): array
+    {
+        return $this->netAmount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $posting
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setPosting(SearchColumnBooleanField $posting): AccountingTransactionSearchRowBasic
+    {
+        $this->posting[] = $posting;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPosting(): array
+    {
+        return $this->posting;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityRevCommitted
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setQuantityRevCommitted(SearchColumnDoubleField $quantityRevCommitted): AccountingTransactionSearchRowBasic
+    {
+        $this->quantityRevCommitted[] = $quantityRevCommitted;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityRevCommitted(): array
+    {
+        return $this->quantityRevCommitted;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $recognizedRevenue
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setRecognizedRevenue(SearchColumnDoubleField $recognizedRevenue): AccountingTransactionSearchRowBasic
+    {
+        $this->recognizedRevenue[] = $recognizedRevenue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRecognizedRevenue(): array
+    {
+        return $this->recognizedRevenue;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $revCommitStatus
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setRevCommitStatus(SearchColumnEnumSelectField $revCommitStatus): AccountingTransactionSearchRowBasic
+    {
+        $this->revCommitStatus[] = $revCommitStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getRevCommitStatus(): array
+    {
+        return $this->revCommitStatus;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $revenueStatus
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setRevenueStatus(SearchColumnEnumSelectField $revenueStatus): AccountingTransactionSearchRowBasic
+    {
+        $this->revenueStatus[] = $revenueStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getRevenueStatus(): array
+    {
+        return $this->revenueStatus;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $revRecEndDate
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setRevRecEndDate(SearchColumnDateField $revRecEndDate): AccountingTransactionSearchRowBasic
+    {
+        $this->revRecEndDate[] = $revRecEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getRevRecEndDate(): array
+    {
+        return $this->revRecEndDate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $revRecOnRevCommitment
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setRevRecOnRevCommitment(SearchColumnBooleanField $revRecOnRevCommitment): AccountingTransactionSearchRowBasic
+    {
+        $this->revRecOnRevCommitment[] = $revRecOnRevCommitment;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getRevRecOnRevCommitment(): array
+    {
+        return $this->revRecOnRevCommitment;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $revRecStartDate
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setRevRecStartDate(SearchColumnDateField $revRecStartDate): AccountingTransactionSearchRowBasic
+    {
+        $this->revRecStartDate[] = $revRecStartDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getRevRecStartDate(): array
+    {
+        return $this->revRecStartDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): AccountingTransactionSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $tranIsVsoeBundle
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setTranIsVsoeBundle(SearchColumnBooleanField $tranIsVsoeBundle): AccountingTransactionSearchRowBasic
+    {
+        $this->tranIsVsoeBundle[] = $tranIsVsoeBundle;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getTranIsVsoeBundle(): array
+    {
+        return $this->tranIsVsoeBundle;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $vsoeAllocation
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function setVsoeAllocation(SearchColumnDoubleField $vsoeAllocation): AccountingTransactionSearchRowBasic
+    {
+        $this->vsoeAllocation[] = $vsoeAllocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getVsoeAllocation(): array
+    {
+        return $this->vsoeAllocation;
+    }
+
 }

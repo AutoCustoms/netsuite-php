@@ -14,56 +14,67 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InstallmentSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amount;
+    protected array $amount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amountPaid;
+    protected array $amountPaid;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amountRemaining;
+    protected array $amountRemaining;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $daysOverdue;
+    protected array $daysOverdue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $dueDate;
+    protected array $dueDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxAmount;
+    protected array $fxAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxAmountPaid;
+    protected array $fxAmountPaid;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxAmountRemaining;
+    protected array $fxAmountRemaining;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $installmentNumber;
+    protected array $installmentNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $status;
+    protected array $status;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "amount" => "SearchColumnDoubleField[]",
         "amountPaid" => "SearchColumnDoubleField[]",
@@ -77,4 +88,203 @@ class InstallmentSearchRowBasic extends SearchRowBasic {
         "status" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnDoubleField[] $amount
+     * @return InstallmentSearchRowBasic
+     */
+    public function setAmount(SearchColumnDoubleField $amount): InstallmentSearchRowBasic
+    {
+        $this->amount[] = $amount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmount(): array
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amountPaid
+     * @return InstallmentSearchRowBasic
+     */
+    public function setAmountPaid(SearchColumnDoubleField $amountPaid): InstallmentSearchRowBasic
+    {
+        $this->amountPaid[] = $amountPaid;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmountPaid(): array
+    {
+        return $this->amountPaid;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amountRemaining
+     * @return InstallmentSearchRowBasic
+     */
+    public function setAmountRemaining(SearchColumnDoubleField $amountRemaining): InstallmentSearchRowBasic
+    {
+        $this->amountRemaining[] = $amountRemaining;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmountRemaining(): array
+    {
+        return $this->amountRemaining;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $daysOverdue
+     * @return InstallmentSearchRowBasic
+     */
+    public function setDaysOverdue(SearchColumnLongField $daysOverdue): InstallmentSearchRowBasic
+    {
+        $this->daysOverdue[] = $daysOverdue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDaysOverdue(): array
+    {
+        return $this->daysOverdue;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dueDate
+     * @return InstallmentSearchRowBasic
+     */
+    public function setDueDate(SearchColumnDateField $dueDate): InstallmentSearchRowBasic
+    {
+        $this->dueDate[] = $dueDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDueDate(): array
+    {
+        return $this->dueDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxAmount
+     * @return InstallmentSearchRowBasic
+     */
+    public function setFxAmount(SearchColumnDoubleField $fxAmount): InstallmentSearchRowBasic
+    {
+        $this->fxAmount[] = $fxAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxAmount(): array
+    {
+        return $this->fxAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxAmountPaid
+     * @return InstallmentSearchRowBasic
+     */
+    public function setFxAmountPaid(SearchColumnDoubleField $fxAmountPaid): InstallmentSearchRowBasic
+    {
+        $this->fxAmountPaid[] = $fxAmountPaid;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxAmountPaid(): array
+    {
+        return $this->fxAmountPaid;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxAmountRemaining
+     * @return InstallmentSearchRowBasic
+     */
+    public function setFxAmountRemaining(SearchColumnDoubleField $fxAmountRemaining): InstallmentSearchRowBasic
+    {
+        $this->fxAmountRemaining[] = $fxAmountRemaining;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxAmountRemaining(): array
+    {
+        return $this->fxAmountRemaining;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $installmentNumber
+     * @return InstallmentSearchRowBasic
+     */
+    public function setInstallmentNumber(SearchColumnLongField $installmentNumber): InstallmentSearchRowBasic
+    {
+        $this->installmentNumber[] = $installmentNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getInstallmentNumber(): array
+    {
+        return $this->installmentNumber;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $status
+     * @return InstallmentSearchRowBasic
+     */
+    public function setStatus(SearchColumnStringField $status): InstallmentSearchRowBasic
+    {
+        $this->status[] = $status;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getStatus(): array
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return InstallmentSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): InstallmentSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

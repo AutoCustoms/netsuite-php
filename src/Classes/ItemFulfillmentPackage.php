@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,76 @@ class ItemFulfillmentPackage {
     /**
      * @var float
      */
-    public $packageWeight;
+    protected float $packageWeight;
+
     /**
      * @var string
      */
-    public $packageDescr;
+    protected string $packageDescr;
+
     /**
      * @var string
      */
-    public $packageTrackingNumber;
+    protected string $packageTrackingNumber;
+
     static $paramtypesmap = array(
         "packageWeight" => "float",
         "packageDescr" => "string",
         "packageTrackingNumber" => "string",
     );
+
+    /**
+     * @param float $packageWeight
+     * @return ItemFulfillmentPackage
+     */
+    public function setPackageWeight(float $packageWeight): ItemFulfillmentPackage
+    {
+        $this->packageWeight = $packageWeight;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPackageWeight(): float
+    {
+        return $this->packageWeight;
+    }
+
+    /**
+     * @param string $packageDescr
+     * @return ItemFulfillmentPackage
+     */
+    public function setPackageDescr(string $packageDescr): ItemFulfillmentPackage
+    {
+        $this->packageDescr = $packageDescr;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPackageDescr(): string
+    {
+        return $this->packageDescr;
+    }
+
+    /**
+     * @param string $packageTrackingNumber
+     * @return ItemFulfillmentPackage
+     */
+    public function setPackageTrackingNumber(string $packageTrackingNumber): ItemFulfillmentPackage
+    {
+        $this->packageTrackingNumber = $packageTrackingNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPackageTrackingNumber(): string
+    {
+        return $this->packageTrackingNumber;
+    }
+
 }

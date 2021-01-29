@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeSheetSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\TimeSheetSearch
+     * @var TimeSheetSearch
      */
-    public $criteria;
+    protected TimeSheetSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\TimeSheetSearchRow
+     * @var TimeSheetSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected TimeSheetSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "TimeSheetSearch",
         "columns" => "TimeSheetSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param TimeSheetSearch $criteria
+     * @return TimeSheetSearchAdvanced
+     */
+    public function setCriteria(TimeSheetSearch $criteria): TimeSheetSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return TimeSheetSearch
+     */
+    public function getCriteria(): TimeSheetSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param TimeSheetSearchRow $columns
+     * @return TimeSheetSearchAdvanced
+     */
+    public function setColumns(TimeSheetSearchRow $columns): TimeSheetSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return TimeSheetSearchRow
+     */
+    public function getColumns(): TimeSheetSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return TimeSheetSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): TimeSheetSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return TimeSheetSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): TimeSheetSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

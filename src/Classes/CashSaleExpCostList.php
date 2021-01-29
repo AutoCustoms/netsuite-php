@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CashSaleExpCostList {
     /**
-     * @var \NetSuite\Classes\CashSaleExpCost[]
+     * @var CashSaleExpCost[]
      */
-    public $expCost;
+    protected array $expCost;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "expCost" => "CashSaleExpCost[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CashSaleExpCost[] $expCost
+     * @return CashSaleExpCostList
+     */
+    public function setExpCost(CashSaleExpCost $expCost): CashSaleExpCostList
+    {
+        $this->expCost[] = $expCost;
+        return $this;
+    }
+
+    /**
+     * @return CashSaleExpCost[]
+     */
+    public function getExpCost(): array
+    {
+        return $this->expCost;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CashSaleExpCostList
+     */
+    public function setReplaceAll(bool $replaceAll): CashSaleExpCostList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

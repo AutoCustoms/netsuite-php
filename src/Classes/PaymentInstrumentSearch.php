@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaymentInstrumentSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PaymentInstrumentSearchBasic
+     * @var PaymentInstrumentSearchBasic
      */
-    public $basic;
+    protected PaymentInstrumentSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $customerJoin;
+    protected CustomerSearchBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchBasic $transactionJoin;
+
     static $paramtypesmap = array(
         "basic" => "PaymentInstrumentSearchBasic",
         "customerJoin" => "CustomerSearchBasic",
         "transactionJoin" => "TransactionSearchBasic",
     );
+
+    /**
+     * @param PaymentInstrumentSearchBasic $basic
+     * @return PaymentInstrumentSearch
+     */
+    public function setBasic(PaymentInstrumentSearchBasic $basic): PaymentInstrumentSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return PaymentInstrumentSearchBasic
+     */
+    public function getBasic(): PaymentInstrumentSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param CustomerSearchBasic $customerJoin
+     * @return PaymentInstrumentSearch
+     */
+    public function setCustomerJoin(CustomerSearchBasic $customerJoin): PaymentInstrumentSearch
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $transactionJoin
+     * @return PaymentInstrumentSearch
+     */
+    public function setTransactionJoin(TransactionSearchBasic $transactionJoin): PaymentInstrumentSearch
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getTransactionJoin(): TransactionSearchBasic
+    {
+        return $this->transactionJoin;
+    }
+
 }

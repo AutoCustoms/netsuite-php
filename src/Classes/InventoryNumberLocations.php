@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,23 +23,28 @@ class InventoryNumberLocations {
     /**
      * @var string
      */
-    public $location;
+    protected string $location;
+
     /**
      * @var float
      */
-    public $quantityOnHand;
+    protected float $quantityOnHand;
+
     /**
      * @var float
      */
-    public $quantityAvailable;
+    protected float $quantityAvailable;
+
     /**
      * @var float
      */
-    public $quantityOnOrder;
+    protected float $quantityOnOrder;
+
     /**
      * @var float
      */
-    public $quantityInTransit;
+    protected float $quantityInTransit;
+
     static $paramtypesmap = array(
         "location" => "string",
         "quantityOnHand" => "float",
@@ -47,4 +52,95 @@ class InventoryNumberLocations {
         "quantityOnOrder" => "float",
         "quantityInTransit" => "float",
     );
+
+    /**
+     * @param string $location
+     * @return InventoryNumberLocations
+     */
+    public function setLocation(string $location): InventoryNumberLocations
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLocation(): string
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param float $quantityOnHand
+     * @return InventoryNumberLocations
+     */
+    public function setQuantityOnHand(float $quantityOnHand): InventoryNumberLocations
+    {
+        $this->quantityOnHand = $quantityOnHand;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnHand(): float
+    {
+        return $this->quantityOnHand;
+    }
+
+    /**
+     * @param float $quantityAvailable
+     * @return InventoryNumberLocations
+     */
+    public function setQuantityAvailable(float $quantityAvailable): InventoryNumberLocations
+    {
+        $this->quantityAvailable = $quantityAvailable;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityAvailable(): float
+    {
+        return $this->quantityAvailable;
+    }
+
+    /**
+     * @param float $quantityOnOrder
+     * @return InventoryNumberLocations
+     */
+    public function setQuantityOnOrder(float $quantityOnOrder): InventoryNumberLocations
+    {
+        $this->quantityOnOrder = $quantityOnOrder;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnOrder(): float
+    {
+        return $this->quantityOnOrder;
+    }
+
+    /**
+     * @param float $quantityInTransit
+     * @return InventoryNumberLocations
+     */
+    public function setQuantityInTransit(float $quantityInTransit): InventoryNumberLocations
+    {
+        $this->quantityInTransit = $quantityInTransit;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityInTransit(): float
+    {
+        return $this->quantityInTransit;
+    }
+
 }

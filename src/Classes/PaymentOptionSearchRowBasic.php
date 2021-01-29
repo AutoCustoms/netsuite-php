@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaymentOptionSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $mask;
+    protected array $mask;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $paymentInstrumentType;
+    protected array $paymentInstrumentType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $paymentMethod;
+    protected array $paymentMethod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $preserveOnFile;
+    protected array $preserveOnFile;
+
     static $paramtypesmap = array(
         "internalId" => "SearchColumnSelectField[]",
         "mask" => "SearchColumnStringField[]",
@@ -47,4 +52,95 @@ class PaymentOptionSearchRowBasic extends SearchRowBasic {
         "paymentMethod" => "SearchColumnSelectField[]",
         "preserveOnFile" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return PaymentOptionSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): PaymentOptionSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $mask
+     * @return PaymentOptionSearchRowBasic
+     */
+    public function setMask(SearchColumnStringField $mask): PaymentOptionSearchRowBasic
+    {
+        $this->mask[] = $mask;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMask(): array
+    {
+        return $this->mask;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $paymentInstrumentType
+     * @return PaymentOptionSearchRowBasic
+     */
+    public function setPaymentInstrumentType(SearchColumnEnumSelectField $paymentInstrumentType): PaymentOptionSearchRowBasic
+    {
+        $this->paymentInstrumentType[] = $paymentInstrumentType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPaymentInstrumentType(): array
+    {
+        return $this->paymentInstrumentType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $paymentMethod
+     * @return PaymentOptionSearchRowBasic
+     */
+    public function setPaymentMethod(SearchColumnSelectField $paymentMethod): PaymentOptionSearchRowBasic
+    {
+        $this->paymentMethod[] = $paymentMethod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPaymentMethod(): array
+    {
+        return $this->paymentMethod;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $preserveOnFile
+     * @return PaymentOptionSearchRowBasic
+     */
+    public function setPreserveOnFile(SearchColumnStringField $preserveOnFile): PaymentOptionSearchRowBasic
+    {
+        $this->preserveOnFile[] = $preserveOnFile;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPreserveOnFile(): array
+    {
+        return $this->preserveOnFile;
+    }
+
 }

@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerSubsidiaryRelationshipSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $balance;
+    protected array $balance;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $depositbalance;
+    protected array $depositbalance;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $entity;
+    protected array $entity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isprimarysub;
+    protected array $isprimarysub;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $primaryCurrency;
+    protected array $primaryCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $unbilledorders;
+    protected array $unbilledorders;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "balance" => "SearchColumnDoubleField[]",
         "depositbalance" => "SearchColumnDoubleField[]",
@@ -72,4 +82,185 @@ class CustomerSubsidiaryRelationshipSearchRowBasic extends SearchRowBasic {
         "unbilledorders" => "SearchColumnDoubleField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnDoubleField[] $balance
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setBalance(SearchColumnDoubleField $balance): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->balance[] = $balance;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getBalance(): array
+    {
+        return $this->balance;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $depositbalance
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setDepositbalance(SearchColumnDoubleField $depositbalance): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->depositbalance[] = $depositbalance;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDepositbalance(): array
+    {
+        return $this->depositbalance;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $entity
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setEntity(SearchColumnSelectField $entity): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->entity[] = $entity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEntity(): array
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isprimarysub
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setIsprimarysub(SearchColumnBooleanField $isprimarysub): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->isprimarysub[] = $isprimarysub;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsprimarysub(): array
+    {
+        return $this->isprimarysub;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $primaryCurrency
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setPrimaryCurrency(SearchColumnSelectField $primaryCurrency): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->primaryCurrency[] = $primaryCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPrimaryCurrency(): array
+    {
+        return $this->primaryCurrency;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $unbilledorders
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setUnbilledorders(SearchColumnDoubleField $unbilledorders): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->unbilledorders[] = $unbilledorders;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getUnbilledorders(): array
+    {
+        return $this->unbilledorders;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return CustomerSubsidiaryRelationshipSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): CustomerSubsidiaryRelationshipSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

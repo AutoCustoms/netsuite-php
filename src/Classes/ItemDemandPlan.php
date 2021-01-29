@@ -14,72 +14,87 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemDemandPlan extends Record {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $subsidiary;
+    protected RecordRef $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $units;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var integer
-     */
-    public $year;
-    /**
-     * @var \NetSuite\Classes\DemandPlanMonth
-     */
-    public $month;
+    protected RecordRef $units;
+
     /**
      * @var string
      */
-    public $startDate;
+    protected string $memo;
+
+    /**
+     * @var int
+     */
+    protected int $year;
+
+    /**
+     * @var DemandPlanMonth
+     */
+    protected DemandPlanMonth $month;
+
     /**
      * @var string
      */
-    public $endDate;
-    /**
-     * @var \NetSuite\Classes\DemandPlanCalendarType
-     */
-    public $demandPlanCalendarType;
-    /**
-     * @var \NetSuite\Classes\DemandPlanMatrix
-     */
-    public $demandPlanMatrix;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected string $startDate;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $endDate;
+
+    /**
+     * @var DemandPlanCalendarType
+     */
+    protected DemandPlanCalendarType $demandPlanCalendarType;
+
+    /**
+     * @var DemandPlanMatrix
+     */
+    protected DemandPlanMatrix $demandPlanMatrix;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "customForm" => "RecordRef",
         "subsidiary" => "RecordRef",
@@ -97,4 +112,275 @@ class ItemDemandPlan extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param RecordRef $customForm
+     * @return ItemDemandPlan
+     */
+    public function setCustomForm(RecordRef $customForm): ItemDemandPlan
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return ItemDemandPlan
+     */
+    public function setSubsidiary(RecordRef $subsidiary): ItemDemandPlan
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return ItemDemandPlan
+     */
+    public function setLocation(RecordRef $location): ItemDemandPlan
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return ItemDemandPlan
+     */
+    public function setItem(RecordRef $item): ItemDemandPlan
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param RecordRef $units
+     * @return ItemDemandPlan
+     */
+    public function setUnits(RecordRef $units): ItemDemandPlan
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnits(): RecordRef
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param string $memo
+     * @return ItemDemandPlan
+     */
+    public function setMemo(string $memo): ItemDemandPlan
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param int $year
+     * @return ItemDemandPlan
+     */
+    public function setYear(int $year): ItemDemandPlan
+    {
+        $this->year = $year;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getYear(): int
+    {
+        return $this->year;
+    }
+
+    /**
+     * @param DemandPlanMonth $month
+     * @return ItemDemandPlan
+     */
+    public function setMonth(DemandPlanMonth $month): ItemDemandPlan
+    {
+        $this->month = $month;
+        return $this;
+    }
+
+    /**
+     * @return DemandPlanMonth
+     */
+    public function getMonth(): DemandPlanMonth
+    {
+        return $this->month;
+    }
+
+    /**
+     * @param string $startDate
+     * @return ItemDemandPlan
+     */
+    public function setStartDate(string $startDate): ItemDemandPlan
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStartDate(): string
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param string $endDate
+     * @return ItemDemandPlan
+     */
+    public function setEndDate(string $endDate): ItemDemandPlan
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndDate(): string
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param DemandPlanCalendarType $demandPlanCalendarType
+     * @return ItemDemandPlan
+     */
+    public function setDemandPlanCalendarType(DemandPlanCalendarType $demandPlanCalendarType): ItemDemandPlan
+    {
+        $this->demandPlanCalendarType = $demandPlanCalendarType;
+        return $this;
+    }
+
+    /**
+     * @return DemandPlanCalendarType
+     */
+    public function getDemandPlanCalendarType(): DemandPlanCalendarType
+    {
+        return $this->demandPlanCalendarType;
+    }
+
+    /**
+     * @param DemandPlanMatrix $demandPlanMatrix
+     * @return ItemDemandPlan
+     */
+    public function setDemandPlanMatrix(DemandPlanMatrix $demandPlanMatrix): ItemDemandPlan
+    {
+        $this->demandPlanMatrix = $demandPlanMatrix;
+        return $this;
+    }
+
+    /**
+     * @return DemandPlanMatrix
+     */
+    public function getDemandPlanMatrix(): DemandPlanMatrix
+    {
+        return $this->demandPlanMatrix;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return ItemDemandPlan
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): ItemDemandPlan
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return ItemDemandPlan
+     */
+    public function setInternalId(string $internalId): ItemDemandPlan
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return ItemDemandPlan
+     */
+    public function setExternalId(string $externalId): ItemDemandPlan
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

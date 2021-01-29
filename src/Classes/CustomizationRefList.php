@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomizationRefList {
     /**
-     * @var \NetSuite\Classes\CustomizationRef[]
+     * @var CustomizationRef[]
      */
-    public $customizationRef;
+    protected array $customizationRef;
+
     static $paramtypesmap = array(
         "customizationRef" => "CustomizationRef[]",
     );
+
+    /**
+     * @param CustomizationRef[] $customizationRef
+     * @return CustomizationRefList
+     */
+    public function setCustomizationRef(CustomizationRef $customizationRef): CustomizationRefList
+    {
+        $this->customizationRef[] = $customizationRef;
+        return $this;
+    }
+
+    /**
+     * @return CustomizationRef[]
+     */
+    public function getCustomizationRef(): array
+    {
+        return $this->customizationRef;
+    }
+
 }

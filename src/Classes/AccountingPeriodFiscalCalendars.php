@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingPeriodFiscalCalendars {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $fiscalCalendar;
+    protected RecordRef $fiscalCalendar;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $parent;
+    protected RecordRef $parent;
+
     static $paramtypesmap = array(
         "fiscalCalendar" => "RecordRef",
         "parent" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $fiscalCalendar
+     * @return AccountingPeriodFiscalCalendars
+     */
+    public function setFiscalCalendar(RecordRef $fiscalCalendar): AccountingPeriodFiscalCalendars
+    {
+        $this->fiscalCalendar = $fiscalCalendar;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getFiscalCalendar(): RecordRef
+    {
+        return $this->fiscalCalendar;
+    }
+
+    /**
+     * @param RecordRef $parent
+     * @return AccountingPeriodFiscalCalendars
+     */
+    public function setParent(RecordRef $parent): AccountingPeriodFiscalCalendars
+    {
+        $this->parent = $parent;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getParent(): RecordRef
+    {
+        return $this->parent;
+    }
+
 }

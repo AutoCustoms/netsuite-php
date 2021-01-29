@@ -14,112 +14,137 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BillingAccount extends Record {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     /**
      * @var string
      */
-    public $idNumber;
+    protected string $idNumber;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $customerDefault;
+    protected bool $customerDefault;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customer;
+    protected RecordRef $customer;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $subsidiary;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var boolean
-     */
-    public $inactive;
+    protected RecordRef $subsidiary;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $name;
+
+    /**
+     * @var bool
+     */
+    protected bool $inactive;
+
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $memo;
+
     /**
      * @var string
      */
-    public $createdBy;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $currency;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $class;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $department;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $location;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $billingSchedule;
-    /**
-     * @var \NetSuite\Classes\BillingAccountFrequency
-     */
-    public $frequency;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $startDate;
+    protected string $createdBy;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $currency;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $class;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $department;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $location;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $billingSchedule;
+
+    /**
+     * @var BillingAccountFrequency
+     */
+    protected BillingAccountFrequency $frequency;
+
     /**
      * @var string
      */
-    public $lastBillDate;
+    protected string $startDate;
+
     /**
      * @var string
      */
-    public $lastBillCycleDate;
+    protected string $lastBillDate;
+
     /**
      * @var string
      */
-    public $nextBillCycleDate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $invoiceForm;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $cashSaleForm;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected string $lastBillCycleDate;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $nextBillCycleDate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $invoiceForm;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $cashSaleForm;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "customForm" => "RecordRef",
         "idNumber" => "string",
@@ -147,4 +172,455 @@ class BillingAccount extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param RecordRef $customForm
+     * @return BillingAccount
+     */
+    public function setCustomForm(RecordRef $customForm): BillingAccount
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param string $idNumber
+     * @return BillingAccount
+     */
+    public function setIdNumber(string $idNumber): BillingAccount
+    {
+        $this->idNumber = $idNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIdNumber(): string
+    {
+        return $this->idNumber;
+    }
+
+    /**
+     * @param bool $customerDefault
+     * @return BillingAccount
+     */
+    public function setCustomerDefault(bool $customerDefault): BillingAccount
+    {
+        $this->customerDefault = $customerDefault;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getCustomerDefault(): bool
+    {
+        return $this->customerDefault;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return BillingAccount
+     */
+    public function setCustomer(RecordRef $customer): BillingAccount
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return BillingAccount
+     */
+    public function setSubsidiary(RecordRef $subsidiary): BillingAccount
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param string $name
+     * @return BillingAccount
+     */
+    public function setName(string $name): BillingAccount
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param bool $inactive
+     * @return BillingAccount
+     */
+    public function setInactive(bool $inactive): BillingAccount
+    {
+        $this->inactive = $inactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getInactive(): bool
+    {
+        return $this->inactive;
+    }
+
+    /**
+     * @param string $memo
+     * @return BillingAccount
+     */
+    public function setMemo(string $memo): BillingAccount
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param string $createdDate
+     * @return BillingAccount
+     */
+    public function setCreatedDate(string $createdDate): BillingAccount
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $createdBy
+     * @return BillingAccount
+     */
+    public function setCreatedBy(string $createdBy): BillingAccount
+    {
+        $this->createdBy = $createdBy;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedBy(): string
+    {
+        return $this->createdBy;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return BillingAccount
+     */
+    public function setCurrency(RecordRef $currency): BillingAccount
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return BillingAccount
+     */
+    public function setClass(RecordRef $class): BillingAccount
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return BillingAccount
+     */
+    public function setDepartment(RecordRef $department): BillingAccount
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return BillingAccount
+     */
+    public function setLocation(RecordRef $location): BillingAccount
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $billingSchedule
+     * @return BillingAccount
+     */
+    public function setBillingSchedule(RecordRef $billingSchedule): BillingAccount
+    {
+        $this->billingSchedule = $billingSchedule;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBillingSchedule(): RecordRef
+    {
+        return $this->billingSchedule;
+    }
+
+    /**
+     * @param BillingAccountFrequency $frequency
+     * @return BillingAccount
+     */
+    public function setFrequency(BillingAccountFrequency $frequency): BillingAccount
+    {
+        $this->frequency = $frequency;
+        return $this;
+    }
+
+    /**
+     * @return BillingAccountFrequency
+     */
+    public function getFrequency(): BillingAccountFrequency
+    {
+        return $this->frequency;
+    }
+
+    /**
+     * @param string $startDate
+     * @return BillingAccount
+     */
+    public function setStartDate(string $startDate): BillingAccount
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStartDate(): string
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param string $lastBillDate
+     * @return BillingAccount
+     */
+    public function setLastBillDate(string $lastBillDate): BillingAccount
+    {
+        $this->lastBillDate = $lastBillDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastBillDate(): string
+    {
+        return $this->lastBillDate;
+    }
+
+    /**
+     * @param string $lastBillCycleDate
+     * @return BillingAccount
+     */
+    public function setLastBillCycleDate(string $lastBillCycleDate): BillingAccount
+    {
+        $this->lastBillCycleDate = $lastBillCycleDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastBillCycleDate(): string
+    {
+        return $this->lastBillCycleDate;
+    }
+
+    /**
+     * @param string $nextBillCycleDate
+     * @return BillingAccount
+     */
+    public function setNextBillCycleDate(string $nextBillCycleDate): BillingAccount
+    {
+        $this->nextBillCycleDate = $nextBillCycleDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNextBillCycleDate(): string
+    {
+        return $this->nextBillCycleDate;
+    }
+
+    /**
+     * @param RecordRef $invoiceForm
+     * @return BillingAccount
+     */
+    public function setInvoiceForm(RecordRef $invoiceForm): BillingAccount
+    {
+        $this->invoiceForm = $invoiceForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getInvoiceForm(): RecordRef
+    {
+        return $this->invoiceForm;
+    }
+
+    /**
+     * @param RecordRef $cashSaleForm
+     * @return BillingAccount
+     */
+    public function setCashSaleForm(RecordRef $cashSaleForm): BillingAccount
+    {
+        $this->cashSaleForm = $cashSaleForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCashSaleForm(): RecordRef
+    {
+        return $this->cashSaleForm;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return BillingAccount
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): BillingAccount
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return BillingAccount
+     */
+    public function setInternalId(string $internalId): BillingAccount
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return BillingAccount
+     */
+    public function setExternalId(string $externalId): BillingAccount
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

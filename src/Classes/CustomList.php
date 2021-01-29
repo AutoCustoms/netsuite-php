@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,47 +23,58 @@ class CustomList extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $owner;
+    protected RecordRef $owner;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isOrdered;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var boolean
-     */
-    public $isMatrixOption;
+    protected bool $isOrdered;
+
     /**
      * @var string
      */
-    public $scriptId;
+    protected string $description;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $convertToCustomRecord;
-    /**
-     * @var boolean
-     */
-    public $isInactive;
-    /**
-     * @var \NetSuite\Classes\CustomListCustomValueList
-     */
-    public $customValueList;
-    /**
-     * @var \NetSuite\Classes\CustomListTranslationsList
-     */
-    public $translationsList;
+    protected bool $isMatrixOption;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $scriptId;
+
+    /**
+     * @var bool
+     */
+    protected bool $convertToCustomRecord;
+
+    /**
+     * @var bool
+     */
+    protected bool $isInactive;
+
+    /**
+     * @var CustomListCustomValueList
+     */
+    protected CustomListCustomValueList $customValueList;
+
+    /**
+     * @var CustomListTranslationsList
+     */
+    protected CustomListTranslationsList $translationsList;
+
+    /**
+     * @var string
+     */
+    protected string $internalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "owner" => "RecordRef",
@@ -77,4 +88,203 @@ class CustomList extends Record {
         "translationsList" => "CustomListTranslationsList",
         "internalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return CustomList
+     */
+    public function setName(string $name): CustomList
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param RecordRef $owner
+     * @return CustomList
+     */
+    public function setOwner(RecordRef $owner): CustomList
+    {
+        $this->owner = $owner;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getOwner(): RecordRef
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param bool $isOrdered
+     * @return CustomList
+     */
+    public function setIsOrdered(bool $isOrdered): CustomList
+    {
+        $this->isOrdered = $isOrdered;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsOrdered(): bool
+    {
+        return $this->isOrdered;
+    }
+
+    /**
+     * @param string $description
+     * @return CustomList
+     */
+    public function setDescription(string $description): CustomList
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param bool $isMatrixOption
+     * @return CustomList
+     */
+    public function setIsMatrixOption(bool $isMatrixOption): CustomList
+    {
+        $this->isMatrixOption = $isMatrixOption;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsMatrixOption(): bool
+    {
+        return $this->isMatrixOption;
+    }
+
+    /**
+     * @param string $scriptId
+     * @return CustomList
+     */
+    public function setScriptId(string $scriptId): CustomList
+    {
+        $this->scriptId = $scriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getScriptId(): string
+    {
+        return $this->scriptId;
+    }
+
+    /**
+     * @param bool $convertToCustomRecord
+     * @return CustomList
+     */
+    public function setConvertToCustomRecord(bool $convertToCustomRecord): CustomList
+    {
+        $this->convertToCustomRecord = $convertToCustomRecord;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getConvertToCustomRecord(): bool
+    {
+        return $this->convertToCustomRecord;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return CustomList
+     */
+    public function setIsInactive(bool $isInactive): CustomList
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param CustomListCustomValueList $customValueList
+     * @return CustomList
+     */
+    public function setCustomValueList(CustomListCustomValueList $customValueList): CustomList
+    {
+        $this->customValueList = $customValueList;
+        return $this;
+    }
+
+    /**
+     * @return CustomListCustomValueList
+     */
+    public function getCustomValueList(): CustomListCustomValueList
+    {
+        return $this->customValueList;
+    }
+
+    /**
+     * @param CustomListTranslationsList $translationsList
+     * @return CustomList
+     */
+    public function setTranslationsList(CustomListTranslationsList $translationsList): CustomList
+    {
+        $this->translationsList = $translationsList;
+        return $this;
+    }
+
+    /**
+     * @return CustomListTranslationsList
+     */
+    public function getTranslationsList(): CustomListTranslationsList
+    {
+        return $this->translationsList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return CustomList
+     */
+    public function setInternalId(string $internalId): CustomList
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
 }

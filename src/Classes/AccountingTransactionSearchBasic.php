@@ -14,132 +14,162 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingTransactionSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $account;
+    protected SearchMultiSelectField $account;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $accountingBook;
+    protected SearchMultiSelectField $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $accountType;
+    protected SearchMultiSelectField $accountType;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $altSalesAmount;
+    protected SearchDoubleField $altSalesAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $altSalesNetAmount;
+    protected SearchDoubleField $altSalesNetAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $amount;
+    protected SearchDoubleField $amount;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $bookSpecificTransaction;
+    protected SearchBooleanField $bookSpecificTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $catchUpPeriod;
+    protected SearchMultiSelectField $catchUpPeriod;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $creditAmount;
+    protected SearchDoubleField $creditAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $customGL;
+    protected SearchBooleanField $customGL;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $debitAmount;
+    protected SearchDoubleField $debitAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $deferRevRec;
+    protected SearchBooleanField $deferRevRec;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $exchangeRate;
+    protected SearchDoubleField $exchangeRate;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $grossAmount;
+    protected SearchDoubleField $grossAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $multiSubsidiary;
+    protected SearchBooleanField $multiSubsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $netAmount;
+    protected SearchDoubleField $netAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $posting;
+    protected SearchBooleanField $posting;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $quantityRevCommitted;
+    protected SearchDoubleField $quantityRevCommitted;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $recognizedRevenue;
+    protected SearchDoubleField $recognizedRevenue;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $revCommitStatus;
+    protected SearchEnumMultiSelectField $revCommitStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $revenueStatus;
+    protected SearchEnumMultiSelectField $revenueStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $revRecEndDate;
+    protected SearchDateField $revRecEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $revRecOnRevCommitment;
+    protected SearchBooleanField $revRecOnRevCommitment;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $revRecStartDate;
+    protected SearchDateField $revRecStartDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $tranIsVsoeBundle;
+    protected SearchBooleanField $tranIsVsoeBundle;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $type;
+    protected SearchEnumMultiSelectField $type;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $vsoeAllocation;
+    protected SearchDoubleField $vsoeAllocation;
+
     static $paramtypesmap = array(
         "account" => "SearchMultiSelectField",
         "accountingBook" => "SearchMultiSelectField",
@@ -172,4 +202,545 @@ class AccountingTransactionSearchBasic extends SearchRecordBasic {
         "type" => "SearchEnumMultiSelectField",
         "vsoeAllocation" => "SearchDoubleField",
     );
+
+    /**
+     * @param SearchMultiSelectField $account
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setAccount(SearchMultiSelectField $account): AccountingTransactionSearchBasic
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getAccount(): SearchMultiSelectField
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param SearchMultiSelectField $accountingBook
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setAccountingBook(SearchMultiSelectField $accountingBook): AccountingTransactionSearchBasic
+    {
+        $this->accountingBook = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getAccountingBook(): SearchMultiSelectField
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param SearchMultiSelectField $accountType
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setAccountType(SearchMultiSelectField $accountType): AccountingTransactionSearchBasic
+    {
+        $this->accountType = $accountType;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getAccountType(): SearchMultiSelectField
+    {
+        return $this->accountType;
+    }
+
+    /**
+     * @param SearchDoubleField $altSalesAmount
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setAltSalesAmount(SearchDoubleField $altSalesAmount): AccountingTransactionSearchBasic
+    {
+        $this->altSalesAmount = $altSalesAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getAltSalesAmount(): SearchDoubleField
+    {
+        return $this->altSalesAmount;
+    }
+
+    /**
+     * @param SearchDoubleField $altSalesNetAmount
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setAltSalesNetAmount(SearchDoubleField $altSalesNetAmount): AccountingTransactionSearchBasic
+    {
+        $this->altSalesNetAmount = $altSalesNetAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getAltSalesNetAmount(): SearchDoubleField
+    {
+        return $this->altSalesNetAmount;
+    }
+
+    /**
+     * @param SearchDoubleField $amount
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setAmount(SearchDoubleField $amount): AccountingTransactionSearchBasic
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getAmount(): SearchDoubleField
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param SearchBooleanField $bookSpecificTransaction
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setBookSpecificTransaction(SearchBooleanField $bookSpecificTransaction): AccountingTransactionSearchBasic
+    {
+        $this->bookSpecificTransaction = $bookSpecificTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getBookSpecificTransaction(): SearchBooleanField
+    {
+        return $this->bookSpecificTransaction;
+    }
+
+    /**
+     * @param SearchMultiSelectField $catchUpPeriod
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setCatchUpPeriod(SearchMultiSelectField $catchUpPeriod): AccountingTransactionSearchBasic
+    {
+        $this->catchUpPeriod = $catchUpPeriod;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCatchUpPeriod(): SearchMultiSelectField
+    {
+        return $this->catchUpPeriod;
+    }
+
+    /**
+     * @param SearchDoubleField $creditAmount
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setCreditAmount(SearchDoubleField $creditAmount): AccountingTransactionSearchBasic
+    {
+        $this->creditAmount = $creditAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getCreditAmount(): SearchDoubleField
+    {
+        return $this->creditAmount;
+    }
+
+    /**
+     * @param SearchBooleanField $customGL
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setCustomGL(SearchBooleanField $customGL): AccountingTransactionSearchBasic
+    {
+        $this->customGL = $customGL;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getCustomGL(): SearchBooleanField
+    {
+        return $this->customGL;
+    }
+
+    /**
+     * @param SearchDoubleField $debitAmount
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setDebitAmount(SearchDoubleField $debitAmount): AccountingTransactionSearchBasic
+    {
+        $this->debitAmount = $debitAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getDebitAmount(): SearchDoubleField
+    {
+        return $this->debitAmount;
+    }
+
+    /**
+     * @param SearchBooleanField $deferRevRec
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setDeferRevRec(SearchBooleanField $deferRevRec): AccountingTransactionSearchBasic
+    {
+        $this->deferRevRec = $deferRevRec;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getDeferRevRec(): SearchBooleanField
+    {
+        return $this->deferRevRec;
+    }
+
+    /**
+     * @param SearchDoubleField $exchangeRate
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setExchangeRate(SearchDoubleField $exchangeRate): AccountingTransactionSearchBasic
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getExchangeRate(): SearchDoubleField
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param SearchDoubleField $grossAmount
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setGrossAmount(SearchDoubleField $grossAmount): AccountingTransactionSearchBasic
+    {
+        $this->grossAmount = $grossAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getGrossAmount(): SearchDoubleField
+    {
+        return $this->grossAmount;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): AccountingTransactionSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): AccountingTransactionSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $multiSubsidiary
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setMultiSubsidiary(SearchBooleanField $multiSubsidiary): AccountingTransactionSearchBasic
+    {
+        $this->multiSubsidiary = $multiSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getMultiSubsidiary(): SearchBooleanField
+    {
+        return $this->multiSubsidiary;
+    }
+
+    /**
+     * @param SearchDoubleField $netAmount
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setNetAmount(SearchDoubleField $netAmount): AccountingTransactionSearchBasic
+    {
+        $this->netAmount = $netAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getNetAmount(): SearchDoubleField
+    {
+        return $this->netAmount;
+    }
+
+    /**
+     * @param SearchBooleanField $posting
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setPosting(SearchBooleanField $posting): AccountingTransactionSearchBasic
+    {
+        $this->posting = $posting;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getPosting(): SearchBooleanField
+    {
+        return $this->posting;
+    }
+
+    /**
+     * @param SearchDoubleField $quantityRevCommitted
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setQuantityRevCommitted(SearchDoubleField $quantityRevCommitted): AccountingTransactionSearchBasic
+    {
+        $this->quantityRevCommitted = $quantityRevCommitted;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getQuantityRevCommitted(): SearchDoubleField
+    {
+        return $this->quantityRevCommitted;
+    }
+
+    /**
+     * @param SearchDoubleField $recognizedRevenue
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setRecognizedRevenue(SearchDoubleField $recognizedRevenue): AccountingTransactionSearchBasic
+    {
+        $this->recognizedRevenue = $recognizedRevenue;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getRecognizedRevenue(): SearchDoubleField
+    {
+        return $this->recognizedRevenue;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $revCommitStatus
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setRevCommitStatus(SearchEnumMultiSelectField $revCommitStatus): AccountingTransactionSearchBasic
+    {
+        $this->revCommitStatus = $revCommitStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getRevCommitStatus(): SearchEnumMultiSelectField
+    {
+        return $this->revCommitStatus;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $revenueStatus
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setRevenueStatus(SearchEnumMultiSelectField $revenueStatus): AccountingTransactionSearchBasic
+    {
+        $this->revenueStatus = $revenueStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getRevenueStatus(): SearchEnumMultiSelectField
+    {
+        return $this->revenueStatus;
+    }
+
+    /**
+     * @param SearchDateField $revRecEndDate
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setRevRecEndDate(SearchDateField $revRecEndDate): AccountingTransactionSearchBasic
+    {
+        $this->revRecEndDate = $revRecEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getRevRecEndDate(): SearchDateField
+    {
+        return $this->revRecEndDate;
+    }
+
+    /**
+     * @param SearchBooleanField $revRecOnRevCommitment
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setRevRecOnRevCommitment(SearchBooleanField $revRecOnRevCommitment): AccountingTransactionSearchBasic
+    {
+        $this->revRecOnRevCommitment = $revRecOnRevCommitment;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getRevRecOnRevCommitment(): SearchBooleanField
+    {
+        return $this->revRecOnRevCommitment;
+    }
+
+    /**
+     * @param SearchDateField $revRecStartDate
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setRevRecStartDate(SearchDateField $revRecStartDate): AccountingTransactionSearchBasic
+    {
+        $this->revRecStartDate = $revRecStartDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getRevRecStartDate(): SearchDateField
+    {
+        return $this->revRecStartDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): AccountingTransactionSearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchBooleanField $tranIsVsoeBundle
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setTranIsVsoeBundle(SearchBooleanField $tranIsVsoeBundle): AccountingTransactionSearchBasic
+    {
+        $this->tranIsVsoeBundle = $tranIsVsoeBundle;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getTranIsVsoeBundle(): SearchBooleanField
+    {
+        return $this->tranIsVsoeBundle;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $type
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setType(SearchEnumMultiSelectField $type): AccountingTransactionSearchBasic
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getType(): SearchEnumMultiSelectField
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param SearchDoubleField $vsoeAllocation
+     * @return AccountingTransactionSearchBasic
+     */
+    public function setVsoeAllocation(SearchDoubleField $vsoeAllocation): AccountingTransactionSearchBasic
+    {
+        $this->vsoeAllocation = $vsoeAllocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getVsoeAllocation(): SearchDoubleField
+    {
+        return $this->vsoeAllocation;
+    }
+
 }

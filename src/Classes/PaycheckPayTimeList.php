@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckPayTimeList {
     /**
-     * @var \NetSuite\Classes\PaycheckPayTime[]
+     * @var PaycheckPayTime[]
      */
-    public $paycheckPayTime;
+    protected array $paycheckPayTime;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "paycheckPayTime" => "PaycheckPayTime[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param PaycheckPayTime[] $paycheckPayTime
+     * @return PaycheckPayTimeList
+     */
+    public function setPaycheckPayTime(PaycheckPayTime $paycheckPayTime): PaycheckPayTimeList
+    {
+        $this->paycheckPayTime[] = $paycheckPayTime;
+        return $this;
+    }
+
+    /**
+     * @return PaycheckPayTime[]
+     */
+    public function getPaycheckPayTime(): array
+    {
+        return $this->paycheckPayTime;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return PaycheckPayTimeList
+     */
+    public function setReplaceAll(bool $replaceAll): PaycheckPayTimeList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

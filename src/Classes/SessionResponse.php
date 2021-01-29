@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SessionResponse {
     /**
-     * @var \NetSuite\Classes\Status
+     * @var Status
      */
-    public $status;
+    protected Status $status;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $userId;
+    protected RecordRef $userId;
+
     /**
-     * @var \NetSuite\Classes\WsRoleList
+     * @var WsRoleList
      */
-    public $wsRoleList;
+    protected WsRoleList $wsRoleList;
+
     static $paramtypesmap = array(
         "status" => "Status",
         "userId" => "RecordRef",
         "wsRoleList" => "WsRoleList",
     );
+
+    /**
+     * @param Status $status
+     * @return SessionResponse
+     */
+    public function setStatus(Status $status): SessionResponse
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param RecordRef $userId
+     * @return SessionResponse
+     */
+    public function setUserId(RecordRef $userId): SessionResponse
+    {
+        $this->userId = $userId;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUserId(): RecordRef
+    {
+        return $this->userId;
+    }
+
+    /**
+     * @param WsRoleList $wsRoleList
+     * @return SessionResponse
+     */
+    public function setWsRoleList(WsRoleList $wsRoleList): SessionResponse
+    {
+        $this->wsRoleList = $wsRoleList;
+        return $this;
+    }
+
+    /**
+     * @return WsRoleList
+     */
+    public function getWsRoleList(): WsRoleList
+    {
+        return $this->wsRoleList;
+    }
+
 }

@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemAccountingBookDetail {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $accountingBook;
+    protected RecordRef $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $createRevenuePlansOn;
+    protected RecordRef $createRevenuePlansOn;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $revenueRecognitionRule;
+    protected RecordRef $revenueRecognitionRule;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $revRecForecastRule;
+    protected RecordRef $revRecForecastRule;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $revRecSchedule;
+    protected RecordRef $revRecSchedule;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $sameAsPrimaryRevRec;
+    protected bool $sameAsPrimaryRevRec;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $amortizationTemplate;
+    protected RecordRef $amortizationTemplate;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $sameAsPrimaryAmortization;
+    protected bool $sameAsPrimaryAmortization;
+
     static $paramtypesmap = array(
         "accountingBook" => "RecordRef",
         "createRevenuePlansOn" => "RecordRef",
@@ -62,4 +70,149 @@ class ItemAccountingBookDetail {
         "amortizationTemplate" => "RecordRef",
         "sameAsPrimaryAmortization" => "boolean",
     );
+
+    /**
+     * @param RecordRef $accountingBook
+     * @return ItemAccountingBookDetail
+     */
+    public function setAccountingBook(RecordRef $accountingBook): ItemAccountingBookDetail
+    {
+        $this->accountingBook = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccountingBook(): RecordRef
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param RecordRef $createRevenuePlansOn
+     * @return ItemAccountingBookDetail
+     */
+    public function setCreateRevenuePlansOn(RecordRef $createRevenuePlansOn): ItemAccountingBookDetail
+    {
+        $this->createRevenuePlansOn = $createRevenuePlansOn;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCreateRevenuePlansOn(): RecordRef
+    {
+        return $this->createRevenuePlansOn;
+    }
+
+    /**
+     * @param RecordRef $revenueRecognitionRule
+     * @return ItemAccountingBookDetail
+     */
+    public function setRevenueRecognitionRule(RecordRef $revenueRecognitionRule): ItemAccountingBookDetail
+    {
+        $this->revenueRecognitionRule = $revenueRecognitionRule;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRevenueRecognitionRule(): RecordRef
+    {
+        return $this->revenueRecognitionRule;
+    }
+
+    /**
+     * @param RecordRef $revRecForecastRule
+     * @return ItemAccountingBookDetail
+     */
+    public function setRevRecForecastRule(RecordRef $revRecForecastRule): ItemAccountingBookDetail
+    {
+        $this->revRecForecastRule = $revRecForecastRule;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRevRecForecastRule(): RecordRef
+    {
+        return $this->revRecForecastRule;
+    }
+
+    /**
+     * @param RecordRef $revRecSchedule
+     * @return ItemAccountingBookDetail
+     */
+    public function setRevRecSchedule(RecordRef $revRecSchedule): ItemAccountingBookDetail
+    {
+        $this->revRecSchedule = $revRecSchedule;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRevRecSchedule(): RecordRef
+    {
+        return $this->revRecSchedule;
+    }
+
+    /**
+     * @param bool $sameAsPrimaryRevRec
+     * @return ItemAccountingBookDetail
+     */
+    public function setSameAsPrimaryRevRec(bool $sameAsPrimaryRevRec): ItemAccountingBookDetail
+    {
+        $this->sameAsPrimaryRevRec = $sameAsPrimaryRevRec;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSameAsPrimaryRevRec(): bool
+    {
+        return $this->sameAsPrimaryRevRec;
+    }
+
+    /**
+     * @param RecordRef $amortizationTemplate
+     * @return ItemAccountingBookDetail
+     */
+    public function setAmortizationTemplate(RecordRef $amortizationTemplate): ItemAccountingBookDetail
+    {
+        $this->amortizationTemplate = $amortizationTemplate;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAmortizationTemplate(): RecordRef
+    {
+        return $this->amortizationTemplate;
+    }
+
+    /**
+     * @param bool $sameAsPrimaryAmortization
+     * @return ItemAccountingBookDetail
+     */
+    public function setSameAsPrimaryAmortization(bool $sameAsPrimaryAmortization): ItemAccountingBookDetail
+    {
+        $this->sameAsPrimaryAmortization = $sameAsPrimaryAmortization;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSameAsPrimaryAmortization(): bool
+    {
+        return $this->sameAsPrimaryAmortization;
+    }
+
 }

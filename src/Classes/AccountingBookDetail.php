@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingBookDetail {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $accountingBook;
+    protected RecordRef $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
+    protected RecordRef $currency;
+
     /**
      * @var float
      */
-    public $exchangeRate;
+    protected float $exchangeRate;
+
     static $paramtypesmap = array(
         "accountingBook" => "RecordRef",
         "currency" => "RecordRef",
         "exchangeRate" => "float",
     );
+
+    /**
+     * @param RecordRef $accountingBook
+     * @return AccountingBookDetail
+     */
+    public function setAccountingBook(RecordRef $accountingBook): AccountingBookDetail
+    {
+        $this->accountingBook = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccountingBook(): RecordRef
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return AccountingBookDetail
+     */
+    public function setCurrency(RecordRef $currency): AccountingBookDetail
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return AccountingBookDetail
+     */
+    public function setExchangeRate(float $exchangeRate): AccountingBookDetail
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
 }

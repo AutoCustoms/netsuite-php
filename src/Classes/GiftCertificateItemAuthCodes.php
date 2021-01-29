@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class GiftCertificateItemAuthCodes {
     /**
      * @var string
      */
-    public $authCode;
+    protected string $authCode;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $used;
+    protected bool $used;
+
     static $paramtypesmap = array(
         "authCode" => "string",
         "used" => "boolean",
     );
+
+    /**
+     * @param string $authCode
+     * @return GiftCertificateItemAuthCodes
+     */
+    public function setAuthCode(string $authCode): GiftCertificateItemAuthCodes
+    {
+        $this->authCode = $authCode;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAuthCode(): string
+    {
+        return $this->authCode;
+    }
+
+    /**
+     * @param bool $used
+     * @return GiftCertificateItemAuthCodes
+     */
+    public function setUsed(bool $used): GiftCertificateItemAuthCodes
+    {
+        $this->used = $used;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getUsed(): bool
+    {
+        return $this->used;
+    }
+
 }

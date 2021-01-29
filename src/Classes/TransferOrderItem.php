@@ -14,132 +14,162 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TransferOrderItem {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
-    /**
-     * @var float
-     */
-    public $quantityAvailable;
+    protected int $line;
+
     /**
      * @var float
      */
-    public $quantityOnHand;
+    protected float $quantityAvailable;
+
     /**
      * @var float
      */
-    public $quantityBackOrdered;
+    protected float $quantityOnHand;
+
     /**
      * @var float
      */
-    public $quantityCommitted;
+    protected float $quantityBackOrdered;
+
     /**
      * @var float
      */
-    public $quantityFulfilled;
+    protected float $quantityCommitted;
+
     /**
      * @var float
      */
-    public $quantityPacked;
+    protected float $quantityFulfilled;
+
     /**
      * @var float
      */
-    public $quantityPicked;
+    protected float $quantityPacked;
+
     /**
      * @var float
      */
-    public $quantityReceived;
+    protected float $quantityPicked;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantityReceived;
+
     /**
      * @var float
      */
-    public $rate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $units;
+    protected float $quantity;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $rate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $units;
+
+    /**
+     * @var float
+     */
+    protected float $amount;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
-     * @var \NetSuite\Classes\InventoryDetail
+     * @var InventoryDetail
      */
-    public $inventoryDetail;
+    protected InventoryDetail $inventoryDetail;
+
     /**
      * @var string
      */
-    public $serialNumbers;
+    protected string $serialNumbers;
+
     /**
-     * @var \NetSuite\Classes\TransferOrderItemCommitInventory
+     * @var TransferOrderItemCommitInventory
      */
-    public $commitInventory;
+    protected TransferOrderItemCommitInventory $commitInventory;
+
     /**
      * @var float
      */
-    public $orderPriority;
+    protected float $orderPriority;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $options;
+    protected CustomFieldList $options;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isClosed;
+    protected bool $isClosed;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
      * @var float
      */
-    public $lastPurchasePrice;
+    protected float $lastPurchasePrice;
+
     /**
      * @var float
      */
-    public $averageCost;
+    protected float $averageCost;
+
     /**
      * @var string
      */
-    public $expectedShipDate;
+    protected string $expectedShipDate;
+
     /**
      * @var string
      */
-    public $expectedReceiptDate;
+    protected string $expectedReceiptDate;
+
     /**
      * @var string
      */
-    public $requestedDate;
+    protected string $requestedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $orderAllocationStrategy;
+    protected RecordRef $orderAllocationStrategy;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "item" => "RecordRef",
         "line" => "integer",
@@ -172,4 +202,545 @@ class TransferOrderItem {
         "orderAllocationStrategy" => "RecordRef",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param RecordRef $item
+     * @return TransferOrderItem
+     */
+    public function setItem(RecordRef $item): TransferOrderItem
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param int $line
+     * @return TransferOrderItem
+     */
+    public function setLine(int $line): TransferOrderItem
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param float $quantityAvailable
+     * @return TransferOrderItem
+     */
+    public function setQuantityAvailable(float $quantityAvailable): TransferOrderItem
+    {
+        $this->quantityAvailable = $quantityAvailable;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityAvailable(): float
+    {
+        return $this->quantityAvailable;
+    }
+
+    /**
+     * @param float $quantityOnHand
+     * @return TransferOrderItem
+     */
+    public function setQuantityOnHand(float $quantityOnHand): TransferOrderItem
+    {
+        $this->quantityOnHand = $quantityOnHand;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnHand(): float
+    {
+        return $this->quantityOnHand;
+    }
+
+    /**
+     * @param float $quantityBackOrdered
+     * @return TransferOrderItem
+     */
+    public function setQuantityBackOrdered(float $quantityBackOrdered): TransferOrderItem
+    {
+        $this->quantityBackOrdered = $quantityBackOrdered;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityBackOrdered(): float
+    {
+        return $this->quantityBackOrdered;
+    }
+
+    /**
+     * @param float $quantityCommitted
+     * @return TransferOrderItem
+     */
+    public function setQuantityCommitted(float $quantityCommitted): TransferOrderItem
+    {
+        $this->quantityCommitted = $quantityCommitted;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityCommitted(): float
+    {
+        return $this->quantityCommitted;
+    }
+
+    /**
+     * @param float $quantityFulfilled
+     * @return TransferOrderItem
+     */
+    public function setQuantityFulfilled(float $quantityFulfilled): TransferOrderItem
+    {
+        $this->quantityFulfilled = $quantityFulfilled;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityFulfilled(): float
+    {
+        return $this->quantityFulfilled;
+    }
+
+    /**
+     * @param float $quantityPacked
+     * @return TransferOrderItem
+     */
+    public function setQuantityPacked(float $quantityPacked): TransferOrderItem
+    {
+        $this->quantityPacked = $quantityPacked;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityPacked(): float
+    {
+        return $this->quantityPacked;
+    }
+
+    /**
+     * @param float $quantityPicked
+     * @return TransferOrderItem
+     */
+    public function setQuantityPicked(float $quantityPicked): TransferOrderItem
+    {
+        $this->quantityPicked = $quantityPicked;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityPicked(): float
+    {
+        return $this->quantityPicked;
+    }
+
+    /**
+     * @param float $quantityReceived
+     * @return TransferOrderItem
+     */
+    public function setQuantityReceived(float $quantityReceived): TransferOrderItem
+    {
+        $this->quantityReceived = $quantityReceived;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityReceived(): float
+    {
+        return $this->quantityReceived;
+    }
+
+    /**
+     * @param float $quantity
+     * @return TransferOrderItem
+     */
+    public function setQuantity(float $quantity): TransferOrderItem
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param float $rate
+     * @return TransferOrderItem
+     */
+    public function setRate(float $rate): TransferOrderItem
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRate(): float
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param RecordRef $units
+     * @return TransferOrderItem
+     */
+    public function setUnits(RecordRef $units): TransferOrderItem
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnits(): RecordRef
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param float $amount
+     * @return TransferOrderItem
+     */
+    public function setAmount(float $amount): TransferOrderItem
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param string $description
+     * @return TransferOrderItem
+     */
+    public function setDescription(string $description): TransferOrderItem
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return TransferOrderItem
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): TransferOrderItem
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param string $serialNumbers
+     * @return TransferOrderItem
+     */
+    public function setSerialNumbers(string $serialNumbers): TransferOrderItem
+    {
+        $this->serialNumbers = $serialNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSerialNumbers(): string
+    {
+        return $this->serialNumbers;
+    }
+
+    /**
+     * @param TransferOrderItemCommitInventory $commitInventory
+     * @return TransferOrderItem
+     */
+    public function setCommitInventory(TransferOrderItemCommitInventory $commitInventory): TransferOrderItem
+    {
+        $this->commitInventory = $commitInventory;
+        return $this;
+    }
+
+    /**
+     * @return TransferOrderItemCommitInventory
+     */
+    public function getCommitInventory(): TransferOrderItemCommitInventory
+    {
+        return $this->commitInventory;
+    }
+
+    /**
+     * @param float $orderPriority
+     * @return TransferOrderItem
+     */
+    public function setOrderPriority(float $orderPriority): TransferOrderItem
+    {
+        $this->orderPriority = $orderPriority;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOrderPriority(): float
+    {
+        return $this->orderPriority;
+    }
+
+    /**
+     * @param CustomFieldList $options
+     * @return TransferOrderItem
+     */
+    public function setOptions(CustomFieldList $options): TransferOrderItem
+    {
+        $this->options = $options;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getOptions(): CustomFieldList
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param bool $isClosed
+     * @return TransferOrderItem
+     */
+    public function setIsClosed(bool $isClosed): TransferOrderItem
+    {
+        $this->isClosed = $isClosed;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsClosed(): bool
+    {
+        return $this->isClosed;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return TransferOrderItem
+     */
+    public function setDepartment(RecordRef $department): TransferOrderItem
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return TransferOrderItem
+     */
+    public function setClass(RecordRef $class): TransferOrderItem
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param float $lastPurchasePrice
+     * @return TransferOrderItem
+     */
+    public function setLastPurchasePrice(float $lastPurchasePrice): TransferOrderItem
+    {
+        $this->lastPurchasePrice = $lastPurchasePrice;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLastPurchasePrice(): float
+    {
+        return $this->lastPurchasePrice;
+    }
+
+    /**
+     * @param float $averageCost
+     * @return TransferOrderItem
+     */
+    public function setAverageCost(float $averageCost): TransferOrderItem
+    {
+        $this->averageCost = $averageCost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAverageCost(): float
+    {
+        return $this->averageCost;
+    }
+
+    /**
+     * @param string $expectedShipDate
+     * @return TransferOrderItem
+     */
+    public function setExpectedShipDate(string $expectedShipDate): TransferOrderItem
+    {
+        $this->expectedShipDate = $expectedShipDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExpectedShipDate(): string
+    {
+        return $this->expectedShipDate;
+    }
+
+    /**
+     * @param string $expectedReceiptDate
+     * @return TransferOrderItem
+     */
+    public function setExpectedReceiptDate(string $expectedReceiptDate): TransferOrderItem
+    {
+        $this->expectedReceiptDate = $expectedReceiptDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExpectedReceiptDate(): string
+    {
+        return $this->expectedReceiptDate;
+    }
+
+    /**
+     * @param string $requestedDate
+     * @return TransferOrderItem
+     */
+    public function setRequestedDate(string $requestedDate): TransferOrderItem
+    {
+        $this->requestedDate = $requestedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRequestedDate(): string
+    {
+        return $this->requestedDate;
+    }
+
+    /**
+     * @param RecordRef $orderAllocationStrategy
+     * @return TransferOrderItem
+     */
+    public function setOrderAllocationStrategy(RecordRef $orderAllocationStrategy): TransferOrderItem
+    {
+        $this->orderAllocationStrategy = $orderAllocationStrategy;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getOrderAllocationStrategy(): RecordRef
+    {
+        return $this->orderAllocationStrategy;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return TransferOrderItem
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): TransferOrderItem
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

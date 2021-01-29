@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class NonInventoryPurchaseItemHierarchyVersions {
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isIncluded;
+    protected bool $isIncluded;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $hierarchyVersion;
-    /**
-     * @var string
-     */
-    public $startDate;
+    protected RecordRef $hierarchyVersion;
+
     /**
      * @var string
      */
-    public $endDate;
+    protected string $startDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $hierarchyNode;
+    protected string $endDate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $hierarchyNode;
+
     static $paramtypesmap = array(
         "isIncluded" => "boolean",
         "hierarchyVersion" => "RecordRef",
@@ -47,4 +52,95 @@ class NonInventoryPurchaseItemHierarchyVersions {
         "endDate" => "dateTime",
         "hierarchyNode" => "RecordRef",
     );
+
+    /**
+     * @param bool $isIncluded
+     * @return NonInventoryPurchaseItemHierarchyVersions
+     */
+    public function setIsIncluded(bool $isIncluded): NonInventoryPurchaseItemHierarchyVersions
+    {
+        $this->isIncluded = $isIncluded;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsIncluded(): bool
+    {
+        return $this->isIncluded;
+    }
+
+    /**
+     * @param RecordRef $hierarchyVersion
+     * @return NonInventoryPurchaseItemHierarchyVersions
+     */
+    public function setHierarchyVersion(RecordRef $hierarchyVersion): NonInventoryPurchaseItemHierarchyVersions
+    {
+        $this->hierarchyVersion = $hierarchyVersion;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getHierarchyVersion(): RecordRef
+    {
+        return $this->hierarchyVersion;
+    }
+
+    /**
+     * @param string $startDate
+     * @return NonInventoryPurchaseItemHierarchyVersions
+     */
+    public function setStartDate(string $startDate): NonInventoryPurchaseItemHierarchyVersions
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStartDate(): string
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param string $endDate
+     * @return NonInventoryPurchaseItemHierarchyVersions
+     */
+    public function setEndDate(string $endDate): NonInventoryPurchaseItemHierarchyVersions
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndDate(): string
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param RecordRef $hierarchyNode
+     * @return NonInventoryPurchaseItemHierarchyVersions
+     */
+    public function setHierarchyNode(RecordRef $hierarchyNode): NonInventoryPurchaseItemHierarchyVersions
+    {
+        $this->hierarchyNode = $hierarchyNode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getHierarchyNode(): RecordRef
+    {
+        return $this->hierarchyNode;
+    }
+
 }

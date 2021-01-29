@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CashSaleSalesTeamList {
     /**
-     * @var \NetSuite\Classes\CashSaleSalesTeam[]
+     * @var CashSaleSalesTeam[]
      */
-    public $salesTeam;
+    protected array $salesTeam;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "salesTeam" => "CashSaleSalesTeam[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CashSaleSalesTeam[] $salesTeam
+     * @return CashSaleSalesTeamList
+     */
+    public function setSalesTeam(CashSaleSalesTeam $salesTeam): CashSaleSalesTeamList
+    {
+        $this->salesTeam[] = $salesTeam;
+        return $this;
+    }
+
+    /**
+     * @return CashSaleSalesTeam[]
+     */
+    public function getSalesTeam(): array
+    {
+        return $this->salesTeam;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CashSaleSalesTeamList
+     */
+    public function setReplaceAll(bool $replaceAll): CashSaleSalesTeamList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

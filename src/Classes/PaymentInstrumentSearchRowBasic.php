@@ -14,88 +14,107 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaymentInstrumentSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $cardBrand;
+    protected array $cardBrand;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $cardExpDate;
+    protected array $cardExpDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $cardLastFourDigits;
+    protected array $cardLastFourDigits;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $cardTokenCardBrand;
+    protected array $cardTokenCardBrand;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $cardTokenCardExpDate;
+    protected array $cardTokenCardExpDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $cardTokenExpDate;
+    protected array $cardTokenExpDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $cardTokenNameOnCard;
+    protected array $cardTokenNameOnCard;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $default;
+    protected array $default;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $entity;
+    protected array $entity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $generalTokenExpirationDate;
+    protected array $generalTokenExpirationDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $lastFourDigits;
+    protected array $lastFourDigits;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $mask;
+    protected array $mask;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $nameOnCard;
+    protected array $nameOnCard;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $paymentInstrumentStateType;
+    protected array $paymentInstrumentStateType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $paymentInstrumentType;
+    protected array $paymentInstrumentType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $paymentMethod;
+    protected array $paymentMethod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $preserveOnFile;
+    protected array $preserveOnFile;
+
     static $paramtypesmap = array(
         "cardBrand" => "SearchColumnStringField[]",
         "cardExpDate" => "SearchColumnDateField[]",
@@ -117,4 +136,347 @@ class PaymentInstrumentSearchRowBasic extends SearchRowBasic {
         "paymentMethod" => "SearchColumnSelectField[]",
         "preserveOnFile" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $cardBrand
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setCardBrand(SearchColumnStringField $cardBrand): PaymentInstrumentSearchRowBasic
+    {
+        $this->cardBrand[] = $cardBrand;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCardBrand(): array
+    {
+        return $this->cardBrand;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $cardExpDate
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setCardExpDate(SearchColumnDateField $cardExpDate): PaymentInstrumentSearchRowBasic
+    {
+        $this->cardExpDate[] = $cardExpDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCardExpDate(): array
+    {
+        return $this->cardExpDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $cardLastFourDigits
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setCardLastFourDigits(SearchColumnStringField $cardLastFourDigits): PaymentInstrumentSearchRowBasic
+    {
+        $this->cardLastFourDigits[] = $cardLastFourDigits;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCardLastFourDigits(): array
+    {
+        return $this->cardLastFourDigits;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $cardTokenCardBrand
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setCardTokenCardBrand(SearchColumnStringField $cardTokenCardBrand): PaymentInstrumentSearchRowBasic
+    {
+        $this->cardTokenCardBrand[] = $cardTokenCardBrand;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCardTokenCardBrand(): array
+    {
+        return $this->cardTokenCardBrand;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $cardTokenCardExpDate
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setCardTokenCardExpDate(SearchColumnDateField $cardTokenCardExpDate): PaymentInstrumentSearchRowBasic
+    {
+        $this->cardTokenCardExpDate[] = $cardTokenCardExpDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCardTokenCardExpDate(): array
+    {
+        return $this->cardTokenCardExpDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $cardTokenExpDate
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setCardTokenExpDate(SearchColumnDateField $cardTokenExpDate): PaymentInstrumentSearchRowBasic
+    {
+        $this->cardTokenExpDate[] = $cardTokenExpDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCardTokenExpDate(): array
+    {
+        return $this->cardTokenExpDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $cardTokenNameOnCard
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setCardTokenNameOnCard(SearchColumnStringField $cardTokenNameOnCard): PaymentInstrumentSearchRowBasic
+    {
+        $this->cardTokenNameOnCard[] = $cardTokenNameOnCard;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCardTokenNameOnCard(): array
+    {
+        return $this->cardTokenNameOnCard;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $default
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setDefault(SearchColumnStringField $default): PaymentInstrumentSearchRowBasic
+    {
+        $this->default[] = $default;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDefault(): array
+    {
+        return $this->default;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $entity
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setEntity(SearchColumnSelectField $entity): PaymentInstrumentSearchRowBasic
+    {
+        $this->entity[] = $entity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEntity(): array
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $generalTokenExpirationDate
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setGeneralTokenExpirationDate(SearchColumnDateField $generalTokenExpirationDate): PaymentInstrumentSearchRowBasic
+    {
+        $this->generalTokenExpirationDate[] = $generalTokenExpirationDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getGeneralTokenExpirationDate(): array
+    {
+        return $this->generalTokenExpirationDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): PaymentInstrumentSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $isInactive
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnStringField $isInactive): PaymentInstrumentSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $lastFourDigits
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setLastFourDigits(SearchColumnStringField $lastFourDigits): PaymentInstrumentSearchRowBasic
+    {
+        $this->lastFourDigits[] = $lastFourDigits;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLastFourDigits(): array
+    {
+        return $this->lastFourDigits;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $mask
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setMask(SearchColumnStringField $mask): PaymentInstrumentSearchRowBasic
+    {
+        $this->mask[] = $mask;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMask(): array
+    {
+        return $this->mask;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $nameOnCard
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setNameOnCard(SearchColumnStringField $nameOnCard): PaymentInstrumentSearchRowBasic
+    {
+        $this->nameOnCard[] = $nameOnCard;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getNameOnCard(): array
+    {
+        return $this->nameOnCard;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $paymentInstrumentStateType
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setPaymentInstrumentStateType(SearchColumnSelectField $paymentInstrumentStateType): PaymentInstrumentSearchRowBasic
+    {
+        $this->paymentInstrumentStateType[] = $paymentInstrumentStateType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPaymentInstrumentStateType(): array
+    {
+        return $this->paymentInstrumentStateType;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $paymentInstrumentType
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setPaymentInstrumentType(SearchColumnEnumSelectField $paymentInstrumentType): PaymentInstrumentSearchRowBasic
+    {
+        $this->paymentInstrumentType[] = $paymentInstrumentType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPaymentInstrumentType(): array
+    {
+        return $this->paymentInstrumentType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $paymentMethod
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setPaymentMethod(SearchColumnSelectField $paymentMethod): PaymentInstrumentSearchRowBasic
+    {
+        $this->paymentMethod[] = $paymentMethod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPaymentMethod(): array
+    {
+        return $this->paymentMethod;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $preserveOnFile
+     * @return PaymentInstrumentSearchRowBasic
+     */
+    public function setPreserveOnFile(SearchColumnStringField $preserveOnFile): PaymentInstrumentSearchRowBasic
+    {
+        $this->preserveOnFile[] = $preserveOnFile;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPreserveOnFile(): array
+    {
+        return $this->preserveOnFile;
+    }
+
 }

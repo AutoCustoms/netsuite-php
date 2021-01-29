@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BinTransferInventoryList {
     /**
-     * @var \NetSuite\Classes\BinTransferInventory[]
+     * @var BinTransferInventory[]
      */
-    public $inventory;
+    protected array $inventory;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "inventory" => "BinTransferInventory[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param BinTransferInventory[] $inventory
+     * @return BinTransferInventoryList
+     */
+    public function setInventory(BinTransferInventory $inventory): BinTransferInventoryList
+    {
+        $this->inventory[] = $inventory;
+        return $this;
+    }
+
+    /**
+     * @return BinTransferInventory[]
+     */
+    public function getInventory(): array
+    {
+        return $this->inventory;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return BinTransferInventoryList
+     */
+    public function setReplaceAll(bool $replaceAll): BinTransferInventoryList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

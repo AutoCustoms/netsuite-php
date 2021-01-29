@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BomRevisionSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billOfMaterials;
+    protected array $billOfMaterials;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $createdDate;
+    protected array $createdDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $effectiveEndDate;
+    protected array $effectiveEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $effectiveStartDate;
+    protected array $effectiveStartDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memo;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "billOfMaterials" => "SearchColumnSelectField[]",
         "createdDate" => "SearchColumnDateField[]",
@@ -72,4 +82,185 @@ class BomRevisionSearchRowBasic extends SearchRowBasic {
         "name" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $billOfMaterials
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setBillOfMaterials(SearchColumnSelectField $billOfMaterials): BomRevisionSearchRowBasic
+    {
+        $this->billOfMaterials[] = $billOfMaterials;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillOfMaterials(): array
+    {
+        return $this->billOfMaterials;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $createdDate
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setCreatedDate(SearchColumnDateField $createdDate): BomRevisionSearchRowBasic
+    {
+        $this->createdDate[] = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCreatedDate(): array
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $effectiveEndDate
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setEffectiveEndDate(SearchColumnDateField $effectiveEndDate): BomRevisionSearchRowBasic
+    {
+        $this->effectiveEndDate[] = $effectiveEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEffectiveEndDate(): array
+    {
+        return $this->effectiveEndDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $effectiveStartDate
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setEffectiveStartDate(SearchColumnDateField $effectiveStartDate): BomRevisionSearchRowBasic
+    {
+        $this->effectiveStartDate[] = $effectiveStartDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEffectiveStartDate(): array
+    {
+        return $this->effectiveStartDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): BomRevisionSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): BomRevisionSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): BomRevisionSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): BomRevisionSearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): BomRevisionSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return BomRevisionSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): BomRevisionSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

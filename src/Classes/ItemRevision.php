@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemRevision extends Record {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
      * @var string
      */
-    public $effectiveDate;
+    protected string $effectiveDate;
+
     /**
      * @var string
      */
-    public $obsoleteDate;
+    protected string $obsoleteDate;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $memo;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $inactive;
-    /**
-     * @var string
-     */
-    public $internalId;
+    protected bool $inactive;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "item" => "RecordRef",
         "name" => "string",
@@ -62,4 +70,149 @@ class ItemRevision extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param RecordRef $item
+     * @return ItemRevision
+     */
+    public function setItem(RecordRef $item): ItemRevision
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param string $name
+     * @return ItemRevision
+     */
+    public function setName(string $name): ItemRevision
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $effectiveDate
+     * @return ItemRevision
+     */
+    public function setEffectiveDate(string $effectiveDate): ItemRevision
+    {
+        $this->effectiveDate = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEffectiveDate(): string
+    {
+        return $this->effectiveDate;
+    }
+
+    /**
+     * @param string $obsoleteDate
+     * @return ItemRevision
+     */
+    public function setObsoleteDate(string $obsoleteDate): ItemRevision
+    {
+        $this->obsoleteDate = $obsoleteDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getObsoleteDate(): string
+    {
+        return $this->obsoleteDate;
+    }
+
+    /**
+     * @param string $memo
+     * @return ItemRevision
+     */
+    public function setMemo(string $memo): ItemRevision
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param bool $inactive
+     * @return ItemRevision
+     */
+    public function setInactive(bool $inactive): ItemRevision
+    {
+        $this->inactive = $inactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getInactive(): bool
+    {
+        return $this->inactive;
+    }
+
+    /**
+     * @param string $internalId
+     * @return ItemRevision
+     */
+    public function setInternalId(string $internalId): ItemRevision
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return ItemRevision
+     */
+    public function setExternalId(string $externalId): ItemRevision
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

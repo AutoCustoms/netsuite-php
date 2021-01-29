@@ -14,92 +14,112 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FolderSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $class;
+    protected SearchMultiSelectField $class;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $department;
+    protected SearchMultiSelectField $department;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $description;
+    protected SearchStringField $description;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $group;
+    protected SearchMultiSelectField $group;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isInactive;
+    protected SearchBooleanField $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isTopLevel;
+    protected SearchBooleanField $isTopLevel;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $lastModifiedDate;
+    protected SearchDateField $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $location;
+    protected SearchMultiSelectField $location;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $name;
+    protected SearchStringField $name;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $numFiles;
+    protected SearchLongField $numFiles;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $owner;
+    protected SearchMultiSelectField $owner;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $parent;
+    protected SearchMultiSelectField $parent;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $predecessor;
+    protected SearchMultiSelectField $predecessor;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $private;
+    protected SearchBooleanField $private;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $size;
+    protected SearchLongField $size;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $subsidiary;
+
     static $paramtypesmap = array(
         "class" => "SearchMultiSelectField",
         "department" => "SearchMultiSelectField",
@@ -122,4 +142,365 @@ class FolderSearchBasic extends SearchRecordBasic {
         "size" => "SearchLongField",
         "subsidiary" => "SearchMultiSelectField",
     );
+
+    /**
+     * @param SearchMultiSelectField $class
+     * @return FolderSearchBasic
+     */
+    public function setClass(SearchMultiSelectField $class): FolderSearchBasic
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getClass(): SearchMultiSelectField
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchMultiSelectField $department
+     * @return FolderSearchBasic
+     */
+    public function setDepartment(SearchMultiSelectField $department): FolderSearchBasic
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDepartment(): SearchMultiSelectField
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchStringField $description
+     * @return FolderSearchBasic
+     */
+    public function setDescription(SearchStringField $description): FolderSearchBasic
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getDescription(): SearchStringField
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return FolderSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): FolderSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return FolderSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): FolderSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchMultiSelectField $group
+     * @return FolderSearchBasic
+     */
+    public function setGroup(SearchMultiSelectField $group): FolderSearchBasic
+    {
+        $this->group = $group;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getGroup(): SearchMultiSelectField
+    {
+        return $this->group;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return FolderSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): FolderSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return FolderSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): FolderSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isInactive
+     * @return FolderSearchBasic
+     */
+    public function setIsInactive(SearchBooleanField $isInactive): FolderSearchBasic
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsInactive(): SearchBooleanField
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchBooleanField $isTopLevel
+     * @return FolderSearchBasic
+     */
+    public function setIsTopLevel(SearchBooleanField $isTopLevel): FolderSearchBasic
+    {
+        $this->isTopLevel = $isTopLevel;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsTopLevel(): SearchBooleanField
+    {
+        return $this->isTopLevel;
+    }
+
+    /**
+     * @param SearchDateField $lastModifiedDate
+     * @return FolderSearchBasic
+     */
+    public function setLastModifiedDate(SearchDateField $lastModifiedDate): FolderSearchBasic
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getLastModifiedDate(): SearchDateField
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $location
+     * @return FolderSearchBasic
+     */
+    public function setLocation(SearchMultiSelectField $location): FolderSearchBasic
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getLocation(): SearchMultiSelectField
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchStringField $name
+     * @return FolderSearchBasic
+     */
+    public function setName(SearchStringField $name): FolderSearchBasic
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getName(): SearchStringField
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchLongField $numFiles
+     * @return FolderSearchBasic
+     */
+    public function setNumFiles(SearchLongField $numFiles): FolderSearchBasic
+    {
+        $this->numFiles = $numFiles;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getNumFiles(): SearchLongField
+    {
+        return $this->numFiles;
+    }
+
+    /**
+     * @param SearchMultiSelectField $owner
+     * @return FolderSearchBasic
+     */
+    public function setOwner(SearchMultiSelectField $owner): FolderSearchBasic
+    {
+        $this->owner = $owner;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getOwner(): SearchMultiSelectField
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param SearchMultiSelectField $parent
+     * @return FolderSearchBasic
+     */
+    public function setParent(SearchMultiSelectField $parent): FolderSearchBasic
+    {
+        $this->parent = $parent;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getParent(): SearchMultiSelectField
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param SearchMultiSelectField $predecessor
+     * @return FolderSearchBasic
+     */
+    public function setPredecessor(SearchMultiSelectField $predecessor): FolderSearchBasic
+    {
+        $this->predecessor = $predecessor;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getPredecessor(): SearchMultiSelectField
+    {
+        return $this->predecessor;
+    }
+
+    /**
+     * @param SearchBooleanField $private
+     * @return FolderSearchBasic
+     */
+    public function setPrivate(SearchBooleanField $private): FolderSearchBasic
+    {
+        $this->private = $private;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getPrivate(): SearchBooleanField
+    {
+        return $this->private;
+    }
+
+    /**
+     * @param SearchLongField $size
+     * @return FolderSearchBasic
+     */
+    public function setSize(SearchLongField $size): FolderSearchBasic
+    {
+        $this->size = $size;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getSize(): SearchLongField
+    {
+        return $this->size;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return FolderSearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): FolderSearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
 }

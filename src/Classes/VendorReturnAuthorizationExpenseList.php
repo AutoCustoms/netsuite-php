@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorReturnAuthorizationExpenseList {
     /**
-     * @var \NetSuite\Classes\VendorReturnAuthorizationExpense[]
+     * @var VendorReturnAuthorizationExpense[]
      */
-    public $expense;
+    protected array $expense;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "expense" => "VendorReturnAuthorizationExpense[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param VendorReturnAuthorizationExpense[] $expense
+     * @return VendorReturnAuthorizationExpenseList
+     */
+    public function setExpense(VendorReturnAuthorizationExpense $expense): VendorReturnAuthorizationExpenseList
+    {
+        $this->expense[] = $expense;
+        return $this;
+    }
+
+    /**
+     * @return VendorReturnAuthorizationExpense[]
+     */
+    public function getExpense(): array
+    {
+        return $this->expense;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return VendorReturnAuthorizationExpenseList
+     */
+    public function setReplaceAll(bool $replaceAll): VendorReturnAuthorizationExpenseList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomRecordTypePermissionsList {
     /**
-     * @var \NetSuite\Classes\CustomRecordTypePermissions[]
+     * @var CustomRecordTypePermissions[]
      */
-    public $permissions;
+    protected array $permissions;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "permissions" => "CustomRecordTypePermissions[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CustomRecordTypePermissions[] $permissions
+     * @return CustomRecordTypePermissionsList
+     */
+    public function setPermissions(CustomRecordTypePermissions $permissions): CustomRecordTypePermissionsList
+    {
+        $this->permissions[] = $permissions;
+        return $this;
+    }
+
+    /**
+     * @return CustomRecordTypePermissions[]
+     */
+    public function getPermissions(): array
+    {
+        return $this->permissions;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CustomRecordTypePermissionsList
+     */
+    public function setReplaceAll(bool $replaceAll): CustomRecordTypePermissionsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

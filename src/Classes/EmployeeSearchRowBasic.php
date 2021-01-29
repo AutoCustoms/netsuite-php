@@ -14,612 +14,722 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $accountNumber;
+    protected array $accountNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address;
+    protected array $address;
+
+    protected $address1;
+    protected $address2;
+    protected $address3;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address1;
+    protected array $addressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address2;
+    protected array $addressInternalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address3;
+    protected array $addressLabel;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $addressee;
+    protected array $addressPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $addressInternalId;
+    protected array $alienNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $addressLabel;
+    protected array $allocation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $addressPhone;
+    protected array $altEmail;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $alienNumber;
+    protected array $altName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $allocation;
+    protected array $altPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $altEmail;
+    protected array $approvalLimit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $altName;
+    protected array $approver;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $altPhone;
+    protected array $attention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $approvalLimit;
+    protected array $authWorkDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $approver;
+    protected array $baseWage;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchEnumMultiSelectField[]
      */
-    public $attention;
+    protected array $baseWageType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $authWorkDate;
+    protected array $billAddress;
+
+    protected $billAddress1;
+    protected $billAddress2;
+    protected $billAddress3;
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $baseWage;
+    protected array $billAddressee;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $baseWageType;
+    protected array $billAttention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress;
+    protected array $billCity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $billAddress1;
+    protected array $billCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress2;
+    protected array $billCountryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billAddress3;
+    protected array $billingClass;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddressee;
+    protected array $billPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAttention;
+    protected array $billState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billCity;
+    protected array $billZipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $billCountry;
+    protected array $birthDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $billCountryCode;
+    protected array $birthDay;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $billingClass;
+    protected array $bonusTarget;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billPhone;
+    protected array $bonusTargetComment;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $billState;
+    protected array $bonusTargetPayFrequency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $billZipCode;
+    protected array $bonusTargetType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $birthDate;
+    protected array $city;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $birthDay;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $bonusTarget;
+    protected array $comments;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $bonusTargetComment;
+    protected array $compensationCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $bonusTargetPayFrequency;
+    protected array $concurrentWebServicesUser;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $bonusTargetType;
+    protected array $country;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $city;
+    protected array $countryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $class;
+    protected array $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $comments;
+    protected array $defaultAcctCorpCardExp;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $compensationCurrency;
+    protected array $defaultExpenseReportCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $concurrentWebServicesUser;
+    protected array $defaultTaxReg;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $country;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $countryCode;
+    protected array $eligibleForCommission;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $dateCreated;
+    protected array $email;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $defaultAcctCorpCardExp;
+    protected array $employeeStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $defaultExpenseReportCurrency;
+    protected array $employeeType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $defaultTaxReg;
+    protected array $entityId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnLongField[]
      */
-    public $department;
+    protected array $entityNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $eligibleForCommission;
+    protected array $ethnicity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $email;
+    protected array $expenseLimit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $employeeStatus;
+    protected array $expenseReportCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $employeeType;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $entityId;
+    protected array $fax;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnStringField[]
      */
-    public $entityNumber;
+    protected array $firstName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $ethnicity;
+    protected array $gender;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $expenseLimit;
+    protected array $giveAccess;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $expenseReportCurrency;
+    protected array $globalSubscriptionStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $externalId;
+    protected array $hireDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $fax;
+    protected array $homePhone;
+
+    protected $i9Verified;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $firstName;
+    protected array $image;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $gender;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $giveAccess;
+    protected array $isDefaultBilling;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $globalSubscriptionStatus;
+    protected array $isDefaultShipping;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $hireDate;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $homePhone;
+    protected array $isJobManager;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $i9Verified;
+    protected array $isJobResource;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $image;
+    protected array $isSalesRep;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $internalId;
+    protected array $isSupportRep;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isDefaultBilling;
+    protected array $isTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $isDefaultShipping;
+    protected array $job;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $isInactive;
+    protected array $laborCost;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $isJobManager;
+    protected array $language;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $isJobResource;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $isSalesRep;
+    protected array $lastName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $isSupportRep;
+    protected array $lastPaidDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $isTemplate;
+    protected array $lastReviewDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $job;
+    protected array $level;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $laborCost;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $language;
+    protected array $maritalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $lastModifiedDate;
+    protected array $middleName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $lastName;
+    protected array $mobilePhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastPaidDate;
+    protected array $nextReviewDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $lastReviewDate;
+    protected array $offlineAccess;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $level;
+    protected array $payFrequency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $location;
+    protected array $permChangeDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $maritalStatus;
+    protected array $permChangeLevel;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $middleName;
+    protected array $permission;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $mobilePhone;
+    protected array $permissionChange;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $nextReviewDate;
+    protected array $phone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $offlineAccess;
+    protected array $phoneticName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $payFrequency;
+    protected array $positionTitle;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $permChangeDate;
+    protected array $primaryEarningAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $permChangeLevel;
+    protected array $primaryEarningItem;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $permission;
+    protected array $primaryEarningType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $permissionChange;
+    protected array $purchaseOrderApprovalLimit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $phone;
+    protected array $purchaseOrderApprover;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $phoneticName;
+    protected array $purchaseOrderLimit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $positionTitle;
+    protected array $releaseDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $primaryEarningAmount;
+    protected array $residentStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $primaryEarningItem;
+    protected array $role;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $primaryEarningType;
+    protected array $roleChange;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $purchaseOrderApprovalLimit;
+    protected array $roleChangeAction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $purchaseOrderApprover;
+    protected array $roleChangeDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $purchaseOrderLimit;
+    protected array $salesRole;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $releaseDate;
+    protected array $salutation;
+
+    protected $shipAddress1;
+    protected $shipAddress2;
+    protected $shipAddress3;
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $residentStatus;
+    protected array $shipAddressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $role;
+    protected array $shipAttention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $roleChange;
+    protected array $shipCity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $roleChangeAction;
+    protected array $shipCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $roleChangeDate;
+    protected array $shipCountryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $salesRole;
+    protected array $shipPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $salutation;
+    protected array $shipState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress1;
+    protected array $shipZip;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress2;
+    protected array $socialSecurityNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $shipAddress3;
+    protected array $startDateTimeOffCalc;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $shipAddressee;
+    protected array $state;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipAttention;
+    protected array $subscription;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $shipCity;
+    protected array $subscriptionDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $shipCountry;
+    protected array $subscriptionStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipCountryCode;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipPhone;
+    protected array $supervisor;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $shipState;
+    protected array $targetUtilization;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $shipZip;
+    protected array $terminationCategory;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $socialSecurityNumber;
+    protected array $terminationDetails;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $startDateTimeOffCalc;
+    protected array $terminationReason;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $state;
+    protected array $terminationRegretted;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subscription;
+    protected array $timeApprover;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $subscriptionDate;
+    protected array $timeOffPlan;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $subscriptionStatus;
+    protected array $title;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $subsidiary;
+    protected array $usePerquest;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $supervisor;
+    protected array $useTimeData;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $targetUtilization;
+    protected array $visaExpDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $terminationCategory;
+    protected array $visaType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $terminationDetails;
+    protected array $workCalendar;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $terminationReason;
+    protected array $workplace;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $terminationRegretted;
+    protected array $zipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnCustomFieldList
      */
-    public $timeApprover;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $timeOffPlan;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $title;
-    /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
-     */
-    public $usePerquest;
-    /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
-     */
-    public $useTimeData;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
-     */
-    public $visaExpDate;
-    /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $visaType;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $workCalendar;
-    /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $workplace;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $zipCode;
-    /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "accountNumber" => "SearchColumnStringField[]",
         "address" => "SearchColumnStringField[]",
@@ -772,4 +882,2525 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
         "zipCode" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnStringField[] $accountNumber
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAccountNumber(SearchColumnStringField $accountNumber): EmployeeSearchRowBasic
+    {
+        $this->accountNumber[] = $accountNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAccountNumber(): array
+    {
+        return $this->accountNumber;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $address
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAddress(SearchColumnStringField $address): EmployeeSearchRowBasic
+    {
+        $this->address[] = $address;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddress(): array
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressee
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAddressee(SearchColumnStringField $addressee): EmployeeSearchRowBasic
+    {
+        $this->addressee[] = $addressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressee(): array
+    {
+        return $this->addressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressInternalId
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAddressInternalId(SearchColumnStringField $addressInternalId): EmployeeSearchRowBasic
+    {
+        $this->addressInternalId[] = $addressInternalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressInternalId(): array
+    {
+        return $this->addressInternalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressLabel
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAddressLabel(SearchColumnStringField $addressLabel): EmployeeSearchRowBasic
+    {
+        $this->addressLabel[] = $addressLabel;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressLabel(): array
+    {
+        return $this->addressLabel;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressPhone
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAddressPhone(SearchColumnStringField $addressPhone): EmployeeSearchRowBasic
+    {
+        $this->addressPhone[] = $addressPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressPhone(): array
+    {
+        return $this->addressPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $alienNumber
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAlienNumber(SearchColumnStringField $alienNumber): EmployeeSearchRowBasic
+    {
+        $this->alienNumber[] = $alienNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAlienNumber(): array
+    {
+        return $this->alienNumber;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $allocation
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAllocation(SearchColumnDoubleField $allocation): EmployeeSearchRowBasic
+    {
+        $this->allocation[] = $allocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAllocation(): array
+    {
+        return $this->allocation;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altEmail
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAltEmail(SearchColumnStringField $altEmail): EmployeeSearchRowBasic
+    {
+        $this->altEmail[] = $altEmail;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltEmail(): array
+    {
+        return $this->altEmail;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altName
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAltName(SearchColumnStringField $altName): EmployeeSearchRowBasic
+    {
+        $this->altName[] = $altName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltName(): array
+    {
+        return $this->altName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altPhone
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAltPhone(SearchColumnStringField $altPhone): EmployeeSearchRowBasic
+    {
+        $this->altPhone[] = $altPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltPhone(): array
+    {
+        return $this->altPhone;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $approvalLimit
+     * @return EmployeeSearchRowBasic
+     */
+    public function setApprovalLimit(SearchColumnDoubleField $approvalLimit): EmployeeSearchRowBasic
+    {
+        $this->approvalLimit[] = $approvalLimit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getApprovalLimit(): array
+    {
+        return $this->approvalLimit;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $approver
+     * @return EmployeeSearchRowBasic
+     */
+    public function setApprover(SearchColumnSelectField $approver): EmployeeSearchRowBasic
+    {
+        $this->approver[] = $approver;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getApprover(): array
+    {
+        return $this->approver;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $attention
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAttention(SearchColumnStringField $attention): EmployeeSearchRowBasic
+    {
+        $this->attention[] = $attention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAttention(): array
+    {
+        return $this->attention;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $authWorkDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setAuthWorkDate(SearchColumnDateField $authWorkDate): EmployeeSearchRowBasic
+    {
+        $this->authWorkDate[] = $authWorkDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getAuthWorkDate(): array
+    {
+        return $this->authWorkDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $baseWage
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBaseWage(SearchColumnDoubleField $baseWage): EmployeeSearchRowBasic
+    {
+        $this->baseWage[] = $baseWage;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getBaseWage(): array
+    {
+        return $this->baseWage;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField[] $baseWageType
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBaseWageType(SearchEnumMultiSelectField $baseWageType): EmployeeSearchRowBasic
+    {
+        $this->baseWageType[] = $baseWageType;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField[]
+     */
+    public function getBaseWageType(): array
+    {
+        return $this->baseWageType;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAddress
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillAddress(SearchColumnStringField $billAddress): EmployeeSearchRowBasic
+    {
+        $this->billAddress[] = $billAddress;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAddress(): array
+    {
+        return $this->billAddress;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAddressee
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillAddressee(SearchColumnStringField $billAddressee): EmployeeSearchRowBasic
+    {
+        $this->billAddressee[] = $billAddressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAddressee(): array
+    {
+        return $this->billAddressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAttention
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillAttention(SearchColumnStringField $billAttention): EmployeeSearchRowBasic
+    {
+        $this->billAttention[] = $billAttention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAttention(): array
+    {
+        return $this->billAttention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billCity
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillCity(SearchColumnStringField $billCity): EmployeeSearchRowBasic
+    {
+        $this->billCity[] = $billCity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillCity(): array
+    {
+        return $this->billCity;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $billCountry
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillCountry(SearchColumnEnumSelectField $billCountry): EmployeeSearchRowBasic
+    {
+        $this->billCountry[] = $billCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getBillCountry(): array
+    {
+        return $this->billCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billCountryCode
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillCountryCode(SearchColumnStringField $billCountryCode): EmployeeSearchRowBasic
+    {
+        $this->billCountryCode[] = $billCountryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillCountryCode(): array
+    {
+        return $this->billCountryCode;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $billingClass
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillingClass(SearchColumnSelectField $billingClass): EmployeeSearchRowBasic
+    {
+        $this->billingClass[] = $billingClass;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillingClass(): array
+    {
+        return $this->billingClass;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billPhone
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillPhone(SearchColumnStringField $billPhone): EmployeeSearchRowBasic
+    {
+        $this->billPhone[] = $billPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillPhone(): array
+    {
+        return $this->billPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billState
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillState(SearchColumnStringField $billState): EmployeeSearchRowBasic
+    {
+        $this->billState[] = $billState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillState(): array
+    {
+        return $this->billState;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billZipCode
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBillZipCode(SearchColumnStringField $billZipCode): EmployeeSearchRowBasic
+    {
+        $this->billZipCode[] = $billZipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillZipCode(): array
+    {
+        return $this->billZipCode;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $birthDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBirthDate(SearchColumnDateField $birthDate): EmployeeSearchRowBasic
+    {
+        $this->birthDate[] = $birthDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getBirthDate(): array
+    {
+        return $this->birthDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $birthDay
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBirthDay(SearchColumnDateField $birthDay): EmployeeSearchRowBasic
+    {
+        $this->birthDay[] = $birthDay;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getBirthDay(): array
+    {
+        return $this->birthDay;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $bonusTarget
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBonusTarget(SearchColumnDoubleField $bonusTarget): EmployeeSearchRowBasic
+    {
+        $this->bonusTarget[] = $bonusTarget;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getBonusTarget(): array
+    {
+        return $this->bonusTarget;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $bonusTargetComment
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBonusTargetComment(SearchColumnStringField $bonusTargetComment): EmployeeSearchRowBasic
+    {
+        $this->bonusTargetComment[] = $bonusTargetComment;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBonusTargetComment(): array
+    {
+        return $this->bonusTargetComment;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $bonusTargetPayFrequency
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBonusTargetPayFrequency(SearchColumnEnumSelectField $bonusTargetPayFrequency): EmployeeSearchRowBasic
+    {
+        $this->bonusTargetPayFrequency[] = $bonusTargetPayFrequency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getBonusTargetPayFrequency(): array
+    {
+        return $this->bonusTargetPayFrequency;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $bonusTargetType
+     * @return EmployeeSearchRowBasic
+     */
+    public function setBonusTargetType(SearchColumnEnumSelectField $bonusTargetType): EmployeeSearchRowBasic
+    {
+        $this->bonusTargetType[] = $bonusTargetType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getBonusTargetType(): array
+    {
+        return $this->bonusTargetType;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $city
+     * @return EmployeeSearchRowBasic
+     */
+    public function setCity(SearchColumnStringField $city): EmployeeSearchRowBasic
+    {
+        $this->city[] = $city;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCity(): array
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $class
+     * @return EmployeeSearchRowBasic
+     */
+    public function setClass(SearchColumnSelectField $class): EmployeeSearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $comments
+     * @return EmployeeSearchRowBasic
+     */
+    public function setComments(SearchColumnStringField $comments): EmployeeSearchRowBasic
+    {
+        $this->comments[] = $comments;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getComments(): array
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $compensationCurrency
+     * @return EmployeeSearchRowBasic
+     */
+    public function setCompensationCurrency(SearchColumnEnumSelectField $compensationCurrency): EmployeeSearchRowBasic
+    {
+        $this->compensationCurrency[] = $compensationCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCompensationCurrency(): array
+    {
+        return $this->compensationCurrency;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $concurrentWebServicesUser
+     * @return EmployeeSearchRowBasic
+     */
+    public function setConcurrentWebServicesUser(SearchColumnBooleanField $concurrentWebServicesUser): EmployeeSearchRowBasic
+    {
+        $this->concurrentWebServicesUser[] = $concurrentWebServicesUser;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getConcurrentWebServicesUser(): array
+    {
+        return $this->concurrentWebServicesUser;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $country
+     * @return EmployeeSearchRowBasic
+     */
+    public function setCountry(SearchColumnEnumSelectField $country): EmployeeSearchRowBasic
+    {
+        $this->country[] = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCountry(): array
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $countryCode
+     * @return EmployeeSearchRowBasic
+     */
+    public function setCountryCode(SearchColumnStringField $countryCode): EmployeeSearchRowBasic
+    {
+        $this->countryCode[] = $countryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCountryCode(): array
+    {
+        return $this->countryCode;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateCreated
+     * @return EmployeeSearchRowBasic
+     */
+    public function setDateCreated(SearchColumnDateField $dateCreated): EmployeeSearchRowBasic
+    {
+        $this->dateCreated[] = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateCreated(): array
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $defaultAcctCorpCardExp
+     * @return EmployeeSearchRowBasic
+     */
+    public function setDefaultAcctCorpCardExp(SearchColumnSelectField $defaultAcctCorpCardExp): EmployeeSearchRowBasic
+    {
+        $this->defaultAcctCorpCardExp[] = $defaultAcctCorpCardExp;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDefaultAcctCorpCardExp(): array
+    {
+        return $this->defaultAcctCorpCardExp;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $defaultExpenseReportCurrency
+     * @return EmployeeSearchRowBasic
+     */
+    public function setDefaultExpenseReportCurrency(SearchColumnSelectField $defaultExpenseReportCurrency): EmployeeSearchRowBasic
+    {
+        $this->defaultExpenseReportCurrency[] = $defaultExpenseReportCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDefaultExpenseReportCurrency(): array
+    {
+        return $this->defaultExpenseReportCurrency;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $defaultTaxReg
+     * @return EmployeeSearchRowBasic
+     */
+    public function setDefaultTaxReg(SearchColumnStringField $defaultTaxReg): EmployeeSearchRowBasic
+    {
+        $this->defaultTaxReg[] = $defaultTaxReg;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDefaultTaxReg(): array
+    {
+        return $this->defaultTaxReg;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $department
+     * @return EmployeeSearchRowBasic
+     */
+    public function setDepartment(SearchColumnSelectField $department): EmployeeSearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $eligibleForCommission
+     * @return EmployeeSearchRowBasic
+     */
+    public function setEligibleForCommission(SearchColumnBooleanField $eligibleForCommission): EmployeeSearchRowBasic
+    {
+        $this->eligibleForCommission[] = $eligibleForCommission;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getEligibleForCommission(): array
+    {
+        return $this->eligibleForCommission;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $email
+     * @return EmployeeSearchRowBasic
+     */
+    public function setEmail(SearchColumnStringField $email): EmployeeSearchRowBasic
+    {
+        $this->email[] = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEmail(): array
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $employeeStatus
+     * @return EmployeeSearchRowBasic
+     */
+    public function setEmployeeStatus(SearchColumnSelectField $employeeStatus): EmployeeSearchRowBasic
+    {
+        $this->employeeStatus[] = $employeeStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEmployeeStatus(): array
+    {
+        return $this->employeeStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $employeeType
+     * @return EmployeeSearchRowBasic
+     */
+    public function setEmployeeType(SearchColumnSelectField $employeeType): EmployeeSearchRowBasic
+    {
+        $this->employeeType[] = $employeeType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEmployeeType(): array
+    {
+        return $this->employeeType;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $entityId
+     * @return EmployeeSearchRowBasic
+     */
+    public function setEntityId(SearchColumnStringField $entityId): EmployeeSearchRowBasic
+    {
+        $this->entityId[] = $entityId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEntityId(): array
+    {
+        return $this->entityId;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $entityNumber
+     * @return EmployeeSearchRowBasic
+     */
+    public function setEntityNumber(SearchColumnLongField $entityNumber): EmployeeSearchRowBasic
+    {
+        $this->entityNumber[] = $entityNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getEntityNumber(): array
+    {
+        return $this->entityNumber;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $ethnicity
+     * @return EmployeeSearchRowBasic
+     */
+    public function setEthnicity(SearchColumnSelectField $ethnicity): EmployeeSearchRowBasic
+    {
+        $this->ethnicity[] = $ethnicity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEthnicity(): array
+    {
+        return $this->ethnicity;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $expenseLimit
+     * @return EmployeeSearchRowBasic
+     */
+    public function setExpenseLimit(SearchColumnDoubleField $expenseLimit): EmployeeSearchRowBasic
+    {
+        $this->expenseLimit[] = $expenseLimit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getExpenseLimit(): array
+    {
+        return $this->expenseLimit;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $expenseReportCurrency
+     * @return EmployeeSearchRowBasic
+     */
+    public function setExpenseReportCurrency(SearchColumnSelectField $expenseReportCurrency): EmployeeSearchRowBasic
+    {
+        $this->expenseReportCurrency[] = $expenseReportCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExpenseReportCurrency(): array
+    {
+        return $this->expenseReportCurrency;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return EmployeeSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): EmployeeSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $fax
+     * @return EmployeeSearchRowBasic
+     */
+    public function setFax(SearchColumnStringField $fax): EmployeeSearchRowBasic
+    {
+        $this->fax[] = $fax;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFax(): array
+    {
+        return $this->fax;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $firstName
+     * @return EmployeeSearchRowBasic
+     */
+    public function setFirstName(SearchColumnStringField $firstName): EmployeeSearchRowBasic
+    {
+        $this->firstName[] = $firstName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFirstName(): array
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $gender
+     * @return EmployeeSearchRowBasic
+     */
+    public function setGender(SearchColumnEnumSelectField $gender): EmployeeSearchRowBasic
+    {
+        $this->gender[] = $gender;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getGender(): array
+    {
+        return $this->gender;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $giveAccess
+     * @return EmployeeSearchRowBasic
+     */
+    public function setGiveAccess(SearchColumnBooleanField $giveAccess): EmployeeSearchRowBasic
+    {
+        $this->giveAccess[] = $giveAccess;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getGiveAccess(): array
+    {
+        return $this->giveAccess;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $globalSubscriptionStatus
+     * @return EmployeeSearchRowBasic
+     */
+    public function setGlobalSubscriptionStatus(SearchColumnEnumSelectField $globalSubscriptionStatus): EmployeeSearchRowBasic
+    {
+        $this->globalSubscriptionStatus[] = $globalSubscriptionStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getGlobalSubscriptionStatus(): array
+    {
+        return $this->globalSubscriptionStatus;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $hireDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setHireDate(SearchColumnDateField $hireDate): EmployeeSearchRowBasic
+    {
+        $this->hireDate[] = $hireDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getHireDate(): array
+    {
+        return $this->hireDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $homePhone
+     * @return EmployeeSearchRowBasic
+     */
+    public function setHomePhone(SearchColumnStringField $homePhone): EmployeeSearchRowBasic
+    {
+        $this->homePhone[] = $homePhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getHomePhone(): array
+    {
+        return $this->homePhone;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $image
+     * @return EmployeeSearchRowBasic
+     */
+    public function setImage(SearchColumnSelectField $image): EmployeeSearchRowBasic
+    {
+        $this->image[] = $image;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getImage(): array
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return EmployeeSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): EmployeeSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDefaultBilling
+     * @return EmployeeSearchRowBasic
+     */
+    public function setIsDefaultBilling(SearchColumnBooleanField $isDefaultBilling): EmployeeSearchRowBasic
+    {
+        $this->isDefaultBilling[] = $isDefaultBilling;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDefaultBilling(): array
+    {
+        return $this->isDefaultBilling;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDefaultShipping
+     * @return EmployeeSearchRowBasic
+     */
+    public function setIsDefaultShipping(SearchColumnBooleanField $isDefaultShipping): EmployeeSearchRowBasic
+    {
+        $this->isDefaultShipping[] = $isDefaultShipping;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDefaultShipping(): array
+    {
+        return $this->isDefaultShipping;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return EmployeeSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): EmployeeSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isJobManager
+     * @return EmployeeSearchRowBasic
+     */
+    public function setIsJobManager(SearchColumnBooleanField $isJobManager): EmployeeSearchRowBasic
+    {
+        $this->isJobManager[] = $isJobManager;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsJobManager(): array
+    {
+        return $this->isJobManager;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isJobResource
+     * @return EmployeeSearchRowBasic
+     */
+    public function setIsJobResource(SearchColumnBooleanField $isJobResource): EmployeeSearchRowBasic
+    {
+        $this->isJobResource[] = $isJobResource;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsJobResource(): array
+    {
+        return $this->isJobResource;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isSalesRep
+     * @return EmployeeSearchRowBasic
+     */
+    public function setIsSalesRep(SearchColumnBooleanField $isSalesRep): EmployeeSearchRowBasic
+    {
+        $this->isSalesRep[] = $isSalesRep;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsSalesRep(): array
+    {
+        return $this->isSalesRep;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isSupportRep
+     * @return EmployeeSearchRowBasic
+     */
+    public function setIsSupportRep(SearchColumnBooleanField $isSupportRep): EmployeeSearchRowBasic
+    {
+        $this->isSupportRep[] = $isSupportRep;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsSupportRep(): array
+    {
+        return $this->isSupportRep;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isTemplate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setIsTemplate(SearchColumnBooleanField $isTemplate): EmployeeSearchRowBasic
+    {
+        $this->isTemplate[] = $isTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsTemplate(): array
+    {
+        return $this->isTemplate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $job
+     * @return EmployeeSearchRowBasic
+     */
+    public function setJob(SearchColumnSelectField $job): EmployeeSearchRowBasic
+    {
+        $this->job[] = $job;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getJob(): array
+    {
+        return $this->job;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $laborCost
+     * @return EmployeeSearchRowBasic
+     */
+    public function setLaborCost(SearchColumnDoubleField $laborCost): EmployeeSearchRowBasic
+    {
+        $this->laborCost[] = $laborCost;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getLaborCost(): array
+    {
+        return $this->laborCost;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $language
+     * @return EmployeeSearchRowBasic
+     */
+    public function setLanguage(SearchColumnEnumSelectField $language): EmployeeSearchRowBasic
+    {
+        $this->language[] = $language;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getLanguage(): array
+    {
+        return $this->language;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): EmployeeSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $lastName
+     * @return EmployeeSearchRowBasic
+     */
+    public function setLastName(SearchColumnStringField $lastName): EmployeeSearchRowBasic
+    {
+        $this->lastName[] = $lastName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLastName(): array
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastPaidDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setLastPaidDate(SearchColumnDateField $lastPaidDate): EmployeeSearchRowBasic
+    {
+        $this->lastPaidDate[] = $lastPaidDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastPaidDate(): array
+    {
+        return $this->lastPaidDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastReviewDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setLastReviewDate(SearchColumnDateField $lastReviewDate): EmployeeSearchRowBasic
+    {
+        $this->lastReviewDate[] = $lastReviewDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastReviewDate(): array
+    {
+        return $this->lastReviewDate;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $level
+     * @return EmployeeSearchRowBasic
+     */
+    public function setLevel(SearchColumnEnumSelectField $level): EmployeeSearchRowBasic
+    {
+        $this->level[] = $level;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getLevel(): array
+    {
+        return $this->level;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return EmployeeSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): EmployeeSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $maritalStatus
+     * @return EmployeeSearchRowBasic
+     */
+    public function setMaritalStatus(SearchColumnSelectField $maritalStatus): EmployeeSearchRowBasic
+    {
+        $this->maritalStatus[] = $maritalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getMaritalStatus(): array
+    {
+        return $this->maritalStatus;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $middleName
+     * @return EmployeeSearchRowBasic
+     */
+    public function setMiddleName(SearchColumnStringField $middleName): EmployeeSearchRowBasic
+    {
+        $this->middleName[] = $middleName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMiddleName(): array
+    {
+        return $this->middleName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $mobilePhone
+     * @return EmployeeSearchRowBasic
+     */
+    public function setMobilePhone(SearchColumnStringField $mobilePhone): EmployeeSearchRowBasic
+    {
+        $this->mobilePhone[] = $mobilePhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMobilePhone(): array
+    {
+        return $this->mobilePhone;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $nextReviewDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setNextReviewDate(SearchColumnDateField $nextReviewDate): EmployeeSearchRowBasic
+    {
+        $this->nextReviewDate[] = $nextReviewDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getNextReviewDate(): array
+    {
+        return $this->nextReviewDate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $offlineAccess
+     * @return EmployeeSearchRowBasic
+     */
+    public function setOfflineAccess(SearchColumnBooleanField $offlineAccess): EmployeeSearchRowBasic
+    {
+        $this->offlineAccess[] = $offlineAccess;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getOfflineAccess(): array
+    {
+        return $this->offlineAccess;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $payFrequency
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPayFrequency(SearchColumnEnumSelectField $payFrequency): EmployeeSearchRowBasic
+    {
+        $this->payFrequency[] = $payFrequency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPayFrequency(): array
+    {
+        return $this->payFrequency;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $permChangeDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPermChangeDate(SearchColumnDateField $permChangeDate): EmployeeSearchRowBasic
+    {
+        $this->permChangeDate[] = $permChangeDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getPermChangeDate(): array
+    {
+        return $this->permChangeDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $permChangeLevel
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPermChangeLevel(SearchColumnStringField $permChangeLevel): EmployeeSearchRowBasic
+    {
+        $this->permChangeLevel[] = $permChangeLevel;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPermChangeLevel(): array
+    {
+        return $this->permChangeLevel;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $permission
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPermission(SearchColumnEnumSelectField $permission): EmployeeSearchRowBasic
+    {
+        $this->permission[] = $permission;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPermission(): array
+    {
+        return $this->permission;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $permissionChange
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPermissionChange(SearchColumnEnumSelectField $permissionChange): EmployeeSearchRowBasic
+    {
+        $this->permissionChange[] = $permissionChange;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPermissionChange(): array
+    {
+        return $this->permissionChange;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $phone
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPhone(SearchColumnStringField $phone): EmployeeSearchRowBasic
+    {
+        $this->phone[] = $phone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPhone(): array
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $phoneticName
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPhoneticName(SearchColumnStringField $phoneticName): EmployeeSearchRowBasic
+    {
+        $this->phoneticName[] = $phoneticName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPhoneticName(): array
+    {
+        return $this->phoneticName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $positionTitle
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPositionTitle(SearchColumnStringField $positionTitle): EmployeeSearchRowBasic
+    {
+        $this->positionTitle[] = $positionTitle;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPositionTitle(): array
+    {
+        return $this->positionTitle;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $primaryEarningAmount
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPrimaryEarningAmount(SearchColumnDoubleField $primaryEarningAmount): EmployeeSearchRowBasic
+    {
+        $this->primaryEarningAmount[] = $primaryEarningAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPrimaryEarningAmount(): array
+    {
+        return $this->primaryEarningAmount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $primaryEarningItem
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPrimaryEarningItem(SearchColumnStringField $primaryEarningItem): EmployeeSearchRowBasic
+    {
+        $this->primaryEarningItem[] = $primaryEarningItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPrimaryEarningItem(): array
+    {
+        return $this->primaryEarningItem;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $primaryEarningType
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPrimaryEarningType(SearchColumnStringField $primaryEarningType): EmployeeSearchRowBasic
+    {
+        $this->primaryEarningType[] = $primaryEarningType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPrimaryEarningType(): array
+    {
+        return $this->primaryEarningType;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $purchaseOrderApprovalLimit
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPurchaseOrderApprovalLimit(SearchColumnDoubleField $purchaseOrderApprovalLimit): EmployeeSearchRowBasic
+    {
+        $this->purchaseOrderApprovalLimit[] = $purchaseOrderApprovalLimit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPurchaseOrderApprovalLimit(): array
+    {
+        return $this->purchaseOrderApprovalLimit;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $purchaseOrderApprover
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPurchaseOrderApprover(SearchColumnSelectField $purchaseOrderApprover): EmployeeSearchRowBasic
+    {
+        $this->purchaseOrderApprover[] = $purchaseOrderApprover;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPurchaseOrderApprover(): array
+    {
+        return $this->purchaseOrderApprover;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $purchaseOrderLimit
+     * @return EmployeeSearchRowBasic
+     */
+    public function setPurchaseOrderLimit(SearchColumnDoubleField $purchaseOrderLimit): EmployeeSearchRowBasic
+    {
+        $this->purchaseOrderLimit[] = $purchaseOrderLimit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPurchaseOrderLimit(): array
+    {
+        return $this->purchaseOrderLimit;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $releaseDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setReleaseDate(SearchColumnDateField $releaseDate): EmployeeSearchRowBasic
+    {
+        $this->releaseDate[] = $releaseDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getReleaseDate(): array
+    {
+        return $this->releaseDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $residentStatus
+     * @return EmployeeSearchRowBasic
+     */
+    public function setResidentStatus(SearchColumnSelectField $residentStatus): EmployeeSearchRowBasic
+    {
+        $this->residentStatus[] = $residentStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getResidentStatus(): array
+    {
+        return $this->residentStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $role
+     * @return EmployeeSearchRowBasic
+     */
+    public function setRole(SearchColumnSelectField $role): EmployeeSearchRowBasic
+    {
+        $this->role[] = $role;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getRole(): array
+    {
+        return $this->role;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $roleChange
+     * @return EmployeeSearchRowBasic
+     */
+    public function setRoleChange(SearchColumnStringField $roleChange): EmployeeSearchRowBasic
+    {
+        $this->roleChange[] = $roleChange;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRoleChange(): array
+    {
+        return $this->roleChange;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $roleChangeAction
+     * @return EmployeeSearchRowBasic
+     */
+    public function setRoleChangeAction(SearchColumnStringField $roleChangeAction): EmployeeSearchRowBasic
+    {
+        $this->roleChangeAction[] = $roleChangeAction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRoleChangeAction(): array
+    {
+        return $this->roleChangeAction;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $roleChangeDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setRoleChangeDate(SearchColumnDateField $roleChangeDate): EmployeeSearchRowBasic
+    {
+        $this->roleChangeDate[] = $roleChangeDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getRoleChangeDate(): array
+    {
+        return $this->roleChangeDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $salesRole
+     * @return EmployeeSearchRowBasic
+     */
+    public function setSalesRole(SearchColumnSelectField $salesRole): EmployeeSearchRowBasic
+    {
+        $this->salesRole[] = $salesRole;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSalesRole(): array
+    {
+        return $this->salesRole;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $salutation
+     * @return EmployeeSearchRowBasic
+     */
+    public function setSalutation(SearchColumnStringField $salutation): EmployeeSearchRowBasic
+    {
+        $this->salutation[] = $salutation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSalutation(): array
+    {
+        return $this->salutation;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAddressee
+     * @return EmployeeSearchRowBasic
+     */
+    public function setShipAddressee(SearchColumnStringField $shipAddressee): EmployeeSearchRowBasic
+    {
+        $this->shipAddressee[] = $shipAddressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAddressee(): array
+    {
+        return $this->shipAddressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAttention
+     * @return EmployeeSearchRowBasic
+     */
+    public function setShipAttention(SearchColumnStringField $shipAttention): EmployeeSearchRowBasic
+    {
+        $this->shipAttention[] = $shipAttention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAttention(): array
+    {
+        return $this->shipAttention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipCity
+     * @return EmployeeSearchRowBasic
+     */
+    public function setShipCity(SearchColumnStringField $shipCity): EmployeeSearchRowBasic
+    {
+        $this->shipCity[] = $shipCity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipCity(): array
+    {
+        return $this->shipCity;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $shipCountry
+     * @return EmployeeSearchRowBasic
+     */
+    public function setShipCountry(SearchColumnEnumSelectField $shipCountry): EmployeeSearchRowBasic
+    {
+        $this->shipCountry[] = $shipCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getShipCountry(): array
+    {
+        return $this->shipCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipCountryCode
+     * @return EmployeeSearchRowBasic
+     */
+    public function setShipCountryCode(SearchColumnStringField $shipCountryCode): EmployeeSearchRowBasic
+    {
+        $this->shipCountryCode[] = $shipCountryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipCountryCode(): array
+    {
+        return $this->shipCountryCode;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipPhone
+     * @return EmployeeSearchRowBasic
+     */
+    public function setShipPhone(SearchColumnStringField $shipPhone): EmployeeSearchRowBasic
+    {
+        $this->shipPhone[] = $shipPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipPhone(): array
+    {
+        return $this->shipPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipState
+     * @return EmployeeSearchRowBasic
+     */
+    public function setShipState(SearchColumnStringField $shipState): EmployeeSearchRowBasic
+    {
+        $this->shipState[] = $shipState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipState(): array
+    {
+        return $this->shipState;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipZip
+     * @return EmployeeSearchRowBasic
+     */
+    public function setShipZip(SearchColumnStringField $shipZip): EmployeeSearchRowBasic
+    {
+        $this->shipZip[] = $shipZip;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipZip(): array
+    {
+        return $this->shipZip;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $socialSecurityNumber
+     * @return EmployeeSearchRowBasic
+     */
+    public function setSocialSecurityNumber(SearchColumnStringField $socialSecurityNumber): EmployeeSearchRowBasic
+    {
+        $this->socialSecurityNumber[] = $socialSecurityNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSocialSecurityNumber(): array
+    {
+        return $this->socialSecurityNumber;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startDateTimeOffCalc
+     * @return EmployeeSearchRowBasic
+     */
+    public function setStartDateTimeOffCalc(SearchColumnDateField $startDateTimeOffCalc): EmployeeSearchRowBasic
+    {
+        $this->startDateTimeOffCalc[] = $startDateTimeOffCalc;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartDateTimeOffCalc(): array
+    {
+        return $this->startDateTimeOffCalc;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $state
+     * @return EmployeeSearchRowBasic
+     */
+    public function setState(SearchColumnEnumSelectField $state): EmployeeSearchRowBasic
+    {
+        $this->state[] = $state;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getState(): array
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subscription
+     * @return EmployeeSearchRowBasic
+     */
+    public function setSubscription(SearchColumnSelectField $subscription): EmployeeSearchRowBasic
+    {
+        $this->subscription[] = $subscription;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubscription(): array
+    {
+        return $this->subscription;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $subscriptionDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setSubscriptionDate(SearchColumnDateField $subscriptionDate): EmployeeSearchRowBasic
+    {
+        $this->subscriptionDate[] = $subscriptionDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getSubscriptionDate(): array
+    {
+        return $this->subscriptionDate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $subscriptionStatus
+     * @return EmployeeSearchRowBasic
+     */
+    public function setSubscriptionStatus(SearchColumnBooleanField $subscriptionStatus): EmployeeSearchRowBasic
+    {
+        $this->subscriptionStatus[] = $subscriptionStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getSubscriptionStatus(): array
+    {
+        return $this->subscriptionStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return EmployeeSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): EmployeeSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $supervisor
+     * @return EmployeeSearchRowBasic
+     */
+    public function setSupervisor(SearchColumnSelectField $supervisor): EmployeeSearchRowBasic
+    {
+        $this->supervisor[] = $supervisor;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSupervisor(): array
+    {
+        return $this->supervisor;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $targetUtilization
+     * @return EmployeeSearchRowBasic
+     */
+    public function setTargetUtilization(SearchColumnDoubleField $targetUtilization): EmployeeSearchRowBasic
+    {
+        $this->targetUtilization[] = $targetUtilization;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTargetUtilization(): array
+    {
+        return $this->targetUtilization;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $terminationCategory
+     * @return EmployeeSearchRowBasic
+     */
+    public function setTerminationCategory(SearchColumnEnumSelectField $terminationCategory): EmployeeSearchRowBasic
+    {
+        $this->terminationCategory[] = $terminationCategory;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getTerminationCategory(): array
+    {
+        return $this->terminationCategory;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $terminationDetails
+     * @return EmployeeSearchRowBasic
+     */
+    public function setTerminationDetails(SearchColumnStringField $terminationDetails): EmployeeSearchRowBasic
+    {
+        $this->terminationDetails[] = $terminationDetails;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTerminationDetails(): array
+    {
+        return $this->terminationDetails;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $terminationReason
+     * @return EmployeeSearchRowBasic
+     */
+    public function setTerminationReason(SearchColumnSelectField $terminationReason): EmployeeSearchRowBasic
+    {
+        $this->terminationReason[] = $terminationReason;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTerminationReason(): array
+    {
+        return $this->terminationReason;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $terminationRegretted
+     * @return EmployeeSearchRowBasic
+     */
+    public function setTerminationRegretted(SearchColumnEnumSelectField $terminationRegretted): EmployeeSearchRowBasic
+    {
+        $this->terminationRegretted[] = $terminationRegretted;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getTerminationRegretted(): array
+    {
+        return $this->terminationRegretted;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $timeApprover
+     * @return EmployeeSearchRowBasic
+     */
+    public function setTimeApprover(SearchColumnSelectField $timeApprover): EmployeeSearchRowBasic
+    {
+        $this->timeApprover[] = $timeApprover;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTimeApprover(): array
+    {
+        return $this->timeApprover;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $timeOffPlan
+     * @return EmployeeSearchRowBasic
+     */
+    public function setTimeOffPlan(SearchColumnStringField $timeOffPlan): EmployeeSearchRowBasic
+    {
+        $this->timeOffPlan[] = $timeOffPlan;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTimeOffPlan(): array
+    {
+        return $this->timeOffPlan;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $title
+     * @return EmployeeSearchRowBasic
+     */
+    public function setTitle(SearchColumnStringField $title): EmployeeSearchRowBasic
+    {
+        $this->title[] = $title;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTitle(): array
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $usePerquest
+     * @return EmployeeSearchRowBasic
+     */
+    public function setUsePerquest(SearchColumnBooleanField $usePerquest): EmployeeSearchRowBasic
+    {
+        $this->usePerquest[] = $usePerquest;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getUsePerquest(): array
+    {
+        return $this->usePerquest;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $useTimeData
+     * @return EmployeeSearchRowBasic
+     */
+    public function setUseTimeData(SearchColumnBooleanField $useTimeData): EmployeeSearchRowBasic
+    {
+        $this->useTimeData[] = $useTimeData;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getUseTimeData(): array
+    {
+        return $this->useTimeData;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $visaExpDate
+     * @return EmployeeSearchRowBasic
+     */
+    public function setVisaExpDate(SearchColumnDateField $visaExpDate): EmployeeSearchRowBasic
+    {
+        $this->visaExpDate[] = $visaExpDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getVisaExpDate(): array
+    {
+        return $this->visaExpDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $visaType
+     * @return EmployeeSearchRowBasic
+     */
+    public function setVisaType(SearchColumnSelectField $visaType): EmployeeSearchRowBasic
+    {
+        $this->visaType[] = $visaType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getVisaType(): array
+    {
+        return $this->visaType;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $workCalendar
+     * @return EmployeeSearchRowBasic
+     */
+    public function setWorkCalendar(SearchColumnStringField $workCalendar): EmployeeSearchRowBasic
+    {
+        $this->workCalendar[] = $workCalendar;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getWorkCalendar(): array
+    {
+        return $this->workCalendar;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $workplace
+     * @return EmployeeSearchRowBasic
+     */
+    public function setWorkplace(SearchColumnSelectField $workplace): EmployeeSearchRowBasic
+    {
+        $this->workplace[] = $workplace;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getWorkplace(): array
+    {
+        return $this->workplace;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $zipCode
+     * @return EmployeeSearchRowBasic
+     */
+    public function setZipCode(SearchColumnStringField $zipCode): EmployeeSearchRowBasic
+    {
+        $this->zipCode[] = $zipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getZipCode(): array
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return EmployeeSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): EmployeeSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

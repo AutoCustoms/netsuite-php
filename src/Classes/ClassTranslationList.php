@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ClassTranslationList {
     /**
-     * @var \NetSuite\Classes\ClassTranslation[]
+     * @var ClassTranslation[]
      */
-    public $classTranslation;
+    protected array $classTranslation;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "classTranslation" => "ClassTranslation[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ClassTranslation[] $classTranslation
+     * @return ClassTranslationList
+     */
+    public function setClassTranslation(ClassTranslation $classTranslation): ClassTranslationList
+    {
+        $this->classTranslation[] = $classTranslation;
+        return $this;
+    }
+
+    /**
+     * @return ClassTranslation[]
+     */
+    public function getClassTranslation(): array
+    {
+        return $this->classTranslation;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ClassTranslationList
+     */
+    public function setReplaceAll(bool $replaceAll): ClassTranslationList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

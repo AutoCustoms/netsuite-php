@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetCurrencyRateRequest {
     /**
-     * @var \NetSuite\Classes\CurrencyRateFilter
+     * @var CurrencyRateFilter
      */
-    public $currencyRateFilter;
+    protected CurrencyRateFilter $currencyRateFilter;
+
     static $paramtypesmap = array(
         "currencyRateFilter" => "CurrencyRateFilter",
     );
+
+    /**
+     * @param CurrencyRateFilter $currencyRateFilter
+     * @return GetCurrencyRateRequest
+     */
+    public function setCurrencyRateFilter(CurrencyRateFilter $currencyRateFilter): GetCurrencyRateRequest
+    {
+        $this->currencyRateFilter = $currencyRateFilter;
+        return $this;
+    }
+
+    /**
+     * @return CurrencyRateFilter
+     */
+    public function getCurrencyRateFilter(): CurrencyRateFilter
+    {
+        return $this->currencyRateFilter;
+    }
+
 }

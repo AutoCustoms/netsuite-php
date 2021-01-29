@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PriceLevelSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PriceLevelSearch
+     * @var PriceLevelSearch
      */
-    public $criteria;
+    protected PriceLevelSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\PriceLevelSearchRow
+     * @var PriceLevelSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected PriceLevelSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "PriceLevelSearch",
         "columns" => "PriceLevelSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param PriceLevelSearch $criteria
+     * @return PriceLevelSearchAdvanced
+     */
+    public function setCriteria(PriceLevelSearch $criteria): PriceLevelSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return PriceLevelSearch
+     */
+    public function getCriteria(): PriceLevelSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param PriceLevelSearchRow $columns
+     * @return PriceLevelSearchAdvanced
+     */
+    public function setColumns(PriceLevelSearchRow $columns): PriceLevelSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return PriceLevelSearchRow
+     */
+    public function getColumns(): PriceLevelSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return PriceLevelSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): PriceLevelSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return PriceLevelSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): PriceLevelSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

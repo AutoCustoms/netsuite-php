@@ -14,132 +14,150 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorCreditItem {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
      * @var string
      */
-    public $vendorName;
+    protected string $vendorName;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $orderLine;
+    protected int $orderLine;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $units;
+    protected RecordRef $units;
+
     /**
-     * @var \NetSuite\Classes\InventoryDetail
+     * @var InventoryDetail
      */
-    public $inventoryDetail;
+    protected InventoryDetail $inventoryDetail;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $serialNumbersList;
+    protected RecordRefList $serialNumbersList;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
      * @var string
      */
-    public $rate;
+    protected string $rate;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     /**
      * @var string
      */
-    public $binNumbers;
+    protected string $binNumbers;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxCode;
-    /**
-     * @var float
-     */
-    public $taxRate1;
-    /**
-     * @var float
-     */
-    public $taxRate2;
+    protected RecordRef $taxCode;
+
+    protected $taxRate1;
+    protected $taxRate2;
     /**
      * @var float
      */
-    public $grossAmt;
+    protected float $grossAmt;
+
+    protected $tax1Amt;
     /**
-     * @var float
+     * @var CustomFieldList
      */
-    public $tax1Amt;
+    protected CustomFieldList $options;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var RecordRef
      */
-    public $options;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $customer;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var bool
      */
-    public $customer;
+    protected bool $isBillable;
+
     /**
-     * @var boolean
+     * @var RecordRef
      */
-    public $isBillable;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $amortizationSched;
+    protected RecordRef $amortizationSched;
+
     /**
      * @var string
      */
-    public $amortizStartDate;
+    protected string $amortizStartDate;
+
     /**
      * @var string
      */
-    public $amortizationEndDate;
+    protected string $amortizationEndDate;
+
     /**
      * @var string
      */
-    public $amortizationResidual;
+    protected string $amortizationResidual;
+
     /**
      * @var float
      */
-    public $taxAmount;
+    protected float $taxAmount;
+
     /**
      * @var string
      */
-    public $taxDetailsReference;
+    protected string $taxDetailsReference;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "item" => "RecordRef",
         "vendorName" => "string",
@@ -172,4 +190,491 @@ class VendorCreditItem {
         "taxDetailsReference" => "string",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param RecordRef $item
+     * @return VendorCreditItem
+     */
+    public function setItem(RecordRef $item): VendorCreditItem
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param string $vendorName
+     * @return VendorCreditItem
+     */
+    public function setVendorName(string $vendorName): VendorCreditItem
+    {
+        $this->vendorName = $vendorName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVendorName(): string
+    {
+        return $this->vendorName;
+    }
+
+    /**
+     * @param int $line
+     * @return VendorCreditItem
+     */
+    public function setLine(int $line): VendorCreditItem
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param int $orderLine
+     * @return VendorCreditItem
+     */
+    public function setOrderLine(int $orderLine): VendorCreditItem
+    {
+        $this->orderLine = $orderLine;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOrderLine(): int
+    {
+        return $this->orderLine;
+    }
+
+    /**
+     * @param float $quantity
+     * @return VendorCreditItem
+     */
+    public function setQuantity(float $quantity): VendorCreditItem
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param RecordRef $units
+     * @return VendorCreditItem
+     */
+    public function setUnits(RecordRef $units): VendorCreditItem
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnits(): RecordRef
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return VendorCreditItem
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): VendorCreditItem
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param RecordRefList $serialNumbersList
+     * @return VendorCreditItem
+     */
+    public function setSerialNumbersList(RecordRefList $serialNumbersList): VendorCreditItem
+    {
+        $this->serialNumbersList = $serialNumbersList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getSerialNumbersList(): RecordRefList
+    {
+        return $this->serialNumbersList;
+    }
+
+    /**
+     * @param string $description
+     * @return VendorCreditItem
+     */
+    public function setDescription(string $description): VendorCreditItem
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $rate
+     * @return VendorCreditItem
+     */
+    public function setRate(string $rate): VendorCreditItem
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRate(): string
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param float $amount
+     * @return VendorCreditItem
+     */
+    public function setAmount(float $amount): VendorCreditItem
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param string $binNumbers
+     * @return VendorCreditItem
+     */
+    public function setBinNumbers(string $binNumbers): VendorCreditItem
+    {
+        $this->binNumbers = $binNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBinNumbers(): string
+    {
+        return $this->binNumbers;
+    }
+
+    /**
+     * @param RecordRef $taxCode
+     * @return VendorCreditItem
+     */
+    public function setTaxCode(RecordRef $taxCode): VendorCreditItem
+    {
+        $this->taxCode = $taxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxCode(): RecordRef
+    {
+        return $this->taxCode;
+    }
+
+    /**
+     * @param float $grossAmt
+     * @return VendorCreditItem
+     */
+    public function setGrossAmt(float $grossAmt): VendorCreditItem
+    {
+        $this->grossAmt = $grossAmt;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getGrossAmt(): float
+    {
+        return $this->grossAmt;
+    }
+
+    /**
+     * @param CustomFieldList $options
+     * @return VendorCreditItem
+     */
+    public function setOptions(CustomFieldList $options): VendorCreditItem
+    {
+        $this->options = $options;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getOptions(): CustomFieldList
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return VendorCreditItem
+     */
+    public function setDepartment(RecordRef $department): VendorCreditItem
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return VendorCreditItem
+     */
+    public function setClass(RecordRef $class): VendorCreditItem
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return VendorCreditItem
+     */
+    public function setLocation(RecordRef $location): VendorCreditItem
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return VendorCreditItem
+     */
+    public function setCustomer(RecordRef $customer): VendorCreditItem
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param bool $isBillable
+     * @return VendorCreditItem
+     */
+    public function setIsBillable(bool $isBillable): VendorCreditItem
+    {
+        $this->isBillable = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBillable(): bool
+    {
+        return $this->isBillable;
+    }
+
+    /**
+     * @param RecordRef $amortizationSched
+     * @return VendorCreditItem
+     */
+    public function setAmortizationSched(RecordRef $amortizationSched): VendorCreditItem
+    {
+        $this->amortizationSched = $amortizationSched;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAmortizationSched(): RecordRef
+    {
+        return $this->amortizationSched;
+    }
+
+    /**
+     * @param string $amortizStartDate
+     * @return VendorCreditItem
+     */
+    public function setAmortizStartDate(string $amortizStartDate): VendorCreditItem
+    {
+        $this->amortizStartDate = $amortizStartDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmortizStartDate(): string
+    {
+        return $this->amortizStartDate;
+    }
+
+    /**
+     * @param string $amortizationEndDate
+     * @return VendorCreditItem
+     */
+    public function setAmortizationEndDate(string $amortizationEndDate): VendorCreditItem
+    {
+        $this->amortizationEndDate = $amortizationEndDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmortizationEndDate(): string
+    {
+        return $this->amortizationEndDate;
+    }
+
+    /**
+     * @param string $amortizationResidual
+     * @return VendorCreditItem
+     */
+    public function setAmortizationResidual(string $amortizationResidual): VendorCreditItem
+    {
+        $this->amortizationResidual = $amortizationResidual;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmortizationResidual(): string
+    {
+        return $this->amortizationResidual;
+    }
+
+    /**
+     * @param float $taxAmount
+     * @return VendorCreditItem
+     */
+    public function setTaxAmount(float $taxAmount): VendorCreditItem
+    {
+        $this->taxAmount = $taxAmount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTaxAmount(): float
+    {
+        return $this->taxAmount;
+    }
+
+    /**
+     * @param string $taxDetailsReference
+     * @return VendorCreditItem
+     */
+    public function setTaxDetailsReference(string $taxDetailsReference): VendorCreditItem
+    {
+        $this->taxDetailsReference = $taxDetailsReference;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxDetailsReference(): string
+    {
+        return $this->taxDetailsReference;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return VendorCreditItem
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): VendorCreditItem
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,23 +23,28 @@ class JobPlStatement {
     /**
      * @var string
      */
-    public $costCategory;
+    protected string $costCategory;
+
     /**
      * @var float
      */
-    public $revenue;
+    protected float $revenue;
+
     /**
      * @var float
      */
-    public $cost;
+    protected float $cost;
+
     /**
      * @var float
      */
-    public $profit;
+    protected float $profit;
+
     /**
      * @var float
      */
-    public $margin;
+    protected float $margin;
+
     static $paramtypesmap = array(
         "costCategory" => "string",
         "revenue" => "float",
@@ -47,4 +52,95 @@ class JobPlStatement {
         "profit" => "float",
         "margin" => "float",
     );
+
+    /**
+     * @param string $costCategory
+     * @return JobPlStatement
+     */
+    public function setCostCategory(string $costCategory): JobPlStatement
+    {
+        $this->costCategory = $costCategory;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCostCategory(): string
+    {
+        return $this->costCategory;
+    }
+
+    /**
+     * @param float $revenue
+     * @return JobPlStatement
+     */
+    public function setRevenue(float $revenue): JobPlStatement
+    {
+        $this->revenue = $revenue;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRevenue(): float
+    {
+        return $this->revenue;
+    }
+
+    /**
+     * @param float $cost
+     * @return JobPlStatement
+     */
+    public function setCost(float $cost): JobPlStatement
+    {
+        $this->cost = $cost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCost(): float
+    {
+        return $this->cost;
+    }
+
+    /**
+     * @param float $profit
+     * @return JobPlStatement
+     */
+    public function setProfit(float $profit): JobPlStatement
+    {
+        $this->profit = $profit;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getProfit(): float
+    {
+        return $this->profit;
+    }
+
+    /**
+     * @param float $margin
+     * @return JobPlStatement
+     */
+    public function setMargin(float $margin): JobPlStatement
+    {
+        $this->margin = $margin;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getMargin(): float
+    {
+        return $this->margin;
+    }
+
 }

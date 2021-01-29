@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaymentMethodSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $account;
+    protected array $account;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $creditCard;
+    protected array $creditCard;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isDebitCard;
+    protected array $isDebitCard;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     static $paramtypesmap = array(
         "account" => "SearchColumnSelectField[]",
         "creditCard" => "SearchColumnBooleanField[]",
@@ -57,4 +64,131 @@ class PaymentMethodSearchRowBasic extends SearchRowBasic {
         "isInactive" => "SearchColumnBooleanField[]",
         "name" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $account
+     * @return PaymentMethodSearchRowBasic
+     */
+    public function setAccount(SearchColumnSelectField $account): PaymentMethodSearchRowBasic
+    {
+        $this->account[] = $account;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAccount(): array
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $creditCard
+     * @return PaymentMethodSearchRowBasic
+     */
+    public function setCreditCard(SearchColumnBooleanField $creditCard): PaymentMethodSearchRowBasic
+    {
+        $this->creditCard[] = $creditCard;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getCreditCard(): array
+    {
+        return $this->creditCard;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return PaymentMethodSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): PaymentMethodSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return PaymentMethodSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): PaymentMethodSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDebitCard
+     * @return PaymentMethodSearchRowBasic
+     */
+    public function setIsDebitCard(SearchColumnBooleanField $isDebitCard): PaymentMethodSearchRowBasic
+    {
+        $this->isDebitCard[] = $isDebitCard;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDebitCard(): array
+    {
+        return $this->isDebitCard;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return PaymentMethodSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): PaymentMethodSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return PaymentMethodSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): PaymentMethodSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
 }

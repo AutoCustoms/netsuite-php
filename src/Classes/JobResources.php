@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class JobResources {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $jobResource;
+    protected RecordRef $jobResource;
+
     /**
      * @var string
      */
-    public $email;
+    protected string $email;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $role;
+    protected RecordRef $role;
+
     static $paramtypesmap = array(
         "jobResource" => "RecordRef",
         "email" => "string",
         "role" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $jobResource
+     * @return JobResources
+     */
+    public function setJobResource(RecordRef $jobResource): JobResources
+    {
+        $this->jobResource = $jobResource;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getJobResource(): RecordRef
+    {
+        return $this->jobResource;
+    }
+
+    /**
+     * @param string $email
+     * @return JobResources
+     */
+    public function setEmail(string $email): JobResources
+    {
+        $this->email = $email;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param RecordRef $role
+     * @return JobResources
+     */
+    public function setRole(RecordRef $role): JobResources
+    {
+        $this->role = $role;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRole(): RecordRef
+    {
+        return $this->role;
+    }
+
 }

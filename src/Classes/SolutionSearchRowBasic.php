@@ -14,72 +14,87 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SolutionSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $assigned;
+    protected array $assigned;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $caseCount;
+    protected array $caseCount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $createdDate;
+    protected array $createdDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $description;
+    protected array $description;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $displayOnline;
+    protected array $displayOnline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastModifiedDate;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $message;
+    protected array $message;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $previewref;
+    protected array $previewref;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $solutionCode;
+    protected array $solutionCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $status;
+    protected array $status;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $title;
+    protected array $title;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "assigned" => "SearchColumnSelectField[]",
         "caseCount" => "SearchColumnLongField[]",
@@ -97,4 +112,275 @@ class SolutionSearchRowBasic extends SearchRowBasic {
         "title" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $assigned
+     * @return SolutionSearchRowBasic
+     */
+    public function setAssigned(SearchColumnSelectField $assigned): SolutionSearchRowBasic
+    {
+        $this->assigned[] = $assigned;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAssigned(): array
+    {
+        return $this->assigned;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $caseCount
+     * @return SolutionSearchRowBasic
+     */
+    public function setCaseCount(SearchColumnLongField $caseCount): SolutionSearchRowBasic
+    {
+        $this->caseCount[] = $caseCount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getCaseCount(): array
+    {
+        return $this->caseCount;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $createdDate
+     * @return SolutionSearchRowBasic
+     */
+    public function setCreatedDate(SearchColumnDateField $createdDate): SolutionSearchRowBasic
+    {
+        $this->createdDate[] = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCreatedDate(): array
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $description
+     * @return SolutionSearchRowBasic
+     */
+    public function setDescription(SearchColumnStringField $description): SolutionSearchRowBasic
+    {
+        $this->description[] = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDescription(): array
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $displayOnline
+     * @return SolutionSearchRowBasic
+     */
+    public function setDisplayOnline(SearchColumnBooleanField $displayOnline): SolutionSearchRowBasic
+    {
+        $this->displayOnline[] = $displayOnline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getDisplayOnline(): array
+    {
+        return $this->displayOnline;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return SolutionSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): SolutionSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return SolutionSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): SolutionSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return SolutionSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): SolutionSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return SolutionSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): SolutionSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $message
+     * @return SolutionSearchRowBasic
+     */
+    public function setMessage(SearchColumnStringField $message): SolutionSearchRowBasic
+    {
+        $this->message[] = $message;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMessage(): array
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $previewref
+     * @return SolutionSearchRowBasic
+     */
+    public function setPreviewref(SearchColumnStringField $previewref): SolutionSearchRowBasic
+    {
+        $this->previewref[] = $previewref;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPreviewref(): array
+    {
+        return $this->previewref;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $solutionCode
+     * @return SolutionSearchRowBasic
+     */
+    public function setSolutionCode(SearchColumnStringField $solutionCode): SolutionSearchRowBasic
+    {
+        $this->solutionCode[] = $solutionCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSolutionCode(): array
+    {
+        return $this->solutionCode;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $status
+     * @return SolutionSearchRowBasic
+     */
+    public function setStatus(SearchColumnEnumSelectField $status): SolutionSearchRowBasic
+    {
+        $this->status[] = $status;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getStatus(): array
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $title
+     * @return SolutionSearchRowBasic
+     */
+    public function setTitle(SearchColumnStringField $title): SolutionSearchRowBasic
+    {
+        $this->title[] = $title;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTitle(): array
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return SolutionSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): SolutionSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

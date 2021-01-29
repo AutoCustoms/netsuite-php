@@ -14,164 +14,202 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeEntrySearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $approvalStatus;
+    protected array $approvalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billingClass;
+    protected array $billingClass;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billingStatus;
+    protected array $billingStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $break;
+    protected array $break;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $caseTaskEvent;
+    protected array $caseTaskEvent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $class;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $classNoHierarchy;
+    protected array $classNoHierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $customer;
+    protected array $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $date;
+    protected array $date;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $dateCreated;
+    protected array $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $department;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $departmentNoHierarchy;
+    protected array $departmentNoHierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $durationDecimal;
+    protected array $durationDecimal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $employee;
+    protected array $employee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $endTime;
+    protected array $endTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $hours;
+    protected array $hours;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isBillable;
+    protected array $isBillable;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isExempt;
+    protected array $isExempt;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isProductive;
+    protected array $isProductive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isUtilized;
+    protected array $isUtilized;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastModified;
+    protected array $lastModified;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $locationNoHierarchy;
+    protected array $locationNoHierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memo;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $nextApprover;
+    protected array $nextApprover;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $paidExternally;
+    protected array $paidExternally;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $payItem;
+    protected array $payItem;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $payrollDate;
+    protected array $payrollDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $rate;
+    protected array $rate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $startTime;
+    protected array $startTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $subsidiaryNoHierarchy;
+    protected array $subsidiaryNoHierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $timeSheet;
+    protected array $timeSheet;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $type;
+    protected array $type;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "approvalStatus" => "SearchColumnSelectField[]",
         "billingClass" => "SearchColumnSelectField[]",
@@ -212,4 +250,689 @@ class TimeEntrySearchRowBasic extends SearchRowBasic {
         "type" => "SearchColumnEnumSelectField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $approvalStatus
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setApprovalStatus(SearchColumnSelectField $approvalStatus): TimeEntrySearchRowBasic
+    {
+        $this->approvalStatus[] = $approvalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getApprovalStatus(): array
+    {
+        return $this->approvalStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $billingClass
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setBillingClass(SearchColumnSelectField $billingClass): TimeEntrySearchRowBasic
+    {
+        $this->billingClass[] = $billingClass;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillingClass(): array
+    {
+        return $this->billingClass;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billingStatus
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setBillingStatus(SearchColumnStringField $billingStatus): TimeEntrySearchRowBasic
+    {
+        $this->billingStatus[] = $billingStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillingStatus(): array
+    {
+        return $this->billingStatus;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $break
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setBreak(SearchColumnStringField $break): TimeEntrySearchRowBasic
+    {
+        $this->break[] = $break;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBreak(): array
+    {
+        return $this->break;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $caseTaskEvent
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setCaseTaskEvent(SearchColumnSelectField $caseTaskEvent): TimeEntrySearchRowBasic
+    {
+        $this->caseTaskEvent[] = $caseTaskEvent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCaseTaskEvent(): array
+    {
+        return $this->caseTaskEvent;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $class
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setClass(SearchColumnSelectField $class): TimeEntrySearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $classNoHierarchy
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setClassNoHierarchy(SearchColumnSelectField $classNoHierarchy): TimeEntrySearchRowBasic
+    {
+        $this->classNoHierarchy[] = $classNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClassNoHierarchy(): array
+    {
+        return $this->classNoHierarchy;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $customer
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setCustomer(SearchColumnSelectField $customer): TimeEntrySearchRowBasic
+    {
+        $this->customer[] = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustomer(): array
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $date
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setDate(SearchColumnDateField $date): TimeEntrySearchRowBasic
+    {
+        $this->date[] = $date;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDate(): array
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateCreated
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setDateCreated(SearchColumnDateField $dateCreated): TimeEntrySearchRowBasic
+    {
+        $this->dateCreated[] = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateCreated(): array
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $department
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setDepartment(SearchColumnSelectField $department): TimeEntrySearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $departmentNoHierarchy
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setDepartmentNoHierarchy(SearchColumnSelectField $departmentNoHierarchy): TimeEntrySearchRowBasic
+    {
+        $this->departmentNoHierarchy[] = $departmentNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartmentNoHierarchy(): array
+    {
+        return $this->departmentNoHierarchy;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $durationDecimal
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setDurationDecimal(SearchColumnDoubleField $durationDecimal): TimeEntrySearchRowBasic
+    {
+        $this->durationDecimal[] = $durationDecimal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDurationDecimal(): array
+    {
+        return $this->durationDecimal;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $employee
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setEmployee(SearchColumnSelectField $employee): TimeEntrySearchRowBasic
+    {
+        $this->employee[] = $employee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEmployee(): array
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $endTime
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setEndTime(SearchColumnDateField $endTime): TimeEntrySearchRowBasic
+    {
+        $this->endTime[] = $endTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEndTime(): array
+    {
+        return $this->endTime;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): TimeEntrySearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $hours
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setHours(SearchColumnStringField $hours): TimeEntrySearchRowBasic
+    {
+        $this->hours[] = $hours;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getHours(): array
+    {
+        return $this->hours;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): TimeEntrySearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isBillable
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setIsBillable(SearchColumnBooleanField $isBillable): TimeEntrySearchRowBasic
+    {
+        $this->isBillable[] = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsBillable(): array
+    {
+        return $this->isBillable;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isExempt
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setIsExempt(SearchColumnBooleanField $isExempt): TimeEntrySearchRowBasic
+    {
+        $this->isExempt[] = $isExempt;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsExempt(): array
+    {
+        return $this->isExempt;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isProductive
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setIsProductive(SearchColumnBooleanField $isProductive): TimeEntrySearchRowBasic
+    {
+        $this->isProductive[] = $isProductive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsProductive(): array
+    {
+        return $this->isProductive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isUtilized
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setIsUtilized(SearchColumnBooleanField $isUtilized): TimeEntrySearchRowBasic
+    {
+        $this->isUtilized[] = $isUtilized;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsUtilized(): array
+    {
+        return $this->isUtilized;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $item
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setItem(SearchColumnStringField $item): TimeEntrySearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModified
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setLastModified(SearchColumnDateField $lastModified): TimeEntrySearchRowBasic
+    {
+        $this->lastModified[] = $lastModified;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModified(): array
+    {
+        return $this->lastModified;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): TimeEntrySearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $locationNoHierarchy
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setLocationNoHierarchy(SearchColumnSelectField $locationNoHierarchy): TimeEntrySearchRowBasic
+    {
+        $this->locationNoHierarchy[] = $locationNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocationNoHierarchy(): array
+    {
+        return $this->locationNoHierarchy;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): TimeEntrySearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $nextApprover
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setNextApprover(SearchColumnSelectField $nextApprover): TimeEntrySearchRowBasic
+    {
+        $this->nextApprover[] = $nextApprover;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getNextApprover(): array
+    {
+        return $this->nextApprover;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $paidExternally
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setPaidExternally(SearchColumnBooleanField $paidExternally): TimeEntrySearchRowBasic
+    {
+        $this->paidExternally[] = $paidExternally;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPaidExternally(): array
+    {
+        return $this->paidExternally;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $payItem
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setPayItem(SearchColumnSelectField $payItem): TimeEntrySearchRowBasic
+    {
+        $this->payItem[] = $payItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPayItem(): array
+    {
+        return $this->payItem;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $payrollDate
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setPayrollDate(SearchColumnDateField $payrollDate): TimeEntrySearchRowBasic
+    {
+        $this->payrollDate[] = $payrollDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getPayrollDate(): array
+    {
+        return $this->payrollDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $rate
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setRate(SearchColumnDoubleField $rate): TimeEntrySearchRowBasic
+    {
+        $this->rate[] = $rate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRate(): array
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startTime
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setStartTime(SearchColumnDateField $startTime): TimeEntrySearchRowBasic
+    {
+        $this->startTime[] = $startTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartTime(): array
+    {
+        return $this->startTime;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $subsidiary
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnStringField $subsidiary): TimeEntrySearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $subsidiaryNoHierarchy
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setSubsidiaryNoHierarchy(SearchColumnStringField $subsidiaryNoHierarchy): TimeEntrySearchRowBasic
+    {
+        $this->subsidiaryNoHierarchy[] = $subsidiaryNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSubsidiaryNoHierarchy(): array
+    {
+        return $this->subsidiaryNoHierarchy;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $timeSheet
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setTimeSheet(SearchColumnStringField $timeSheet): TimeEntrySearchRowBasic
+    {
+        $this->timeSheet[] = $timeSheet;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTimeSheet(): array
+    {
+        return $this->timeSheet;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $type
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setType(SearchColumnEnumSelectField $type): TimeEntrySearchRowBasic
+    {
+        $this->type[] = $type;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getType(): array
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return TimeEntrySearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): TimeEntrySearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

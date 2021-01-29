@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckPayTime {
     /**
-     * @var boolean
+     * @var bool
      */
-    public $apply;
+    protected bool $apply;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $payItem;
-    /**
-     * @var string
-     */
-    public $payItemName;
-    /**
-     * @var string
-     */
-    public $ddate;
+    protected int $payItem;
+
     /**
      * @var string
      */
-    public $custJob;
+    protected string $payItemName;
+
     /**
      * @var string
      */
-    public $serviceItem;
+    protected string $ddate;
+
+    /**
+     * @var string
+     */
+    protected string $custJob;
+
+    /**
+     * @var string
+     */
+    protected string $serviceItem;
+
     /**
      * @var float
      */
-    public $count;
+    protected float $count;
+
     /**
      * @var float
      */
-    public $rate;
+    protected float $rate;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     static $paramtypesmap = array(
         "apply" => "boolean",
         "line" => "integer",
@@ -72,4 +82,185 @@ class PaycheckPayTime {
         "rate" => "float",
         "amount" => "float",
     );
+
+    /**
+     * @param bool $apply
+     * @return PaycheckPayTime
+     */
+    public function setApply(bool $apply): PaycheckPayTime
+    {
+        $this->apply = $apply;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getApply(): bool
+    {
+        return $this->apply;
+    }
+
+    /**
+     * @param int $line
+     * @return PaycheckPayTime
+     */
+    public function setLine(int $line): PaycheckPayTime
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param int $payItem
+     * @return PaycheckPayTime
+     */
+    public function setPayItem(int $payItem): PaycheckPayTime
+    {
+        $this->payItem = $payItem;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPayItem(): int
+    {
+        return $this->payItem;
+    }
+
+    /**
+     * @param string $payItemName
+     * @return PaycheckPayTime
+     */
+    public function setPayItemName(string $payItemName): PaycheckPayTime
+    {
+        $this->payItemName = $payItemName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPayItemName(): string
+    {
+        return $this->payItemName;
+    }
+
+    /**
+     * @param string $ddate
+     * @return PaycheckPayTime
+     */
+    public function setDdate(string $ddate): PaycheckPayTime
+    {
+        $this->ddate = $ddate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDdate(): string
+    {
+        return $this->ddate;
+    }
+
+    /**
+     * @param string $custJob
+     * @return PaycheckPayTime
+     */
+    public function setCustJob(string $custJob): PaycheckPayTime
+    {
+        $this->custJob = $custJob;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCustJob(): string
+    {
+        return $this->custJob;
+    }
+
+    /**
+     * @param string $serviceItem
+     * @return PaycheckPayTime
+     */
+    public function setServiceItem(string $serviceItem): PaycheckPayTime
+    {
+        $this->serviceItem = $serviceItem;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getServiceItem(): string
+    {
+        return $this->serviceItem;
+    }
+
+    /**
+     * @param float $count
+     * @return PaycheckPayTime
+     */
+    public function setCount(float $count): PaycheckPayTime
+    {
+        $this->count = $count;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCount(): float
+    {
+        return $this->count;
+    }
+
+    /**
+     * @param float $rate
+     * @return PaycheckPayTime
+     */
+    public function setRate(float $rate): PaycheckPayTime
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRate(): float
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param float $amount
+     * @return PaycheckPayTime
+     */
+    public function setAmount(float $amount): PaycheckPayTime
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
 }

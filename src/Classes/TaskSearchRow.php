@@ -14,72 +14,87 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TaskSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\TaskSearchRowBasic
+     * @var TaskSearchRowBasic
      */
-    public $basic;
+    protected TaskSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $assignedJoin;
+    protected EmployeeSearchRowBasic $assignedJoin;
+
     /**
-     * @var \NetSuite\Classes\SupportCaseSearchRowBasic
+     * @var SupportCaseSearchRowBasic
      */
-    public $caseJoin;
+    protected SupportCaseSearchRowBasic $caseJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchRowBasic
+     * @var CustomerSearchRowBasic
      */
-    public $companyCustomerJoin;
+    protected CustomerSearchRowBasic $companyCustomerJoin;
+
     /**
-     * @var \NetSuite\Classes\ContactSearchRowBasic
+     * @var ContactSearchRowBasic
      */
-    public $contactJoin;
+    protected ContactSearchRowBasic $contactJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $employeeJoin;
+    protected EmployeeSearchRowBasic $employeeJoin;
+
     /**
-     * @var \NetSuite\Classes\FileSearchRowBasic
+     * @var FileSearchRowBasic
      */
-    public $fileJoin;
+    protected FileSearchRowBasic $fileJoin;
+
     /**
-     * @var \NetSuite\Classes\JobSearchRowBasic
+     * @var JobSearchRowBasic
      */
-    public $jobJoin;
+    protected JobSearchRowBasic $jobJoin;
+
     /**
-     * @var \NetSuite\Classes\OpportunitySearchRowBasic
+     * @var OpportunitySearchRowBasic
      */
-    public $opportunityJoin;
+    protected OpportunitySearchRowBasic $opportunityJoin;
+
     /**
-     * @var \NetSuite\Classes\OriginatingLeadSearchRowBasic
+     * @var OriginatingLeadSearchRowBasic
      */
-    public $originatingLeadJoin;
+    protected OriginatingLeadSearchRowBasic $originatingLeadJoin;
+
     /**
-     * @var \NetSuite\Classes\TimeBillSearchRowBasic
+     * @var TimeBillSearchRowBasic
      */
-    public $timeJoin;
+    protected TimeBillSearchRowBasic $timeJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     * @var TransactionSearchRowBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchRowBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchRowBasic
+     * @var NoteSearchRowBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchRowBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "TaskSearchRowBasic",
         "assignedJoin" => "EmployeeSearchRowBasic",
@@ -97,4 +112,275 @@ class TaskSearchRow extends SearchRow {
         "userNotesJoin" => "NoteSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param TaskSearchRowBasic $basic
+     * @return TaskSearchRow
+     */
+    public function setBasic(TaskSearchRowBasic $basic): TaskSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return TaskSearchRowBasic
+     */
+    public function getBasic(): TaskSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $assignedJoin
+     * @return TaskSearchRow
+     */
+    public function setAssignedJoin(EmployeeSearchRowBasic $assignedJoin): TaskSearchRow
+    {
+        $this->assignedJoin = $assignedJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getAssignedJoin(): EmployeeSearchRowBasic
+    {
+        return $this->assignedJoin;
+    }
+
+    /**
+     * @param SupportCaseSearchRowBasic $caseJoin
+     * @return TaskSearchRow
+     */
+    public function setCaseJoin(SupportCaseSearchRowBasic $caseJoin): TaskSearchRow
+    {
+        $this->caseJoin = $caseJoin;
+        return $this;
+    }
+
+    /**
+     * @return SupportCaseSearchRowBasic
+     */
+    public function getCaseJoin(): SupportCaseSearchRowBasic
+    {
+        return $this->caseJoin;
+    }
+
+    /**
+     * @param CustomerSearchRowBasic $companyCustomerJoin
+     * @return TaskSearchRow
+     */
+    public function setCompanyCustomerJoin(CustomerSearchRowBasic $companyCustomerJoin): TaskSearchRow
+    {
+        $this->companyCustomerJoin = $companyCustomerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchRowBasic
+     */
+    public function getCompanyCustomerJoin(): CustomerSearchRowBasic
+    {
+        return $this->companyCustomerJoin;
+    }
+
+    /**
+     * @param ContactSearchRowBasic $contactJoin
+     * @return TaskSearchRow
+     */
+    public function setContactJoin(ContactSearchRowBasic $contactJoin): TaskSearchRow
+    {
+        $this->contactJoin = $contactJoin;
+        return $this;
+    }
+
+    /**
+     * @return ContactSearchRowBasic
+     */
+    public function getContactJoin(): ContactSearchRowBasic
+    {
+        return $this->contactJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $employeeJoin
+     * @return TaskSearchRow
+     */
+    public function setEmployeeJoin(EmployeeSearchRowBasic $employeeJoin): TaskSearchRow
+    {
+        $this->employeeJoin = $employeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getEmployeeJoin(): EmployeeSearchRowBasic
+    {
+        return $this->employeeJoin;
+    }
+
+    /**
+     * @param FileSearchRowBasic $fileJoin
+     * @return TaskSearchRow
+     */
+    public function setFileJoin(FileSearchRowBasic $fileJoin): TaskSearchRow
+    {
+        $this->fileJoin = $fileJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchRowBasic
+     */
+    public function getFileJoin(): FileSearchRowBasic
+    {
+        return $this->fileJoin;
+    }
+
+    /**
+     * @param JobSearchRowBasic $jobJoin
+     * @return TaskSearchRow
+     */
+    public function setJobJoin(JobSearchRowBasic $jobJoin): TaskSearchRow
+    {
+        $this->jobJoin = $jobJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchRowBasic
+     */
+    public function getJobJoin(): JobSearchRowBasic
+    {
+        return $this->jobJoin;
+    }
+
+    /**
+     * @param OpportunitySearchRowBasic $opportunityJoin
+     * @return TaskSearchRow
+     */
+    public function setOpportunityJoin(OpportunitySearchRowBasic $opportunityJoin): TaskSearchRow
+    {
+        $this->opportunityJoin = $opportunityJoin;
+        return $this;
+    }
+
+    /**
+     * @return OpportunitySearchRowBasic
+     */
+    public function getOpportunityJoin(): OpportunitySearchRowBasic
+    {
+        return $this->opportunityJoin;
+    }
+
+    /**
+     * @param OriginatingLeadSearchRowBasic $originatingLeadJoin
+     * @return TaskSearchRow
+     */
+    public function setOriginatingLeadJoin(OriginatingLeadSearchRowBasic $originatingLeadJoin): TaskSearchRow
+    {
+        $this->originatingLeadJoin = $originatingLeadJoin;
+        return $this;
+    }
+
+    /**
+     * @return OriginatingLeadSearchRowBasic
+     */
+    public function getOriginatingLeadJoin(): OriginatingLeadSearchRowBasic
+    {
+        return $this->originatingLeadJoin;
+    }
+
+    /**
+     * @param TimeBillSearchRowBasic $timeJoin
+     * @return TaskSearchRow
+     */
+    public function setTimeJoin(TimeBillSearchRowBasic $timeJoin): TaskSearchRow
+    {
+        $this->timeJoin = $timeJoin;
+        return $this;
+    }
+
+    /**
+     * @return TimeBillSearchRowBasic
+     */
+    public function getTimeJoin(): TimeBillSearchRowBasic
+    {
+        return $this->timeJoin;
+    }
+
+    /**
+     * @param TransactionSearchRowBasic $transactionJoin
+     * @return TaskSearchRow
+     */
+    public function setTransactionJoin(TransactionSearchRowBasic $transactionJoin): TaskSearchRow
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchRowBasic
+     */
+    public function getTransactionJoin(): TransactionSearchRowBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return TaskSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): TaskSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchRowBasic $userNotesJoin
+     * @return TaskSearchRow
+     */
+    public function setUserNotesJoin(NoteSearchRowBasic $userNotesJoin): TaskSearchRow
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchRowBasic
+     */
+    public function getUserNotesJoin(): NoteSearchRowBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return TaskSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): TaskSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

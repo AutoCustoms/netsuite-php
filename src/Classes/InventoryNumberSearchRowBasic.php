@@ -14,64 +14,77 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InventoryNumberSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $expirationDate;
+    protected array $expirationDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $inventoryNumber;
+    protected array $inventoryNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isonhand;
+    protected array $isonhand;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memo;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityavailable;
+    protected array $quantityavailable;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityintransit;
+    protected array $quantityintransit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityonhand;
+    protected array $quantityonhand;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityonorder;
+    protected array $quantityonorder;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "expirationDate" => "SearchColumnDateField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -87,4 +100,239 @@ class InventoryNumberSearchRowBasic extends SearchRowBasic {
         "quantityonorder" => "SearchColumnDoubleField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnDateField[] $expirationDate
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setExpirationDate(SearchColumnDateField $expirationDate): InventoryNumberSearchRowBasic
+    {
+        $this->expirationDate[] = $expirationDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getExpirationDate(): array
+    {
+        return $this->expirationDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): InventoryNumberSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): InventoryNumberSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $inventoryNumber
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setInventoryNumber(SearchColumnStringField $inventoryNumber): InventoryNumberSearchRowBasic
+    {
+        $this->inventoryNumber[] = $inventoryNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getInventoryNumber(): array
+    {
+        return $this->inventoryNumber;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isonhand
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setIsonhand(SearchColumnBooleanField $isonhand): InventoryNumberSearchRowBasic
+    {
+        $this->isonhand[] = $isonhand;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsonhand(): array
+    {
+        return $this->isonhand;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $item
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setItem(SearchColumnSelectField $item): InventoryNumberSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): InventoryNumberSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): InventoryNumberSearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityavailable
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setQuantityavailable(SearchColumnDoubleField $quantityavailable): InventoryNumberSearchRowBasic
+    {
+        $this->quantityavailable[] = $quantityavailable;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityavailable(): array
+    {
+        return $this->quantityavailable;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityintransit
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setQuantityintransit(SearchColumnDoubleField $quantityintransit): InventoryNumberSearchRowBasic
+    {
+        $this->quantityintransit[] = $quantityintransit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityintransit(): array
+    {
+        return $this->quantityintransit;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityonhand
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setQuantityonhand(SearchColumnDoubleField $quantityonhand): InventoryNumberSearchRowBasic
+    {
+        $this->quantityonhand[] = $quantityonhand;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityonhand(): array
+    {
+        return $this->quantityonhand;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityonorder
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setQuantityonorder(SearchColumnDoubleField $quantityonorder): InventoryNumberSearchRowBasic
+    {
+        $this->quantityonorder[] = $quantityonorder;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityonorder(): array
+    {
+        return $this->quantityonorder;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return InventoryNumberSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): InventoryNumberSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

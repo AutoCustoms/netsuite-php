@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,103 +23,124 @@ class ItemFulfillmentPackageFedEx {
     /**
      * @var float
      */
-    public $packageWeightFedEx;
+    protected float $packageWeightFedEx;
+
     /**
      * @var float
      */
-    public $dryIceWeightFedEx;
+    protected float $dryIceWeightFedEx;
+
     /**
      * @var string
      */
-    public $packageTrackingNumberFedEx;
+    protected string $packageTrackingNumberFedEx;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageFedExPackagingFedEx
+     * @var ItemFulfillmentPackageFedExPackagingFedEx
      */
-    public $packagingFedEx;
+    protected ItemFulfillmentPackageFedExPackagingFedEx $packagingFedEx;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageFedExAdmPackageTypeFedEx
+     * @var ItemFulfillmentPackageFedExAdmPackageTypeFedEx
      */
-    public $admPackageTypeFedEx;
+    protected ItemFulfillmentPackageFedExAdmPackageTypeFedEx $admPackageTypeFedEx;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isNonStandardContainerFedEx;
+    protected bool $isNonStandardContainerFedEx;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isAlcoholFedEx;
+    protected bool $isAlcoholFedEx;
+
     /**
-     * @var \NetSuite\Classes\AlcoholRecipientType
+     * @var AlcoholRecipientType
      */
-    public $alcoholRecipientTypeFedEx;
+    protected AlcoholRecipientType $alcoholRecipientTypeFedEx;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isNonHazLithiumFedEx;
+    protected bool $isNonHazLithiumFedEx;
+
     /**
      * @var float
      */
-    public $insuredValueFedEx;
+    protected float $insuredValueFedEx;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $useInsuredValueFedEx;
+    protected bool $useInsuredValueFedEx;
+
+    protected $reference1FedEx;
+    /**
+     * @var ItemFulfillmentPackageFedExPriorityAlertTypeFedEx
+     */
+    protected ItemFulfillmentPackageFedExPriorityAlertTypeFedEx $priorityAlertTypeFedEx;
+
     /**
      * @var string
      */
-    public $reference1FedEx;
+    protected string $priorityAlertContentFedEx;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageFedExPriorityAlertTypeFedEx
+     * @var int
      */
-    public $priorityAlertTypeFedEx;
+    protected int $packageLengthFedEx;
+
     /**
-     * @var string
+     * @var int
      */
-    public $priorityAlertContentFedEx;
+    protected int $packageWidthFedEx;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $packageLengthFedEx;
+    protected int $packageHeightFedEx;
+
     /**
-     * @var integer
+     * @var bool
      */
-    public $packageWidthFedEx;
-    /**
-     * @var integer
-     */
-    public $packageHeightFedEx;
-    /**
-     * @var boolean
-     */
-    public $useCodFedEx;
+    protected bool $useCodFedEx;
+
     /**
      * @var float
      */
-    public $codAmountFedEx;
+    protected float $codAmountFedEx;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageFedExCodMethodFedEx
+     * @var ItemFulfillmentPackageFedExCodMethodFedEx
      */
-    public $codMethodFedEx;
+    protected ItemFulfillmentPackageFedExCodMethodFedEx $codMethodFedEx;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageFedExCodFreightTypeFedEx
+     * @var ItemFulfillmentPackageFedExCodFreightTypeFedEx
      */
-    public $codFreightTypeFedEx;
+    protected ItemFulfillmentPackageFedExCodFreightTypeFedEx $codFreightTypeFedEx;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageFedExDeliveryConfFedEx
+     * @var ItemFulfillmentPackageFedExDeliveryConfFedEx
      */
-    public $deliveryConfFedEx;
+    protected ItemFulfillmentPackageFedExDeliveryConfFedEx $deliveryConfFedEx;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageFedExSignatureOptionsFedEx
+     * @var ItemFulfillmentPackageFedExSignatureOptionsFedEx
      */
-    public $signatureOptionsFedEx;
+    protected ItemFulfillmentPackageFedExSignatureOptionsFedEx $signatureOptionsFedEx;
+
     /**
      * @var string
      */
-    public $signatureReleaseFedEx;
+    protected string $signatureReleaseFedEx;
+
     /**
      * @var string
      */
-    public $authorizationNumberFedEx;
+    protected string $authorizationNumberFedEx;
+
     static $paramtypesmap = array(
         "packageWeightFedEx" => "float",
         "dryIceWeightFedEx" => "float",
@@ -147,4 +168,437 @@ class ItemFulfillmentPackageFedEx {
         "signatureReleaseFedEx" => "string",
         "authorizationNumberFedEx" => "string",
     );
+
+    /**
+     * @param float $packageWeightFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setPackageWeightFedEx(float $packageWeightFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->packageWeightFedEx = $packageWeightFedEx;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPackageWeightFedEx(): float
+    {
+        return $this->packageWeightFedEx;
+    }
+
+    /**
+     * @param float $dryIceWeightFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setDryIceWeightFedEx(float $dryIceWeightFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->dryIceWeightFedEx = $dryIceWeightFedEx;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getDryIceWeightFedEx(): float
+    {
+        return $this->dryIceWeightFedEx;
+    }
+
+    /**
+     * @param string $packageTrackingNumberFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setPackageTrackingNumberFedEx(string $packageTrackingNumberFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->packageTrackingNumberFedEx = $packageTrackingNumberFedEx;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPackageTrackingNumberFedEx(): string
+    {
+        return $this->packageTrackingNumberFedEx;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageFedExPackagingFedEx $packagingFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setPackagingFedEx(ItemFulfillmentPackageFedExPackagingFedEx $packagingFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->packagingFedEx = $packagingFedEx;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageFedExPackagingFedEx
+     */
+    public function getPackagingFedEx(): ItemFulfillmentPackageFedExPackagingFedEx
+    {
+        return $this->packagingFedEx;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageFedExAdmPackageTypeFedEx $admPackageTypeFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setAdmPackageTypeFedEx(ItemFulfillmentPackageFedExAdmPackageTypeFedEx $admPackageTypeFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->admPackageTypeFedEx = $admPackageTypeFedEx;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageFedExAdmPackageTypeFedEx
+     */
+    public function getAdmPackageTypeFedEx(): ItemFulfillmentPackageFedExAdmPackageTypeFedEx
+    {
+        return $this->admPackageTypeFedEx;
+    }
+
+    /**
+     * @param bool $isNonStandardContainerFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setIsNonStandardContainerFedEx(bool $isNonStandardContainerFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->isNonStandardContainerFedEx = $isNonStandardContainerFedEx;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsNonStandardContainerFedEx(): bool
+    {
+        return $this->isNonStandardContainerFedEx;
+    }
+
+    /**
+     * @param bool $isAlcoholFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setIsAlcoholFedEx(bool $isAlcoholFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->isAlcoholFedEx = $isAlcoholFedEx;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsAlcoholFedEx(): bool
+    {
+        return $this->isAlcoholFedEx;
+    }
+
+    /**
+     * @param AlcoholRecipientType $alcoholRecipientTypeFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setAlcoholRecipientTypeFedEx(AlcoholRecipientType $alcoholRecipientTypeFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->alcoholRecipientTypeFedEx = $alcoholRecipientTypeFedEx;
+        return $this;
+    }
+
+    /**
+     * @return AlcoholRecipientType
+     */
+    public function getAlcoholRecipientTypeFedEx(): AlcoholRecipientType
+    {
+        return $this->alcoholRecipientTypeFedEx;
+    }
+
+    /**
+     * @param bool $isNonHazLithiumFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setIsNonHazLithiumFedEx(bool $isNonHazLithiumFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->isNonHazLithiumFedEx = $isNonHazLithiumFedEx;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsNonHazLithiumFedEx(): bool
+    {
+        return $this->isNonHazLithiumFedEx;
+    }
+
+    /**
+     * @param float $insuredValueFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setInsuredValueFedEx(float $insuredValueFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->insuredValueFedEx = $insuredValueFedEx;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getInsuredValueFedEx(): float
+    {
+        return $this->insuredValueFedEx;
+    }
+
+    /**
+     * @param bool $useInsuredValueFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setUseInsuredValueFedEx(bool $useInsuredValueFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->useInsuredValueFedEx = $useInsuredValueFedEx;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getUseInsuredValueFedEx(): bool
+    {
+        return $this->useInsuredValueFedEx;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageFedExPriorityAlertTypeFedEx $priorityAlertTypeFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setPriorityAlertTypeFedEx(ItemFulfillmentPackageFedExPriorityAlertTypeFedEx $priorityAlertTypeFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->priorityAlertTypeFedEx = $priorityAlertTypeFedEx;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageFedExPriorityAlertTypeFedEx
+     */
+    public function getPriorityAlertTypeFedEx(): ItemFulfillmentPackageFedExPriorityAlertTypeFedEx
+    {
+        return $this->priorityAlertTypeFedEx;
+    }
+
+    /**
+     * @param string $priorityAlertContentFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setPriorityAlertContentFedEx(string $priorityAlertContentFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->priorityAlertContentFedEx = $priorityAlertContentFedEx;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPriorityAlertContentFedEx(): string
+    {
+        return $this->priorityAlertContentFedEx;
+    }
+
+    /**
+     * @param int $packageLengthFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setPackageLengthFedEx(int $packageLengthFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->packageLengthFedEx = $packageLengthFedEx;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPackageLengthFedEx(): int
+    {
+        return $this->packageLengthFedEx;
+    }
+
+    /**
+     * @param int $packageWidthFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setPackageWidthFedEx(int $packageWidthFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->packageWidthFedEx = $packageWidthFedEx;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPackageWidthFedEx(): int
+    {
+        return $this->packageWidthFedEx;
+    }
+
+    /**
+     * @param int $packageHeightFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setPackageHeightFedEx(int $packageHeightFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->packageHeightFedEx = $packageHeightFedEx;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPackageHeightFedEx(): int
+    {
+        return $this->packageHeightFedEx;
+    }
+
+    /**
+     * @param bool $useCodFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setUseCodFedEx(bool $useCodFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->useCodFedEx = $useCodFedEx;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getUseCodFedEx(): bool
+    {
+        return $this->useCodFedEx;
+    }
+
+    /**
+     * @param float $codAmountFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setCodAmountFedEx(float $codAmountFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->codAmountFedEx = $codAmountFedEx;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCodAmountFedEx(): float
+    {
+        return $this->codAmountFedEx;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageFedExCodMethodFedEx $codMethodFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setCodMethodFedEx(ItemFulfillmentPackageFedExCodMethodFedEx $codMethodFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->codMethodFedEx = $codMethodFedEx;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageFedExCodMethodFedEx
+     */
+    public function getCodMethodFedEx(): ItemFulfillmentPackageFedExCodMethodFedEx
+    {
+        return $this->codMethodFedEx;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageFedExCodFreightTypeFedEx $codFreightTypeFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setCodFreightTypeFedEx(ItemFulfillmentPackageFedExCodFreightTypeFedEx $codFreightTypeFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->codFreightTypeFedEx = $codFreightTypeFedEx;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageFedExCodFreightTypeFedEx
+     */
+    public function getCodFreightTypeFedEx(): ItemFulfillmentPackageFedExCodFreightTypeFedEx
+    {
+        return $this->codFreightTypeFedEx;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageFedExDeliveryConfFedEx $deliveryConfFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setDeliveryConfFedEx(ItemFulfillmentPackageFedExDeliveryConfFedEx $deliveryConfFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->deliveryConfFedEx = $deliveryConfFedEx;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageFedExDeliveryConfFedEx
+     */
+    public function getDeliveryConfFedEx(): ItemFulfillmentPackageFedExDeliveryConfFedEx
+    {
+        return $this->deliveryConfFedEx;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageFedExSignatureOptionsFedEx $signatureOptionsFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setSignatureOptionsFedEx(ItemFulfillmentPackageFedExSignatureOptionsFedEx $signatureOptionsFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->signatureOptionsFedEx = $signatureOptionsFedEx;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageFedExSignatureOptionsFedEx
+     */
+    public function getSignatureOptionsFedEx(): ItemFulfillmentPackageFedExSignatureOptionsFedEx
+    {
+        return $this->signatureOptionsFedEx;
+    }
+
+    /**
+     * @param string $signatureReleaseFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setSignatureReleaseFedEx(string $signatureReleaseFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->signatureReleaseFedEx = $signatureReleaseFedEx;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSignatureReleaseFedEx(): string
+    {
+        return $this->signatureReleaseFedEx;
+    }
+
+    /**
+     * @param string $authorizationNumberFedEx
+     * @return ItemFulfillmentPackageFedEx
+     */
+    public function setAuthorizationNumberFedEx(string $authorizationNumberFedEx): ItemFulfillmentPackageFedEx
+    {
+        $this->authorizationNumberFedEx = $authorizationNumberFedEx;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAuthorizationNumberFedEx(): string
+    {
+        return $this->authorizationNumberFedEx;
+    }
+
 }

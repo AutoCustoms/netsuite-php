@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BudgetExchangeRateList {
     /**
-     * @var \NetSuite\Classes\BudgetExchangeRate[]
+     * @var BudgetExchangeRate[]
      */
-    public $budgetExchangeRate;
+    protected array $budgetExchangeRate;
+
     static $paramtypesmap = array(
         "budgetExchangeRate" => "BudgetExchangeRate[]",
     );
+
+    /**
+     * @param BudgetExchangeRate[] $budgetExchangeRate
+     * @return BudgetExchangeRateList
+     */
+    public function setBudgetExchangeRate(BudgetExchangeRate $budgetExchangeRate): BudgetExchangeRateList
+    {
+        $this->budgetExchangeRate[] = $budgetExchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return BudgetExchangeRate[]
+     */
+    public function getBudgetExchangeRate(): array
+    {
+        return $this->budgetExchangeRate;
+    }
+
 }

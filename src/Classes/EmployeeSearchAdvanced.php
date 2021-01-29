@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\EmployeeSearch
+     * @var EmployeeSearch
      */
-    public $criteria;
+    protected EmployeeSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRow
+     * @var EmployeeSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected EmployeeSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "EmployeeSearch",
         "columns" => "EmployeeSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param EmployeeSearch $criteria
+     * @return EmployeeSearchAdvanced
+     */
+    public function setCriteria(EmployeeSearch $criteria): EmployeeSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearch
+     */
+    public function getCriteria(): EmployeeSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param EmployeeSearchRow $columns
+     * @return EmployeeSearchAdvanced
+     */
+    public function setColumns(EmployeeSearchRow $columns): EmployeeSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRow
+     */
+    public function getColumns(): EmployeeSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return EmployeeSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): EmployeeSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return EmployeeSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): EmployeeSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

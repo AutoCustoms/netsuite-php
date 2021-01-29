@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ManufacturingOperationTaskPredecessorList {
     /**
-     * @var \NetSuite\Classes\ManufacturingOperationTaskPredecessor[]
+     * @var ManufacturingOperationTaskPredecessor[]
      */
-    public $manufacturingOperationTaskPredecessor;
+    protected array $manufacturingOperationTaskPredecessor;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "manufacturingOperationTaskPredecessor" => "ManufacturingOperationTaskPredecessor[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ManufacturingOperationTaskPredecessor[] $manufacturingOperationTaskPredecessor
+     * @return ManufacturingOperationTaskPredecessorList
+     */
+    public function setManufacturingOperationTaskPredecessor(ManufacturingOperationTaskPredecessor $manufacturingOperationTaskPredecessor): ManufacturingOperationTaskPredecessorList
+    {
+        $this->manufacturingOperationTaskPredecessor[] = $manufacturingOperationTaskPredecessor;
+        return $this;
+    }
+
+    /**
+     * @return ManufacturingOperationTaskPredecessor[]
+     */
+    public function getManufacturingOperationTaskPredecessor(): array
+    {
+        return $this->manufacturingOperationTaskPredecessor;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ManufacturingOperationTaskPredecessorList
+     */
+    public function setReplaceAll(bool $replaceAll): ManufacturingOperationTaskPredecessorList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

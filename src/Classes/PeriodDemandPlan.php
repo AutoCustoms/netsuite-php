@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class PeriodDemandPlan {
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
-     * @var \NetSuite\Classes\DayOfTheWeek
+     * @var DayOfTheWeek
      */
-    public $dayOfTheWeek;
+    protected DayOfTheWeek $dayOfTheWeek;
+
     static $paramtypesmap = array(
         "quantity" => "float",
         "dayOfTheWeek" => "DayOfTheWeek",
     );
+
+    /**
+     * @param float $quantity
+     * @return PeriodDemandPlan
+     */
+    public function setQuantity(float $quantity): PeriodDemandPlan
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param DayOfTheWeek $dayOfTheWeek
+     * @return PeriodDemandPlan
+     */
+    public function setDayOfTheWeek(DayOfTheWeek $dayOfTheWeek): PeriodDemandPlan
+    {
+        $this->dayOfTheWeek = $dayOfTheWeek;
+        return $this;
+    }
+
+    /**
+     * @return DayOfTheWeek
+     */
+    public function getDayOfTheWeek(): DayOfTheWeek
+    {
+        return $this->dayOfTheWeek;
+    }
+
 }

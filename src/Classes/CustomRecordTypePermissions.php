@@ -14,64 +14,77 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomRecordTypePermissions {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $permittedRole;
+    protected RecordRef $permittedRole;
+
     /**
-     * @var \NetSuite\Classes\CustomRecordTypePermissionsPermittedLevel
+     * @var CustomRecordTypePermissionsPermittedLevel
      */
-    public $permittedLevel;
+    protected CustomRecordTypePermissionsPermittedLevel $permittedLevel;
+
     /**
-     * @var \NetSuite\Classes\CustomRecordTypePermissionsRestriction
+     * @var CustomRecordTypePermissionsRestriction
      */
-    public $restriction;
+    protected CustomRecordTypePermissionsRestriction $restriction;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $defaultForm;
+    protected RecordRef $defaultForm;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $restrictForm;
+    protected bool $restrictForm;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $searchForm;
+    protected RecordRef $searchForm;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $searchResults;
+    protected RecordRef $searchResults;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $listView;
+    protected RecordRef $listView;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $listViewRestricted;
+    protected bool $listViewRestricted;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $dashboardView;
+    protected RecordRef $dashboardView;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $restrictDashboardView;
+    protected bool $restrictDashboardView;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $sublistView;
+    protected RecordRef $sublistView;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $restrictSublistView;
+    protected bool $restrictSublistView;
+
     static $paramtypesmap = array(
         "permittedRole" => "RecordRef",
         "permittedLevel" => "CustomRecordTypePermissionsPermittedLevel",
@@ -87,4 +100,239 @@ class CustomRecordTypePermissions {
         "sublistView" => "RecordRef",
         "restrictSublistView" => "boolean",
     );
+
+    /**
+     * @param RecordRef $permittedRole
+     * @return CustomRecordTypePermissions
+     */
+    public function setPermittedRole(RecordRef $permittedRole): CustomRecordTypePermissions
+    {
+        $this->permittedRole = $permittedRole;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPermittedRole(): RecordRef
+    {
+        return $this->permittedRole;
+    }
+
+    /**
+     * @param CustomRecordTypePermissionsPermittedLevel $permittedLevel
+     * @return CustomRecordTypePermissions
+     */
+    public function setPermittedLevel(CustomRecordTypePermissionsPermittedLevel $permittedLevel): CustomRecordTypePermissions
+    {
+        $this->permittedLevel = $permittedLevel;
+        return $this;
+    }
+
+    /**
+     * @return CustomRecordTypePermissionsPermittedLevel
+     */
+    public function getPermittedLevel(): CustomRecordTypePermissionsPermittedLevel
+    {
+        return $this->permittedLevel;
+    }
+
+    /**
+     * @param CustomRecordTypePermissionsRestriction $restriction
+     * @return CustomRecordTypePermissions
+     */
+    public function setRestriction(CustomRecordTypePermissionsRestriction $restriction): CustomRecordTypePermissions
+    {
+        $this->restriction = $restriction;
+        return $this;
+    }
+
+    /**
+     * @return CustomRecordTypePermissionsRestriction
+     */
+    public function getRestriction(): CustomRecordTypePermissionsRestriction
+    {
+        return $this->restriction;
+    }
+
+    /**
+     * @param RecordRef $defaultForm
+     * @return CustomRecordTypePermissions
+     */
+    public function setDefaultForm(RecordRef $defaultForm): CustomRecordTypePermissions
+    {
+        $this->defaultForm = $defaultForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDefaultForm(): RecordRef
+    {
+        return $this->defaultForm;
+    }
+
+    /**
+     * @param bool $restrictForm
+     * @return CustomRecordTypePermissions
+     */
+    public function setRestrictForm(bool $restrictForm): CustomRecordTypePermissions
+    {
+        $this->restrictForm = $restrictForm;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getRestrictForm(): bool
+    {
+        return $this->restrictForm;
+    }
+
+    /**
+     * @param RecordRef $searchForm
+     * @return CustomRecordTypePermissions
+     */
+    public function setSearchForm(RecordRef $searchForm): CustomRecordTypePermissions
+    {
+        $this->searchForm = $searchForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSearchForm(): RecordRef
+    {
+        return $this->searchForm;
+    }
+
+    /**
+     * @param RecordRef $searchResults
+     * @return CustomRecordTypePermissions
+     */
+    public function setSearchResults(RecordRef $searchResults): CustomRecordTypePermissions
+    {
+        $this->searchResults = $searchResults;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSearchResults(): RecordRef
+    {
+        return $this->searchResults;
+    }
+
+    /**
+     * @param RecordRef $listView
+     * @return CustomRecordTypePermissions
+     */
+    public function setListView(RecordRef $listView): CustomRecordTypePermissions
+    {
+        $this->listView = $listView;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getListView(): RecordRef
+    {
+        return $this->listView;
+    }
+
+    /**
+     * @param bool $listViewRestricted
+     * @return CustomRecordTypePermissions
+     */
+    public function setListViewRestricted(bool $listViewRestricted): CustomRecordTypePermissions
+    {
+        $this->listViewRestricted = $listViewRestricted;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getListViewRestricted(): bool
+    {
+        return $this->listViewRestricted;
+    }
+
+    /**
+     * @param RecordRef $dashboardView
+     * @return CustomRecordTypePermissions
+     */
+    public function setDashboardView(RecordRef $dashboardView): CustomRecordTypePermissions
+    {
+        $this->dashboardView = $dashboardView;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDashboardView(): RecordRef
+    {
+        return $this->dashboardView;
+    }
+
+    /**
+     * @param bool $restrictDashboardView
+     * @return CustomRecordTypePermissions
+     */
+    public function setRestrictDashboardView(bool $restrictDashboardView): CustomRecordTypePermissions
+    {
+        $this->restrictDashboardView = $restrictDashboardView;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getRestrictDashboardView(): bool
+    {
+        return $this->restrictDashboardView;
+    }
+
+    /**
+     * @param RecordRef $sublistView
+     * @return CustomRecordTypePermissions
+     */
+    public function setSublistView(RecordRef $sublistView): CustomRecordTypePermissions
+    {
+        $this->sublistView = $sublistView;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSublistView(): RecordRef
+    {
+        return $this->sublistView;
+    }
+
+    /**
+     * @param bool $restrictSublistView
+     * @return CustomRecordTypePermissions
+     */
+    public function setRestrictSublistView(bool $restrictSublistView): CustomRecordTypePermissions
+    {
+        $this->restrictSublistView = $restrictSublistView;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getRestrictSublistView(): bool
+    {
+        return $this->restrictSublistView;
+    }
+
 }

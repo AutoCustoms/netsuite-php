@@ -14,56 +14,67 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ProjectTaskSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\ProjectTaskSearchBasic
+     * @var ProjectTaskSearchBasic
      */
-    public $basic;
+    protected ProjectTaskSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\JobSearchBasic
+     * @var JobSearchBasic
      */
-    public $jobJoin;
+    protected JobSearchBasic $jobJoin;
+
     /**
-     * @var \NetSuite\Classes\ProjectTaskSearchBasic
+     * @var ProjectTaskSearchBasic
      */
-    public $predecessorJoin;
+    protected ProjectTaskSearchBasic $predecessorJoin;
+
     /**
-     * @var \NetSuite\Classes\ProjectTaskAssignmentSearchBasic
+     * @var ProjectTaskAssignmentSearchBasic
      */
-    public $projectTaskAssignmentJoin;
+    protected ProjectTaskAssignmentSearchBasic $projectTaskAssignmentJoin;
+
     /**
-     * @var \NetSuite\Classes\ResourceAllocationSearchBasic
+     * @var ResourceAllocationSearchBasic
      */
-    public $resourceAllocationJoin;
+    protected ResourceAllocationSearchBasic $resourceAllocationJoin;
+
     /**
-     * @var \NetSuite\Classes\ProjectTaskSearchBasic
+     * @var ProjectTaskSearchBasic
      */
-    public $successorJoin;
+    protected ProjectTaskSearchBasic $successorJoin;
+
     /**
-     * @var \NetSuite\Classes\TimeBillSearchBasic
+     * @var TimeBillSearchBasic
      */
-    public $timeJoin;
+    protected TimeBillSearchBasic $timeJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchBasic
+     * @var NoteSearchBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "ProjectTaskSearchBasic",
         "jobJoin" => "JobSearchBasic",
@@ -77,4 +88,203 @@ class ProjectTaskSearch extends SearchRecord {
         "userNotesJoin" => "NoteSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param ProjectTaskSearchBasic $basic
+     * @return ProjectTaskSearch
+     */
+    public function setBasic(ProjectTaskSearchBasic $basic): ProjectTaskSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskSearchBasic
+     */
+    public function getBasic(): ProjectTaskSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param JobSearchBasic $jobJoin
+     * @return ProjectTaskSearch
+     */
+    public function setJobJoin(JobSearchBasic $jobJoin): ProjectTaskSearch
+    {
+        $this->jobJoin = $jobJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchBasic
+     */
+    public function getJobJoin(): JobSearchBasic
+    {
+        return $this->jobJoin;
+    }
+
+    /**
+     * @param ProjectTaskSearchBasic $predecessorJoin
+     * @return ProjectTaskSearch
+     */
+    public function setPredecessorJoin(ProjectTaskSearchBasic $predecessorJoin): ProjectTaskSearch
+    {
+        $this->predecessorJoin = $predecessorJoin;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskSearchBasic
+     */
+    public function getPredecessorJoin(): ProjectTaskSearchBasic
+    {
+        return $this->predecessorJoin;
+    }
+
+    /**
+     * @param ProjectTaskAssignmentSearchBasic $projectTaskAssignmentJoin
+     * @return ProjectTaskSearch
+     */
+    public function setProjectTaskAssignmentJoin(ProjectTaskAssignmentSearchBasic $projectTaskAssignmentJoin): ProjectTaskSearch
+    {
+        $this->projectTaskAssignmentJoin = $projectTaskAssignmentJoin;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function getProjectTaskAssignmentJoin(): ProjectTaskAssignmentSearchBasic
+    {
+        return $this->projectTaskAssignmentJoin;
+    }
+
+    /**
+     * @param ResourceAllocationSearchBasic $resourceAllocationJoin
+     * @return ProjectTaskSearch
+     */
+    public function setResourceAllocationJoin(ResourceAllocationSearchBasic $resourceAllocationJoin): ProjectTaskSearch
+    {
+        $this->resourceAllocationJoin = $resourceAllocationJoin;
+        return $this;
+    }
+
+    /**
+     * @return ResourceAllocationSearchBasic
+     */
+    public function getResourceAllocationJoin(): ResourceAllocationSearchBasic
+    {
+        return $this->resourceAllocationJoin;
+    }
+
+    /**
+     * @param ProjectTaskSearchBasic $successorJoin
+     * @return ProjectTaskSearch
+     */
+    public function setSuccessorJoin(ProjectTaskSearchBasic $successorJoin): ProjectTaskSearch
+    {
+        $this->successorJoin = $successorJoin;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskSearchBasic
+     */
+    public function getSuccessorJoin(): ProjectTaskSearchBasic
+    {
+        return $this->successorJoin;
+    }
+
+    /**
+     * @param TimeBillSearchBasic $timeJoin
+     * @return ProjectTaskSearch
+     */
+    public function setTimeJoin(TimeBillSearchBasic $timeJoin): ProjectTaskSearch
+    {
+        $this->timeJoin = $timeJoin;
+        return $this;
+    }
+
+    /**
+     * @return TimeBillSearchBasic
+     */
+    public function getTimeJoin(): TimeBillSearchBasic
+    {
+        return $this->timeJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $transactionJoin
+     * @return ProjectTaskSearch
+     */
+    public function setTransactionJoin(TransactionSearchBasic $transactionJoin): ProjectTaskSearch
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getTransactionJoin(): TransactionSearchBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return ProjectTaskSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): ProjectTaskSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchBasic $userNotesJoin
+     * @return ProjectTaskSearch
+     */
+    public function setUserNotesJoin(NoteSearchBasic $userNotesJoin): ProjectTaskSearch
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchBasic
+     */
+    public function getUserNotesJoin(): NoteSearchBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return ProjectTaskSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): ProjectTaskSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

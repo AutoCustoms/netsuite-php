@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -65,7 +65,7 @@ class Country {
     const _canaryIslands = "_canaryIslands";
     const _capeVerde = "_capeVerde";
     const _caymanIslands = "_caymanIslands";
-    const _centralAfricanRepublic = "_centralAfricanRepublic";
+    const _centralAfricanReprotected = "_centralAfricanRepublic";
     const _ceutaAndMelilla = "_ceutaAndMelilla";
     const _chad = "_chad";
     const _chile = "_chile";
@@ -74,7 +74,7 @@ class Country {
     const _cocosKeelingIslands = "_cocosKeelingIslands";
     const _colombia = "_colombia";
     const _comoros = "_comoros";
-    const _congoDemocraticPeoplesRepublic = "_congoDemocraticPeoplesRepublic";
+    const _congoDemocraticPeoplesReprotected = "_congoDemocraticPeoplesRepublic";
     const _congoRepublicOf = "_congoRepublicOf";
     const _cookIslands = "_cookIslands";
     const _costaRica = "_costaRica";
@@ -83,11 +83,11 @@ class Country {
     const _cuba = "_cuba";
     const _curacao = "_curacao";
     const _cyprus = "_cyprus";
-    const _czechRepublic = "_czechRepublic";
+    const _czechReprotected = "_czechRepublic";
     const _denmark = "_denmark";
     const _djibouti = "_djibouti";
     const _dominica = "_dominica";
-    const _dominicanRepublic = "_dominicanRepublic";
+    const _dominicanReprotected = "_dominicanRepublic";
     const _eastTimor = "_eastTimor";
     const _ecuador = "_ecuador";
     const _egypt = "_egypt";
@@ -142,12 +142,12 @@ class Country {
     const _kazakhstan = "_kazakhstan";
     const _kenya = "_kenya";
     const _kiribati = "_kiribati";
-    const _koreaDemocraticPeoplesRepublic = "_koreaDemocraticPeoplesRepublic";
+    const _koreaDemocraticPeoplesReprotected = "_koreaDemocraticPeoplesRepublic";
     const _koreaRepublicOf = "_koreaRepublicOf";
     const _kosovo = "_kosovo";
     const _kuwait = "_kuwait";
     const _kyrgyzstan = "_kyrgyzstan";
-    const _laoPeoplesDemocraticRepublic = "_laoPeoplesDemocraticRepublic";
+    const _laoPeoplesDemocraticReprotected = "_laoPeoplesDemocraticRepublic";
     const _latvia = "_latvia";
     const _lebanon = "_lebanon";
     const _lesotho = "_lesotho";
@@ -225,7 +225,7 @@ class Country {
     const _sierraLeone = "_sierraLeone";
     const _singapore = "_singapore";
     const _sintMaarten = "_sintMaarten";
-    const _slovakRepublic = "_slovakRepublic";
+    const _slovakReprotected = "_slovakRepublic";
     const _slovenia = "_slovenia";
     const _solomonIslands = "_solomonIslands";
     const _somalia = "_somalia";
@@ -242,7 +242,7 @@ class Country {
     const _swaziland = "_swaziland";
     const _sweden = "_sweden";
     const _switzerland = "_switzerland";
-    const _syrianArabRepublic = "_syrianArabRepublic";
+    const _syrianArabReprotected = "_syrianArabRepublic";
     const _taiwan = "_taiwan";
     const _tajikistan = "_tajikistan";
     const _tanzania = "_tanzania";

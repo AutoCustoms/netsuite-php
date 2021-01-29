@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ChangeEmailResponse {
     /**
-     * @var \NetSuite\Classes\SessionResponse
+     * @var SessionResponse
      */
-    public $sessionResponse;
+    protected SessionResponse $sessionResponse;
+
     static $paramtypesmap = array(
         "sessionResponse" => "SessionResponse",
     );
+
+    /**
+     * @param SessionResponse $sessionResponse
+     * @return ChangeEmailResponse
+     */
+    public function setSessionResponse(SessionResponse $sessionResponse): ChangeEmailResponse
+    {
+        $this->sessionResponse = $sessionResponse;
+        return $this;
+    }
+
+    /**
+     * @return SessionResponse
+     */
+    public function getSessionResponse(): SessionResponse
+    {
+        return $this->sessionResponse;
+    }
+
 }

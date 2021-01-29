@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PaycheckSearchBasic
+     * @var PaycheckSearchBasic
      */
-    public $basic;
+    protected PaycheckSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $employeeJoin;
+    protected EmployeeSearchBasic $employeeJoin;
+
     /**
-     * @var \NetSuite\Classes\PayrollItemSearchBasic
+     * @var PayrollItemSearchBasic
      */
-    public $payrollItemJoin;
+    protected PayrollItemSearchBasic $payrollItemJoin;
+
     static $paramtypesmap = array(
         "basic" => "PaycheckSearchBasic",
         "employeeJoin" => "EmployeeSearchBasic",
         "payrollItemJoin" => "PayrollItemSearchBasic",
     );
+
+    /**
+     * @param PaycheckSearchBasic $basic
+     * @return PaycheckSearch
+     */
+    public function setBasic(PaycheckSearchBasic $basic): PaycheckSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return PaycheckSearchBasic
+     */
+    public function getBasic(): PaycheckSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $employeeJoin
+     * @return PaycheckSearch
+     */
+    public function setEmployeeJoin(EmployeeSearchBasic $employeeJoin): PaycheckSearch
+    {
+        $this->employeeJoin = $employeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getEmployeeJoin(): EmployeeSearchBasic
+    {
+        return $this->employeeJoin;
+    }
+
+    /**
+     * @param PayrollItemSearchBasic $payrollItemJoin
+     * @return PaycheckSearch
+     */
+    public function setPayrollItemJoin(PayrollItemSearchBasic $payrollItemJoin): PaycheckSearch
+    {
+        $this->payrollItemJoin = $payrollItemJoin;
+        return $this;
+    }
+
+    /**
+     * @return PayrollItemSearchBasic
+     */
+    public function getPayrollItemJoin(): PayrollItemSearchBasic
+    {
+        return $this->payrollItemJoin;
+    }
+
 }

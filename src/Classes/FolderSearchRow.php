@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FolderSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\FolderSearchRowBasic
+     * @var FolderSearchRowBasic
      */
-    public $basic;
+    protected FolderSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\FileSearchRowBasic
+     * @var FileSearchRowBasic
      */
-    public $fileJoin;
+    protected FileSearchRowBasic $fileJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "FolderSearchRowBasic",
         "fileJoin" => "FileSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
     );
+
+    /**
+     * @param FolderSearchRowBasic $basic
+     * @return FolderSearchRow
+     */
+    public function setBasic(FolderSearchRowBasic $basic): FolderSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return FolderSearchRowBasic
+     */
+    public function getBasic(): FolderSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param FileSearchRowBasic $fileJoin
+     * @return FolderSearchRow
+     */
+    public function setFileJoin(FileSearchRowBasic $fileJoin): FolderSearchRow
+    {
+        $this->fileJoin = $fileJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchRowBasic
+     */
+    public function getFileJoin(): FileSearchRowBasic
+    {
+        return $this->fileJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return FolderSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): FolderSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
 }

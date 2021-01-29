@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class IssueSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\IssueSearchBasic
+     * @var IssueSearchBasic
      */
-    public $basic;
+    protected IssueSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\SupportCaseSearchBasic
+     * @var SupportCaseSearchBasic
      */
-    public $caseJoin;
+    protected SupportCaseSearchBasic $caseJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $employeeJoin;
+    protected EmployeeSearchBasic $employeeJoin;
+
     /**
-     * @var \NetSuite\Classes\FileSearchBasic
+     * @var FileSearchBasic
      */
-    public $fileJoin;
+    protected FileSearchBasic $fileJoin;
+
     /**
-     * @var \NetSuite\Classes\EntityGroupSearchBasic
+     * @var EntityGroupSearchBasic
      */
-    public $productTeamJoin;
+    protected EntityGroupSearchBasic $productTeamJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchBasic
+     * @var NoteSearchBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "IssueSearchBasic",
         "caseJoin" => "SupportCaseSearchBasic",
@@ -62,4 +70,149 @@ class IssueSearch extends SearchRecord {
         "userNotesJoin" => "NoteSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param IssueSearchBasic $basic
+     * @return IssueSearch
+     */
+    public function setBasic(IssueSearchBasic $basic): IssueSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return IssueSearchBasic
+     */
+    public function getBasic(): IssueSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param SupportCaseSearchBasic $caseJoin
+     * @return IssueSearch
+     */
+    public function setCaseJoin(SupportCaseSearchBasic $caseJoin): IssueSearch
+    {
+        $this->caseJoin = $caseJoin;
+        return $this;
+    }
+
+    /**
+     * @return SupportCaseSearchBasic
+     */
+    public function getCaseJoin(): SupportCaseSearchBasic
+    {
+        return $this->caseJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $employeeJoin
+     * @return IssueSearch
+     */
+    public function setEmployeeJoin(EmployeeSearchBasic $employeeJoin): IssueSearch
+    {
+        $this->employeeJoin = $employeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getEmployeeJoin(): EmployeeSearchBasic
+    {
+        return $this->employeeJoin;
+    }
+
+    /**
+     * @param FileSearchBasic $fileJoin
+     * @return IssueSearch
+     */
+    public function setFileJoin(FileSearchBasic $fileJoin): IssueSearch
+    {
+        $this->fileJoin = $fileJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchBasic
+     */
+    public function getFileJoin(): FileSearchBasic
+    {
+        return $this->fileJoin;
+    }
+
+    /**
+     * @param EntityGroupSearchBasic $productTeamJoin
+     * @return IssueSearch
+     */
+    public function setProductTeamJoin(EntityGroupSearchBasic $productTeamJoin): IssueSearch
+    {
+        $this->productTeamJoin = $productTeamJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntityGroupSearchBasic
+     */
+    public function getProductTeamJoin(): EntityGroupSearchBasic
+    {
+        return $this->productTeamJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return IssueSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): IssueSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchBasic $userNotesJoin
+     * @return IssueSearch
+     */
+    public function setUserNotesJoin(NoteSearchBasic $userNotesJoin): IssueSearch
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchBasic
+     */
+    public function getUserNotesJoin(): NoteSearchBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return IssueSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): IssueSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

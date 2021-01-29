@@ -14,27 +14,63 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SearchLongField {
     /**
-     * @var integer
+     * @var int
      */
-    public $searchValue;
+    protected int $searchValue;
+
+    protected $searchValue2;
     /**
-     * @var integer
+     * @var SearchLongFieldOperator
      */
-    public $searchValue2;
-    /**
-     * @var \NetSuite\Classes\SearchLongFieldOperator
-     */
-    public $operator;
+    protected SearchLongFieldOperator $operator;
+
     static $paramtypesmap = array(
         "searchValue" => "integer",
         "searchValue2" => "integer",
         "operator" => "SearchLongFieldOperator",
     );
+
+    /**
+     * @param int $searchValue
+     * @return SearchLongField
+     */
+    public function setSearchValue(int $searchValue): SearchLongField
+    {
+        $this->searchValue = $searchValue;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSearchValue(): int
+    {
+        return $this->searchValue;
+    }
+
+    /**
+     * @param SearchLongFieldOperator $operator
+     * @return SearchLongField
+     */
+    public function setOperator(SearchLongFieldOperator $operator): SearchLongField
+    {
+        $this->operator = $operator;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongFieldOperator
+     */
+    public function getOperator(): SearchLongFieldOperator
+    {
+        return $this->operator;
+    }
+
 }

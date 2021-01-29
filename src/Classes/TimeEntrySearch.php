@@ -14,88 +14,107 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeEntrySearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\TimeEntrySearchBasic
+     * @var TimeEntrySearchBasic
      */
-    public $basic;
+    protected TimeEntrySearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\PhoneCallSearchBasic
+     * @var PhoneCallSearchBasic
      */
-    public $callJoin;
+    protected PhoneCallSearchBasic $callJoin;
+
     /**
-     * @var \NetSuite\Classes\SupportCaseSearchBasic
+     * @var SupportCaseSearchBasic
      */
-    public $caseJoin;
+    protected SupportCaseSearchBasic $caseJoin;
+
     /**
-     * @var \NetSuite\Classes\ClassificationSearchBasic
+     * @var ClassificationSearchBasic
      */
-    public $classJoin;
+    protected ClassificationSearchBasic $classJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $customerJoin;
+    protected CustomerSearchBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\DepartmentSearchBasic
+     * @var DepartmentSearchBasic
      */
-    public $departmentJoin;
+    protected DepartmentSearchBasic $departmentJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $employeeJoin;
+    protected EmployeeSearchBasic $employeeJoin;
+
     /**
-     * @var \NetSuite\Classes\CalendarEventSearchBasic
+     * @var CalendarEventSearchBasic
      */
-    public $eventJoin;
+    protected CalendarEventSearchBasic $eventJoin;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchBasic
+     * @var ItemSearchBasic
      */
-    public $itemJoin;
+    protected ItemSearchBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\JobSearchBasic
+     * @var JobSearchBasic
      */
-    public $jobJoin;
+    protected JobSearchBasic $jobJoin;
+
     /**
-     * @var \NetSuite\Classes\LocationSearchBasic
+     * @var LocationSearchBasic
      */
-    public $locationJoin;
+    protected LocationSearchBasic $locationJoin;
+
     /**
-     * @var \NetSuite\Classes\ProjectTaskSearchBasic
+     * @var ProjectTaskSearchBasic
      */
-    public $projectTaskJoin;
+    protected ProjectTaskSearchBasic $projectTaskJoin;
+
     /**
-     * @var \NetSuite\Classes\ProjectTaskAssignmentSearchBasic
+     * @var ProjectTaskAssignmentSearchBasic
      */
-    public $projectTaskAssignmentJoin;
+    protected ProjectTaskAssignmentSearchBasic $projectTaskAssignmentJoin;
+
     /**
-     * @var \NetSuite\Classes\ResourceAllocationSearchBasic
+     * @var ResourceAllocationSearchBasic
      */
-    public $resourceAllocationJoin;
+    protected ResourceAllocationSearchBasic $resourceAllocationJoin;
+
     /**
-     * @var \NetSuite\Classes\TaskSearchBasic
+     * @var TaskSearchBasic
      */
-    public $taskJoin;
+    protected TaskSearchBasic $taskJoin;
+
     /**
-     * @var \NetSuite\Classes\TimeSheetSearchBasic
+     * @var TimeSheetSearchBasic
      */
-    public $timeSheetJoin;
+    protected TimeSheetSearchBasic $timeSheetJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\VendorSearchBasic
+     * @var VendorSearchBasic
      */
-    public $vendorJoin;
+    protected VendorSearchBasic $vendorJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "TimeEntrySearchBasic",
         "callJoin" => "PhoneCallSearchBasic",
@@ -117,4 +136,347 @@ class TimeEntrySearch extends SearchRecord {
         "vendorJoin" => "VendorSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param TimeEntrySearchBasic $basic
+     * @return TimeEntrySearch
+     */
+    public function setBasic(TimeEntrySearchBasic $basic): TimeEntrySearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntrySearchBasic
+     */
+    public function getBasic(): TimeEntrySearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param PhoneCallSearchBasic $callJoin
+     * @return TimeEntrySearch
+     */
+    public function setCallJoin(PhoneCallSearchBasic $callJoin): TimeEntrySearch
+    {
+        $this->callJoin = $callJoin;
+        return $this;
+    }
+
+    /**
+     * @return PhoneCallSearchBasic
+     */
+    public function getCallJoin(): PhoneCallSearchBasic
+    {
+        return $this->callJoin;
+    }
+
+    /**
+     * @param SupportCaseSearchBasic $caseJoin
+     * @return TimeEntrySearch
+     */
+    public function setCaseJoin(SupportCaseSearchBasic $caseJoin): TimeEntrySearch
+    {
+        $this->caseJoin = $caseJoin;
+        return $this;
+    }
+
+    /**
+     * @return SupportCaseSearchBasic
+     */
+    public function getCaseJoin(): SupportCaseSearchBasic
+    {
+        return $this->caseJoin;
+    }
+
+    /**
+     * @param ClassificationSearchBasic $classJoin
+     * @return TimeEntrySearch
+     */
+    public function setClassJoin(ClassificationSearchBasic $classJoin): TimeEntrySearch
+    {
+        $this->classJoin = $classJoin;
+        return $this;
+    }
+
+    /**
+     * @return ClassificationSearchBasic
+     */
+    public function getClassJoin(): ClassificationSearchBasic
+    {
+        return $this->classJoin;
+    }
+
+    /**
+     * @param CustomerSearchBasic $customerJoin
+     * @return TimeEntrySearch
+     */
+    public function setCustomerJoin(CustomerSearchBasic $customerJoin): TimeEntrySearch
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param DepartmentSearchBasic $departmentJoin
+     * @return TimeEntrySearch
+     */
+    public function setDepartmentJoin(DepartmentSearchBasic $departmentJoin): TimeEntrySearch
+    {
+        $this->departmentJoin = $departmentJoin;
+        return $this;
+    }
+
+    /**
+     * @return DepartmentSearchBasic
+     */
+    public function getDepartmentJoin(): DepartmentSearchBasic
+    {
+        return $this->departmentJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $employeeJoin
+     * @return TimeEntrySearch
+     */
+    public function setEmployeeJoin(EmployeeSearchBasic $employeeJoin): TimeEntrySearch
+    {
+        $this->employeeJoin = $employeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getEmployeeJoin(): EmployeeSearchBasic
+    {
+        return $this->employeeJoin;
+    }
+
+    /**
+     * @param CalendarEventSearchBasic $eventJoin
+     * @return TimeEntrySearch
+     */
+    public function setEventJoin(CalendarEventSearchBasic $eventJoin): TimeEntrySearch
+    {
+        $this->eventJoin = $eventJoin;
+        return $this;
+    }
+
+    /**
+     * @return CalendarEventSearchBasic
+     */
+    public function getEventJoin(): CalendarEventSearchBasic
+    {
+        return $this->eventJoin;
+    }
+
+    /**
+     * @param ItemSearchBasic $itemJoin
+     * @return TimeEntrySearch
+     */
+    public function setItemJoin(ItemSearchBasic $itemJoin): TimeEntrySearch
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchBasic
+     */
+    public function getItemJoin(): ItemSearchBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param JobSearchBasic $jobJoin
+     * @return TimeEntrySearch
+     */
+    public function setJobJoin(JobSearchBasic $jobJoin): TimeEntrySearch
+    {
+        $this->jobJoin = $jobJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchBasic
+     */
+    public function getJobJoin(): JobSearchBasic
+    {
+        return $this->jobJoin;
+    }
+
+    /**
+     * @param LocationSearchBasic $locationJoin
+     * @return TimeEntrySearch
+     */
+    public function setLocationJoin(LocationSearchBasic $locationJoin): TimeEntrySearch
+    {
+        $this->locationJoin = $locationJoin;
+        return $this;
+    }
+
+    /**
+     * @return LocationSearchBasic
+     */
+    public function getLocationJoin(): LocationSearchBasic
+    {
+        return $this->locationJoin;
+    }
+
+    /**
+     * @param ProjectTaskSearchBasic $projectTaskJoin
+     * @return TimeEntrySearch
+     */
+    public function setProjectTaskJoin(ProjectTaskSearchBasic $projectTaskJoin): TimeEntrySearch
+    {
+        $this->projectTaskJoin = $projectTaskJoin;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskSearchBasic
+     */
+    public function getProjectTaskJoin(): ProjectTaskSearchBasic
+    {
+        return $this->projectTaskJoin;
+    }
+
+    /**
+     * @param ProjectTaskAssignmentSearchBasic $projectTaskAssignmentJoin
+     * @return TimeEntrySearch
+     */
+    public function setProjectTaskAssignmentJoin(ProjectTaskAssignmentSearchBasic $projectTaskAssignmentJoin): TimeEntrySearch
+    {
+        $this->projectTaskAssignmentJoin = $projectTaskAssignmentJoin;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function getProjectTaskAssignmentJoin(): ProjectTaskAssignmentSearchBasic
+    {
+        return $this->projectTaskAssignmentJoin;
+    }
+
+    /**
+     * @param ResourceAllocationSearchBasic $resourceAllocationJoin
+     * @return TimeEntrySearch
+     */
+    public function setResourceAllocationJoin(ResourceAllocationSearchBasic $resourceAllocationJoin): TimeEntrySearch
+    {
+        $this->resourceAllocationJoin = $resourceAllocationJoin;
+        return $this;
+    }
+
+    /**
+     * @return ResourceAllocationSearchBasic
+     */
+    public function getResourceAllocationJoin(): ResourceAllocationSearchBasic
+    {
+        return $this->resourceAllocationJoin;
+    }
+
+    /**
+     * @param TaskSearchBasic $taskJoin
+     * @return TimeEntrySearch
+     */
+    public function setTaskJoin(TaskSearchBasic $taskJoin): TimeEntrySearch
+    {
+        $this->taskJoin = $taskJoin;
+        return $this;
+    }
+
+    /**
+     * @return TaskSearchBasic
+     */
+    public function getTaskJoin(): TaskSearchBasic
+    {
+        return $this->taskJoin;
+    }
+
+    /**
+     * @param TimeSheetSearchBasic $timeSheetJoin
+     * @return TimeEntrySearch
+     */
+    public function setTimeSheetJoin(TimeSheetSearchBasic $timeSheetJoin): TimeEntrySearch
+    {
+        $this->timeSheetJoin = $timeSheetJoin;
+        return $this;
+    }
+
+    /**
+     * @return TimeSheetSearchBasic
+     */
+    public function getTimeSheetJoin(): TimeSheetSearchBasic
+    {
+        return $this->timeSheetJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return TimeEntrySearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): TimeEntrySearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param VendorSearchBasic $vendorJoin
+     * @return TimeEntrySearch
+     */
+    public function setVendorJoin(VendorSearchBasic $vendorJoin): TimeEntrySearch
+    {
+        $this->vendorJoin = $vendorJoin;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearchBasic
+     */
+    public function getVendorJoin(): VendorSearchBasic
+    {
+        return $this->vendorJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return TimeEntrySearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): TimeEntrySearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

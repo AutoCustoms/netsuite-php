@@ -14,76 +14,92 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ResourceAllocationSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $allocationType;
+    protected array $allocationType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $allocationUnit;
+    protected array $allocationUnit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $approvalStatus;
+    protected array $approvalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $customer;
+    protected array $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $endDate;
+    protected array $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $nextApprover;
+    protected array $nextApprover;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $notes;
+    protected array $notes;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $numberHours;
+    protected array $numberHours;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $percentOfTime;
+    protected array $percentOfTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $project;
+    protected array $project;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $requestedBy;
+    protected array $requestedBy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $resource;
+    protected array $resource;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $startDate;
+    protected array $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "allocationType" => "SearchColumnSelectField[]",
         "allocationUnit" => "SearchColumnEnumSelectField[]",
@@ -102,4 +118,293 @@ class ResourceAllocationSearchRowBasic extends SearchRowBasic {
         "startDate" => "SearchColumnDateField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $allocationType
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setAllocationType(SearchColumnSelectField $allocationType): ResourceAllocationSearchRowBasic
+    {
+        $this->allocationType[] = $allocationType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAllocationType(): array
+    {
+        return $this->allocationType;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $allocationUnit
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setAllocationUnit(SearchColumnEnumSelectField $allocationUnit): ResourceAllocationSearchRowBasic
+    {
+        $this->allocationUnit[] = $allocationUnit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getAllocationUnit(): array
+    {
+        return $this->allocationUnit;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $approvalStatus
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setApprovalStatus(SearchColumnEnumSelectField $approvalStatus): ResourceAllocationSearchRowBasic
+    {
+        $this->approvalStatus[] = $approvalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getApprovalStatus(): array
+    {
+        return $this->approvalStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $customer
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setCustomer(SearchColumnSelectField $customer): ResourceAllocationSearchRowBasic
+    {
+        $this->customer[] = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustomer(): array
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $endDate
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setEndDate(SearchColumnDateField $endDate): ResourceAllocationSearchRowBasic
+    {
+        $this->endDate[] = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEndDate(): array
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): ResourceAllocationSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): ResourceAllocationSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $nextApprover
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setNextApprover(SearchColumnSelectField $nextApprover): ResourceAllocationSearchRowBasic
+    {
+        $this->nextApprover[] = $nextApprover;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getNextApprover(): array
+    {
+        return $this->nextApprover;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $notes
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setNotes(SearchColumnStringField $notes): ResourceAllocationSearchRowBasic
+    {
+        $this->notes[] = $notes;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getNotes(): array
+    {
+        return $this->notes;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $numberHours
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setNumberHours(SearchColumnDoubleField $numberHours): ResourceAllocationSearchRowBasic
+    {
+        $this->numberHours[] = $numberHours;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getNumberHours(): array
+    {
+        return $this->numberHours;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $percentOfTime
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setPercentOfTime(SearchColumnDoubleField $percentOfTime): ResourceAllocationSearchRowBasic
+    {
+        $this->percentOfTime[] = $percentOfTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPercentOfTime(): array
+    {
+        return $this->percentOfTime;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $project
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setProject(SearchColumnSelectField $project): ResourceAllocationSearchRowBasic
+    {
+        $this->project[] = $project;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getProject(): array
+    {
+        return $this->project;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $requestedBy
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setRequestedBy(SearchColumnSelectField $requestedBy): ResourceAllocationSearchRowBasic
+    {
+        $this->requestedBy[] = $requestedBy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getRequestedBy(): array
+    {
+        return $this->requestedBy;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $resource
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setResource(SearchColumnSelectField $resource): ResourceAllocationSearchRowBasic
+    {
+        $this->resource[] = $resource;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getResource(): array
+    {
+        return $this->resource;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startDate
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setStartDate(SearchColumnDateField $startDate): ResourceAllocationSearchRowBasic
+    {
+        $this->startDate[] = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartDate(): array
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return ResourceAllocationSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): ResourceAllocationSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

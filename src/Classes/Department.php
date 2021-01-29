@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,39 +23,48 @@ class Department extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $includeChildren;
+    protected bool $includeChildren;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $parent;
+    protected RecordRef $parent;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
-     * @var \NetSuite\Classes\ClassTranslationList
+     * @var ClassTranslationList
      */
-    public $classTranslationList;
+    protected ClassTranslationList $classTranslationList;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $subsidiaryList;
+    protected RecordRefList $subsidiaryList;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "includeChildren" => "boolean",
@@ -67,4 +76,167 @@ class Department extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return Department
+     */
+    public function setName(string $name): Department
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param bool $includeChildren
+     * @return Department
+     */
+    public function setIncludeChildren(bool $includeChildren): Department
+    {
+        $this->includeChildren = $includeChildren;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIncludeChildren(): bool
+    {
+        return $this->includeChildren;
+    }
+
+    /**
+     * @param RecordRef $parent
+     * @return Department
+     */
+    public function setParent(RecordRef $parent): Department
+    {
+        $this->parent = $parent;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getParent(): RecordRef
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return Department
+     */
+    public function setIsInactive(bool $isInactive): Department
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param ClassTranslationList $classTranslationList
+     * @return Department
+     */
+    public function setClassTranslationList(ClassTranslationList $classTranslationList): Department
+    {
+        $this->classTranslationList = $classTranslationList;
+        return $this;
+    }
+
+    /**
+     * @return ClassTranslationList
+     */
+    public function getClassTranslationList(): ClassTranslationList
+    {
+        return $this->classTranslationList;
+    }
+
+    /**
+     * @param RecordRefList $subsidiaryList
+     * @return Department
+     */
+    public function setSubsidiaryList(RecordRefList $subsidiaryList): Department
+    {
+        $this->subsidiaryList = $subsidiaryList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getSubsidiaryList(): RecordRefList
+    {
+        return $this->subsidiaryList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return Department
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): Department
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return Department
+     */
+    public function setInternalId(string $internalId): Department
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return Department
+     */
+    public function setExternalId(string $externalId): Department
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

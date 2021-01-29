@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class SearchEnumMultiSelectField {
     /**
      * @var string[]
      */
-    public $searchValue;
+    protected array $searchValue;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectFieldOperator
+     * @var SearchEnumMultiSelectFieldOperator
      */
-    public $operator;
+    protected SearchEnumMultiSelectFieldOperator $operator;
+
     static $paramtypesmap = array(
         "searchValue" => "string[]",
         "operator" => "SearchEnumMultiSelectFieldOperator",
     );
+
+    /**
+     * @param string[] $searchValue
+     * @return SearchEnumMultiSelectField
+     */
+    public function setSearchValue(string $searchValue): SearchEnumMultiSelectField
+    {
+        $this->searchValue[] = $searchValue;
+        return $this;
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getSearchValue(): array
+    {
+        return $this->searchValue;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectFieldOperator $operator
+     * @return SearchEnumMultiSelectField
+     */
+    public function setOperator(SearchEnumMultiSelectFieldOperator $operator): SearchEnumMultiSelectField
+    {
+        $this->operator = $operator;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectFieldOperator
+     */
+    public function getOperator(): SearchEnumMultiSelectFieldOperator
+    {
+        return $this->operator;
+    }
+
 }

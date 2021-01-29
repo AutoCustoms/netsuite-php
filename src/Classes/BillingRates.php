@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BillingRates {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
+    protected RecordRef $currency;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $billingClass;
+    protected RecordRef $billingClass;
+
     /**
-     * @var \NetSuite\Classes\RateList
+     * @var RateList
      */
-    public $rateList;
+    protected RateList $rateList;
+
     static $paramtypesmap = array(
         "currency" => "RecordRef",
         "billingClass" => "RecordRef",
         "rateList" => "RateList",
     );
+
+    /**
+     * @param RecordRef $currency
+     * @return BillingRates
+     */
+    public function setCurrency(RecordRef $currency): BillingRates
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param RecordRef $billingClass
+     * @return BillingRates
+     */
+    public function setBillingClass(RecordRef $billingClass): BillingRates
+    {
+        $this->billingClass = $billingClass;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBillingClass(): RecordRef
+    {
+        return $this->billingClass;
+    }
+
+    /**
+     * @param RateList $rateList
+     * @return BillingRates
+     */
+    public function setRateList(RateList $rateList): BillingRates
+    {
+        $this->rateList = $rateList;
+        return $this;
+    }
+
+    /**
+     * @return RateList
+     */
+    public function getRateList(): RateList
+    {
+        return $this->rateList;
+    }
+
 }

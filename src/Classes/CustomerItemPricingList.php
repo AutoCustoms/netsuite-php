@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerItemPricingList {
     /**
-     * @var \NetSuite\Classes\CustomerItemPricing[]
+     * @var CustomerItemPricing[]
      */
-    public $itemPricing;
+    protected array $itemPricing;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "itemPricing" => "CustomerItemPricing[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CustomerItemPricing[] $itemPricing
+     * @return CustomerItemPricingList
+     */
+    public function setItemPricing(CustomerItemPricing $itemPricing): CustomerItemPricingList
+    {
+        $this->itemPricing[] = $itemPricing;
+        return $this;
+    }
+
+    /**
+     * @return CustomerItemPricing[]
+     */
+    public function getItemPricing(): array
+    {
+        return $this->itemPricing;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CustomerItemPricingList
+     */
+    public function setReplaceAll(bool $replaceAll): CustomerItemPricingList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

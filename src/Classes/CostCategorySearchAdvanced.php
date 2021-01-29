@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CostCategorySearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\CostCategorySearch
+     * @var CostCategorySearch
      */
-    public $criteria;
+    protected CostCategorySearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\CostCategorySearchRow
+     * @var CostCategorySearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected CostCategorySearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "CostCategorySearch",
         "columns" => "CostCategorySearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param CostCategorySearch $criteria
+     * @return CostCategorySearchAdvanced
+     */
+    public function setCriteria(CostCategorySearch $criteria): CostCategorySearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return CostCategorySearch
+     */
+    public function getCriteria(): CostCategorySearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param CostCategorySearchRow $columns
+     * @return CostCategorySearchAdvanced
+     */
+    public function setColumns(CostCategorySearchRow $columns): CostCategorySearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return CostCategorySearchRow
+     */
+    public function getColumns(): CostCategorySearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return CostCategorySearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): CostCategorySearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return CostCategorySearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): CostCategorySearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

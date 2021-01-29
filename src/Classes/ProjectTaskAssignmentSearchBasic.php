@@ -14,112 +14,137 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ProjectTaskAssignmentSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $actualWork;
+    protected SearchDoubleField $actualWork;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $cost;
+    protected SearchDoubleField $cost;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $costBase;
+    protected SearchDoubleField $costBase;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $endDate;
+    protected SearchDateField $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $estimatedWork;
+    protected SearchDoubleField $estimatedWork;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $estimatedWorkBaseline;
+    protected SearchDoubleField $estimatedWorkBaseline;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $grossProfit;
+    protected SearchDoubleField $grossProfit;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $grossProfitBase;
+    protected SearchDoubleField $grossProfitBase;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $plannedWork;
+    protected SearchDoubleField $plannedWork;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $plannedWorkBaseline;
+    protected SearchDoubleField $plannedWorkBaseline;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $price;
+    protected SearchDoubleField $price;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $priceBase;
+    protected SearchDoubleField $priceBase;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $resource;
+    protected SearchMultiSelectField $resource;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $resourceName;
+    protected SearchStringField $resourceName;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $serviceItem;
+    protected SearchStringField $serviceItem;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $serviceItemDesc;
+    protected SearchStringField $serviceItemDesc;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $startDate;
+    protected SearchDateField $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $unitCost;
+    protected SearchDoubleField $unitCost;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $unitCostBase;
+    protected SearchDoubleField $unitCostBase;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $unitPrice;
+    protected SearchDoubleField $unitPrice;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $unitPriceBase;
+    protected SearchDoubleField $unitPriceBase;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $units;
+    protected SearchDoubleField $units;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $workCalendar;
+    protected SearchMultiSelectField $workCalendar;
+
     static $paramtypesmap = array(
         "actualWork" => "SearchDoubleField",
         "cost" => "SearchDoubleField",
@@ -147,4 +172,455 @@ class ProjectTaskAssignmentSearchBasic extends SearchRecordBasic {
         "units" => "SearchDoubleField",
         "workCalendar" => "SearchMultiSelectField",
     );
+
+    /**
+     * @param SearchDoubleField $actualWork
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setActualWork(SearchDoubleField $actualWork): ProjectTaskAssignmentSearchBasic
+    {
+        $this->actualWork = $actualWork;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getActualWork(): SearchDoubleField
+    {
+        return $this->actualWork;
+    }
+
+    /**
+     * @param SearchDoubleField $cost
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setCost(SearchDoubleField $cost): ProjectTaskAssignmentSearchBasic
+    {
+        $this->cost = $cost;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getCost(): SearchDoubleField
+    {
+        return $this->cost;
+    }
+
+    /**
+     * @param SearchDoubleField $costBase
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setCostBase(SearchDoubleField $costBase): ProjectTaskAssignmentSearchBasic
+    {
+        $this->costBase = $costBase;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getCostBase(): SearchDoubleField
+    {
+        return $this->costBase;
+    }
+
+    /**
+     * @param SearchDateField $endDate
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setEndDate(SearchDateField $endDate): ProjectTaskAssignmentSearchBasic
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getEndDate(): SearchDateField
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchDoubleField $estimatedWork
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setEstimatedWork(SearchDoubleField $estimatedWork): ProjectTaskAssignmentSearchBasic
+    {
+        $this->estimatedWork = $estimatedWork;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getEstimatedWork(): SearchDoubleField
+    {
+        return $this->estimatedWork;
+    }
+
+    /**
+     * @param SearchDoubleField $estimatedWorkBaseline
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setEstimatedWorkBaseline(SearchDoubleField $estimatedWorkBaseline): ProjectTaskAssignmentSearchBasic
+    {
+        $this->estimatedWorkBaseline = $estimatedWorkBaseline;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getEstimatedWorkBaseline(): SearchDoubleField
+    {
+        return $this->estimatedWorkBaseline;
+    }
+
+    /**
+     * @param SearchDoubleField $grossProfit
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setGrossProfit(SearchDoubleField $grossProfit): ProjectTaskAssignmentSearchBasic
+    {
+        $this->grossProfit = $grossProfit;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getGrossProfit(): SearchDoubleField
+    {
+        return $this->grossProfit;
+    }
+
+    /**
+     * @param SearchDoubleField $grossProfitBase
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setGrossProfitBase(SearchDoubleField $grossProfitBase): ProjectTaskAssignmentSearchBasic
+    {
+        $this->grossProfitBase = $grossProfitBase;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getGrossProfitBase(): SearchDoubleField
+    {
+        return $this->grossProfitBase;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): ProjectTaskAssignmentSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): ProjectTaskAssignmentSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchDoubleField $plannedWork
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setPlannedWork(SearchDoubleField $plannedWork): ProjectTaskAssignmentSearchBasic
+    {
+        $this->plannedWork = $plannedWork;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPlannedWork(): SearchDoubleField
+    {
+        return $this->plannedWork;
+    }
+
+    /**
+     * @param SearchDoubleField $plannedWorkBaseline
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setPlannedWorkBaseline(SearchDoubleField $plannedWorkBaseline): ProjectTaskAssignmentSearchBasic
+    {
+        $this->plannedWorkBaseline = $plannedWorkBaseline;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPlannedWorkBaseline(): SearchDoubleField
+    {
+        return $this->plannedWorkBaseline;
+    }
+
+    /**
+     * @param SearchDoubleField $price
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setPrice(SearchDoubleField $price): ProjectTaskAssignmentSearchBasic
+    {
+        $this->price = $price;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPrice(): SearchDoubleField
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param SearchDoubleField $priceBase
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setPriceBase(SearchDoubleField $priceBase): ProjectTaskAssignmentSearchBasic
+    {
+        $this->priceBase = $priceBase;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPriceBase(): SearchDoubleField
+    {
+        return $this->priceBase;
+    }
+
+    /**
+     * @param SearchMultiSelectField $resource
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setResource(SearchMultiSelectField $resource): ProjectTaskAssignmentSearchBasic
+    {
+        $this->resource = $resource;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getResource(): SearchMultiSelectField
+    {
+        return $this->resource;
+    }
+
+    /**
+     * @param SearchStringField $resourceName
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setResourceName(SearchStringField $resourceName): ProjectTaskAssignmentSearchBasic
+    {
+        $this->resourceName = $resourceName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getResourceName(): SearchStringField
+    {
+        return $this->resourceName;
+    }
+
+    /**
+     * @param SearchStringField $serviceItem
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setServiceItem(SearchStringField $serviceItem): ProjectTaskAssignmentSearchBasic
+    {
+        $this->serviceItem = $serviceItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getServiceItem(): SearchStringField
+    {
+        return $this->serviceItem;
+    }
+
+    /**
+     * @param SearchStringField $serviceItemDesc
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setServiceItemDesc(SearchStringField $serviceItemDesc): ProjectTaskAssignmentSearchBasic
+    {
+        $this->serviceItemDesc = $serviceItemDesc;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getServiceItemDesc(): SearchStringField
+    {
+        return $this->serviceItemDesc;
+    }
+
+    /**
+     * @param SearchDateField $startDate
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setStartDate(SearchDateField $startDate): ProjectTaskAssignmentSearchBasic
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getStartDate(): SearchDateField
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchDoubleField $unitCost
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setUnitCost(SearchDoubleField $unitCost): ProjectTaskAssignmentSearchBasic
+    {
+        $this->unitCost = $unitCost;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getUnitCost(): SearchDoubleField
+    {
+        return $this->unitCost;
+    }
+
+    /**
+     * @param SearchDoubleField $unitCostBase
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setUnitCostBase(SearchDoubleField $unitCostBase): ProjectTaskAssignmentSearchBasic
+    {
+        $this->unitCostBase = $unitCostBase;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getUnitCostBase(): SearchDoubleField
+    {
+        return $this->unitCostBase;
+    }
+
+    /**
+     * @param SearchDoubleField $unitPrice
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setUnitPrice(SearchDoubleField $unitPrice): ProjectTaskAssignmentSearchBasic
+    {
+        $this->unitPrice = $unitPrice;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getUnitPrice(): SearchDoubleField
+    {
+        return $this->unitPrice;
+    }
+
+    /**
+     * @param SearchDoubleField $unitPriceBase
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setUnitPriceBase(SearchDoubleField $unitPriceBase): ProjectTaskAssignmentSearchBasic
+    {
+        $this->unitPriceBase = $unitPriceBase;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getUnitPriceBase(): SearchDoubleField
+    {
+        return $this->unitPriceBase;
+    }
+
+    /**
+     * @param SearchDoubleField $units
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setUnits(SearchDoubleField $units): ProjectTaskAssignmentSearchBasic
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getUnits(): SearchDoubleField
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param SearchMultiSelectField $workCalendar
+     * @return ProjectTaskAssignmentSearchBasic
+     */
+    public function setWorkCalendar(SearchMultiSelectField $workCalendar): ProjectTaskAssignmentSearchBasic
+    {
+        $this->workCalendar = $workCalendar;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getWorkCalendar(): SearchMultiSelectField
+    {
+        return $this->workCalendar;
+    }
+
 }

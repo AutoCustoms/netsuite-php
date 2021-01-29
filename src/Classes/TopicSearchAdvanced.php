@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TopicSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\TopicSearch
+     * @var TopicSearch
      */
-    public $criteria;
+    protected TopicSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\TopicSearchRow
+     * @var TopicSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected TopicSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "TopicSearch",
         "columns" => "TopicSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param TopicSearch $criteria
+     * @return TopicSearchAdvanced
+     */
+    public function setCriteria(TopicSearch $criteria): TopicSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return TopicSearch
+     */
+    public function getCriteria(): TopicSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param TopicSearchRow $columns
+     * @return TopicSearchAdvanced
+     */
+    public function setColumns(TopicSearchRow $columns): TopicSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return TopicSearchRow
+     */
+    public function getColumns(): TopicSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return TopicSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): TopicSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return TopicSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): TopicSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

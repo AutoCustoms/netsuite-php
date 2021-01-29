@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeRates {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $entityCurrency;
+    protected RecordRef $entityCurrency;
+
     /**
      * @var float
      */
-    public $rate;
+    protected float $rate;
+
     static $paramtypesmap = array(
         "entityCurrency" => "RecordRef",
         "rate" => "float",
     );
+
+    /**
+     * @param RecordRef $entityCurrency
+     * @return EmployeeRates
+     */
+    public function setEntityCurrency(RecordRef $entityCurrency): EmployeeRates
+    {
+        $this->entityCurrency = $entityCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEntityCurrency(): RecordRef
+    {
+        return $this->entityCurrency;
+    }
+
+    /**
+     * @param float $rate
+     * @return EmployeeRates
+     */
+    public function setRate(float $rate): EmployeeRates
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRate(): float
+    {
+        return $this->rate;
+    }
+
 }

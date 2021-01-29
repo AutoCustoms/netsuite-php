@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PartnerPromoCodeList {
     /**
-     * @var \NetSuite\Classes\PartnerPromoCode[]
+     * @var PartnerPromoCode[]
      */
-    public $promoCode;
+    protected array $promoCode;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "promoCode" => "PartnerPromoCode[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param PartnerPromoCode[] $promoCode
+     * @return PartnerPromoCodeList
+     */
+    public function setPromoCode(PartnerPromoCode $promoCode): PartnerPromoCodeList
+    {
+        $this->promoCode[] = $promoCode;
+        return $this;
+    }
+
+    /**
+     * @return PartnerPromoCode[]
+     */
+    public function getPromoCode(): array
+    {
+        return $this->promoCode;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return PartnerPromoCodeList
+     */
+    public function setReplaceAll(bool $replaceAll): PartnerPromoCodeList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

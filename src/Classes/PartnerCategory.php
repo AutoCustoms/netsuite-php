@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,23 +23,28 @@ class PartnerCategory extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $parent;
+    protected RecordRef $parent;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "parent" => "RecordRef",
@@ -47,4 +52,95 @@ class PartnerCategory extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return PartnerCategory
+     */
+    public function setName(string $name): PartnerCategory
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param RecordRef $parent
+     * @return PartnerCategory
+     */
+    public function setParent(RecordRef $parent): PartnerCategory
+    {
+        $this->parent = $parent;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getParent(): RecordRef
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return PartnerCategory
+     */
+    public function setIsInactive(bool $isInactive): PartnerCategory
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param string $internalId
+     * @return PartnerCategory
+     */
+    public function setInternalId(string $internalId): PartnerCategory
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return PartnerCategory
+     */
+    public function setExternalId(string $externalId): PartnerCategory
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

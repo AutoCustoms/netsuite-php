@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class UnitsTypeSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\UnitsTypeSearchRowBasic
+     * @var UnitsTypeSearchRowBasic
      */
-    public $basic;
+    protected UnitsTypeSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "UnitsTypeSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
     );
+
+    /**
+     * @param UnitsTypeSearchRowBasic $basic
+     * @return UnitsTypeSearchRow
+     */
+    public function setBasic(UnitsTypeSearchRowBasic $basic): UnitsTypeSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return UnitsTypeSearchRowBasic
+     */
+    public function getBasic(): UnitsTypeSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return UnitsTypeSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): UnitsTypeSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
 }

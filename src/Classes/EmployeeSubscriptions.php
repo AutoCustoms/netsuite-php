@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,76 @@ class EmployeeSubscriptions {
     /**
      * @var string
      */
-    public $subscribed;
+    protected string $subscribed;
+
     /**
      * @var string
      */
-    public $subscription;
+    protected string $subscription;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     static $paramtypesmap = array(
         "subscribed" => "string",
         "subscription" => "string",
         "lastModifiedDate" => "dateTime",
     );
+
+    /**
+     * @param string $subscribed
+     * @return EmployeeSubscriptions
+     */
+    public function setSubscribed(string $subscribed): EmployeeSubscriptions
+    {
+        $this->subscribed = $subscribed;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSubscribed(): string
+    {
+        return $this->subscribed;
+    }
+
+    /**
+     * @param string $subscription
+     * @return EmployeeSubscriptions
+     */
+    public function setSubscription(string $subscription): EmployeeSubscriptions
+    {
+        $this->subscription = $subscription;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSubscription(): string
+    {
+        return $this->subscription;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return EmployeeSubscriptions
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): EmployeeSubscriptions
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
 }

@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FairValuePriceSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\FairValuePriceSearchRowBasic
+     * @var FairValuePriceSearchRowBasic
      */
-    public $basic;
+    protected FairValuePriceSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchRowBasic
+     * @var ItemSearchRowBasic
      */
-    public $itemJoin;
+    protected ItemSearchRowBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "FairValuePriceSearchRowBasic",
         "itemJoin" => "ItemSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param FairValuePriceSearchRowBasic $basic
+     * @return FairValuePriceSearchRow
+     */
+    public function setBasic(FairValuePriceSearchRowBasic $basic): FairValuePriceSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function getBasic(): FairValuePriceSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ItemSearchRowBasic $itemJoin
+     * @return FairValuePriceSearchRow
+     */
+    public function setItemJoin(ItemSearchRowBasic $itemJoin): FairValuePriceSearchRow
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchRowBasic
+     */
+    public function getItemJoin(): ItemSearchRowBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return FairValuePriceSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): FairValuePriceSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

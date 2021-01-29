@@ -14,156 +14,192 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeBillSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $approvalStatus;
+    protected array $approvalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $break;
+    protected array $break;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $class;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $customer;
+    protected array $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $date;
+    protected array $date;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $dateCreated;
+    protected array $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $department;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $durationDecimal;
+    protected array $durationDecimal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $employee;
+    protected array $employee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $endTime;
+    protected array $endTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $hours;
+    protected array $hours;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isBillable;
+    protected array $isBillable;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isExempt;
+    protected array $isExempt;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isProductive;
+    protected array $isProductive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isUtilized;
+    protected array $isUtilized;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastModified;
+    protected array $lastModified;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memo;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $paidExternally;
+    protected array $paidExternally;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $payItem;
+    protected array $payItem;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $payrollDate;
+    protected array $payrollDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $rate;
+    protected array $rate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $rejectionNote;
+    protected array $rejectionNote;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $startTime;
+    protected array $startTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $status;
+    protected array $status;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $supervisorApproval;
+    protected array $supervisorApproval;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $temporaryLocalJurisdiction;
+    protected array $temporaryLocalJurisdiction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $temporaryStateJurisdiction;
+    protected array $temporaryStateJurisdiction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $timeModified;
+    protected array $timeModified;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $timeSheet;
+    protected array $timeSheet;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $type;
+    protected array $type;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "approvalStatus" => "SearchColumnSelectField[]",
         "break" => "SearchColumnStringField[]",
@@ -202,4 +238,653 @@ class TimeBillSearchRowBasic extends SearchRowBasic {
         "type" => "SearchColumnEnumSelectField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $approvalStatus
+     * @return TimeBillSearchRowBasic
+     */
+    public function setApprovalStatus(SearchColumnSelectField $approvalStatus): TimeBillSearchRowBasic
+    {
+        $this->approvalStatus[] = $approvalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getApprovalStatus(): array
+    {
+        return $this->approvalStatus;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $break
+     * @return TimeBillSearchRowBasic
+     */
+    public function setBreak(SearchColumnStringField $break): TimeBillSearchRowBasic
+    {
+        $this->break[] = $break;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBreak(): array
+    {
+        return $this->break;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $class
+     * @return TimeBillSearchRowBasic
+     */
+    public function setClass(SearchColumnSelectField $class): TimeBillSearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $customer
+     * @return TimeBillSearchRowBasic
+     */
+    public function setCustomer(SearchColumnSelectField $customer): TimeBillSearchRowBasic
+    {
+        $this->customer[] = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustomer(): array
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $date
+     * @return TimeBillSearchRowBasic
+     */
+    public function setDate(SearchColumnDateField $date): TimeBillSearchRowBasic
+    {
+        $this->date[] = $date;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDate(): array
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateCreated
+     * @return TimeBillSearchRowBasic
+     */
+    public function setDateCreated(SearchColumnDateField $dateCreated): TimeBillSearchRowBasic
+    {
+        $this->dateCreated[] = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateCreated(): array
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $department
+     * @return TimeBillSearchRowBasic
+     */
+    public function setDepartment(SearchColumnSelectField $department): TimeBillSearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $durationDecimal
+     * @return TimeBillSearchRowBasic
+     */
+    public function setDurationDecimal(SearchColumnDoubleField $durationDecimal): TimeBillSearchRowBasic
+    {
+        $this->durationDecimal[] = $durationDecimal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDurationDecimal(): array
+    {
+        return $this->durationDecimal;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $employee
+     * @return TimeBillSearchRowBasic
+     */
+    public function setEmployee(SearchColumnSelectField $employee): TimeBillSearchRowBasic
+    {
+        $this->employee[] = $employee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEmployee(): array
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $endTime
+     * @return TimeBillSearchRowBasic
+     */
+    public function setEndTime(SearchColumnDateField $endTime): TimeBillSearchRowBasic
+    {
+        $this->endTime[] = $endTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEndTime(): array
+    {
+        return $this->endTime;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return TimeBillSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): TimeBillSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $hours
+     * @return TimeBillSearchRowBasic
+     */
+    public function setHours(SearchColumnStringField $hours): TimeBillSearchRowBasic
+    {
+        $this->hours[] = $hours;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getHours(): array
+    {
+        return $this->hours;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return TimeBillSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): TimeBillSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isBillable
+     * @return TimeBillSearchRowBasic
+     */
+    public function setIsBillable(SearchColumnBooleanField $isBillable): TimeBillSearchRowBasic
+    {
+        $this->isBillable[] = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsBillable(): array
+    {
+        return $this->isBillable;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isExempt
+     * @return TimeBillSearchRowBasic
+     */
+    public function setIsExempt(SearchColumnBooleanField $isExempt): TimeBillSearchRowBasic
+    {
+        $this->isExempt[] = $isExempt;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsExempt(): array
+    {
+        return $this->isExempt;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isProductive
+     * @return TimeBillSearchRowBasic
+     */
+    public function setIsProductive(SearchColumnBooleanField $isProductive): TimeBillSearchRowBasic
+    {
+        $this->isProductive[] = $isProductive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsProductive(): array
+    {
+        return $this->isProductive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isUtilized
+     * @return TimeBillSearchRowBasic
+     */
+    public function setIsUtilized(SearchColumnBooleanField $isUtilized): TimeBillSearchRowBasic
+    {
+        $this->isUtilized[] = $isUtilized;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsUtilized(): array
+    {
+        return $this->isUtilized;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $item
+     * @return TimeBillSearchRowBasic
+     */
+    public function setItem(SearchColumnStringField $item): TimeBillSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModified
+     * @return TimeBillSearchRowBasic
+     */
+    public function setLastModified(SearchColumnDateField $lastModified): TimeBillSearchRowBasic
+    {
+        $this->lastModified[] = $lastModified;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModified(): array
+    {
+        return $this->lastModified;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return TimeBillSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): TimeBillSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return TimeBillSearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): TimeBillSearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $paidExternally
+     * @return TimeBillSearchRowBasic
+     */
+    public function setPaidExternally(SearchColumnBooleanField $paidExternally): TimeBillSearchRowBasic
+    {
+        $this->paidExternally[] = $paidExternally;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPaidExternally(): array
+    {
+        return $this->paidExternally;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $payItem
+     * @return TimeBillSearchRowBasic
+     */
+    public function setPayItem(SearchColumnSelectField $payItem): TimeBillSearchRowBasic
+    {
+        $this->payItem[] = $payItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPayItem(): array
+    {
+        return $this->payItem;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $payrollDate
+     * @return TimeBillSearchRowBasic
+     */
+    public function setPayrollDate(SearchColumnDateField $payrollDate): TimeBillSearchRowBasic
+    {
+        $this->payrollDate[] = $payrollDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getPayrollDate(): array
+    {
+        return $this->payrollDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $rate
+     * @return TimeBillSearchRowBasic
+     */
+    public function setRate(SearchColumnDoubleField $rate): TimeBillSearchRowBasic
+    {
+        $this->rate[] = $rate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRate(): array
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $rejectionNote
+     * @return TimeBillSearchRowBasic
+     */
+    public function setRejectionNote(SearchColumnStringField $rejectionNote): TimeBillSearchRowBasic
+    {
+        $this->rejectionNote[] = $rejectionNote;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRejectionNote(): array
+    {
+        return $this->rejectionNote;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startTime
+     * @return TimeBillSearchRowBasic
+     */
+    public function setStartTime(SearchColumnDateField $startTime): TimeBillSearchRowBasic
+    {
+        $this->startTime[] = $startTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartTime(): array
+    {
+        return $this->startTime;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $status
+     * @return TimeBillSearchRowBasic
+     */
+    public function setStatus(SearchColumnStringField $status): TimeBillSearchRowBasic
+    {
+        $this->status[] = $status;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getStatus(): array
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $subsidiary
+     * @return TimeBillSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnStringField $subsidiary): TimeBillSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $supervisorApproval
+     * @return TimeBillSearchRowBasic
+     */
+    public function setSupervisorApproval(SearchColumnBooleanField $supervisorApproval): TimeBillSearchRowBasic
+    {
+        $this->supervisorApproval[] = $supervisorApproval;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getSupervisorApproval(): array
+    {
+        return $this->supervisorApproval;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $temporaryLocalJurisdiction
+     * @return TimeBillSearchRowBasic
+     */
+    public function setTemporaryLocalJurisdiction(SearchColumnStringField $temporaryLocalJurisdiction): TimeBillSearchRowBasic
+    {
+        $this->temporaryLocalJurisdiction[] = $temporaryLocalJurisdiction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTemporaryLocalJurisdiction(): array
+    {
+        return $this->temporaryLocalJurisdiction;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $temporaryStateJurisdiction
+     * @return TimeBillSearchRowBasic
+     */
+    public function setTemporaryStateJurisdiction(SearchColumnStringField $temporaryStateJurisdiction): TimeBillSearchRowBasic
+    {
+        $this->temporaryStateJurisdiction[] = $temporaryStateJurisdiction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTemporaryStateJurisdiction(): array
+    {
+        return $this->temporaryStateJurisdiction;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $timeModified
+     * @return TimeBillSearchRowBasic
+     */
+    public function setTimeModified(SearchColumnBooleanField $timeModified): TimeBillSearchRowBasic
+    {
+        $this->timeModified[] = $timeModified;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getTimeModified(): array
+    {
+        return $this->timeModified;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $timeSheet
+     * @return TimeBillSearchRowBasic
+     */
+    public function setTimeSheet(SearchColumnSelectField $timeSheet): TimeBillSearchRowBasic
+    {
+        $this->timeSheet[] = $timeSheet;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTimeSheet(): array
+    {
+        return $this->timeSheet;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $type
+     * @return TimeBillSearchRowBasic
+     */
+    public function setType(SearchColumnEnumSelectField $type): TimeBillSearchRowBasic
+    {
+        $this->type[] = $type;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getType(): array
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return TimeBillSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): TimeBillSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

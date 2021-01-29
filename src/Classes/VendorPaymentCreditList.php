@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorPaymentCreditList {
     /**
-     * @var \NetSuite\Classes\VendorPaymentCredit[]
+     * @var VendorPaymentCredit[]
      */
-    public $credit;
+    protected array $credit;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "credit" => "VendorPaymentCredit[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param VendorPaymentCredit[] $credit
+     * @return VendorPaymentCreditList
+     */
+    public function setCredit(VendorPaymentCredit $credit): VendorPaymentCreditList
+    {
+        $this->credit[] = $credit;
+        return $this;
+    }
+
+    /**
+     * @return VendorPaymentCredit[]
+     */
+    public function getCredit(): array
+    {
+        return $this->credit;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return VendorPaymentCreditList
+     */
+    public function setReplaceAll(bool $replaceAll): VendorPaymentCreditList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

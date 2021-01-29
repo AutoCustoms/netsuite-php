@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerMessageSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\CustomerMessageSearch
+     * @var CustomerMessageSearch
      */
-    public $criteria;
+    protected CustomerMessageSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\CustomerMessageSearchRow
+     * @var CustomerMessageSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected CustomerMessageSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "CustomerMessageSearch",
         "columns" => "CustomerMessageSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param CustomerMessageSearch $criteria
+     * @return CustomerMessageSearchAdvanced
+     */
+    public function setCriteria(CustomerMessageSearch $criteria): CustomerMessageSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return CustomerMessageSearch
+     */
+    public function getCriteria(): CustomerMessageSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param CustomerMessageSearchRow $columns
+     * @return CustomerMessageSearchAdvanced
+     */
+    public function setColumns(CustomerMessageSearchRow $columns): CustomerMessageSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return CustomerMessageSearchRow
+     */
+    public function getColumns(): CustomerMessageSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return CustomerMessageSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): CustomerMessageSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return CustomerMessageSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): CustomerMessageSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

@@ -14,1452 +14,1788 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TransactionSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $abbrev;
+    protected array $abbrev;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $account;
+    protected array $account;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $accountType;
+    protected array $accountType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $acctCorpCardExp;
+    protected array $acctCorpCardExp;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $actualProductionEndDate;
+    protected array $actualProductionEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $actualProductionStartDate;
+    protected array $actualProductionStartDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $actualShipDate;
+    protected array $actualShipDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $altSalesAmount;
+    protected array $altSalesAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $altSalesNetAmount;
+    protected array $altSalesNetAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amount;
+    protected array $amount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amountPaid;
+    protected array $amountPaid;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amountRemaining;
+    protected array $amountRemaining;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amountUnbilled;
+    protected array $amountUnbilled;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $appliedToForeignAmount;
+    protected array $appliedToForeignAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $appliedToIsFxVariance;
+    protected array $appliedToIsFxVariance;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $appliedToLinkAmount;
+    protected array $appliedToLinkAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $appliedToLinkType;
+    protected array $appliedToLinkType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $appliedToTransaction;
+    protected array $appliedToTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $applyingForeignAmount;
+    protected array $applyingForeignAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $applyingIsFxVariance;
+    protected array $applyingIsFxVariance;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $applyingLinkAmount;
+    protected array $applyingLinkAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $applyingLinkType;
+    protected array $applyingLinkType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $applyingTransaction;
+    protected array $applyingTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $approvalStatus;
+    protected array $approvalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $authCode;
+    protected array $authCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $autoCalculateLag;
+    protected array $autoCalculateLag;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $avsStreetMatch;
+    protected array $avsStreetMatch;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $avsZipMatch;
+    protected array $avsZipMatch;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $billable;
+    protected array $billable;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress;
+    protected array $billAddress;
+
+    protected $billAddress1;
+    protected $billAddress2;
+    protected $billAddress3;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress1;
+    protected array $billAddressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress2;
+    protected array $billAttention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress3;
+    protected array $billCity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $billAddressee;
+    protected array $billCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAttention;
+    protected array $billCountryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $billCity;
+    protected array $billedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billCountry;
+    protected array $billingAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $billCountryCode;
+    protected array $billingAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billedDate;
+    protected array $billingSchedule;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billingAccount;
+    protected array $billingTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $billingAmount;
+    protected array $billPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $billingSchedule;
+    protected array $billState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $billingTransaction;
+    protected array $billVarianceStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billPhone;
+    protected array $billZip;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billState;
+    protected array $binNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $billVarianceStatus;
+    protected array $binNumberQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $billZip;
+    protected array $bomQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $binNumber;
+    protected array $buildEntireAssembly;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $binNumberQuantity;
+    protected array $buildVariance;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $bomQuantity;
+    protected array $built;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $buildEntireAssembly;
+    protected array $canHaveStackablePromotions;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $buildVariance;
+    protected array $catchUpPeriod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $built;
+    protected array $ccCustomerCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $canHaveStackablePromotions;
+    protected array $ccExpDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $catchUpPeriod;
+    protected array $ccHolderName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $ccCustomerCode;
+    protected array $ccNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $ccExpDate;
+    protected array $ccStreet;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $ccHolderName;
+    protected array $ccZipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $ccNumber;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $ccStreet;
+    protected array $cleared;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $ccZipCode;
+    protected array $closed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $class;
+    protected array $closeDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $cleared;
+    protected array $cogsAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $closed;
+    protected array $commissionEffectiveDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $closeDate;
+    protected array $commit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $cogsAmount;
+    protected array $componentYield;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $commissionEffectiveDate;
+    protected array $confirmationNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $commit;
+    protected array $contribution;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $componentYield;
+    protected array $contributionPrimary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $confirmationNumber;
+    protected array $costComponentAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $contribution;
+    protected array $costComponentCategory;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $contributionPrimary;
+    protected array $costComponentItem;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $costComponentAmount;
+    protected array $costComponentQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $costComponentCategory;
+    protected array $costComponentStandardCost;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $costComponentItem;
+    protected array $costEstimate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $costComponentQuantity;
+    protected array $costEstimateRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $costComponentStandardCost;
+    protected array $costEstimateType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $costEstimate;
+    protected array $createdBy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $costEstimateRate;
+    protected array $createdFrom;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $costEstimateType;
+    protected array $creditAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $createdBy;
+    protected array $cscMatch;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $createdFrom;
+    protected array $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $creditAmount;
+    protected array $customForm;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $cscMatch;
+    protected array $customGL;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $currency;
+    protected array $custType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $customForm;
+    protected array $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnLongField[]
      */
-    public $customGL;
+    protected array $daysOpen;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnLongField[]
      */
-    public $custType;
+    protected array $daysOverdue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $dateCreated;
+    protected array $debitAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $daysOpen;
+    protected array $deferredRevenue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $daysOverdue;
+    protected array $deferRevRec;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $debitAmount;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $deferredRevenue;
+    protected array $depositDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $deferRevRec;
+    protected array $depositTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $department;
+    protected array $discountAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $depositDate;
+    protected array $docUnit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $depositTransaction;
+    protected array $drAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $discountAmount;
+    protected array $dueDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $docUnit;
+    protected array $effectiveRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $drAccount;
+    protected array $email;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $dueDate;
+    protected array $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $effectiveRate;
+    protected array $entity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $email;
+    protected array $entityStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $endDate;
+    protected array $estGrossProfit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $entity;
+    protected array $estGrossProfitPct;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $entityStatus;
+    protected array $estGrossProfitPercent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $estGrossProfit;
+    protected array $exchangeRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $estGrossProfitPct;
+    protected array $excludeCommission;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $estGrossProfitPercent;
+    protected array $excludeFromRateRequest;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $exchangeRate;
+    protected array $expectedCloseDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $excludeCommission;
+    protected array $expectedReceiptDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $excludeFromRateRequest;
+    protected array $expenseCategory;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $expectedCloseDate;
+    protected array $expenseDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $expectedReceiptDate;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $expenseCategory;
+    protected array $firmed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $expenseDate;
+    protected array $forecastType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $fulfillingTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $firmed;
+    protected array $fxAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $forecastType;
+    protected array $fxAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fulfillingTransaction;
+    protected array $fxCostEstimate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxAccount;
+    protected array $fxCostEstimateRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxAmount;
+    protected array $fxEstGrossProfit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxCostEstimate;
+    protected array $fxTranCostEstimate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxCostEstimateRate;
+    protected array $fxVsoeAllocation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxEstGrossProfit;
+    protected array $fxVsoeAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fxTranCostEstimate;
+    protected array $fxVsoePrice;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $fxVsoeAllocation;
+    protected array $gcoAvailabelToCharge;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $fxVsoeAmount;
+    protected array $gcoAvailableToRefund;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $fxVsoePrice;
+    protected array $gcoAvsStreetMatch;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $gcoAvailabelToCharge;
+    protected array $gcoAvsZipMatch;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnLongField[]
      */
-    public $gcoAvailableToRefund;
+    protected array $gcoBuyerAccountAge;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $gcoAvsStreetMatch;
+    protected array $gcoBuyerIp;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoAvsZipMatch;
+    protected array $gcoChargeAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoBuyerAccountAge;
+    protected array $gcoChargebackAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoBuyerIp;
+    protected array $gcoConfirmedChargedTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoChargeAmount;
+    protected array $gcoConfirmedRefundedTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $gcoChargebackAmount;
+    protected array $gcoCreditcardNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $gcoConfirmedChargedTotal;
+    protected array $gcoCscMatch;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $gcoConfirmedRefundedTotal;
+    protected array $gcoFinancialState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $gcoCreditcardNumber;
+    protected array $gcoFulfillmentState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $gcoCscMatch;
+    protected array $gcoOrderId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoFinancialState;
+    protected array $gcoOrderTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoFulfillmentState;
+    protected array $gcoPromotionAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $gcoOrderId;
+    protected array $gcoPromotionName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoOrderTotal;
+    protected array $gcoRefundAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoPromotionAmount;
+    protected array $gcoShippingTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $gcoPromotionName;
+    protected array $gcoStateChangedDetail;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $gcoRefundAmount;
+    protected array $giftCert;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $gcoShippingTotal;
+    protected array $grossAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $gcoStateChangedDetail;
+    protected array $includeInForecast;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $giftCert;
+    protected array $incoterm;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $grossAmount;
+    protected array $intercoStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $includeInForecast;
+    protected array $intercoTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $incoterm;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $intercoStatus;
+    protected array $inventoryLocation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $intercoTransaction;
+    protected array $inventorySubsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $internalId;
+    protected array $inVsoeBundle;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $inventoryLocation;
+    protected array $isAllocation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $inventorySubsidiary;
+    protected array $isBackflush;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $inVsoeBundle;
+    protected array $isGcoChargeback;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isAllocation;
+    protected array $isGcoChargeConfirmed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isBackflush;
+    protected array $isGcoPaymentGuaranteed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isGcoChargeback;
+    protected array $isGcoRefundConfirmed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isGcoChargeConfirmed;
+    protected array $isInsideDelivery;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isGcoPaymentGuaranteed;
+    protected array $isInsidePickup;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isGcoRefundConfirmed;
+    protected array $isIntercompanyAdjustment;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInsideDelivery;
+    protected array $isInTransitPayment;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInsidePickup;
+    protected array $isMultiShipTo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isIntercompanyAdjustment;
+    protected array $isReversal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInTransitPayment;
+    protected array $isRevRecTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isMultiShipTo;
+    protected array $isScrap;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isReversal;
+    protected array $isShipAddress;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isRevRecTransaction;
+    protected array $isTransferPriceCosting;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isScrap;
+    protected array $isWip;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $isShipAddress;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $isTransferPriceCosting;
+    protected array $itemFulfillmentChoice;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $isWip;
+    protected array $itemRevision;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $item;
+    protected array $landedCostPerLine;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $itemFulfillmentChoice;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $itemRevision;
+    protected array $leadSource;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnLongField[]
      */
-    public $landedCostPerLine;
+    protected array $line;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnLongField[]
      */
-    public $lastModifiedDate;
+    protected array $lineSequenceNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnLongField[]
      */
-    public $leadSource;
+    protected array $lineUniqueKey;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnSelectField[]
      */
-    public $line;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $lineSequenceNumber;
+    protected array $locationAutoAssigned;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $lineUniqueKey;
+    protected array $mainLine;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $location;
+    protected array $mainName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $locationAutoAssigned;
+    protected array $manufacturingRouting;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $mainLine;
+    protected array $matchBillToReceipt;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $mainName;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $manufacturingRouting;
+    protected array $memoMain;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $matchBillToReceipt;
+    protected array $memorized;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $memo;
+    protected array $merchantAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memoMain;
+    protected array $message;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $memorized;
+    protected array $multiSubsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $merchantAccount;
+    protected array $netAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $message;
+    protected array $netAmountNoTax;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $multiSubsidiary;
+    protected array $nextApprover;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $netAmount;
+    protected array $nextBillDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $netAmountNoTax;
+    protected array $nexus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $nextApprover;
+    protected array $noAutoAssignLocation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $nextBillDate;
+    protected array $nonReimbursable;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $nexus;
+    protected array $oneTimeTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $noAutoAssignLocation;
+    protected array $opportunity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $nonReimbursable;
+    protected array $options;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $oneTimeTotal;
+    protected array $orderAllocationStrategy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $opportunity;
+    protected array $orderPriority;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $options;
+    protected array $originator;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnTextNumberField[]
      */
-    public $orderAllocationStrategy;
+    protected array $otherRefNum;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $orderPriority;
+    protected array $overheadParentItem;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $originator;
+    protected array $overrideInstallments;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnTextNumberField[]
+     * @var SearchColumnLongField[]
      */
-    public $otherRefNum;
+    protected array $packageCount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $overheadParentItem;
+    protected array $paidAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $overrideInstallments;
+    protected array $paidTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnSelectField[]
      */
-    public $packageCount;
+    protected array $partner;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $paidAmount;
+    protected array $partnerContribution;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $paidTransaction;
+    protected array $partnerRole;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $partner;
+    protected array $partnerTeamMember;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $partnerContribution;
+    protected array $payingAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $partnerRole;
+    protected array $payingTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $partnerTeamMember;
+    protected array $paymentApproved;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDateField[]
      */
-    public $payingAmount;
+    protected array $paymentEventDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $payingTransaction;
+    protected array $paymentEventHoldReason;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $paymentApproved;
+    protected array $paymentEventPurchaseCardUsed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $paymentEventDate;
+    protected array $paymentEventPurchaseDataSent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $paymentEventHoldReason;
+    protected array $paymentEventResult;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $paymentEventPurchaseCardUsed;
+    protected array $paymentEventType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $paymentEventPurchaseDataSent;
+    protected array $paymentHold;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $paymentEventResult;
+    protected array $paymentMethod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $paymentEventType;
+    protected array $paymentOption;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $paymentHold;
+    protected array $payPalPending;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $paymentMethod;
+    protected array $payPalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $paymentOption;
+    protected array $payPalTranId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $payPalPending;
+    protected array $payrollBatch;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $payPalStatus;
+    protected array $pnRefNum;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $payPalTranId;
+    protected array $poRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $payrollBatch;
+    protected array $posting;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $pnRefNum;
+    protected array $postingPeriod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $poRate;
+    protected array $priceLevel;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $posting;
+    protected array $print;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $postingPeriod;
+    protected array $probability;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $priceLevel;
+    protected array $projectedAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $print;
+    protected array $projectTask;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $probability;
+    protected array $promoCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $projectedAmount;
+    protected array $purchaseOrder;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $projectTask;
+    protected array $quantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $promoCode;
+    protected array $quantityBilled;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $purchaseOrder;
+    protected array $quantityCommitted;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantity;
+    protected array $quantityPacked;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityBilled;
+    protected array $quantityPicked;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityCommitted;
+    protected array $quantityRevCommitted;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityPacked;
+    protected array $quantityShipRecv;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityPicked;
+    protected array $quantityUom;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityRevCommitted;
+    protected array $rate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $quantityShipRecv;
+    protected array $realizedGainPostingTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantityUom;
+    protected array $recognizedRevenue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $rate;
+    protected array $recordType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $realizedGainPostingTransaction;
+    protected array $recurAnnuallyTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $recognizedRevenue;
+    protected array $recurMonthlyTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $recordType;
+    protected array $recurQuarterlyTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $recurAnnuallyTotal;
+    protected array $recurringBill;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $recurMonthlyTotal;
+    protected array $recurWeeklyTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnLongField[]
      */
-    public $recurQuarterlyTotal;
+    protected array $refNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $recurringBill;
+    protected array $requestedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $recurWeeklyTotal;
+    protected array $revCommitStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnSelectField[]
      */
-    public $refNumber;
+    protected array $revCommittingTransaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $requestedDate;
+    protected array $revenueStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $revCommitStatus;
+    protected array $reversalDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $revCommittingTransaction;
+    protected array $reversalNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $revenueStatus;
+    protected array $revRecEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $reversalDate;
+    protected array $revRecOnRevCommitment;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $reversalNumber;
+    protected array $revRecStartDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $revRecEndDate;
+    protected array $rgAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $revRecOnRevCommitment;
+    protected array $rgAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $revRecStartDate;
+    protected array $salesEffectiveDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $rgAccount;
+    protected array $salesOrder;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $rgAmount;
+    protected array $salesRep;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $salesEffectiveDate;
+    protected array $salesTeamMember;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $salesOrder;
+    protected array $salesTeamRole;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $salesRep;
+    protected array $schedulingMethod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $salesTeamMember;
+    protected array $serialNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $salesTeamRole;
+    protected array $serialNumberCost;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $schedulingMethod;
+    protected array $serialNumberCostAdjustment;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $serialNumber;
+    protected array $serialNumberQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $serialNumberCost;
+    protected array $serialNumbers;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $serialNumberCostAdjustment;
+    protected array $shipAddress;
+
+    protected $shipAddress1;
+    protected $shipAddress2;
+    protected $shipAddress3;
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $serialNumberQuantity;
+    protected array $shipAddressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $serialNumbers;
+    protected array $shipAttention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $shipAddress;
+    protected array $shipCarrier;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress1;
+    protected array $shipCity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $shipAddress2;
+    protected array $shipComplete;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $shipAddress3;
+    protected array $shipCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddressee;
+    protected array $shipCountryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $shipAttention;
+    protected array $shipDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnLongField[]
      */
-    public $shipCarrier;
+    protected array $shipGroup;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipCity;
+    protected array $shipMethod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipComplete;
+    protected array $shipPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $shipCountry;
+    protected array $shippingAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $shipCountryCode;
+    protected array $shipRecvStatusLine;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipDate;
+    protected array $shipState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipGroup;
+    protected array $shipTo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipMethod;
+    protected array $shipZip;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $shipPhone;
+    protected array $signedAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $shippingAmount;
+    protected array $source;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $shipRecvStatusLine;
+    protected array $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $shipState;
+    protected array $status;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipTo;
+    protected array $subscription;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipZip;
+    protected array $subscriptionLine;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $signedAmount;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $source;
+    protected array $subsidiaryTaxRegNum;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $startDate;
+    protected array $taxAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $status;
+    protected array $taxCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $subscription;
+    protected array $taxLine;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subscriptionLine;
+    protected array $taxPeriod;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $subsidiary;
+    protected array $taxPointDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $subsidiaryTaxRegNum;
+    protected array $taxTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnLongField[]
      */
-    public $taxAmount;
+    protected array $termInMonths;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $taxCode;
+    protected array $terms;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $taxLine;
+    protected array $termsOfSale;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $taxPeriod;
+    protected array $title;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $taxPointDate;
+    protected array $toBeEmailed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $taxTotal;
+    protected array $toBePrinted;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnSelectField[]
      */
-    public $termInMonths;
+    protected array $toSubsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $terms;
+    protected array $total;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $termsOfSale;
+    protected array $totalCostEstimate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $title;
+    protected array $trackingNumbers;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDateField[]
      */
-    public $toBeEmailed;
+    protected array $tranDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $toBePrinted;
+    protected array $tranEstGrossProfit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $toSubsidiary;
+    protected array $tranFxEstGrossProfit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $total;
+    protected array $tranId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $totalCostEstimate;
+    protected array $tranIsVsoeBundle;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $trackingNumbers;
+    protected array $transactionDiscount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $tranDate;
+    protected array $transactionLineType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $tranEstGrossProfit;
+    protected array $transactionNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $tranFxEstGrossProfit;
+    protected array $transferLocation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $tranId;
+    protected array $transferOrderItemLine;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $tranIsVsoeBundle;
+    protected array $transferOrderQuantityCommitted;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $transactionDiscount;
+    protected array $transferOrderQuantityPacked;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $transactionLineType;
+    protected array $transferOrderQuantityPicked;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $transactionNumber;
+    protected array $transferOrderQuantityReceived;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $transferLocation;
+    protected array $transferOrderQuantityShipped;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $transferOrderItemLine;
+    protected array $type;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $transferOrderQuantityCommitted;
+    protected array $unit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $transferOrderQuantityPacked;
+    protected array $unitCostOverride;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $transferOrderQuantityPicked;
+    protected array $vendType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $transferOrderQuantityReceived;
+    protected array $visibleToCustomer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $transferOrderQuantityShipped;
+    protected array $vsoeAllocation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $type;
+    protected array $vsoeAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $unit;
+    protected array $vsoeDeferral;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $unitCostOverride;
+    protected array $vsoeDelivered;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $vendType;
+    protected array $vsoePermitDiscount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $visibleToCustomer;
+    protected array $vsoePrice;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $vsoeAllocation;
+    protected array $webSite;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnCustomFieldList
      */
-    public $vsoeAmount;
-    /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
-     */
-    public $vsoeDeferral;
-    /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
-     */
-    public $vsoeDelivered;
-    /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
-     */
-    public $vsoePermitDiscount;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
-     */
-    public $vsoePrice;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $webSite;
-    /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "abbrev" => "SearchColumnStringField[]",
         "account" => "SearchColumnSelectField[]",
@@ -1822,4 +2158,6377 @@ class TransactionSearchRowBasic extends SearchRowBasic {
         "webSite" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnStringField[] $abbrev
+     * @return TransactionSearchRowBasic
+     */
+    public function setAbbrev(SearchColumnStringField $abbrev): TransactionSearchRowBasic
+    {
+        $this->abbrev[] = $abbrev;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAbbrev(): array
+    {
+        return $this->abbrev;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $account
+     * @return TransactionSearchRowBasic
+     */
+    public function setAccount(SearchColumnSelectField $account): TransactionSearchRowBasic
+    {
+        $this->account[] = $account;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAccount(): array
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $accountType
+     * @return TransactionSearchRowBasic
+     */
+    public function setAccountType(SearchColumnEnumSelectField $accountType): TransactionSearchRowBasic
+    {
+        $this->accountType[] = $accountType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getAccountType(): array
+    {
+        return $this->accountType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $acctCorpCardExp
+     * @return TransactionSearchRowBasic
+     */
+    public function setAcctCorpCardExp(SearchColumnSelectField $acctCorpCardExp): TransactionSearchRowBasic
+    {
+        $this->acctCorpCardExp[] = $acctCorpCardExp;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAcctCorpCardExp(): array
+    {
+        return $this->acctCorpCardExp;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $actualProductionEndDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setActualProductionEndDate(SearchColumnDateField $actualProductionEndDate): TransactionSearchRowBasic
+    {
+        $this->actualProductionEndDate[] = $actualProductionEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getActualProductionEndDate(): array
+    {
+        return $this->actualProductionEndDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $actualProductionStartDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setActualProductionStartDate(SearchColumnDateField $actualProductionStartDate): TransactionSearchRowBasic
+    {
+        $this->actualProductionStartDate[] = $actualProductionStartDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getActualProductionStartDate(): array
+    {
+        return $this->actualProductionStartDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $actualShipDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setActualShipDate(SearchColumnDateField $actualShipDate): TransactionSearchRowBasic
+    {
+        $this->actualShipDate[] = $actualShipDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getActualShipDate(): array
+    {
+        return $this->actualShipDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $altSalesAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setAltSalesAmount(SearchColumnDoubleField $altSalesAmount): TransactionSearchRowBasic
+    {
+        $this->altSalesAmount[] = $altSalesAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAltSalesAmount(): array
+    {
+        return $this->altSalesAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $altSalesNetAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setAltSalesNetAmount(SearchColumnDoubleField $altSalesNetAmount): TransactionSearchRowBasic
+    {
+        $this->altSalesNetAmount[] = $altSalesNetAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAltSalesNetAmount(): array
+    {
+        return $this->altSalesNetAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amount
+     * @return TransactionSearchRowBasic
+     */
+    public function setAmount(SearchColumnDoubleField $amount): TransactionSearchRowBasic
+    {
+        $this->amount[] = $amount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmount(): array
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amountPaid
+     * @return TransactionSearchRowBasic
+     */
+    public function setAmountPaid(SearchColumnDoubleField $amountPaid): TransactionSearchRowBasic
+    {
+        $this->amountPaid[] = $amountPaid;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmountPaid(): array
+    {
+        return $this->amountPaid;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amountRemaining
+     * @return TransactionSearchRowBasic
+     */
+    public function setAmountRemaining(SearchColumnDoubleField $amountRemaining): TransactionSearchRowBasic
+    {
+        $this->amountRemaining[] = $amountRemaining;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmountRemaining(): array
+    {
+        return $this->amountRemaining;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amountUnbilled
+     * @return TransactionSearchRowBasic
+     */
+    public function setAmountUnbilled(SearchColumnDoubleField $amountUnbilled): TransactionSearchRowBasic
+    {
+        $this->amountUnbilled[] = $amountUnbilled;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmountUnbilled(): array
+    {
+        return $this->amountUnbilled;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $appliedToForeignAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setAppliedToForeignAmount(SearchColumnDoubleField $appliedToForeignAmount): TransactionSearchRowBasic
+    {
+        $this->appliedToForeignAmount[] = $appliedToForeignAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAppliedToForeignAmount(): array
+    {
+        return $this->appliedToForeignAmount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $appliedToIsFxVariance
+     * @return TransactionSearchRowBasic
+     */
+    public function setAppliedToIsFxVariance(SearchColumnBooleanField $appliedToIsFxVariance): TransactionSearchRowBasic
+    {
+        $this->appliedToIsFxVariance[] = $appliedToIsFxVariance;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAppliedToIsFxVariance(): array
+    {
+        return $this->appliedToIsFxVariance;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $appliedToLinkAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setAppliedToLinkAmount(SearchColumnDoubleField $appliedToLinkAmount): TransactionSearchRowBasic
+    {
+        $this->appliedToLinkAmount[] = $appliedToLinkAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAppliedToLinkAmount(): array
+    {
+        return $this->appliedToLinkAmount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $appliedToLinkType
+     * @return TransactionSearchRowBasic
+     */
+    public function setAppliedToLinkType(SearchColumnStringField $appliedToLinkType): TransactionSearchRowBasic
+    {
+        $this->appliedToLinkType[] = $appliedToLinkType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAppliedToLinkType(): array
+    {
+        return $this->appliedToLinkType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $appliedToTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setAppliedToTransaction(SearchColumnSelectField $appliedToTransaction): TransactionSearchRowBasic
+    {
+        $this->appliedToTransaction[] = $appliedToTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAppliedToTransaction(): array
+    {
+        return $this->appliedToTransaction;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $applyingForeignAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setApplyingForeignAmount(SearchColumnDoubleField $applyingForeignAmount): TransactionSearchRowBasic
+    {
+        $this->applyingForeignAmount[] = $applyingForeignAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getApplyingForeignAmount(): array
+    {
+        return $this->applyingForeignAmount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $applyingIsFxVariance
+     * @return TransactionSearchRowBasic
+     */
+    public function setApplyingIsFxVariance(SearchColumnBooleanField $applyingIsFxVariance): TransactionSearchRowBasic
+    {
+        $this->applyingIsFxVariance[] = $applyingIsFxVariance;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getApplyingIsFxVariance(): array
+    {
+        return $this->applyingIsFxVariance;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $applyingLinkAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setApplyingLinkAmount(SearchColumnDoubleField $applyingLinkAmount): TransactionSearchRowBasic
+    {
+        $this->applyingLinkAmount[] = $applyingLinkAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getApplyingLinkAmount(): array
+    {
+        return $this->applyingLinkAmount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $applyingLinkType
+     * @return TransactionSearchRowBasic
+     */
+    public function setApplyingLinkType(SearchColumnStringField $applyingLinkType): TransactionSearchRowBasic
+    {
+        $this->applyingLinkType[] = $applyingLinkType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getApplyingLinkType(): array
+    {
+        return $this->applyingLinkType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $applyingTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setApplyingTransaction(SearchColumnSelectField $applyingTransaction): TransactionSearchRowBasic
+    {
+        $this->applyingTransaction[] = $applyingTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getApplyingTransaction(): array
+    {
+        return $this->applyingTransaction;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $approvalStatus
+     * @return TransactionSearchRowBasic
+     */
+    public function setApprovalStatus(SearchColumnEnumSelectField $approvalStatus): TransactionSearchRowBasic
+    {
+        $this->approvalStatus[] = $approvalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getApprovalStatus(): array
+    {
+        return $this->approvalStatus;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $authCode
+     * @return TransactionSearchRowBasic
+     */
+    public function setAuthCode(SearchColumnStringField $authCode): TransactionSearchRowBasic
+    {
+        $this->authCode[] = $authCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAuthCode(): array
+    {
+        return $this->authCode;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $autoCalculateLag
+     * @return TransactionSearchRowBasic
+     */
+    public function setAutoCalculateLag(SearchColumnBooleanField $autoCalculateLag): TransactionSearchRowBasic
+    {
+        $this->autoCalculateLag[] = $autoCalculateLag;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAutoCalculateLag(): array
+    {
+        return $this->autoCalculateLag;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $avsStreetMatch
+     * @return TransactionSearchRowBasic
+     */
+    public function setAvsStreetMatch(SearchColumnEnumSelectField $avsStreetMatch): TransactionSearchRowBasic
+    {
+        $this->avsStreetMatch[] = $avsStreetMatch;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getAvsStreetMatch(): array
+    {
+        return $this->avsStreetMatch;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $avsZipMatch
+     * @return TransactionSearchRowBasic
+     */
+    public function setAvsZipMatch(SearchColumnEnumSelectField $avsZipMatch): TransactionSearchRowBasic
+    {
+        $this->avsZipMatch[] = $avsZipMatch;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getAvsZipMatch(): array
+    {
+        return $this->avsZipMatch;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $billable
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillable(SearchColumnBooleanField $billable): TransactionSearchRowBasic
+    {
+        $this->billable[] = $billable;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getBillable(): array
+    {
+        return $this->billable;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAddress
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillAddress(SearchColumnStringField $billAddress): TransactionSearchRowBasic
+    {
+        $this->billAddress[] = $billAddress;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAddress(): array
+    {
+        return $this->billAddress;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAddressee
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillAddressee(SearchColumnStringField $billAddressee): TransactionSearchRowBasic
+    {
+        $this->billAddressee[] = $billAddressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAddressee(): array
+    {
+        return $this->billAddressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAttention
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillAttention(SearchColumnStringField $billAttention): TransactionSearchRowBasic
+    {
+        $this->billAttention[] = $billAttention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAttention(): array
+    {
+        return $this->billAttention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billCity
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillCity(SearchColumnStringField $billCity): TransactionSearchRowBasic
+    {
+        $this->billCity[] = $billCity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillCity(): array
+    {
+        return $this->billCity;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $billCountry
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillCountry(SearchColumnEnumSelectField $billCountry): TransactionSearchRowBasic
+    {
+        $this->billCountry[] = $billCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getBillCountry(): array
+    {
+        return $this->billCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billCountryCode
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillCountryCode(SearchColumnStringField $billCountryCode): TransactionSearchRowBasic
+    {
+        $this->billCountryCode[] = $billCountryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillCountryCode(): array
+    {
+        return $this->billCountryCode;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $billedDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setBilledDate(SearchColumnDateField $billedDate): TransactionSearchRowBasic
+    {
+        $this->billedDate[] = $billedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getBilledDate(): array
+    {
+        return $this->billedDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $billingAccount
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillingAccount(SearchColumnSelectField $billingAccount): TransactionSearchRowBasic
+    {
+        $this->billingAccount[] = $billingAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillingAccount(): array
+    {
+        return $this->billingAccount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $billingAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillingAmount(SearchColumnDoubleField $billingAmount): TransactionSearchRowBasic
+    {
+        $this->billingAmount[] = $billingAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getBillingAmount(): array
+    {
+        return $this->billingAmount;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $billingSchedule
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillingSchedule(SearchColumnSelectField $billingSchedule): TransactionSearchRowBasic
+    {
+        $this->billingSchedule[] = $billingSchedule;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillingSchedule(): array
+    {
+        return $this->billingSchedule;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $billingTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillingTransaction(SearchColumnSelectField $billingTransaction): TransactionSearchRowBasic
+    {
+        $this->billingTransaction[] = $billingTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillingTransaction(): array
+    {
+        return $this->billingTransaction;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billPhone
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillPhone(SearchColumnStringField $billPhone): TransactionSearchRowBasic
+    {
+        $this->billPhone[] = $billPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillPhone(): array
+    {
+        return $this->billPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billState
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillState(SearchColumnStringField $billState): TransactionSearchRowBasic
+    {
+        $this->billState[] = $billState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillState(): array
+    {
+        return $this->billState;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $billVarianceStatus
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillVarianceStatus(SearchColumnEnumSelectField $billVarianceStatus): TransactionSearchRowBasic
+    {
+        $this->billVarianceStatus[] = $billVarianceStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getBillVarianceStatus(): array
+    {
+        return $this->billVarianceStatus;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billZip
+     * @return TransactionSearchRowBasic
+     */
+    public function setBillZip(SearchColumnStringField $billZip): TransactionSearchRowBasic
+    {
+        $this->billZip[] = $billZip;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillZip(): array
+    {
+        return $this->billZip;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $binNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setBinNumber(SearchColumnStringField $binNumber): TransactionSearchRowBasic
+    {
+        $this->binNumber[] = $binNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBinNumber(): array
+    {
+        return $this->binNumber;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $binNumberQuantity
+     * @return TransactionSearchRowBasic
+     */
+    public function setBinNumberQuantity(SearchColumnDoubleField $binNumberQuantity): TransactionSearchRowBasic
+    {
+        $this->binNumberQuantity[] = $binNumberQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getBinNumberQuantity(): array
+    {
+        return $this->binNumberQuantity;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $bomQuantity
+     * @return TransactionSearchRowBasic
+     */
+    public function setBomQuantity(SearchColumnDoubleField $bomQuantity): TransactionSearchRowBasic
+    {
+        $this->bomQuantity[] = $bomQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getBomQuantity(): array
+    {
+        return $this->bomQuantity;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $buildEntireAssembly
+     * @return TransactionSearchRowBasic
+     */
+    public function setBuildEntireAssembly(SearchColumnBooleanField $buildEntireAssembly): TransactionSearchRowBasic
+    {
+        $this->buildEntireAssembly[] = $buildEntireAssembly;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getBuildEntireAssembly(): array
+    {
+        return $this->buildEntireAssembly;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $buildVariance
+     * @return TransactionSearchRowBasic
+     */
+    public function setBuildVariance(SearchColumnDoubleField $buildVariance): TransactionSearchRowBasic
+    {
+        $this->buildVariance[] = $buildVariance;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getBuildVariance(): array
+    {
+        return $this->buildVariance;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $built
+     * @return TransactionSearchRowBasic
+     */
+    public function setBuilt(SearchColumnDoubleField $built): TransactionSearchRowBasic
+    {
+        $this->built[] = $built;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getBuilt(): array
+    {
+        return $this->built;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $canHaveStackablePromotions
+     * @return TransactionSearchRowBasic
+     */
+    public function setCanHaveStackablePromotions(SearchColumnBooleanField $canHaveStackablePromotions): TransactionSearchRowBasic
+    {
+        $this->canHaveStackablePromotions[] = $canHaveStackablePromotions;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getCanHaveStackablePromotions(): array
+    {
+        return $this->canHaveStackablePromotions;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $catchUpPeriod
+     * @return TransactionSearchRowBasic
+     */
+    public function setCatchUpPeriod(SearchColumnStringField $catchUpPeriod): TransactionSearchRowBasic
+    {
+        $this->catchUpPeriod[] = $catchUpPeriod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCatchUpPeriod(): array
+    {
+        return $this->catchUpPeriod;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $ccCustomerCode
+     * @return TransactionSearchRowBasic
+     */
+    public function setCcCustomerCode(SearchColumnStringField $ccCustomerCode): TransactionSearchRowBasic
+    {
+        $this->ccCustomerCode[] = $ccCustomerCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCcCustomerCode(): array
+    {
+        return $this->ccCustomerCode;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $ccExpDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setCcExpDate(SearchColumnDateField $ccExpDate): TransactionSearchRowBasic
+    {
+        $this->ccExpDate[] = $ccExpDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCcExpDate(): array
+    {
+        return $this->ccExpDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $ccHolderName
+     * @return TransactionSearchRowBasic
+     */
+    public function setCcHolderName(SearchColumnStringField $ccHolderName): TransactionSearchRowBasic
+    {
+        $this->ccHolderName[] = $ccHolderName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCcHolderName(): array
+    {
+        return $this->ccHolderName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $ccNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setCcNumber(SearchColumnStringField $ccNumber): TransactionSearchRowBasic
+    {
+        $this->ccNumber[] = $ccNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCcNumber(): array
+    {
+        return $this->ccNumber;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $ccStreet
+     * @return TransactionSearchRowBasic
+     */
+    public function setCcStreet(SearchColumnStringField $ccStreet): TransactionSearchRowBasic
+    {
+        $this->ccStreet[] = $ccStreet;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCcStreet(): array
+    {
+        return $this->ccStreet;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $ccZipCode
+     * @return TransactionSearchRowBasic
+     */
+    public function setCcZipCode(SearchColumnStringField $ccZipCode): TransactionSearchRowBasic
+    {
+        $this->ccZipCode[] = $ccZipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCcZipCode(): array
+    {
+        return $this->ccZipCode;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $class
+     * @return TransactionSearchRowBasic
+     */
+    public function setClass(SearchColumnSelectField $class): TransactionSearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $cleared
+     * @return TransactionSearchRowBasic
+     */
+    public function setCleared(SearchColumnBooleanField $cleared): TransactionSearchRowBasic
+    {
+        $this->cleared[] = $cleared;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getCleared(): array
+    {
+        return $this->cleared;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $closed
+     * @return TransactionSearchRowBasic
+     */
+    public function setClosed(SearchColumnBooleanField $closed): TransactionSearchRowBasic
+    {
+        $this->closed[] = $closed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getClosed(): array
+    {
+        return $this->closed;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $closeDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setCloseDate(SearchColumnDateField $closeDate): TransactionSearchRowBasic
+    {
+        $this->closeDate[] = $closeDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCloseDate(): array
+    {
+        return $this->closeDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $cogsAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setCogsAmount(SearchColumnDoubleField $cogsAmount): TransactionSearchRowBasic
+    {
+        $this->cogsAmount[] = $cogsAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getCogsAmount(): array
+    {
+        return $this->cogsAmount;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $commissionEffectiveDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setCommissionEffectiveDate(SearchColumnDateField $commissionEffectiveDate): TransactionSearchRowBasic
+    {
+        $this->commissionEffectiveDate[] = $commissionEffectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCommissionEffectiveDate(): array
+    {
+        return $this->commissionEffectiveDate;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $commit
+     * @return TransactionSearchRowBasic
+     */
+    public function setCommit(SearchColumnEnumSelectField $commit): TransactionSearchRowBasic
+    {
+        $this->commit[] = $commit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCommit(): array
+    {
+        return $this->commit;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $componentYield
+     * @return TransactionSearchRowBasic
+     */
+    public function setComponentYield(SearchColumnDoubleField $componentYield): TransactionSearchRowBasic
+    {
+        $this->componentYield[] = $componentYield;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getComponentYield(): array
+    {
+        return $this->componentYield;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $confirmationNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setConfirmationNumber(SearchColumnStringField $confirmationNumber): TransactionSearchRowBasic
+    {
+        $this->confirmationNumber[] = $confirmationNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getConfirmationNumber(): array
+    {
+        return $this->confirmationNumber;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $contribution
+     * @return TransactionSearchRowBasic
+     */
+    public function setContribution(SearchColumnDoubleField $contribution): TransactionSearchRowBasic
+    {
+        $this->contribution[] = $contribution;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getContribution(): array
+    {
+        return $this->contribution;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $contributionPrimary
+     * @return TransactionSearchRowBasic
+     */
+    public function setContributionPrimary(SearchColumnDoubleField $contributionPrimary): TransactionSearchRowBasic
+    {
+        $this->contributionPrimary[] = $contributionPrimary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getContributionPrimary(): array
+    {
+        return $this->contributionPrimary;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $costComponentAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setCostComponentAmount(SearchColumnDoubleField $costComponentAmount): TransactionSearchRowBasic
+    {
+        $this->costComponentAmount[] = $costComponentAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getCostComponentAmount(): array
+    {
+        return $this->costComponentAmount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $costComponentCategory
+     * @return TransactionSearchRowBasic
+     */
+    public function setCostComponentCategory(SearchColumnStringField $costComponentCategory): TransactionSearchRowBasic
+    {
+        $this->costComponentCategory[] = $costComponentCategory;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCostComponentCategory(): array
+    {
+        return $this->costComponentCategory;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $costComponentItem
+     * @return TransactionSearchRowBasic
+     */
+    public function setCostComponentItem(SearchColumnStringField $costComponentItem): TransactionSearchRowBasic
+    {
+        $this->costComponentItem[] = $costComponentItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCostComponentItem(): array
+    {
+        return $this->costComponentItem;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $costComponentQuantity
+     * @return TransactionSearchRowBasic
+     */
+    public function setCostComponentQuantity(SearchColumnDoubleField $costComponentQuantity): TransactionSearchRowBasic
+    {
+        $this->costComponentQuantity[] = $costComponentQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getCostComponentQuantity(): array
+    {
+        return $this->costComponentQuantity;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $costComponentStandardCost
+     * @return TransactionSearchRowBasic
+     */
+    public function setCostComponentStandardCost(SearchColumnDoubleField $costComponentStandardCost): TransactionSearchRowBasic
+    {
+        $this->costComponentStandardCost[] = $costComponentStandardCost;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getCostComponentStandardCost(): array
+    {
+        return $this->costComponentStandardCost;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $costEstimate
+     * @return TransactionSearchRowBasic
+     */
+    public function setCostEstimate(SearchColumnDoubleField $costEstimate): TransactionSearchRowBasic
+    {
+        $this->costEstimate[] = $costEstimate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getCostEstimate(): array
+    {
+        return $this->costEstimate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $costEstimateRate
+     * @return TransactionSearchRowBasic
+     */
+    public function setCostEstimateRate(SearchColumnDoubleField $costEstimateRate): TransactionSearchRowBasic
+    {
+        $this->costEstimateRate[] = $costEstimateRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getCostEstimateRate(): array
+    {
+        return $this->costEstimateRate;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $costEstimateType
+     * @return TransactionSearchRowBasic
+     */
+    public function setCostEstimateType(SearchColumnEnumSelectField $costEstimateType): TransactionSearchRowBasic
+    {
+        $this->costEstimateType[] = $costEstimateType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCostEstimateType(): array
+    {
+        return $this->costEstimateType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $createdBy
+     * @return TransactionSearchRowBasic
+     */
+    public function setCreatedBy(SearchColumnSelectField $createdBy): TransactionSearchRowBasic
+    {
+        $this->createdBy[] = $createdBy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCreatedBy(): array
+    {
+        return $this->createdBy;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $createdFrom
+     * @return TransactionSearchRowBasic
+     */
+    public function setCreatedFrom(SearchColumnSelectField $createdFrom): TransactionSearchRowBasic
+    {
+        $this->createdFrom[] = $createdFrom;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCreatedFrom(): array
+    {
+        return $this->createdFrom;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $creditAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setCreditAmount(SearchColumnDoubleField $creditAmount): TransactionSearchRowBasic
+    {
+        $this->creditAmount[] = $creditAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getCreditAmount(): array
+    {
+        return $this->creditAmount;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $cscMatch
+     * @return TransactionSearchRowBasic
+     */
+    public function setCscMatch(SearchColumnEnumSelectField $cscMatch): TransactionSearchRowBasic
+    {
+        $this->cscMatch[] = $cscMatch;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCscMatch(): array
+    {
+        return $this->cscMatch;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $currency
+     * @return TransactionSearchRowBasic
+     */
+    public function setCurrency(SearchColumnSelectField $currency): TransactionSearchRowBasic
+    {
+        $this->currency[] = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCurrency(): array
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $customForm
+     * @return TransactionSearchRowBasic
+     */
+    public function setCustomForm(SearchColumnSelectField $customForm): TransactionSearchRowBasic
+    {
+        $this->customForm[] = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustomForm(): array
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $customGL
+     * @return TransactionSearchRowBasic
+     */
+    public function setCustomGL(SearchColumnBooleanField $customGL): TransactionSearchRowBasic
+    {
+        $this->customGL[] = $customGL;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getCustomGL(): array
+    {
+        return $this->customGL;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $custType
+     * @return TransactionSearchRowBasic
+     */
+    public function setCustType(SearchColumnSelectField $custType): TransactionSearchRowBasic
+    {
+        $this->custType[] = $custType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustType(): array
+    {
+        return $this->custType;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateCreated
+     * @return TransactionSearchRowBasic
+     */
+    public function setDateCreated(SearchColumnDateField $dateCreated): TransactionSearchRowBasic
+    {
+        $this->dateCreated[] = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateCreated(): array
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $daysOpen
+     * @return TransactionSearchRowBasic
+     */
+    public function setDaysOpen(SearchColumnLongField $daysOpen): TransactionSearchRowBasic
+    {
+        $this->daysOpen[] = $daysOpen;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDaysOpen(): array
+    {
+        return $this->daysOpen;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $daysOverdue
+     * @return TransactionSearchRowBasic
+     */
+    public function setDaysOverdue(SearchColumnLongField $daysOverdue): TransactionSearchRowBasic
+    {
+        $this->daysOverdue[] = $daysOverdue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDaysOverdue(): array
+    {
+        return $this->daysOverdue;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $debitAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setDebitAmount(SearchColumnDoubleField $debitAmount): TransactionSearchRowBasic
+    {
+        $this->debitAmount[] = $debitAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDebitAmount(): array
+    {
+        return $this->debitAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $deferredRevenue
+     * @return TransactionSearchRowBasic
+     */
+    public function setDeferredRevenue(SearchColumnDoubleField $deferredRevenue): TransactionSearchRowBasic
+    {
+        $this->deferredRevenue[] = $deferredRevenue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDeferredRevenue(): array
+    {
+        return $this->deferredRevenue;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $deferRevRec
+     * @return TransactionSearchRowBasic
+     */
+    public function setDeferRevRec(SearchColumnBooleanField $deferRevRec): TransactionSearchRowBasic
+    {
+        $this->deferRevRec[] = $deferRevRec;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getDeferRevRec(): array
+    {
+        return $this->deferRevRec;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $department
+     * @return TransactionSearchRowBasic
+     */
+    public function setDepartment(SearchColumnSelectField $department): TransactionSearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $depositDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setDepositDate(SearchColumnDateField $depositDate): TransactionSearchRowBasic
+    {
+        $this->depositDate[] = $depositDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDepositDate(): array
+    {
+        return $this->depositDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $depositTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setDepositTransaction(SearchColumnSelectField $depositTransaction): TransactionSearchRowBasic
+    {
+        $this->depositTransaction[] = $depositTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepositTransaction(): array
+    {
+        return $this->depositTransaction;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $discountAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setDiscountAmount(SearchColumnDoubleField $discountAmount): TransactionSearchRowBasic
+    {
+        $this->discountAmount[] = $discountAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDiscountAmount(): array
+    {
+        return $this->discountAmount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $docUnit
+     * @return TransactionSearchRowBasic
+     */
+    public function setDocUnit(SearchColumnStringField $docUnit): TransactionSearchRowBasic
+    {
+        $this->docUnit[] = $docUnit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDocUnit(): array
+    {
+        return $this->docUnit;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $drAccount
+     * @return TransactionSearchRowBasic
+     */
+    public function setDrAccount(SearchColumnStringField $drAccount): TransactionSearchRowBasic
+    {
+        $this->drAccount[] = $drAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDrAccount(): array
+    {
+        return $this->drAccount;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dueDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setDueDate(SearchColumnDateField $dueDate): TransactionSearchRowBasic
+    {
+        $this->dueDate[] = $dueDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDueDate(): array
+    {
+        return $this->dueDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $effectiveRate
+     * @return TransactionSearchRowBasic
+     */
+    public function setEffectiveRate(SearchColumnDoubleField $effectiveRate): TransactionSearchRowBasic
+    {
+        $this->effectiveRate[] = $effectiveRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEffectiveRate(): array
+    {
+        return $this->effectiveRate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $email
+     * @return TransactionSearchRowBasic
+     */
+    public function setEmail(SearchColumnStringField $email): TransactionSearchRowBasic
+    {
+        $this->email[] = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEmail(): array
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $endDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setEndDate(SearchColumnDateField $endDate): TransactionSearchRowBasic
+    {
+        $this->endDate[] = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEndDate(): array
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $entity
+     * @return TransactionSearchRowBasic
+     */
+    public function setEntity(SearchColumnSelectField $entity): TransactionSearchRowBasic
+    {
+        $this->entity[] = $entity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEntity(): array
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $entityStatus
+     * @return TransactionSearchRowBasic
+     */
+    public function setEntityStatus(SearchColumnSelectField $entityStatus): TransactionSearchRowBasic
+    {
+        $this->entityStatus[] = $entityStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEntityStatus(): array
+    {
+        return $this->entityStatus;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estGrossProfit
+     * @return TransactionSearchRowBasic
+     */
+    public function setEstGrossProfit(SearchColumnDoubleField $estGrossProfit): TransactionSearchRowBasic
+    {
+        $this->estGrossProfit[] = $estGrossProfit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstGrossProfit(): array
+    {
+        return $this->estGrossProfit;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estGrossProfitPct
+     * @return TransactionSearchRowBasic
+     */
+    public function setEstGrossProfitPct(SearchColumnDoubleField $estGrossProfitPct): TransactionSearchRowBasic
+    {
+        $this->estGrossProfitPct[] = $estGrossProfitPct;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstGrossProfitPct(): array
+    {
+        return $this->estGrossProfitPct;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $estGrossProfitPercent
+     * @return TransactionSearchRowBasic
+     */
+    public function setEstGrossProfitPercent(SearchColumnDoubleField $estGrossProfitPercent): TransactionSearchRowBasic
+    {
+        $this->estGrossProfitPercent[] = $estGrossProfitPercent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getEstGrossProfitPercent(): array
+    {
+        return $this->estGrossProfitPercent;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $exchangeRate
+     * @return TransactionSearchRowBasic
+     */
+    public function setExchangeRate(SearchColumnDoubleField $exchangeRate): TransactionSearchRowBasic
+    {
+        $this->exchangeRate[] = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getExchangeRate(): array
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $excludeCommission
+     * @return TransactionSearchRowBasic
+     */
+    public function setExcludeCommission(SearchColumnBooleanField $excludeCommission): TransactionSearchRowBasic
+    {
+        $this->excludeCommission[] = $excludeCommission;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getExcludeCommission(): array
+    {
+        return $this->excludeCommission;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $excludeFromRateRequest
+     * @return TransactionSearchRowBasic
+     */
+    public function setExcludeFromRateRequest(SearchColumnBooleanField $excludeFromRateRequest): TransactionSearchRowBasic
+    {
+        $this->excludeFromRateRequest[] = $excludeFromRateRequest;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getExcludeFromRateRequest(): array
+    {
+        return $this->excludeFromRateRequest;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $expectedCloseDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setExpectedCloseDate(SearchColumnDateField $expectedCloseDate): TransactionSearchRowBasic
+    {
+        $this->expectedCloseDate[] = $expectedCloseDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getExpectedCloseDate(): array
+    {
+        return $this->expectedCloseDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $expectedReceiptDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setExpectedReceiptDate(SearchColumnDateField $expectedReceiptDate): TransactionSearchRowBasic
+    {
+        $this->expectedReceiptDate[] = $expectedReceiptDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getExpectedReceiptDate(): array
+    {
+        return $this->expectedReceiptDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $expenseCategory
+     * @return TransactionSearchRowBasic
+     */
+    public function setExpenseCategory(SearchColumnSelectField $expenseCategory): TransactionSearchRowBasic
+    {
+        $this->expenseCategory[] = $expenseCategory;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExpenseCategory(): array
+    {
+        return $this->expenseCategory;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $expenseDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setExpenseDate(SearchColumnDateField $expenseDate): TransactionSearchRowBasic
+    {
+        $this->expenseDate[] = $expenseDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getExpenseDate(): array
+    {
+        return $this->expenseDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return TransactionSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): TransactionSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $firmed
+     * @return TransactionSearchRowBasic
+     */
+    public function setFirmed(SearchColumnBooleanField $firmed): TransactionSearchRowBasic
+    {
+        $this->firmed[] = $firmed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getFirmed(): array
+    {
+        return $this->firmed;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $forecastType
+     * @return TransactionSearchRowBasic
+     */
+    public function setForecastType(SearchColumnEnumSelectField $forecastType): TransactionSearchRowBasic
+    {
+        $this->forecastType[] = $forecastType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getForecastType(): array
+    {
+        return $this->forecastType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $fulfillingTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setFulfillingTransaction(SearchColumnSelectField $fulfillingTransaction): TransactionSearchRowBasic
+    {
+        $this->fulfillingTransaction[] = $fulfillingTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getFulfillingTransaction(): array
+    {
+        return $this->fulfillingTransaction;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $fxAccount
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxAccount(SearchColumnStringField $fxAccount): TransactionSearchRowBasic
+    {
+        $this->fxAccount[] = $fxAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFxAccount(): array
+    {
+        return $this->fxAccount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxAmount(SearchColumnDoubleField $fxAmount): TransactionSearchRowBasic
+    {
+        $this->fxAmount[] = $fxAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxAmount(): array
+    {
+        return $this->fxAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxCostEstimate
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxCostEstimate(SearchColumnDoubleField $fxCostEstimate): TransactionSearchRowBasic
+    {
+        $this->fxCostEstimate[] = $fxCostEstimate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxCostEstimate(): array
+    {
+        return $this->fxCostEstimate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxCostEstimateRate
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxCostEstimateRate(SearchColumnDoubleField $fxCostEstimateRate): TransactionSearchRowBasic
+    {
+        $this->fxCostEstimateRate[] = $fxCostEstimateRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxCostEstimateRate(): array
+    {
+        return $this->fxCostEstimateRate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxEstGrossProfit
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxEstGrossProfit(SearchColumnDoubleField $fxEstGrossProfit): TransactionSearchRowBasic
+    {
+        $this->fxEstGrossProfit[] = $fxEstGrossProfit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxEstGrossProfit(): array
+    {
+        return $this->fxEstGrossProfit;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxTranCostEstimate
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxTranCostEstimate(SearchColumnDoubleField $fxTranCostEstimate): TransactionSearchRowBasic
+    {
+        $this->fxTranCostEstimate[] = $fxTranCostEstimate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxTranCostEstimate(): array
+    {
+        return $this->fxTranCostEstimate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxVsoeAllocation
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxVsoeAllocation(SearchColumnDoubleField $fxVsoeAllocation): TransactionSearchRowBasic
+    {
+        $this->fxVsoeAllocation[] = $fxVsoeAllocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxVsoeAllocation(): array
+    {
+        return $this->fxVsoeAllocation;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxVsoeAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxVsoeAmount(SearchColumnDoubleField $fxVsoeAmount): TransactionSearchRowBasic
+    {
+        $this->fxVsoeAmount[] = $fxVsoeAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxVsoeAmount(): array
+    {
+        return $this->fxVsoeAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fxVsoePrice
+     * @return TransactionSearchRowBasic
+     */
+    public function setFxVsoePrice(SearchColumnDoubleField $fxVsoePrice): TransactionSearchRowBasic
+    {
+        $this->fxVsoePrice[] = $fxVsoePrice;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFxVsoePrice(): array
+    {
+        return $this->fxVsoePrice;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $gcoAvailabelToCharge
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoAvailabelToCharge(SearchColumnBooleanField $gcoAvailabelToCharge): TransactionSearchRowBasic
+    {
+        $this->gcoAvailabelToCharge[] = $gcoAvailabelToCharge;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getGcoAvailabelToCharge(): array
+    {
+        return $this->gcoAvailabelToCharge;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $gcoAvailableToRefund
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoAvailableToRefund(SearchColumnBooleanField $gcoAvailableToRefund): TransactionSearchRowBasic
+    {
+        $this->gcoAvailableToRefund[] = $gcoAvailableToRefund;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getGcoAvailableToRefund(): array
+    {
+        return $this->gcoAvailableToRefund;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $gcoAvsStreetMatch
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoAvsStreetMatch(SearchColumnEnumSelectField $gcoAvsStreetMatch): TransactionSearchRowBasic
+    {
+        $this->gcoAvsStreetMatch[] = $gcoAvsStreetMatch;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getGcoAvsStreetMatch(): array
+    {
+        return $this->gcoAvsStreetMatch;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $gcoAvsZipMatch
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoAvsZipMatch(SearchColumnEnumSelectField $gcoAvsZipMatch): TransactionSearchRowBasic
+    {
+        $this->gcoAvsZipMatch[] = $gcoAvsZipMatch;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getGcoAvsZipMatch(): array
+    {
+        return $this->gcoAvsZipMatch;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $gcoBuyerAccountAge
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoBuyerAccountAge(SearchColumnLongField $gcoBuyerAccountAge): TransactionSearchRowBasic
+    {
+        $this->gcoBuyerAccountAge[] = $gcoBuyerAccountAge;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getGcoBuyerAccountAge(): array
+    {
+        return $this->gcoBuyerAccountAge;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $gcoBuyerIp
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoBuyerIp(SearchColumnStringField $gcoBuyerIp): TransactionSearchRowBasic
+    {
+        $this->gcoBuyerIp[] = $gcoBuyerIp;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGcoBuyerIp(): array
+    {
+        return $this->gcoBuyerIp;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $gcoChargeAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoChargeAmount(SearchColumnDoubleField $gcoChargeAmount): TransactionSearchRowBasic
+    {
+        $this->gcoChargeAmount[] = $gcoChargeAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGcoChargeAmount(): array
+    {
+        return $this->gcoChargeAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $gcoChargebackAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoChargebackAmount(SearchColumnDoubleField $gcoChargebackAmount): TransactionSearchRowBasic
+    {
+        $this->gcoChargebackAmount[] = $gcoChargebackAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGcoChargebackAmount(): array
+    {
+        return $this->gcoChargebackAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $gcoConfirmedChargedTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoConfirmedChargedTotal(SearchColumnDoubleField $gcoConfirmedChargedTotal): TransactionSearchRowBasic
+    {
+        $this->gcoConfirmedChargedTotal[] = $gcoConfirmedChargedTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGcoConfirmedChargedTotal(): array
+    {
+        return $this->gcoConfirmedChargedTotal;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $gcoConfirmedRefundedTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoConfirmedRefundedTotal(SearchColumnDoubleField $gcoConfirmedRefundedTotal): TransactionSearchRowBasic
+    {
+        $this->gcoConfirmedRefundedTotal[] = $gcoConfirmedRefundedTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGcoConfirmedRefundedTotal(): array
+    {
+        return $this->gcoConfirmedRefundedTotal;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $gcoCreditcardNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoCreditcardNumber(SearchColumnStringField $gcoCreditcardNumber): TransactionSearchRowBasic
+    {
+        $this->gcoCreditcardNumber[] = $gcoCreditcardNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGcoCreditcardNumber(): array
+    {
+        return $this->gcoCreditcardNumber;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $gcoCscMatch
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoCscMatch(SearchColumnEnumSelectField $gcoCscMatch): TransactionSearchRowBasic
+    {
+        $this->gcoCscMatch[] = $gcoCscMatch;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getGcoCscMatch(): array
+    {
+        return $this->gcoCscMatch;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $gcoFinancialState
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoFinancialState(SearchColumnStringField $gcoFinancialState): TransactionSearchRowBasic
+    {
+        $this->gcoFinancialState[] = $gcoFinancialState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGcoFinancialState(): array
+    {
+        return $this->gcoFinancialState;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $gcoFulfillmentState
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoFulfillmentState(SearchColumnStringField $gcoFulfillmentState): TransactionSearchRowBasic
+    {
+        $this->gcoFulfillmentState[] = $gcoFulfillmentState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGcoFulfillmentState(): array
+    {
+        return $this->gcoFulfillmentState;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $gcoOrderId
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoOrderId(SearchColumnStringField $gcoOrderId): TransactionSearchRowBasic
+    {
+        $this->gcoOrderId[] = $gcoOrderId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGcoOrderId(): array
+    {
+        return $this->gcoOrderId;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $gcoOrderTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoOrderTotal(SearchColumnDoubleField $gcoOrderTotal): TransactionSearchRowBasic
+    {
+        $this->gcoOrderTotal[] = $gcoOrderTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGcoOrderTotal(): array
+    {
+        return $this->gcoOrderTotal;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $gcoPromotionAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoPromotionAmount(SearchColumnDoubleField $gcoPromotionAmount): TransactionSearchRowBasic
+    {
+        $this->gcoPromotionAmount[] = $gcoPromotionAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGcoPromotionAmount(): array
+    {
+        return $this->gcoPromotionAmount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $gcoPromotionName
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoPromotionName(SearchColumnStringField $gcoPromotionName): TransactionSearchRowBasic
+    {
+        $this->gcoPromotionName[] = $gcoPromotionName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGcoPromotionName(): array
+    {
+        return $this->gcoPromotionName;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $gcoRefundAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoRefundAmount(SearchColumnDoubleField $gcoRefundAmount): TransactionSearchRowBasic
+    {
+        $this->gcoRefundAmount[] = $gcoRefundAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGcoRefundAmount(): array
+    {
+        return $this->gcoRefundAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $gcoShippingTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoShippingTotal(SearchColumnDoubleField $gcoShippingTotal): TransactionSearchRowBasic
+    {
+        $this->gcoShippingTotal[] = $gcoShippingTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGcoShippingTotal(): array
+    {
+        return $this->gcoShippingTotal;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $gcoStateChangedDetail
+     * @return TransactionSearchRowBasic
+     */
+    public function setGcoStateChangedDetail(SearchColumnStringField $gcoStateChangedDetail): TransactionSearchRowBasic
+    {
+        $this->gcoStateChangedDetail[] = $gcoStateChangedDetail;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGcoStateChangedDetail(): array
+    {
+        return $this->gcoStateChangedDetail;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $giftCert
+     * @return TransactionSearchRowBasic
+     */
+    public function setGiftCert(SearchColumnStringField $giftCert): TransactionSearchRowBasic
+    {
+        $this->giftCert[] = $giftCert;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGiftCert(): array
+    {
+        return $this->giftCert;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $grossAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setGrossAmount(SearchColumnDoubleField $grossAmount): TransactionSearchRowBasic
+    {
+        $this->grossAmount[] = $grossAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getGrossAmount(): array
+    {
+        return $this->grossAmount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $includeInForecast
+     * @return TransactionSearchRowBasic
+     */
+    public function setIncludeInForecast(SearchColumnBooleanField $includeInForecast): TransactionSearchRowBasic
+    {
+        $this->includeInForecast[] = $includeInForecast;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIncludeInForecast(): array
+    {
+        return $this->includeInForecast;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $incoterm
+     * @return TransactionSearchRowBasic
+     */
+    public function setIncoterm(SearchColumnSelectField $incoterm): TransactionSearchRowBasic
+    {
+        $this->incoterm[] = $incoterm;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getIncoterm(): array
+    {
+        return $this->incoterm;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $intercoStatus
+     * @return TransactionSearchRowBasic
+     */
+    public function setIntercoStatus(SearchColumnEnumSelectField $intercoStatus): TransactionSearchRowBasic
+    {
+        $this->intercoStatus[] = $intercoStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getIntercoStatus(): array
+    {
+        return $this->intercoStatus;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $intercoTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setIntercoTransaction(SearchColumnStringField $intercoTransaction): TransactionSearchRowBasic
+    {
+        $this->intercoTransaction[] = $intercoTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getIntercoTransaction(): array
+    {
+        return $this->intercoTransaction;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return TransactionSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): TransactionSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $inventoryLocation
+     * @return TransactionSearchRowBasic
+     */
+    public function setInventoryLocation(SearchColumnSelectField $inventoryLocation): TransactionSearchRowBasic
+    {
+        $this->inventoryLocation[] = $inventoryLocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInventoryLocation(): array
+    {
+        return $this->inventoryLocation;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $inventorySubsidiary
+     * @return TransactionSearchRowBasic
+     */
+    public function setInventorySubsidiary(SearchColumnSelectField $inventorySubsidiary): TransactionSearchRowBasic
+    {
+        $this->inventorySubsidiary[] = $inventorySubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInventorySubsidiary(): array
+    {
+        return $this->inventorySubsidiary;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $inVsoeBundle
+     * @return TransactionSearchRowBasic
+     */
+    public function setInVsoeBundle(SearchColumnBooleanField $inVsoeBundle): TransactionSearchRowBasic
+    {
+        $this->inVsoeBundle[] = $inVsoeBundle;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getInVsoeBundle(): array
+    {
+        return $this->inVsoeBundle;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isAllocation
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsAllocation(SearchColumnBooleanField $isAllocation): TransactionSearchRowBasic
+    {
+        $this->isAllocation[] = $isAllocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsAllocation(): array
+    {
+        return $this->isAllocation;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isBackflush
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsBackflush(SearchColumnBooleanField $isBackflush): TransactionSearchRowBasic
+    {
+        $this->isBackflush[] = $isBackflush;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsBackflush(): array
+    {
+        return $this->isBackflush;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isGcoChargeback
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsGcoChargeback(SearchColumnBooleanField $isGcoChargeback): TransactionSearchRowBasic
+    {
+        $this->isGcoChargeback[] = $isGcoChargeback;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsGcoChargeback(): array
+    {
+        return $this->isGcoChargeback;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isGcoChargeConfirmed
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsGcoChargeConfirmed(SearchColumnBooleanField $isGcoChargeConfirmed): TransactionSearchRowBasic
+    {
+        $this->isGcoChargeConfirmed[] = $isGcoChargeConfirmed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsGcoChargeConfirmed(): array
+    {
+        return $this->isGcoChargeConfirmed;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isGcoPaymentGuaranteed
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsGcoPaymentGuaranteed(SearchColumnBooleanField $isGcoPaymentGuaranteed): TransactionSearchRowBasic
+    {
+        $this->isGcoPaymentGuaranteed[] = $isGcoPaymentGuaranteed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsGcoPaymentGuaranteed(): array
+    {
+        return $this->isGcoPaymentGuaranteed;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isGcoRefundConfirmed
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsGcoRefundConfirmed(SearchColumnBooleanField $isGcoRefundConfirmed): TransactionSearchRowBasic
+    {
+        $this->isGcoRefundConfirmed[] = $isGcoRefundConfirmed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsGcoRefundConfirmed(): array
+    {
+        return $this->isGcoRefundConfirmed;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInsideDelivery
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsInsideDelivery(SearchColumnBooleanField $isInsideDelivery): TransactionSearchRowBasic
+    {
+        $this->isInsideDelivery[] = $isInsideDelivery;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInsideDelivery(): array
+    {
+        return $this->isInsideDelivery;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInsidePickup
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsInsidePickup(SearchColumnBooleanField $isInsidePickup): TransactionSearchRowBasic
+    {
+        $this->isInsidePickup[] = $isInsidePickup;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInsidePickup(): array
+    {
+        return $this->isInsidePickup;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isIntercompanyAdjustment
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsIntercompanyAdjustment(SearchColumnBooleanField $isIntercompanyAdjustment): TransactionSearchRowBasic
+    {
+        $this->isIntercompanyAdjustment[] = $isIntercompanyAdjustment;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsIntercompanyAdjustment(): array
+    {
+        return $this->isIntercompanyAdjustment;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInTransitPayment
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsInTransitPayment(SearchColumnBooleanField $isInTransitPayment): TransactionSearchRowBasic
+    {
+        $this->isInTransitPayment[] = $isInTransitPayment;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInTransitPayment(): array
+    {
+        return $this->isInTransitPayment;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isMultiShipTo
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsMultiShipTo(SearchColumnBooleanField $isMultiShipTo): TransactionSearchRowBasic
+    {
+        $this->isMultiShipTo[] = $isMultiShipTo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsMultiShipTo(): array
+    {
+        return $this->isMultiShipTo;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isReversal
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsReversal(SearchColumnBooleanField $isReversal): TransactionSearchRowBasic
+    {
+        $this->isReversal[] = $isReversal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsReversal(): array
+    {
+        return $this->isReversal;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isRevRecTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsRevRecTransaction(SearchColumnBooleanField $isRevRecTransaction): TransactionSearchRowBasic
+    {
+        $this->isRevRecTransaction[] = $isRevRecTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsRevRecTransaction(): array
+    {
+        return $this->isRevRecTransaction;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isScrap
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsScrap(SearchColumnBooleanField $isScrap): TransactionSearchRowBasic
+    {
+        $this->isScrap[] = $isScrap;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsScrap(): array
+    {
+        return $this->isScrap;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isShipAddress
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsShipAddress(SearchColumnBooleanField $isShipAddress): TransactionSearchRowBasic
+    {
+        $this->isShipAddress[] = $isShipAddress;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsShipAddress(): array
+    {
+        return $this->isShipAddress;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isTransferPriceCosting
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsTransferPriceCosting(SearchColumnBooleanField $isTransferPriceCosting): TransactionSearchRowBasic
+    {
+        $this->isTransferPriceCosting[] = $isTransferPriceCosting;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsTransferPriceCosting(): array
+    {
+        return $this->isTransferPriceCosting;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isWip
+     * @return TransactionSearchRowBasic
+     */
+    public function setIsWip(SearchColumnBooleanField $isWip): TransactionSearchRowBasic
+    {
+        $this->isWip[] = $isWip;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsWip(): array
+    {
+        return $this->isWip;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $item
+     * @return TransactionSearchRowBasic
+     */
+    public function setItem(SearchColumnSelectField $item): TransactionSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $itemFulfillmentChoice
+     * @return TransactionSearchRowBasic
+     */
+    public function setItemFulfillmentChoice(SearchColumnEnumSelectField $itemFulfillmentChoice): TransactionSearchRowBasic
+    {
+        $this->itemFulfillmentChoice[] = $itemFulfillmentChoice;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getItemFulfillmentChoice(): array
+    {
+        return $this->itemFulfillmentChoice;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $itemRevision
+     * @return TransactionSearchRowBasic
+     */
+    public function setItemRevision(SearchColumnSelectField $itemRevision): TransactionSearchRowBasic
+    {
+        $this->itemRevision[] = $itemRevision;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItemRevision(): array
+    {
+        return $this->itemRevision;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $landedCostPerLine
+     * @return TransactionSearchRowBasic
+     */
+    public function setLandedCostPerLine(SearchColumnBooleanField $landedCostPerLine): TransactionSearchRowBasic
+    {
+        $this->landedCostPerLine[] = $landedCostPerLine;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getLandedCostPerLine(): array
+    {
+        return $this->landedCostPerLine;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): TransactionSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $leadSource
+     * @return TransactionSearchRowBasic
+     */
+    public function setLeadSource(SearchColumnSelectField $leadSource): TransactionSearchRowBasic
+    {
+        $this->leadSource[] = $leadSource;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLeadSource(): array
+    {
+        return $this->leadSource;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $line
+     * @return TransactionSearchRowBasic
+     */
+    public function setLine(SearchColumnLongField $line): TransactionSearchRowBasic
+    {
+        $this->line[] = $line;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getLine(): array
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $lineSequenceNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setLineSequenceNumber(SearchColumnLongField $lineSequenceNumber): TransactionSearchRowBasic
+    {
+        $this->lineSequenceNumber[] = $lineSequenceNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getLineSequenceNumber(): array
+    {
+        return $this->lineSequenceNumber;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $lineUniqueKey
+     * @return TransactionSearchRowBasic
+     */
+    public function setLineUniqueKey(SearchColumnLongField $lineUniqueKey): TransactionSearchRowBasic
+    {
+        $this->lineUniqueKey[] = $lineUniqueKey;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getLineUniqueKey(): array
+    {
+        return $this->lineUniqueKey;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return TransactionSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): TransactionSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $locationAutoAssigned
+     * @return TransactionSearchRowBasic
+     */
+    public function setLocationAutoAssigned(SearchColumnBooleanField $locationAutoAssigned): TransactionSearchRowBasic
+    {
+        $this->locationAutoAssigned[] = $locationAutoAssigned;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getLocationAutoAssigned(): array
+    {
+        return $this->locationAutoAssigned;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $mainLine
+     * @return TransactionSearchRowBasic
+     */
+    public function setMainLine(SearchColumnBooleanField $mainLine): TransactionSearchRowBasic
+    {
+        $this->mainLine[] = $mainLine;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getMainLine(): array
+    {
+        return $this->mainLine;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $mainName
+     * @return TransactionSearchRowBasic
+     */
+    public function setMainName(SearchColumnStringField $mainName): TransactionSearchRowBasic
+    {
+        $this->mainName[] = $mainName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMainName(): array
+    {
+        return $this->mainName;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $manufacturingRouting
+     * @return TransactionSearchRowBasic
+     */
+    public function setManufacturingRouting(SearchColumnSelectField $manufacturingRouting): TransactionSearchRowBasic
+    {
+        $this->manufacturingRouting[] = $manufacturingRouting;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getManufacturingRouting(): array
+    {
+        return $this->manufacturingRouting;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $matchBillToReceipt
+     * @return TransactionSearchRowBasic
+     */
+    public function setMatchBillToReceipt(SearchColumnBooleanField $matchBillToReceipt): TransactionSearchRowBasic
+    {
+        $this->matchBillToReceipt[] = $matchBillToReceipt;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getMatchBillToReceipt(): array
+    {
+        return $this->matchBillToReceipt;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return TransactionSearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): TransactionSearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memoMain
+     * @return TransactionSearchRowBasic
+     */
+    public function setMemoMain(SearchColumnStringField $memoMain): TransactionSearchRowBasic
+    {
+        $this->memoMain[] = $memoMain;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemoMain(): array
+    {
+        return $this->memoMain;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $memorized
+     * @return TransactionSearchRowBasic
+     */
+    public function setMemorized(SearchColumnBooleanField $memorized): TransactionSearchRowBasic
+    {
+        $this->memorized[] = $memorized;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getMemorized(): array
+    {
+        return $this->memorized;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $merchantAccount
+     * @return TransactionSearchRowBasic
+     */
+    public function setMerchantAccount(SearchColumnSelectField $merchantAccount): TransactionSearchRowBasic
+    {
+        $this->merchantAccount[] = $merchantAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getMerchantAccount(): array
+    {
+        return $this->merchantAccount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $message
+     * @return TransactionSearchRowBasic
+     */
+    public function setMessage(SearchColumnStringField $message): TransactionSearchRowBasic
+    {
+        $this->message[] = $message;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMessage(): array
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $multiSubsidiary
+     * @return TransactionSearchRowBasic
+     */
+    public function setMultiSubsidiary(SearchColumnBooleanField $multiSubsidiary): TransactionSearchRowBasic
+    {
+        $this->multiSubsidiary[] = $multiSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getMultiSubsidiary(): array
+    {
+        return $this->multiSubsidiary;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $netAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setNetAmount(SearchColumnDoubleField $netAmount): TransactionSearchRowBasic
+    {
+        $this->netAmount[] = $netAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getNetAmount(): array
+    {
+        return $this->netAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $netAmountNoTax
+     * @return TransactionSearchRowBasic
+     */
+    public function setNetAmountNoTax(SearchColumnDoubleField $netAmountNoTax): TransactionSearchRowBasic
+    {
+        $this->netAmountNoTax[] = $netAmountNoTax;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getNetAmountNoTax(): array
+    {
+        return $this->netAmountNoTax;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $nextApprover
+     * @return TransactionSearchRowBasic
+     */
+    public function setNextApprover(SearchColumnSelectField $nextApprover): TransactionSearchRowBasic
+    {
+        $this->nextApprover[] = $nextApprover;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getNextApprover(): array
+    {
+        return $this->nextApprover;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $nextBillDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setNextBillDate(SearchColumnDateField $nextBillDate): TransactionSearchRowBasic
+    {
+        $this->nextBillDate[] = $nextBillDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getNextBillDate(): array
+    {
+        return $this->nextBillDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $nexus
+     * @return TransactionSearchRowBasic
+     */
+    public function setNexus(SearchColumnSelectField $nexus): TransactionSearchRowBasic
+    {
+        $this->nexus[] = $nexus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getNexus(): array
+    {
+        return $this->nexus;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $noAutoAssignLocation
+     * @return TransactionSearchRowBasic
+     */
+    public function setNoAutoAssignLocation(SearchColumnBooleanField $noAutoAssignLocation): TransactionSearchRowBasic
+    {
+        $this->noAutoAssignLocation[] = $noAutoAssignLocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getNoAutoAssignLocation(): array
+    {
+        return $this->noAutoAssignLocation;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $nonReimbursable
+     * @return TransactionSearchRowBasic
+     */
+    public function setNonReimbursable(SearchColumnBooleanField $nonReimbursable): TransactionSearchRowBasic
+    {
+        $this->nonReimbursable[] = $nonReimbursable;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getNonReimbursable(): array
+    {
+        return $this->nonReimbursable;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $oneTimeTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setOneTimeTotal(SearchColumnDoubleField $oneTimeTotal): TransactionSearchRowBasic
+    {
+        $this->oneTimeTotal[] = $oneTimeTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getOneTimeTotal(): array
+    {
+        return $this->oneTimeTotal;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $opportunity
+     * @return TransactionSearchRowBasic
+     */
+    public function setOpportunity(SearchColumnSelectField $opportunity): TransactionSearchRowBasic
+    {
+        $this->opportunity[] = $opportunity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOpportunity(): array
+    {
+        return $this->opportunity;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $options
+     * @return TransactionSearchRowBasic
+     */
+    public function setOptions(SearchColumnStringField $options): TransactionSearchRowBasic
+    {
+        $this->options[] = $options;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getOptions(): array
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $orderAllocationStrategy
+     * @return TransactionSearchRowBasic
+     */
+    public function setOrderAllocationStrategy(SearchColumnSelectField $orderAllocationStrategy): TransactionSearchRowBasic
+    {
+        $this->orderAllocationStrategy[] = $orderAllocationStrategy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOrderAllocationStrategy(): array
+    {
+        return $this->orderAllocationStrategy;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $orderPriority
+     * @return TransactionSearchRowBasic
+     */
+    public function setOrderPriority(SearchColumnDoubleField $orderPriority): TransactionSearchRowBasic
+    {
+        $this->orderPriority[] = $orderPriority;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getOrderPriority(): array
+    {
+        return $this->orderPriority;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $originator
+     * @return TransactionSearchRowBasic
+     */
+    public function setOriginator(SearchColumnEnumSelectField $originator): TransactionSearchRowBasic
+    {
+        $this->originator[] = $originator;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getOriginator(): array
+    {
+        return $this->originator;
+    }
+
+    /**
+     * @param SearchColumnTextNumberField[] $otherRefNum
+     * @return TransactionSearchRowBasic
+     */
+    public function setOtherRefNum(SearchColumnTextNumberField $otherRefNum): TransactionSearchRowBasic
+    {
+        $this->otherRefNum[] = $otherRefNum;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnTextNumberField[]
+     */
+    public function getOtherRefNum(): array
+    {
+        return $this->otherRefNum;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $overheadParentItem
+     * @return TransactionSearchRowBasic
+     */
+    public function setOverheadParentItem(SearchColumnSelectField $overheadParentItem): TransactionSearchRowBasic
+    {
+        $this->overheadParentItem[] = $overheadParentItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOverheadParentItem(): array
+    {
+        return $this->overheadParentItem;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $overrideInstallments
+     * @return TransactionSearchRowBasic
+     */
+    public function setOverrideInstallments(SearchColumnBooleanField $overrideInstallments): TransactionSearchRowBasic
+    {
+        $this->overrideInstallments[] = $overrideInstallments;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getOverrideInstallments(): array
+    {
+        return $this->overrideInstallments;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $packageCount
+     * @return TransactionSearchRowBasic
+     */
+    public function setPackageCount(SearchColumnLongField $packageCount): TransactionSearchRowBasic
+    {
+        $this->packageCount[] = $packageCount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getPackageCount(): array
+    {
+        return $this->packageCount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $paidAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaidAmount(SearchColumnDoubleField $paidAmount): TransactionSearchRowBasic
+    {
+        $this->paidAmount[] = $paidAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPaidAmount(): array
+    {
+        return $this->paidAmount;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $paidTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaidTransaction(SearchColumnSelectField $paidTransaction): TransactionSearchRowBasic
+    {
+        $this->paidTransaction[] = $paidTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPaidTransaction(): array
+    {
+        return $this->paidTransaction;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $partner
+     * @return TransactionSearchRowBasic
+     */
+    public function setPartner(SearchColumnSelectField $partner): TransactionSearchRowBasic
+    {
+        $this->partner[] = $partner;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPartner(): array
+    {
+        return $this->partner;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $partnerContribution
+     * @return TransactionSearchRowBasic
+     */
+    public function setPartnerContribution(SearchColumnDoubleField $partnerContribution): TransactionSearchRowBasic
+    {
+        $this->partnerContribution[] = $partnerContribution;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPartnerContribution(): array
+    {
+        return $this->partnerContribution;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $partnerRole
+     * @return TransactionSearchRowBasic
+     */
+    public function setPartnerRole(SearchColumnSelectField $partnerRole): TransactionSearchRowBasic
+    {
+        $this->partnerRole[] = $partnerRole;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPartnerRole(): array
+    {
+        return $this->partnerRole;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $partnerTeamMember
+     * @return TransactionSearchRowBasic
+     */
+    public function setPartnerTeamMember(SearchColumnSelectField $partnerTeamMember): TransactionSearchRowBasic
+    {
+        $this->partnerTeamMember[] = $partnerTeamMember;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPartnerTeamMember(): array
+    {
+        return $this->partnerTeamMember;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $payingAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setPayingAmount(SearchColumnDoubleField $payingAmount): TransactionSearchRowBasic
+    {
+        $this->payingAmount[] = $payingAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPayingAmount(): array
+    {
+        return $this->payingAmount;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $payingTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setPayingTransaction(SearchColumnSelectField $payingTransaction): TransactionSearchRowBasic
+    {
+        $this->payingTransaction[] = $payingTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPayingTransaction(): array
+    {
+        return $this->payingTransaction;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $paymentApproved
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentApproved(SearchColumnBooleanField $paymentApproved): TransactionSearchRowBasic
+    {
+        $this->paymentApproved[] = $paymentApproved;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPaymentApproved(): array
+    {
+        return $this->paymentApproved;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $paymentEventDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentEventDate(SearchColumnDateField $paymentEventDate): TransactionSearchRowBasic
+    {
+        $this->paymentEventDate[] = $paymentEventDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getPaymentEventDate(): array
+    {
+        return $this->paymentEventDate;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $paymentEventHoldReason
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentEventHoldReason(SearchColumnEnumSelectField $paymentEventHoldReason): TransactionSearchRowBasic
+    {
+        $this->paymentEventHoldReason[] = $paymentEventHoldReason;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPaymentEventHoldReason(): array
+    {
+        return $this->paymentEventHoldReason;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $paymentEventPurchaseCardUsed
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentEventPurchaseCardUsed(SearchColumnBooleanField $paymentEventPurchaseCardUsed): TransactionSearchRowBasic
+    {
+        $this->paymentEventPurchaseCardUsed[] = $paymentEventPurchaseCardUsed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPaymentEventPurchaseCardUsed(): array
+    {
+        return $this->paymentEventPurchaseCardUsed;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $paymentEventPurchaseDataSent
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentEventPurchaseDataSent(SearchColumnBooleanField $paymentEventPurchaseDataSent): TransactionSearchRowBasic
+    {
+        $this->paymentEventPurchaseDataSent[] = $paymentEventPurchaseDataSent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPaymentEventPurchaseDataSent(): array
+    {
+        return $this->paymentEventPurchaseDataSent;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $paymentEventResult
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentEventResult(SearchColumnEnumSelectField $paymentEventResult): TransactionSearchRowBasic
+    {
+        $this->paymentEventResult[] = $paymentEventResult;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPaymentEventResult(): array
+    {
+        return $this->paymentEventResult;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $paymentEventType
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentEventType(SearchColumnEnumSelectField $paymentEventType): TransactionSearchRowBasic
+    {
+        $this->paymentEventType[] = $paymentEventType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPaymentEventType(): array
+    {
+        return $this->paymentEventType;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $paymentHold
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentHold(SearchColumnBooleanField $paymentHold): TransactionSearchRowBasic
+    {
+        $this->paymentHold[] = $paymentHold;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPaymentHold(): array
+    {
+        return $this->paymentHold;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $paymentMethod
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentMethod(SearchColumnSelectField $paymentMethod): TransactionSearchRowBasic
+    {
+        $this->paymentMethod[] = $paymentMethod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPaymentMethod(): array
+    {
+        return $this->paymentMethod;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $paymentOption
+     * @return TransactionSearchRowBasic
+     */
+    public function setPaymentOption(SearchColumnSelectField $paymentOption): TransactionSearchRowBasic
+    {
+        $this->paymentOption[] = $paymentOption;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPaymentOption(): array
+    {
+        return $this->paymentOption;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $payPalPending
+     * @return TransactionSearchRowBasic
+     */
+    public function setPayPalPending(SearchColumnBooleanField $payPalPending): TransactionSearchRowBasic
+    {
+        $this->payPalPending[] = $payPalPending;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPayPalPending(): array
+    {
+        return $this->payPalPending;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $payPalStatus
+     * @return TransactionSearchRowBasic
+     */
+    public function setPayPalStatus(SearchColumnStringField $payPalStatus): TransactionSearchRowBasic
+    {
+        $this->payPalStatus[] = $payPalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPayPalStatus(): array
+    {
+        return $this->payPalStatus;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $payPalTranId
+     * @return TransactionSearchRowBasic
+     */
+    public function setPayPalTranId(SearchColumnStringField $payPalTranId): TransactionSearchRowBasic
+    {
+        $this->payPalTranId[] = $payPalTranId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPayPalTranId(): array
+    {
+        return $this->payPalTranId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $payrollBatch
+     * @return TransactionSearchRowBasic
+     */
+    public function setPayrollBatch(SearchColumnStringField $payrollBatch): TransactionSearchRowBasic
+    {
+        $this->payrollBatch[] = $payrollBatch;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPayrollBatch(): array
+    {
+        return $this->payrollBatch;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $pnRefNum
+     * @return TransactionSearchRowBasic
+     */
+    public function setPnRefNum(SearchColumnStringField $pnRefNum): TransactionSearchRowBasic
+    {
+        $this->pnRefNum[] = $pnRefNum;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPnRefNum(): array
+    {
+        return $this->pnRefNum;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $poRate
+     * @return TransactionSearchRowBasic
+     */
+    public function setPoRate(SearchColumnDoubleField $poRate): TransactionSearchRowBasic
+    {
+        $this->poRate[] = $poRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPoRate(): array
+    {
+        return $this->poRate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $posting
+     * @return TransactionSearchRowBasic
+     */
+    public function setPosting(SearchColumnBooleanField $posting): TransactionSearchRowBasic
+    {
+        $this->posting[] = $posting;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPosting(): array
+    {
+        return $this->posting;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $postingPeriod
+     * @return TransactionSearchRowBasic
+     */
+    public function setPostingPeriod(SearchColumnSelectField $postingPeriod): TransactionSearchRowBasic
+    {
+        $this->postingPeriod[] = $postingPeriod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPostingPeriod(): array
+    {
+        return $this->postingPeriod;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $priceLevel
+     * @return TransactionSearchRowBasic
+     */
+    public function setPriceLevel(SearchColumnSelectField $priceLevel): TransactionSearchRowBasic
+    {
+        $this->priceLevel[] = $priceLevel;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPriceLevel(): array
+    {
+        return $this->priceLevel;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $print
+     * @return TransactionSearchRowBasic
+     */
+    public function setPrint(SearchColumnStringField $print): TransactionSearchRowBasic
+    {
+        $this->print[] = $print;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPrint(): array
+    {
+        return $this->print;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $probability
+     * @return TransactionSearchRowBasic
+     */
+    public function setProbability(SearchColumnDoubleField $probability): TransactionSearchRowBasic
+    {
+        $this->probability[] = $probability;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getProbability(): array
+    {
+        return $this->probability;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $projectedAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setProjectedAmount(SearchColumnDoubleField $projectedAmount): TransactionSearchRowBasic
+    {
+        $this->projectedAmount[] = $projectedAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getProjectedAmount(): array
+    {
+        return $this->projectedAmount;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $projectTask
+     * @return TransactionSearchRowBasic
+     */
+    public function setProjectTask(SearchColumnSelectField $projectTask): TransactionSearchRowBasic
+    {
+        $this->projectTask[] = $projectTask;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getProjectTask(): array
+    {
+        return $this->projectTask;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $promoCode
+     * @return TransactionSearchRowBasic
+     */
+    public function setPromoCode(SearchColumnSelectField $promoCode): TransactionSearchRowBasic
+    {
+        $this->promoCode[] = $promoCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPromoCode(): array
+    {
+        return $this->promoCode;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $purchaseOrder
+     * @return TransactionSearchRowBasic
+     */
+    public function setPurchaseOrder(SearchColumnSelectField $purchaseOrder): TransactionSearchRowBasic
+    {
+        $this->purchaseOrder[] = $purchaseOrder;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPurchaseOrder(): array
+    {
+        return $this->purchaseOrder;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantity
+     * @return TransactionSearchRowBasic
+     */
+    public function setQuantity(SearchColumnDoubleField $quantity): TransactionSearchRowBasic
+    {
+        $this->quantity[] = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantity(): array
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityBilled
+     * @return TransactionSearchRowBasic
+     */
+    public function setQuantityBilled(SearchColumnDoubleField $quantityBilled): TransactionSearchRowBasic
+    {
+        $this->quantityBilled[] = $quantityBilled;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityBilled(): array
+    {
+        return $this->quantityBilled;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityCommitted
+     * @return TransactionSearchRowBasic
+     */
+    public function setQuantityCommitted(SearchColumnDoubleField $quantityCommitted): TransactionSearchRowBasic
+    {
+        $this->quantityCommitted[] = $quantityCommitted;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityCommitted(): array
+    {
+        return $this->quantityCommitted;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityPacked
+     * @return TransactionSearchRowBasic
+     */
+    public function setQuantityPacked(SearchColumnDoubleField $quantityPacked): TransactionSearchRowBasic
+    {
+        $this->quantityPacked[] = $quantityPacked;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityPacked(): array
+    {
+        return $this->quantityPacked;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityPicked
+     * @return TransactionSearchRowBasic
+     */
+    public function setQuantityPicked(SearchColumnDoubleField $quantityPicked): TransactionSearchRowBasic
+    {
+        $this->quantityPicked[] = $quantityPicked;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityPicked(): array
+    {
+        return $this->quantityPicked;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityRevCommitted
+     * @return TransactionSearchRowBasic
+     */
+    public function setQuantityRevCommitted(SearchColumnDoubleField $quantityRevCommitted): TransactionSearchRowBasic
+    {
+        $this->quantityRevCommitted[] = $quantityRevCommitted;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityRevCommitted(): array
+    {
+        return $this->quantityRevCommitted;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityShipRecv
+     * @return TransactionSearchRowBasic
+     */
+    public function setQuantityShipRecv(SearchColumnDoubleField $quantityShipRecv): TransactionSearchRowBasic
+    {
+        $this->quantityShipRecv[] = $quantityShipRecv;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityShipRecv(): array
+    {
+        return $this->quantityShipRecv;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantityUom
+     * @return TransactionSearchRowBasic
+     */
+    public function setQuantityUom(SearchColumnDoubleField $quantityUom): TransactionSearchRowBasic
+    {
+        $this->quantityUom[] = $quantityUom;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantityUom(): array
+    {
+        return $this->quantityUom;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $rate
+     * @return TransactionSearchRowBasic
+     */
+    public function setRate(SearchColumnDoubleField $rate): TransactionSearchRowBasic
+    {
+        $this->rate[] = $rate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRate(): array
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $realizedGainPostingTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setRealizedGainPostingTransaction(SearchColumnStringField $realizedGainPostingTransaction): TransactionSearchRowBasic
+    {
+        $this->realizedGainPostingTransaction[] = $realizedGainPostingTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRealizedGainPostingTransaction(): array
+    {
+        return $this->realizedGainPostingTransaction;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $recognizedRevenue
+     * @return TransactionSearchRowBasic
+     */
+    public function setRecognizedRevenue(SearchColumnDoubleField $recognizedRevenue): TransactionSearchRowBasic
+    {
+        $this->recognizedRevenue[] = $recognizedRevenue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRecognizedRevenue(): array
+    {
+        return $this->recognizedRevenue;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $recordType
+     * @return TransactionSearchRowBasic
+     */
+    public function setRecordType(SearchColumnStringField $recordType): TransactionSearchRowBasic
+    {
+        $this->recordType[] = $recordType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRecordType(): array
+    {
+        return $this->recordType;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $recurAnnuallyTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setRecurAnnuallyTotal(SearchColumnDoubleField $recurAnnuallyTotal): TransactionSearchRowBasic
+    {
+        $this->recurAnnuallyTotal[] = $recurAnnuallyTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRecurAnnuallyTotal(): array
+    {
+        return $this->recurAnnuallyTotal;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $recurMonthlyTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setRecurMonthlyTotal(SearchColumnDoubleField $recurMonthlyTotal): TransactionSearchRowBasic
+    {
+        $this->recurMonthlyTotal[] = $recurMonthlyTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRecurMonthlyTotal(): array
+    {
+        return $this->recurMonthlyTotal;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $recurQuarterlyTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setRecurQuarterlyTotal(SearchColumnDoubleField $recurQuarterlyTotal): TransactionSearchRowBasic
+    {
+        $this->recurQuarterlyTotal[] = $recurQuarterlyTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRecurQuarterlyTotal(): array
+    {
+        return $this->recurQuarterlyTotal;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $recurringBill
+     * @return TransactionSearchRowBasic
+     */
+    public function setRecurringBill(SearchColumnBooleanField $recurringBill): TransactionSearchRowBasic
+    {
+        $this->recurringBill[] = $recurringBill;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getRecurringBill(): array
+    {
+        return $this->recurringBill;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $recurWeeklyTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setRecurWeeklyTotal(SearchColumnDoubleField $recurWeeklyTotal): TransactionSearchRowBasic
+    {
+        $this->recurWeeklyTotal[] = $recurWeeklyTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRecurWeeklyTotal(): array
+    {
+        return $this->recurWeeklyTotal;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $refNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setRefNumber(SearchColumnLongField $refNumber): TransactionSearchRowBasic
+    {
+        $this->refNumber[] = $refNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getRefNumber(): array
+    {
+        return $this->refNumber;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $requestedDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setRequestedDate(SearchColumnDateField $requestedDate): TransactionSearchRowBasic
+    {
+        $this->requestedDate[] = $requestedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getRequestedDate(): array
+    {
+        return $this->requestedDate;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $revCommitStatus
+     * @return TransactionSearchRowBasic
+     */
+    public function setRevCommitStatus(SearchColumnEnumSelectField $revCommitStatus): TransactionSearchRowBasic
+    {
+        $this->revCommitStatus[] = $revCommitStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getRevCommitStatus(): array
+    {
+        return $this->revCommitStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $revCommittingTransaction
+     * @return TransactionSearchRowBasic
+     */
+    public function setRevCommittingTransaction(SearchColumnSelectField $revCommittingTransaction): TransactionSearchRowBasic
+    {
+        $this->revCommittingTransaction[] = $revCommittingTransaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getRevCommittingTransaction(): array
+    {
+        return $this->revCommittingTransaction;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $revenueStatus
+     * @return TransactionSearchRowBasic
+     */
+    public function setRevenueStatus(SearchColumnEnumSelectField $revenueStatus): TransactionSearchRowBasic
+    {
+        $this->revenueStatus[] = $revenueStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getRevenueStatus(): array
+    {
+        return $this->revenueStatus;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $reversalDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setReversalDate(SearchColumnDateField $reversalDate): TransactionSearchRowBasic
+    {
+        $this->reversalDate[] = $reversalDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getReversalDate(): array
+    {
+        return $this->reversalDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $reversalNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setReversalNumber(SearchColumnStringField $reversalNumber): TransactionSearchRowBasic
+    {
+        $this->reversalNumber[] = $reversalNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getReversalNumber(): array
+    {
+        return $this->reversalNumber;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $revRecEndDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setRevRecEndDate(SearchColumnDateField $revRecEndDate): TransactionSearchRowBasic
+    {
+        $this->revRecEndDate[] = $revRecEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getRevRecEndDate(): array
+    {
+        return $this->revRecEndDate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $revRecOnRevCommitment
+     * @return TransactionSearchRowBasic
+     */
+    public function setRevRecOnRevCommitment(SearchColumnBooleanField $revRecOnRevCommitment): TransactionSearchRowBasic
+    {
+        $this->revRecOnRevCommitment[] = $revRecOnRevCommitment;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getRevRecOnRevCommitment(): array
+    {
+        return $this->revRecOnRevCommitment;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $revRecStartDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setRevRecStartDate(SearchColumnDateField $revRecStartDate): TransactionSearchRowBasic
+    {
+        $this->revRecStartDate[] = $revRecStartDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getRevRecStartDate(): array
+    {
+        return $this->revRecStartDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $rgAccount
+     * @return TransactionSearchRowBasic
+     */
+    public function setRgAccount(SearchColumnSelectField $rgAccount): TransactionSearchRowBasic
+    {
+        $this->rgAccount[] = $rgAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getRgAccount(): array
+    {
+        return $this->rgAccount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $rgAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setRgAmount(SearchColumnDoubleField $rgAmount): TransactionSearchRowBasic
+    {
+        $this->rgAmount[] = $rgAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getRgAmount(): array
+    {
+        return $this->rgAmount;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $salesEffectiveDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setSalesEffectiveDate(SearchColumnDateField $salesEffectiveDate): TransactionSearchRowBasic
+    {
+        $this->salesEffectiveDate[] = $salesEffectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getSalesEffectiveDate(): array
+    {
+        return $this->salesEffectiveDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $salesOrder
+     * @return TransactionSearchRowBasic
+     */
+    public function setSalesOrder(SearchColumnSelectField $salesOrder): TransactionSearchRowBasic
+    {
+        $this->salesOrder[] = $salesOrder;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSalesOrder(): array
+    {
+        return $this->salesOrder;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $salesRep
+     * @return TransactionSearchRowBasic
+     */
+    public function setSalesRep(SearchColumnSelectField $salesRep): TransactionSearchRowBasic
+    {
+        $this->salesRep[] = $salesRep;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSalesRep(): array
+    {
+        return $this->salesRep;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $salesTeamMember
+     * @return TransactionSearchRowBasic
+     */
+    public function setSalesTeamMember(SearchColumnSelectField $salesTeamMember): TransactionSearchRowBasic
+    {
+        $this->salesTeamMember[] = $salesTeamMember;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSalesTeamMember(): array
+    {
+        return $this->salesTeamMember;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $salesTeamRole
+     * @return TransactionSearchRowBasic
+     */
+    public function setSalesTeamRole(SearchColumnSelectField $salesTeamRole): TransactionSearchRowBasic
+    {
+        $this->salesTeamRole[] = $salesTeamRole;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSalesTeamRole(): array
+    {
+        return $this->salesTeamRole;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $schedulingMethod
+     * @return TransactionSearchRowBasic
+     */
+    public function setSchedulingMethod(SearchColumnEnumSelectField $schedulingMethod): TransactionSearchRowBasic
+    {
+        $this->schedulingMethod[] = $schedulingMethod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getSchedulingMethod(): array
+    {
+        return $this->schedulingMethod;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $serialNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setSerialNumber(SearchColumnStringField $serialNumber): TransactionSearchRowBasic
+    {
+        $this->serialNumber[] = $serialNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSerialNumber(): array
+    {
+        return $this->serialNumber;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $serialNumberCost
+     * @return TransactionSearchRowBasic
+     */
+    public function setSerialNumberCost(SearchColumnDoubleField $serialNumberCost): TransactionSearchRowBasic
+    {
+        $this->serialNumberCost[] = $serialNumberCost;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getSerialNumberCost(): array
+    {
+        return $this->serialNumberCost;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $serialNumberCostAdjustment
+     * @return TransactionSearchRowBasic
+     */
+    public function setSerialNumberCostAdjustment(SearchColumnDoubleField $serialNumberCostAdjustment): TransactionSearchRowBasic
+    {
+        $this->serialNumberCostAdjustment[] = $serialNumberCostAdjustment;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getSerialNumberCostAdjustment(): array
+    {
+        return $this->serialNumberCostAdjustment;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $serialNumberQuantity
+     * @return TransactionSearchRowBasic
+     */
+    public function setSerialNumberQuantity(SearchColumnDoubleField $serialNumberQuantity): TransactionSearchRowBasic
+    {
+        $this->serialNumberQuantity[] = $serialNumberQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getSerialNumberQuantity(): array
+    {
+        return $this->serialNumberQuantity;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $serialNumbers
+     * @return TransactionSearchRowBasic
+     */
+    public function setSerialNumbers(SearchColumnStringField $serialNumbers): TransactionSearchRowBasic
+    {
+        $this->serialNumbers[] = $serialNumbers;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSerialNumbers(): array
+    {
+        return $this->serialNumbers;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAddress
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipAddress(SearchColumnStringField $shipAddress): TransactionSearchRowBasic
+    {
+        $this->shipAddress[] = $shipAddress;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAddress(): array
+    {
+        return $this->shipAddress;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAddressee
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipAddressee(SearchColumnStringField $shipAddressee): TransactionSearchRowBasic
+    {
+        $this->shipAddressee[] = $shipAddressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAddressee(): array
+    {
+        return $this->shipAddressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAttention
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipAttention(SearchColumnStringField $shipAttention): TransactionSearchRowBasic
+    {
+        $this->shipAttention[] = $shipAttention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAttention(): array
+    {
+        return $this->shipAttention;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $shipCarrier
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipCarrier(SearchColumnEnumSelectField $shipCarrier): TransactionSearchRowBasic
+    {
+        $this->shipCarrier[] = $shipCarrier;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getShipCarrier(): array
+    {
+        return $this->shipCarrier;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipCity
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipCity(SearchColumnStringField $shipCity): TransactionSearchRowBasic
+    {
+        $this->shipCity[] = $shipCity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipCity(): array
+    {
+        return $this->shipCity;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $shipComplete
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipComplete(SearchColumnBooleanField $shipComplete): TransactionSearchRowBasic
+    {
+        $this->shipComplete[] = $shipComplete;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getShipComplete(): array
+    {
+        return $this->shipComplete;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $shipCountry
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipCountry(SearchColumnEnumSelectField $shipCountry): TransactionSearchRowBasic
+    {
+        $this->shipCountry[] = $shipCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getShipCountry(): array
+    {
+        return $this->shipCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipCountryCode
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipCountryCode(SearchColumnStringField $shipCountryCode): TransactionSearchRowBasic
+    {
+        $this->shipCountryCode[] = $shipCountryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipCountryCode(): array
+    {
+        return $this->shipCountryCode;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $shipDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipDate(SearchColumnDateField $shipDate): TransactionSearchRowBasic
+    {
+        $this->shipDate[] = $shipDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getShipDate(): array
+    {
+        return $this->shipDate;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $shipGroup
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipGroup(SearchColumnLongField $shipGroup): TransactionSearchRowBasic
+    {
+        $this->shipGroup[] = $shipGroup;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getShipGroup(): array
+    {
+        return $this->shipGroup;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $shipMethod
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipMethod(SearchColumnSelectField $shipMethod): TransactionSearchRowBasic
+    {
+        $this->shipMethod[] = $shipMethod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getShipMethod(): array
+    {
+        return $this->shipMethod;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipPhone
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipPhone(SearchColumnStringField $shipPhone): TransactionSearchRowBasic
+    {
+        $this->shipPhone[] = $shipPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipPhone(): array
+    {
+        return $this->shipPhone;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $shippingAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setShippingAmount(SearchColumnDoubleField $shippingAmount): TransactionSearchRowBasic
+    {
+        $this->shippingAmount[] = $shippingAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getShippingAmount(): array
+    {
+        return $this->shippingAmount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $shipRecvStatusLine
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipRecvStatusLine(SearchColumnBooleanField $shipRecvStatusLine): TransactionSearchRowBasic
+    {
+        $this->shipRecvStatusLine[] = $shipRecvStatusLine;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getShipRecvStatusLine(): array
+    {
+        return $this->shipRecvStatusLine;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipState
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipState(SearchColumnStringField $shipState): TransactionSearchRowBasic
+    {
+        $this->shipState[] = $shipState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipState(): array
+    {
+        return $this->shipState;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $shipTo
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipTo(SearchColumnSelectField $shipTo): TransactionSearchRowBasic
+    {
+        $this->shipTo[] = $shipTo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getShipTo(): array
+    {
+        return $this->shipTo;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipZip
+     * @return TransactionSearchRowBasic
+     */
+    public function setShipZip(SearchColumnStringField $shipZip): TransactionSearchRowBasic
+    {
+        $this->shipZip[] = $shipZip;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipZip(): array
+    {
+        return $this->shipZip;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $signedAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setSignedAmount(SearchColumnDoubleField $signedAmount): TransactionSearchRowBasic
+    {
+        $this->signedAmount[] = $signedAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getSignedAmount(): array
+    {
+        return $this->signedAmount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $source
+     * @return TransactionSearchRowBasic
+     */
+    public function setSource(SearchColumnStringField $source): TransactionSearchRowBasic
+    {
+        $this->source[] = $source;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSource(): array
+    {
+        return $this->source;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setStartDate(SearchColumnDateField $startDate): TransactionSearchRowBasic
+    {
+        $this->startDate[] = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartDate(): array
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $status
+     * @return TransactionSearchRowBasic
+     */
+    public function setStatus(SearchColumnEnumSelectField $status): TransactionSearchRowBasic
+    {
+        $this->status[] = $status;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getStatus(): array
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subscription
+     * @return TransactionSearchRowBasic
+     */
+    public function setSubscription(SearchColumnSelectField $subscription): TransactionSearchRowBasic
+    {
+        $this->subscription[] = $subscription;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubscription(): array
+    {
+        return $this->subscription;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subscriptionLine
+     * @return TransactionSearchRowBasic
+     */
+    public function setSubscriptionLine(SearchColumnSelectField $subscriptionLine): TransactionSearchRowBasic
+    {
+        $this->subscriptionLine[] = $subscriptionLine;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubscriptionLine(): array
+    {
+        return $this->subscriptionLine;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return TransactionSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): TransactionSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $subsidiaryTaxRegNum
+     * @return TransactionSearchRowBasic
+     */
+    public function setSubsidiaryTaxRegNum(SearchColumnStringField $subsidiaryTaxRegNum): TransactionSearchRowBasic
+    {
+        $this->subsidiaryTaxRegNum[] = $subsidiaryTaxRegNum;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSubsidiaryTaxRegNum(): array
+    {
+        return $this->subsidiaryTaxRegNum;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $taxAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setTaxAmount(SearchColumnDoubleField $taxAmount): TransactionSearchRowBasic
+    {
+        $this->taxAmount[] = $taxAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTaxAmount(): array
+    {
+        return $this->taxAmount;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $taxCode
+     * @return TransactionSearchRowBasic
+     */
+    public function setTaxCode(SearchColumnSelectField $taxCode): TransactionSearchRowBasic
+    {
+        $this->taxCode[] = $taxCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTaxCode(): array
+    {
+        return $this->taxCode;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $taxLine
+     * @return TransactionSearchRowBasic
+     */
+    public function setTaxLine(SearchColumnBooleanField $taxLine): TransactionSearchRowBasic
+    {
+        $this->taxLine[] = $taxLine;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getTaxLine(): array
+    {
+        return $this->taxLine;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $taxPeriod
+     * @return TransactionSearchRowBasic
+     */
+    public function setTaxPeriod(SearchColumnSelectField $taxPeriod): TransactionSearchRowBasic
+    {
+        $this->taxPeriod[] = $taxPeriod;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTaxPeriod(): array
+    {
+        return $this->taxPeriod;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $taxPointDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setTaxPointDate(SearchColumnDateField $taxPointDate): TransactionSearchRowBasic
+    {
+        $this->taxPointDate[] = $taxPointDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getTaxPointDate(): array
+    {
+        return $this->taxPointDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $taxTotal
+     * @return TransactionSearchRowBasic
+     */
+    public function setTaxTotal(SearchColumnDoubleField $taxTotal): TransactionSearchRowBasic
+    {
+        $this->taxTotal[] = $taxTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTaxTotal(): array
+    {
+        return $this->taxTotal;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $termInMonths
+     * @return TransactionSearchRowBasic
+     */
+    public function setTermInMonths(SearchColumnLongField $termInMonths): TransactionSearchRowBasic
+    {
+        $this->termInMonths[] = $termInMonths;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getTermInMonths(): array
+    {
+        return $this->termInMonths;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $terms
+     * @return TransactionSearchRowBasic
+     */
+    public function setTerms(SearchColumnSelectField $terms): TransactionSearchRowBasic
+    {
+        $this->terms[] = $terms;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTerms(): array
+    {
+        return $this->terms;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $termsOfSale
+     * @return TransactionSearchRowBasic
+     */
+    public function setTermsOfSale(SearchColumnStringField $termsOfSale): TransactionSearchRowBasic
+    {
+        $this->termsOfSale[] = $termsOfSale;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTermsOfSale(): array
+    {
+        return $this->termsOfSale;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $title
+     * @return TransactionSearchRowBasic
+     */
+    public function setTitle(SearchColumnStringField $title): TransactionSearchRowBasic
+    {
+        $this->title[] = $title;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTitle(): array
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $toBeEmailed
+     * @return TransactionSearchRowBasic
+     */
+    public function setToBeEmailed(SearchColumnBooleanField $toBeEmailed): TransactionSearchRowBasic
+    {
+        $this->toBeEmailed[] = $toBeEmailed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getToBeEmailed(): array
+    {
+        return $this->toBeEmailed;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $toBePrinted
+     * @return TransactionSearchRowBasic
+     */
+    public function setToBePrinted(SearchColumnBooleanField $toBePrinted): TransactionSearchRowBasic
+    {
+        $this->toBePrinted[] = $toBePrinted;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getToBePrinted(): array
+    {
+        return $this->toBePrinted;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $toSubsidiary
+     * @return TransactionSearchRowBasic
+     */
+    public function setToSubsidiary(SearchColumnSelectField $toSubsidiary): TransactionSearchRowBasic
+    {
+        $this->toSubsidiary[] = $toSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getToSubsidiary(): array
+    {
+        return $this->toSubsidiary;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $total
+     * @return TransactionSearchRowBasic
+     */
+    public function setTotal(SearchColumnDoubleField $total): TransactionSearchRowBasic
+    {
+        $this->total[] = $total;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTotal(): array
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $totalCostEstimate
+     * @return TransactionSearchRowBasic
+     */
+    public function setTotalCostEstimate(SearchColumnDoubleField $totalCostEstimate): TransactionSearchRowBasic
+    {
+        $this->totalCostEstimate[] = $totalCostEstimate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTotalCostEstimate(): array
+    {
+        return $this->totalCostEstimate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $trackingNumbers
+     * @return TransactionSearchRowBasic
+     */
+    public function setTrackingNumbers(SearchColumnStringField $trackingNumbers): TransactionSearchRowBasic
+    {
+        $this->trackingNumbers[] = $trackingNumbers;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTrackingNumbers(): array
+    {
+        return $this->trackingNumbers;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $tranDate
+     * @return TransactionSearchRowBasic
+     */
+    public function setTranDate(SearchColumnDateField $tranDate): TransactionSearchRowBasic
+    {
+        $this->tranDate[] = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getTranDate(): array
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $tranEstGrossProfit
+     * @return TransactionSearchRowBasic
+     */
+    public function setTranEstGrossProfit(SearchColumnDoubleField $tranEstGrossProfit): TransactionSearchRowBasic
+    {
+        $this->tranEstGrossProfit[] = $tranEstGrossProfit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTranEstGrossProfit(): array
+    {
+        return $this->tranEstGrossProfit;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $tranFxEstGrossProfit
+     * @return TransactionSearchRowBasic
+     */
+    public function setTranFxEstGrossProfit(SearchColumnDoubleField $tranFxEstGrossProfit): TransactionSearchRowBasic
+    {
+        $this->tranFxEstGrossProfit[] = $tranFxEstGrossProfit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTranFxEstGrossProfit(): array
+    {
+        return $this->tranFxEstGrossProfit;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $tranId
+     * @return TransactionSearchRowBasic
+     */
+    public function setTranId(SearchColumnStringField $tranId): TransactionSearchRowBasic
+    {
+        $this->tranId[] = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTranId(): array
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $tranIsVsoeBundle
+     * @return TransactionSearchRowBasic
+     */
+    public function setTranIsVsoeBundle(SearchColumnBooleanField $tranIsVsoeBundle): TransactionSearchRowBasic
+    {
+        $this->tranIsVsoeBundle[] = $tranIsVsoeBundle;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getTranIsVsoeBundle(): array
+    {
+        return $this->tranIsVsoeBundle;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $transactionDiscount
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransactionDiscount(SearchColumnBooleanField $transactionDiscount): TransactionSearchRowBasic
+    {
+        $this->transactionDiscount[] = $transactionDiscount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getTransactionDiscount(): array
+    {
+        return $this->transactionDiscount;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $transactionLineType
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransactionLineType(SearchColumnEnumSelectField $transactionLineType): TransactionSearchRowBasic
+    {
+        $this->transactionLineType[] = $transactionLineType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getTransactionLineType(): array
+    {
+        return $this->transactionLineType;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $transactionNumber
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransactionNumber(SearchColumnStringField $transactionNumber): TransactionSearchRowBasic
+    {
+        $this->transactionNumber[] = $transactionNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTransactionNumber(): array
+    {
+        return $this->transactionNumber;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $transferLocation
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransferLocation(SearchColumnSelectField $transferLocation): TransactionSearchRowBasic
+    {
+        $this->transferLocation[] = $transferLocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTransferLocation(): array
+    {
+        return $this->transferLocation;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $transferOrderItemLine
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransferOrderItemLine(SearchColumnStringField $transferOrderItemLine): TransactionSearchRowBasic
+    {
+        $this->transferOrderItemLine[] = $transferOrderItemLine;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTransferOrderItemLine(): array
+    {
+        return $this->transferOrderItemLine;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $transferOrderQuantityCommitted
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransferOrderQuantityCommitted(SearchColumnDoubleField $transferOrderQuantityCommitted): TransactionSearchRowBasic
+    {
+        $this->transferOrderQuantityCommitted[] = $transferOrderQuantityCommitted;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTransferOrderQuantityCommitted(): array
+    {
+        return $this->transferOrderQuantityCommitted;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $transferOrderQuantityPacked
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransferOrderQuantityPacked(SearchColumnDoubleField $transferOrderQuantityPacked): TransactionSearchRowBasic
+    {
+        $this->transferOrderQuantityPacked[] = $transferOrderQuantityPacked;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTransferOrderQuantityPacked(): array
+    {
+        return $this->transferOrderQuantityPacked;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $transferOrderQuantityPicked
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransferOrderQuantityPicked(SearchColumnDoubleField $transferOrderQuantityPicked): TransactionSearchRowBasic
+    {
+        $this->transferOrderQuantityPicked[] = $transferOrderQuantityPicked;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTransferOrderQuantityPicked(): array
+    {
+        return $this->transferOrderQuantityPicked;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $transferOrderQuantityReceived
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransferOrderQuantityReceived(SearchColumnDoubleField $transferOrderQuantityReceived): TransactionSearchRowBasic
+    {
+        $this->transferOrderQuantityReceived[] = $transferOrderQuantityReceived;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTransferOrderQuantityReceived(): array
+    {
+        return $this->transferOrderQuantityReceived;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $transferOrderQuantityShipped
+     * @return TransactionSearchRowBasic
+     */
+    public function setTransferOrderQuantityShipped(SearchColumnDoubleField $transferOrderQuantityShipped): TransactionSearchRowBasic
+    {
+        $this->transferOrderQuantityShipped[] = $transferOrderQuantityShipped;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTransferOrderQuantityShipped(): array
+    {
+        return $this->transferOrderQuantityShipped;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $type
+     * @return TransactionSearchRowBasic
+     */
+    public function setType(SearchColumnEnumSelectField $type): TransactionSearchRowBasic
+    {
+        $this->type[] = $type;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getType(): array
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $unit
+     * @return TransactionSearchRowBasic
+     */
+    public function setUnit(SearchColumnStringField $unit): TransactionSearchRowBasic
+    {
+        $this->unit[] = $unit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getUnit(): array
+    {
+        return $this->unit;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $unitCostOverride
+     * @return TransactionSearchRowBasic
+     */
+    public function setUnitCostOverride(SearchColumnDoubleField $unitCostOverride): TransactionSearchRowBasic
+    {
+        $this->unitCostOverride[] = $unitCostOverride;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getUnitCostOverride(): array
+    {
+        return $this->unitCostOverride;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $vendType
+     * @return TransactionSearchRowBasic
+     */
+    public function setVendType(SearchColumnSelectField $vendType): TransactionSearchRowBasic
+    {
+        $this->vendType[] = $vendType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getVendType(): array
+    {
+        return $this->vendType;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $visibleToCustomer
+     * @return TransactionSearchRowBasic
+     */
+    public function setVisibleToCustomer(SearchColumnBooleanField $visibleToCustomer): TransactionSearchRowBasic
+    {
+        $this->visibleToCustomer[] = $visibleToCustomer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getVisibleToCustomer(): array
+    {
+        return $this->visibleToCustomer;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $vsoeAllocation
+     * @return TransactionSearchRowBasic
+     */
+    public function setVsoeAllocation(SearchColumnDoubleField $vsoeAllocation): TransactionSearchRowBasic
+    {
+        $this->vsoeAllocation[] = $vsoeAllocation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getVsoeAllocation(): array
+    {
+        return $this->vsoeAllocation;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $vsoeAmount
+     * @return TransactionSearchRowBasic
+     */
+    public function setVsoeAmount(SearchColumnDoubleField $vsoeAmount): TransactionSearchRowBasic
+    {
+        $this->vsoeAmount[] = $vsoeAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getVsoeAmount(): array
+    {
+        return $this->vsoeAmount;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $vsoeDeferral
+     * @return TransactionSearchRowBasic
+     */
+    public function setVsoeDeferral(SearchColumnEnumSelectField $vsoeDeferral): TransactionSearchRowBasic
+    {
+        $this->vsoeDeferral[] = $vsoeDeferral;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getVsoeDeferral(): array
+    {
+        return $this->vsoeDeferral;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $vsoeDelivered
+     * @return TransactionSearchRowBasic
+     */
+    public function setVsoeDelivered(SearchColumnBooleanField $vsoeDelivered): TransactionSearchRowBasic
+    {
+        $this->vsoeDelivered[] = $vsoeDelivered;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getVsoeDelivered(): array
+    {
+        return $this->vsoeDelivered;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $vsoePermitDiscount
+     * @return TransactionSearchRowBasic
+     */
+    public function setVsoePermitDiscount(SearchColumnEnumSelectField $vsoePermitDiscount): TransactionSearchRowBasic
+    {
+        $this->vsoePermitDiscount[] = $vsoePermitDiscount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getVsoePermitDiscount(): array
+    {
+        return $this->vsoePermitDiscount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $vsoePrice
+     * @return TransactionSearchRowBasic
+     */
+    public function setVsoePrice(SearchColumnDoubleField $vsoePrice): TransactionSearchRowBasic
+    {
+        $this->vsoePrice[] = $vsoePrice;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getVsoePrice(): array
+    {
+        return $this->vsoePrice;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $webSite
+     * @return TransactionSearchRowBasic
+     */
+    public function setWebSite(SearchColumnStringField $webSite): TransactionSearchRowBasic
+    {
+        $this->webSite[] = $webSite;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getWebSite(): array
+    {
+        return $this->webSite;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return TransactionSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): TransactionSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,27 +23,33 @@ class CostCategory extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $account;
+    protected RecordRef $account;
+
     /**
-     * @var \NetSuite\Classes\CostCategoryItemCostType
+     * @var CostCategoryItemCostType
      */
-    public $itemCostType;
+    protected CostCategoryItemCostType $itemCostType;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "account" => "RecordRef",
@@ -52,4 +58,113 @@ class CostCategory extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return CostCategory
+     */
+    public function setName(string $name): CostCategory
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param RecordRef $account
+     * @return CostCategory
+     */
+    public function setAccount(RecordRef $account): CostCategory
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccount(): RecordRef
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param CostCategoryItemCostType $itemCostType
+     * @return CostCategory
+     */
+    public function setItemCostType(CostCategoryItemCostType $itemCostType): CostCategory
+    {
+        $this->itemCostType = $itemCostType;
+        return $this;
+    }
+
+    /**
+     * @return CostCategoryItemCostType
+     */
+    public function getItemCostType(): CostCategoryItemCostType
+    {
+        return $this->itemCostType;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return CostCategory
+     */
+    public function setIsInactive(bool $isInactive): CostCategory
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param string $internalId
+     * @return CostCategory
+     */
+    public function setInternalId(string $internalId): CostCategory
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return CostCategory
+     */
+    public function setExternalId(string $externalId): CostCategory
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class DeletedRecord {
     /**
      * @var string
      */
-    public $deletedDate;
+    protected string $deletedDate;
+
     /**
-     * @var \NetSuite\Classes\BaseRef
+     * @var BaseRef
      */
-    public $record;
+    protected BaseRef $record;
+
     static $paramtypesmap = array(
         "deletedDate" => "dateTime",
         "record" => "BaseRef",
     );
+
+    /**
+     * @param string $deletedDate
+     * @return DeletedRecord
+     */
+    public function setDeletedDate(string $deletedDate): DeletedRecord
+    {
+        $this->deletedDate = $deletedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDeletedDate(): string
+    {
+        return $this->deletedDate;
+    }
+
+    /**
+     * @param BaseRef $record
+     * @return DeletedRecord
+     */
+    public function setRecord(BaseRef $record): DeletedRecord
+    {
+        $this->record = $record;
+        return $this;
+    }
+
+    /**
+     * @return BaseRef
+     */
+    public function getRecord(): BaseRef
+    {
+        return $this->record;
+    }
+
 }

@@ -14,80 +14,97 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FairValuePriceSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $currency;
+    protected array $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $endDate;
+    protected array $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $fairValue;
+    protected array $fairValue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $fairValueFormula;
+    protected array $fairValueFormula;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $fairValueRangePolicy;
+    protected array $fairValueRangePolicy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $highValue;
+    protected array $highValue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $highValuePercent;
+    protected array $highValuePercent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isVsoePrice;
+    protected array $isVsoePrice;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $itemRevenueCategory;
+    protected array $itemRevenueCategory;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $lowValue;
+    protected array $lowValue;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $lowValuePercent;
+    protected array $lowValuePercent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $startDate;
+    protected array $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $units;
+    protected array $units;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $unitsType;
+    protected array $unitsType;
+
     static $paramtypesmap = array(
         "currency" => "SearchColumnSelectField[]",
         "endDate" => "SearchColumnDateField[]",
@@ -107,4 +124,311 @@ class FairValuePriceSearchRowBasic extends SearchRowBasic {
         "units" => "SearchColumnSelectField[]",
         "unitsType" => "SearchColumnSelectField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $currency
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setCurrency(SearchColumnSelectField $currency): FairValuePriceSearchRowBasic
+    {
+        $this->currency[] = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCurrency(): array
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $endDate
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setEndDate(SearchColumnDateField $endDate): FairValuePriceSearchRowBasic
+    {
+        $this->endDate[] = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEndDate(): array
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): FairValuePriceSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $fairValue
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setFairValue(SearchColumnDoubleField $fairValue): FairValuePriceSearchRowBasic
+    {
+        $this->fairValue[] = $fairValue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getFairValue(): array
+    {
+        return $this->fairValue;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $fairValueFormula
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setFairValueFormula(SearchColumnSelectField $fairValueFormula): FairValuePriceSearchRowBasic
+    {
+        $this->fairValueFormula[] = $fairValueFormula;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getFairValueFormula(): array
+    {
+        return $this->fairValueFormula;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $fairValueRangePolicy
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setFairValueRangePolicy(SearchColumnEnumSelectField $fairValueRangePolicy): FairValuePriceSearchRowBasic
+    {
+        $this->fairValueRangePolicy[] = $fairValueRangePolicy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getFairValueRangePolicy(): array
+    {
+        return $this->fairValueRangePolicy;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $highValue
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setHighValue(SearchColumnDoubleField $highValue): FairValuePriceSearchRowBasic
+    {
+        $this->highValue[] = $highValue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getHighValue(): array
+    {
+        return $this->highValue;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $highValuePercent
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setHighValuePercent(SearchColumnDoubleField $highValuePercent): FairValuePriceSearchRowBasic
+    {
+        $this->highValuePercent[] = $highValuePercent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getHighValuePercent(): array
+    {
+        return $this->highValuePercent;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): FairValuePriceSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isVsoePrice
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setIsVsoePrice(SearchColumnBooleanField $isVsoePrice): FairValuePriceSearchRowBasic
+    {
+        $this->isVsoePrice[] = $isVsoePrice;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsVsoePrice(): array
+    {
+        return $this->isVsoePrice;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $item
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setItem(SearchColumnSelectField $item): FairValuePriceSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $itemRevenueCategory
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setItemRevenueCategory(SearchColumnSelectField $itemRevenueCategory): FairValuePriceSearchRowBasic
+    {
+        $this->itemRevenueCategory[] = $itemRevenueCategory;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItemRevenueCategory(): array
+    {
+        return $this->itemRevenueCategory;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $lowValue
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setLowValue(SearchColumnDoubleField $lowValue): FairValuePriceSearchRowBasic
+    {
+        $this->lowValue[] = $lowValue;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getLowValue(): array
+    {
+        return $this->lowValue;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $lowValuePercent
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setLowValuePercent(SearchColumnDoubleField $lowValuePercent): FairValuePriceSearchRowBasic
+    {
+        $this->lowValuePercent[] = $lowValuePercent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getLowValuePercent(): array
+    {
+        return $this->lowValuePercent;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startDate
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setStartDate(SearchColumnDateField $startDate): FairValuePriceSearchRowBasic
+    {
+        $this->startDate[] = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartDate(): array
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $units
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setUnits(SearchColumnSelectField $units): FairValuePriceSearchRowBasic
+    {
+        $this->units[] = $units;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getUnits(): array
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $unitsType
+     * @return FairValuePriceSearchRowBasic
+     */
+    public function setUnitsType(SearchColumnSelectField $unitsType): FairValuePriceSearchRowBasic
+    {
+        $this->unitsType[] = $unitsType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getUnitsType(): array
+    {
+        return $this->unitsType;
+    }
+
 }

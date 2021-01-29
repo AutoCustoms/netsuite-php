@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AsyncSearchResult extends AsyncResult {
     /**
-     * @var \NetSuite\Classes\SearchResult
+     * @var SearchResult
      */
-    public $searchResult;
+    protected SearchResult $searchResult;
+
     static $paramtypesmap = array(
         "searchResult" => "SearchResult",
     );
+
+    /**
+     * @param SearchResult $searchResult
+     * @return AsyncSearchResult
+     */
+    public function setSearchResult(SearchResult $searchResult): AsyncSearchResult
+    {
+        $this->searchResult = $searchResult;
+        return $this;
+    }
+
+    /**
+     * @return SearchResult
+     */
+    public function getSearchResult(): SearchResult
+    {
+        return $this->searchResult;
+    }
+
 }

@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetDeletedFilter {
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $deletedDate;
+    protected SearchDateField $deletedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $type;
+    protected SearchEnumMultiSelectField $type;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $scriptId;
+    protected SearchStringField $scriptId;
+
     static $paramtypesmap = array(
         "deletedDate" => "SearchDateField",
         "type" => "SearchEnumMultiSelectField",
         "scriptId" => "SearchStringField",
     );
+
+    /**
+     * @param SearchDateField $deletedDate
+     * @return GetDeletedFilter
+     */
+    public function setDeletedDate(SearchDateField $deletedDate): GetDeletedFilter
+    {
+        $this->deletedDate = $deletedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDeletedDate(): SearchDateField
+    {
+        return $this->deletedDate;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $type
+     * @return GetDeletedFilter
+     */
+    public function setType(SearchEnumMultiSelectField $type): GetDeletedFilter
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getType(): SearchEnumMultiSelectField
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param SearchStringField $scriptId
+     * @return GetDeletedFilter
+     */
+    public function setScriptId(SearchStringField $scriptId): GetDeletedFilter
+    {
+        $this->scriptId = $scriptId;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getScriptId(): SearchStringField
+    {
+        return $this->scriptId;
+    }
+
 }

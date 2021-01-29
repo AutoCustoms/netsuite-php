@@ -14,108 +14,132 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ManufacturingRoutingSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $autoCalculateLag;
+    protected SearchBooleanField $autoCalculateLag;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $billOfMaterials;
+    protected SearchMultiSelectField $billOfMaterials;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isDefault;
+    protected SearchBooleanField $isDefault;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isInactive;
+    protected SearchBooleanField $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $item;
+    protected SearchMultiSelectField $item;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $lagAmount;
+    protected SearchDoubleField $lagAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $lagType;
+    protected SearchEnumMultiSelectField $lagType;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $lagUnits;
+    protected SearchStringField $lagUnits;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $location;
+    protected SearchMultiSelectField $location;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $manufacturingCostTemplate;
+    protected SearchMultiSelectField $manufacturingCostTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $manufacturingWorkCenter;
+    protected SearchMultiSelectField $manufacturingWorkCenter;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $memo;
+    protected SearchStringField $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $name;
+    protected SearchStringField $name;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $operationName;
+    protected SearchStringField $operationName;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $operationYield;
+    protected SearchDoubleField $operationYield;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $runRate;
+    protected SearchDoubleField $runRate;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $sequence;
+    protected SearchLongField $sequence;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $setupTime;
+    protected SearchDoubleField $setupTime;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
+     * @var SearchCustomFieldList
      */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "autoCalculateLag" => "SearchBooleanField",
         "billOfMaterials" => "SearchMultiSelectField",
@@ -142,4 +166,437 @@ class ManufacturingRoutingSearchBasic extends SearchRecordBasic {
         "subsidiary" => "SearchMultiSelectField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchBooleanField $autoCalculateLag
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setAutoCalculateLag(SearchBooleanField $autoCalculateLag): ManufacturingRoutingSearchBasic
+    {
+        $this->autoCalculateLag = $autoCalculateLag;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getAutoCalculateLag(): SearchBooleanField
+    {
+        return $this->autoCalculateLag;
+    }
+
+    /**
+     * @param SearchMultiSelectField $billOfMaterials
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setBillOfMaterials(SearchMultiSelectField $billOfMaterials): ManufacturingRoutingSearchBasic
+    {
+        $this->billOfMaterials = $billOfMaterials;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getBillOfMaterials(): SearchMultiSelectField
+    {
+        return $this->billOfMaterials;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): ManufacturingRoutingSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): ManufacturingRoutingSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): ManufacturingRoutingSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): ManufacturingRoutingSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isDefault
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setIsDefault(SearchBooleanField $isDefault): ManufacturingRoutingSearchBasic
+    {
+        $this->isDefault = $isDefault;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsDefault(): SearchBooleanField
+    {
+        return $this->isDefault;
+    }
+
+    /**
+     * @param SearchBooleanField $isInactive
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setIsInactive(SearchBooleanField $isInactive): ManufacturingRoutingSearchBasic
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsInactive(): SearchBooleanField
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchMultiSelectField $item
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setItem(SearchMultiSelectField $item): ManufacturingRoutingSearchBasic
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItem(): SearchMultiSelectField
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchDoubleField $lagAmount
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setLagAmount(SearchDoubleField $lagAmount): ManufacturingRoutingSearchBasic
+    {
+        $this->lagAmount = $lagAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getLagAmount(): SearchDoubleField
+    {
+        return $this->lagAmount;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $lagType
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setLagType(SearchEnumMultiSelectField $lagType): ManufacturingRoutingSearchBasic
+    {
+        $this->lagType = $lagType;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getLagType(): SearchEnumMultiSelectField
+    {
+        return $this->lagType;
+    }
+
+    /**
+     * @param SearchStringField $lagUnits
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setLagUnits(SearchStringField $lagUnits): ManufacturingRoutingSearchBasic
+    {
+        $this->lagUnits = $lagUnits;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getLagUnits(): SearchStringField
+    {
+        return $this->lagUnits;
+    }
+
+    /**
+     * @param SearchMultiSelectField $location
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setLocation(SearchMultiSelectField $location): ManufacturingRoutingSearchBasic
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getLocation(): SearchMultiSelectField
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchMultiSelectField $manufacturingCostTemplate
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setManufacturingCostTemplate(SearchMultiSelectField $manufacturingCostTemplate): ManufacturingRoutingSearchBasic
+    {
+        $this->manufacturingCostTemplate = $manufacturingCostTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getManufacturingCostTemplate(): SearchMultiSelectField
+    {
+        return $this->manufacturingCostTemplate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $manufacturingWorkCenter
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setManufacturingWorkCenter(SearchMultiSelectField $manufacturingWorkCenter): ManufacturingRoutingSearchBasic
+    {
+        $this->manufacturingWorkCenter = $manufacturingWorkCenter;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getManufacturingWorkCenter(): SearchMultiSelectField
+    {
+        return $this->manufacturingWorkCenter;
+    }
+
+    /**
+     * @param SearchStringField $memo
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setMemo(SearchStringField $memo): ManufacturingRoutingSearchBasic
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getMemo(): SearchStringField
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchStringField $name
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setName(SearchStringField $name): ManufacturingRoutingSearchBasic
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getName(): SearchStringField
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchStringField $operationName
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setOperationName(SearchStringField $operationName): ManufacturingRoutingSearchBasic
+    {
+        $this->operationName = $operationName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getOperationName(): SearchStringField
+    {
+        return $this->operationName;
+    }
+
+    /**
+     * @param SearchDoubleField $operationYield
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setOperationYield(SearchDoubleField $operationYield): ManufacturingRoutingSearchBasic
+    {
+        $this->operationYield = $operationYield;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getOperationYield(): SearchDoubleField
+    {
+        return $this->operationYield;
+    }
+
+    /**
+     * @param SearchDoubleField $runRate
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setRunRate(SearchDoubleField $runRate): ManufacturingRoutingSearchBasic
+    {
+        $this->runRate = $runRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getRunRate(): SearchDoubleField
+    {
+        return $this->runRate;
+    }
+
+    /**
+     * @param SearchLongField $sequence
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setSequence(SearchLongField $sequence): ManufacturingRoutingSearchBasic
+    {
+        $this->sequence = $sequence;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getSequence(): SearchLongField
+    {
+        return $this->sequence;
+    }
+
+    /**
+     * @param SearchDoubleField $setupTime
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setSetupTime(SearchDoubleField $setupTime): ManufacturingRoutingSearchBasic
+    {
+        $this->setupTime = $setupTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getSetupTime(): SearchDoubleField
+    {
+        return $this->setupTime;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): ManufacturingRoutingSearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return ManufacturingRoutingSearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): ManufacturingRoutingSearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

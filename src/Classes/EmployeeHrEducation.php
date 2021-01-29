@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeHrEducation {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $education;
+    protected RecordRef $education;
+
     /**
      * @var string
      */
-    public $degree;
+    protected string $degree;
+
     /**
      * @var string
      */
-    public $degreeDate;
+    protected string $degreeDate;
+
     static $paramtypesmap = array(
         "education" => "RecordRef",
         "degree" => "string",
         "degreeDate" => "dateTime",
     );
+
+    /**
+     * @param RecordRef $education
+     * @return EmployeeHrEducation
+     */
+    public function setEducation(RecordRef $education): EmployeeHrEducation
+    {
+        $this->education = $education;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEducation(): RecordRef
+    {
+        return $this->education;
+    }
+
+    /**
+     * @param string $degree
+     * @return EmployeeHrEducation
+     */
+    public function setDegree(string $degree): EmployeeHrEducation
+    {
+        $this->degree = $degree;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDegree(): string
+    {
+        return $this->degree;
+    }
+
+    /**
+     * @param string $degreeDate
+     * @return EmployeeHrEducation
+     */
+    public function setDegreeDate(string $degreeDate): EmployeeHrEducation
+    {
+        $this->degreeDate = $degreeDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDegreeDate(): string
+    {
+        return $this->degreeDate;
+    }
+
 }

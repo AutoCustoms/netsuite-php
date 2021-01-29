@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CurrencyRate_core {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $baseCurrency;
+    protected RecordRef $baseCurrency;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $fromCurrency;
+    protected RecordRef $fromCurrency;
+
     /**
      * @var float
      */
-    public $exchangeRate;
+    protected float $exchangeRate;
+
     /**
      * @var string
      */
-    public $effectiveDate;
+    protected string $effectiveDate;
+
     static $paramtypesmap = array(
         "baseCurrency" => "RecordRef",
         "fromCurrency" => "RecordRef",
         "exchangeRate" => "float",
         "effectiveDate" => "dateTime",
     );
+
+    /**
+     * @param RecordRef $baseCurrency
+     * @return CurrencyRate_core
+     */
+    public function setBaseCurrency(RecordRef $baseCurrency): CurrencyRate_core
+    {
+        $this->baseCurrency = $baseCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBaseCurrency(): RecordRef
+    {
+        return $this->baseCurrency;
+    }
+
+    /**
+     * @param RecordRef $fromCurrency
+     * @return CurrencyRate_core
+     */
+    public function setFromCurrency(RecordRef $fromCurrency): CurrencyRate_core
+    {
+        $this->fromCurrency = $fromCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getFromCurrency(): RecordRef
+    {
+        return $this->fromCurrency;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return CurrencyRate_core
+     */
+    public function setExchangeRate(float $exchangeRate): CurrencyRate_core
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param string $effectiveDate
+     * @return CurrencyRate_core
+     */
+    public function setEffectiveDate(string $effectiveDate): CurrencyRate_core
+    {
+        $this->effectiveDate = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEffectiveDate(): string
+    {
+        return $this->effectiveDate;
+    }
+
 }

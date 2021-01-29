@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class OpportunitySalesTeam {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $employee;
+    protected RecordRef $employee;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $salesRole;
+    protected RecordRef $salesRole;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isPrimary;
+    protected bool $isPrimary;
+
     /**
      * @var float
      */
-    public $contribution;
+    protected float $contribution;
+
     static $paramtypesmap = array(
         "employee" => "RecordRef",
         "salesRole" => "RecordRef",
         "isPrimary" => "boolean",
         "contribution" => "float",
     );
+
+    /**
+     * @param RecordRef $employee
+     * @return OpportunitySalesTeam
+     */
+    public function setEmployee(RecordRef $employee): OpportunitySalesTeam
+    {
+        $this->employee = $employee;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEmployee(): RecordRef
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param RecordRef $salesRole
+     * @return OpportunitySalesTeam
+     */
+    public function setSalesRole(RecordRef $salesRole): OpportunitySalesTeam
+    {
+        $this->salesRole = $salesRole;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSalesRole(): RecordRef
+    {
+        return $this->salesRole;
+    }
+
+    /**
+     * @param bool $isPrimary
+     * @return OpportunitySalesTeam
+     */
+    public function setIsPrimary(bool $isPrimary): OpportunitySalesTeam
+    {
+        $this->isPrimary = $isPrimary;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsPrimary(): bool
+    {
+        return $this->isPrimary;
+    }
+
+    /**
+     * @param float $contribution
+     * @return OpportunitySalesTeam
+     */
+    public function setContribution(float $contribution): OpportunitySalesTeam
+    {
+        $this->contribution = $contribution;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getContribution(): float
+    {
+        return $this->contribution;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerMessageSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\CustomerMessageSearchBasic
+     * @var CustomerMessageSearchBasic
      */
-    public $basic;
+    protected CustomerMessageSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "CustomerMessageSearchBasic",
         "userJoin" => "EmployeeSearchBasic",
     );
+
+    /**
+     * @param CustomerMessageSearchBasic $basic
+     * @return CustomerMessageSearch
+     */
+    public function setBasic(CustomerMessageSearchBasic $basic): CustomerMessageSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return CustomerMessageSearchBasic
+     */
+    public function getBasic(): CustomerMessageSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return CustomerMessageSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): CustomerMessageSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
 }

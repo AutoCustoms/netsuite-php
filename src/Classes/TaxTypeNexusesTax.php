@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TaxTypeNexusesTax {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $nexus;
+    protected RecordRef $nexus;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $saleTaxAcct;
+    protected RecordRef $saleTaxAcct;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $purchTaxAcct;
+    protected RecordRef $purchTaxAcct;
+
     static $paramtypesmap = array(
         "nexus" => "RecordRef",
         "description" => "string",
         "saleTaxAcct" => "RecordRef",
         "purchTaxAcct" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $nexus
+     * @return TaxTypeNexusesTax
+     */
+    public function setNexus(RecordRef $nexus): TaxTypeNexusesTax
+    {
+        $this->nexus = $nexus;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getNexus(): RecordRef
+    {
+        return $this->nexus;
+    }
+
+    /**
+     * @param string $description
+     * @return TaxTypeNexusesTax
+     */
+    public function setDescription(string $description): TaxTypeNexusesTax
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param RecordRef $saleTaxAcct
+     * @return TaxTypeNexusesTax
+     */
+    public function setSaleTaxAcct(RecordRef $saleTaxAcct): TaxTypeNexusesTax
+    {
+        $this->saleTaxAcct = $saleTaxAcct;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSaleTaxAcct(): RecordRef
+    {
+        return $this->saleTaxAcct;
+    }
+
+    /**
+     * @param RecordRef $purchTaxAcct
+     * @return TaxTypeNexusesTax
+     */
+    public function setPurchTaxAcct(RecordRef $purchTaxAcct): TaxTypeNexusesTax
+    {
+        $this->purchTaxAcct = $purchTaxAcct;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPurchTaxAcct(): RecordRef
+    {
+        return $this->purchTaxAcct;
+    }
+
 }

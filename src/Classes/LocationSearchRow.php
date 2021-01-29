@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class LocationSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\LocationSearchRowBasic
+     * @var LocationSearchRowBasic
      */
-    public $basic;
+    protected LocationSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\AddressSearchRowBasic
+     * @var AddressSearchRowBasic
      */
-    public $addressJoin;
+    protected AddressSearchRowBasic $addressJoin;
+
     /**
-     * @var \NetSuite\Classes\AddressSearchRowBasic
+     * @var AddressSearchRowBasic
      */
-    public $returnAddressJoin;
+    protected AddressSearchRowBasic $returnAddressJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "LocationSearchRowBasic",
         "addressJoin" => "AddressSearchRowBasic",
@@ -47,4 +52,95 @@ class LocationSearchRow extends SearchRow {
         "userJoin" => "EmployeeSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param LocationSearchRowBasic $basic
+     * @return LocationSearchRow
+     */
+    public function setBasic(LocationSearchRowBasic $basic): LocationSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return LocationSearchRowBasic
+     */
+    public function getBasic(): LocationSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param AddressSearchRowBasic $addressJoin
+     * @return LocationSearchRow
+     */
+    public function setAddressJoin(AddressSearchRowBasic $addressJoin): LocationSearchRow
+    {
+        $this->addressJoin = $addressJoin;
+        return $this;
+    }
+
+    /**
+     * @return AddressSearchRowBasic
+     */
+    public function getAddressJoin(): AddressSearchRowBasic
+    {
+        return $this->addressJoin;
+    }
+
+    /**
+     * @param AddressSearchRowBasic $returnAddressJoin
+     * @return LocationSearchRow
+     */
+    public function setReturnAddressJoin(AddressSearchRowBasic $returnAddressJoin): LocationSearchRow
+    {
+        $this->returnAddressJoin = $returnAddressJoin;
+        return $this;
+    }
+
+    /**
+     * @return AddressSearchRowBasic
+     */
+    public function getReturnAddressJoin(): AddressSearchRowBasic
+    {
+        return $this->returnAddressJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return LocationSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): LocationSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return LocationSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): LocationSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

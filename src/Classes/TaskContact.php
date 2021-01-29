@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TaskContact {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $company;
+    protected RecordRef $company;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $contact;
+    protected RecordRef $contact;
+
     static $paramtypesmap = array(
         "company" => "RecordRef",
         "contact" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $company
+     * @return TaskContact
+     */
+    public function setCompany(RecordRef $company): TaskContact
+    {
+        $this->company = $company;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCompany(): RecordRef
+    {
+        return $this->company;
+    }
+
+    /**
+     * @param RecordRef $contact
+     * @return TaskContact
+     */
+    public function setContact(RecordRef $contact): TaskContact
+    {
+        $this->contact = $contact;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getContact(): RecordRef
+    {
+        return $this->contact;
+    }
+
 }

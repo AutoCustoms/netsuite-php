@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BomSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\BomSearch
+     * @var BomSearch
      */
-    public $criteria;
+    protected BomSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\BomSearchRow
+     * @var BomSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected BomSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "BomSearch",
         "columns" => "BomSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param BomSearch $criteria
+     * @return BomSearchAdvanced
+     */
+    public function setCriteria(BomSearch $criteria): BomSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return BomSearch
+     */
+    public function getCriteria(): BomSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param BomSearchRow $columns
+     * @return BomSearchAdvanced
+     */
+    public function setColumns(BomSearchRow $columns): BomSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return BomSearchRow
+     */
+    public function getColumns(): BomSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return BomSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): BomSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return BomSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): BomSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

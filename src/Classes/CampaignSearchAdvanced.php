@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CampaignSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\CampaignSearch
+     * @var CampaignSearch
      */
-    public $criteria;
+    protected CampaignSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\CampaignSearchRow
+     * @var CampaignSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected CampaignSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "CampaignSearch",
         "columns" => "CampaignSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param CampaignSearch $criteria
+     * @return CampaignSearchAdvanced
+     */
+    public function setCriteria(CampaignSearch $criteria): CampaignSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return CampaignSearch
+     */
+    public function getCriteria(): CampaignSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param CampaignSearchRow $columns
+     * @return CampaignSearchAdvanced
+     */
+    public function setColumns(CampaignSearchRow $columns): CampaignSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return CampaignSearchRow
+     */
+    public function getColumns(): CampaignSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return CampaignSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): CampaignSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return CampaignSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): CampaignSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

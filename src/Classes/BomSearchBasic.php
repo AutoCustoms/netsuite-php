@@ -14,80 +14,97 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BomSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $availableForAllAssemblies;
+    protected SearchBooleanField $availableForAllAssemblies;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $availableForAllLocations;
+    protected SearchBooleanField $availableForAllLocations;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $createdDate;
+    protected SearchDateField $createdDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $includeChildren;
+    protected SearchBooleanField $includeChildren;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isInactive;
+    protected SearchBooleanField $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $legacyBomForAssembly;
+    protected SearchMultiSelectField $legacyBomForAssembly;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $memo;
+    protected SearchStringField $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $name;
+    protected SearchStringField $name;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $restrictToAssemblies;
+    protected SearchMultiSelectField $restrictToAssemblies;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $restrictToLocations;
+    protected SearchMultiSelectField $restrictToLocations;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $useComponentYield;
+    protected SearchBooleanField $useComponentYield;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $usedOnAssembly;
+    protected SearchBooleanField $usedOnAssembly;
+
     static $paramtypesmap = array(
         "availableForAllAssemblies" => "SearchBooleanField",
         "availableForAllLocations" => "SearchBooleanField",
@@ -107,4 +124,311 @@ class BomSearchBasic extends SearchRecordBasic {
         "useComponentYield" => "SearchBooleanField",
         "usedOnAssembly" => "SearchBooleanField",
     );
+
+    /**
+     * @param SearchBooleanField $availableForAllAssemblies
+     * @return BomSearchBasic
+     */
+    public function setAvailableForAllAssemblies(SearchBooleanField $availableForAllAssemblies): BomSearchBasic
+    {
+        $this->availableForAllAssemblies = $availableForAllAssemblies;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getAvailableForAllAssemblies(): SearchBooleanField
+    {
+        return $this->availableForAllAssemblies;
+    }
+
+    /**
+     * @param SearchBooleanField $availableForAllLocations
+     * @return BomSearchBasic
+     */
+    public function setAvailableForAllLocations(SearchBooleanField $availableForAllLocations): BomSearchBasic
+    {
+        $this->availableForAllLocations = $availableForAllLocations;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getAvailableForAllLocations(): SearchBooleanField
+    {
+        return $this->availableForAllLocations;
+    }
+
+    /**
+     * @param SearchDateField $createdDate
+     * @return BomSearchBasic
+     */
+    public function setCreatedDate(SearchDateField $createdDate): BomSearchBasic
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getCreatedDate(): SearchDateField
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return BomSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): BomSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return BomSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): BomSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchBooleanField $includeChildren
+     * @return BomSearchBasic
+     */
+    public function setIncludeChildren(SearchBooleanField $includeChildren): BomSearchBasic
+    {
+        $this->includeChildren = $includeChildren;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIncludeChildren(): SearchBooleanField
+    {
+        return $this->includeChildren;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return BomSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): BomSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return BomSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): BomSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isInactive
+     * @return BomSearchBasic
+     */
+    public function setIsInactive(SearchBooleanField $isInactive): BomSearchBasic
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsInactive(): SearchBooleanField
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchMultiSelectField $legacyBomForAssembly
+     * @return BomSearchBasic
+     */
+    public function setLegacyBomForAssembly(SearchMultiSelectField $legacyBomForAssembly): BomSearchBasic
+    {
+        $this->legacyBomForAssembly = $legacyBomForAssembly;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getLegacyBomForAssembly(): SearchMultiSelectField
+    {
+        return $this->legacyBomForAssembly;
+    }
+
+    /**
+     * @param SearchStringField $memo
+     * @return BomSearchBasic
+     */
+    public function setMemo(SearchStringField $memo): BomSearchBasic
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getMemo(): SearchStringField
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchStringField $name
+     * @return BomSearchBasic
+     */
+    public function setName(SearchStringField $name): BomSearchBasic
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getName(): SearchStringField
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchMultiSelectField $restrictToAssemblies
+     * @return BomSearchBasic
+     */
+    public function setRestrictToAssemblies(SearchMultiSelectField $restrictToAssemblies): BomSearchBasic
+    {
+        $this->restrictToAssemblies = $restrictToAssemblies;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getRestrictToAssemblies(): SearchMultiSelectField
+    {
+        return $this->restrictToAssemblies;
+    }
+
+    /**
+     * @param SearchMultiSelectField $restrictToLocations
+     * @return BomSearchBasic
+     */
+    public function setRestrictToLocations(SearchMultiSelectField $restrictToLocations): BomSearchBasic
+    {
+        $this->restrictToLocations = $restrictToLocations;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getRestrictToLocations(): SearchMultiSelectField
+    {
+        return $this->restrictToLocations;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return BomSearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): BomSearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchBooleanField $useComponentYield
+     * @return BomSearchBasic
+     */
+    public function setUseComponentYield(SearchBooleanField $useComponentYield): BomSearchBasic
+    {
+        $this->useComponentYield = $useComponentYield;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getUseComponentYield(): SearchBooleanField
+    {
+        return $this->useComponentYield;
+    }
+
+    /**
+     * @param SearchBooleanField $usedOnAssembly
+     * @return BomSearchBasic
+     */
+    public function setUsedOnAssembly(SearchBooleanField $usedOnAssembly): BomSearchBasic
+    {
+        $this->usedOnAssembly = $usedOnAssembly;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getUsedOnAssembly(): SearchBooleanField
+    {
+        return $this->usedOnAssembly;
+    }
+
 }

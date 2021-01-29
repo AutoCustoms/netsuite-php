@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemCustomFieldFilterList {
     /**
-     * @var \NetSuite\Classes\ItemCustomFieldFilter[]
+     * @var ItemCustomFieldFilter[]
      */
-    public $filter;
+    protected array $filter;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "filter" => "ItemCustomFieldFilter[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ItemCustomFieldFilter[] $filter
+     * @return ItemCustomFieldFilterList
+     */
+    public function setFilter(ItemCustomFieldFilter $filter): ItemCustomFieldFilterList
+    {
+        $this->filter[] = $filter;
+        return $this;
+    }
+
+    /**
+     * @return ItemCustomFieldFilter[]
+     */
+    public function getFilter(): array
+    {
+        return $this->filter;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ItemCustomFieldFilterList
+     */
+    public function setReplaceAll(bool $replaceAll): ItemCustomFieldFilterList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

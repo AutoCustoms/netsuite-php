@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomRecordTypeParentsList {
     /**
-     * @var \NetSuite\Classes\CustomRecordTypeParents[]
+     * @var CustomRecordTypeParents[]
      */
-    public $parents;
+    protected array $parents;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "parents" => "CustomRecordTypeParents[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CustomRecordTypeParents[] $parents
+     * @return CustomRecordTypeParentsList
+     */
+    public function setParents(CustomRecordTypeParents $parents): CustomRecordTypeParentsList
+    {
+        $this->parents[] = $parents;
+        return $this;
+    }
+
+    /**
+     * @return CustomRecordTypeParents[]
+     */
+    public function getParents(): array
+    {
+        return $this->parents;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CustomRecordTypeParentsList
+     */
+    public function setReplaceAll(bool $replaceAll): CustomRecordTypeParentsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

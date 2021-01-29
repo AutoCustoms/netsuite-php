@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemAvailabilityFilter {
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $item;
+    protected RecordRefList $item;
+
     /**
      * @var string
      */
-    public $lastQtyAvailableChange;
+    protected string $lastQtyAvailableChange;
+
     static $paramtypesmap = array(
         "item" => "RecordRefList",
         "lastQtyAvailableChange" => "dateTime",
     );
+
+    /**
+     * @param RecordRefList $item
+     * @return ItemAvailabilityFilter
+     */
+    public function setItem(RecordRefList $item): ItemAvailabilityFilter
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getItem(): RecordRefList
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param string $lastQtyAvailableChange
+     * @return ItemAvailabilityFilter
+     */
+    public function setLastQtyAvailableChange(string $lastQtyAvailableChange): ItemAvailabilityFilter
+    {
+        $this->lastQtyAvailableChange = $lastQtyAvailableChange;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastQtyAvailableChange(): string
+    {
+        return $this->lastQtyAvailableChange;
+    }
+
 }

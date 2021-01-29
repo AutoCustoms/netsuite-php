@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomFieldType extends Record {
     /**
-     * @var \NetSuite\Classes\CustomizationFieldType
+     * @var CustomizationFieldType
      */
-    public $fieldType;
+    protected CustomizationFieldType $fieldType;
+
     /**
      * @var string
      */
-    public $scriptId;
+    protected string $scriptId;
+
     static $paramtypesmap = array(
         "fieldType" => "CustomizationFieldType",
         "scriptId" => "string",
     );
+
+    /**
+     * @param CustomizationFieldType $fieldType
+     * @return CustomFieldType
+     */
+    public function setFieldType(CustomizationFieldType $fieldType): CustomFieldType
+    {
+        $this->fieldType = $fieldType;
+        return $this;
+    }
+
+    /**
+     * @return CustomizationFieldType
+     */
+    public function getFieldType(): CustomizationFieldType
+    {
+        return $this->fieldType;
+    }
+
+    /**
+     * @param string $scriptId
+     * @return CustomFieldType
+     */
+    public function setScriptId(string $scriptId): CustomFieldType
+    {
+        $this->scriptId = $scriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getScriptId(): string
+    {
+        return $this->scriptId;
+    }
+
 }

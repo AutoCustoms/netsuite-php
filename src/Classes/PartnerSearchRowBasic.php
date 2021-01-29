@@ -14,364 +14,416 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PartnerSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address;
+    protected array $address;
+
+    protected $address1;
+    protected $address2;
+    protected $address3;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address1;
+    protected array $addressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address2;
+    protected array $addressInternalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address3;
+    protected array $addressLabel;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $addressee;
+    protected array $addressPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $addressInternalId;
+    protected array $altEmail;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $addressLabel;
+    protected array $altName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $addressPhone;
+    protected array $altPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $altEmail;
+    protected array $assignTasks;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $altName;
+    protected array $attention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $altPhone;
+    protected array $billAddress;
+
+    protected $billAddress1;
+    protected $billAddress2;
+    protected $billAddress3;
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $assignTasks;
+    protected array $billAddressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $attention;
+    protected array $billAttention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress;
+    protected array $billCity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $billAddress1;
+    protected array $billCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress2;
+    protected array $billCountryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddress3;
+    protected array $billPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAddressee;
+    protected array $billState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billAttention;
+    protected array $billZipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billCity;
+    protected array $category;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $billCountry;
+    protected array $city;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billCountryCode;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billPhone;
+    protected array $comments;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $billState;
+    protected array $companyName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $billZipCode;
+    protected array $country;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $category;
+    protected array $countryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $city;
+    protected array $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $class;
+    protected array $defaultTaxReg;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $comments;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $companyName;
+    protected array $eligibleForCommission;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $country;
+    protected array $email;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $countryCode;
+    protected array $emailPreference;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnStringField[]
      */
-    public $dateCreated;
+    protected array $entityId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnLongField[]
      */
-    public $defaultTaxReg;
+    protected array $entityNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $department;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $eligibleForCommission;
+    protected array $fax;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $email;
+    protected array $firstName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $emailPreference;
+    protected array $giveAccess;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $entityId;
+    protected array $globalSubscriptionStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $entityNumber;
+    protected array $hasDuplicates;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $externalId;
+    protected array $homePhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $fax;
+    protected array $image;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $firstName;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $giveAccess;
+    protected array $isDefaultBilling;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $globalSubscriptionStatus;
+    protected array $isDefaultShipping;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $hasDuplicates;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $homePhone;
+    protected array $isPerson;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $image;
+    protected array $language;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDateField[]
      */
-    public $internalId;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $isDefaultBilling;
+    protected array $lastName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $isDefaultShipping;
+    protected array $level;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnSelectField[]
      */
-    public $isInactive;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $isPerson;
+    protected array $middleName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $language;
+    protected array $mobilePhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $lastModifiedDate;
+    protected array $parent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $lastName;
+    protected array $partnerCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $level;
+    protected array $permission;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $location;
+    protected array $phone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $middleName;
+    protected array $phoneticName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $mobilePhone;
+    protected array $promoCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $parent;
+    protected array $salutation;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $partnerCode;
+    protected array $shipAddress;
+
+    protected $shipAddress1;
+    protected $shipAddress2;
+    protected $shipAddress3;
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $permission;
+    protected array $shipAddressee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $phone;
+    protected array $shipAttention;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $phoneticName;
+    protected array $shipCity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $promoCode;
+    protected array $shipCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $salutation;
+    protected array $shipCountryCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress;
+    protected array $shipPhone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress1;
+    protected array $shipState;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress2;
+    protected array $shipZip;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipAddress3;
+    protected array $state;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipAddressee;
+    protected array $subscription;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $shipAttention;
+    protected array $subscriptionDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $shipCity;
+    protected array $subscriptionStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $shipCountry;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipCountryCode;
+    protected array $title;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipPhone;
+    protected array $url;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $shipState;
+    protected array $zipCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnCustomFieldList
      */
-    public $shipZip;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $state;
-    /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $subscription;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
-     */
-    public $subscriptionDate;
-    /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
-     */
-    public $subscriptionStatus;
-    /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $title;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $url;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $zipCode;
-    /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "address" => "SearchColumnStringField[]",
         "address1" => "SearchColumnStringField[]",
@@ -462,4 +514,1427 @@ class PartnerSearchRowBasic extends SearchRowBasic {
         "zipCode" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnStringField[] $address
+     * @return PartnerSearchRowBasic
+     */
+    public function setAddress(SearchColumnStringField $address): PartnerSearchRowBasic
+    {
+        $this->address[] = $address;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddress(): array
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressee
+     * @return PartnerSearchRowBasic
+     */
+    public function setAddressee(SearchColumnStringField $addressee): PartnerSearchRowBasic
+    {
+        $this->addressee[] = $addressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressee(): array
+    {
+        return $this->addressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressInternalId
+     * @return PartnerSearchRowBasic
+     */
+    public function setAddressInternalId(SearchColumnStringField $addressInternalId): PartnerSearchRowBasic
+    {
+        $this->addressInternalId[] = $addressInternalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressInternalId(): array
+    {
+        return $this->addressInternalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressLabel
+     * @return PartnerSearchRowBasic
+     */
+    public function setAddressLabel(SearchColumnStringField $addressLabel): PartnerSearchRowBasic
+    {
+        $this->addressLabel[] = $addressLabel;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressLabel(): array
+    {
+        return $this->addressLabel;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $addressPhone
+     * @return PartnerSearchRowBasic
+     */
+    public function setAddressPhone(SearchColumnStringField $addressPhone): PartnerSearchRowBasic
+    {
+        $this->addressPhone[] = $addressPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAddressPhone(): array
+    {
+        return $this->addressPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altEmail
+     * @return PartnerSearchRowBasic
+     */
+    public function setAltEmail(SearchColumnStringField $altEmail): PartnerSearchRowBasic
+    {
+        $this->altEmail[] = $altEmail;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltEmail(): array
+    {
+        return $this->altEmail;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altName
+     * @return PartnerSearchRowBasic
+     */
+    public function setAltName(SearchColumnStringField $altName): PartnerSearchRowBasic
+    {
+        $this->altName[] = $altName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltName(): array
+    {
+        return $this->altName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $altPhone
+     * @return PartnerSearchRowBasic
+     */
+    public function setAltPhone(SearchColumnStringField $altPhone): PartnerSearchRowBasic
+    {
+        $this->altPhone[] = $altPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAltPhone(): array
+    {
+        return $this->altPhone;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $assignTasks
+     * @return PartnerSearchRowBasic
+     */
+    public function setAssignTasks(SearchColumnBooleanField $assignTasks): PartnerSearchRowBasic
+    {
+        $this->assignTasks[] = $assignTasks;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAssignTasks(): array
+    {
+        return $this->assignTasks;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $attention
+     * @return PartnerSearchRowBasic
+     */
+    public function setAttention(SearchColumnStringField $attention): PartnerSearchRowBasic
+    {
+        $this->attention[] = $attention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAttention(): array
+    {
+        return $this->attention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAddress
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillAddress(SearchColumnStringField $billAddress): PartnerSearchRowBasic
+    {
+        $this->billAddress[] = $billAddress;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAddress(): array
+    {
+        return $this->billAddress;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAddressee
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillAddressee(SearchColumnStringField $billAddressee): PartnerSearchRowBasic
+    {
+        $this->billAddressee[] = $billAddressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAddressee(): array
+    {
+        return $this->billAddressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billAttention
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillAttention(SearchColumnStringField $billAttention): PartnerSearchRowBasic
+    {
+        $this->billAttention[] = $billAttention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillAttention(): array
+    {
+        return $this->billAttention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billCity
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillCity(SearchColumnStringField $billCity): PartnerSearchRowBasic
+    {
+        $this->billCity[] = $billCity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillCity(): array
+    {
+        return $this->billCity;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $billCountry
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillCountry(SearchColumnEnumSelectField $billCountry): PartnerSearchRowBasic
+    {
+        $this->billCountry[] = $billCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getBillCountry(): array
+    {
+        return $this->billCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billCountryCode
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillCountryCode(SearchColumnStringField $billCountryCode): PartnerSearchRowBasic
+    {
+        $this->billCountryCode[] = $billCountryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillCountryCode(): array
+    {
+        return $this->billCountryCode;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billPhone
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillPhone(SearchColumnStringField $billPhone): PartnerSearchRowBasic
+    {
+        $this->billPhone[] = $billPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillPhone(): array
+    {
+        return $this->billPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billState
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillState(SearchColumnStringField $billState): PartnerSearchRowBasic
+    {
+        $this->billState[] = $billState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillState(): array
+    {
+        return $this->billState;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $billZipCode
+     * @return PartnerSearchRowBasic
+     */
+    public function setBillZipCode(SearchColumnStringField $billZipCode): PartnerSearchRowBasic
+    {
+        $this->billZipCode[] = $billZipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getBillZipCode(): array
+    {
+        return $this->billZipCode;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $category
+     * @return PartnerSearchRowBasic
+     */
+    public function setCategory(SearchColumnStringField $category): PartnerSearchRowBasic
+    {
+        $this->category[] = $category;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCategory(): array
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $city
+     * @return PartnerSearchRowBasic
+     */
+    public function setCity(SearchColumnStringField $city): PartnerSearchRowBasic
+    {
+        $this->city[] = $city;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCity(): array
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $class
+     * @return PartnerSearchRowBasic
+     */
+    public function setClass(SearchColumnSelectField $class): PartnerSearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $comments
+     * @return PartnerSearchRowBasic
+     */
+    public function setComments(SearchColumnStringField $comments): PartnerSearchRowBasic
+    {
+        $this->comments[] = $comments;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getComments(): array
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $companyName
+     * @return PartnerSearchRowBasic
+     */
+    public function setCompanyName(SearchColumnStringField $companyName): PartnerSearchRowBasic
+    {
+        $this->companyName[] = $companyName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCompanyName(): array
+    {
+        return $this->companyName;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $country
+     * @return PartnerSearchRowBasic
+     */
+    public function setCountry(SearchColumnEnumSelectField $country): PartnerSearchRowBasic
+    {
+        $this->country[] = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCountry(): array
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $countryCode
+     * @return PartnerSearchRowBasic
+     */
+    public function setCountryCode(SearchColumnStringField $countryCode): PartnerSearchRowBasic
+    {
+        $this->countryCode[] = $countryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCountryCode(): array
+    {
+        return $this->countryCode;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateCreated
+     * @return PartnerSearchRowBasic
+     */
+    public function setDateCreated(SearchColumnDateField $dateCreated): PartnerSearchRowBasic
+    {
+        $this->dateCreated[] = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateCreated(): array
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $defaultTaxReg
+     * @return PartnerSearchRowBasic
+     */
+    public function setDefaultTaxReg(SearchColumnStringField $defaultTaxReg): PartnerSearchRowBasic
+    {
+        $this->defaultTaxReg[] = $defaultTaxReg;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDefaultTaxReg(): array
+    {
+        return $this->defaultTaxReg;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $department
+     * @return PartnerSearchRowBasic
+     */
+    public function setDepartment(SearchColumnSelectField $department): PartnerSearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $eligibleForCommission
+     * @return PartnerSearchRowBasic
+     */
+    public function setEligibleForCommission(SearchColumnBooleanField $eligibleForCommission): PartnerSearchRowBasic
+    {
+        $this->eligibleForCommission[] = $eligibleForCommission;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getEligibleForCommission(): array
+    {
+        return $this->eligibleForCommission;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $email
+     * @return PartnerSearchRowBasic
+     */
+    public function setEmail(SearchColumnStringField $email): PartnerSearchRowBasic
+    {
+        $this->email[] = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEmail(): array
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $emailPreference
+     * @return PartnerSearchRowBasic
+     */
+    public function setEmailPreference(SearchColumnEnumSelectField $emailPreference): PartnerSearchRowBasic
+    {
+        $this->emailPreference[] = $emailPreference;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getEmailPreference(): array
+    {
+        return $this->emailPreference;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $entityId
+     * @return PartnerSearchRowBasic
+     */
+    public function setEntityId(SearchColumnStringField $entityId): PartnerSearchRowBasic
+    {
+        $this->entityId[] = $entityId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEntityId(): array
+    {
+        return $this->entityId;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $entityNumber
+     * @return PartnerSearchRowBasic
+     */
+    public function setEntityNumber(SearchColumnLongField $entityNumber): PartnerSearchRowBasic
+    {
+        $this->entityNumber[] = $entityNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getEntityNumber(): array
+    {
+        return $this->entityNumber;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return PartnerSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): PartnerSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $fax
+     * @return PartnerSearchRowBasic
+     */
+    public function setFax(SearchColumnStringField $fax): PartnerSearchRowBasic
+    {
+        $this->fax[] = $fax;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFax(): array
+    {
+        return $this->fax;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $firstName
+     * @return PartnerSearchRowBasic
+     */
+    public function setFirstName(SearchColumnStringField $firstName): PartnerSearchRowBasic
+    {
+        $this->firstName[] = $firstName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFirstName(): array
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $giveAccess
+     * @return PartnerSearchRowBasic
+     */
+    public function setGiveAccess(SearchColumnBooleanField $giveAccess): PartnerSearchRowBasic
+    {
+        $this->giveAccess[] = $giveAccess;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getGiveAccess(): array
+    {
+        return $this->giveAccess;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $globalSubscriptionStatus
+     * @return PartnerSearchRowBasic
+     */
+    public function setGlobalSubscriptionStatus(SearchColumnEnumSelectField $globalSubscriptionStatus): PartnerSearchRowBasic
+    {
+        $this->globalSubscriptionStatus[] = $globalSubscriptionStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getGlobalSubscriptionStatus(): array
+    {
+        return $this->globalSubscriptionStatus;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $hasDuplicates
+     * @return PartnerSearchRowBasic
+     */
+    public function setHasDuplicates(SearchColumnBooleanField $hasDuplicates): PartnerSearchRowBasic
+    {
+        $this->hasDuplicates[] = $hasDuplicates;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getHasDuplicates(): array
+    {
+        return $this->hasDuplicates;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $homePhone
+     * @return PartnerSearchRowBasic
+     */
+    public function setHomePhone(SearchColumnStringField $homePhone): PartnerSearchRowBasic
+    {
+        $this->homePhone[] = $homePhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getHomePhone(): array
+    {
+        return $this->homePhone;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $image
+     * @return PartnerSearchRowBasic
+     */
+    public function setImage(SearchColumnSelectField $image): PartnerSearchRowBasic
+    {
+        $this->image[] = $image;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getImage(): array
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return PartnerSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): PartnerSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDefaultBilling
+     * @return PartnerSearchRowBasic
+     */
+    public function setIsDefaultBilling(SearchColumnBooleanField $isDefaultBilling): PartnerSearchRowBasic
+    {
+        $this->isDefaultBilling[] = $isDefaultBilling;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDefaultBilling(): array
+    {
+        return $this->isDefaultBilling;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDefaultShipping
+     * @return PartnerSearchRowBasic
+     */
+    public function setIsDefaultShipping(SearchColumnBooleanField $isDefaultShipping): PartnerSearchRowBasic
+    {
+        $this->isDefaultShipping[] = $isDefaultShipping;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDefaultShipping(): array
+    {
+        return $this->isDefaultShipping;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return PartnerSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): PartnerSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isPerson
+     * @return PartnerSearchRowBasic
+     */
+    public function setIsPerson(SearchColumnBooleanField $isPerson): PartnerSearchRowBasic
+    {
+        $this->isPerson[] = $isPerson;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsPerson(): array
+    {
+        return $this->isPerson;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $language
+     * @return PartnerSearchRowBasic
+     */
+    public function setLanguage(SearchColumnEnumSelectField $language): PartnerSearchRowBasic
+    {
+        $this->language[] = $language;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getLanguage(): array
+    {
+        return $this->language;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return PartnerSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): PartnerSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $lastName
+     * @return PartnerSearchRowBasic
+     */
+    public function setLastName(SearchColumnStringField $lastName): PartnerSearchRowBasic
+    {
+        $this->lastName[] = $lastName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLastName(): array
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $level
+     * @return PartnerSearchRowBasic
+     */
+    public function setLevel(SearchColumnEnumSelectField $level): PartnerSearchRowBasic
+    {
+        $this->level[] = $level;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getLevel(): array
+    {
+        return $this->level;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return PartnerSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): PartnerSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $middleName
+     * @return PartnerSearchRowBasic
+     */
+    public function setMiddleName(SearchColumnStringField $middleName): PartnerSearchRowBasic
+    {
+        $this->middleName[] = $middleName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMiddleName(): array
+    {
+        return $this->middleName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $mobilePhone
+     * @return PartnerSearchRowBasic
+     */
+    public function setMobilePhone(SearchColumnStringField $mobilePhone): PartnerSearchRowBasic
+    {
+        $this->mobilePhone[] = $mobilePhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMobilePhone(): array
+    {
+        return $this->mobilePhone;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $parent
+     * @return PartnerSearchRowBasic
+     */
+    public function setParent(SearchColumnSelectField $parent): PartnerSearchRowBasic
+    {
+        $this->parent[] = $parent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getParent(): array
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $partnerCode
+     * @return PartnerSearchRowBasic
+     */
+    public function setPartnerCode(SearchColumnStringField $partnerCode): PartnerSearchRowBasic
+    {
+        $this->partnerCode[] = $partnerCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPartnerCode(): array
+    {
+        return $this->partnerCode;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $permission
+     * @return PartnerSearchRowBasic
+     */
+    public function setPermission(SearchColumnEnumSelectField $permission): PartnerSearchRowBasic
+    {
+        $this->permission[] = $permission;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getPermission(): array
+    {
+        return $this->permission;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $phone
+     * @return PartnerSearchRowBasic
+     */
+    public function setPhone(SearchColumnStringField $phone): PartnerSearchRowBasic
+    {
+        $this->phone[] = $phone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPhone(): array
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $phoneticName
+     * @return PartnerSearchRowBasic
+     */
+    public function setPhoneticName(SearchColumnStringField $phoneticName): PartnerSearchRowBasic
+    {
+        $this->phoneticName[] = $phoneticName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPhoneticName(): array
+    {
+        return $this->phoneticName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $promoCode
+     * @return PartnerSearchRowBasic
+     */
+    public function setPromoCode(SearchColumnStringField $promoCode): PartnerSearchRowBasic
+    {
+        $this->promoCode[] = $promoCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPromoCode(): array
+    {
+        return $this->promoCode;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $salutation
+     * @return PartnerSearchRowBasic
+     */
+    public function setSalutation(SearchColumnStringField $salutation): PartnerSearchRowBasic
+    {
+        $this->salutation[] = $salutation;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSalutation(): array
+    {
+        return $this->salutation;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAddress
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipAddress(SearchColumnStringField $shipAddress): PartnerSearchRowBasic
+    {
+        $this->shipAddress[] = $shipAddress;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAddress(): array
+    {
+        return $this->shipAddress;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAddressee
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipAddressee(SearchColumnStringField $shipAddressee): PartnerSearchRowBasic
+    {
+        $this->shipAddressee[] = $shipAddressee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAddressee(): array
+    {
+        return $this->shipAddressee;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipAttention
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipAttention(SearchColumnStringField $shipAttention): PartnerSearchRowBasic
+    {
+        $this->shipAttention[] = $shipAttention;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipAttention(): array
+    {
+        return $this->shipAttention;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipCity
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipCity(SearchColumnStringField $shipCity): PartnerSearchRowBasic
+    {
+        $this->shipCity[] = $shipCity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipCity(): array
+    {
+        return $this->shipCity;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $shipCountry
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipCountry(SearchColumnEnumSelectField $shipCountry): PartnerSearchRowBasic
+    {
+        $this->shipCountry[] = $shipCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getShipCountry(): array
+    {
+        return $this->shipCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipCountryCode
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipCountryCode(SearchColumnStringField $shipCountryCode): PartnerSearchRowBasic
+    {
+        $this->shipCountryCode[] = $shipCountryCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipCountryCode(): array
+    {
+        return $this->shipCountryCode;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipPhone
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipPhone(SearchColumnStringField $shipPhone): PartnerSearchRowBasic
+    {
+        $this->shipPhone[] = $shipPhone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipPhone(): array
+    {
+        return $this->shipPhone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipState
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipState(SearchColumnStringField $shipState): PartnerSearchRowBasic
+    {
+        $this->shipState[] = $shipState;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipState(): array
+    {
+        return $this->shipState;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $shipZip
+     * @return PartnerSearchRowBasic
+     */
+    public function setShipZip(SearchColumnStringField $shipZip): PartnerSearchRowBasic
+    {
+        $this->shipZip[] = $shipZip;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getShipZip(): array
+    {
+        return $this->shipZip;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $state
+     * @return PartnerSearchRowBasic
+     */
+    public function setState(SearchColumnStringField $state): PartnerSearchRowBasic
+    {
+        $this->state[] = $state;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getState(): array
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subscription
+     * @return PartnerSearchRowBasic
+     */
+    public function setSubscription(SearchColumnSelectField $subscription): PartnerSearchRowBasic
+    {
+        $this->subscription[] = $subscription;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubscription(): array
+    {
+        return $this->subscription;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $subscriptionDate
+     * @return PartnerSearchRowBasic
+     */
+    public function setSubscriptionDate(SearchColumnDateField $subscriptionDate): PartnerSearchRowBasic
+    {
+        $this->subscriptionDate[] = $subscriptionDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getSubscriptionDate(): array
+    {
+        return $this->subscriptionDate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $subscriptionStatus
+     * @return PartnerSearchRowBasic
+     */
+    public function setSubscriptionStatus(SearchColumnBooleanField $subscriptionStatus): PartnerSearchRowBasic
+    {
+        $this->subscriptionStatus[] = $subscriptionStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getSubscriptionStatus(): array
+    {
+        return $this->subscriptionStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return PartnerSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): PartnerSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $title
+     * @return PartnerSearchRowBasic
+     */
+    public function setTitle(SearchColumnStringField $title): PartnerSearchRowBasic
+    {
+        $this->title[] = $title;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTitle(): array
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $url
+     * @return PartnerSearchRowBasic
+     */
+    public function setUrl(SearchColumnStringField $url): PartnerSearchRowBasic
+    {
+        $this->url[] = $url;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getUrl(): array
+    {
+        return $this->url;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $zipCode
+     * @return PartnerSearchRowBasic
+     */
+    public function setZipCode(SearchColumnStringField $zipCode): PartnerSearchRowBasic
+    {
+        $this->zipCode[] = $zipCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getZipCode(): array
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return PartnerSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): PartnerSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

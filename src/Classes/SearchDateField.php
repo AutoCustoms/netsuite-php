@@ -14,32 +14,87 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SearchDateField {
     /**
-     * @var \NetSuite\Classes\SearchDate
+     * @var SearchDate
      */
-    public $predefinedSearchValue;
+    protected SearchDate $predefinedSearchValue;
+
     /**
      * @var string
      */
-    public $searchValue;
+    protected string $searchValue;
+
+    protected $searchValue2;
     /**
-     * @var string
+     * @var SearchDateFieldOperator
      */
-    public $searchValue2;
-    /**
-     * @var \NetSuite\Classes\SearchDateFieldOperator
-     */
-    public $operator;
+    protected SearchDateFieldOperator $operator;
+
     static $paramtypesmap = array(
         "predefinedSearchValue" => "SearchDate",
         "searchValue" => "dateTime",
         "searchValue2" => "dateTime",
         "operator" => "SearchDateFieldOperator",
     );
+
+    /**
+     * @param SearchDate $predefinedSearchValue
+     * @return SearchDateField
+     */
+    public function setPredefinedSearchValue(SearchDate $predefinedSearchValue): SearchDateField
+    {
+        $this->predefinedSearchValue = $predefinedSearchValue;
+        return $this;
+    }
+
+    /**
+     * @return SearchDate
+     */
+    public function getPredefinedSearchValue(): SearchDate
+    {
+        return $this->predefinedSearchValue;
+    }
+
+    /**
+     * @param string $searchValue
+     * @return SearchDateField
+     */
+    public function setSearchValue(string $searchValue): SearchDateField
+    {
+        $this->searchValue = $searchValue;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSearchValue(): string
+    {
+        return $this->searchValue;
+    }
+
+    /**
+     * @param SearchDateFieldOperator $operator
+     * @return SearchDateField
+     */
+    public function setOperator(SearchDateFieldOperator $operator): SearchDateField
+    {
+        $this->operator = $operator;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateFieldOperator
+     */
+    public function getOperator(): SearchDateFieldOperator
+    {
+        return $this->operator;
+    }
+
 }

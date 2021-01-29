@@ -14,88 +14,107 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemDemandPlanSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $alternateSourceItem;
+    protected SearchMultiSelectField $alternateSourceItem;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $analysisDuration;
+    protected SearchLongField $analysisDuration;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $demandDate;
+    protected SearchDateField $demandDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $item;
+    protected SearchMultiSelectField $item;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $lastModifiedDate;
+    protected SearchDateField $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $location;
+    protected SearchMultiSelectField $location;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $memo;
+    protected SearchStringField $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $projectionDuration;
+    protected SearchLongField $projectionDuration;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $projectionInterval;
+    protected SearchMultiSelectField $projectionInterval;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $projectionMethod;
+    protected SearchEnumMultiSelectField $projectionMethod;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $projectionStartDate;
+    protected SearchDateField $projectionStartDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $quantity;
+    protected SearchDoubleField $quantity;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $units;
+    protected SearchMultiSelectField $units;
+
     /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
+     * @var SearchCustomFieldList
      */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "alternateSourceItem" => "SearchMultiSelectField",
         "analysisDuration" => "SearchLongField",
@@ -117,4 +136,347 @@ class ItemDemandPlanSearchBasic extends SearchRecordBasic {
         "units" => "SearchMultiSelectField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchMultiSelectField $alternateSourceItem
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setAlternateSourceItem(SearchMultiSelectField $alternateSourceItem): ItemDemandPlanSearchBasic
+    {
+        $this->alternateSourceItem = $alternateSourceItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getAlternateSourceItem(): SearchMultiSelectField
+    {
+        return $this->alternateSourceItem;
+    }
+
+    /**
+     * @param SearchLongField $analysisDuration
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setAnalysisDuration(SearchLongField $analysisDuration): ItemDemandPlanSearchBasic
+    {
+        $this->analysisDuration = $analysisDuration;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getAnalysisDuration(): SearchLongField
+    {
+        return $this->analysisDuration;
+    }
+
+    /**
+     * @param SearchDateField $demandDate
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setDemandDate(SearchDateField $demandDate): ItemDemandPlanSearchBasic
+    {
+        $this->demandDate = $demandDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDemandDate(): SearchDateField
+    {
+        return $this->demandDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): ItemDemandPlanSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): ItemDemandPlanSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): ItemDemandPlanSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): ItemDemandPlanSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchMultiSelectField $item
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setItem(SearchMultiSelectField $item): ItemDemandPlanSearchBasic
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItem(): SearchMultiSelectField
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchDateField $lastModifiedDate
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setLastModifiedDate(SearchDateField $lastModifiedDate): ItemDemandPlanSearchBasic
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getLastModifiedDate(): SearchDateField
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $location
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setLocation(SearchMultiSelectField $location): ItemDemandPlanSearchBasic
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getLocation(): SearchMultiSelectField
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchStringField $memo
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setMemo(SearchStringField $memo): ItemDemandPlanSearchBasic
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getMemo(): SearchStringField
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchLongField $projectionDuration
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setProjectionDuration(SearchLongField $projectionDuration): ItemDemandPlanSearchBasic
+    {
+        $this->projectionDuration = $projectionDuration;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getProjectionDuration(): SearchLongField
+    {
+        return $this->projectionDuration;
+    }
+
+    /**
+     * @param SearchMultiSelectField $projectionInterval
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setProjectionInterval(SearchMultiSelectField $projectionInterval): ItemDemandPlanSearchBasic
+    {
+        $this->projectionInterval = $projectionInterval;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getProjectionInterval(): SearchMultiSelectField
+    {
+        return $this->projectionInterval;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $projectionMethod
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setProjectionMethod(SearchEnumMultiSelectField $projectionMethod): ItemDemandPlanSearchBasic
+    {
+        $this->projectionMethod = $projectionMethod;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getProjectionMethod(): SearchEnumMultiSelectField
+    {
+        return $this->projectionMethod;
+    }
+
+    /**
+     * @param SearchDateField $projectionStartDate
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setProjectionStartDate(SearchDateField $projectionStartDate): ItemDemandPlanSearchBasic
+    {
+        $this->projectionStartDate = $projectionStartDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getProjectionStartDate(): SearchDateField
+    {
+        return $this->projectionStartDate;
+    }
+
+    /**
+     * @param SearchDoubleField $quantity
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setQuantity(SearchDoubleField $quantity): ItemDemandPlanSearchBasic
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getQuantity(): SearchDoubleField
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): ItemDemandPlanSearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchMultiSelectField $units
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setUnits(SearchMultiSelectField $units): ItemDemandPlanSearchBasic
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getUnits(): SearchMultiSelectField
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return ItemDemandPlanSearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): ItemDemandPlanSearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

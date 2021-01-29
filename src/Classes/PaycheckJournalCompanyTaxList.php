@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckJournalCompanyTaxList {
     /**
-     * @var \NetSuite\Classes\PaycheckJournalCompanyTax[]
+     * @var PaycheckJournalCompanyTax[]
      */
-    public $paycheckJournalCompanyTax;
+    protected array $paycheckJournalCompanyTax;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "paycheckJournalCompanyTax" => "PaycheckJournalCompanyTax[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param PaycheckJournalCompanyTax[] $paycheckJournalCompanyTax
+     * @return PaycheckJournalCompanyTaxList
+     */
+    public function setPaycheckJournalCompanyTax(PaycheckJournalCompanyTax $paycheckJournalCompanyTax): PaycheckJournalCompanyTaxList
+    {
+        $this->paycheckJournalCompanyTax[] = $paycheckJournalCompanyTax;
+        return $this;
+    }
+
+    /**
+     * @return PaycheckJournalCompanyTax[]
+     */
+    public function getPaycheckJournalCompanyTax(): array
+    {
+        return $this->paycheckJournalCompanyTax;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return PaycheckJournalCompanyTaxList
+     */
+    public function setReplaceAll(bool $replaceAll): PaycheckJournalCompanyTaxList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

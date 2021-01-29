@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorSubsidiaryRelationship extends Record {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $baseCurrency;
+    protected RecordRef $baseCurrency;
+
     /**
      * @var float
      */
-    public $creditLimit;
+    protected float $creditLimit;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $entity;
+    protected RecordRef $entity;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isPrimarySub;
+    protected bool $isPrimarySub;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $primaryCurrency;
+    protected RecordRef $primaryCurrency;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $subsidiary;
+    protected RecordRef $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxItem;
+    protected RecordRef $taxItem;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "baseCurrency" => "RecordRef",
         "creditLimit" => "float",
@@ -72,4 +82,185 @@ class VendorSubsidiaryRelationship extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param RecordRef $baseCurrency
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setBaseCurrency(RecordRef $baseCurrency): VendorSubsidiaryRelationship
+    {
+        $this->baseCurrency = $baseCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBaseCurrency(): RecordRef
+    {
+        return $this->baseCurrency;
+    }
+
+    /**
+     * @param float $creditLimit
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setCreditLimit(float $creditLimit): VendorSubsidiaryRelationship
+    {
+        $this->creditLimit = $creditLimit;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCreditLimit(): float
+    {
+        return $this->creditLimit;
+    }
+
+    /**
+     * @param RecordRef $entity
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setEntity(RecordRef $entity): VendorSubsidiaryRelationship
+    {
+        $this->entity = $entity;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEntity(): RecordRef
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param bool $isPrimarySub
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setIsPrimarySub(bool $isPrimarySub): VendorSubsidiaryRelationship
+    {
+        $this->isPrimarySub = $isPrimarySub;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsPrimarySub(): bool
+    {
+        return $this->isPrimarySub;
+    }
+
+    /**
+     * @param RecordRef $primaryCurrency
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setPrimaryCurrency(RecordRef $primaryCurrency): VendorSubsidiaryRelationship
+    {
+        $this->primaryCurrency = $primaryCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPrimaryCurrency(): RecordRef
+    {
+        return $this->primaryCurrency;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setSubsidiary(RecordRef $subsidiary): VendorSubsidiaryRelationship
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $taxItem
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setTaxItem(RecordRef $taxItem): VendorSubsidiaryRelationship
+    {
+        $this->taxItem = $taxItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxItem(): RecordRef
+    {
+        return $this->taxItem;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): VendorSubsidiaryRelationship
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setInternalId(string $internalId): VendorSubsidiaryRelationship
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return VendorSubsidiaryRelationship
+     */
+    public function setExternalId(string $externalId): VendorSubsidiaryRelationship
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

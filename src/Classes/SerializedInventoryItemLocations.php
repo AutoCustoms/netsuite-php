@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,171 +23,213 @@ class SerializedInventoryItemLocations {
     /**
      * @var string
      */
-    public $location;
+    protected string $location;
+
     /**
      * @var float
      */
-    public $quantityOnHand;
+    protected float $quantityOnHand;
+
     /**
      * @var float
      */
-    public $onHandValueMli;
+    protected float $onHandValueMli;
+
     /**
      * @var string
      */
-    public $serialNumbers;
+    protected string $serialNumbers;
+
     /**
      * @var float
      */
-    public $averageCostMli;
+    protected float $averageCostMli;
+
     /**
      * @var float
      */
-    public $lastPurchasePriceMli;
+    protected float $lastPurchasePriceMli;
+
     /**
      * @var float
      */
-    public $reorderPoint;
+    protected float $reorderPoint;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $locationAllowStorePickup;
-    /**
-     * @var float
-     */
-    public $locationStorePickupBufferStock;
+    protected bool $locationAllowStorePickup;
+
     /**
      * @var float
      */
-    public $locationQtyAvailForStorePickup;
+    protected float $locationStorePickupBufferStock;
+
     /**
      * @var float
      */
-    public $preferredStockLevel;
-    /**
-     * @var integer
-     */
-    public $leadTime;
+    protected float $locationQtyAvailForStorePickup;
+
     /**
      * @var float
      */
-    public $defaultReturnCost;
+    protected float $preferredStockLevel;
+
     /**
-     * @var boolean
+     * @var int
      */
-    public $isWip;
-    /**
-     * @var float
-     */
-    public $safetyStockLevel;
+    protected int $leadTime;
+
     /**
      * @var float
      */
-    public $cost;
+    protected float $defaultReturnCost;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var bool
      */
-    public $inventoryCostTemplate;
+    protected bool $isWip;
+
     /**
      * @var float
      */
-    public $buildTime;
+    protected float $safetyStockLevel;
+
+    /**
+     * @var float
+     */
+    protected float $cost;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $inventoryCostTemplate;
+
+    /**
+     * @var float
+     */
+    protected float $buildTime;
+
     /**
      * @var string
      */
-    public $lastInvtCountDate;
+    protected string $lastInvtCountDate;
+
     /**
      * @var string
      */
-    public $nextInvtCountDate;
+    protected string $nextInvtCountDate;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $invtCountInterval;
+    protected int $invtCountInterval;
+
     /**
-     * @var \NetSuite\Classes\ItemInvtClassification
+     * @var ItemInvtClassification
      */
-    public $invtClassification;
-    /**
-     * @var float
-     */
-    public $costingLotSize;
-    /**
-     * @var float
-     */
-    public $quantityOnOrder;
+    protected ItemInvtClassification $invtClassification;
+
     /**
      * @var float
      */
-    public $quantityCommitted;
+    protected float $costingLotSize;
+
     /**
      * @var float
      */
-    public $quantityAvailable;
+    protected float $quantityOnOrder;
+
     /**
      * @var float
      */
-    public $quantityBackOrdered;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $locationId;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $supplyReplenishmentMethod;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $alternateDemandSourceItem;
+    protected float $quantityCommitted;
+
     /**
      * @var float
      */
-    public $fixedLotSize;
+    protected float $quantityAvailable;
+
     /**
-     * @var \NetSuite\Classes\PeriodicLotSizeType
+     * @var float
      */
-    public $periodicLotSizeType;
+    protected float $quantityBackOrdered;
+
     /**
-     * @var integer
+     * @var RecordRef
      */
-    public $periodicLotSizeDays;
+    protected RecordRef $locationId;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $supplyType;
+    protected RecordRef $supplyReplenishmentMethod;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $supplyLotSizingMethod;
+    protected RecordRef $alternateDemandSourceItem;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var float
      */
-    public $demandSource;
+    protected float $fixedLotSize;
+
     /**
-     * @var integer
+     * @var PeriodicLotSizeType
      */
-    public $backwardConsumptionDays;
+    protected PeriodicLotSizeType $periodicLotSizeType;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $forwardConsumptionDays;
+    protected int $periodicLotSizeDays;
+
     /**
-     * @var integer
+     * @var RecordRef
      */
-    public $demandTimeFence;
+    protected RecordRef $supplyType;
+
     /**
-     * @var integer
+     * @var RecordRef
      */
-    public $supplyTimeFence;
+    protected RecordRef $supplyLotSizingMethod;
+
     /**
-     * @var integer
+     * @var RecordRef
      */
-    public $rescheduleInDays;
+    protected RecordRef $demandSource;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $rescheduleOutDays;
+    protected int $backwardConsumptionDays;
+
+    /**
+     * @var int
+     */
+    protected int $forwardConsumptionDays;
+
+    /**
+     * @var int
+     */
+    protected int $demandTimeFence;
+
+    /**
+     * @var int
+     */
+    protected int $supplyTimeFence;
+
+    /**
+     * @var int
+     */
+    protected int $rescheduleInDays;
+
+    /**
+     * @var int
+     */
+    protected int $rescheduleOutDays;
+
     static $paramtypesmap = array(
         "location" => "string",
         "quantityOnHand" => "float",
@@ -232,4 +274,761 @@ class SerializedInventoryItemLocations {
         "rescheduleInDays" => "integer",
         "rescheduleOutDays" => "integer",
     );
+
+    /**
+     * @param string $location
+     * @return SerializedInventoryItemLocations
+     */
+    public function setLocation(string $location): SerializedInventoryItemLocations
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLocation(): string
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param float $quantityOnHand
+     * @return SerializedInventoryItemLocations
+     */
+    public function setQuantityOnHand(float $quantityOnHand): SerializedInventoryItemLocations
+    {
+        $this->quantityOnHand = $quantityOnHand;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnHand(): float
+    {
+        return $this->quantityOnHand;
+    }
+
+    /**
+     * @param float $onHandValueMli
+     * @return SerializedInventoryItemLocations
+     */
+    public function setOnHandValueMli(float $onHandValueMli): SerializedInventoryItemLocations
+    {
+        $this->onHandValueMli = $onHandValueMli;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOnHandValueMli(): float
+    {
+        return $this->onHandValueMli;
+    }
+
+    /**
+     * @param string $serialNumbers
+     * @return SerializedInventoryItemLocations
+     */
+    public function setSerialNumbers(string $serialNumbers): SerializedInventoryItemLocations
+    {
+        $this->serialNumbers = $serialNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSerialNumbers(): string
+    {
+        return $this->serialNumbers;
+    }
+
+    /**
+     * @param float $averageCostMli
+     * @return SerializedInventoryItemLocations
+     */
+    public function setAverageCostMli(float $averageCostMli): SerializedInventoryItemLocations
+    {
+        $this->averageCostMli = $averageCostMli;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAverageCostMli(): float
+    {
+        return $this->averageCostMli;
+    }
+
+    /**
+     * @param float $lastPurchasePriceMli
+     * @return SerializedInventoryItemLocations
+     */
+    public function setLastPurchasePriceMli(float $lastPurchasePriceMli): SerializedInventoryItemLocations
+    {
+        $this->lastPurchasePriceMli = $lastPurchasePriceMli;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLastPurchasePriceMli(): float
+    {
+        return $this->lastPurchasePriceMli;
+    }
+
+    /**
+     * @param float $reorderPoint
+     * @return SerializedInventoryItemLocations
+     */
+    public function setReorderPoint(float $reorderPoint): SerializedInventoryItemLocations
+    {
+        $this->reorderPoint = $reorderPoint;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getReorderPoint(): float
+    {
+        return $this->reorderPoint;
+    }
+
+    /**
+     * @param bool $locationAllowStorePickup
+     * @return SerializedInventoryItemLocations
+     */
+    public function setLocationAllowStorePickup(bool $locationAllowStorePickup): SerializedInventoryItemLocations
+    {
+        $this->locationAllowStorePickup = $locationAllowStorePickup;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getLocationAllowStorePickup(): bool
+    {
+        return $this->locationAllowStorePickup;
+    }
+
+    /**
+     * @param float $locationStorePickupBufferStock
+     * @return SerializedInventoryItemLocations
+     */
+    public function setLocationStorePickupBufferStock(float $locationStorePickupBufferStock): SerializedInventoryItemLocations
+    {
+        $this->locationStorePickupBufferStock = $locationStorePickupBufferStock;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLocationStorePickupBufferStock(): float
+    {
+        return $this->locationStorePickupBufferStock;
+    }
+
+    /**
+     * @param float $locationQtyAvailForStorePickup
+     * @return SerializedInventoryItemLocations
+     */
+    public function setLocationQtyAvailForStorePickup(float $locationQtyAvailForStorePickup): SerializedInventoryItemLocations
+    {
+        $this->locationQtyAvailForStorePickup = $locationQtyAvailForStorePickup;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLocationQtyAvailForStorePickup(): float
+    {
+        return $this->locationQtyAvailForStorePickup;
+    }
+
+    /**
+     * @param float $preferredStockLevel
+     * @return SerializedInventoryItemLocations
+     */
+    public function setPreferredStockLevel(float $preferredStockLevel): SerializedInventoryItemLocations
+    {
+        $this->preferredStockLevel = $preferredStockLevel;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPreferredStockLevel(): float
+    {
+        return $this->preferredStockLevel;
+    }
+
+    /**
+     * @param int $leadTime
+     * @return SerializedInventoryItemLocations
+     */
+    public function setLeadTime(int $leadTime): SerializedInventoryItemLocations
+    {
+        $this->leadTime = $leadTime;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLeadTime(): int
+    {
+        return $this->leadTime;
+    }
+
+    /**
+     * @param float $defaultReturnCost
+     * @return SerializedInventoryItemLocations
+     */
+    public function setDefaultReturnCost(float $defaultReturnCost): SerializedInventoryItemLocations
+    {
+        $this->defaultReturnCost = $defaultReturnCost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getDefaultReturnCost(): float
+    {
+        return $this->defaultReturnCost;
+    }
+
+    /**
+     * @param bool $isWip
+     * @return SerializedInventoryItemLocations
+     */
+    public function setIsWip(bool $isWip): SerializedInventoryItemLocations
+    {
+        $this->isWip = $isWip;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsWip(): bool
+    {
+        return $this->isWip;
+    }
+
+    /**
+     * @param float $safetyStockLevel
+     * @return SerializedInventoryItemLocations
+     */
+    public function setSafetyStockLevel(float $safetyStockLevel): SerializedInventoryItemLocations
+    {
+        $this->safetyStockLevel = $safetyStockLevel;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSafetyStockLevel(): float
+    {
+        return $this->safetyStockLevel;
+    }
+
+    /**
+     * @param float $cost
+     * @return SerializedInventoryItemLocations
+     */
+    public function setCost(float $cost): SerializedInventoryItemLocations
+    {
+        $this->cost = $cost;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCost(): float
+    {
+        return $this->cost;
+    }
+
+    /**
+     * @param RecordRef $inventoryCostTemplate
+     * @return SerializedInventoryItemLocations
+     */
+    public function setInventoryCostTemplate(RecordRef $inventoryCostTemplate): SerializedInventoryItemLocations
+    {
+        $this->inventoryCostTemplate = $inventoryCostTemplate;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getInventoryCostTemplate(): RecordRef
+    {
+        return $this->inventoryCostTemplate;
+    }
+
+    /**
+     * @param float $buildTime
+     * @return SerializedInventoryItemLocations
+     */
+    public function setBuildTime(float $buildTime): SerializedInventoryItemLocations
+    {
+        $this->buildTime = $buildTime;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBuildTime(): float
+    {
+        return $this->buildTime;
+    }
+
+    /**
+     * @param string $lastInvtCountDate
+     * @return SerializedInventoryItemLocations
+     */
+    public function setLastInvtCountDate(string $lastInvtCountDate): SerializedInventoryItemLocations
+    {
+        $this->lastInvtCountDate = $lastInvtCountDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastInvtCountDate(): string
+    {
+        return $this->lastInvtCountDate;
+    }
+
+    /**
+     * @param string $nextInvtCountDate
+     * @return SerializedInventoryItemLocations
+     */
+    public function setNextInvtCountDate(string $nextInvtCountDate): SerializedInventoryItemLocations
+    {
+        $this->nextInvtCountDate = $nextInvtCountDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNextInvtCountDate(): string
+    {
+        return $this->nextInvtCountDate;
+    }
+
+    /**
+     * @param int $invtCountInterval
+     * @return SerializedInventoryItemLocations
+     */
+    public function setInvtCountInterval(int $invtCountInterval): SerializedInventoryItemLocations
+    {
+        $this->invtCountInterval = $invtCountInterval;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getInvtCountInterval(): int
+    {
+        return $this->invtCountInterval;
+    }
+
+    /**
+     * @param ItemInvtClassification $invtClassification
+     * @return SerializedInventoryItemLocations
+     */
+    public function setInvtClassification(ItemInvtClassification $invtClassification): SerializedInventoryItemLocations
+    {
+        $this->invtClassification = $invtClassification;
+        return $this;
+    }
+
+    /**
+     * @return ItemInvtClassification
+     */
+    public function getInvtClassification(): ItemInvtClassification
+    {
+        return $this->invtClassification;
+    }
+
+    /**
+     * @param float $costingLotSize
+     * @return SerializedInventoryItemLocations
+     */
+    public function setCostingLotSize(float $costingLotSize): SerializedInventoryItemLocations
+    {
+        $this->costingLotSize = $costingLotSize;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCostingLotSize(): float
+    {
+        return $this->costingLotSize;
+    }
+
+    /**
+     * @param float $quantityOnOrder
+     * @return SerializedInventoryItemLocations
+     */
+    public function setQuantityOnOrder(float $quantityOnOrder): SerializedInventoryItemLocations
+    {
+        $this->quantityOnOrder = $quantityOnOrder;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityOnOrder(): float
+    {
+        return $this->quantityOnOrder;
+    }
+
+    /**
+     * @param float $quantityCommitted
+     * @return SerializedInventoryItemLocations
+     */
+    public function setQuantityCommitted(float $quantityCommitted): SerializedInventoryItemLocations
+    {
+        $this->quantityCommitted = $quantityCommitted;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityCommitted(): float
+    {
+        return $this->quantityCommitted;
+    }
+
+    /**
+     * @param float $quantityAvailable
+     * @return SerializedInventoryItemLocations
+     */
+    public function setQuantityAvailable(float $quantityAvailable): SerializedInventoryItemLocations
+    {
+        $this->quantityAvailable = $quantityAvailable;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityAvailable(): float
+    {
+        return $this->quantityAvailable;
+    }
+
+    /**
+     * @param float $quantityBackOrdered
+     * @return SerializedInventoryItemLocations
+     */
+    public function setQuantityBackOrdered(float $quantityBackOrdered): SerializedInventoryItemLocations
+    {
+        $this->quantityBackOrdered = $quantityBackOrdered;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityBackOrdered(): float
+    {
+        return $this->quantityBackOrdered;
+    }
+
+    /**
+     * @param RecordRef $locationId
+     * @return SerializedInventoryItemLocations
+     */
+    public function setLocationId(RecordRef $locationId): SerializedInventoryItemLocations
+    {
+        $this->locationId = $locationId;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocationId(): RecordRef
+    {
+        return $this->locationId;
+    }
+
+    /**
+     * @param RecordRef $supplyReplenishmentMethod
+     * @return SerializedInventoryItemLocations
+     */
+    public function setSupplyReplenishmentMethod(RecordRef $supplyReplenishmentMethod): SerializedInventoryItemLocations
+    {
+        $this->supplyReplenishmentMethod = $supplyReplenishmentMethod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSupplyReplenishmentMethod(): RecordRef
+    {
+        return $this->supplyReplenishmentMethod;
+    }
+
+    /**
+     * @param RecordRef $alternateDemandSourceItem
+     * @return SerializedInventoryItemLocations
+     */
+    public function setAlternateDemandSourceItem(RecordRef $alternateDemandSourceItem): SerializedInventoryItemLocations
+    {
+        $this->alternateDemandSourceItem = $alternateDemandSourceItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAlternateDemandSourceItem(): RecordRef
+    {
+        return $this->alternateDemandSourceItem;
+    }
+
+    /**
+     * @param float $fixedLotSize
+     * @return SerializedInventoryItemLocations
+     */
+    public function setFixedLotSize(float $fixedLotSize): SerializedInventoryItemLocations
+    {
+        $this->fixedLotSize = $fixedLotSize;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getFixedLotSize(): float
+    {
+        return $this->fixedLotSize;
+    }
+
+    /**
+     * @param PeriodicLotSizeType $periodicLotSizeType
+     * @return SerializedInventoryItemLocations
+     */
+    public function setPeriodicLotSizeType(PeriodicLotSizeType $periodicLotSizeType): SerializedInventoryItemLocations
+    {
+        $this->periodicLotSizeType = $periodicLotSizeType;
+        return $this;
+    }
+
+    /**
+     * @return PeriodicLotSizeType
+     */
+    public function getPeriodicLotSizeType(): PeriodicLotSizeType
+    {
+        return $this->periodicLotSizeType;
+    }
+
+    /**
+     * @param int $periodicLotSizeDays
+     * @return SerializedInventoryItemLocations
+     */
+    public function setPeriodicLotSizeDays(int $periodicLotSizeDays): SerializedInventoryItemLocations
+    {
+        $this->periodicLotSizeDays = $periodicLotSizeDays;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPeriodicLotSizeDays(): int
+    {
+        return $this->periodicLotSizeDays;
+    }
+
+    /**
+     * @param RecordRef $supplyType
+     * @return SerializedInventoryItemLocations
+     */
+    public function setSupplyType(RecordRef $supplyType): SerializedInventoryItemLocations
+    {
+        $this->supplyType = $supplyType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSupplyType(): RecordRef
+    {
+        return $this->supplyType;
+    }
+
+    /**
+     * @param RecordRef $supplyLotSizingMethod
+     * @return SerializedInventoryItemLocations
+     */
+    public function setSupplyLotSizingMethod(RecordRef $supplyLotSizingMethod): SerializedInventoryItemLocations
+    {
+        $this->supplyLotSizingMethod = $supplyLotSizingMethod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSupplyLotSizingMethod(): RecordRef
+    {
+        return $this->supplyLotSizingMethod;
+    }
+
+    /**
+     * @param RecordRef $demandSource
+     * @return SerializedInventoryItemLocations
+     */
+    public function setDemandSource(RecordRef $demandSource): SerializedInventoryItemLocations
+    {
+        $this->demandSource = $demandSource;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDemandSource(): RecordRef
+    {
+        return $this->demandSource;
+    }
+
+    /**
+     * @param int $backwardConsumptionDays
+     * @return SerializedInventoryItemLocations
+     */
+    public function setBackwardConsumptionDays(int $backwardConsumptionDays): SerializedInventoryItemLocations
+    {
+        $this->backwardConsumptionDays = $backwardConsumptionDays;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBackwardConsumptionDays(): int
+    {
+        return $this->backwardConsumptionDays;
+    }
+
+    /**
+     * @param int $forwardConsumptionDays
+     * @return SerializedInventoryItemLocations
+     */
+    public function setForwardConsumptionDays(int $forwardConsumptionDays): SerializedInventoryItemLocations
+    {
+        $this->forwardConsumptionDays = $forwardConsumptionDays;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getForwardConsumptionDays(): int
+    {
+        return $this->forwardConsumptionDays;
+    }
+
+    /**
+     * @param int $demandTimeFence
+     * @return SerializedInventoryItemLocations
+     */
+    public function setDemandTimeFence(int $demandTimeFence): SerializedInventoryItemLocations
+    {
+        $this->demandTimeFence = $demandTimeFence;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDemandTimeFence(): int
+    {
+        return $this->demandTimeFence;
+    }
+
+    /**
+     * @param int $supplyTimeFence
+     * @return SerializedInventoryItemLocations
+     */
+    public function setSupplyTimeFence(int $supplyTimeFence): SerializedInventoryItemLocations
+    {
+        $this->supplyTimeFence = $supplyTimeFence;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSupplyTimeFence(): int
+    {
+        return $this->supplyTimeFence;
+    }
+
+    /**
+     * @param int $rescheduleInDays
+     * @return SerializedInventoryItemLocations
+     */
+    public function setRescheduleInDays(int $rescheduleInDays): SerializedInventoryItemLocations
+    {
+        $this->rescheduleInDays = $rescheduleInDays;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRescheduleInDays(): int
+    {
+        return $this->rescheduleInDays;
+    }
+
+    /**
+     * @param int $rescheduleOutDays
+     * @return SerializedInventoryItemLocations
+     */
+    public function setRescheduleOutDays(int $rescheduleOutDays): SerializedInventoryItemLocations
+    {
+        $this->rescheduleOutDays = $rescheduleOutDays;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRescheduleOutDays(): int
+    {
+        return $this->rescheduleOutDays;
+    }
+
 }

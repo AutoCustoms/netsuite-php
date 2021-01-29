@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomFieldDepartmentAccess {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $dept;
+    protected RecordRef $dept;
+
     /**
-     * @var \NetSuite\Classes\CustomizationAccessLevel
+     * @var CustomizationAccessLevel
      */
-    public $accessLevel;
+    protected CustomizationAccessLevel $accessLevel;
+
     /**
-     * @var \NetSuite\Classes\CustomizationSearchLevel
+     * @var CustomizationSearchLevel
      */
-    public $searchLevel;
+    protected CustomizationSearchLevel $searchLevel;
+
     static $paramtypesmap = array(
         "dept" => "RecordRef",
         "accessLevel" => "CustomizationAccessLevel",
         "searchLevel" => "CustomizationSearchLevel",
     );
+
+    /**
+     * @param RecordRef $dept
+     * @return CustomFieldDepartmentAccess
+     */
+    public function setDept(RecordRef $dept): CustomFieldDepartmentAccess
+    {
+        $this->dept = $dept;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDept(): RecordRef
+    {
+        return $this->dept;
+    }
+
+    /**
+     * @param CustomizationAccessLevel $accessLevel
+     * @return CustomFieldDepartmentAccess
+     */
+    public function setAccessLevel(CustomizationAccessLevel $accessLevel): CustomFieldDepartmentAccess
+    {
+        $this->accessLevel = $accessLevel;
+        return $this;
+    }
+
+    /**
+     * @return CustomizationAccessLevel
+     */
+    public function getAccessLevel(): CustomizationAccessLevel
+    {
+        return $this->accessLevel;
+    }
+
+    /**
+     * @param CustomizationSearchLevel $searchLevel
+     * @return CustomFieldDepartmentAccess
+     */
+    public function setSearchLevel(CustomizationSearchLevel $searchLevel): CustomFieldDepartmentAccess
+    {
+        $this->searchLevel = $searchLevel;
+        return $this;
+    }
+
+    /**
+     * @return CustomizationSearchLevel
+     */
+    public function getSearchLevel(): CustomizationSearchLevel
+    {
+        return $this->searchLevel;
+    }
+
 }

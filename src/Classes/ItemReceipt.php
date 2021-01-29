@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,103 +23,128 @@ class ItemReceipt extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     /**
      * @var float
      */
-    public $exchangeRate;
+    protected float $exchangeRate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $entity;
-    /**
-     * @var string
-     */
-    public $currencyName;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $createdFrom;
+    protected RecordRef $entity;
+
     /**
      * @var string
      */
-    public $tranDate;
+    protected string $currencyName;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $partner;
+    protected RecordRef $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $postingPeriod;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $inboundShipment;
+    protected RecordRef $createdFrom;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $tranDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $itemFulfillment;
+    protected RecordRef $partner;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
-    /**
-     * @var \NetSuite\Classes\LandedCostMethod
-     */
-    public $landedCostMethod;
-    /**
-     * @var boolean
-     */
-    public $landedCostPerLine;
-    /**
-     * @var \NetSuite\Classes\ItemReceiptItemList
-     */
-    public $itemList;
-    /**
-     * @var \NetSuite\Classes\ItemReceiptExpenseList
-     */
-    public $expenseList;
-    /**
-     * @var \NetSuite\Classes\PurchLandedCostList
-     */
-    public $landedCostsList;
-    /**
-     * @var \NetSuite\Classes\AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected RecordRef $postingPeriod;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $tranId;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $inboundShipment;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $memo;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $itemFulfillment;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $currency;
+
+    /**
+     * @var LandedCostMethod
+     */
+    protected LandedCostMethod $landedCostMethod;
+
+    /**
+     * @var bool
+     */
+    protected bool $landedCostPerLine;
+
+    /**
+     * @var ItemReceiptItemList
+     */
+    protected ItemReceiptItemList $itemList;
+
+    /**
+     * @var ItemReceiptExpenseList
+     */
+    protected ItemReceiptExpenseList $expenseList;
+
+    /**
+     * @var PurchLandedCostList
+     */
+    protected PurchLandedCostList $landedCostsList;
+
+    /**
+     * @var AccountingBookDetailList
+     */
+    protected AccountingBookDetailList $accountingBookDetailList;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
+    /**
+     * @var string
+     */
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -147,4 +172,455 @@ class ItemReceipt extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return ItemReceipt
+     */
+    public function setCreatedDate(string $createdDate): ItemReceipt
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return ItemReceipt
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): ItemReceipt
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return ItemReceipt
+     */
+    public function setCustomForm(RecordRef $customForm): ItemReceipt
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return ItemReceipt
+     */
+    public function setExchangeRate(float $exchangeRate): ItemReceipt
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param RecordRef $entity
+     * @return ItemReceipt
+     */
+    public function setEntity(RecordRef $entity): ItemReceipt
+    {
+        $this->entity = $entity;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEntity(): RecordRef
+    {
+        return $this->entity;
+    }
+
+    /**
+     * @param string $currencyName
+     * @return ItemReceipt
+     */
+    public function setCurrencyName(string $currencyName): ItemReceipt
+    {
+        $this->currencyName = $currencyName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCurrencyName(): string
+    {
+        return $this->currencyName;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return ItemReceipt
+     */
+    public function setSubsidiary(RecordRef $subsidiary): ItemReceipt
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $createdFrom
+     * @return ItemReceipt
+     */
+    public function setCreatedFrom(RecordRef $createdFrom): ItemReceipt
+    {
+        $this->createdFrom = $createdFrom;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCreatedFrom(): RecordRef
+    {
+        return $this->createdFrom;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return ItemReceipt
+     */
+    public function setTranDate(string $tranDate): ItemReceipt
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param RecordRef $partner
+     * @return ItemReceipt
+     */
+    public function setPartner(RecordRef $partner): ItemReceipt
+    {
+        $this->partner = $partner;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPartner(): RecordRef
+    {
+        return $this->partner;
+    }
+
+    /**
+     * @param RecordRef $postingPeriod
+     * @return ItemReceipt
+     */
+    public function setPostingPeriod(RecordRef $postingPeriod): ItemReceipt
+    {
+        $this->postingPeriod = $postingPeriod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPostingPeriod(): RecordRef
+    {
+        return $this->postingPeriod;
+    }
+
+    /**
+     * @param string $tranId
+     * @return ItemReceipt
+     */
+    public function setTranId(string $tranId): ItemReceipt
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param RecordRef $inboundShipment
+     * @return ItemReceipt
+     */
+    public function setInboundShipment(RecordRef $inboundShipment): ItemReceipt
+    {
+        $this->inboundShipment = $inboundShipment;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getInboundShipment(): RecordRef
+    {
+        return $this->inboundShipment;
+    }
+
+    /**
+     * @param string $memo
+     * @return ItemReceipt
+     */
+    public function setMemo(string $memo): ItemReceipt
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $itemFulfillment
+     * @return ItemReceipt
+     */
+    public function setItemFulfillment(RecordRef $itemFulfillment): ItemReceipt
+    {
+        $this->itemFulfillment = $itemFulfillment;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItemFulfillment(): RecordRef
+    {
+        return $this->itemFulfillment;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return ItemReceipt
+     */
+    public function setCurrency(RecordRef $currency): ItemReceipt
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param LandedCostMethod $landedCostMethod
+     * @return ItemReceipt
+     */
+    public function setLandedCostMethod(LandedCostMethod $landedCostMethod): ItemReceipt
+    {
+        $this->landedCostMethod = $landedCostMethod;
+        return $this;
+    }
+
+    /**
+     * @return LandedCostMethod
+     */
+    public function getLandedCostMethod(): LandedCostMethod
+    {
+        return $this->landedCostMethod;
+    }
+
+    /**
+     * @param bool $landedCostPerLine
+     * @return ItemReceipt
+     */
+    public function setLandedCostPerLine(bool $landedCostPerLine): ItemReceipt
+    {
+        $this->landedCostPerLine = $landedCostPerLine;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getLandedCostPerLine(): bool
+    {
+        return $this->landedCostPerLine;
+    }
+
+    /**
+     * @param ItemReceiptItemList $itemList
+     * @return ItemReceipt
+     */
+    public function setItemList(ItemReceiptItemList $itemList): ItemReceipt
+    {
+        $this->itemList = $itemList;
+        return $this;
+    }
+
+    /**
+     * @return ItemReceiptItemList
+     */
+    public function getItemList(): ItemReceiptItemList
+    {
+        return $this->itemList;
+    }
+
+    /**
+     * @param ItemReceiptExpenseList $expenseList
+     * @return ItemReceipt
+     */
+    public function setExpenseList(ItemReceiptExpenseList $expenseList): ItemReceipt
+    {
+        $this->expenseList = $expenseList;
+        return $this;
+    }
+
+    /**
+     * @return ItemReceiptExpenseList
+     */
+    public function getExpenseList(): ItemReceiptExpenseList
+    {
+        return $this->expenseList;
+    }
+
+    /**
+     * @param PurchLandedCostList $landedCostsList
+     * @return ItemReceipt
+     */
+    public function setLandedCostsList(PurchLandedCostList $landedCostsList): ItemReceipt
+    {
+        $this->landedCostsList = $landedCostsList;
+        return $this;
+    }
+
+    /**
+     * @return PurchLandedCostList
+     */
+    public function getLandedCostsList(): PurchLandedCostList
+    {
+        return $this->landedCostsList;
+    }
+
+    /**
+     * @param AccountingBookDetailList $accountingBookDetailList
+     * @return ItemReceipt
+     */
+    public function setAccountingBookDetailList(AccountingBookDetailList $accountingBookDetailList): ItemReceipt
+    {
+        $this->accountingBookDetailList = $accountingBookDetailList;
+        return $this;
+    }
+
+    /**
+     * @return AccountingBookDetailList
+     */
+    public function getAccountingBookDetailList(): AccountingBookDetailList
+    {
+        return $this->accountingBookDetailList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return ItemReceipt
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): ItemReceipt
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return ItemReceipt
+     */
+    public function setInternalId(string $internalId): ItemReceipt
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return ItemReceipt
+     */
+    public function setExternalId(string $externalId): ItemReceipt
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

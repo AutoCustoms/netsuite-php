@@ -14,104 +14,127 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BillingAccountSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billingSchedule;
+    protected array $billingSchedule;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $cashSaleForm;
+    protected array $cashSaleForm;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $class;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $currency;
+    protected array $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $customer;
+    protected array $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $customerDefault;
+    protected array $customerDefault;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $dateCreated;
+    protected array $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $department;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $frequency;
+    protected array $frequency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $idNumber;
+    protected array $idNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $inactive;
+    protected array $inactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $invoiceForm;
+    protected array $invoiceForm;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastBillCycleDate;
+    protected array $lastBillCycleDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastBillDate;
+    protected array $lastBillDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memo;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $nextBillCycleDate;
+    protected array $nextBillCycleDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $startDate;
+    protected array $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "billingSchedule" => "SearchColumnSelectField[]",
         "cashSaleForm" => "SearchColumnSelectField[]",
@@ -137,4 +160,419 @@ class BillingAccountSearchRowBasic extends SearchRowBasic {
         "subsidiary" => "SearchColumnSelectField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $billingSchedule
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setBillingSchedule(SearchColumnSelectField $billingSchedule): BillingAccountSearchRowBasic
+    {
+        $this->billingSchedule[] = $billingSchedule;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillingSchedule(): array
+    {
+        return $this->billingSchedule;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $cashSaleForm
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setCashSaleForm(SearchColumnSelectField $cashSaleForm): BillingAccountSearchRowBasic
+    {
+        $this->cashSaleForm[] = $cashSaleForm;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCashSaleForm(): array
+    {
+        return $this->cashSaleForm;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $class
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setClass(SearchColumnSelectField $class): BillingAccountSearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $currency
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setCurrency(SearchColumnSelectField $currency): BillingAccountSearchRowBasic
+    {
+        $this->currency[] = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCurrency(): array
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $customer
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setCustomer(SearchColumnSelectField $customer): BillingAccountSearchRowBasic
+    {
+        $this->customer[] = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustomer(): array
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $customerDefault
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setCustomerDefault(SearchColumnBooleanField $customerDefault): BillingAccountSearchRowBasic
+    {
+        $this->customerDefault[] = $customerDefault;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getCustomerDefault(): array
+    {
+        return $this->customerDefault;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateCreated
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setDateCreated(SearchColumnDateField $dateCreated): BillingAccountSearchRowBasic
+    {
+        $this->dateCreated[] = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateCreated(): array
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $department
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setDepartment(SearchColumnSelectField $department): BillingAccountSearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): BillingAccountSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $frequency
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setFrequency(SearchColumnEnumSelectField $frequency): BillingAccountSearchRowBasic
+    {
+        $this->frequency[] = $frequency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getFrequency(): array
+    {
+        return $this->frequency;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $idNumber
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setIdNumber(SearchColumnStringField $idNumber): BillingAccountSearchRowBasic
+    {
+        $this->idNumber[] = $idNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getIdNumber(): array
+    {
+        return $this->idNumber;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $inactive
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setInactive(SearchColumnBooleanField $inactive): BillingAccountSearchRowBasic
+    {
+        $this->inactive[] = $inactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getInactive(): array
+    {
+        return $this->inactive;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): BillingAccountSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $invoiceForm
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setInvoiceForm(SearchColumnSelectField $invoiceForm): BillingAccountSearchRowBasic
+    {
+        $this->invoiceForm[] = $invoiceForm;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInvoiceForm(): array
+    {
+        return $this->invoiceForm;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastBillCycleDate
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setLastBillCycleDate(SearchColumnDateField $lastBillCycleDate): BillingAccountSearchRowBasic
+    {
+        $this->lastBillCycleDate[] = $lastBillCycleDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastBillCycleDate(): array
+    {
+        return $this->lastBillCycleDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastBillDate
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setLastBillDate(SearchColumnDateField $lastBillDate): BillingAccountSearchRowBasic
+    {
+        $this->lastBillDate[] = $lastBillDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastBillDate(): array
+    {
+        return $this->lastBillDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): BillingAccountSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): BillingAccountSearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): BillingAccountSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $nextBillCycleDate
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setNextBillCycleDate(SearchColumnDateField $nextBillCycleDate): BillingAccountSearchRowBasic
+    {
+        $this->nextBillCycleDate[] = $nextBillCycleDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getNextBillCycleDate(): array
+    {
+        return $this->nextBillCycleDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startDate
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setStartDate(SearchColumnDateField $startDate): BillingAccountSearchRowBasic
+    {
+        $this->startDate[] = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartDate(): array
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): BillingAccountSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return BillingAccountSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): BillingAccountSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

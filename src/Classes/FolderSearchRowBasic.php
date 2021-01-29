@@ -14,72 +14,87 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FolderSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $class;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $department;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $description;
+    protected array $description;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $folderSize;
+    protected array $folderSize;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $group;
+    protected array $group;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastModifiedDate;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $numFiles;
+    protected array $numFiles;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $owner;
+    protected array $owner;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $parent;
+    protected array $parent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     static $paramtypesmap = array(
         "class" => "SearchColumnSelectField[]",
         "department" => "SearchColumnSelectField[]",
@@ -97,4 +112,275 @@ class FolderSearchRowBasic extends SearchRowBasic {
         "parent" => "SearchColumnSelectField[]",
         "subsidiary" => "SearchColumnSelectField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $class
+     * @return FolderSearchRowBasic
+     */
+    public function setClass(SearchColumnSelectField $class): FolderSearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $department
+     * @return FolderSearchRowBasic
+     */
+    public function setDepartment(SearchColumnSelectField $department): FolderSearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $description
+     * @return FolderSearchRowBasic
+     */
+    public function setDescription(SearchColumnStringField $description): FolderSearchRowBasic
+    {
+        $this->description[] = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDescription(): array
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return FolderSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): FolderSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $folderSize
+     * @return FolderSearchRowBasic
+     */
+    public function setFolderSize(SearchColumnLongField $folderSize): FolderSearchRowBasic
+    {
+        $this->folderSize[] = $folderSize;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getFolderSize(): array
+    {
+        return $this->folderSize;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $group
+     * @return FolderSearchRowBasic
+     */
+    public function setGroup(SearchColumnSelectField $group): FolderSearchRowBasic
+    {
+        $this->group[] = $group;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getGroup(): array
+    {
+        return $this->group;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return FolderSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): FolderSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return FolderSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): FolderSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return FolderSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): FolderSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return FolderSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): FolderSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return FolderSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): FolderSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $numFiles
+     * @return FolderSearchRowBasic
+     */
+    public function setNumFiles(SearchColumnLongField $numFiles): FolderSearchRowBasic
+    {
+        $this->numFiles[] = $numFiles;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getNumFiles(): array
+    {
+        return $this->numFiles;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $owner
+     * @return FolderSearchRowBasic
+     */
+    public function setOwner(SearchColumnSelectField $owner): FolderSearchRowBasic
+    {
+        $this->owner[] = $owner;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOwner(): array
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $parent
+     * @return FolderSearchRowBasic
+     */
+    public function setParent(SearchColumnSelectField $parent): FolderSearchRowBasic
+    {
+        $this->parent[] = $parent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getParent(): array
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return FolderSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): FolderSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
 }

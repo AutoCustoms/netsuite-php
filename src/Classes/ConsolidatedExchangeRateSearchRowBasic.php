@@ -14,68 +14,82 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ConsolidatedExchangeRateSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $accountingBook;
+    protected array $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $averageRate;
+    protected array $averageRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $closed;
+    protected array $closed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $currentRate;
+    protected array $currentRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $fromCurrency;
+    protected array $fromCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $fromSubsidiary;
+    protected array $fromSubsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $historicalRate;
+    protected array $historicalRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $periodEndDate;
+    protected array $periodEndDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $periodName;
+    protected array $periodName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $periodStartDate;
+    protected array $periodStartDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $toCurrency;
+    protected array $toCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $toSubsidiary;
+    protected array $toSubsidiary;
+
     static $paramtypesmap = array(
         "accountingBook" => "SearchColumnStringField[]",
         "averageRate" => "SearchColumnStringField[]",
@@ -92,4 +106,257 @@ class ConsolidatedExchangeRateSearchRowBasic extends SearchRowBasic {
         "toCurrency" => "SearchColumnStringField[]",
         "toSubsidiary" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $accountingBook
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setAccountingBook(SearchColumnStringField $accountingBook): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->accountingBook[] = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAccountingBook(): array
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $averageRate
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setAverageRate(SearchColumnStringField $averageRate): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->averageRate[] = $averageRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAverageRate(): array
+    {
+        return $this->averageRate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $closed
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setClosed(SearchColumnBooleanField $closed): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->closed[] = $closed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getClosed(): array
+    {
+        return $this->closed;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $currentRate
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setCurrentRate(SearchColumnStringField $currentRate): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->currentRate[] = $currentRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCurrentRate(): array
+    {
+        return $this->currentRate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $fromCurrency
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setFromCurrency(SearchColumnStringField $fromCurrency): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->fromCurrency[] = $fromCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFromCurrency(): array
+    {
+        return $this->fromCurrency;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $fromSubsidiary
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setFromSubsidiary(SearchColumnStringField $fromSubsidiary): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->fromSubsidiary[] = $fromSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFromSubsidiary(): array
+    {
+        return $this->fromSubsidiary;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $historicalRate
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setHistoricalRate(SearchColumnStringField $historicalRate): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->historicalRate[] = $historicalRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getHistoricalRate(): array
+    {
+        return $this->historicalRate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $periodEndDate
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setPeriodEndDate(SearchColumnDateField $periodEndDate): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->periodEndDate[] = $periodEndDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getPeriodEndDate(): array
+    {
+        return $this->periodEndDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $periodName
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setPeriodName(SearchColumnStringField $periodName): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->periodName[] = $periodName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPeriodName(): array
+    {
+        return $this->periodName;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $periodStartDate
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setPeriodStartDate(SearchColumnDateField $periodStartDate): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->periodStartDate[] = $periodStartDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getPeriodStartDate(): array
+    {
+        return $this->periodStartDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $toCurrency
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setToCurrency(SearchColumnStringField $toCurrency): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->toCurrency[] = $toCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getToCurrency(): array
+    {
+        return $this->toCurrency;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $toSubsidiary
+     * @return ConsolidatedExchangeRateSearchRowBasic
+     */
+    public function setToSubsidiary(SearchColumnStringField $toSubsidiary): ConsolidatedExchangeRateSearchRowBasic
+    {
+        $this->toSubsidiary[] = $toSubsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getToSubsidiary(): array
+    {
+        return $this->toSubsidiary;
+    }
+
 }

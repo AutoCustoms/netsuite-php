@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InventoryCostRevaluationCostComponentList {
     /**
-     * @var \NetSuite\Classes\InventoryCostRevaluationCostComponent[]
+     * @var InventoryCostRevaluationCostComponent[]
      */
-    public $costComponent;
+    protected array $costComponent;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "costComponent" => "InventoryCostRevaluationCostComponent[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param InventoryCostRevaluationCostComponent[] $costComponent
+     * @return InventoryCostRevaluationCostComponentList
+     */
+    public function setCostComponent(InventoryCostRevaluationCostComponent $costComponent): InventoryCostRevaluationCostComponentList
+    {
+        $this->costComponent[] = $costComponent;
+        return $this;
+    }
+
+    /**
+     * @return InventoryCostRevaluationCostComponent[]
+     */
+    public function getCostComponent(): array
+    {
+        return $this->costComponent;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return InventoryCostRevaluationCostComponentList
+     */
+    public function setReplaceAll(bool $replaceAll): InventoryCostRevaluationCostComponentList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

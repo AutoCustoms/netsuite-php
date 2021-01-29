@@ -14,116 +14,142 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CalendarEventSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $accessLevel;
+    protected array $accessLevel;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $attendee;
+    protected array $attendee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $company;
+    protected array $company;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $completedDate;
+    protected array $completedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $contact;
+    protected array $contact;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $createdDate;
+    protected array $createdDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $endTime;
+    protected array $endTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $instanceEnd;
+    protected array $instanceEnd;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $instanceStart;
+    protected array $instanceStart;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastModifiedDate;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $markdone;
+    protected array $markdone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $message;
+    protected array $message;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $organizer;
+    protected array $organizer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $owner;
+    protected array $owner;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $recurrence;
+    protected array $recurrence;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $resource;
+    protected array $resource;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $response;
+    protected array $response;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $startDate;
+    protected array $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $startTime;
+    protected array $startTime;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $status;
+    protected array $status;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $title;
+    protected array $title;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $transaction;
+    protected array $transaction;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "accessLevel" => "SearchColumnEnumSelectField[]",
         "attendee" => "SearchColumnSelectField[]",
@@ -152,4 +178,473 @@ class CalendarEventSearchRowBasic extends SearchRowBasic {
         "transaction" => "SearchColumnSelectField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnEnumSelectField[] $accessLevel
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setAccessLevel(SearchColumnEnumSelectField $accessLevel): CalendarEventSearchRowBasic
+    {
+        $this->accessLevel[] = $accessLevel;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getAccessLevel(): array
+    {
+        return $this->accessLevel;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $attendee
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setAttendee(SearchColumnSelectField $attendee): CalendarEventSearchRowBasic
+    {
+        $this->attendee[] = $attendee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAttendee(): array
+    {
+        return $this->attendee;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $company
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setCompany(SearchColumnSelectField $company): CalendarEventSearchRowBasic
+    {
+        $this->company[] = $company;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCompany(): array
+    {
+        return $this->company;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $completedDate
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setCompletedDate(SearchColumnDateField $completedDate): CalendarEventSearchRowBasic
+    {
+        $this->completedDate[] = $completedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCompletedDate(): array
+    {
+        return $this->completedDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $contact
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setContact(SearchColumnSelectField $contact): CalendarEventSearchRowBasic
+    {
+        $this->contact[] = $contact;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getContact(): array
+    {
+        return $this->contact;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $createdDate
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setCreatedDate(SearchColumnDateField $createdDate): CalendarEventSearchRowBasic
+    {
+        $this->createdDate[] = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCreatedDate(): array
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $endTime
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setEndTime(SearchColumnStringField $endTime): CalendarEventSearchRowBasic
+    {
+        $this->endTime[] = $endTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEndTime(): array
+    {
+        return $this->endTime;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): CalendarEventSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $instanceEnd
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setInstanceEnd(SearchColumnDateField $instanceEnd): CalendarEventSearchRowBasic
+    {
+        $this->instanceEnd[] = $instanceEnd;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getInstanceEnd(): array
+    {
+        return $this->instanceEnd;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $instanceStart
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setInstanceStart(SearchColumnDateField $instanceStart): CalendarEventSearchRowBasic
+    {
+        $this->instanceStart[] = $instanceStart;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getInstanceStart(): array
+    {
+        return $this->instanceStart;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): CalendarEventSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): CalendarEventSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $location
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setLocation(SearchColumnStringField $location): CalendarEventSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $markdone
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setMarkdone(SearchColumnStringField $markdone): CalendarEventSearchRowBasic
+    {
+        $this->markdone[] = $markdone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMarkdone(): array
+    {
+        return $this->markdone;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $message
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setMessage(SearchColumnStringField $message): CalendarEventSearchRowBasic
+    {
+        $this->message[] = $message;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMessage(): array
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $organizer
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setOrganizer(SearchColumnSelectField $organizer): CalendarEventSearchRowBasic
+    {
+        $this->organizer[] = $organizer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOrganizer(): array
+    {
+        return $this->organizer;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $owner
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setOwner(SearchColumnSelectField $owner): CalendarEventSearchRowBasic
+    {
+        $this->owner[] = $owner;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOwner(): array
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $recurrence
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setRecurrence(SearchColumnStringField $recurrence): CalendarEventSearchRowBasic
+    {
+        $this->recurrence[] = $recurrence;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRecurrence(): array
+    {
+        return $this->recurrence;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $resource
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setResource(SearchColumnSelectField $resource): CalendarEventSearchRowBasic
+    {
+        $this->resource[] = $resource;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getResource(): array
+    {
+        return $this->resource;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $response
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setResponse(SearchColumnEnumSelectField $response): CalendarEventSearchRowBasic
+    {
+        $this->response[] = $response;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getResponse(): array
+    {
+        return $this->response;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $startDate
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setStartDate(SearchColumnStringField $startDate): CalendarEventSearchRowBasic
+    {
+        $this->startDate[] = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getStartDate(): array
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $startTime
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setStartTime(SearchColumnStringField $startTime): CalendarEventSearchRowBasic
+    {
+        $this->startTime[] = $startTime;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getStartTime(): array
+    {
+        return $this->startTime;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $status
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setStatus(SearchColumnEnumSelectField $status): CalendarEventSearchRowBasic
+    {
+        $this->status[] = $status;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getStatus(): array
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $title
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setTitle(SearchColumnStringField $title): CalendarEventSearchRowBasic
+    {
+        $this->title[] = $title;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTitle(): array
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $transaction
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setTransaction(SearchColumnSelectField $transaction): CalendarEventSearchRowBasic
+    {
+        $this->transaction[] = $transaction;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTransaction(): array
+    {
+        return $this->transaction;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return CalendarEventSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): CalendarEventSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

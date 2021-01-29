@@ -14,60 +14,72 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class UsageSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $customer;
+    protected SearchMultiSelectField $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $date;
+    protected SearchDateField $date;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $item;
+    protected SearchMultiSelectField $item;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $memo;
+    protected SearchStringField $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $quantity;
+    protected SearchDoubleField $quantity;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subscription;
+    protected SearchMultiSelectField $subscription;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subscriptionLine;
+    protected SearchMultiSelectField $subscriptionLine;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subscriptionPlan;
+    protected SearchMultiSelectField $subscriptionPlan;
+
     static $paramtypesmap = array(
         "customer" => "SearchMultiSelectField",
         "date" => "SearchDateField",
@@ -82,4 +94,221 @@ class UsageSearchBasic extends SearchRecordBasic {
         "subscriptionLine" => "SearchMultiSelectField",
         "subscriptionPlan" => "SearchMultiSelectField",
     );
+
+    /**
+     * @param SearchMultiSelectField $customer
+     * @return UsageSearchBasic
+     */
+    public function setCustomer(SearchMultiSelectField $customer): UsageSearchBasic
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCustomer(): SearchMultiSelectField
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchDateField $date
+     * @return UsageSearchBasic
+     */
+    public function setDate(SearchDateField $date): UsageSearchBasic
+    {
+        $this->date = $date;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDate(): SearchDateField
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return UsageSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): UsageSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return UsageSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): UsageSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return UsageSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): UsageSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return UsageSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): UsageSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchMultiSelectField $item
+     * @return UsageSearchBasic
+     */
+    public function setItem(SearchMultiSelectField $item): UsageSearchBasic
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItem(): SearchMultiSelectField
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchStringField $memo
+     * @return UsageSearchBasic
+     */
+    public function setMemo(SearchStringField $memo): UsageSearchBasic
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getMemo(): SearchStringField
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchDoubleField $quantity
+     * @return UsageSearchBasic
+     */
+    public function setQuantity(SearchDoubleField $quantity): UsageSearchBasic
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getQuantity(): SearchDoubleField
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subscription
+     * @return UsageSearchBasic
+     */
+    public function setSubscription(SearchMultiSelectField $subscription): UsageSearchBasic
+    {
+        $this->subscription = $subscription;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubscription(): SearchMultiSelectField
+    {
+        return $this->subscription;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subscriptionLine
+     * @return UsageSearchBasic
+     */
+    public function setSubscriptionLine(SearchMultiSelectField $subscriptionLine): UsageSearchBasic
+    {
+        $this->subscriptionLine = $subscriptionLine;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubscriptionLine(): SearchMultiSelectField
+    {
+        return $this->subscriptionLine;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subscriptionPlan
+     * @return UsageSearchBasic
+     */
+    public function setSubscriptionPlan(SearchMultiSelectField $subscriptionPlan): UsageSearchBasic
+    {
+        $this->subscriptionPlan = $subscriptionPlan;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubscriptionPlan(): SearchMultiSelectField
+    {
+        return $this->subscriptionPlan;
+    }
+
 }

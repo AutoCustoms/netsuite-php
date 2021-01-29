@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemAccountMappingSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\ItemAccountMappingSearchBasic
+     * @var ItemAccountMappingSearchBasic
      */
-    public $basic;
+    protected ItemAccountMappingSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ClassificationSearchBasic
+     * @var ClassificationSearchBasic
      */
-    public $classJoin;
+    protected ClassificationSearchBasic $classJoin;
+
     /**
-     * @var \NetSuite\Classes\DepartmentSearchBasic
+     * @var DepartmentSearchBasic
      */
-    public $departmentJoin;
+    protected DepartmentSearchBasic $departmentJoin;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchBasic
+     * @var AccountSearchBasic
      */
-    public $destinationAccountJoin;
+    protected AccountSearchBasic $destinationAccountJoin;
+
     /**
-     * @var \NetSuite\Classes\LocationSearchBasic
+     * @var LocationSearchBasic
      */
-    public $locationJoin;
+    protected LocationSearchBasic $locationJoin;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchBasic
+     * @var AccountSearchBasic
      */
-    public $sourceAccountJoin;
+    protected AccountSearchBasic $sourceAccountJoin;
+
     /**
-     * @var \NetSuite\Classes\SubsidiarySearchBasic
+     * @var SubsidiarySearchBasic
      */
-    public $subsidiaryJoin;
+    protected SubsidiarySearchBasic $subsidiaryJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "ItemAccountMappingSearchBasic",
         "classJoin" => "ClassificationSearchBasic",
@@ -62,4 +70,149 @@ class ItemAccountMappingSearch extends SearchRecord {
         "subsidiaryJoin" => "SubsidiarySearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param ItemAccountMappingSearchBasic $basic
+     * @return ItemAccountMappingSearch
+     */
+    public function setBasic(ItemAccountMappingSearchBasic $basic): ItemAccountMappingSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ItemAccountMappingSearchBasic
+     */
+    public function getBasic(): ItemAccountMappingSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ClassificationSearchBasic $classJoin
+     * @return ItemAccountMappingSearch
+     */
+    public function setClassJoin(ClassificationSearchBasic $classJoin): ItemAccountMappingSearch
+    {
+        $this->classJoin = $classJoin;
+        return $this;
+    }
+
+    /**
+     * @return ClassificationSearchBasic
+     */
+    public function getClassJoin(): ClassificationSearchBasic
+    {
+        return $this->classJoin;
+    }
+
+    /**
+     * @param DepartmentSearchBasic $departmentJoin
+     * @return ItemAccountMappingSearch
+     */
+    public function setDepartmentJoin(DepartmentSearchBasic $departmentJoin): ItemAccountMappingSearch
+    {
+        $this->departmentJoin = $departmentJoin;
+        return $this;
+    }
+
+    /**
+     * @return DepartmentSearchBasic
+     */
+    public function getDepartmentJoin(): DepartmentSearchBasic
+    {
+        return $this->departmentJoin;
+    }
+
+    /**
+     * @param AccountSearchBasic $destinationAccountJoin
+     * @return ItemAccountMappingSearch
+     */
+    public function setDestinationAccountJoin(AccountSearchBasic $destinationAccountJoin): ItemAccountMappingSearch
+    {
+        $this->destinationAccountJoin = $destinationAccountJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchBasic
+     */
+    public function getDestinationAccountJoin(): AccountSearchBasic
+    {
+        return $this->destinationAccountJoin;
+    }
+
+    /**
+     * @param LocationSearchBasic $locationJoin
+     * @return ItemAccountMappingSearch
+     */
+    public function setLocationJoin(LocationSearchBasic $locationJoin): ItemAccountMappingSearch
+    {
+        $this->locationJoin = $locationJoin;
+        return $this;
+    }
+
+    /**
+     * @return LocationSearchBasic
+     */
+    public function getLocationJoin(): LocationSearchBasic
+    {
+        return $this->locationJoin;
+    }
+
+    /**
+     * @param AccountSearchBasic $sourceAccountJoin
+     * @return ItemAccountMappingSearch
+     */
+    public function setSourceAccountJoin(AccountSearchBasic $sourceAccountJoin): ItemAccountMappingSearch
+    {
+        $this->sourceAccountJoin = $sourceAccountJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchBasic
+     */
+    public function getSourceAccountJoin(): AccountSearchBasic
+    {
+        return $this->sourceAccountJoin;
+    }
+
+    /**
+     * @param SubsidiarySearchBasic $subsidiaryJoin
+     * @return ItemAccountMappingSearch
+     */
+    public function setSubsidiaryJoin(SubsidiarySearchBasic $subsidiaryJoin): ItemAccountMappingSearch
+    {
+        $this->subsidiaryJoin = $subsidiaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return SubsidiarySearchBasic
+     */
+    public function getSubsidiaryJoin(): SubsidiarySearchBasic
+    {
+        return $this->subsidiaryJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return ItemAccountMappingSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): ItemAccountMappingSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

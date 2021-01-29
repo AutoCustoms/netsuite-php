@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemRevisionSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\ItemRevisionSearchBasic
+     * @var ItemRevisionSearchBasic
      */
-    public $basic;
+    protected ItemRevisionSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchBasic
+     * @var ItemSearchBasic
      */
-    public $itemJoin;
+    protected ItemSearchBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "ItemRevisionSearchBasic",
         "itemJoin" => "ItemSearchBasic",
         "userJoin" => "EmployeeSearchBasic",
     );
+
+    /**
+     * @param ItemRevisionSearchBasic $basic
+     * @return ItemRevisionSearch
+     */
+    public function setBasic(ItemRevisionSearchBasic $basic): ItemRevisionSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ItemRevisionSearchBasic
+     */
+    public function getBasic(): ItemRevisionSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ItemSearchBasic $itemJoin
+     * @return ItemRevisionSearch
+     */
+    public function setItemJoin(ItemSearchBasic $itemJoin): ItemRevisionSearch
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchBasic
+     */
+    public function getItemJoin(): ItemSearchBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return ItemRevisionSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): ItemRevisionSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
 }

@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PartnerTaxRegistration {
     /**
-     * @var \NetSuite\Classes\Country
+     * @var Country
      */
-    public $nexusCountry;
+    protected Country $nexusCountry;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $nexus;
+    protected RecordRef $nexus;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $address;
+    protected RecordRef $address;
+
     /**
      * @var string
      */
-    public $taxRegistrationNumber;
+    protected string $taxRegistrationNumber;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $id;
+    protected int $id;
+
     static $paramtypesmap = array(
         "nexusCountry" => "Country",
         "nexus" => "RecordRef",
@@ -47,4 +52,95 @@ class PartnerTaxRegistration {
         "taxRegistrationNumber" => "string",
         "id" => "integer",
     );
+
+    /**
+     * @param Country $nexusCountry
+     * @return PartnerTaxRegistration
+     */
+    public function setNexusCountry(Country $nexusCountry): PartnerTaxRegistration
+    {
+        $this->nexusCountry = $nexusCountry;
+        return $this;
+    }
+
+    /**
+     * @return Country
+     */
+    public function getNexusCountry(): Country
+    {
+        return $this->nexusCountry;
+    }
+
+    /**
+     * @param RecordRef $nexus
+     * @return PartnerTaxRegistration
+     */
+    public function setNexus(RecordRef $nexus): PartnerTaxRegistration
+    {
+        $this->nexus = $nexus;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getNexus(): RecordRef
+    {
+        return $this->nexus;
+    }
+
+    /**
+     * @param RecordRef $address
+     * @return PartnerTaxRegistration
+     */
+    public function setAddress(RecordRef $address): PartnerTaxRegistration
+    {
+        $this->address = $address;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAddress(): RecordRef
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param string $taxRegistrationNumber
+     * @return PartnerTaxRegistration
+     */
+    public function setTaxRegistrationNumber(string $taxRegistrationNumber): PartnerTaxRegistration
+    {
+        $this->taxRegistrationNumber = $taxRegistrationNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxRegistrationNumber(): string
+    {
+        return $this->taxRegistrationNumber;
+    }
+
+    /**
+     * @param int $id
+     * @return PartnerTaxRegistration
+     */
+    public function setId(int $id): PartnerTaxRegistration
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
 }

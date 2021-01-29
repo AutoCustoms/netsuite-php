@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,59 +23,73 @@ class CampaignEventResponse {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
      * @var string
      */
-    public $type;
+    protected string $type;
+
     /**
      * @var string
      */
-    public $dateSent;
+    protected string $dateSent;
+
     /**
      * @var float
      */
-    public $sent;
+    protected float $sent;
+
     /**
      * @var float
      */
-    public $opened;
+    protected float $opened;
+
     /**
      * @var float
      */
-    public $openedRatio;
+    protected float $openedRatio;
+
     /**
      * @var float
      */
-    public $clickedThru;
+    protected float $clickedThru;
+
     /**
      * @var float
      */
-    public $clickedThruRatio;
+    protected float $clickedThruRatio;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $responded;
-    /**
-     * @var float
-     */
-    public $respondedRatio;
-    /**
-     * @var integer
-     */
-    public $unsubscribed;
+    protected int $responded;
+
     /**
      * @var float
      */
-    public $unsubscribedRatio;
+    protected float $respondedRatio;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $bounced;
+    protected int $unsubscribed;
+
     /**
      * @var float
      */
-    public $bouncedRatio;
+    protected float $unsubscribedRatio;
+
+    /**
+     * @var int
+     */
+    protected int $bounced;
+
+    /**
+     * @var float
+     */
+    protected float $bouncedRatio;
+
     static $paramtypesmap = array(
         "name" => "string",
         "type" => "string",
@@ -92,4 +106,257 @@ class CampaignEventResponse {
         "bounced" => "integer",
         "bouncedRatio" => "float",
     );
+
+    /**
+     * @param string $name
+     * @return CampaignEventResponse
+     */
+    public function setName(string $name): CampaignEventResponse
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $type
+     * @return CampaignEventResponse
+     */
+    public function setType(string $type): CampaignEventResponse
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $dateSent
+     * @return CampaignEventResponse
+     */
+    public function setDateSent(string $dateSent): CampaignEventResponse
+    {
+        $this->dateSent = $dateSent;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDateSent(): string
+    {
+        return $this->dateSent;
+    }
+
+    /**
+     * @param float $sent
+     * @return CampaignEventResponse
+     */
+    public function setSent(float $sent): CampaignEventResponse
+    {
+        $this->sent = $sent;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSent(): float
+    {
+        return $this->sent;
+    }
+
+    /**
+     * @param float $opened
+     * @return CampaignEventResponse
+     */
+    public function setOpened(float $opened): CampaignEventResponse
+    {
+        $this->opened = $opened;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOpened(): float
+    {
+        return $this->opened;
+    }
+
+    /**
+     * @param float $openedRatio
+     * @return CampaignEventResponse
+     */
+    public function setOpenedRatio(float $openedRatio): CampaignEventResponse
+    {
+        $this->openedRatio = $openedRatio;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOpenedRatio(): float
+    {
+        return $this->openedRatio;
+    }
+
+    /**
+     * @param float $clickedThru
+     * @return CampaignEventResponse
+     */
+    public function setClickedThru(float $clickedThru): CampaignEventResponse
+    {
+        $this->clickedThru = $clickedThru;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getClickedThru(): float
+    {
+        return $this->clickedThru;
+    }
+
+    /**
+     * @param float $clickedThruRatio
+     * @return CampaignEventResponse
+     */
+    public function setClickedThruRatio(float $clickedThruRatio): CampaignEventResponse
+    {
+        $this->clickedThruRatio = $clickedThruRatio;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getClickedThruRatio(): float
+    {
+        return $this->clickedThruRatio;
+    }
+
+    /**
+     * @param int $responded
+     * @return CampaignEventResponse
+     */
+    public function setResponded(int $responded): CampaignEventResponse
+    {
+        $this->responded = $responded;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getResponded(): int
+    {
+        return $this->responded;
+    }
+
+    /**
+     * @param float $respondedRatio
+     * @return CampaignEventResponse
+     */
+    public function setRespondedRatio(float $respondedRatio): CampaignEventResponse
+    {
+        $this->respondedRatio = $respondedRatio;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRespondedRatio(): float
+    {
+        return $this->respondedRatio;
+    }
+
+    /**
+     * @param int $unsubscribed
+     * @return CampaignEventResponse
+     */
+    public function setUnsubscribed(int $unsubscribed): CampaignEventResponse
+    {
+        $this->unsubscribed = $unsubscribed;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUnsubscribed(): int
+    {
+        return $this->unsubscribed;
+    }
+
+    /**
+     * @param float $unsubscribedRatio
+     * @return CampaignEventResponse
+     */
+    public function setUnsubscribedRatio(float $unsubscribedRatio): CampaignEventResponse
+    {
+        $this->unsubscribedRatio = $unsubscribedRatio;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getUnsubscribedRatio(): float
+    {
+        return $this->unsubscribedRatio;
+    }
+
+    /**
+     * @param int $bounced
+     * @return CampaignEventResponse
+     */
+    public function setBounced(int $bounced): CampaignEventResponse
+    {
+        $this->bounced = $bounced;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBounced(): int
+    {
+        return $this->bounced;
+    }
+
+    /**
+     * @param float $bouncedRatio
+     * @return CampaignEventResponse
+     */
+    public function setBouncedRatio(float $bouncedRatio): CampaignEventResponse
+    {
+        $this->bouncedRatio = $bouncedRatio;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBouncedRatio(): float
+    {
+        return $this->bouncedRatio;
+    }
+
 }

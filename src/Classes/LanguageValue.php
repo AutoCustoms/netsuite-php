@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class LanguageValue {
     /**
-     * @var \NetSuite\Classes\Language
+     * @var Language
      */
-    public $locale;
+    protected Language $locale;
+
     /**
      * @var string
      */
-    public $value;
+    protected string $value;
+
     static $paramtypesmap = array(
         "locale" => "Language",
         "value" => "string",
     );
+
+    /**
+     * @param Language $locale
+     * @return LanguageValue
+     */
+    public function setLocale(Language $locale): LanguageValue
+    {
+        $this->locale = $locale;
+        return $this;
+    }
+
+    /**
+     * @return Language
+     */
+    public function getLocale(): Language
+    {
+        return $this->locale;
+    }
+
+    /**
+     * @param string $value
+     * @return LanguageValue
+     */
+    public function setValue(string $value): LanguageValue
+    {
+        $this->value = $value;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getValue(): string
+    {
+        return $this->value;
+    }
+
 }

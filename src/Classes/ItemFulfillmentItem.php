@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,99 +23,123 @@ class ItemFulfillmentItem {
     /**
      * @var string
      */
-    public $jobName;
+    protected string $jobName;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $itemReceive;
-    /**
-     * @var string
-     */
-    public $itemName;
+    protected bool $itemReceive;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $itemName;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $department;
+    protected string $description;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $class;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $location;
+
     /**
      * @var float
      */
-    public $onHand;
+    protected float $onHand;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
      * @var string
      */
-    public $unitsDisplay;
+    protected string $unitsDisplay;
+
     /**
      * @var string
      */
-    public $createPo;
+    protected string $createPo;
+
     /**
-     * @var \NetSuite\Classes\InventoryDetail
+     * @var InventoryDetail
      */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $binNumbers;
+    protected InventoryDetail $inventoryDetail;
+
     /**
      * @var string
      */
-    public $serialNumbers;
+    protected string $binNumbers;
+
     /**
      * @var string
      */
-    public $poNum;
+    protected string $serialNumbers;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $item;
+    protected string $poNum;
+
     /**
-     * @var integer
+     * @var RecordRef
      */
-    public $orderLine;
+    protected RecordRef $item;
+
+    /**
+     * @var int
+     */
+    protected int $orderLine;
+
     /**
      * @var float
      */
-    public $quantityRemaining;
+    protected float $quantityRemaining;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $options;
+    protected CustomFieldList $options;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $shipGroup;
+    protected int $shipGroup;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $itemIsFulfilled;
+    protected bool $itemIsFulfilled;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $shipAddress;
+    protected RecordRef $shipAddress;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $shipMethod;
+    protected RecordRef $shipMethod;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "jobName" => "string",
         "itemReceive" => "boolean",
@@ -142,4 +166,437 @@ class ItemFulfillmentItem {
         "shipMethod" => "RecordRef",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param string $jobName
+     * @return ItemFulfillmentItem
+     */
+    public function setJobName(string $jobName): ItemFulfillmentItem
+    {
+        $this->jobName = $jobName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getJobName(): string
+    {
+        return $this->jobName;
+    }
+
+    /**
+     * @param bool $itemReceive
+     * @return ItemFulfillmentItem
+     */
+    public function setItemReceive(bool $itemReceive): ItemFulfillmentItem
+    {
+        $this->itemReceive = $itemReceive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getItemReceive(): bool
+    {
+        return $this->itemReceive;
+    }
+
+    /**
+     * @param string $itemName
+     * @return ItemFulfillmentItem
+     */
+    public function setItemName(string $itemName): ItemFulfillmentItem
+    {
+        $this->itemName = $itemName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemName(): string
+    {
+        return $this->itemName;
+    }
+
+    /**
+     * @param string $description
+     * @return ItemFulfillmentItem
+     */
+    public function setDescription(string $description): ItemFulfillmentItem
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return ItemFulfillmentItem
+     */
+    public function setDepartment(RecordRef $department): ItemFulfillmentItem
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return ItemFulfillmentItem
+     */
+    public function setClass(RecordRef $class): ItemFulfillmentItem
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return ItemFulfillmentItem
+     */
+    public function setLocation(RecordRef $location): ItemFulfillmentItem
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param float $onHand
+     * @return ItemFulfillmentItem
+     */
+    public function setOnHand(float $onHand): ItemFulfillmentItem
+    {
+        $this->onHand = $onHand;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOnHand(): float
+    {
+        return $this->onHand;
+    }
+
+    /**
+     * @param float $quantity
+     * @return ItemFulfillmentItem
+     */
+    public function setQuantity(float $quantity): ItemFulfillmentItem
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param string $unitsDisplay
+     * @return ItemFulfillmentItem
+     */
+    public function setUnitsDisplay(string $unitsDisplay): ItemFulfillmentItem
+    {
+        $this->unitsDisplay = $unitsDisplay;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUnitsDisplay(): string
+    {
+        return $this->unitsDisplay;
+    }
+
+    /**
+     * @param string $createPo
+     * @return ItemFulfillmentItem
+     */
+    public function setCreatePo(string $createPo): ItemFulfillmentItem
+    {
+        $this->createPo = $createPo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatePo(): string
+    {
+        return $this->createPo;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return ItemFulfillmentItem
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): ItemFulfillmentItem
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param string $binNumbers
+     * @return ItemFulfillmentItem
+     */
+    public function setBinNumbers(string $binNumbers): ItemFulfillmentItem
+    {
+        $this->binNumbers = $binNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBinNumbers(): string
+    {
+        return $this->binNumbers;
+    }
+
+    /**
+     * @param string $serialNumbers
+     * @return ItemFulfillmentItem
+     */
+    public function setSerialNumbers(string $serialNumbers): ItemFulfillmentItem
+    {
+        $this->serialNumbers = $serialNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSerialNumbers(): string
+    {
+        return $this->serialNumbers;
+    }
+
+    /**
+     * @param string $poNum
+     * @return ItemFulfillmentItem
+     */
+    public function setPoNum(string $poNum): ItemFulfillmentItem
+    {
+        $this->poNum = $poNum;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPoNum(): string
+    {
+        return $this->poNum;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return ItemFulfillmentItem
+     */
+    public function setItem(RecordRef $item): ItemFulfillmentItem
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param int $orderLine
+     * @return ItemFulfillmentItem
+     */
+    public function setOrderLine(int $orderLine): ItemFulfillmentItem
+    {
+        $this->orderLine = $orderLine;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOrderLine(): int
+    {
+        return $this->orderLine;
+    }
+
+    /**
+     * @param float $quantityRemaining
+     * @return ItemFulfillmentItem
+     */
+    public function setQuantityRemaining(float $quantityRemaining): ItemFulfillmentItem
+    {
+        $this->quantityRemaining = $quantityRemaining;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityRemaining(): float
+    {
+        return $this->quantityRemaining;
+    }
+
+    /**
+     * @param CustomFieldList $options
+     * @return ItemFulfillmentItem
+     */
+    public function setOptions(CustomFieldList $options): ItemFulfillmentItem
+    {
+        $this->options = $options;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getOptions(): CustomFieldList
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param int $shipGroup
+     * @return ItemFulfillmentItem
+     */
+    public function setShipGroup(int $shipGroup): ItemFulfillmentItem
+    {
+        $this->shipGroup = $shipGroup;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getShipGroup(): int
+    {
+        return $this->shipGroup;
+    }
+
+    /**
+     * @param bool $itemIsFulfilled
+     * @return ItemFulfillmentItem
+     */
+    public function setItemIsFulfilled(bool $itemIsFulfilled): ItemFulfillmentItem
+    {
+        $this->itemIsFulfilled = $itemIsFulfilled;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getItemIsFulfilled(): bool
+    {
+        return $this->itemIsFulfilled;
+    }
+
+    /**
+     * @param RecordRef $shipAddress
+     * @return ItemFulfillmentItem
+     */
+    public function setShipAddress(RecordRef $shipAddress): ItemFulfillmentItem
+    {
+        $this->shipAddress = $shipAddress;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getShipAddress(): RecordRef
+    {
+        return $this->shipAddress;
+    }
+
+    /**
+     * @param RecordRef $shipMethod
+     * @return ItemFulfillmentItem
+     */
+    public function setShipMethod(RecordRef $shipMethod): ItemFulfillmentItem
+    {
+        $this->shipMethod = $shipMethod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getShipMethod(): RecordRef
+    {
+        return $this->shipMethod;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return ItemFulfillmentItem
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): ItemFulfillmentItem
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

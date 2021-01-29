@@ -14,112 +14,137 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemReceiptItem {
     /**
-     * @var boolean
+     * @var bool
      */
-    public $itemReceive;
+    protected bool $itemReceive;
+
     /**
      * @var string
      */
-    public $jobName;
+    protected string $jobName;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $orderLine;
+    protected int $orderLine;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
      * @var string
      */
-    public $itemName;
+    protected string $itemName;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
      * @var float
      */
-    public $onHand;
+    protected float $onHand;
+
     /**
      * @var float
      */
-    public $quantityRemaining;
+    protected float $quantityRemaining;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantity;
+
     /**
      * @var string
      */
-    public $unitsDisplay;
+    protected string $unitsDisplay;
+
     /**
      * @var float
      */
-    public $unitCostOverride;
+    protected float $unitCostOverride;
+
     /**
-     * @var \NetSuite\Classes\InventoryDetail
+     * @var InventoryDetail
      */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $serialNumbers;
+    protected InventoryDetail $inventoryDetail;
+
     /**
      * @var string
      */
-    public $binNumbers;
+    protected string $serialNumbers;
+
     /**
      * @var string
      */
-    public $expirationDate;
+    protected string $binNumbers;
+
     /**
      * @var string
      */
-    public $rate;
+    protected string $expirationDate;
+
     /**
      * @var string
      */
-    public $currency;
+    protected string $rate;
+
     /**
-     * @var boolean
+     * @var string
      */
-    public $restock;
+    protected string $currency;
+
     /**
-     * @var \NetSuite\Classes\TransactionBillVarianceStatus
+     * @var bool
      */
-    public $billVarianceStatus;
+    protected bool $restock;
+
     /**
-     * @var boolean
+     * @var TransactionBillVarianceStatus
      */
-    public $isDropShipment;
+    protected TransactionBillVarianceStatus $billVarianceStatus;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var bool
      */
-    public $options;
+    protected bool $isDropShipment;
+
     /**
-     * @var \NetSuite\Classes\LandedCost
+     * @var CustomFieldList
      */
-    public $landedCost;
+    protected CustomFieldList $options;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var LandedCost
      */
-    public $customFieldList;
+    protected LandedCost $landedCost;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "itemReceive" => "boolean",
         "jobName" => "string",
@@ -147,4 +172,455 @@ class ItemReceiptItem {
         "landedCost" => "LandedCost",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param bool $itemReceive
+     * @return ItemReceiptItem
+     */
+    public function setItemReceive(bool $itemReceive): ItemReceiptItem
+    {
+        $this->itemReceive = $itemReceive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getItemReceive(): bool
+    {
+        return $this->itemReceive;
+    }
+
+    /**
+     * @param string $jobName
+     * @return ItemReceiptItem
+     */
+    public function setJobName(string $jobName): ItemReceiptItem
+    {
+        $this->jobName = $jobName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getJobName(): string
+    {
+        return $this->jobName;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return ItemReceiptItem
+     */
+    public function setItem(RecordRef $item): ItemReceiptItem
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param int $orderLine
+     * @return ItemReceiptItem
+     */
+    public function setOrderLine(int $orderLine): ItemReceiptItem
+    {
+        $this->orderLine = $orderLine;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOrderLine(): int
+    {
+        return $this->orderLine;
+    }
+
+    /**
+     * @param int $line
+     * @return ItemReceiptItem
+     */
+    public function setLine(int $line): ItemReceiptItem
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param string $itemName
+     * @return ItemReceiptItem
+     */
+    public function setItemName(string $itemName): ItemReceiptItem
+    {
+        $this->itemName = $itemName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemName(): string
+    {
+        return $this->itemName;
+    }
+
+    /**
+     * @param string $description
+     * @return ItemReceiptItem
+     */
+    public function setDescription(string $description): ItemReceiptItem
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return ItemReceiptItem
+     */
+    public function setLocation(RecordRef $location): ItemReceiptItem
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param float $onHand
+     * @return ItemReceiptItem
+     */
+    public function setOnHand(float $onHand): ItemReceiptItem
+    {
+        $this->onHand = $onHand;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOnHand(): float
+    {
+        return $this->onHand;
+    }
+
+    /**
+     * @param float $quantityRemaining
+     * @return ItemReceiptItem
+     */
+    public function setQuantityRemaining(float $quantityRemaining): ItemReceiptItem
+    {
+        $this->quantityRemaining = $quantityRemaining;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityRemaining(): float
+    {
+        return $this->quantityRemaining;
+    }
+
+    /**
+     * @param float $quantity
+     * @return ItemReceiptItem
+     */
+    public function setQuantity(float $quantity): ItemReceiptItem
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param string $unitsDisplay
+     * @return ItemReceiptItem
+     */
+    public function setUnitsDisplay(string $unitsDisplay): ItemReceiptItem
+    {
+        $this->unitsDisplay = $unitsDisplay;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUnitsDisplay(): string
+    {
+        return $this->unitsDisplay;
+    }
+
+    /**
+     * @param float $unitCostOverride
+     * @return ItemReceiptItem
+     */
+    public function setUnitCostOverride(float $unitCostOverride): ItemReceiptItem
+    {
+        $this->unitCostOverride = $unitCostOverride;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getUnitCostOverride(): float
+    {
+        return $this->unitCostOverride;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return ItemReceiptItem
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): ItemReceiptItem
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param string $serialNumbers
+     * @return ItemReceiptItem
+     */
+    public function setSerialNumbers(string $serialNumbers): ItemReceiptItem
+    {
+        $this->serialNumbers = $serialNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSerialNumbers(): string
+    {
+        return $this->serialNumbers;
+    }
+
+    /**
+     * @param string $binNumbers
+     * @return ItemReceiptItem
+     */
+    public function setBinNumbers(string $binNumbers): ItemReceiptItem
+    {
+        $this->binNumbers = $binNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBinNumbers(): string
+    {
+        return $this->binNumbers;
+    }
+
+    /**
+     * @param string $expirationDate
+     * @return ItemReceiptItem
+     */
+    public function setExpirationDate(string $expirationDate): ItemReceiptItem
+    {
+        $this->expirationDate = $expirationDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExpirationDate(): string
+    {
+        return $this->expirationDate;
+    }
+
+    /**
+     * @param string $rate
+     * @return ItemReceiptItem
+     */
+    public function setRate(string $rate): ItemReceiptItem
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRate(): string
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param string $currency
+     * @return ItemReceiptItem
+     */
+    public function setCurrency(string $currency): ItemReceiptItem
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCurrency(): string
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param bool $restock
+     * @return ItemReceiptItem
+     */
+    public function setRestock(bool $restock): ItemReceiptItem
+    {
+        $this->restock = $restock;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getRestock(): bool
+    {
+        return $this->restock;
+    }
+
+    /**
+     * @param TransactionBillVarianceStatus $billVarianceStatus
+     * @return ItemReceiptItem
+     */
+    public function setBillVarianceStatus(TransactionBillVarianceStatus $billVarianceStatus): ItemReceiptItem
+    {
+        $this->billVarianceStatus = $billVarianceStatus;
+        return $this;
+    }
+
+    /**
+     * @return TransactionBillVarianceStatus
+     */
+    public function getBillVarianceStatus(): TransactionBillVarianceStatus
+    {
+        return $this->billVarianceStatus;
+    }
+
+    /**
+     * @param bool $isDropShipment
+     * @return ItemReceiptItem
+     */
+    public function setIsDropShipment(bool $isDropShipment): ItemReceiptItem
+    {
+        $this->isDropShipment = $isDropShipment;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsDropShipment(): bool
+    {
+        return $this->isDropShipment;
+    }
+
+    /**
+     * @param CustomFieldList $options
+     * @return ItemReceiptItem
+     */
+    public function setOptions(CustomFieldList $options): ItemReceiptItem
+    {
+        $this->options = $options;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getOptions(): CustomFieldList
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param LandedCost $landedCost
+     * @return ItemReceiptItem
+     */
+    public function setLandedCost(LandedCost $landedCost): ItemReceiptItem
+    {
+        $this->landedCost = $landedCost;
+        return $this;
+    }
+
+    /**
+     * @return LandedCost
+     */
+    public function getLandedCost(): LandedCost
+    {
+        return $this->landedCost;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return ItemReceiptItem
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): ItemReceiptItem
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

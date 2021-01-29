@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerDepositApplyList {
     /**
-     * @var \NetSuite\Classes\CustomerDepositApply[]
+     * @var CustomerDepositApply[]
      */
-    public $customerDepositApply;
+    protected array $customerDepositApply;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "customerDepositApply" => "CustomerDepositApply[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CustomerDepositApply[] $customerDepositApply
+     * @return CustomerDepositApplyList
+     */
+    public function setCustomerDepositApply(CustomerDepositApply $customerDepositApply): CustomerDepositApplyList
+    {
+        $this->customerDepositApply[] = $customerDepositApply;
+        return $this;
+    }
+
+    /**
+     * @return CustomerDepositApply[]
+     */
+    public function getCustomerDepositApply(): array
+    {
+        return $this->customerDepositApply;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CustomerDepositApplyList
+     */
+    public function setReplaceAll(bool $replaceAll): CustomerDepositApplyList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

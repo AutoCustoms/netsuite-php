@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingBookDetailList {
     /**
-     * @var \NetSuite\Classes\AccountingBookDetail[]
+     * @var AccountingBookDetail[]
      */
-    public $accountingBookDetail;
+    protected array $accountingBookDetail;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "accountingBookDetail" => "AccountingBookDetail[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param AccountingBookDetail[] $accountingBookDetail
+     * @return AccountingBookDetailList
+     */
+    public function setAccountingBookDetail(AccountingBookDetail $accountingBookDetail): AccountingBookDetailList
+    {
+        $this->accountingBookDetail[] = $accountingBookDetail;
+        return $this;
+    }
+
+    /**
+     * @return AccountingBookDetail[]
+     */
+    public function getAccountingBookDetail(): array
+    {
+        return $this->accountingBookDetail;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return AccountingBookDetailList
+     */
+    public function setReplaceAll(bool $replaceAll): AccountingBookDetailList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

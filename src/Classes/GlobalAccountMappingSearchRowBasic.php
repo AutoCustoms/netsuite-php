@@ -14,64 +14,77 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GlobalAccountMappingSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $accountingBook;
+    protected array $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $class;
+    protected array $class;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectCustomField[]
+     * @var SearchColumnSelectCustomField[]
      */
-    public $customDimension;
+    protected array $customDimension;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $department;
+    protected array $department;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $destinationAccount;
+    protected array $destinationAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $effectiveDate;
+    protected array $effectiveDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $endDate;
+    protected array $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $location;
+    protected array $location;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $sourceAccount;
+    protected array $sourceAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "accountingBook" => "SearchColumnSelectField[]",
         "class" => "SearchColumnSelectField[]",
@@ -87,4 +100,239 @@ class GlobalAccountMappingSearchRowBasic extends SearchRowBasic {
         "subsidiary" => "SearchColumnSelectField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $accountingBook
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setAccountingBook(SearchColumnSelectField $accountingBook): GlobalAccountMappingSearchRowBasic
+    {
+        $this->accountingBook[] = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAccountingBook(): array
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $class
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setClass(SearchColumnSelectField $class): GlobalAccountMappingSearchRowBasic
+    {
+        $this->class[] = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getClass(): array
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchColumnSelectCustomField[] $customDimension
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setCustomDimension(SearchColumnSelectCustomField $customDimension): GlobalAccountMappingSearchRowBasic
+    {
+        $this->customDimension[] = $customDimension;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectCustomField[]
+     */
+    public function getCustomDimension(): array
+    {
+        return $this->customDimension;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $department
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setDepartment(SearchColumnSelectField $department): GlobalAccountMappingSearchRowBasic
+    {
+        $this->department[] = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDepartment(): array
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $destinationAccount
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setDestinationAccount(SearchColumnSelectField $destinationAccount): GlobalAccountMappingSearchRowBasic
+    {
+        $this->destinationAccount[] = $destinationAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getDestinationAccount(): array
+    {
+        return $this->destinationAccount;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $effectiveDate
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setEffectiveDate(SearchColumnDateField $effectiveDate): GlobalAccountMappingSearchRowBasic
+    {
+        $this->effectiveDate[] = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEffectiveDate(): array
+    {
+        return $this->effectiveDate;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $endDate
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setEndDate(SearchColumnDateField $endDate): GlobalAccountMappingSearchRowBasic
+    {
+        $this->endDate[] = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEndDate(): array
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): GlobalAccountMappingSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): GlobalAccountMappingSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $location
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setLocation(SearchColumnSelectField $location): GlobalAccountMappingSearchRowBasic
+    {
+        $this->location[] = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocation(): array
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $sourceAccount
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setSourceAccount(SearchColumnSelectField $sourceAccount): GlobalAccountMappingSearchRowBasic
+    {
+        $this->sourceAccount[] = $sourceAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSourceAccount(): array
+    {
+        return $this->sourceAccount;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): GlobalAccountMappingSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): GlobalAccountMappingSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

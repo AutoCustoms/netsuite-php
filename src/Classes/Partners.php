@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class Partners {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $partner;
+    protected RecordRef $partner;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $partnerRole;
+    protected RecordRef $partnerRole;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isPrimary;
+    protected bool $isPrimary;
+
     /**
      * @var float
      */
-    public $contribution;
+    protected float $contribution;
+
     static $paramtypesmap = array(
         "partner" => "RecordRef",
         "partnerRole" => "RecordRef",
         "isPrimary" => "boolean",
         "contribution" => "float",
     );
+
+    /**
+     * @param RecordRef $partner
+     * @return Partners
+     */
+    public function setPartner(RecordRef $partner): Partners
+    {
+        $this->partner = $partner;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPartner(): RecordRef
+    {
+        return $this->partner;
+    }
+
+    /**
+     * @param RecordRef $partnerRole
+     * @return Partners
+     */
+    public function setPartnerRole(RecordRef $partnerRole): Partners
+    {
+        $this->partnerRole = $partnerRole;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPartnerRole(): RecordRef
+    {
+        return $this->partnerRole;
+    }
+
+    /**
+     * @param bool $isPrimary
+     * @return Partners
+     */
+    public function setIsPrimary(bool $isPrimary): Partners
+    {
+        $this->isPrimary = $isPrimary;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsPrimary(): bool
+    {
+        return $this->isPrimary;
+    }
+
+    /**
+     * @param float $contribution
+     * @return Partners
+     */
+    public function setContribution(float $contribution): Partners
+    {
+        $this->contribution = $contribution;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getContribution(): float
+    {
+        return $this->contribution;
+    }
+
 }

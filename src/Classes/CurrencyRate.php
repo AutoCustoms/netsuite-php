@@ -14,36 +14,42 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CurrencyRate extends Record {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $baseCurrency;
+    protected RecordRef $baseCurrency;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $transactionCurrency;
+    protected RecordRef $transactionCurrency;
+
     /**
      * @var float
      */
-    public $exchangeRate;
+    protected float $exchangeRate;
+
     /**
      * @var string
      */
-    public $effectiveDate;
+    protected string $effectiveDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currencyRateType;
+    protected RecordRef $currencyRateType;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     static $paramtypesmap = array(
         "baseCurrency" => "RecordRef",
         "transactionCurrency" => "RecordRef",
@@ -52,4 +58,113 @@ class CurrencyRate extends Record {
         "currencyRateType" => "RecordRef",
         "internalId" => "string",
     );
+
+    /**
+     * @param RecordRef $baseCurrency
+     * @return CurrencyRate
+     */
+    public function setBaseCurrency(RecordRef $baseCurrency): CurrencyRate
+    {
+        $this->baseCurrency = $baseCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBaseCurrency(): RecordRef
+    {
+        return $this->baseCurrency;
+    }
+
+    /**
+     * @param RecordRef $transactionCurrency
+     * @return CurrencyRate
+     */
+    public function setTransactionCurrency(RecordRef $transactionCurrency): CurrencyRate
+    {
+        $this->transactionCurrency = $transactionCurrency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTransactionCurrency(): RecordRef
+    {
+        return $this->transactionCurrency;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return CurrencyRate
+     */
+    public function setExchangeRate(float $exchangeRate): CurrencyRate
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param string $effectiveDate
+     * @return CurrencyRate
+     */
+    public function setEffectiveDate(string $effectiveDate): CurrencyRate
+    {
+        $this->effectiveDate = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEffectiveDate(): string
+    {
+        return $this->effectiveDate;
+    }
+
+    /**
+     * @param RecordRef $currencyRateType
+     * @return CurrencyRate
+     */
+    public function setCurrencyRateType(RecordRef $currencyRateType): CurrencyRate
+    {
+        $this->currencyRateType = $currencyRateType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrencyRateType(): RecordRef
+    {
+        return $this->currencyRateType;
+    }
+
+    /**
+     * @param string $internalId
+     * @return CurrencyRate
+     */
+    public function setInternalId(string $internalId): CurrencyRate
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class WinLossReasonSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\WinLossReasonSearchBasic
+     * @var WinLossReasonSearchBasic
      */
-    public $basic;
+    protected WinLossReasonSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "WinLossReasonSearchBasic",
         "userJoin" => "EmployeeSearchBasic",
     );
+
+    /**
+     * @param WinLossReasonSearchBasic $basic
+     * @return WinLossReasonSearch
+     */
+    public function setBasic(WinLossReasonSearchBasic $basic): WinLossReasonSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return WinLossReasonSearchBasic
+     */
+    public function getBasic(): WinLossReasonSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return WinLossReasonSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): WinLossReasonSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
 }

@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GlobalAccountMappingSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\GlobalAccountMappingSearchBasic
+     * @var GlobalAccountMappingSearchBasic
      */
-    public $basic;
+    protected GlobalAccountMappingSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ClassificationSearchBasic
+     * @var ClassificationSearchBasic
      */
-    public $classJoin;
+    protected ClassificationSearchBasic $classJoin;
+
     /**
-     * @var \NetSuite\Classes\DepartmentSearchBasic
+     * @var DepartmentSearchBasic
      */
-    public $departmentJoin;
+    protected DepartmentSearchBasic $departmentJoin;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchBasic
+     * @var AccountSearchBasic
      */
-    public $destinationAccountJoin;
+    protected AccountSearchBasic $destinationAccountJoin;
+
     /**
-     * @var \NetSuite\Classes\LocationSearchBasic
+     * @var LocationSearchBasic
      */
-    public $locationJoin;
+    protected LocationSearchBasic $locationJoin;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchBasic
+     * @var AccountSearchBasic
      */
-    public $sourceAccountJoin;
+    protected AccountSearchBasic $sourceAccountJoin;
+
     /**
-     * @var \NetSuite\Classes\SubsidiarySearchBasic
+     * @var SubsidiarySearchBasic
      */
-    public $subsidiaryJoin;
+    protected SubsidiarySearchBasic $subsidiaryJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "GlobalAccountMappingSearchBasic",
         "classJoin" => "ClassificationSearchBasic",
@@ -62,4 +70,149 @@ class GlobalAccountMappingSearch extends SearchRecord {
         "subsidiaryJoin" => "SubsidiarySearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param GlobalAccountMappingSearchBasic $basic
+     * @return GlobalAccountMappingSearch
+     */
+    public function setBasic(GlobalAccountMappingSearchBasic $basic): GlobalAccountMappingSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return GlobalAccountMappingSearchBasic
+     */
+    public function getBasic(): GlobalAccountMappingSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ClassificationSearchBasic $classJoin
+     * @return GlobalAccountMappingSearch
+     */
+    public function setClassJoin(ClassificationSearchBasic $classJoin): GlobalAccountMappingSearch
+    {
+        $this->classJoin = $classJoin;
+        return $this;
+    }
+
+    /**
+     * @return ClassificationSearchBasic
+     */
+    public function getClassJoin(): ClassificationSearchBasic
+    {
+        return $this->classJoin;
+    }
+
+    /**
+     * @param DepartmentSearchBasic $departmentJoin
+     * @return GlobalAccountMappingSearch
+     */
+    public function setDepartmentJoin(DepartmentSearchBasic $departmentJoin): GlobalAccountMappingSearch
+    {
+        $this->departmentJoin = $departmentJoin;
+        return $this;
+    }
+
+    /**
+     * @return DepartmentSearchBasic
+     */
+    public function getDepartmentJoin(): DepartmentSearchBasic
+    {
+        return $this->departmentJoin;
+    }
+
+    /**
+     * @param AccountSearchBasic $destinationAccountJoin
+     * @return GlobalAccountMappingSearch
+     */
+    public function setDestinationAccountJoin(AccountSearchBasic $destinationAccountJoin): GlobalAccountMappingSearch
+    {
+        $this->destinationAccountJoin = $destinationAccountJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchBasic
+     */
+    public function getDestinationAccountJoin(): AccountSearchBasic
+    {
+        return $this->destinationAccountJoin;
+    }
+
+    /**
+     * @param LocationSearchBasic $locationJoin
+     * @return GlobalAccountMappingSearch
+     */
+    public function setLocationJoin(LocationSearchBasic $locationJoin): GlobalAccountMappingSearch
+    {
+        $this->locationJoin = $locationJoin;
+        return $this;
+    }
+
+    /**
+     * @return LocationSearchBasic
+     */
+    public function getLocationJoin(): LocationSearchBasic
+    {
+        return $this->locationJoin;
+    }
+
+    /**
+     * @param AccountSearchBasic $sourceAccountJoin
+     * @return GlobalAccountMappingSearch
+     */
+    public function setSourceAccountJoin(AccountSearchBasic $sourceAccountJoin): GlobalAccountMappingSearch
+    {
+        $this->sourceAccountJoin = $sourceAccountJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchBasic
+     */
+    public function getSourceAccountJoin(): AccountSearchBasic
+    {
+        return $this->sourceAccountJoin;
+    }
+
+    /**
+     * @param SubsidiarySearchBasic $subsidiaryJoin
+     * @return GlobalAccountMappingSearch
+     */
+    public function setSubsidiaryJoin(SubsidiarySearchBasic $subsidiaryJoin): GlobalAccountMappingSearch
+    {
+        $this->subsidiaryJoin = $subsidiaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return SubsidiarySearchBasic
+     */
+    public function getSubsidiaryJoin(): SubsidiarySearchBasic
+    {
+        return $this->subsidiaryJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return GlobalAccountMappingSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): GlobalAccountMappingSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

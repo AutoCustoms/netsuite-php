@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AttachContactReference extends AttachReference {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $contact;
+    protected RecordRef $contact;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $contactRole;
+    protected RecordRef $contactRole;
+
     static $paramtypesmap = array(
         "contact" => "RecordRef",
         "contactRole" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $contact
+     * @return AttachContactReference
+     */
+    public function setContact(RecordRef $contact): AttachContactReference
+    {
+        $this->contact = $contact;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getContact(): RecordRef
+    {
+        return $this->contact;
+    }
+
+    /**
+     * @param RecordRef $contactRole
+     * @return AttachContactReference
+     */
+    public function setContactRole(RecordRef $contactRole): AttachContactReference
+    {
+        $this->contactRole = $contactRole;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getContactRole(): RecordRef
+    {
+        return $this->contactRole;
+    }
+
 }

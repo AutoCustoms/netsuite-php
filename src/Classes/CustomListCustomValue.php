@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,23 +23,28 @@ class CustomListCustomValue {
     /**
      * @var string
      */
-    public $value;
+    protected string $value;
+
     /**
      * @var string
      */
-    public $abbreviation;
+    protected string $abbreviation;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $valueId;
+    protected int $valueId;
+
     /**
-     * @var \NetSuite\Classes\LanguageValueList
+     * @var LanguageValueList
      */
-    public $valueLanguageValueList;
+    protected LanguageValueList $valueLanguageValueList;
+
     static $paramtypesmap = array(
         "value" => "string",
         "abbreviation" => "string",
@@ -47,4 +52,95 @@ class CustomListCustomValue {
         "valueId" => "integer",
         "valueLanguageValueList" => "LanguageValueList",
     );
+
+    /**
+     * @param string $value
+     * @return CustomListCustomValue
+     */
+    public function setValue(string $value): CustomListCustomValue
+    {
+        $this->value = $value;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getValue(): string
+    {
+        return $this->value;
+    }
+
+    /**
+     * @param string $abbreviation
+     * @return CustomListCustomValue
+     */
+    public function setAbbreviation(string $abbreviation): CustomListCustomValue
+    {
+        $this->abbreviation = $abbreviation;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAbbreviation(): string
+    {
+        return $this->abbreviation;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return CustomListCustomValue
+     */
+    public function setIsInactive(bool $isInactive): CustomListCustomValue
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param int $valueId
+     * @return CustomListCustomValue
+     */
+    public function setValueId(int $valueId): CustomListCustomValue
+    {
+        $this->valueId = $valueId;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getValueId(): int
+    {
+        return $this->valueId;
+    }
+
+    /**
+     * @param LanguageValueList $valueLanguageValueList
+     * @return CustomListCustomValue
+     */
+    public function setValueLanguageValueList(LanguageValueList $valueLanguageValueList): CustomListCustomValue
+    {
+        $this->valueLanguageValueList = $valueLanguageValueList;
+        return $this;
+    }
+
+    /**
+     * @return LanguageValueList
+     */
+    public function getValueLanguageValueList(): LanguageValueList
+    {
+        return $this->valueLanguageValueList;
+    }
+
 }

@@ -14,72 +14,87 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BillingScheduleSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $applyToSubtotal;
+    protected array $applyToSubtotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $frequency;
+    protected array $frequency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $inArrears;
+    protected array $inArrears;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $initialAmount;
+    protected array $initialAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $initialTerms;
+    protected array $initialTerms;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isPublic;
+    protected array $isPublic;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $recurrenceCount;
+    protected array $recurrenceCount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $recurrencePattern;
+    protected array $recurrencePattern;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $recurrenceTerms;
+    protected array $recurrenceTerms;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $repeatEvery;
+    protected array $repeatEvery;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $type;
+    protected array $type;
+
     static $paramtypesmap = array(
         "applyToSubtotal" => "SearchColumnBooleanField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -97,4 +112,275 @@ class BillingScheduleSearchRowBasic extends SearchRowBasic {
         "repeatEvery" => "SearchColumnLongField[]",
         "type" => "SearchColumnEnumSelectField[]",
     );
+
+    /**
+     * @param SearchColumnBooleanField[] $applyToSubtotal
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setApplyToSubtotal(SearchColumnBooleanField $applyToSubtotal): BillingScheduleSearchRowBasic
+    {
+        $this->applyToSubtotal[] = $applyToSubtotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getApplyToSubtotal(): array
+    {
+        return $this->applyToSubtotal;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): BillingScheduleSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $frequency
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setFrequency(SearchColumnEnumSelectField $frequency): BillingScheduleSearchRowBasic
+    {
+        $this->frequency[] = $frequency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getFrequency(): array
+    {
+        return $this->frequency;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $inArrears
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setInArrears(SearchColumnBooleanField $inArrears): BillingScheduleSearchRowBasic
+    {
+        $this->inArrears[] = $inArrears;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getInArrears(): array
+    {
+        return $this->inArrears;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $initialAmount
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setInitialAmount(SearchColumnStringField $initialAmount): BillingScheduleSearchRowBasic
+    {
+        $this->initialAmount[] = $initialAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getInitialAmount(): array
+    {
+        return $this->initialAmount;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $initialTerms
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setInitialTerms(SearchColumnStringField $initialTerms): BillingScheduleSearchRowBasic
+    {
+        $this->initialTerms[] = $initialTerms;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getInitialTerms(): array
+    {
+        return $this->initialTerms;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): BillingScheduleSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): BillingScheduleSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isPublic
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setIsPublic(SearchColumnBooleanField $isPublic): BillingScheduleSearchRowBasic
+    {
+        $this->isPublic[] = $isPublic;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsPublic(): array
+    {
+        return $this->isPublic;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): BillingScheduleSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $recurrenceCount
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setRecurrenceCount(SearchColumnLongField $recurrenceCount): BillingScheduleSearchRowBasic
+    {
+        $this->recurrenceCount[] = $recurrenceCount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getRecurrenceCount(): array
+    {
+        return $this->recurrenceCount;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $recurrencePattern
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setRecurrencePattern(SearchColumnEnumSelectField $recurrencePattern): BillingScheduleSearchRowBasic
+    {
+        $this->recurrencePattern[] = $recurrencePattern;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getRecurrencePattern(): array
+    {
+        return $this->recurrencePattern;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $recurrenceTerms
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setRecurrenceTerms(SearchColumnStringField $recurrenceTerms): BillingScheduleSearchRowBasic
+    {
+        $this->recurrenceTerms[] = $recurrenceTerms;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRecurrenceTerms(): array
+    {
+        return $this->recurrenceTerms;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $repeatEvery
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setRepeatEvery(SearchColumnLongField $repeatEvery): BillingScheduleSearchRowBasic
+    {
+        $this->repeatEvery[] = $repeatEvery;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getRepeatEvery(): array
+    {
+        return $this->repeatEvery;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $type
+     * @return BillingScheduleSearchRowBasic
+     */
+    public function setType(SearchColumnEnumSelectField $type): BillingScheduleSearchRowBasic
+    {
+        $this->type[] = $type;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getType(): array
+    {
+        return $this->type;
+    }
+
 }

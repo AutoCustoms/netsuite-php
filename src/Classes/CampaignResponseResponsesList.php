@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CampaignResponseResponsesList {
     /**
-     * @var \NetSuite\Classes\CampaignResponseResponses[]
+     * @var CampaignResponseResponses[]
      */
-    public $responses;
+    protected array $responses;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "responses" => "CampaignResponseResponses[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CampaignResponseResponses[] $responses
+     * @return CampaignResponseResponsesList
+     */
+    public function setResponses(CampaignResponseResponses $responses): CampaignResponseResponsesList
+    {
+        $this->responses[] = $responses;
+        return $this;
+    }
+
+    /**
+     * @return CampaignResponseResponses[]
+     */
+    public function getResponses(): array
+    {
+        return $this->responses;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CampaignResponseResponsesList
+     */
+    public function setReplaceAll(bool $replaceAll): CampaignResponseResponsesList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

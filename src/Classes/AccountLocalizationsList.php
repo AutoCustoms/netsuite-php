@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountLocalizationsList {
     /**
-     * @var \NetSuite\Classes\AccountLocalizations[]
+     * @var AccountLocalizations[]
      */
-    public $accountLocalizations;
+    protected array $accountLocalizations;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "accountLocalizations" => "AccountLocalizations[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param AccountLocalizations[] $accountLocalizations
+     * @return AccountLocalizationsList
+     */
+    public function setAccountLocalizations(AccountLocalizations $accountLocalizations): AccountLocalizationsList
+    {
+        $this->accountLocalizations[] = $accountLocalizations;
+        return $this;
+    }
+
+    /**
+     * @return AccountLocalizations[]
+     */
+    public function getAccountLocalizations(): array
+    {
+        return $this->accountLocalizations;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return AccountLocalizationsList
+     */
+    public function setReplaceAll(bool $replaceAll): AccountLocalizationsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

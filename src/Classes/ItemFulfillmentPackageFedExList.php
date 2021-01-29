@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemFulfillmentPackageFedExList {
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageFedEx[]
+     * @var ItemFulfillmentPackageFedEx[]
      */
-    public $packageFedEx;
+    protected array $packageFedEx;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "packageFedEx" => "ItemFulfillmentPackageFedEx[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ItemFulfillmentPackageFedEx[] $packageFedEx
+     * @return ItemFulfillmentPackageFedExList
+     */
+    public function setPackageFedEx(ItemFulfillmentPackageFedEx $packageFedEx): ItemFulfillmentPackageFedExList
+    {
+        $this->packageFedEx[] = $packageFedEx;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageFedEx[]
+     */
+    public function getPackageFedEx(): array
+    {
+        return $this->packageFedEx;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ItemFulfillmentPackageFedExList
+     */
+    public function setReplaceAll(bool $replaceAll): ItemFulfillmentPackageFedExList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

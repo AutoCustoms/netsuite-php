@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeHrEducationList {
     /**
-     * @var \NetSuite\Classes\EmployeeHrEducation[]
+     * @var EmployeeHrEducation[]
      */
-    public $employeeHrEducation;
+    protected array $employeeHrEducation;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "employeeHrEducation" => "EmployeeHrEducation[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param EmployeeHrEducation[] $employeeHrEducation
+     * @return EmployeeHrEducationList
+     */
+    public function setEmployeeHrEducation(EmployeeHrEducation $employeeHrEducation): EmployeeHrEducationList
+    {
+        $this->employeeHrEducation[] = $employeeHrEducation;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeHrEducation[]
+     */
+    public function getEmployeeHrEducation(): array
+    {
+        return $this->employeeHrEducation;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return EmployeeHrEducationList
+     */
+    public function setReplaceAll(bool $replaceAll): EmployeeHrEducationList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

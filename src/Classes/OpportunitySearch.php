@@ -14,84 +14,102 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class OpportunitySearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\OpportunitySearchBasic
+     * @var OpportunitySearchBasic
      */
-    public $basic;
+    protected OpportunitySearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $actualJoin;
+    protected TransactionSearchBasic $actualJoin;
+
     /**
-     * @var \NetSuite\Classes\PhoneCallSearchBasic
+     * @var PhoneCallSearchBasic
      */
-    public $callJoin;
+    protected PhoneCallSearchBasic $callJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $customerJoin;
+    protected CustomerSearchBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\ContactSearchBasic
+     * @var ContactSearchBasic
      */
-    public $decisionMakerJoin;
+    protected ContactSearchBasic $decisionMakerJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $estimateJoin;
+    protected TransactionSearchBasic $estimateJoin;
+
     /**
-     * @var \NetSuite\Classes\CalendarEventSearchBasic
+     * @var CalendarEventSearchBasic
      */
-    public $eventJoin;
+    protected CalendarEventSearchBasic $eventJoin;
+
     /**
-     * @var \NetSuite\Classes\FileSearchBasic
+     * @var FileSearchBasic
      */
-    public $fileJoin;
+    protected FileSearchBasic $fileJoin;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchBasic
+     * @var ItemSearchBasic
      */
-    public $itemJoin;
+    protected ItemSearchBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\CampaignSearchBasic
+     * @var CampaignSearchBasic
      */
-    public $leadSourceJoin;
+    protected CampaignSearchBasic $leadSourceJoin;
+
     /**
-     * @var \NetSuite\Classes\MessageSearchBasic
+     * @var MessageSearchBasic
      */
-    public $messagesJoin;
+    protected MessageSearchBasic $messagesJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $orderJoin;
+    protected TransactionSearchBasic $orderJoin;
+
     /**
-     * @var \NetSuite\Classes\OriginatingLeadSearchBasic
+     * @var OriginatingLeadSearchBasic
      */
-    public $originatingLeadJoin;
+    protected OriginatingLeadSearchBasic $originatingLeadJoin;
+
     /**
-     * @var \NetSuite\Classes\PartnerSearchBasic
+     * @var PartnerSearchBasic
      */
-    public $partnerJoin;
+    protected PartnerSearchBasic $partnerJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $salesRepJoin;
+    protected EmployeeSearchBasic $salesRepJoin;
+
     /**
-     * @var \NetSuite\Classes\TaskSearchBasic
+     * @var TaskSearchBasic
      */
-    public $taskJoin;
+    protected TaskSearchBasic $taskJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchBasic
+     * @var NoteSearchBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "OpportunitySearchBasic",
         "actualJoin" => "TransactionSearchBasic",
@@ -112,4 +130,329 @@ class OpportunitySearch extends SearchRecord {
         "userNotesJoin" => "NoteSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param OpportunitySearchBasic $basic
+     * @return OpportunitySearch
+     */
+    public function setBasic(OpportunitySearchBasic $basic): OpportunitySearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return OpportunitySearchBasic
+     */
+    public function getBasic(): OpportunitySearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param TransactionSearchBasic $actualJoin
+     * @return OpportunitySearch
+     */
+    public function setActualJoin(TransactionSearchBasic $actualJoin): OpportunitySearch
+    {
+        $this->actualJoin = $actualJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getActualJoin(): TransactionSearchBasic
+    {
+        return $this->actualJoin;
+    }
+
+    /**
+     * @param PhoneCallSearchBasic $callJoin
+     * @return OpportunitySearch
+     */
+    public function setCallJoin(PhoneCallSearchBasic $callJoin): OpportunitySearch
+    {
+        $this->callJoin = $callJoin;
+        return $this;
+    }
+
+    /**
+     * @return PhoneCallSearchBasic
+     */
+    public function getCallJoin(): PhoneCallSearchBasic
+    {
+        return $this->callJoin;
+    }
+
+    /**
+     * @param CustomerSearchBasic $customerJoin
+     * @return OpportunitySearch
+     */
+    public function setCustomerJoin(CustomerSearchBasic $customerJoin): OpportunitySearch
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param ContactSearchBasic $decisionMakerJoin
+     * @return OpportunitySearch
+     */
+    public function setDecisionMakerJoin(ContactSearchBasic $decisionMakerJoin): OpportunitySearch
+    {
+        $this->decisionMakerJoin = $decisionMakerJoin;
+        return $this;
+    }
+
+    /**
+     * @return ContactSearchBasic
+     */
+    public function getDecisionMakerJoin(): ContactSearchBasic
+    {
+        return $this->decisionMakerJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $estimateJoin
+     * @return OpportunitySearch
+     */
+    public function setEstimateJoin(TransactionSearchBasic $estimateJoin): OpportunitySearch
+    {
+        $this->estimateJoin = $estimateJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getEstimateJoin(): TransactionSearchBasic
+    {
+        return $this->estimateJoin;
+    }
+
+    /**
+     * @param CalendarEventSearchBasic $eventJoin
+     * @return OpportunitySearch
+     */
+    public function setEventJoin(CalendarEventSearchBasic $eventJoin): OpportunitySearch
+    {
+        $this->eventJoin = $eventJoin;
+        return $this;
+    }
+
+    /**
+     * @return CalendarEventSearchBasic
+     */
+    public function getEventJoin(): CalendarEventSearchBasic
+    {
+        return $this->eventJoin;
+    }
+
+    /**
+     * @param FileSearchBasic $fileJoin
+     * @return OpportunitySearch
+     */
+    public function setFileJoin(FileSearchBasic $fileJoin): OpportunitySearch
+    {
+        $this->fileJoin = $fileJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchBasic
+     */
+    public function getFileJoin(): FileSearchBasic
+    {
+        return $this->fileJoin;
+    }
+
+    /**
+     * @param ItemSearchBasic $itemJoin
+     * @return OpportunitySearch
+     */
+    public function setItemJoin(ItemSearchBasic $itemJoin): OpportunitySearch
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchBasic
+     */
+    public function getItemJoin(): ItemSearchBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param CampaignSearchBasic $leadSourceJoin
+     * @return OpportunitySearch
+     */
+    public function setLeadSourceJoin(CampaignSearchBasic $leadSourceJoin): OpportunitySearch
+    {
+        $this->leadSourceJoin = $leadSourceJoin;
+        return $this;
+    }
+
+    /**
+     * @return CampaignSearchBasic
+     */
+    public function getLeadSourceJoin(): CampaignSearchBasic
+    {
+        return $this->leadSourceJoin;
+    }
+
+    /**
+     * @param MessageSearchBasic $messagesJoin
+     * @return OpportunitySearch
+     */
+    public function setMessagesJoin(MessageSearchBasic $messagesJoin): OpportunitySearch
+    {
+        $this->messagesJoin = $messagesJoin;
+        return $this;
+    }
+
+    /**
+     * @return MessageSearchBasic
+     */
+    public function getMessagesJoin(): MessageSearchBasic
+    {
+        return $this->messagesJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $orderJoin
+     * @return OpportunitySearch
+     */
+    public function setOrderJoin(TransactionSearchBasic $orderJoin): OpportunitySearch
+    {
+        $this->orderJoin = $orderJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getOrderJoin(): TransactionSearchBasic
+    {
+        return $this->orderJoin;
+    }
+
+    /**
+     * @param OriginatingLeadSearchBasic $originatingLeadJoin
+     * @return OpportunitySearch
+     */
+    public function setOriginatingLeadJoin(OriginatingLeadSearchBasic $originatingLeadJoin): OpportunitySearch
+    {
+        $this->originatingLeadJoin = $originatingLeadJoin;
+        return $this;
+    }
+
+    /**
+     * @return OriginatingLeadSearchBasic
+     */
+    public function getOriginatingLeadJoin(): OriginatingLeadSearchBasic
+    {
+        return $this->originatingLeadJoin;
+    }
+
+    /**
+     * @param PartnerSearchBasic $partnerJoin
+     * @return OpportunitySearch
+     */
+    public function setPartnerJoin(PartnerSearchBasic $partnerJoin): OpportunitySearch
+    {
+        $this->partnerJoin = $partnerJoin;
+        return $this;
+    }
+
+    /**
+     * @return PartnerSearchBasic
+     */
+    public function getPartnerJoin(): PartnerSearchBasic
+    {
+        return $this->partnerJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $salesRepJoin
+     * @return OpportunitySearch
+     */
+    public function setSalesRepJoin(EmployeeSearchBasic $salesRepJoin): OpportunitySearch
+    {
+        $this->salesRepJoin = $salesRepJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getSalesRepJoin(): EmployeeSearchBasic
+    {
+        return $this->salesRepJoin;
+    }
+
+    /**
+     * @param TaskSearchBasic $taskJoin
+     * @return OpportunitySearch
+     */
+    public function setTaskJoin(TaskSearchBasic $taskJoin): OpportunitySearch
+    {
+        $this->taskJoin = $taskJoin;
+        return $this;
+    }
+
+    /**
+     * @return TaskSearchBasic
+     */
+    public function getTaskJoin(): TaskSearchBasic
+    {
+        return $this->taskJoin;
+    }
+
+    /**
+     * @param NoteSearchBasic $userNotesJoin
+     * @return OpportunitySearch
+     */
+    public function setUserNotesJoin(NoteSearchBasic $userNotesJoin): OpportunitySearch
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchBasic
+     */
+    public function getUserNotesJoin(): NoteSearchBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return OpportunitySearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): OpportunitySearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

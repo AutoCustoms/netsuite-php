@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetAccountGovernanceInfoResult {
     /**
-     * @var \NetSuite\Classes\Status
+     * @var Status
      */
-    public $status;
+    protected Status $status;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $accountConcurrencyLimit;
+    protected int $accountConcurrencyLimit;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $unallocatedConcurrencyLimit;
+    protected int $unallocatedConcurrencyLimit;
+
     static $paramtypesmap = array(
         "status" => "Status",
         "accountConcurrencyLimit" => "integer",
         "unallocatedConcurrencyLimit" => "integer",
     );
+
+    /**
+     * @param Status $status
+     * @return GetAccountGovernanceInfoResult
+     */
+    public function setStatus(Status $status): GetAccountGovernanceInfoResult
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param int $accountConcurrencyLimit
+     * @return GetAccountGovernanceInfoResult
+     */
+    public function setAccountConcurrencyLimit(int $accountConcurrencyLimit): GetAccountGovernanceInfoResult
+    {
+        $this->accountConcurrencyLimit = $accountConcurrencyLimit;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAccountConcurrencyLimit(): int
+    {
+        return $this->accountConcurrencyLimit;
+    }
+
+    /**
+     * @param int $unallocatedConcurrencyLimit
+     * @return GetAccountGovernanceInfoResult
+     */
+    public function setUnallocatedConcurrencyLimit(int $unallocatedConcurrencyLimit): GetAccountGovernanceInfoResult
+    {
+        $this->unallocatedConcurrencyLimit = $unallocatedConcurrencyLimit;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUnallocatedConcurrencyLimit(): int
+    {
+        return $this->unallocatedConcurrencyLimit;
+    }
+
 }

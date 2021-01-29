@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InvoiceExpCostList {
     /**
-     * @var \NetSuite\Classes\InvoiceExpCost[]
+     * @var InvoiceExpCost[]
      */
-    public $expCost;
+    protected array $expCost;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "expCost" => "InvoiceExpCost[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param InvoiceExpCost[] $expCost
+     * @return InvoiceExpCostList
+     */
+    public function setExpCost(InvoiceExpCost $expCost): InvoiceExpCostList
+    {
+        $this->expCost[] = $expCost;
+        return $this;
+    }
+
+    /**
+     * @return InvoiceExpCost[]
+     */
+    public function getExpCost(): array
+    {
+        return $this->expCost;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return InvoiceExpCostList
+     */
+    public function setReplaceAll(bool $replaceAll): InvoiceExpCostList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

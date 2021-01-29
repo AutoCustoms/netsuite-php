@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetSelectValueFieldDescription {
     /**
-     * @var \NetSuite\Classes\RecordType
+     * @var RecordType
      */
-    public $recordType;
+    protected RecordType $recordType;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customRecordType;
+    protected RecordRef $customRecordType;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customTransactionType;
+    protected RecordRef $customTransactionType;
+
     /**
      * @var string
      */
-    public $sublist;
+    protected string $sublist;
+
     /**
      * @var string
      */
-    public $field;
+    protected string $field;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customForm;
+    protected RecordRef $customForm;
+
     /**
-     * @var \NetSuite\Classes\GetSelectValueFilter
+     * @var GetSelectValueFilter
      */
-    public $filter;
+    protected GetSelectValueFilter $filter;
+
     /**
-     * @var \NetSuite\Classes\GetSelectFilterByFieldValueList
+     * @var GetSelectFilterByFieldValueList
      */
-    public $filterByValueList;
+    protected GetSelectFilterByFieldValueList $filterByValueList;
+
     static $paramtypesmap = array(
         "recordType" => "RecordType",
         "customRecordType" => "RecordRef",
@@ -62,4 +70,149 @@ class GetSelectValueFieldDescription {
         "filter" => "GetSelectValueFilter",
         "filterByValueList" => "GetSelectFilterByFieldValueList",
     );
+
+    /**
+     * @param RecordType $recordType
+     * @return GetSelectValueFieldDescription
+     */
+    public function setRecordType(RecordType $recordType): GetSelectValueFieldDescription
+    {
+        $this->recordType = $recordType;
+        return $this;
+    }
+
+    /**
+     * @return RecordType
+     */
+    public function getRecordType(): RecordType
+    {
+        return $this->recordType;
+    }
+
+    /**
+     * @param RecordRef $customRecordType
+     * @return GetSelectValueFieldDescription
+     */
+    public function setCustomRecordType(RecordRef $customRecordType): GetSelectValueFieldDescription
+    {
+        $this->customRecordType = $customRecordType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomRecordType(): RecordRef
+    {
+        return $this->customRecordType;
+    }
+
+    /**
+     * @param RecordRef $customTransactionType
+     * @return GetSelectValueFieldDescription
+     */
+    public function setCustomTransactionType(RecordRef $customTransactionType): GetSelectValueFieldDescription
+    {
+        $this->customTransactionType = $customTransactionType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomTransactionType(): RecordRef
+    {
+        return $this->customTransactionType;
+    }
+
+    /**
+     * @param string $sublist
+     * @return GetSelectValueFieldDescription
+     */
+    public function setSublist(string $sublist): GetSelectValueFieldDescription
+    {
+        $this->sublist = $sublist;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSublist(): string
+    {
+        return $this->sublist;
+    }
+
+    /**
+     * @param string $field
+     * @return GetSelectValueFieldDescription
+     */
+    public function setField(string $field): GetSelectValueFieldDescription
+    {
+        $this->field = $field;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getField(): string
+    {
+        return $this->field;
+    }
+
+    /**
+     * @param RecordRef $customForm
+     * @return GetSelectValueFieldDescription
+     */
+    public function setCustomForm(RecordRef $customForm): GetSelectValueFieldDescription
+    {
+        $this->customForm = $customForm;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomForm(): RecordRef
+    {
+        return $this->customForm;
+    }
+
+    /**
+     * @param GetSelectValueFilter $filter
+     * @return GetSelectValueFieldDescription
+     */
+    public function setFilter(GetSelectValueFilter $filter): GetSelectValueFieldDescription
+    {
+        $this->filter = $filter;
+        return $this;
+    }
+
+    /**
+     * @return GetSelectValueFilter
+     */
+    public function getFilter(): GetSelectValueFilter
+    {
+        return $this->filter;
+    }
+
+    /**
+     * @param GetSelectFilterByFieldValueList $filterByValueList
+     * @return GetSelectValueFieldDescription
+     */
+    public function setFilterByValueList(GetSelectFilterByFieldValueList $filterByValueList): GetSelectValueFieldDescription
+    {
+        $this->filterByValueList = $filterByValueList;
+        return $this;
+    }
+
+    /**
+     * @return GetSelectFilterByFieldValueList
+     */
+    public function getFilterByValueList(): GetSelectFilterByFieldValueList
+    {
+        return $this->filterByValueList;
+    }
+
 }

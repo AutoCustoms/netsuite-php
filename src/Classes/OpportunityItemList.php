@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class OpportunityItemList {
     /**
-     * @var \NetSuite\Classes\OpportunityItem[]
+     * @var OpportunityItem[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "item" => "OpportunityItem[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param OpportunityItem[] $item
+     * @return OpportunityItemList
+     */
+    public function setItem(OpportunityItem $item): OpportunityItemList
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return OpportunityItem[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return OpportunityItemList
+     */
+    public function setReplaceAll(bool $replaceAll): OpportunityItemList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

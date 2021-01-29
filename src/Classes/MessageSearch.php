@@ -14,76 +14,92 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class MessageSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\MessageSearchBasic
+     * @var MessageSearchBasic
      */
-    public $basic;
+    protected MessageSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\FileSearchBasic
+     * @var FileSearchBasic
      */
-    public $attachmentsJoin;
+    protected FileSearchBasic $attachmentsJoin;
+
     /**
-     * @var \NetSuite\Classes\EntitySearchBasic
+     * @var EntitySearchBasic
      */
-    public $authorJoin;
+    protected EntitySearchBasic $authorJoin;
+
     /**
-     * @var \NetSuite\Classes\CampaignSearchBasic
+     * @var CampaignSearchBasic
      */
-    public $campaignJoin;
+    protected CampaignSearchBasic $campaignJoin;
+
     /**
-     * @var \NetSuite\Classes\SupportCaseSearchBasic
+     * @var SupportCaseSearchBasic
      */
-    public $caseJoin;
+    protected SupportCaseSearchBasic $caseJoin;
+
     /**
-     * @var \NetSuite\Classes\ContactSearchBasic
+     * @var ContactSearchBasic
      */
-    public $contactJoin;
+    protected ContactSearchBasic $contactJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $customerJoin;
+    protected CustomerSearchBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $employeeJoin;
+    protected EmployeeSearchBasic $employeeJoin;
+
     /**
-     * @var \NetSuite\Classes\EntitySearchBasic
+     * @var EntitySearchBasic
      */
-    public $entityJoin;
+    protected EntitySearchBasic $entityJoin;
+
     /**
-     * @var \NetSuite\Classes\OpportunitySearchBasic
+     * @var OpportunitySearchBasic
      */
-    public $opportunityJoin;
+    protected OpportunitySearchBasic $opportunityJoin;
+
     /**
-     * @var \NetSuite\Classes\OriginatingLeadSearchBasic
+     * @var OriginatingLeadSearchBasic
      */
-    public $originatingLeadJoin;
+    protected OriginatingLeadSearchBasic $originatingLeadJoin;
+
     /**
-     * @var \NetSuite\Classes\PartnerSearchBasic
+     * @var PartnerSearchBasic
      */
-    public $partnerJoin;
+    protected PartnerSearchBasic $partnerJoin;
+
     /**
-     * @var \NetSuite\Classes\EntitySearchBasic
+     * @var EntitySearchBasic
      */
-    public $recipientJoin;
+    protected EntitySearchBasic $recipientJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\VendorSearchBasic
+     * @var VendorSearchBasic
      */
-    public $vendorJoin;
+    protected VendorSearchBasic $vendorJoin;
+
     static $paramtypesmap = array(
         "basic" => "MessageSearchBasic",
         "attachmentsJoin" => "FileSearchBasic",
@@ -102,4 +118,293 @@ class MessageSearch extends SearchRecord {
         "userJoin" => "EmployeeSearchBasic",
         "vendorJoin" => "VendorSearchBasic",
     );
+
+    /**
+     * @param MessageSearchBasic $basic
+     * @return MessageSearch
+     */
+    public function setBasic(MessageSearchBasic $basic): MessageSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return MessageSearchBasic
+     */
+    public function getBasic(): MessageSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param FileSearchBasic $attachmentsJoin
+     * @return MessageSearch
+     */
+    public function setAttachmentsJoin(FileSearchBasic $attachmentsJoin): MessageSearch
+    {
+        $this->attachmentsJoin = $attachmentsJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchBasic
+     */
+    public function getAttachmentsJoin(): FileSearchBasic
+    {
+        return $this->attachmentsJoin;
+    }
+
+    /**
+     * @param EntitySearchBasic $authorJoin
+     * @return MessageSearch
+     */
+    public function setAuthorJoin(EntitySearchBasic $authorJoin): MessageSearch
+    {
+        $this->authorJoin = $authorJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntitySearchBasic
+     */
+    public function getAuthorJoin(): EntitySearchBasic
+    {
+        return $this->authorJoin;
+    }
+
+    /**
+     * @param CampaignSearchBasic $campaignJoin
+     * @return MessageSearch
+     */
+    public function setCampaignJoin(CampaignSearchBasic $campaignJoin): MessageSearch
+    {
+        $this->campaignJoin = $campaignJoin;
+        return $this;
+    }
+
+    /**
+     * @return CampaignSearchBasic
+     */
+    public function getCampaignJoin(): CampaignSearchBasic
+    {
+        return $this->campaignJoin;
+    }
+
+    /**
+     * @param SupportCaseSearchBasic $caseJoin
+     * @return MessageSearch
+     */
+    public function setCaseJoin(SupportCaseSearchBasic $caseJoin): MessageSearch
+    {
+        $this->caseJoin = $caseJoin;
+        return $this;
+    }
+
+    /**
+     * @return SupportCaseSearchBasic
+     */
+    public function getCaseJoin(): SupportCaseSearchBasic
+    {
+        return $this->caseJoin;
+    }
+
+    /**
+     * @param ContactSearchBasic $contactJoin
+     * @return MessageSearch
+     */
+    public function setContactJoin(ContactSearchBasic $contactJoin): MessageSearch
+    {
+        $this->contactJoin = $contactJoin;
+        return $this;
+    }
+
+    /**
+     * @return ContactSearchBasic
+     */
+    public function getContactJoin(): ContactSearchBasic
+    {
+        return $this->contactJoin;
+    }
+
+    /**
+     * @param CustomerSearchBasic $customerJoin
+     * @return MessageSearch
+     */
+    public function setCustomerJoin(CustomerSearchBasic $customerJoin): MessageSearch
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $employeeJoin
+     * @return MessageSearch
+     */
+    public function setEmployeeJoin(EmployeeSearchBasic $employeeJoin): MessageSearch
+    {
+        $this->employeeJoin = $employeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getEmployeeJoin(): EmployeeSearchBasic
+    {
+        return $this->employeeJoin;
+    }
+
+    /**
+     * @param EntitySearchBasic $entityJoin
+     * @return MessageSearch
+     */
+    public function setEntityJoin(EntitySearchBasic $entityJoin): MessageSearch
+    {
+        $this->entityJoin = $entityJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntitySearchBasic
+     */
+    public function getEntityJoin(): EntitySearchBasic
+    {
+        return $this->entityJoin;
+    }
+
+    /**
+     * @param OpportunitySearchBasic $opportunityJoin
+     * @return MessageSearch
+     */
+    public function setOpportunityJoin(OpportunitySearchBasic $opportunityJoin): MessageSearch
+    {
+        $this->opportunityJoin = $opportunityJoin;
+        return $this;
+    }
+
+    /**
+     * @return OpportunitySearchBasic
+     */
+    public function getOpportunityJoin(): OpportunitySearchBasic
+    {
+        return $this->opportunityJoin;
+    }
+
+    /**
+     * @param OriginatingLeadSearchBasic $originatingLeadJoin
+     * @return MessageSearch
+     */
+    public function setOriginatingLeadJoin(OriginatingLeadSearchBasic $originatingLeadJoin): MessageSearch
+    {
+        $this->originatingLeadJoin = $originatingLeadJoin;
+        return $this;
+    }
+
+    /**
+     * @return OriginatingLeadSearchBasic
+     */
+    public function getOriginatingLeadJoin(): OriginatingLeadSearchBasic
+    {
+        return $this->originatingLeadJoin;
+    }
+
+    /**
+     * @param PartnerSearchBasic $partnerJoin
+     * @return MessageSearch
+     */
+    public function setPartnerJoin(PartnerSearchBasic $partnerJoin): MessageSearch
+    {
+        $this->partnerJoin = $partnerJoin;
+        return $this;
+    }
+
+    /**
+     * @return PartnerSearchBasic
+     */
+    public function getPartnerJoin(): PartnerSearchBasic
+    {
+        return $this->partnerJoin;
+    }
+
+    /**
+     * @param EntitySearchBasic $recipientJoin
+     * @return MessageSearch
+     */
+    public function setRecipientJoin(EntitySearchBasic $recipientJoin): MessageSearch
+    {
+        $this->recipientJoin = $recipientJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntitySearchBasic
+     */
+    public function getRecipientJoin(): EntitySearchBasic
+    {
+        return $this->recipientJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $transactionJoin
+     * @return MessageSearch
+     */
+    public function setTransactionJoin(TransactionSearchBasic $transactionJoin): MessageSearch
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getTransactionJoin(): TransactionSearchBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return MessageSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): MessageSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param VendorSearchBasic $vendorJoin
+     * @return MessageSearch
+     */
+    public function setVendorJoin(VendorSearchBasic $vendorJoin): MessageSearch
+    {
+        $this->vendorJoin = $vendorJoin;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearchBasic
+     */
+    public function getVendorJoin(): VendorSearchBasic
+    {
+        return $this->vendorJoin;
+    }
+
 }

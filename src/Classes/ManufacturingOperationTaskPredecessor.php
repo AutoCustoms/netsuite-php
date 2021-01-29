@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ManufacturingOperationTaskPredecessor {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $task;
+    protected RecordRef $task;
+
     /**
-     * @var \NetSuite\Classes\ManufacturingOperationTaskPredecessorPredecessorType
+     * @var ManufacturingOperationTaskPredecessorPredecessorType
      */
-    public $type;
-    /**
-     * @var string
-     */
-    public $startDate;
+    protected ManufacturingOperationTaskPredecessorPredecessorType $type;
+
     /**
      * @var string
      */
-    public $endDate;
-    /**
-     * @var \NetSuite\Classes\ManufacturingLagType
-     */
-    public $lagType;
-    /**
-     * @var integer
-     */
-    public $lagAmount;
+    protected string $startDate;
+
     /**
      * @var string
      */
-    public $lagUnits;
+    protected string $endDate;
+
+    /**
+     * @var ManufacturingLagType
+     */
+    protected ManufacturingLagType $lagType;
+
+    /**
+     * @var int
+     */
+    protected int $lagAmount;
+
+    /**
+     * @var string
+     */
+    protected string $lagUnits;
+
     static $paramtypesmap = array(
         "task" => "RecordRef",
         "type" => "ManufacturingOperationTaskPredecessorPredecessorType",
@@ -57,4 +64,131 @@ class ManufacturingOperationTaskPredecessor {
         "lagAmount" => "integer",
         "lagUnits" => "string",
     );
+
+    /**
+     * @param RecordRef $task
+     * @return ManufacturingOperationTaskPredecessor
+     */
+    public function setTask(RecordRef $task): ManufacturingOperationTaskPredecessor
+    {
+        $this->task = $task;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTask(): RecordRef
+    {
+        return $this->task;
+    }
+
+    /**
+     * @param ManufacturingOperationTaskPredecessorPredecessorType $type
+     * @return ManufacturingOperationTaskPredecessor
+     */
+    public function setType(ManufacturingOperationTaskPredecessorPredecessorType $type): ManufacturingOperationTaskPredecessor
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return ManufacturingOperationTaskPredecessorPredecessorType
+     */
+    public function getType(): ManufacturingOperationTaskPredecessorPredecessorType
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $startDate
+     * @return ManufacturingOperationTaskPredecessor
+     */
+    public function setStartDate(string $startDate): ManufacturingOperationTaskPredecessor
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStartDate(): string
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param string $endDate
+     * @return ManufacturingOperationTaskPredecessor
+     */
+    public function setEndDate(string $endDate): ManufacturingOperationTaskPredecessor
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndDate(): string
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param ManufacturingLagType $lagType
+     * @return ManufacturingOperationTaskPredecessor
+     */
+    public function setLagType(ManufacturingLagType $lagType): ManufacturingOperationTaskPredecessor
+    {
+        $this->lagType = $lagType;
+        return $this;
+    }
+
+    /**
+     * @return ManufacturingLagType
+     */
+    public function getLagType(): ManufacturingLagType
+    {
+        return $this->lagType;
+    }
+
+    /**
+     * @param int $lagAmount
+     * @return ManufacturingOperationTaskPredecessor
+     */
+    public function setLagAmount(int $lagAmount): ManufacturingOperationTaskPredecessor
+    {
+        $this->lagAmount = $lagAmount;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLagAmount(): int
+    {
+        return $this->lagAmount;
+    }
+
+    /**
+     * @param string $lagUnits
+     * @return ManufacturingOperationTaskPredecessor
+     */
+    public function setLagUnits(string $lagUnits): ManufacturingOperationTaskPredecessor
+    {
+        $this->lagUnits = $lagUnits;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLagUnits(): string
+    {
+        return $this->lagUnits;
+    }
+
 }

@@ -14,196 +14,230 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SubsidiarySearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $accountingBook;
+    protected array $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $accountingBookCurrency;
+    protected array $accountingBookCurrency;
+
+    protected $address1;
+    protected $address2;
+    protected $address3;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address1;
+    protected array $anonymousCustomerInboundEmail;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address2;
+    protected array $anonymousCustomerOnlineForms;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $address3;
+    protected array $caseAssignmentTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $anonymousCustomerInboundEmail;
+    protected array $caseAutomaticClosureTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $anonymousCustomerOnlineForms;
+    protected array $caseCopyEmployeeTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $caseAssignmentTemplate;
+    protected array $caseCreationTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $caseAutomaticClosureTemplate;
+    protected array $caseEscalationTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $caseCopyEmployeeTemplate;
+    protected array $caseUpdateTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $caseCreationTemplate;
+    protected array $city;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $caseEscalationTemplate;
+    protected array $companyNameForSupportMessages;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $caseUpdateTemplate;
+    protected array $country;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $city;
+    protected array $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $companyNameForSupportMessages;
+    protected array $effectiveFrom;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $country;
+    protected array $email;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $currency;
+    protected array $employeeCaseUpdateTemplate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnSelectField[]
      */
-    public $effectiveFrom;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $email;
+    protected array $fax;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $employeeCaseUpdateTemplate;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $externalId;
+    protected array $isElimination;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $fax;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $internalId;
+    protected array $legalName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $isElimination;
+    protected array $mainSupportEmailAddress;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnStringField[]
      */
-    public $isInactive;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $legalName;
+    protected array $nameNoHierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnSelectField[]
      */
-    public $mainSupportEmailAddress;
+    protected array $nexus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $phone;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $nameNoHierarchy;
+    protected array $purchaseOrderAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $nexus;
+    protected array $purchaseOrderQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $phone;
+    protected array $purchaseOrderQuantityDiff;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $purchaseOrderAmount;
+    protected array $receiptAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $purchaseOrderQuantity;
+    protected array $receiptQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $purchaseOrderQuantityDiff;
+    protected array $receiptQuantityDiff;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $receiptAmount;
+    protected array $state;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnSelectField[]
      */
-    public $receiptQuantity;
+    protected array $taxEngine;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnStringField[]
      */
-    public $receiptQuantityDiff;
+    protected array $taxIdNum;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $state;
+    protected array $taxRegistrationNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnStringField[]
      */
-    public $taxEngine;
+    protected array $tranPrefix;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $taxIdNum;
+    protected array $url;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnDateField[]
      */
-    public $taxRegistrationNumber;
+    protected array $validUntil;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $tranPrefix;
+    protected array $zip;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnCustomFieldList
      */
-    public $url;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
-     */
-    public $validUntil;
-    /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $zip;
-    /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "accountingBook" => "SearchColumnSelectField[]",
         "accountingBookCurrency" => "SearchColumnSelectField[]",
@@ -252,4 +286,779 @@ class SubsidiarySearchRowBasic extends SearchRowBasic {
         "zip" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $accountingBook
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setAccountingBook(SearchColumnSelectField $accountingBook): SubsidiarySearchRowBasic
+    {
+        $this->accountingBook[] = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAccountingBook(): array
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $accountingBookCurrency
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setAccountingBookCurrency(SearchColumnSelectField $accountingBookCurrency): SubsidiarySearchRowBasic
+    {
+        $this->accountingBookCurrency[] = $accountingBookCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAccountingBookCurrency(): array
+    {
+        return $this->accountingBookCurrency;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $anonymousCustomerInboundEmail
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setAnonymousCustomerInboundEmail(SearchColumnStringField $anonymousCustomerInboundEmail): SubsidiarySearchRowBasic
+    {
+        $this->anonymousCustomerInboundEmail[] = $anonymousCustomerInboundEmail;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAnonymousCustomerInboundEmail(): array
+    {
+        return $this->anonymousCustomerInboundEmail;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $anonymousCustomerOnlineForms
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setAnonymousCustomerOnlineForms(SearchColumnStringField $anonymousCustomerOnlineForms): SubsidiarySearchRowBasic
+    {
+        $this->anonymousCustomerOnlineForms[] = $anonymousCustomerOnlineForms;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getAnonymousCustomerOnlineForms(): array
+    {
+        return $this->anonymousCustomerOnlineForms;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $caseAssignmentTemplate
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCaseAssignmentTemplate(SearchColumnStringField $caseAssignmentTemplate): SubsidiarySearchRowBasic
+    {
+        $this->caseAssignmentTemplate[] = $caseAssignmentTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCaseAssignmentTemplate(): array
+    {
+        return $this->caseAssignmentTemplate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $caseAutomaticClosureTemplate
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCaseAutomaticClosureTemplate(SearchColumnStringField $caseAutomaticClosureTemplate): SubsidiarySearchRowBasic
+    {
+        $this->caseAutomaticClosureTemplate[] = $caseAutomaticClosureTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCaseAutomaticClosureTemplate(): array
+    {
+        return $this->caseAutomaticClosureTemplate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $caseCopyEmployeeTemplate
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCaseCopyEmployeeTemplate(SearchColumnStringField $caseCopyEmployeeTemplate): SubsidiarySearchRowBasic
+    {
+        $this->caseCopyEmployeeTemplate[] = $caseCopyEmployeeTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCaseCopyEmployeeTemplate(): array
+    {
+        return $this->caseCopyEmployeeTemplate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $caseCreationTemplate
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCaseCreationTemplate(SearchColumnStringField $caseCreationTemplate): SubsidiarySearchRowBasic
+    {
+        $this->caseCreationTemplate[] = $caseCreationTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCaseCreationTemplate(): array
+    {
+        return $this->caseCreationTemplate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $caseEscalationTemplate
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCaseEscalationTemplate(SearchColumnStringField $caseEscalationTemplate): SubsidiarySearchRowBasic
+    {
+        $this->caseEscalationTemplate[] = $caseEscalationTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCaseEscalationTemplate(): array
+    {
+        return $this->caseEscalationTemplate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $caseUpdateTemplate
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCaseUpdateTemplate(SearchColumnStringField $caseUpdateTemplate): SubsidiarySearchRowBasic
+    {
+        $this->caseUpdateTemplate[] = $caseUpdateTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCaseUpdateTemplate(): array
+    {
+        return $this->caseUpdateTemplate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $city
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCity(SearchColumnStringField $city): SubsidiarySearchRowBasic
+    {
+        $this->city[] = $city;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCity(): array
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $companyNameForSupportMessages
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCompanyNameForSupportMessages(SearchColumnStringField $companyNameForSupportMessages): SubsidiarySearchRowBasic
+    {
+        $this->companyNameForSupportMessages[] = $companyNameForSupportMessages;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCompanyNameForSupportMessages(): array
+    {
+        return $this->companyNameForSupportMessages;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $country
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCountry(SearchColumnEnumSelectField $country): SubsidiarySearchRowBasic
+    {
+        $this->country[] = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCountry(): array
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $currency
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCurrency(SearchColumnSelectField $currency): SubsidiarySearchRowBasic
+    {
+        $this->currency[] = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCurrency(): array
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $effectiveFrom
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setEffectiveFrom(SearchColumnDateField $effectiveFrom): SubsidiarySearchRowBasic
+    {
+        $this->effectiveFrom[] = $effectiveFrom;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEffectiveFrom(): array
+    {
+        return $this->effectiveFrom;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $email
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setEmail(SearchColumnStringField $email): SubsidiarySearchRowBasic
+    {
+        $this->email[] = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEmail(): array
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $employeeCaseUpdateTemplate
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setEmployeeCaseUpdateTemplate(SearchColumnStringField $employeeCaseUpdateTemplate): SubsidiarySearchRowBasic
+    {
+        $this->employeeCaseUpdateTemplate[] = $employeeCaseUpdateTemplate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEmployeeCaseUpdateTemplate(): array
+    {
+        return $this->employeeCaseUpdateTemplate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): SubsidiarySearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $fax
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setFax(SearchColumnStringField $fax): SubsidiarySearchRowBasic
+    {
+        $this->fax[] = $fax;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getFax(): array
+    {
+        return $this->fax;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): SubsidiarySearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isElimination
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setIsElimination(SearchColumnBooleanField $isElimination): SubsidiarySearchRowBasic
+    {
+        $this->isElimination[] = $isElimination;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsElimination(): array
+    {
+        return $this->isElimination;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): SubsidiarySearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $legalName
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setLegalName(SearchColumnStringField $legalName): SubsidiarySearchRowBasic
+    {
+        $this->legalName[] = $legalName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLegalName(): array
+    {
+        return $this->legalName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $mainSupportEmailAddress
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setMainSupportEmailAddress(SearchColumnStringField $mainSupportEmailAddress): SubsidiarySearchRowBasic
+    {
+        $this->mainSupportEmailAddress[] = $mainSupportEmailAddress;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMainSupportEmailAddress(): array
+    {
+        return $this->mainSupportEmailAddress;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): SubsidiarySearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $nameNoHierarchy
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setNameNoHierarchy(SearchColumnStringField $nameNoHierarchy): SubsidiarySearchRowBasic
+    {
+        $this->nameNoHierarchy[] = $nameNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getNameNoHierarchy(): array
+    {
+        return $this->nameNoHierarchy;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $nexus
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setNexus(SearchColumnSelectField $nexus): SubsidiarySearchRowBasic
+    {
+        $this->nexus[] = $nexus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getNexus(): array
+    {
+        return $this->nexus;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $phone
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setPhone(SearchColumnStringField $phone): SubsidiarySearchRowBasic
+    {
+        $this->phone[] = $phone;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPhone(): array
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $purchaseOrderAmount
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setPurchaseOrderAmount(SearchColumnDoubleField $purchaseOrderAmount): SubsidiarySearchRowBasic
+    {
+        $this->purchaseOrderAmount[] = $purchaseOrderAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPurchaseOrderAmount(): array
+    {
+        return $this->purchaseOrderAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $purchaseOrderQuantity
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setPurchaseOrderQuantity(SearchColumnDoubleField $purchaseOrderQuantity): SubsidiarySearchRowBasic
+    {
+        $this->purchaseOrderQuantity[] = $purchaseOrderQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPurchaseOrderQuantity(): array
+    {
+        return $this->purchaseOrderQuantity;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $purchaseOrderQuantityDiff
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setPurchaseOrderQuantityDiff(SearchColumnDoubleField $purchaseOrderQuantityDiff): SubsidiarySearchRowBasic
+    {
+        $this->purchaseOrderQuantityDiff[] = $purchaseOrderQuantityDiff;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getPurchaseOrderQuantityDiff(): array
+    {
+        return $this->purchaseOrderQuantityDiff;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $receiptAmount
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setReceiptAmount(SearchColumnDoubleField $receiptAmount): SubsidiarySearchRowBasic
+    {
+        $this->receiptAmount[] = $receiptAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getReceiptAmount(): array
+    {
+        return $this->receiptAmount;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $receiptQuantity
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setReceiptQuantity(SearchColumnDoubleField $receiptQuantity): SubsidiarySearchRowBasic
+    {
+        $this->receiptQuantity[] = $receiptQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getReceiptQuantity(): array
+    {
+        return $this->receiptQuantity;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $receiptQuantityDiff
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setReceiptQuantityDiff(SearchColumnDoubleField $receiptQuantityDiff): SubsidiarySearchRowBasic
+    {
+        $this->receiptQuantityDiff[] = $receiptQuantityDiff;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getReceiptQuantityDiff(): array
+    {
+        return $this->receiptQuantityDiff;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $state
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setState(SearchColumnStringField $state): SubsidiarySearchRowBasic
+    {
+        $this->state[] = $state;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getState(): array
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $taxEngine
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setTaxEngine(SearchColumnSelectField $taxEngine): SubsidiarySearchRowBasic
+    {
+        $this->taxEngine[] = $taxEngine;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTaxEngine(): array
+    {
+        return $this->taxEngine;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $taxIdNum
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setTaxIdNum(SearchColumnStringField $taxIdNum): SubsidiarySearchRowBasic
+    {
+        $this->taxIdNum[] = $taxIdNum;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTaxIdNum(): array
+    {
+        return $this->taxIdNum;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $taxRegistrationNumber
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setTaxRegistrationNumber(SearchColumnStringField $taxRegistrationNumber): SubsidiarySearchRowBasic
+    {
+        $this->taxRegistrationNumber[] = $taxRegistrationNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTaxRegistrationNumber(): array
+    {
+        return $this->taxRegistrationNumber;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $tranPrefix
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setTranPrefix(SearchColumnStringField $tranPrefix): SubsidiarySearchRowBasic
+    {
+        $this->tranPrefix[] = $tranPrefix;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTranPrefix(): array
+    {
+        return $this->tranPrefix;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $url
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setUrl(SearchColumnStringField $url): SubsidiarySearchRowBasic
+    {
+        $this->url[] = $url;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getUrl(): array
+    {
+        return $this->url;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $validUntil
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setValidUntil(SearchColumnDateField $validUntil): SubsidiarySearchRowBasic
+    {
+        $this->validUntil[] = $validUntil;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getValidUntil(): array
+    {
+        return $this->validUntil;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $zip
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setZip(SearchColumnStringField $zip): SubsidiarySearchRowBasic
+    {
+        $this->zip[] = $zip;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getZip(): array
+    {
+        return $this->zip;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return SubsidiarySearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): SubsidiarySearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

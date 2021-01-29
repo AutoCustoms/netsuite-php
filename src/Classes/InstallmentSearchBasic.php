@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InstallmentSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $amount;
+    protected SearchDoubleField $amount;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $amountPaid;
+    protected SearchDoubleField $amountPaid;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $amountRemaining;
+    protected SearchDoubleField $amountRemaining;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $daysOverdue;
+    protected SearchLongField $daysOverdue;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $dueDate;
+    protected SearchDateField $dueDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $fxAmount;
+    protected SearchDoubleField $fxAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $fxAmountPaid;
+    protected SearchDoubleField $fxAmountPaid;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $fxAmountRemaining;
+    protected SearchDoubleField $fxAmountRemaining;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $installmentNumber;
+    protected SearchLongField $installmentNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
+     * @var SearchCustomFieldList
      */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "amount" => "SearchDoubleField",
         "amountPaid" => "SearchDoubleField",
@@ -72,4 +82,185 @@ class InstallmentSearchBasic extends SearchRecordBasic {
         "installmentNumber" => "SearchLongField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchDoubleField $amount
+     * @return InstallmentSearchBasic
+     */
+    public function setAmount(SearchDoubleField $amount): InstallmentSearchBasic
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getAmount(): SearchDoubleField
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param SearchDoubleField $amountPaid
+     * @return InstallmentSearchBasic
+     */
+    public function setAmountPaid(SearchDoubleField $amountPaid): InstallmentSearchBasic
+    {
+        $this->amountPaid = $amountPaid;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getAmountPaid(): SearchDoubleField
+    {
+        return $this->amountPaid;
+    }
+
+    /**
+     * @param SearchDoubleField $amountRemaining
+     * @return InstallmentSearchBasic
+     */
+    public function setAmountRemaining(SearchDoubleField $amountRemaining): InstallmentSearchBasic
+    {
+        $this->amountRemaining = $amountRemaining;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getAmountRemaining(): SearchDoubleField
+    {
+        return $this->amountRemaining;
+    }
+
+    /**
+     * @param SearchLongField $daysOverdue
+     * @return InstallmentSearchBasic
+     */
+    public function setDaysOverdue(SearchLongField $daysOverdue): InstallmentSearchBasic
+    {
+        $this->daysOverdue = $daysOverdue;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getDaysOverdue(): SearchLongField
+    {
+        return $this->daysOverdue;
+    }
+
+    /**
+     * @param SearchDateField $dueDate
+     * @return InstallmentSearchBasic
+     */
+    public function setDueDate(SearchDateField $dueDate): InstallmentSearchBasic
+    {
+        $this->dueDate = $dueDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDueDate(): SearchDateField
+    {
+        return $this->dueDate;
+    }
+
+    /**
+     * @param SearchDoubleField $fxAmount
+     * @return InstallmentSearchBasic
+     */
+    public function setFxAmount(SearchDoubleField $fxAmount): InstallmentSearchBasic
+    {
+        $this->fxAmount = $fxAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getFxAmount(): SearchDoubleField
+    {
+        return $this->fxAmount;
+    }
+
+    /**
+     * @param SearchDoubleField $fxAmountPaid
+     * @return InstallmentSearchBasic
+     */
+    public function setFxAmountPaid(SearchDoubleField $fxAmountPaid): InstallmentSearchBasic
+    {
+        $this->fxAmountPaid = $fxAmountPaid;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getFxAmountPaid(): SearchDoubleField
+    {
+        return $this->fxAmountPaid;
+    }
+
+    /**
+     * @param SearchDoubleField $fxAmountRemaining
+     * @return InstallmentSearchBasic
+     */
+    public function setFxAmountRemaining(SearchDoubleField $fxAmountRemaining): InstallmentSearchBasic
+    {
+        $this->fxAmountRemaining = $fxAmountRemaining;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getFxAmountRemaining(): SearchDoubleField
+    {
+        return $this->fxAmountRemaining;
+    }
+
+    /**
+     * @param SearchLongField $installmentNumber
+     * @return InstallmentSearchBasic
+     */
+    public function setInstallmentNumber(SearchLongField $installmentNumber): InstallmentSearchBasic
+    {
+        $this->installmentNumber = $installmentNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInstallmentNumber(): SearchLongField
+    {
+        return $this->installmentNumber;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return InstallmentSearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): InstallmentSearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

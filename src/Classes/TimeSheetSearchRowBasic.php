@@ -14,48 +14,57 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeSheetSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $approvalStatus;
+    protected array $approvalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $employee;
+    protected array $employee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $endDate;
+    protected array $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $id;
+    protected array $id;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $startDate;
+    protected array $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $totalHours;
+    protected array $totalHours;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "approvalStatus" => "SearchColumnSelectField[]",
         "employee" => "SearchColumnSelectField[]",
@@ -67,4 +76,167 @@ class TimeSheetSearchRowBasic extends SearchRowBasic {
         "totalHours" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $approvalStatus
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setApprovalStatus(SearchColumnSelectField $approvalStatus): TimeSheetSearchRowBasic
+    {
+        $this->approvalStatus[] = $approvalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getApprovalStatus(): array
+    {
+        return $this->approvalStatus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $employee
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setEmployee(SearchColumnSelectField $employee): TimeSheetSearchRowBasic
+    {
+        $this->employee[] = $employee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEmployee(): array
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $endDate
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setEndDate(SearchColumnDateField $endDate): TimeSheetSearchRowBasic
+    {
+        $this->endDate[] = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEndDate(): array
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): TimeSheetSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $id
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setId(SearchColumnLongField $id): TimeSheetSearchRowBasic
+    {
+        $this->id[] = $id;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getId(): array
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): TimeSheetSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $startDate
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setStartDate(SearchColumnDateField $startDate): TimeSheetSearchRowBasic
+    {
+        $this->startDate[] = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getStartDate(): array
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $totalHours
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setTotalHours(SearchColumnStringField $totalHours): TimeSheetSearchRowBasic
+    {
+        $this->totalHours[] = $totalHours;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTotalHours(): array
+    {
+        return $this->totalHours;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return TimeSheetSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): TimeSheetSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

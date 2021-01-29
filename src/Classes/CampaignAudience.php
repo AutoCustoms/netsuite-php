@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,23 +23,28 @@ class CampaignAudience extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $internalId;
+    protected bool $isInactive;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "description" => "string",
@@ -47,4 +52,95 @@ class CampaignAudience extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return CampaignAudience
+     */
+    public function setName(string $name): CampaignAudience
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $description
+     * @return CampaignAudience
+     */
+    public function setDescription(string $description): CampaignAudience
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return CampaignAudience
+     */
+    public function setIsInactive(bool $isInactive): CampaignAudience
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param string $internalId
+     * @return CampaignAudience
+     */
+    public function setInternalId(string $internalId): CampaignAudience
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return CampaignAudience
+     */
+    public function setExternalId(string $externalId): CampaignAudience
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

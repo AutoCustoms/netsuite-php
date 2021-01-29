@@ -14,64 +14,77 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CalendarEventSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\CalendarEventSearchBasic
+     * @var CalendarEventSearchBasic
      */
-    public $basic;
+    protected CalendarEventSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EntitySearchBasic
+     * @var EntitySearchBasic
      */
-    public $attendeeJoin;
+    protected EntitySearchBasic $attendeeJoin;
+
     /**
-     * @var \NetSuite\Classes\ContactSearchBasic
+     * @var ContactSearchBasic
      */
-    public $attendeeContactJoin;
+    protected ContactSearchBasic $attendeeContactJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $attendeeCustomerJoin;
+    protected CustomerSearchBasic $attendeeCustomerJoin;
+
     /**
-     * @var \NetSuite\Classes\SupportCaseSearchBasic
+     * @var SupportCaseSearchBasic
      */
-    public $caseJoin;
+    protected SupportCaseSearchBasic $caseJoin;
+
     /**
-     * @var \NetSuite\Classes\FileSearchBasic
+     * @var FileSearchBasic
      */
-    public $fileJoin;
+    protected FileSearchBasic $fileJoin;
+
     /**
-     * @var \NetSuite\Classes\OpportunitySearchBasic
+     * @var OpportunitySearchBasic
      */
-    public $opportunityJoin;
+    protected OpportunitySearchBasic $opportunityJoin;
+
     /**
-     * @var \NetSuite\Classes\OriginatingLeadSearchBasic
+     * @var OriginatingLeadSearchBasic
      */
-    public $originatingLeadJoin;
+    protected OriginatingLeadSearchBasic $originatingLeadJoin;
+
     /**
-     * @var \NetSuite\Classes\TimeBillSearchBasic
+     * @var TimeBillSearchBasic
      */
-    public $timeJoin;
+    protected TimeBillSearchBasic $timeJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchBasic
+     * @var NoteSearchBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "CalendarEventSearchBasic",
         "attendeeJoin" => "EntitySearchBasic",
@@ -87,4 +100,239 @@ class CalendarEventSearch extends SearchRecord {
         "userNotesJoin" => "NoteSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param CalendarEventSearchBasic $basic
+     * @return CalendarEventSearch
+     */
+    public function setBasic(CalendarEventSearchBasic $basic): CalendarEventSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return CalendarEventSearchBasic
+     */
+    public function getBasic(): CalendarEventSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EntitySearchBasic $attendeeJoin
+     * @return CalendarEventSearch
+     */
+    public function setAttendeeJoin(EntitySearchBasic $attendeeJoin): CalendarEventSearch
+    {
+        $this->attendeeJoin = $attendeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntitySearchBasic
+     */
+    public function getAttendeeJoin(): EntitySearchBasic
+    {
+        return $this->attendeeJoin;
+    }
+
+    /**
+     * @param ContactSearchBasic $attendeeContactJoin
+     * @return CalendarEventSearch
+     */
+    public function setAttendeeContactJoin(ContactSearchBasic $attendeeContactJoin): CalendarEventSearch
+    {
+        $this->attendeeContactJoin = $attendeeContactJoin;
+        return $this;
+    }
+
+    /**
+     * @return ContactSearchBasic
+     */
+    public function getAttendeeContactJoin(): ContactSearchBasic
+    {
+        return $this->attendeeContactJoin;
+    }
+
+    /**
+     * @param CustomerSearchBasic $attendeeCustomerJoin
+     * @return CalendarEventSearch
+     */
+    public function setAttendeeCustomerJoin(CustomerSearchBasic $attendeeCustomerJoin): CalendarEventSearch
+    {
+        $this->attendeeCustomerJoin = $attendeeCustomerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getAttendeeCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->attendeeCustomerJoin;
+    }
+
+    /**
+     * @param SupportCaseSearchBasic $caseJoin
+     * @return CalendarEventSearch
+     */
+    public function setCaseJoin(SupportCaseSearchBasic $caseJoin): CalendarEventSearch
+    {
+        $this->caseJoin = $caseJoin;
+        return $this;
+    }
+
+    /**
+     * @return SupportCaseSearchBasic
+     */
+    public function getCaseJoin(): SupportCaseSearchBasic
+    {
+        return $this->caseJoin;
+    }
+
+    /**
+     * @param FileSearchBasic $fileJoin
+     * @return CalendarEventSearch
+     */
+    public function setFileJoin(FileSearchBasic $fileJoin): CalendarEventSearch
+    {
+        $this->fileJoin = $fileJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchBasic
+     */
+    public function getFileJoin(): FileSearchBasic
+    {
+        return $this->fileJoin;
+    }
+
+    /**
+     * @param OpportunitySearchBasic $opportunityJoin
+     * @return CalendarEventSearch
+     */
+    public function setOpportunityJoin(OpportunitySearchBasic $opportunityJoin): CalendarEventSearch
+    {
+        $this->opportunityJoin = $opportunityJoin;
+        return $this;
+    }
+
+    /**
+     * @return OpportunitySearchBasic
+     */
+    public function getOpportunityJoin(): OpportunitySearchBasic
+    {
+        return $this->opportunityJoin;
+    }
+
+    /**
+     * @param OriginatingLeadSearchBasic $originatingLeadJoin
+     * @return CalendarEventSearch
+     */
+    public function setOriginatingLeadJoin(OriginatingLeadSearchBasic $originatingLeadJoin): CalendarEventSearch
+    {
+        $this->originatingLeadJoin = $originatingLeadJoin;
+        return $this;
+    }
+
+    /**
+     * @return OriginatingLeadSearchBasic
+     */
+    public function getOriginatingLeadJoin(): OriginatingLeadSearchBasic
+    {
+        return $this->originatingLeadJoin;
+    }
+
+    /**
+     * @param TimeBillSearchBasic $timeJoin
+     * @return CalendarEventSearch
+     */
+    public function setTimeJoin(TimeBillSearchBasic $timeJoin): CalendarEventSearch
+    {
+        $this->timeJoin = $timeJoin;
+        return $this;
+    }
+
+    /**
+     * @return TimeBillSearchBasic
+     */
+    public function getTimeJoin(): TimeBillSearchBasic
+    {
+        return $this->timeJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $transactionJoin
+     * @return CalendarEventSearch
+     */
+    public function setTransactionJoin(TransactionSearchBasic $transactionJoin): CalendarEventSearch
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getTransactionJoin(): TransactionSearchBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return CalendarEventSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): CalendarEventSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchBasic $userNotesJoin
+     * @return CalendarEventSearch
+     */
+    public function setUserNotesJoin(NoteSearchBasic $userNotesJoin): CalendarEventSearch
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchBasic
+     */
+    public function getUserNotesJoin(): NoteSearchBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return CalendarEventSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): CalendarEventSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

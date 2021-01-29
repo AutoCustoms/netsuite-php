@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeSheetTimeGrid {
     /**
-     * @var \NetSuite\Classes\TimeEntry
+     * @var TimeEntry
      */
-    public $sunday;
+    protected TimeEntry $sunday;
+
     /**
-     * @var \NetSuite\Classes\TimeEntry
+     * @var TimeEntry
      */
-    public $monday;
+    protected TimeEntry $monday;
+
     /**
-     * @var \NetSuite\Classes\TimeEntry
+     * @var TimeEntry
      */
-    public $tuesday;
+    protected TimeEntry $tuesday;
+
     /**
-     * @var \NetSuite\Classes\TimeEntry
+     * @var TimeEntry
      */
-    public $wednesday;
+    protected TimeEntry $wednesday;
+
     /**
-     * @var \NetSuite\Classes\TimeEntry
+     * @var TimeEntry
      */
-    public $thursday;
+    protected TimeEntry $thursday;
+
     /**
-     * @var \NetSuite\Classes\TimeEntry
+     * @var TimeEntry
      */
-    public $friday;
+    protected TimeEntry $friday;
+
     /**
-     * @var \NetSuite\Classes\TimeEntry
+     * @var TimeEntry
      */
-    public $saturday;
+    protected TimeEntry $saturday;
+
     static $paramtypesmap = array(
         "sunday" => "TimeEntry",
         "monday" => "TimeEntry",
@@ -57,4 +64,131 @@ class TimeSheetTimeGrid {
         "friday" => "TimeEntry",
         "saturday" => "TimeEntry",
     );
+
+    /**
+     * @param TimeEntry $sunday
+     * @return TimeSheetTimeGrid
+     */
+    public function setSunday(TimeEntry $sunday): TimeSheetTimeGrid
+    {
+        $this->sunday = $sunday;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntry
+     */
+    public function getSunday(): TimeEntry
+    {
+        return $this->sunday;
+    }
+
+    /**
+     * @param TimeEntry $monday
+     * @return TimeSheetTimeGrid
+     */
+    public function setMonday(TimeEntry $monday): TimeSheetTimeGrid
+    {
+        $this->monday = $monday;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntry
+     */
+    public function getMonday(): TimeEntry
+    {
+        return $this->monday;
+    }
+
+    /**
+     * @param TimeEntry $tuesday
+     * @return TimeSheetTimeGrid
+     */
+    public function setTuesday(TimeEntry $tuesday): TimeSheetTimeGrid
+    {
+        $this->tuesday = $tuesday;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntry
+     */
+    public function getTuesday(): TimeEntry
+    {
+        return $this->tuesday;
+    }
+
+    /**
+     * @param TimeEntry $wednesday
+     * @return TimeSheetTimeGrid
+     */
+    public function setWednesday(TimeEntry $wednesday): TimeSheetTimeGrid
+    {
+        $this->wednesday = $wednesday;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntry
+     */
+    public function getWednesday(): TimeEntry
+    {
+        return $this->wednesday;
+    }
+
+    /**
+     * @param TimeEntry $thursday
+     * @return TimeSheetTimeGrid
+     */
+    public function setThursday(TimeEntry $thursday): TimeSheetTimeGrid
+    {
+        $this->thursday = $thursday;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntry
+     */
+    public function getThursday(): TimeEntry
+    {
+        return $this->thursday;
+    }
+
+    /**
+     * @param TimeEntry $friday
+     * @return TimeSheetTimeGrid
+     */
+    public function setFriday(TimeEntry $friday): TimeSheetTimeGrid
+    {
+        $this->friday = $friday;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntry
+     */
+    public function getFriday(): TimeEntry
+    {
+        return $this->friday;
+    }
+
+    /**
+     * @param TimeEntry $saturday
+     * @return TimeSheetTimeGrid
+     */
+    public function setSaturday(TimeEntry $saturday): TimeSheetTimeGrid
+    {
+        $this->saturday = $saturday;
+        return $this;
+    }
+
+    /**
+     * @return TimeEntry
+     */
+    public function getSaturday(): TimeEntry
+    {
+        return $this->saturday;
+    }
+
 }

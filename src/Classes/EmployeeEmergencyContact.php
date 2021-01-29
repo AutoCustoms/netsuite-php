@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeEmergencyContact {
     /**
-     * @var integer
+     * @var int
      */
-    public $id;
+    protected int $id;
+
     /**
      * @var string
      */
-    public $contact;
+    protected string $contact;
+
     /**
      * @var string
      */
-    public $relationship;
+    protected string $relationship;
+
     /**
      * @var string
      */
-    public $address;
+    protected string $address;
+
     /**
      * @var string
      */
-    public $phone;
+    protected string $phone;
+
     static $paramtypesmap = array(
         "id" => "integer",
         "contact" => "string",
@@ -47,4 +52,95 @@ class EmployeeEmergencyContact {
         "address" => "string",
         "phone" => "string",
     );
+
+    /**
+     * @param int $id
+     * @return EmployeeEmergencyContact
+     */
+    public function setId(int $id): EmployeeEmergencyContact
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param string $contact
+     * @return EmployeeEmergencyContact
+     */
+    public function setContact(string $contact): EmployeeEmergencyContact
+    {
+        $this->contact = $contact;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getContact(): string
+    {
+        return $this->contact;
+    }
+
+    /**
+     * @param string $relationship
+     * @return EmployeeEmergencyContact
+     */
+    public function setRelationship(string $relationship): EmployeeEmergencyContact
+    {
+        $this->relationship = $relationship;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRelationship(): string
+    {
+        return $this->relationship;
+    }
+
+    /**
+     * @param string $address
+     * @return EmployeeEmergencyContact
+     */
+    public function setAddress(string $address): EmployeeEmergencyContact
+    {
+        $this->address = $address;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAddress(): string
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param string $phone
+     * @return EmployeeEmergencyContact
+     */
+    public function setPhone(string $phone): EmployeeEmergencyContact
+    {
+        $this->phone = $phone;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPhone(): string
+    {
+        return $this->phone;
+    }
+
 }

@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetListRequest {
     /**
-     * @var \NetSuite\Classes\BaseRef[]
+     * @var BaseRef[]
      */
-    public $baseRef;
+    protected array $baseRef;
+
     static $paramtypesmap = array(
         "baseRef" => "BaseRef[]",
     );
+
+    /**
+     * @param BaseRef[] $baseRef
+     * @return GetListRequest
+     */
+    public function setBaseRef(BaseRef $baseRef): GetListRequest
+    {
+        $this->baseRef[] = $baseRef;
+        return $this;
+    }
+
+    /**
+     * @return BaseRef[]
+     */
+    public function getBaseRef(): array
+    {
+        return $this->baseRef;
+    }
+
 }

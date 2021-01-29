@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class DimensionList {
     /**
-     * @var \NetSuite\Classes\DimensionRef[]
+     * @var DimensionRef[]
      */
-    public $dimension;
+    protected array $dimension;
+
     static $paramtypesmap = array(
         "dimension" => "DimensionRef[]",
     );
+
+    /**
+     * @param DimensionRef[] $dimension
+     * @return DimensionList
+     */
+    public function setDimension(DimensionRef $dimension): DimensionList
+    {
+        $this->dimension[] = $dimension;
+        return $this;
+    }
+
+    /**
+     * @return DimensionRef[]
+     */
+    public function getDimension(): array
+    {
+        return $this->dimension;
+    }
+
 }

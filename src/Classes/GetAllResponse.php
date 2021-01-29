@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetAllResponse {
     /**
-     * @var \NetSuite\Classes\GetAllResult
+     * @var GetAllResult
      */
-    public $getAllResult;
+    protected GetAllResult $getAllResult;
+
     static $paramtypesmap = array(
         "getAllResult" => "GetAllResult",
     );
+
+    /**
+     * @param GetAllResult $getAllResult
+     * @return GetAllResponse
+     */
+    public function setGetAllResult(GetAllResult $getAllResult): GetAllResponse
+    {
+        $this->getAllResult = $getAllResult;
+        return $this;
+    }
+
+    /**
+     * @return GetAllResult
+     */
+    public function getGetAllResult(): GetAllResult
+    {
+        return $this->getAllResult;
+    }
+
 }

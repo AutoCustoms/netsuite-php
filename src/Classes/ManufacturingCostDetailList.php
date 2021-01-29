@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ManufacturingCostDetailList {
     /**
-     * @var \NetSuite\Classes\ManufacturingCostDetail[]
+     * @var ManufacturingCostDetail[]
      */
-    public $manufacturingCostDetail;
+    protected array $manufacturingCostDetail;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "manufacturingCostDetail" => "ManufacturingCostDetail[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ManufacturingCostDetail[] $manufacturingCostDetail
+     * @return ManufacturingCostDetailList
+     */
+    public function setManufacturingCostDetail(ManufacturingCostDetail $manufacturingCostDetail): ManufacturingCostDetailList
+    {
+        $this->manufacturingCostDetail[] = $manufacturingCostDetail;
+        return $this;
+    }
+
+    /**
+     * @return ManufacturingCostDetail[]
+     */
+    public function getManufacturingCostDetail(): array
+    {
+        return $this->manufacturingCostDetail;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ManufacturingCostDetailList
+     */
+    public function setReplaceAll(bool $replaceAll): ManufacturingCostDetailList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

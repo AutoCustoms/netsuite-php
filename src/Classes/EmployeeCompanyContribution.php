@@ -14,36 +14,42 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeCompanyContribution {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $payrollItem;
+    protected RecordRef $payrollItem;
+
     /**
      * @var string
      */
-    public $rate;
+    protected string $rate;
+
     /**
      * @var float
      */
-    public $limit;
+    protected float $limit;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $inactive;
-    /**
-     * @var string
-     */
-    public $effectiveDate;
+    protected bool $inactive;
+
     /**
      * @var string
      */
-    public $expirationDate;
+    protected string $effectiveDate;
+
+    /**
+     * @var string
+     */
+    protected string $expirationDate;
+
     static $paramtypesmap = array(
         "payrollItem" => "RecordRef",
         "rate" => "string",
@@ -52,4 +58,113 @@ class EmployeeCompanyContribution {
         "effectiveDate" => "dateTime",
         "expirationDate" => "dateTime",
     );
+
+    /**
+     * @param RecordRef $payrollItem
+     * @return EmployeeCompanyContribution
+     */
+    public function setPayrollItem(RecordRef $payrollItem): EmployeeCompanyContribution
+    {
+        $this->payrollItem = $payrollItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPayrollItem(): RecordRef
+    {
+        return $this->payrollItem;
+    }
+
+    /**
+     * @param string $rate
+     * @return EmployeeCompanyContribution
+     */
+    public function setRate(string $rate): EmployeeCompanyContribution
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRate(): string
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param float $limit
+     * @return EmployeeCompanyContribution
+     */
+    public function setLimit(float $limit): EmployeeCompanyContribution
+    {
+        $this->limit = $limit;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLimit(): float
+    {
+        return $this->limit;
+    }
+
+    /**
+     * @param bool $inactive
+     * @return EmployeeCompanyContribution
+     */
+    public function setInactive(bool $inactive): EmployeeCompanyContribution
+    {
+        $this->inactive = $inactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getInactive(): bool
+    {
+        return $this->inactive;
+    }
+
+    /**
+     * @param string $effectiveDate
+     * @return EmployeeCompanyContribution
+     */
+    public function setEffectiveDate(string $effectiveDate): EmployeeCompanyContribution
+    {
+        $this->effectiveDate = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEffectiveDate(): string
+    {
+        return $this->effectiveDate;
+    }
+
+    /**
+     * @param string $expirationDate
+     * @return EmployeeCompanyContribution
+     */
+    public function setExpirationDate(string $expirationDate): EmployeeCompanyContribution
+    {
+        $this->expirationDate = $expirationDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExpirationDate(): string
+    {
+        return $this->expirationDate;
+    }
+
 }

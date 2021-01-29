@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountLocalizations {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $accountingContext;
+    protected RecordRef $accountingContext;
+
     /**
      * @var string
      */
-    public $acctNumber;
+    protected string $acctNumber;
+
     /**
      * @var string
      */
-    public $acctName;
+    protected string $acctName;
+
     /**
      * @var string
      */
-    public $legalName;
+    protected string $legalName;
+
     /**
-     * @var \NetSuite\Classes\Language
+     * @var Language
      */
-    public $locale;
+    protected Language $locale;
+
     static $paramtypesmap = array(
         "accountingContext" => "RecordRef",
         "acctNumber" => "string",
@@ -47,4 +52,95 @@ class AccountLocalizations {
         "legalName" => "string",
         "locale" => "Language",
     );
+
+    /**
+     * @param RecordRef $accountingContext
+     * @return AccountLocalizations
+     */
+    public function setAccountingContext(RecordRef $accountingContext): AccountLocalizations
+    {
+        $this->accountingContext = $accountingContext;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccountingContext(): RecordRef
+    {
+        return $this->accountingContext;
+    }
+
+    /**
+     * @param string $acctNumber
+     * @return AccountLocalizations
+     */
+    public function setAcctNumber(string $acctNumber): AccountLocalizations
+    {
+        $this->acctNumber = $acctNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAcctNumber(): string
+    {
+        return $this->acctNumber;
+    }
+
+    /**
+     * @param string $acctName
+     * @return AccountLocalizations
+     */
+    public function setAcctName(string $acctName): AccountLocalizations
+    {
+        $this->acctName = $acctName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAcctName(): string
+    {
+        return $this->acctName;
+    }
+
+    /**
+     * @param string $legalName
+     * @return AccountLocalizations
+     */
+    public function setLegalName(string $legalName): AccountLocalizations
+    {
+        $this->legalName = $legalName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLegalName(): string
+    {
+        return $this->legalName;
+    }
+
+    /**
+     * @param Language $locale
+     * @return AccountLocalizations
+     */
+    public function setLocale(Language $locale): AccountLocalizations
+    {
+        $this->locale = $locale;
+        return $this;
+    }
+
+    /**
+     * @return Language
+     */
+    public function getLocale(): Language
+    {
+        return $this->locale;
+    }
+
 }

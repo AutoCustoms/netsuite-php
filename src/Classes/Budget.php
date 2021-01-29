@@ -14,168 +14,111 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class Budget extends Record {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $year;
+    protected RecordRef $year;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customer;
+    protected RecordRef $customer;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $account;
+    protected RecordRef $account;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $subsidiary;
+    protected RecordRef $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $category;
+    protected RecordRef $category;
+
     /**
-     * @var \NetSuite\Classes\BudgetBudgetType
+     * @var BudgetBudgetType
      */
-    public $budgetType;
+    protected BudgetBudgetType $budgetType;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $periodAmount1;
-    /**
-     * @var float
-     */
-    public $periodAmount2;
-    /**
-     * @var float
-     */
-    public $periodAmount3;
-    /**
-     * @var float
-     */
-    public $periodAmount4;
-    /**
-     * @var float
-     */
-    public $periodAmount5;
-    /**
-     * @var float
-     */
-    public $periodAmount6;
-    /**
-     * @var float
-     */
-    public $periodAmount7;
-    /**
-     * @var float
-     */
-    public $periodAmount8;
-    /**
-     * @var float
-     */
-    public $periodAmount9;
-    /**
-     * @var float
-     */
-    public $periodAmount10;
+    protected RecordRef $currency;
+
+    protected $periodAmount1;
+    protected $periodAmount2;
+    protected $periodAmount3;
+    protected $periodAmount4;
+    protected $periodAmount5;
+    protected $periodAmount6;
+    protected $periodAmount7;
+    protected $periodAmount8;
+    protected $periodAmount9;
+    protected $periodAmount10;
+    protected $periodAmount11;
+    protected $periodAmount12;
+    protected $periodAmount13;
+    protected $periodAmount14;
+    protected $periodAmount15;
+    protected $periodAmount16;
+    protected $periodAmount17;
+    protected $periodAmount18;
+    protected $periodAmount19;
+    protected $periodAmount20;
+    protected $periodAmount21;
+    protected $periodAmount22;
+    protected $periodAmount23;
+    protected $periodAmount24;
     /**
      * @var float
      */
-    public $periodAmount11;
+    protected float $amount;
+
     /**
-     * @var float
+     * @var RecordRef
      */
-    public $periodAmount12;
+    protected RecordRef $accountingBook;
+
     /**
-     * @var float
+     * @var CustomFieldList
      */
-    public $periodAmount13;
-    /**
-     * @var float
-     */
-    public $periodAmount14;
-    /**
-     * @var float
-     */
-    public $periodAmount15;
-    /**
-     * @var float
-     */
-    public $periodAmount16;
-    /**
-     * @var float
-     */
-    public $periodAmount17;
-    /**
-     * @var float
-     */
-    public $periodAmount18;
-    /**
-     * @var float
-     */
-    public $periodAmount19;
-    /**
-     * @var float
-     */
-    public $periodAmount20;
-    /**
-     * @var float
-     */
-    public $periodAmount21;
-    /**
-     * @var float
-     */
-    public $periodAmount22;
-    /**
-     * @var float
-     */
-    public $periodAmount23;
-    /**
-     * @var float
-     */
-    public $periodAmount24;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $accountingBook;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     static $paramtypesmap = array(
         "year" => "RecordRef",
         "customer" => "RecordRef",
@@ -217,4 +160,275 @@ class Budget extends Record {
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
     );
+
+    /**
+     * @param RecordRef $year
+     * @return Budget
+     */
+    public function setYear(RecordRef $year): Budget
+    {
+        $this->year = $year;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getYear(): RecordRef
+    {
+        return $this->year;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return Budget
+     */
+    public function setCustomer(RecordRef $customer): Budget
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return Budget
+     */
+    public function setItem(RecordRef $item): Budget
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return Budget
+     */
+    public function setClass(RecordRef $class): Budget
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return Budget
+     */
+    public function setDepartment(RecordRef $department): Budget
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return Budget
+     */
+    public function setLocation(RecordRef $location): Budget
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $account
+     * @return Budget
+     */
+    public function setAccount(RecordRef $account): Budget
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccount(): RecordRef
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return Budget
+     */
+    public function setSubsidiary(RecordRef $subsidiary): Budget
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param RecordRef $category
+     * @return Budget
+     */
+    public function setCategory(RecordRef $category): Budget
+    {
+        $this->category = $category;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCategory(): RecordRef
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param BudgetBudgetType $budgetType
+     * @return Budget
+     */
+    public function setBudgetType(BudgetBudgetType $budgetType): Budget
+    {
+        $this->budgetType = $budgetType;
+        return $this;
+    }
+
+    /**
+     * @return BudgetBudgetType
+     */
+    public function getBudgetType(): BudgetBudgetType
+    {
+        return $this->budgetType;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return Budget
+     */
+    public function setCurrency(RecordRef $currency): Budget
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param float $amount
+     * @return Budget
+     */
+    public function setAmount(float $amount): Budget
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param RecordRef $accountingBook
+     * @return Budget
+     */
+    public function setAccountingBook(RecordRef $accountingBook): Budget
+    {
+        $this->accountingBook = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccountingBook(): RecordRef
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return Budget
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): Budget
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return Budget
+     */
+    public function setInternalId(string $internalId): Budget
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
 }

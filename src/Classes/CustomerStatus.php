@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,35 +23,43 @@ class CustomerStatus extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
-     * @var \NetSuite\Classes\CustomerStatusStage
+     * @var CustomerStatusStage
      */
-    public $stage;
+    protected CustomerStatusStage $stage;
+
     /**
      * @var float
      */
-    public $probability;
+    protected float $probability;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $includeInLeadReports;
+    protected bool $includeInLeadReports;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "stage" => "CustomerStatusStage",
@@ -62,4 +70,149 @@ class CustomerStatus extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return CustomerStatus
+     */
+    public function setName(string $name): CustomerStatus
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param CustomerStatusStage $stage
+     * @return CustomerStatus
+     */
+    public function setStage(CustomerStatusStage $stage): CustomerStatus
+    {
+        $this->stage = $stage;
+        return $this;
+    }
+
+    /**
+     * @return CustomerStatusStage
+     */
+    public function getStage(): CustomerStatusStage
+    {
+        return $this->stage;
+    }
+
+    /**
+     * @param float $probability
+     * @return CustomerStatus
+     */
+    public function setProbability(float $probability): CustomerStatus
+    {
+        $this->probability = $probability;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getProbability(): float
+    {
+        return $this->probability;
+    }
+
+    /**
+     * @param string $description
+     * @return CustomerStatus
+     */
+    public function setDescription(string $description): CustomerStatus
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param bool $includeInLeadReports
+     * @return CustomerStatus
+     */
+    public function setIncludeInLeadReports(bool $includeInLeadReports): CustomerStatus
+    {
+        $this->includeInLeadReports = $includeInLeadReports;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIncludeInLeadReports(): bool
+    {
+        return $this->includeInLeadReports;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return CustomerStatus
+     */
+    public function setIsInactive(bool $isInactive): CustomerStatus
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param string $internalId
+     * @return CustomerStatus
+     */
+    public function setInternalId(string $internalId): CustomerStatus
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return CustomerStatus
+     */
+    public function setExternalId(string $externalId): CustomerStatus
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

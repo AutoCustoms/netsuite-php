@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,87 +23,92 @@ class TaxGroup extends Record {
     /**
      * @var string
      */
-    public $itemId;
+    protected string $itemId;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
      * @var string
      */
-    public $state;
+    protected string $state;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $subsidiaryList;
+    protected RecordRefList $subsidiaryList;
+
+    protected $taxitem1;
+    protected $unitprice1;
+    protected $taxitem2;
+    protected $unitprice2;
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var bool
      */
-    public $taxitem1;
+    protected bool $piggyback;
+
     /**
-     * @var string
+     * @var bool
      */
-    public $unitprice1;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $taxitem2;
-    /**
-     * @var string
-     */
-    public $unitprice2;
-    /**
-     * @var boolean
-     */
-    public $piggyback;
-    /**
-     * @var boolean
-     */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
      * @var float
      */
-    public $rate;
+    protected float $rate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxType;
+    protected RecordRef $taxType;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $includeChildren;
-    /**
-     * @var string
-     */
-    public $county;
-    /**
-     * @var string
-     */
-    public $city;
+    protected bool $includeChildren;
+
     /**
      * @var string
      */
-    public $zip;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $nexusCountry;
-    /**
-     * @var boolean
-     */
-    public $isDefault;
-    /**
-     * @var \NetSuite\Classes\TaxGroupTaxItemList
-     */
-    public $taxItemList;
+    protected string $county;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $city;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $zip;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $nexusCountry;
+
+    /**
+     * @var bool
+     */
+    protected bool $isDefault;
+
+    /**
+     * @var TaxGroupTaxItemList
+     */
+    protected TaxGroupTaxItemList $taxItemList;
+
+    /**
+     * @var string
+     */
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "itemId" => "string",
         "description" => "string",
@@ -127,4 +132,311 @@ class TaxGroup extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $itemId
+     * @return TaxGroup
+     */
+    public function setItemId(string $itemId): TaxGroup
+    {
+        $this->itemId = $itemId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemId(): string
+    {
+        return $this->itemId;
+    }
+
+    /**
+     * @param string $description
+     * @return TaxGroup
+     */
+    public function setDescription(string $description): TaxGroup
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $state
+     * @return TaxGroup
+     */
+    public function setState(string $state): TaxGroup
+    {
+        $this->state = $state;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getState(): string
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param RecordRefList $subsidiaryList
+     * @return TaxGroup
+     */
+    public function setSubsidiaryList(RecordRefList $subsidiaryList): TaxGroup
+    {
+        $this->subsidiaryList = $subsidiaryList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getSubsidiaryList(): RecordRefList
+    {
+        return $this->subsidiaryList;
+    }
+
+    /**
+     * @param bool $piggyback
+     * @return TaxGroup
+     */
+    public function setPiggyback(bool $piggyback): TaxGroup
+    {
+        $this->piggyback = $piggyback;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getPiggyback(): bool
+    {
+        return $this->piggyback;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return TaxGroup
+     */
+    public function setIsInactive(bool $isInactive): TaxGroup
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param float $rate
+     * @return TaxGroup
+     */
+    public function setRate(float $rate): TaxGroup
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRate(): float
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param RecordRef $taxType
+     * @return TaxGroup
+     */
+    public function setTaxType(RecordRef $taxType): TaxGroup
+    {
+        $this->taxType = $taxType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxType(): RecordRef
+    {
+        return $this->taxType;
+    }
+
+    /**
+     * @param bool $includeChildren
+     * @return TaxGroup
+     */
+    public function setIncludeChildren(bool $includeChildren): TaxGroup
+    {
+        $this->includeChildren = $includeChildren;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIncludeChildren(): bool
+    {
+        return $this->includeChildren;
+    }
+
+    /**
+     * @param string $county
+     * @return TaxGroup
+     */
+    public function setCounty(string $county): TaxGroup
+    {
+        $this->county = $county;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCounty(): string
+    {
+        return $this->county;
+    }
+
+    /**
+     * @param string $city
+     * @return TaxGroup
+     */
+    public function setCity(string $city): TaxGroup
+    {
+        $this->city = $city;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCity(): string
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param string $zip
+     * @return TaxGroup
+     */
+    public function setZip(string $zip): TaxGroup
+    {
+        $this->zip = $zip;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getZip(): string
+    {
+        return $this->zip;
+    }
+
+    /**
+     * @param RecordRef $nexusCountry
+     * @return TaxGroup
+     */
+    public function setNexusCountry(RecordRef $nexusCountry): TaxGroup
+    {
+        $this->nexusCountry = $nexusCountry;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getNexusCountry(): RecordRef
+    {
+        return $this->nexusCountry;
+    }
+
+    /**
+     * @param bool $isDefault
+     * @return TaxGroup
+     */
+    public function setIsDefault(bool $isDefault): TaxGroup
+    {
+        $this->isDefault = $isDefault;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsDefault(): bool
+    {
+        return $this->isDefault;
+    }
+
+    /**
+     * @param TaxGroupTaxItemList $taxItemList
+     * @return TaxGroup
+     */
+    public function setTaxItemList(TaxGroupTaxItemList $taxItemList): TaxGroup
+    {
+        $this->taxItemList = $taxItemList;
+        return $this;
+    }
+
+    /**
+     * @return TaxGroupTaxItemList
+     */
+    public function getTaxItemList(): TaxGroupTaxItemList
+    {
+        return $this->taxItemList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return TaxGroup
+     */
+    public function setInternalId(string $internalId): TaxGroup
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return TaxGroup
+     */
+    public function setExternalId(string $externalId): TaxGroup
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

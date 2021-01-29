@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CheckItemList {
     /**
-     * @var \NetSuite\Classes\CheckItem[]
+     * @var CheckItem[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "item" => "CheckItem[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param CheckItem[] $item
+     * @return CheckItemList
+     */
+    public function setItem(CheckItem $item): CheckItemList
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return CheckItem[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return CheckItemList
+     */
+    public function setReplaceAll(bool $replaceAll): CheckItemList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

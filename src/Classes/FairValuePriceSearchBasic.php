@@ -14,84 +14,102 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FairValuePriceSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $currency;
+    protected SearchMultiSelectField $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $endDate;
+    protected SearchDateField $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $fairValue;
+    protected SearchDoubleField $fairValue;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $fairValueFormula;
+    protected SearchMultiSelectField $fairValueFormula;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $fairValueRangePolicy;
+    protected SearchEnumMultiSelectField $fairValueRangePolicy;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $highValue;
+    protected SearchDoubleField $highValue;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $highValuePercent;
+    protected SearchDoubleField $highValuePercent;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isVsoePrice;
+    protected SearchBooleanField $isVsoePrice;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $item;
+    protected SearchMultiSelectField $item;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $itemRevenueCategory;
+    protected SearchMultiSelectField $itemRevenueCategory;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $lowValue;
+    protected SearchDoubleField $lowValue;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $lowValuePercent;
+    protected SearchDoubleField $lowValuePercent;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $startDate;
+    protected SearchDateField $startDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $unitsType;
+    protected SearchMultiSelectField $unitsType;
+
     static $paramtypesmap = array(
         "currency" => "SearchMultiSelectField",
         "endDate" => "SearchDateField",
@@ -112,4 +130,329 @@ class FairValuePriceSearchBasic extends SearchRecordBasic {
         "startDate" => "SearchDateField",
         "unitsType" => "SearchMultiSelectField",
     );
+
+    /**
+     * @param SearchMultiSelectField $currency
+     * @return FairValuePriceSearchBasic
+     */
+    public function setCurrency(SearchMultiSelectField $currency): FairValuePriceSearchBasic
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCurrency(): SearchMultiSelectField
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchDateField $endDate
+     * @return FairValuePriceSearchBasic
+     */
+    public function setEndDate(SearchDateField $endDate): FairValuePriceSearchBasic
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getEndDate(): SearchDateField
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return FairValuePriceSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): FairValuePriceSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return FairValuePriceSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): FairValuePriceSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchDoubleField $fairValue
+     * @return FairValuePriceSearchBasic
+     */
+    public function setFairValue(SearchDoubleField $fairValue): FairValuePriceSearchBasic
+    {
+        $this->fairValue = $fairValue;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getFairValue(): SearchDoubleField
+    {
+        return $this->fairValue;
+    }
+
+    /**
+     * @param SearchMultiSelectField $fairValueFormula
+     * @return FairValuePriceSearchBasic
+     */
+    public function setFairValueFormula(SearchMultiSelectField $fairValueFormula): FairValuePriceSearchBasic
+    {
+        $this->fairValueFormula = $fairValueFormula;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getFairValueFormula(): SearchMultiSelectField
+    {
+        return $this->fairValueFormula;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $fairValueRangePolicy
+     * @return FairValuePriceSearchBasic
+     */
+    public function setFairValueRangePolicy(SearchEnumMultiSelectField $fairValueRangePolicy): FairValuePriceSearchBasic
+    {
+        $this->fairValueRangePolicy = $fairValueRangePolicy;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getFairValueRangePolicy(): SearchEnumMultiSelectField
+    {
+        return $this->fairValueRangePolicy;
+    }
+
+    /**
+     * @param SearchDoubleField $highValue
+     * @return FairValuePriceSearchBasic
+     */
+    public function setHighValue(SearchDoubleField $highValue): FairValuePriceSearchBasic
+    {
+        $this->highValue = $highValue;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getHighValue(): SearchDoubleField
+    {
+        return $this->highValue;
+    }
+
+    /**
+     * @param SearchDoubleField $highValuePercent
+     * @return FairValuePriceSearchBasic
+     */
+    public function setHighValuePercent(SearchDoubleField $highValuePercent): FairValuePriceSearchBasic
+    {
+        $this->highValuePercent = $highValuePercent;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getHighValuePercent(): SearchDoubleField
+    {
+        return $this->highValuePercent;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return FairValuePriceSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): FairValuePriceSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return FairValuePriceSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): FairValuePriceSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isVsoePrice
+     * @return FairValuePriceSearchBasic
+     */
+    public function setIsVsoePrice(SearchBooleanField $isVsoePrice): FairValuePriceSearchBasic
+    {
+        $this->isVsoePrice = $isVsoePrice;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsVsoePrice(): SearchBooleanField
+    {
+        return $this->isVsoePrice;
+    }
+
+    /**
+     * @param SearchMultiSelectField $item
+     * @return FairValuePriceSearchBasic
+     */
+    public function setItem(SearchMultiSelectField $item): FairValuePriceSearchBasic
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItem(): SearchMultiSelectField
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchMultiSelectField $itemRevenueCategory
+     * @return FairValuePriceSearchBasic
+     */
+    public function setItemRevenueCategory(SearchMultiSelectField $itemRevenueCategory): FairValuePriceSearchBasic
+    {
+        $this->itemRevenueCategory = $itemRevenueCategory;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItemRevenueCategory(): SearchMultiSelectField
+    {
+        return $this->itemRevenueCategory;
+    }
+
+    /**
+     * @param SearchDoubleField $lowValue
+     * @return FairValuePriceSearchBasic
+     */
+    public function setLowValue(SearchDoubleField $lowValue): FairValuePriceSearchBasic
+    {
+        $this->lowValue = $lowValue;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getLowValue(): SearchDoubleField
+    {
+        return $this->lowValue;
+    }
+
+    /**
+     * @param SearchDoubleField $lowValuePercent
+     * @return FairValuePriceSearchBasic
+     */
+    public function setLowValuePercent(SearchDoubleField $lowValuePercent): FairValuePriceSearchBasic
+    {
+        $this->lowValuePercent = $lowValuePercent;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getLowValuePercent(): SearchDoubleField
+    {
+        return $this->lowValuePercent;
+    }
+
+    /**
+     * @param SearchDateField $startDate
+     * @return FairValuePriceSearchBasic
+     */
+    public function setStartDate(SearchDateField $startDate): FairValuePriceSearchBasic
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getStartDate(): SearchDateField
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $unitsType
+     * @return FairValuePriceSearchBasic
+     */
+    public function setUnitsType(SearchMultiSelectField $unitsType): FairValuePriceSearchBasic
+    {
+        $this->unitsType = $unitsType;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getUnitsType(): SearchMultiSelectField
+    {
+        return $this->unitsType;
+    }
+
 }

@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingPeriodSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\AccountingPeriodSearchRowBasic
+     * @var AccountingPeriodSearchRowBasic
      */
-    public $basic;
+    protected AccountingPeriodSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchRowBasic
+     * @var NoteSearchRowBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchRowBasic $userNotesJoin;
+
     static $paramtypesmap = array(
         "basic" => "AccountingPeriodSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
         "userNotesJoin" => "NoteSearchRowBasic",
     );
+
+    /**
+     * @param AccountingPeriodSearchRowBasic $basic
+     * @return AccountingPeriodSearchRow
+     */
+    public function setBasic(AccountingPeriodSearchRowBasic $basic): AccountingPeriodSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return AccountingPeriodSearchRowBasic
+     */
+    public function getBasic(): AccountingPeriodSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return AccountingPeriodSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): AccountingPeriodSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchRowBasic $userNotesJoin
+     * @return AccountingPeriodSearchRow
+     */
+    public function setUserNotesJoin(NoteSearchRowBasic $userNotesJoin): AccountingPeriodSearchRow
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchRowBasic
+     */
+    public function getUserNotesJoin(): NoteSearchRowBasic
+    {
+        return $this->userNotesJoin;
+    }
+
 }

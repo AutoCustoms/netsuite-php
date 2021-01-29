@@ -14,76 +14,92 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class FileSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $availableWithoutLogin;
+    protected array $availableWithoutLogin;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $created;
+    protected array $created;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $dateViewed;
+    protected array $dateViewed;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $description;
+    protected array $description;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $documentSize;
+    protected array $documentSize;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $fileType;
+    protected array $fileType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $folder;
+    protected array $folder;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $hits;
+    protected array $hits;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $hostedPath;
+    protected array $hostedPath;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isAvailable;
+    protected array $isAvailable;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $modified;
+    protected array $modified;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $owner;
+    protected array $owner;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $url;
+    protected array $url;
+
     static $paramtypesmap = array(
         "availableWithoutLogin" => "SearchColumnBooleanField[]",
         "created" => "SearchColumnDateField[]",
@@ -102,4 +118,293 @@ class FileSearchRowBasic extends SearchRowBasic {
         "owner" => "SearchColumnSelectField[]",
         "url" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnBooleanField[] $availableWithoutLogin
+     * @return FileSearchRowBasic
+     */
+    public function setAvailableWithoutLogin(SearchColumnBooleanField $availableWithoutLogin): FileSearchRowBasic
+    {
+        $this->availableWithoutLogin[] = $availableWithoutLogin;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getAvailableWithoutLogin(): array
+    {
+        return $this->availableWithoutLogin;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $created
+     * @return FileSearchRowBasic
+     */
+    public function setCreated(SearchColumnDateField $created): FileSearchRowBasic
+    {
+        $this->created[] = $created;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCreated(): array
+    {
+        return $this->created;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateViewed
+     * @return FileSearchRowBasic
+     */
+    public function setDateViewed(SearchColumnDateField $dateViewed): FileSearchRowBasic
+    {
+        $this->dateViewed[] = $dateViewed;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateViewed(): array
+    {
+        return $this->dateViewed;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $description
+     * @return FileSearchRowBasic
+     */
+    public function setDescription(SearchColumnStringField $description): FileSearchRowBasic
+    {
+        $this->description[] = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDescription(): array
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $documentSize
+     * @return FileSearchRowBasic
+     */
+    public function setDocumentSize(SearchColumnLongField $documentSize): FileSearchRowBasic
+    {
+        $this->documentSize[] = $documentSize;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getDocumentSize(): array
+    {
+        return $this->documentSize;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return FileSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): FileSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $fileType
+     * @return FileSearchRowBasic
+     */
+    public function setFileType(SearchColumnEnumSelectField $fileType): FileSearchRowBasic
+    {
+        $this->fileType[] = $fileType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getFileType(): array
+    {
+        return $this->fileType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $folder
+     * @return FileSearchRowBasic
+     */
+    public function setFolder(SearchColumnSelectField $folder): FileSearchRowBasic
+    {
+        $this->folder[] = $folder;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getFolder(): array
+    {
+        return $this->folder;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $hits
+     * @return FileSearchRowBasic
+     */
+    public function setHits(SearchColumnLongField $hits): FileSearchRowBasic
+    {
+        $this->hits[] = $hits;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getHits(): array
+    {
+        return $this->hits;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $hostedPath
+     * @return FileSearchRowBasic
+     */
+    public function setHostedPath(SearchColumnStringField $hostedPath): FileSearchRowBasic
+    {
+        $this->hostedPath[] = $hostedPath;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getHostedPath(): array
+    {
+        return $this->hostedPath;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return FileSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): FileSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isAvailable
+     * @return FileSearchRowBasic
+     */
+    public function setIsAvailable(SearchColumnBooleanField $isAvailable): FileSearchRowBasic
+    {
+        $this->isAvailable[] = $isAvailable;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsAvailable(): array
+    {
+        return $this->isAvailable;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $modified
+     * @return FileSearchRowBasic
+     */
+    public function setModified(SearchColumnDateField $modified): FileSearchRowBasic
+    {
+        $this->modified[] = $modified;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getModified(): array
+    {
+        return $this->modified;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return FileSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): FileSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $owner
+     * @return FileSearchRowBasic
+     */
+    public function setOwner(SearchColumnSelectField $owner): FileSearchRowBasic
+    {
+        $this->owner[] = $owner;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOwner(): array
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $url
+     * @return FileSearchRowBasic
+     */
+    public function setUrl(SearchColumnStringField $url): FileSearchRowBasic
+    {
+        $this->url[] = $url;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getUrl(): array
+    {
+        return $this->url;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetDeletedRequest {
     /**
-     * @var \NetSuite\Classes\GetDeletedFilter
+     * @var GetDeletedFilter
      */
-    public $getDeletedFilter;
+    protected GetDeletedFilter $getDeletedFilter;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $pageIndex;
+    protected int $pageIndex;
+
     static $paramtypesmap = array(
         "getDeletedFilter" => "GetDeletedFilter",
         "pageIndex" => "integer",
     );
+
+    /**
+     * @param GetDeletedFilter $getDeletedFilter
+     * @return GetDeletedRequest
+     */
+    public function setGetDeletedFilter(GetDeletedFilter $getDeletedFilter): GetDeletedRequest
+    {
+        $this->getDeletedFilter = $getDeletedFilter;
+        return $this;
+    }
+
+    /**
+     * @return GetDeletedFilter
+     */
+    public function getGetDeletedFilter(): GetDeletedFilter
+    {
+        return $this->getDeletedFilter;
+    }
+
+    /**
+     * @param int $pageIndex
+     * @return GetDeletedRequest
+     */
+    public function setPageIndex(int $pageIndex): GetDeletedRequest
+    {
+        $this->pageIndex = $pageIndex;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPageIndex(): int
+    {
+        return $this->pageIndex;
+    }
+
 }

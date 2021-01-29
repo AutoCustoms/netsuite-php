@@ -14,140 +14,168 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class Account extends Record {
     /**
-     * @var \NetSuite\Classes\AccountType
+     * @var AccountType
      */
-    public $acctType;
+    protected AccountType $acctType;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $unitsType;
+    protected RecordRef $unitsType;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $unit;
-    /**
-     * @var string
-     */
-    public $acctNumber;
-    /**
-     * @var string
-     */
-    public $acctName;
+    protected RecordRef $unit;
+
     /**
      * @var string
      */
-    public $legalName;
-    /**
-     * @var boolean
-     */
-    public $includeChildren;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $currency;
+    protected string $acctNumber;
+
     /**
      * @var string
      */
-    public $exchangeRate;
-    /**
-     * @var \NetSuite\Classes\ConsolidatedRate
-     */
-    public $generalRate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $parent;
-    /**
-     * @var \NetSuite\Classes\ConsolidatedRate
-     */
-    public $cashFlowRate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $billableExpensesAcct;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $deferralAcct;
+    protected string $acctName;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $legalName;
+
     /**
-     * @var integer
+     * @var bool
      */
-    public $curDocNum;
+    protected bool $includeChildren;
+
     /**
-     * @var boolean
+     * @var RecordRef
      */
-    public $isInactive;
+    protected RecordRef $currency;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $department;
+    protected string $exchangeRate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var ConsolidatedRate
      */
-    public $class;
+    protected ConsolidatedRate $generalRate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $parent;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var ConsolidatedRate
      */
-    public $restrictToAccountingBookList;
+    protected ConsolidatedRate $cashFlowRate;
+
     /**
-     * @var boolean
+     * @var RecordRef
      */
-    public $inventory;
+    protected RecordRef $billableExpensesAcct;
+
     /**
-     * @var boolean
+     * @var RecordRef
      */
-    public $eliminate;
+    protected RecordRef $deferralAcct;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var string
      */
-    public $subsidiaryList;
+    protected string $description;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var int
      */
-    public $category1099misc;
+    protected int $curDocNum;
+
     /**
-     * @var \NetSuite\Classes\AccountLocalizationsList
+     * @var bool
      */
-    public $localizationsList;
+    protected bool $isInactive;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $department;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $class;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $location;
+
+    /**
+     * @var RecordRefList
+     */
+    protected RecordRefList $restrictToAccountingBookList;
+
+    /**
+     * @var bool
+     */
+    protected bool $inventory;
+
+    /**
+     * @var bool
+     */
+    protected bool $eliminate;
+
+    /**
+     * @var RecordRefList
+     */
+    protected RecordRefList $subsidiaryList;
+
+    protected $category1099misc;
+    /**
+     * @var AccountLocalizationsList
+     */
+    protected AccountLocalizationsList $localizationsList;
+
     /**
      * @var float
      */
-    public $openingBalance;
+    protected float $openingBalance;
+
     /**
      * @var string
      */
-    public $tranDate;
+    protected string $tranDate;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $revalue;
+    protected bool $revalue;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $customFieldList;
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "acctType" => "AccountType",
         "unitsType" => "RecordRef",
@@ -182,4 +210,563 @@ class Account extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param AccountType $acctType
+     * @return Account
+     */
+    public function setAcctType(AccountType $acctType): Account
+    {
+        $this->acctType = $acctType;
+        return $this;
+    }
+
+    /**
+     * @return AccountType
+     */
+    public function getAcctType(): AccountType
+    {
+        return $this->acctType;
+    }
+
+    /**
+     * @param RecordRef $unitsType
+     * @return Account
+     */
+    public function setUnitsType(RecordRef $unitsType): Account
+    {
+        $this->unitsType = $unitsType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnitsType(): RecordRef
+    {
+        return $this->unitsType;
+    }
+
+    /**
+     * @param RecordRef $unit
+     * @return Account
+     */
+    public function setUnit(RecordRef $unit): Account
+    {
+        $this->unit = $unit;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnit(): RecordRef
+    {
+        return $this->unit;
+    }
+
+    /**
+     * @param string $acctNumber
+     * @return Account
+     */
+    public function setAcctNumber(string $acctNumber): Account
+    {
+        $this->acctNumber = $acctNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAcctNumber(): string
+    {
+        return $this->acctNumber;
+    }
+
+    /**
+     * @param string $acctName
+     * @return Account
+     */
+    public function setAcctName(string $acctName): Account
+    {
+        $this->acctName = $acctName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAcctName(): string
+    {
+        return $this->acctName;
+    }
+
+    /**
+     * @param string $legalName
+     * @return Account
+     */
+    public function setLegalName(string $legalName): Account
+    {
+        $this->legalName = $legalName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLegalName(): string
+    {
+        return $this->legalName;
+    }
+
+    /**
+     * @param bool $includeChildren
+     * @return Account
+     */
+    public function setIncludeChildren(bool $includeChildren): Account
+    {
+        $this->includeChildren = $includeChildren;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIncludeChildren(): bool
+    {
+        return $this->includeChildren;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return Account
+     */
+    public function setCurrency(RecordRef $currency): Account
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param string $exchangeRate
+     * @return Account
+     */
+    public function setExchangeRate(string $exchangeRate): Account
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExchangeRate(): string
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param ConsolidatedRate $generalRate
+     * @return Account
+     */
+    public function setGeneralRate(ConsolidatedRate $generalRate): Account
+    {
+        $this->generalRate = $generalRate;
+        return $this;
+    }
+
+    /**
+     * @return ConsolidatedRate
+     */
+    public function getGeneralRate(): ConsolidatedRate
+    {
+        return $this->generalRate;
+    }
+
+    /**
+     * @param RecordRef $parent
+     * @return Account
+     */
+    public function setParent(RecordRef $parent): Account
+    {
+        $this->parent = $parent;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getParent(): RecordRef
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param ConsolidatedRate $cashFlowRate
+     * @return Account
+     */
+    public function setCashFlowRate(ConsolidatedRate $cashFlowRate): Account
+    {
+        $this->cashFlowRate = $cashFlowRate;
+        return $this;
+    }
+
+    /**
+     * @return ConsolidatedRate
+     */
+    public function getCashFlowRate(): ConsolidatedRate
+    {
+        return $this->cashFlowRate;
+    }
+
+    /**
+     * @param RecordRef $billableExpensesAcct
+     * @return Account
+     */
+    public function setBillableExpensesAcct(RecordRef $billableExpensesAcct): Account
+    {
+        $this->billableExpensesAcct = $billableExpensesAcct;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getBillableExpensesAcct(): RecordRef
+    {
+        return $this->billableExpensesAcct;
+    }
+
+    /**
+     * @param RecordRef $deferralAcct
+     * @return Account
+     */
+    public function setDeferralAcct(RecordRef $deferralAcct): Account
+    {
+        $this->deferralAcct = $deferralAcct;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDeferralAcct(): RecordRef
+    {
+        return $this->deferralAcct;
+    }
+
+    /**
+     * @param string $description
+     * @return Account
+     */
+    public function setDescription(string $description): Account
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param int $curDocNum
+     * @return Account
+     */
+    public function setCurDocNum(int $curDocNum): Account
+    {
+        $this->curDocNum = $curDocNum;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCurDocNum(): int
+    {
+        return $this->curDocNum;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return Account
+     */
+    public function setIsInactive(bool $isInactive): Account
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return Account
+     */
+    public function setDepartment(RecordRef $department): Account
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return Account
+     */
+    public function setClass(RecordRef $class): Account
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return Account
+     */
+    public function setLocation(RecordRef $location): Account
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRefList $restrictToAccountingBookList
+     * @return Account
+     */
+    public function setRestrictToAccountingBookList(RecordRefList $restrictToAccountingBookList): Account
+    {
+        $this->restrictToAccountingBookList = $restrictToAccountingBookList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getRestrictToAccountingBookList(): RecordRefList
+    {
+        return $this->restrictToAccountingBookList;
+    }
+
+    /**
+     * @param bool $inventory
+     * @return Account
+     */
+    public function setInventory(bool $inventory): Account
+    {
+        $this->inventory = $inventory;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getInventory(): bool
+    {
+        return $this->inventory;
+    }
+
+    /**
+     * @param bool $eliminate
+     * @return Account
+     */
+    public function setEliminate(bool $eliminate): Account
+    {
+        $this->eliminate = $eliminate;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getEliminate(): bool
+    {
+        return $this->eliminate;
+    }
+
+    /**
+     * @param RecordRefList $subsidiaryList
+     * @return Account
+     */
+    public function setSubsidiaryList(RecordRefList $subsidiaryList): Account
+    {
+        $this->subsidiaryList = $subsidiaryList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getSubsidiaryList(): RecordRefList
+    {
+        return $this->subsidiaryList;
+    }
+
+    /**
+     * @param AccountLocalizationsList $localizationsList
+     * @return Account
+     */
+    public function setLocalizationsList(AccountLocalizationsList $localizationsList): Account
+    {
+        $this->localizationsList = $localizationsList;
+        return $this;
+    }
+
+    /**
+     * @return AccountLocalizationsList
+     */
+    public function getLocalizationsList(): AccountLocalizationsList
+    {
+        return $this->localizationsList;
+    }
+
+    /**
+     * @param float $openingBalance
+     * @return Account
+     */
+    public function setOpeningBalance(float $openingBalance): Account
+    {
+        $this->openingBalance = $openingBalance;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOpeningBalance(): float
+    {
+        return $this->openingBalance;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return Account
+     */
+    public function setTranDate(string $tranDate): Account
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param bool $revalue
+     * @return Account
+     */
+    public function setRevalue(bool $revalue): Account
+    {
+        $this->revalue = $revalue;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getRevalue(): bool
+    {
+        return $this->revalue;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return Account
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): Account
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return Account
+     */
+    public function setInternalId(string $internalId): Account
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return Account
+     */
+    public function setExternalId(string $externalId): Account
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

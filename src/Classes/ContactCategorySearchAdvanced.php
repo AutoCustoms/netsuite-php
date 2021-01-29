@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ContactCategorySearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\ContactCategorySearch
+     * @var ContactCategorySearch
      */
-    public $criteria;
+    protected ContactCategorySearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\ContactCategorySearchRow
+     * @var ContactCategorySearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected ContactCategorySearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "ContactCategorySearch",
         "columns" => "ContactCategorySearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param ContactCategorySearch $criteria
+     * @return ContactCategorySearchAdvanced
+     */
+    public function setCriteria(ContactCategorySearch $criteria): ContactCategorySearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return ContactCategorySearch
+     */
+    public function getCriteria(): ContactCategorySearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param ContactCategorySearchRow $columns
+     * @return ContactCategorySearchAdvanced
+     */
+    public function setColumns(ContactCategorySearchRow $columns): ContactCategorySearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return ContactCategorySearchRow
+     */
+    public function getColumns(): ContactCategorySearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return ContactCategorySearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): ContactCategorySearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return ContactCategorySearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): ContactCategorySearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

@@ -14,144 +14,177 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeBillSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $approvalStatus;
+    protected SearchMultiSelectField $approvalStatus;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $approved;
+    protected SearchBooleanField $approved;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $billable;
+    protected SearchBooleanField $billable;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $class;
+    protected SearchMultiSelectField $class;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $customer;
+    protected SearchMultiSelectField $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $date;
+    protected SearchDateField $date;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $dateCreated;
+    protected SearchDateField $dateCreated;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $department;
+    protected SearchMultiSelectField $department;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $duration;
+    protected SearchDoubleField $duration;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $employee;
+    protected SearchMultiSelectField $employee;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $exempt;
+    protected SearchBooleanField $exempt;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $item;
+    protected SearchMultiSelectField $item;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $lastModified;
+    protected SearchDateField $lastModified;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $location;
+    protected SearchMultiSelectField $location;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $memo;
+    protected SearchStringField $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $paidByPayroll;
+    protected SearchBooleanField $paidByPayroll;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $paidExternally;
+    protected SearchBooleanField $paidExternally;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $payItem;
+    protected SearchMultiSelectField $payItem;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $productive;
+    protected SearchBooleanField $productive;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $rejectionNote;
+    protected SearchStringField $rejectionNote;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $status;
+    protected SearchBooleanField $status;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $temporaryLocalJurisdiction;
+    protected SearchMultiSelectField $temporaryLocalJurisdiction;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $temporaryStateJurisdiction;
+    protected SearchMultiSelectField $temporaryStateJurisdiction;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $timeModified;
+    protected SearchBooleanField $timeModified;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $timeSheet;
+    protected SearchMultiSelectField $timeSheet;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $type;
+    protected SearchEnumMultiSelectField $type;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $utilized;
+    protected SearchBooleanField $utilized;
+
     /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
+     * @var SearchCustomFieldList
      */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "approvalStatus" => "SearchMultiSelectField",
         "approved" => "SearchBooleanField",
@@ -187,4 +220,599 @@ class TimeBillSearchBasic extends SearchRecordBasic {
         "utilized" => "SearchBooleanField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchMultiSelectField $approvalStatus
+     * @return TimeBillSearchBasic
+     */
+    public function setApprovalStatus(SearchMultiSelectField $approvalStatus): TimeBillSearchBasic
+    {
+        $this->approvalStatus = $approvalStatus;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getApprovalStatus(): SearchMultiSelectField
+    {
+        return $this->approvalStatus;
+    }
+
+    /**
+     * @param SearchBooleanField $approved
+     * @return TimeBillSearchBasic
+     */
+    public function setApproved(SearchBooleanField $approved): TimeBillSearchBasic
+    {
+        $this->approved = $approved;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getApproved(): SearchBooleanField
+    {
+        return $this->approved;
+    }
+
+    /**
+     * @param SearchBooleanField $billable
+     * @return TimeBillSearchBasic
+     */
+    public function setBillable(SearchBooleanField $billable): TimeBillSearchBasic
+    {
+        $this->billable = $billable;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getBillable(): SearchBooleanField
+    {
+        return $this->billable;
+    }
+
+    /**
+     * @param SearchMultiSelectField $class
+     * @return TimeBillSearchBasic
+     */
+    public function setClass(SearchMultiSelectField $class): TimeBillSearchBasic
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getClass(): SearchMultiSelectField
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param SearchMultiSelectField $customer
+     * @return TimeBillSearchBasic
+     */
+    public function setCustomer(SearchMultiSelectField $customer): TimeBillSearchBasic
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCustomer(): SearchMultiSelectField
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchDateField $date
+     * @return TimeBillSearchBasic
+     */
+    public function setDate(SearchDateField $date): TimeBillSearchBasic
+    {
+        $this->date = $date;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDate(): SearchDateField
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param SearchDateField $dateCreated
+     * @return TimeBillSearchBasic
+     */
+    public function setDateCreated(SearchDateField $dateCreated): TimeBillSearchBasic
+    {
+        $this->dateCreated = $dateCreated;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getDateCreated(): SearchDateField
+    {
+        return $this->dateCreated;
+    }
+
+    /**
+     * @param SearchMultiSelectField $department
+     * @return TimeBillSearchBasic
+     */
+    public function setDepartment(SearchMultiSelectField $department): TimeBillSearchBasic
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getDepartment(): SearchMultiSelectField
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param SearchDoubleField $duration
+     * @return TimeBillSearchBasic
+     */
+    public function setDuration(SearchDoubleField $duration): TimeBillSearchBasic
+    {
+        $this->duration = $duration;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getDuration(): SearchDoubleField
+    {
+        return $this->duration;
+    }
+
+    /**
+     * @param SearchMultiSelectField $employee
+     * @return TimeBillSearchBasic
+     */
+    public function setEmployee(SearchMultiSelectField $employee): TimeBillSearchBasic
+    {
+        $this->employee = $employee;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getEmployee(): SearchMultiSelectField
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param SearchBooleanField $exempt
+     * @return TimeBillSearchBasic
+     */
+    public function setExempt(SearchBooleanField $exempt): TimeBillSearchBasic
+    {
+        $this->exempt = $exempt;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getExempt(): SearchBooleanField
+    {
+        return $this->exempt;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return TimeBillSearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): TimeBillSearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return TimeBillSearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): TimeBillSearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return TimeBillSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): TimeBillSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return TimeBillSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): TimeBillSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchMultiSelectField $item
+     * @return TimeBillSearchBasic
+     */
+    public function setItem(SearchMultiSelectField $item): TimeBillSearchBasic
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItem(): SearchMultiSelectField
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchDateField $lastModified
+     * @return TimeBillSearchBasic
+     */
+    public function setLastModified(SearchDateField $lastModified): TimeBillSearchBasic
+    {
+        $this->lastModified = $lastModified;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getLastModified(): SearchDateField
+    {
+        return $this->lastModified;
+    }
+
+    /**
+     * @param SearchMultiSelectField $location
+     * @return TimeBillSearchBasic
+     */
+    public function setLocation(SearchMultiSelectField $location): TimeBillSearchBasic
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getLocation(): SearchMultiSelectField
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param SearchStringField $memo
+     * @return TimeBillSearchBasic
+     */
+    public function setMemo(SearchStringField $memo): TimeBillSearchBasic
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getMemo(): SearchStringField
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchBooleanField $paidByPayroll
+     * @return TimeBillSearchBasic
+     */
+    public function setPaidByPayroll(SearchBooleanField $paidByPayroll): TimeBillSearchBasic
+    {
+        $this->paidByPayroll = $paidByPayroll;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getPaidByPayroll(): SearchBooleanField
+    {
+        return $this->paidByPayroll;
+    }
+
+    /**
+     * @param SearchBooleanField $paidExternally
+     * @return TimeBillSearchBasic
+     */
+    public function setPaidExternally(SearchBooleanField $paidExternally): TimeBillSearchBasic
+    {
+        $this->paidExternally = $paidExternally;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getPaidExternally(): SearchBooleanField
+    {
+        return $this->paidExternally;
+    }
+
+    /**
+     * @param SearchMultiSelectField $payItem
+     * @return TimeBillSearchBasic
+     */
+    public function setPayItem(SearchMultiSelectField $payItem): TimeBillSearchBasic
+    {
+        $this->payItem = $payItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getPayItem(): SearchMultiSelectField
+    {
+        return $this->payItem;
+    }
+
+    /**
+     * @param SearchBooleanField $productive
+     * @return TimeBillSearchBasic
+     */
+    public function setProductive(SearchBooleanField $productive): TimeBillSearchBasic
+    {
+        $this->productive = $productive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getProductive(): SearchBooleanField
+    {
+        return $this->productive;
+    }
+
+    /**
+     * @param SearchStringField $rejectionNote
+     * @return TimeBillSearchBasic
+     */
+    public function setRejectionNote(SearchStringField $rejectionNote): TimeBillSearchBasic
+    {
+        $this->rejectionNote = $rejectionNote;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getRejectionNote(): SearchStringField
+    {
+        return $this->rejectionNote;
+    }
+
+    /**
+     * @param SearchBooleanField $status
+     * @return TimeBillSearchBasic
+     */
+    public function setStatus(SearchBooleanField $status): TimeBillSearchBasic
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getStatus(): SearchBooleanField
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return TimeBillSearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): TimeBillSearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchMultiSelectField $temporaryLocalJurisdiction
+     * @return TimeBillSearchBasic
+     */
+    public function setTemporaryLocalJurisdiction(SearchMultiSelectField $temporaryLocalJurisdiction): TimeBillSearchBasic
+    {
+        $this->temporaryLocalJurisdiction = $temporaryLocalJurisdiction;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getTemporaryLocalJurisdiction(): SearchMultiSelectField
+    {
+        return $this->temporaryLocalJurisdiction;
+    }
+
+    /**
+     * @param SearchMultiSelectField $temporaryStateJurisdiction
+     * @return TimeBillSearchBasic
+     */
+    public function setTemporaryStateJurisdiction(SearchMultiSelectField $temporaryStateJurisdiction): TimeBillSearchBasic
+    {
+        $this->temporaryStateJurisdiction = $temporaryStateJurisdiction;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getTemporaryStateJurisdiction(): SearchMultiSelectField
+    {
+        return $this->temporaryStateJurisdiction;
+    }
+
+    /**
+     * @param SearchBooleanField $timeModified
+     * @return TimeBillSearchBasic
+     */
+    public function setTimeModified(SearchBooleanField $timeModified): TimeBillSearchBasic
+    {
+        $this->timeModified = $timeModified;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getTimeModified(): SearchBooleanField
+    {
+        return $this->timeModified;
+    }
+
+    /**
+     * @param SearchMultiSelectField $timeSheet
+     * @return TimeBillSearchBasic
+     */
+    public function setTimeSheet(SearchMultiSelectField $timeSheet): TimeBillSearchBasic
+    {
+        $this->timeSheet = $timeSheet;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getTimeSheet(): SearchMultiSelectField
+    {
+        return $this->timeSheet;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $type
+     * @return TimeBillSearchBasic
+     */
+    public function setType(SearchEnumMultiSelectField $type): TimeBillSearchBasic
+    {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getType(): SearchEnumMultiSelectField
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param SearchBooleanField $utilized
+     * @return TimeBillSearchBasic
+     */
+    public function setUtilized(SearchBooleanField $utilized): TimeBillSearchBasic
+    {
+        $this->utilized = $utilized;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getUtilized(): SearchBooleanField
+    {
+        return $this->utilized;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return TimeBillSearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): TimeBillSearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

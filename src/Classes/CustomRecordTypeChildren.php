@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class CustomRecordTypeChildren {
     /**
      * @var string
      */
-    public $childDescr;
+    protected string $childDescr;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $childTab;
+    protected RecordRef $childTab;
+
     static $paramtypesmap = array(
         "childDescr" => "string",
         "childTab" => "RecordRef",
     );
+
+    /**
+     * @param string $childDescr
+     * @return CustomRecordTypeChildren
+     */
+    public function setChildDescr(string $childDescr): CustomRecordTypeChildren
+    {
+        $this->childDescr = $childDescr;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getChildDescr(): string
+    {
+        return $this->childDescr;
+    }
+
+    /**
+     * @param RecordRef $childTab
+     * @return CustomRecordTypeChildren
+     */
+    public function setChildTab(RecordRef $childTab): CustomRecordTypeChildren
+    {
+        $this->childTab = $childTab;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getChildTab(): RecordRef
+    {
+        return $this->childTab;
+    }
+
 }

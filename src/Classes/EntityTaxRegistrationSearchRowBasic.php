@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EntityTaxRegistrationSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $address;
+    protected array $address;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $id;
+    protected array $id;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $nexusCountry;
+    protected array $nexusCountry;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $taxRegistrationNumber;
+    protected array $taxRegistrationNumber;
+
     static $paramtypesmap = array(
         "address" => "SearchColumnSelectField[]",
         "id" => "SearchColumnLongField[]",
         "nexusCountry" => "SearchColumnEnumSelectField[]",
         "taxRegistrationNumber" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $address
+     * @return EntityTaxRegistrationSearchRowBasic
+     */
+    public function setAddress(SearchColumnSelectField $address): EntityTaxRegistrationSearchRowBasic
+    {
+        $this->address[] = $address;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAddress(): array
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $id
+     * @return EntityTaxRegistrationSearchRowBasic
+     */
+    public function setId(SearchColumnLongField $id): EntityTaxRegistrationSearchRowBasic
+    {
+        $this->id[] = $id;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getId(): array
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param SearchColumnEnumSelectField[] $nexusCountry
+     * @return EntityTaxRegistrationSearchRowBasic
+     */
+    public function setNexusCountry(SearchColumnEnumSelectField $nexusCountry): EntityTaxRegistrationSearchRowBasic
+    {
+        $this->nexusCountry[] = $nexusCountry;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getNexusCountry(): array
+    {
+        return $this->nexusCountry;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $taxRegistrationNumber
+     * @return EntityTaxRegistrationSearchRowBasic
+     */
+    public function setTaxRegistrationNumber(SearchColumnStringField $taxRegistrationNumber): EntityTaxRegistrationSearchRowBasic
+    {
+        $this->taxRegistrationNumber[] = $taxRegistrationNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getTaxRegistrationNumber(): array
+    {
+        return $this->taxRegistrationNumber;
+    }
+
 }

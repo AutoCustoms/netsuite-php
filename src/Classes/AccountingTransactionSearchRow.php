@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingTransactionSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\AccountingTransactionSearchRowBasic
+     * @var AccountingTransactionSearchRowBasic
      */
-    public $basic;
+    protected AccountingTransactionSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchRowBasic
+     * @var AccountSearchRowBasic
      */
-    public $accountJoin;
+    protected AccountSearchRowBasic $accountJoin;
+
     /**
-     * @var \NetSuite\Classes\RevRecScheduleSearchRowBasic
+     * @var RevRecScheduleSearchRowBasic
      */
-    public $revRecScheduleJoin;
+    protected RevRecScheduleSearchRowBasic $revRecScheduleJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     * @var TransactionSearchRowBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchRowBasic $transactionJoin;
+
     static $paramtypesmap = array(
         "basic" => "AccountingTransactionSearchRowBasic",
         "accountJoin" => "AccountSearchRowBasic",
         "revRecScheduleJoin" => "RevRecScheduleSearchRowBasic",
         "transactionJoin" => "TransactionSearchRowBasic",
     );
+
+    /**
+     * @param AccountingTransactionSearchRowBasic $basic
+     * @return AccountingTransactionSearchRow
+     */
+    public function setBasic(AccountingTransactionSearchRowBasic $basic): AccountingTransactionSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return AccountingTransactionSearchRowBasic
+     */
+    public function getBasic(): AccountingTransactionSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param AccountSearchRowBasic $accountJoin
+     * @return AccountingTransactionSearchRow
+     */
+    public function setAccountJoin(AccountSearchRowBasic $accountJoin): AccountingTransactionSearchRow
+    {
+        $this->accountJoin = $accountJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchRowBasic
+     */
+    public function getAccountJoin(): AccountSearchRowBasic
+    {
+        return $this->accountJoin;
+    }
+
+    /**
+     * @param RevRecScheduleSearchRowBasic $revRecScheduleJoin
+     * @return AccountingTransactionSearchRow
+     */
+    public function setRevRecScheduleJoin(RevRecScheduleSearchRowBasic $revRecScheduleJoin): AccountingTransactionSearchRow
+    {
+        $this->revRecScheduleJoin = $revRecScheduleJoin;
+        return $this;
+    }
+
+    /**
+     * @return RevRecScheduleSearchRowBasic
+     */
+    public function getRevRecScheduleJoin(): RevRecScheduleSearchRowBasic
+    {
+        return $this->revRecScheduleJoin;
+    }
+
+    /**
+     * @param TransactionSearchRowBasic $transactionJoin
+     * @return AccountingTransactionSearchRow
+     */
+    public function setTransactionJoin(TransactionSearchRowBasic $transactionJoin): AccountingTransactionSearchRow
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchRowBasic
+     */
+    public function getTransactionJoin(): TransactionSearchRowBasic
+    {
+        return $this->transactionJoin;
+    }
+
 }

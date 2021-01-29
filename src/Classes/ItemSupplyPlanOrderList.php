@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemSupplyPlanOrderList {
     /**
-     * @var \NetSuite\Classes\ItemSupplyPlanOrder[]
+     * @var ItemSupplyPlanOrder[]
      */
-    public $itemSupplyPlanOrder;
+    protected array $itemSupplyPlanOrder;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "itemSupplyPlanOrder" => "ItemSupplyPlanOrder[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ItemSupplyPlanOrder[] $itemSupplyPlanOrder
+     * @return ItemSupplyPlanOrderList
+     */
+    public function setItemSupplyPlanOrder(ItemSupplyPlanOrder $itemSupplyPlanOrder): ItemSupplyPlanOrderList
+    {
+        $this->itemSupplyPlanOrder[] = $itemSupplyPlanOrder;
+        return $this;
+    }
+
+    /**
+     * @return ItemSupplyPlanOrder[]
+     */
+    public function getItemSupplyPlanOrder(): array
+    {
+        return $this->itemSupplyPlanOrder;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ItemSupplyPlanOrderList
+     */
+    public function setReplaceAll(bool $replaceAll): ItemSupplyPlanOrderList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PeriodEndJournalLineList {
     /**
-     * @var \NetSuite\Classes\PeriodEndJournalLine[]
+     * @var PeriodEndJournalLine[]
      */
-    public $periodEndJournalLine;
+    protected array $periodEndJournalLine;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "periodEndJournalLine" => "PeriodEndJournalLine[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param PeriodEndJournalLine[] $periodEndJournalLine
+     * @return PeriodEndJournalLineList
+     */
+    public function setPeriodEndJournalLine(PeriodEndJournalLine $periodEndJournalLine): PeriodEndJournalLineList
+    {
+        $this->periodEndJournalLine[] = $periodEndJournalLine;
+        return $this;
+    }
+
+    /**
+     * @return PeriodEndJournalLine[]
+     */
+    public function getPeriodEndJournalLine(): array
+    {
+        return $this->periodEndJournalLine;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return PeriodEndJournalLineList
+     */
+    public function setReplaceAll(bool $replaceAll): PeriodEndJournalLineList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

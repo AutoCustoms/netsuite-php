@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,103 +23,128 @@ class DepositApplication extends Record {
     /**
      * @var string
      */
-    public $createdDate;
+    protected string $createdDate;
+
     /**
      * @var string
      */
-    public $lastModifiedDate;
+    protected string $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $arAcct;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $customer;
+    protected RecordRef $arAcct;
+
     /**
      * @var string
      */
-    public $tranDate;
+    protected string $status;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $postingPeriod;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $deposit;
+    protected RecordRef $customer;
+
     /**
      * @var string
      */
-    public $depDate;
+    protected string $tranDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
+    protected RecordRef $postingPeriod;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $deposit;
+
+    /**
+     * @var string
+     */
+    protected string $depDate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $currency;
+
     /**
      * @var float
      */
-    public $exchangeRate;
+    protected float $exchangeRate;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $memo;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $subsidiary;
+    protected RecordRef $subsidiary;
+
     /**
      * @var float
      */
-    public $total;
+    protected float $total;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
-    /**
-     * @var float
-     */
-    public $applied;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $class;
+    protected RecordRef $department;
+
     /**
      * @var float
      */
-    public $unapplied;
+    protected float $applied;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $class;
+
     /**
-     * @var string
+     * @var float
      */
-    public $tranId;
+    protected float $unapplied;
+
     /**
-     * @var \NetSuite\Classes\DepositApplicationApplyList
+     * @var RecordRef
      */
-    public $applyList;
-    /**
-     * @var \NetSuite\Classes\AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var \NetSuite\Classes\CustomFieldList
-     */
-    public $customFieldList;
+    protected RecordRef $location;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $tranId;
+
+    /**
+     * @var DepositApplicationApplyList
+     */
+    protected DepositApplicationApplyList $applyList;
+
+    /**
+     * @var AccountingBookDetailList
+     */
+    protected AccountingBookDetailList $accountingBookDetailList;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $internalId;
+
+    /**
+     * @var string
+     */
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
@@ -147,4 +172,455 @@ class DepositApplication extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $createdDate
+     * @return DepositApplication
+     */
+    public function setCreatedDate(string $createdDate): DepositApplication
+    {
+        $this->createdDate = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDate(): string
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param string $lastModifiedDate
+     * @return DepositApplication
+     */
+    public function setLastModifiedDate(string $lastModifiedDate): DepositApplication
+    {
+        $this->lastModifiedDate = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastModifiedDate(): string
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param RecordRef $arAcct
+     * @return DepositApplication
+     */
+    public function setArAcct(RecordRef $arAcct): DepositApplication
+    {
+        $this->arAcct = $arAcct;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getArAcct(): RecordRef
+    {
+        return $this->arAcct;
+    }
+
+    /**
+     * @param string $status
+     * @return DepositApplication
+     */
+    public function setStatus(string $status): DepositApplication
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return DepositApplication
+     */
+    public function setCustomer(RecordRef $customer): DepositApplication
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return DepositApplication
+     */
+    public function setTranDate(string $tranDate): DepositApplication
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param RecordRef $postingPeriod
+     * @return DepositApplication
+     */
+    public function setPostingPeriod(RecordRef $postingPeriod): DepositApplication
+    {
+        $this->postingPeriod = $postingPeriod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPostingPeriod(): RecordRef
+    {
+        return $this->postingPeriod;
+    }
+
+    /**
+     * @param RecordRef $deposit
+     * @return DepositApplication
+     */
+    public function setDeposit(RecordRef $deposit): DepositApplication
+    {
+        $this->deposit = $deposit;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDeposit(): RecordRef
+    {
+        return $this->deposit;
+    }
+
+    /**
+     * @param string $depDate
+     * @return DepositApplication
+     */
+    public function setDepDate(string $depDate): DepositApplication
+    {
+        $this->depDate = $depDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDepDate(): string
+    {
+        return $this->depDate;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return DepositApplication
+     */
+    public function setCurrency(RecordRef $currency): DepositApplication
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return DepositApplication
+     */
+    public function setExchangeRate(float $exchangeRate): DepositApplication
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param string $memo
+     * @return DepositApplication
+     */
+    public function setMemo(string $memo): DepositApplication
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param RecordRef $subsidiary
+     * @return DepositApplication
+     */
+    public function setSubsidiary(RecordRef $subsidiary): DepositApplication
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSubsidiary(): RecordRef
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param float $total
+     * @return DepositApplication
+     */
+    public function setTotal(float $total): DepositApplication
+    {
+        $this->total = $total;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotal(): float
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return DepositApplication
+     */
+    public function setDepartment(RecordRef $department): DepositApplication
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param float $applied
+     * @return DepositApplication
+     */
+    public function setApplied(float $applied): DepositApplication
+    {
+        $this->applied = $applied;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getApplied(): float
+    {
+        return $this->applied;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return DepositApplication
+     */
+    public function setClass(RecordRef $class): DepositApplication
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param float $unapplied
+     * @return DepositApplication
+     */
+    public function setUnapplied(float $unapplied): DepositApplication
+    {
+        $this->unapplied = $unapplied;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getUnapplied(): float
+    {
+        return $this->unapplied;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return DepositApplication
+     */
+    public function setLocation(RecordRef $location): DepositApplication
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param string $tranId
+     * @return DepositApplication
+     */
+    public function setTranId(string $tranId): DepositApplication
+    {
+        $this->tranId = $tranId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranId(): string
+    {
+        return $this->tranId;
+    }
+
+    /**
+     * @param DepositApplicationApplyList $applyList
+     * @return DepositApplication
+     */
+    public function setApplyList(DepositApplicationApplyList $applyList): DepositApplication
+    {
+        $this->applyList = $applyList;
+        return $this;
+    }
+
+    /**
+     * @return DepositApplicationApplyList
+     */
+    public function getApplyList(): DepositApplicationApplyList
+    {
+        return $this->applyList;
+    }
+
+    /**
+     * @param AccountingBookDetailList $accountingBookDetailList
+     * @return DepositApplication
+     */
+    public function setAccountingBookDetailList(AccountingBookDetailList $accountingBookDetailList): DepositApplication
+    {
+        $this->accountingBookDetailList = $accountingBookDetailList;
+        return $this;
+    }
+
+    /**
+     * @return AccountingBookDetailList
+     */
+    public function getAccountingBookDetailList(): AccountingBookDetailList
+    {
+        return $this->accountingBookDetailList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return DepositApplication
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): DepositApplication
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
+    /**
+     * @param string $internalId
+     * @return DepositApplication
+     */
+    public function setInternalId(string $internalId): DepositApplication
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return DepositApplication
+     */
+    public function setExternalId(string $externalId): DepositApplication
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

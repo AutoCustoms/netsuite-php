@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ExpenseCategoryRatesList {
     /**
-     * @var \NetSuite\Classes\ExpenseCategoryRates[]
+     * @var ExpenseCategoryRates[]
      */
-    public $expenseCategoryRates;
+    protected array $expenseCategoryRates;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "expenseCategoryRates" => "ExpenseCategoryRates[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ExpenseCategoryRates[] $expenseCategoryRates
+     * @return ExpenseCategoryRatesList
+     */
+    public function setExpenseCategoryRates(ExpenseCategoryRates $expenseCategoryRates): ExpenseCategoryRatesList
+    {
+        $this->expenseCategoryRates[] = $expenseCategoryRates;
+        return $this;
+    }
+
+    /**
+     * @return ExpenseCategoryRates[]
+     */
+    public function getExpenseCategoryRates(): array
+    {
+        return $this->expenseCategoryRates;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ExpenseCategoryRatesList
+     */
+    public function setReplaceAll(bool $replaceAll): ExpenseCategoryRatesList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

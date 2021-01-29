@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InboundShipmentItemsList {
     /**
-     * @var \NetSuite\Classes\InboundShipmentItems[]
+     * @var InboundShipmentItems[]
      */
-    public $inboundShipmentItems;
+    protected array $inboundShipmentItems;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "inboundShipmentItems" => "InboundShipmentItems[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param InboundShipmentItems[] $inboundShipmentItems
+     * @return InboundShipmentItemsList
+     */
+    public function setInboundShipmentItems(InboundShipmentItems $inboundShipmentItems): InboundShipmentItemsList
+    {
+        $this->inboundShipmentItems[] = $inboundShipmentItems;
+        return $this;
+    }
+
+    /**
+     * @return InboundShipmentItems[]
+     */
+    public function getInboundShipmentItems(): array
+    {
+        return $this->inboundShipmentItems;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return InboundShipmentItemsList
+     */
+    public function setReplaceAll(bool $replaceAll): InboundShipmentItemsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

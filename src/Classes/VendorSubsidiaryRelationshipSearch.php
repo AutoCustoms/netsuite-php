@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorSubsidiaryRelationshipSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\VendorSubsidiaryRelationshipSearchBasic
+     * @var VendorSubsidiaryRelationshipSearchBasic
      */
-    public $basic;
+    protected VendorSubsidiaryRelationshipSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\SubsidiarySearchBasic
+     * @var SubsidiarySearchBasic
      */
-    public $subsidiaryJoin;
+    protected SubsidiarySearchBasic $subsidiaryJoin;
+
     /**
-     * @var \NetSuite\Classes\VendorSearchBasic
+     * @var VendorSearchBasic
      */
-    public $vendorJoin;
+    protected VendorSearchBasic $vendorJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "VendorSubsidiaryRelationshipSearchBasic",
         "subsidiaryJoin" => "SubsidiarySearchBasic",
         "vendorJoin" => "VendorSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param VendorSubsidiaryRelationshipSearchBasic $basic
+     * @return VendorSubsidiaryRelationshipSearch
+     */
+    public function setBasic(VendorSubsidiaryRelationshipSearchBasic $basic): VendorSubsidiaryRelationshipSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return VendorSubsidiaryRelationshipSearchBasic
+     */
+    public function getBasic(): VendorSubsidiaryRelationshipSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param SubsidiarySearchBasic $subsidiaryJoin
+     * @return VendorSubsidiaryRelationshipSearch
+     */
+    public function setSubsidiaryJoin(SubsidiarySearchBasic $subsidiaryJoin): VendorSubsidiaryRelationshipSearch
+    {
+        $this->subsidiaryJoin = $subsidiaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return SubsidiarySearchBasic
+     */
+    public function getSubsidiaryJoin(): SubsidiarySearchBasic
+    {
+        return $this->subsidiaryJoin;
+    }
+
+    /**
+     * @param VendorSearchBasic $vendorJoin
+     * @return VendorSubsidiaryRelationshipSearch
+     */
+    public function setVendorJoin(VendorSearchBasic $vendorJoin): VendorSubsidiaryRelationshipSearch
+    {
+        $this->vendorJoin = $vendorJoin;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearchBasic
+     */
+    public function getVendorJoin(): VendorSearchBasic
+    {
+        return $this->vendorJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return VendorSubsidiaryRelationshipSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): VendorSubsidiaryRelationshipSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

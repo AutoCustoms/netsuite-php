@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class JobMilestonesList {
     /**
-     * @var \NetSuite\Classes\JobMilestones[]
+     * @var JobMilestones[]
      */
-    public $milestones;
+    protected array $milestones;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "milestones" => "JobMilestones[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param JobMilestones[] $milestones
+     * @return JobMilestonesList
+     */
+    public function setMilestones(JobMilestones $milestones): JobMilestonesList
+    {
+        $this->milestones[] = $milestones;
+        return $this;
+    }
+
+    /**
+     * @return JobMilestones[]
+     */
+    public function getMilestones(): array
+    {
+        return $this->milestones;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return JobMilestonesList
+     */
+    public function setReplaceAll(bool $replaceAll): JobMilestonesList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

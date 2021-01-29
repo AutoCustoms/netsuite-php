@@ -14,64 +14,77 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PhoneCallSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PhoneCallSearchBasic
+     * @var PhoneCallSearchBasic
      */
-    public $basic;
+    protected PhoneCallSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\SupportCaseSearchBasic
+     * @var SupportCaseSearchBasic
      */
-    public $caseJoin;
+    protected SupportCaseSearchBasic $caseJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $companyCustomerJoin;
+    protected CustomerSearchBasic $companyCustomerJoin;
+
     /**
-     * @var \NetSuite\Classes\ContactSearchBasic
+     * @var ContactSearchBasic
      */
-    public $contactJoin;
+    protected ContactSearchBasic $contactJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $employeeJoin;
+    protected EmployeeSearchBasic $employeeJoin;
+
     /**
-     * @var \NetSuite\Classes\FileSearchBasic
+     * @var FileSearchBasic
      */
-    public $fileJoin;
+    protected FileSearchBasic $fileJoin;
+
     /**
-     * @var \NetSuite\Classes\OpportunitySearchBasic
+     * @var OpportunitySearchBasic
      */
-    public $opportunityJoin;
+    protected OpportunitySearchBasic $opportunityJoin;
+
     /**
-     * @var \NetSuite\Classes\OriginatingLeadSearchBasic
+     * @var OriginatingLeadSearchBasic
      */
-    public $originatingLeadJoin;
+    protected OriginatingLeadSearchBasic $originatingLeadJoin;
+
     /**
-     * @var \NetSuite\Classes\EntitySearchBasic
+     * @var EntitySearchBasic
      */
-    public $participantJoin;
+    protected EntitySearchBasic $participantJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchBasic
+     * @var NoteSearchBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "PhoneCallSearchBasic",
         "caseJoin" => "SupportCaseSearchBasic",
@@ -87,4 +100,239 @@ class PhoneCallSearch extends SearchRecord {
         "userNotesJoin" => "NoteSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param PhoneCallSearchBasic $basic
+     * @return PhoneCallSearch
+     */
+    public function setBasic(PhoneCallSearchBasic $basic): PhoneCallSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return PhoneCallSearchBasic
+     */
+    public function getBasic(): PhoneCallSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param SupportCaseSearchBasic $caseJoin
+     * @return PhoneCallSearch
+     */
+    public function setCaseJoin(SupportCaseSearchBasic $caseJoin): PhoneCallSearch
+    {
+        $this->caseJoin = $caseJoin;
+        return $this;
+    }
+
+    /**
+     * @return SupportCaseSearchBasic
+     */
+    public function getCaseJoin(): SupportCaseSearchBasic
+    {
+        return $this->caseJoin;
+    }
+
+    /**
+     * @param CustomerSearchBasic $companyCustomerJoin
+     * @return PhoneCallSearch
+     */
+    public function setCompanyCustomerJoin(CustomerSearchBasic $companyCustomerJoin): PhoneCallSearch
+    {
+        $this->companyCustomerJoin = $companyCustomerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getCompanyCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->companyCustomerJoin;
+    }
+
+    /**
+     * @param ContactSearchBasic $contactJoin
+     * @return PhoneCallSearch
+     */
+    public function setContactJoin(ContactSearchBasic $contactJoin): PhoneCallSearch
+    {
+        $this->contactJoin = $contactJoin;
+        return $this;
+    }
+
+    /**
+     * @return ContactSearchBasic
+     */
+    public function getContactJoin(): ContactSearchBasic
+    {
+        return $this->contactJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $employeeJoin
+     * @return PhoneCallSearch
+     */
+    public function setEmployeeJoin(EmployeeSearchBasic $employeeJoin): PhoneCallSearch
+    {
+        $this->employeeJoin = $employeeJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getEmployeeJoin(): EmployeeSearchBasic
+    {
+        return $this->employeeJoin;
+    }
+
+    /**
+     * @param FileSearchBasic $fileJoin
+     * @return PhoneCallSearch
+     */
+    public function setFileJoin(FileSearchBasic $fileJoin): PhoneCallSearch
+    {
+        $this->fileJoin = $fileJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchBasic
+     */
+    public function getFileJoin(): FileSearchBasic
+    {
+        return $this->fileJoin;
+    }
+
+    /**
+     * @param OpportunitySearchBasic $opportunityJoin
+     * @return PhoneCallSearch
+     */
+    public function setOpportunityJoin(OpportunitySearchBasic $opportunityJoin): PhoneCallSearch
+    {
+        $this->opportunityJoin = $opportunityJoin;
+        return $this;
+    }
+
+    /**
+     * @return OpportunitySearchBasic
+     */
+    public function getOpportunityJoin(): OpportunitySearchBasic
+    {
+        return $this->opportunityJoin;
+    }
+
+    /**
+     * @param OriginatingLeadSearchBasic $originatingLeadJoin
+     * @return PhoneCallSearch
+     */
+    public function setOriginatingLeadJoin(OriginatingLeadSearchBasic $originatingLeadJoin): PhoneCallSearch
+    {
+        $this->originatingLeadJoin = $originatingLeadJoin;
+        return $this;
+    }
+
+    /**
+     * @return OriginatingLeadSearchBasic
+     */
+    public function getOriginatingLeadJoin(): OriginatingLeadSearchBasic
+    {
+        return $this->originatingLeadJoin;
+    }
+
+    /**
+     * @param EntitySearchBasic $participantJoin
+     * @return PhoneCallSearch
+     */
+    public function setParticipantJoin(EntitySearchBasic $participantJoin): PhoneCallSearch
+    {
+        $this->participantJoin = $participantJoin;
+        return $this;
+    }
+
+    /**
+     * @return EntitySearchBasic
+     */
+    public function getParticipantJoin(): EntitySearchBasic
+    {
+        return $this->participantJoin;
+    }
+
+    /**
+     * @param TransactionSearchBasic $transactionJoin
+     * @return PhoneCallSearch
+     */
+    public function setTransactionJoin(TransactionSearchBasic $transactionJoin): PhoneCallSearch
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getTransactionJoin(): TransactionSearchBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return PhoneCallSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): PhoneCallSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchBasic $userNotesJoin
+     * @return PhoneCallSearch
+     */
+    public function setUserNotesJoin(NoteSearchBasic $userNotesJoin): PhoneCallSearch
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchBasic
+     */
+    public function getUserNotesJoin(): NoteSearchBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return PhoneCallSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): PhoneCallSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AssemblyItemBomSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $assembly;
+    protected array $assembly;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $billOfMaterials;
+    protected array $billOfMaterials;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $default;
+    protected array $default;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $locations;
+    protected array $locations;
+
     static $paramtypesmap = array(
         "assembly" => "SearchColumnSelectField[]",
         "billOfMaterials" => "SearchColumnSelectField[]",
         "default" => "SearchColumnBooleanField[]",
         "locations" => "SearchColumnSelectField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $assembly
+     * @return AssemblyItemBomSearchRowBasic
+     */
+    public function setAssembly(SearchColumnSelectField $assembly): AssemblyItemBomSearchRowBasic
+    {
+        $this->assembly[] = $assembly;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAssembly(): array
+    {
+        return $this->assembly;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $billOfMaterials
+     * @return AssemblyItemBomSearchRowBasic
+     */
+    public function setBillOfMaterials(SearchColumnSelectField $billOfMaterials): AssemblyItemBomSearchRowBasic
+    {
+        $this->billOfMaterials[] = $billOfMaterials;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBillOfMaterials(): array
+    {
+        return $this->billOfMaterials;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $default
+     * @return AssemblyItemBomSearchRowBasic
+     */
+    public function setDefault(SearchColumnBooleanField $default): AssemblyItemBomSearchRowBasic
+    {
+        $this->default[] = $default;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getDefault(): array
+    {
+        return $this->default;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $locations
+     * @return AssemblyItemBomSearchRowBasic
+     */
+    public function setLocations(SearchColumnSelectField $locations): AssemblyItemBomSearchRowBasic
+    {
+        $this->locations[] = $locations;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getLocations(): array
+    {
+        return $this->locations;
+    }
+
 }

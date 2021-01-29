@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CurrencyRateSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $baseCurrency;
+    protected array $baseCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $effectiveDate;
+    protected array $effectiveDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $exchangeRate;
+    protected array $exchangeRate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $transactionCurrency;
+    protected array $transactionCurrency;
+
     static $paramtypesmap = array(
         "baseCurrency" => "SearchColumnSelectField[]",
         "effectiveDate" => "SearchColumnDateField[]",
@@ -47,4 +52,95 @@ class CurrencyRateSearchRowBasic extends SearchRowBasic {
         "internalId" => "SearchColumnSelectField[]",
         "transactionCurrency" => "SearchColumnSelectField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $baseCurrency
+     * @return CurrencyRateSearchRowBasic
+     */
+    public function setBaseCurrency(SearchColumnSelectField $baseCurrency): CurrencyRateSearchRowBasic
+    {
+        $this->baseCurrency[] = $baseCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBaseCurrency(): array
+    {
+        return $this->baseCurrency;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $effectiveDate
+     * @return CurrencyRateSearchRowBasic
+     */
+    public function setEffectiveDate(SearchColumnDateField $effectiveDate): CurrencyRateSearchRowBasic
+    {
+        $this->effectiveDate[] = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEffectiveDate(): array
+    {
+        return $this->effectiveDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $exchangeRate
+     * @return CurrencyRateSearchRowBasic
+     */
+    public function setExchangeRate(SearchColumnDoubleField $exchangeRate): CurrencyRateSearchRowBasic
+    {
+        $this->exchangeRate[] = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getExchangeRate(): array
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return CurrencyRateSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): CurrencyRateSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $transactionCurrency
+     * @return CurrencyRateSearchRowBasic
+     */
+    public function setTransactionCurrency(SearchColumnSelectField $transactionCurrency): CurrencyRateSearchRowBasic
+    {
+        $this->transactionCurrency[] = $transactionCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getTransactionCurrency(): array
+    {
+        return $this->transactionCurrency;
+    }
+
 }

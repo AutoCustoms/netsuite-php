@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EmployeeCompanyContributionList {
     /**
-     * @var \NetSuite\Classes\EmployeeCompanyContribution[]
+     * @var EmployeeCompanyContribution[]
      */
-    public $employeeCompanyContribution;
+    protected array $employeeCompanyContribution;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "employeeCompanyContribution" => "EmployeeCompanyContribution[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param EmployeeCompanyContribution[] $employeeCompanyContribution
+     * @return EmployeeCompanyContributionList
+     */
+    public function setEmployeeCompanyContribution(EmployeeCompanyContribution $employeeCompanyContribution): EmployeeCompanyContributionList
+    {
+        $this->employeeCompanyContribution[] = $employeeCompanyContribution;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeCompanyContribution[]
+     */
+    public function getEmployeeCompanyContribution(): array
+    {
+        return $this->employeeCompanyContribution;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return EmployeeCompanyContributionList
+     */
+    public function setReplaceAll(bool $replaceAll): EmployeeCompanyContributionList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetAllResult {
     /**
-     * @var \NetSuite\Classes\Status
+     * @var Status
      */
-    public $status;
+    protected Status $status;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $totalRecords;
+    protected int $totalRecords;
+
     /**
-     * @var \NetSuite\Classes\RecordList
+     * @var RecordList
      */
-    public $recordList;
+    protected RecordList $recordList;
+
     static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "recordList" => "RecordList",
     );
+
+    /**
+     * @param Status $status
+     * @return GetAllResult
+     */
+    public function setStatus(Status $status): GetAllResult
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param int $totalRecords
+     * @return GetAllResult
+     */
+    public function setTotalRecords(int $totalRecords): GetAllResult
+    {
+        $this->totalRecords = $totalRecords;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotalRecords(): int
+    {
+        return $this->totalRecords;
+    }
+
+    /**
+     * @param RecordList $recordList
+     * @return GetAllResult
+     */
+    public function setRecordList(RecordList $recordList): GetAllResult
+    {
+        $this->recordList = $recordList;
+        return $this;
+    }
+
+    /**
+     * @return RecordList
+     */
+    public function getRecordList(): RecordList
+    {
+        return $this->recordList;
+    }
+
 }

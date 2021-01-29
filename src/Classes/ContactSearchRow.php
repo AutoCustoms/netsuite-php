@@ -14,128 +14,157 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ContactSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\ContactSearchRowBasic
+     * @var ContactSearchRowBasic
      */
-    public $basic;
+    protected ContactSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\PhoneCallSearchRowBasic
+     * @var PhoneCallSearchRowBasic
      */
-    public $callJoin;
+    protected PhoneCallSearchRowBasic $callJoin;
+
     /**
-     * @var \NetSuite\Classes\CampaignSearchRowBasic
+     * @var CampaignSearchRowBasic
      */
-    public $campaignResponseJoin;
+    protected CampaignSearchRowBasic $campaignResponseJoin;
+
     /**
-     * @var \NetSuite\Classes\SupportCaseSearchRowBasic
+     * @var SupportCaseSearchRowBasic
      */
-    public $caseJoin;
+    protected SupportCaseSearchRowBasic $caseJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchRowBasic
+     * @var CustomerSearchRowBasic
      */
-    public $customerJoin;
+    protected CustomerSearchRowBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchRowBasic
+     * @var CustomerSearchRowBasic
      */
-    public $customerPrimaryJoin;
+    protected CustomerSearchRowBasic $customerPrimaryJoin;
+
     /**
-     * @var \NetSuite\Classes\CalendarEventSearchRowBasic
+     * @var CalendarEventSearchRowBasic
      */
-    public $eventJoin;
+    protected CalendarEventSearchRowBasic $eventJoin;
+
     /**
-     * @var \NetSuite\Classes\FileSearchRowBasic
+     * @var FileSearchRowBasic
      */
-    public $fileJoin;
+    protected FileSearchRowBasic $fileJoin;
+
     /**
-     * @var \NetSuite\Classes\JobSearchRowBasic
+     * @var JobSearchRowBasic
      */
-    public $jobJoin;
+    protected JobSearchRowBasic $jobJoin;
+
     /**
-     * @var \NetSuite\Classes\JobSearchRowBasic
+     * @var JobSearchRowBasic
      */
-    public $jobPrimaryJoin;
+    protected JobSearchRowBasic $jobPrimaryJoin;
+
     /**
-     * @var \NetSuite\Classes\MessageSearchRowBasic
+     * @var MessageSearchRowBasic
      */
-    public $messagesJoin;
+    protected MessageSearchRowBasic $messagesJoin;
+
     /**
-     * @var \NetSuite\Classes\MessageSearchRowBasic
+     * @var MessageSearchRowBasic
      */
-    public $messagesFromJoin;
+    protected MessageSearchRowBasic $messagesFromJoin;
+
     /**
-     * @var \NetSuite\Classes\MessageSearchRowBasic
+     * @var MessageSearchRowBasic
      */
-    public $messagesToJoin;
+    protected MessageSearchRowBasic $messagesToJoin;
+
     /**
-     * @var \NetSuite\Classes\OpportunitySearchRowBasic
+     * @var OpportunitySearchRowBasic
      */
-    public $opportunityJoin;
+    protected OpportunitySearchRowBasic $opportunityJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchRowBasic
+     * @var CustomerSearchRowBasic
      */
-    public $parentCustomerJoin;
+    protected CustomerSearchRowBasic $parentCustomerJoin;
+
     /**
-     * @var \NetSuite\Classes\JobSearchRowBasic
+     * @var JobSearchRowBasic
      */
-    public $parentJobJoin;
+    protected JobSearchRowBasic $parentJobJoin;
+
     /**
-     * @var \NetSuite\Classes\PartnerSearchRowBasic
+     * @var PartnerSearchRowBasic
      */
-    public $parentPartnerJoin;
+    protected PartnerSearchRowBasic $parentPartnerJoin;
+
     /**
-     * @var \NetSuite\Classes\VendorSearchRowBasic
+     * @var VendorSearchRowBasic
      */
-    public $parentVendorJoin;
+    protected VendorSearchRowBasic $parentVendorJoin;
+
     /**
-     * @var \NetSuite\Classes\PartnerSearchRowBasic
+     * @var PartnerSearchRowBasic
      */
-    public $partnerJoin;
+    protected PartnerSearchRowBasic $partnerJoin;
+
     /**
-     * @var \NetSuite\Classes\PartnerSearchRowBasic
+     * @var PartnerSearchRowBasic
      */
-    public $partnerPrimaryJoin;
+    protected PartnerSearchRowBasic $partnerPrimaryJoin;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchRowBasic
+     * @var ItemSearchRowBasic
      */
-    public $purchasedItemJoin;
+    protected ItemSearchRowBasic $purchasedItemJoin;
+
     /**
-     * @var \NetSuite\Classes\TaskSearchRowBasic
+     * @var TaskSearchRowBasic
      */
-    public $taskJoin;
+    protected TaskSearchRowBasic $taskJoin;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchRowBasic
+     * @var TransactionSearchRowBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchRowBasic $transactionJoin;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchRowBasic
+     * @var ItemSearchRowBasic
      */
-    public $upsellItemJoin;
+    protected ItemSearchRowBasic $upsellItemJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\NoteSearchRowBasic
+     * @var NoteSearchRowBasic
      */
-    public $userNotesJoin;
+    protected NoteSearchRowBasic $userNotesJoin;
+
     /**
-     * @var \NetSuite\Classes\VendorSearchRowBasic
+     * @var VendorSearchRowBasic
      */
-    public $vendorJoin;
+    protected VendorSearchRowBasic $vendorJoin;
+
     /**
-     * @var \NetSuite\Classes\VendorSearchRowBasic
+     * @var VendorSearchRowBasic
      */
-    public $vendorPrimaryJoin;
+    protected VendorSearchRowBasic $vendorPrimaryJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "ContactSearchRowBasic",
         "callJoin" => "PhoneCallSearchRowBasic",
@@ -167,4 +196,527 @@ class ContactSearchRow extends SearchRow {
         "vendorPrimaryJoin" => "VendorSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param ContactSearchRowBasic $basic
+     * @return ContactSearchRow
+     */
+    public function setBasic(ContactSearchRowBasic $basic): ContactSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ContactSearchRowBasic
+     */
+    public function getBasic(): ContactSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param PhoneCallSearchRowBasic $callJoin
+     * @return ContactSearchRow
+     */
+    public function setCallJoin(PhoneCallSearchRowBasic $callJoin): ContactSearchRow
+    {
+        $this->callJoin = $callJoin;
+        return $this;
+    }
+
+    /**
+     * @return PhoneCallSearchRowBasic
+     */
+    public function getCallJoin(): PhoneCallSearchRowBasic
+    {
+        return $this->callJoin;
+    }
+
+    /**
+     * @param CampaignSearchRowBasic $campaignResponseJoin
+     * @return ContactSearchRow
+     */
+    public function setCampaignResponseJoin(CampaignSearchRowBasic $campaignResponseJoin): ContactSearchRow
+    {
+        $this->campaignResponseJoin = $campaignResponseJoin;
+        return $this;
+    }
+
+    /**
+     * @return CampaignSearchRowBasic
+     */
+    public function getCampaignResponseJoin(): CampaignSearchRowBasic
+    {
+        return $this->campaignResponseJoin;
+    }
+
+    /**
+     * @param SupportCaseSearchRowBasic $caseJoin
+     * @return ContactSearchRow
+     */
+    public function setCaseJoin(SupportCaseSearchRowBasic $caseJoin): ContactSearchRow
+    {
+        $this->caseJoin = $caseJoin;
+        return $this;
+    }
+
+    /**
+     * @return SupportCaseSearchRowBasic
+     */
+    public function getCaseJoin(): SupportCaseSearchRowBasic
+    {
+        return $this->caseJoin;
+    }
+
+    /**
+     * @param CustomerSearchRowBasic $customerJoin
+     * @return ContactSearchRow
+     */
+    public function setCustomerJoin(CustomerSearchRowBasic $customerJoin): ContactSearchRow
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchRowBasic
+     */
+    public function getCustomerJoin(): CustomerSearchRowBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param CustomerSearchRowBasic $customerPrimaryJoin
+     * @return ContactSearchRow
+     */
+    public function setCustomerPrimaryJoin(CustomerSearchRowBasic $customerPrimaryJoin): ContactSearchRow
+    {
+        $this->customerPrimaryJoin = $customerPrimaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchRowBasic
+     */
+    public function getCustomerPrimaryJoin(): CustomerSearchRowBasic
+    {
+        return $this->customerPrimaryJoin;
+    }
+
+    /**
+     * @param CalendarEventSearchRowBasic $eventJoin
+     * @return ContactSearchRow
+     */
+    public function setEventJoin(CalendarEventSearchRowBasic $eventJoin): ContactSearchRow
+    {
+        $this->eventJoin = $eventJoin;
+        return $this;
+    }
+
+    /**
+     * @return CalendarEventSearchRowBasic
+     */
+    public function getEventJoin(): CalendarEventSearchRowBasic
+    {
+        return $this->eventJoin;
+    }
+
+    /**
+     * @param FileSearchRowBasic $fileJoin
+     * @return ContactSearchRow
+     */
+    public function setFileJoin(FileSearchRowBasic $fileJoin): ContactSearchRow
+    {
+        $this->fileJoin = $fileJoin;
+        return $this;
+    }
+
+    /**
+     * @return FileSearchRowBasic
+     */
+    public function getFileJoin(): FileSearchRowBasic
+    {
+        return $this->fileJoin;
+    }
+
+    /**
+     * @param JobSearchRowBasic $jobJoin
+     * @return ContactSearchRow
+     */
+    public function setJobJoin(JobSearchRowBasic $jobJoin): ContactSearchRow
+    {
+        $this->jobJoin = $jobJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchRowBasic
+     */
+    public function getJobJoin(): JobSearchRowBasic
+    {
+        return $this->jobJoin;
+    }
+
+    /**
+     * @param JobSearchRowBasic $jobPrimaryJoin
+     * @return ContactSearchRow
+     */
+    public function setJobPrimaryJoin(JobSearchRowBasic $jobPrimaryJoin): ContactSearchRow
+    {
+        $this->jobPrimaryJoin = $jobPrimaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchRowBasic
+     */
+    public function getJobPrimaryJoin(): JobSearchRowBasic
+    {
+        return $this->jobPrimaryJoin;
+    }
+
+    /**
+     * @param MessageSearchRowBasic $messagesJoin
+     * @return ContactSearchRow
+     */
+    public function setMessagesJoin(MessageSearchRowBasic $messagesJoin): ContactSearchRow
+    {
+        $this->messagesJoin = $messagesJoin;
+        return $this;
+    }
+
+    /**
+     * @return MessageSearchRowBasic
+     */
+    public function getMessagesJoin(): MessageSearchRowBasic
+    {
+        return $this->messagesJoin;
+    }
+
+    /**
+     * @param MessageSearchRowBasic $messagesFromJoin
+     * @return ContactSearchRow
+     */
+    public function setMessagesFromJoin(MessageSearchRowBasic $messagesFromJoin): ContactSearchRow
+    {
+        $this->messagesFromJoin = $messagesFromJoin;
+        return $this;
+    }
+
+    /**
+     * @return MessageSearchRowBasic
+     */
+    public function getMessagesFromJoin(): MessageSearchRowBasic
+    {
+        return $this->messagesFromJoin;
+    }
+
+    /**
+     * @param MessageSearchRowBasic $messagesToJoin
+     * @return ContactSearchRow
+     */
+    public function setMessagesToJoin(MessageSearchRowBasic $messagesToJoin): ContactSearchRow
+    {
+        $this->messagesToJoin = $messagesToJoin;
+        return $this;
+    }
+
+    /**
+     * @return MessageSearchRowBasic
+     */
+    public function getMessagesToJoin(): MessageSearchRowBasic
+    {
+        return $this->messagesToJoin;
+    }
+
+    /**
+     * @param OpportunitySearchRowBasic $opportunityJoin
+     * @return ContactSearchRow
+     */
+    public function setOpportunityJoin(OpportunitySearchRowBasic $opportunityJoin): ContactSearchRow
+    {
+        $this->opportunityJoin = $opportunityJoin;
+        return $this;
+    }
+
+    /**
+     * @return OpportunitySearchRowBasic
+     */
+    public function getOpportunityJoin(): OpportunitySearchRowBasic
+    {
+        return $this->opportunityJoin;
+    }
+
+    /**
+     * @param CustomerSearchRowBasic $parentCustomerJoin
+     * @return ContactSearchRow
+     */
+    public function setParentCustomerJoin(CustomerSearchRowBasic $parentCustomerJoin): ContactSearchRow
+    {
+        $this->parentCustomerJoin = $parentCustomerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchRowBasic
+     */
+    public function getParentCustomerJoin(): CustomerSearchRowBasic
+    {
+        return $this->parentCustomerJoin;
+    }
+
+    /**
+     * @param JobSearchRowBasic $parentJobJoin
+     * @return ContactSearchRow
+     */
+    public function setParentJobJoin(JobSearchRowBasic $parentJobJoin): ContactSearchRow
+    {
+        $this->parentJobJoin = $parentJobJoin;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchRowBasic
+     */
+    public function getParentJobJoin(): JobSearchRowBasic
+    {
+        return $this->parentJobJoin;
+    }
+
+    /**
+     * @param PartnerSearchRowBasic $parentPartnerJoin
+     * @return ContactSearchRow
+     */
+    public function setParentPartnerJoin(PartnerSearchRowBasic $parentPartnerJoin): ContactSearchRow
+    {
+        $this->parentPartnerJoin = $parentPartnerJoin;
+        return $this;
+    }
+
+    /**
+     * @return PartnerSearchRowBasic
+     */
+    public function getParentPartnerJoin(): PartnerSearchRowBasic
+    {
+        return $this->parentPartnerJoin;
+    }
+
+    /**
+     * @param VendorSearchRowBasic $parentVendorJoin
+     * @return ContactSearchRow
+     */
+    public function setParentVendorJoin(VendorSearchRowBasic $parentVendorJoin): ContactSearchRow
+    {
+        $this->parentVendorJoin = $parentVendorJoin;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearchRowBasic
+     */
+    public function getParentVendorJoin(): VendorSearchRowBasic
+    {
+        return $this->parentVendorJoin;
+    }
+
+    /**
+     * @param PartnerSearchRowBasic $partnerJoin
+     * @return ContactSearchRow
+     */
+    public function setPartnerJoin(PartnerSearchRowBasic $partnerJoin): ContactSearchRow
+    {
+        $this->partnerJoin = $partnerJoin;
+        return $this;
+    }
+
+    /**
+     * @return PartnerSearchRowBasic
+     */
+    public function getPartnerJoin(): PartnerSearchRowBasic
+    {
+        return $this->partnerJoin;
+    }
+
+    /**
+     * @param PartnerSearchRowBasic $partnerPrimaryJoin
+     * @return ContactSearchRow
+     */
+    public function setPartnerPrimaryJoin(PartnerSearchRowBasic $partnerPrimaryJoin): ContactSearchRow
+    {
+        $this->partnerPrimaryJoin = $partnerPrimaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return PartnerSearchRowBasic
+     */
+    public function getPartnerPrimaryJoin(): PartnerSearchRowBasic
+    {
+        return $this->partnerPrimaryJoin;
+    }
+
+    /**
+     * @param ItemSearchRowBasic $purchasedItemJoin
+     * @return ContactSearchRow
+     */
+    public function setPurchasedItemJoin(ItemSearchRowBasic $purchasedItemJoin): ContactSearchRow
+    {
+        $this->purchasedItemJoin = $purchasedItemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchRowBasic
+     */
+    public function getPurchasedItemJoin(): ItemSearchRowBasic
+    {
+        return $this->purchasedItemJoin;
+    }
+
+    /**
+     * @param TaskSearchRowBasic $taskJoin
+     * @return ContactSearchRow
+     */
+    public function setTaskJoin(TaskSearchRowBasic $taskJoin): ContactSearchRow
+    {
+        $this->taskJoin = $taskJoin;
+        return $this;
+    }
+
+    /**
+     * @return TaskSearchRowBasic
+     */
+    public function getTaskJoin(): TaskSearchRowBasic
+    {
+        return $this->taskJoin;
+    }
+
+    /**
+     * @param TransactionSearchRowBasic $transactionJoin
+     * @return ContactSearchRow
+     */
+    public function setTransactionJoin(TransactionSearchRowBasic $transactionJoin): ContactSearchRow
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchRowBasic
+     */
+    public function getTransactionJoin(): TransactionSearchRowBasic
+    {
+        return $this->transactionJoin;
+    }
+
+    /**
+     * @param ItemSearchRowBasic $upsellItemJoin
+     * @return ContactSearchRow
+     */
+    public function setUpsellItemJoin(ItemSearchRowBasic $upsellItemJoin): ContactSearchRow
+    {
+        $this->upsellItemJoin = $upsellItemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchRowBasic
+     */
+    public function getUpsellItemJoin(): ItemSearchRowBasic
+    {
+        return $this->upsellItemJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return ContactSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): ContactSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param NoteSearchRowBasic $userNotesJoin
+     * @return ContactSearchRow
+     */
+    public function setUserNotesJoin(NoteSearchRowBasic $userNotesJoin): ContactSearchRow
+    {
+        $this->userNotesJoin = $userNotesJoin;
+        return $this;
+    }
+
+    /**
+     * @return NoteSearchRowBasic
+     */
+    public function getUserNotesJoin(): NoteSearchRowBasic
+    {
+        return $this->userNotesJoin;
+    }
+
+    /**
+     * @param VendorSearchRowBasic $vendorJoin
+     * @return ContactSearchRow
+     */
+    public function setVendorJoin(VendorSearchRowBasic $vendorJoin): ContactSearchRow
+    {
+        $this->vendorJoin = $vendorJoin;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearchRowBasic
+     */
+    public function getVendorJoin(): VendorSearchRowBasic
+    {
+        return $this->vendorJoin;
+    }
+
+    /**
+     * @param VendorSearchRowBasic $vendorPrimaryJoin
+     * @return ContactSearchRow
+     */
+    public function setVendorPrimaryJoin(VendorSearchRowBasic $vendorPrimaryJoin): ContactSearchRow
+    {
+        $this->vendorPrimaryJoin = $vendorPrimaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearchRowBasic
+     */
+    public function getVendorPrimaryJoin(): VendorSearchRowBasic
+    {
+        return $this->vendorPrimaryJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return ContactSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): ContactSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

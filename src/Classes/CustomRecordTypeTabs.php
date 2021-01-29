@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,76 @@ class CustomRecordTypeTabs {
     /**
      * @var string
      */
-    public $tabTitle;
+    protected string $tabTitle;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $tabParent;
+    protected RecordRef $tabParent;
+
     /**
-     * @var \NetSuite\Classes\LanguageValueList
+     * @var LanguageValueList
      */
-    public $tabTitleLanguageValueList;
+    protected LanguageValueList $tabTitleLanguageValueList;
+
     static $paramtypesmap = array(
         "tabTitle" => "string",
         "tabParent" => "RecordRef",
         "tabTitleLanguageValueList" => "LanguageValueList",
     );
+
+    /**
+     * @param string $tabTitle
+     * @return CustomRecordTypeTabs
+     */
+    public function setTabTitle(string $tabTitle): CustomRecordTypeTabs
+    {
+        $this->tabTitle = $tabTitle;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTabTitle(): string
+    {
+        return $this->tabTitle;
+    }
+
+    /**
+     * @param RecordRef $tabParent
+     * @return CustomRecordTypeTabs
+     */
+    public function setTabParent(RecordRef $tabParent): CustomRecordTypeTabs
+    {
+        $this->tabParent = $tabParent;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTabParent(): RecordRef
+    {
+        return $this->tabParent;
+    }
+
+    /**
+     * @param LanguageValueList $tabTitleLanguageValueList
+     * @return CustomRecordTypeTabs
+     */
+    public function setTabTitleLanguageValueList(LanguageValueList $tabTitleLanguageValueList): CustomRecordTypeTabs
+    {
+        $this->tabTitleLanguageValueList = $tabTitleLanguageValueList;
+        return $this;
+    }
+
+    /**
+     * @return LanguageValueList
+     */
+    public function getTabTitleLanguageValueList(): LanguageValueList
+    {
+        return $this->tabTitleLanguageValueList;
+    }
+
 }

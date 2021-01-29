@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,27 +23,33 @@ class TokenPassport {
     /**
      * @var string
      */
-    public $account;
+    protected string $account;
+
     /**
      * @var string
      */
-    public $consumerKey;
+    protected string $consumerKey;
+
     /**
      * @var string
      */
-    public $token;
+    protected string $token;
+
     /**
      * @var string
      */
-    public $nonce;
+    protected string $nonce;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $timestamp;
+    protected int $timestamp;
+
     /**
-     * @var \NetSuite\Classes\TokenPassportSignature
+     * @var TokenPassportSignature
      */
-    public $signature;
+    protected TokenPassportSignature $signature;
+
     static $paramtypesmap = array(
         "account" => "string",
         "consumerKey" => "string",
@@ -52,4 +58,113 @@ class TokenPassport {
         "timestamp" => "integer",
         "signature" => "TokenPassportSignature",
     );
+
+    /**
+     * @param string $account
+     * @return TokenPassport
+     */
+    public function setAccount(string $account): TokenPassport
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAccount(): string
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param string $consumerKey
+     * @return TokenPassport
+     */
+    public function setConsumerKey(string $consumerKey): TokenPassport
+    {
+        $this->consumerKey = $consumerKey;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getConsumerKey(): string
+    {
+        return $this->consumerKey;
+    }
+
+    /**
+     * @param string $token
+     * @return TokenPassport
+     */
+    public function setToken(string $token): TokenPassport
+    {
+        $this->token = $token;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getToken(): string
+    {
+        return $this->token;
+    }
+
+    /**
+     * @param string $nonce
+     * @return TokenPassport
+     */
+    public function setNonce(string $nonce): TokenPassport
+    {
+        $this->nonce = $nonce;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNonce(): string
+    {
+        return $this->nonce;
+    }
+
+    /**
+     * @param int $timestamp
+     * @return TokenPassport
+     */
+    public function setTimestamp(int $timestamp): TokenPassport
+    {
+        $this->timestamp = $timestamp;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTimestamp(): int
+    {
+        return $this->timestamp;
+    }
+
+    /**
+     * @param TokenPassportSignature $signature
+     * @return TokenPassport
+     */
+    public function setSignature(TokenPassportSignature $signature): TokenPassport
+    {
+        $this->signature = $signature;
+        return $this;
+    }
+
+    /**
+     * @return TokenPassportSignature
+     */
+    public function getSignature(): TokenPassportSignature
+    {
+        return $this->signature;
+    }
+
 }

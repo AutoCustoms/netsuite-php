@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetCurrencyRateResult {
     /**
-     * @var \NetSuite\Classes\Status
+     * @var Status
      */
-    public $status;
+    protected Status $status;
+
     /**
-     * @var \NetSuite\Classes\CurrencyRateList
+     * @var CurrencyRateList
      */
-    public $currencyRateList;
+    protected CurrencyRateList $currencyRateList;
+
     static $paramtypesmap = array(
         "status" => "Status",
         "currencyRateList" => "CurrencyRateList",
     );
+
+    /**
+     * @param Status $status
+     * @return GetCurrencyRateResult
+     */
+    public function setStatus(Status $status): GetCurrencyRateResult
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param CurrencyRateList $currencyRateList
+     * @return GetCurrencyRateResult
+     */
+    public function setCurrencyRateList(CurrencyRateList $currencyRateList): GetCurrencyRateResult
+    {
+        $this->currencyRateList = $currencyRateList;
+        return $this;
+    }
+
+    /**
+     * @return CurrencyRateList
+     */
+    public function getCurrencyRateList(): CurrencyRateList
+    {
+        return $this->currencyRateList;
+    }
+
 }

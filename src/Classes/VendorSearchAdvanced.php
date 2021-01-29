@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\VendorSearch
+     * @var VendorSearch
      */
-    public $criteria;
+    protected VendorSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\VendorSearchRow
+     * @var VendorSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected VendorSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "VendorSearch",
         "columns" => "VendorSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param VendorSearch $criteria
+     * @return VendorSearchAdvanced
+     */
+    public function setCriteria(VendorSearch $criteria): VendorSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearch
+     */
+    public function getCriteria(): VendorSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param VendorSearchRow $columns
+     * @return VendorSearchAdvanced
+     */
+    public function setColumns(VendorSearchRow $columns): VendorSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return VendorSearchRow
+     */
+    public function getColumns(): VendorSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return VendorSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): VendorSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return VendorSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): VendorSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

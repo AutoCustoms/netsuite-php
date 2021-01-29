@@ -14,160 +14,197 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class MseSubsidiarySearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $accountingBook;
+    protected SearchMultiSelectField $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $accountingBookCurrency;
+    protected SearchMultiSelectField $accountingBookCurrency;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $address;
+    protected SearchStringField $address;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $city;
+    protected SearchStringField $city;
+
     /**
-     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     * @var SearchEnumMultiSelectField
      */
-    public $country;
+    protected SearchEnumMultiSelectField $country;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $currency;
+    protected SearchMultiSelectField $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $effectiveFrom;
+    protected SearchDateField $effectiveFrom;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $email;
+    protected SearchStringField $email;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $externalId;
+    protected SearchMultiSelectField $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $externalIdString;
+    protected SearchStringField $externalIdString;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $fax;
+    protected SearchStringField $fax;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isElimination;
+    protected SearchBooleanField $isElimination;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isInactive;
+    protected SearchBooleanField $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $legalName;
+    protected SearchStringField $legalName;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $name;
+    protected SearchStringField $name;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $nameNoHierarchy;
+    protected SearchStringField $nameNoHierarchy;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $nexus;
+    protected SearchMultiSelectField $nexus;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $phone;
+    protected SearchStringField $phone;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $primary;
+    protected SearchBooleanField $primary;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $purchaseOrderAmount;
+    protected SearchDoubleField $purchaseOrderAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $purchaseOrderQuantity;
+    protected SearchDoubleField $purchaseOrderQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $purchaseOrderQuantityDiff;
+    protected SearchDoubleField $purchaseOrderQuantityDiff;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $receiptAmount;
+    protected SearchDoubleField $receiptAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $receiptQuantity;
+    protected SearchDoubleField $receiptQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $receiptQuantityDiff;
+    protected SearchDoubleField $receiptQuantityDiff;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $state;
+    protected SearchStringField $state;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $subsidiary;
+    protected SearchMultiSelectField $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $taxEngine;
+    protected SearchMultiSelectField $taxEngine;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $taxIdNum;
+    protected SearchStringField $taxIdNum;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $taxRegistrationNumber;
+    protected SearchStringField $taxRegistrationNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $tranPrefix;
+    protected SearchStringField $tranPrefix;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $url;
+    protected SearchStringField $url;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $validUntil;
+    protected SearchDateField $validUntil;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $zip;
+    protected SearchStringField $zip;
+
     /**
-     * @var \NetSuite\Classes\SearchCustomFieldList
+     * @var SearchCustomFieldList
      */
-    public $customFieldList;
+    protected SearchCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "accountingBook" => "SearchMultiSelectField",
         "accountingBookCurrency" => "SearchMultiSelectField",
@@ -207,4 +244,671 @@ class MseSubsidiarySearchBasic extends SearchRecordBasic {
         "zip" => "SearchStringField",
         "customFieldList" => "SearchCustomFieldList",
     );
+
+    /**
+     * @param SearchMultiSelectField $accountingBook
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setAccountingBook(SearchMultiSelectField $accountingBook): MseSubsidiarySearchBasic
+    {
+        $this->accountingBook = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getAccountingBook(): SearchMultiSelectField
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param SearchMultiSelectField $accountingBookCurrency
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setAccountingBookCurrency(SearchMultiSelectField $accountingBookCurrency): MseSubsidiarySearchBasic
+    {
+        $this->accountingBookCurrency = $accountingBookCurrency;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getAccountingBookCurrency(): SearchMultiSelectField
+    {
+        return $this->accountingBookCurrency;
+    }
+
+    /**
+     * @param SearchStringField $address
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setAddress(SearchStringField $address): MseSubsidiarySearchBasic
+    {
+        $this->address = $address;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getAddress(): SearchStringField
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param SearchStringField $city
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setCity(SearchStringField $city): MseSubsidiarySearchBasic
+    {
+        $this->city = $city;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getCity(): SearchStringField
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param SearchEnumMultiSelectField $country
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setCountry(SearchEnumMultiSelectField $country): MseSubsidiarySearchBasic
+    {
+        $this->country = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchEnumMultiSelectField
+     */
+    public function getCountry(): SearchEnumMultiSelectField
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchMultiSelectField $currency
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setCurrency(SearchMultiSelectField $currency): MseSubsidiarySearchBasic
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCurrency(): SearchMultiSelectField
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchDateField $effectiveFrom
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setEffectiveFrom(SearchDateField $effectiveFrom): MseSubsidiarySearchBasic
+    {
+        $this->effectiveFrom = $effectiveFrom;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getEffectiveFrom(): SearchDateField
+    {
+        return $this->effectiveFrom;
+    }
+
+    /**
+     * @param SearchStringField $email
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setEmail(SearchStringField $email): MseSubsidiarySearchBasic
+    {
+        $this->email = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getEmail(): SearchStringField
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchMultiSelectField $externalId
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setExternalId(SearchMultiSelectField $externalId): MseSubsidiarySearchBasic
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getExternalId(): SearchMultiSelectField
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchStringField $externalIdString
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setExternalIdString(SearchStringField $externalIdString): MseSubsidiarySearchBasic
+    {
+        $this->externalIdString = $externalIdString;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getExternalIdString(): SearchStringField
+    {
+        return $this->externalIdString;
+    }
+
+    /**
+     * @param SearchStringField $fax
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setFax(SearchStringField $fax): MseSubsidiarySearchBasic
+    {
+        $this->fax = $fax;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getFax(): SearchStringField
+    {
+        return $this->fax;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): MseSubsidiarySearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): MseSubsidiarySearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isElimination
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setIsElimination(SearchBooleanField $isElimination): MseSubsidiarySearchBasic
+    {
+        $this->isElimination = $isElimination;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsElimination(): SearchBooleanField
+    {
+        return $this->isElimination;
+    }
+
+    /**
+     * @param SearchBooleanField $isInactive
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setIsInactive(SearchBooleanField $isInactive): MseSubsidiarySearchBasic
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsInactive(): SearchBooleanField
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchStringField $legalName
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setLegalName(SearchStringField $legalName): MseSubsidiarySearchBasic
+    {
+        $this->legalName = $legalName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getLegalName(): SearchStringField
+    {
+        return $this->legalName;
+    }
+
+    /**
+     * @param SearchStringField $name
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setName(SearchStringField $name): MseSubsidiarySearchBasic
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getName(): SearchStringField
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchStringField $nameNoHierarchy
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setNameNoHierarchy(SearchStringField $nameNoHierarchy): MseSubsidiarySearchBasic
+    {
+        $this->nameNoHierarchy = $nameNoHierarchy;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getNameNoHierarchy(): SearchStringField
+    {
+        return $this->nameNoHierarchy;
+    }
+
+    /**
+     * @param SearchMultiSelectField $nexus
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setNexus(SearchMultiSelectField $nexus): MseSubsidiarySearchBasic
+    {
+        $this->nexus = $nexus;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getNexus(): SearchMultiSelectField
+    {
+        return $this->nexus;
+    }
+
+    /**
+     * @param SearchStringField $phone
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setPhone(SearchStringField $phone): MseSubsidiarySearchBasic
+    {
+        $this->phone = $phone;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getPhone(): SearchStringField
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param SearchBooleanField $primary
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setPrimary(SearchBooleanField $primary): MseSubsidiarySearchBasic
+    {
+        $this->primary = $primary;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getPrimary(): SearchBooleanField
+    {
+        return $this->primary;
+    }
+
+    /**
+     * @param SearchDoubleField $purchaseOrderAmount
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setPurchaseOrderAmount(SearchDoubleField $purchaseOrderAmount): MseSubsidiarySearchBasic
+    {
+        $this->purchaseOrderAmount = $purchaseOrderAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPurchaseOrderAmount(): SearchDoubleField
+    {
+        return $this->purchaseOrderAmount;
+    }
+
+    /**
+     * @param SearchDoubleField $purchaseOrderQuantity
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setPurchaseOrderQuantity(SearchDoubleField $purchaseOrderQuantity): MseSubsidiarySearchBasic
+    {
+        $this->purchaseOrderQuantity = $purchaseOrderQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPurchaseOrderQuantity(): SearchDoubleField
+    {
+        return $this->purchaseOrderQuantity;
+    }
+
+    /**
+     * @param SearchDoubleField $purchaseOrderQuantityDiff
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setPurchaseOrderQuantityDiff(SearchDoubleField $purchaseOrderQuantityDiff): MseSubsidiarySearchBasic
+    {
+        $this->purchaseOrderQuantityDiff = $purchaseOrderQuantityDiff;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getPurchaseOrderQuantityDiff(): SearchDoubleField
+    {
+        return $this->purchaseOrderQuantityDiff;
+    }
+
+    /**
+     * @param SearchDoubleField $receiptAmount
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setReceiptAmount(SearchDoubleField $receiptAmount): MseSubsidiarySearchBasic
+    {
+        $this->receiptAmount = $receiptAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getReceiptAmount(): SearchDoubleField
+    {
+        return $this->receiptAmount;
+    }
+
+    /**
+     * @param SearchDoubleField $receiptQuantity
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setReceiptQuantity(SearchDoubleField $receiptQuantity): MseSubsidiarySearchBasic
+    {
+        $this->receiptQuantity = $receiptQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getReceiptQuantity(): SearchDoubleField
+    {
+        return $this->receiptQuantity;
+    }
+
+    /**
+     * @param SearchDoubleField $receiptQuantityDiff
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setReceiptQuantityDiff(SearchDoubleField $receiptQuantityDiff): MseSubsidiarySearchBasic
+    {
+        $this->receiptQuantityDiff = $receiptQuantityDiff;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getReceiptQuantityDiff(): SearchDoubleField
+    {
+        return $this->receiptQuantityDiff;
+    }
+
+    /**
+     * @param SearchStringField $state
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setState(SearchStringField $state): MseSubsidiarySearchBasic
+    {
+        $this->state = $state;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getState(): SearchStringField
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param SearchMultiSelectField $subsidiary
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setSubsidiary(SearchMultiSelectField $subsidiary): MseSubsidiarySearchBasic
+    {
+        $this->subsidiary = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getSubsidiary(): SearchMultiSelectField
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchMultiSelectField $taxEngine
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setTaxEngine(SearchMultiSelectField $taxEngine): MseSubsidiarySearchBasic
+    {
+        $this->taxEngine = $taxEngine;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getTaxEngine(): SearchMultiSelectField
+    {
+        return $this->taxEngine;
+    }
+
+    /**
+     * @param SearchStringField $taxIdNum
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setTaxIdNum(SearchStringField $taxIdNum): MseSubsidiarySearchBasic
+    {
+        $this->taxIdNum = $taxIdNum;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getTaxIdNum(): SearchStringField
+    {
+        return $this->taxIdNum;
+    }
+
+    /**
+     * @param SearchStringField $taxRegistrationNumber
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setTaxRegistrationNumber(SearchStringField $taxRegistrationNumber): MseSubsidiarySearchBasic
+    {
+        $this->taxRegistrationNumber = $taxRegistrationNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getTaxRegistrationNumber(): SearchStringField
+    {
+        return $this->taxRegistrationNumber;
+    }
+
+    /**
+     * @param SearchStringField $tranPrefix
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setTranPrefix(SearchStringField $tranPrefix): MseSubsidiarySearchBasic
+    {
+        $this->tranPrefix = $tranPrefix;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getTranPrefix(): SearchStringField
+    {
+        return $this->tranPrefix;
+    }
+
+    /**
+     * @param SearchStringField $url
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setUrl(SearchStringField $url): MseSubsidiarySearchBasic
+    {
+        $this->url = $url;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getUrl(): SearchStringField
+    {
+        return $this->url;
+    }
+
+    /**
+     * @param SearchDateField $validUntil
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setValidUntil(SearchDateField $validUntil): MseSubsidiarySearchBasic
+    {
+        $this->validUntil = $validUntil;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getValidUntil(): SearchDateField
+    {
+        return $this->validUntil;
+    }
+
+    /**
+     * @param SearchStringField $zip
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setZip(SearchStringField $zip): MseSubsidiarySearchBasic
+    {
+        $this->zip = $zip;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getZip(): SearchStringField
+    {
+        return $this->zip;
+    }
+
+    /**
+     * @param SearchCustomFieldList $customFieldList
+     * @return MseSubsidiarySearchBasic
+     */
+    public function setCustomFieldList(SearchCustomFieldList $customFieldList): MseSubsidiarySearchBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchCustomFieldList
+     */
+    public function getCustomFieldList(): SearchCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

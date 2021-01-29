@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,63 +23,78 @@ class Currency extends Record {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
      * @var string
      */
-    public $symbol;
+    protected string $symbol;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isBaseCurrency;
+    protected bool $isBaseCurrency;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isInactive;
+    protected bool $isInactive;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $overrideCurrencyFormat;
-    /**
-     * @var string
-     */
-    public $displaySymbol;
-    /**
-     * @var \NetSuite\Classes\CurrencySymbolPlacement
-     */
-    public $symbolPlacement;
-    /**
-     * @var \NetSuite\Classes\CurrencyLocale
-     */
-    public $locale;
+    protected bool $overrideCurrencyFormat;
+
     /**
      * @var string
      */
-    public $formatSample;
+    protected string $displaySymbol;
+
+    /**
+     * @var CurrencySymbolPlacement
+     */
+    protected CurrencySymbolPlacement $symbolPlacement;
+
+    /**
+     * @var CurrencyLocale
+     */
+    protected CurrencyLocale $locale;
+
+    /**
+     * @var string
+     */
+    protected string $formatSample;
+
     /**
      * @var float
      */
-    public $exchangeRate;
+    protected float $exchangeRate;
+
     /**
-     * @var \NetSuite\Classes\CurrencyFxRateUpdateTimezone
+     * @var CurrencyFxRateUpdateTimezone
      */
-    public $fxRateUpdateTimezone;
+    protected CurrencyFxRateUpdateTimezone $fxRateUpdateTimezone;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $inclInFxRateUpdates;
+    protected bool $inclInFxRateUpdates;
+
     /**
-     * @var \NetSuite\Classes\CurrencyCurrencyPrecision
+     * @var CurrencyCurrencyPrecision
      */
-    public $currencyPrecision;
+    protected CurrencyCurrencyPrecision $currencyPrecision;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "symbol" => "string",
@@ -97,4 +112,275 @@ class Currency extends Record {
         "internalId" => "string",
         "externalId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return Currency
+     */
+    public function setName(string $name): Currency
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $symbol
+     * @return Currency
+     */
+    public function setSymbol(string $symbol): Currency
+    {
+        $this->symbol = $symbol;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSymbol(): string
+    {
+        return $this->symbol;
+    }
+
+    /**
+     * @param bool $isBaseCurrency
+     * @return Currency
+     */
+    public function setIsBaseCurrency(bool $isBaseCurrency): Currency
+    {
+        $this->isBaseCurrency = $isBaseCurrency;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBaseCurrency(): bool
+    {
+        return $this->isBaseCurrency;
+    }
+
+    /**
+     * @param bool $isInactive
+     * @return Currency
+     */
+    public function setIsInactive(bool $isInactive): Currency
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsInactive(): bool
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param bool $overrideCurrencyFormat
+     * @return Currency
+     */
+    public function setOverrideCurrencyFormat(bool $overrideCurrencyFormat): Currency
+    {
+        $this->overrideCurrencyFormat = $overrideCurrencyFormat;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getOverrideCurrencyFormat(): bool
+    {
+        return $this->overrideCurrencyFormat;
+    }
+
+    /**
+     * @param string $displaySymbol
+     * @return Currency
+     */
+    public function setDisplaySymbol(string $displaySymbol): Currency
+    {
+        $this->displaySymbol = $displaySymbol;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDisplaySymbol(): string
+    {
+        return $this->displaySymbol;
+    }
+
+    /**
+     * @param CurrencySymbolPlacement $symbolPlacement
+     * @return Currency
+     */
+    public function setSymbolPlacement(CurrencySymbolPlacement $symbolPlacement): Currency
+    {
+        $this->symbolPlacement = $symbolPlacement;
+        return $this;
+    }
+
+    /**
+     * @return CurrencySymbolPlacement
+     */
+    public function getSymbolPlacement(): CurrencySymbolPlacement
+    {
+        return $this->symbolPlacement;
+    }
+
+    /**
+     * @param CurrencyLocale $locale
+     * @return Currency
+     */
+    public function setLocale(CurrencyLocale $locale): Currency
+    {
+        $this->locale = $locale;
+        return $this;
+    }
+
+    /**
+     * @return CurrencyLocale
+     */
+    public function getLocale(): CurrencyLocale
+    {
+        return $this->locale;
+    }
+
+    /**
+     * @param string $formatSample
+     * @return Currency
+     */
+    public function setFormatSample(string $formatSample): Currency
+    {
+        $this->formatSample = $formatSample;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFormatSample(): string
+    {
+        return $this->formatSample;
+    }
+
+    /**
+     * @param float $exchangeRate
+     * @return Currency
+     */
+    public function setExchangeRate(float $exchangeRate): Currency
+    {
+        $this->exchangeRate = $exchangeRate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExchangeRate(): float
+    {
+        return $this->exchangeRate;
+    }
+
+    /**
+     * @param CurrencyFxRateUpdateTimezone $fxRateUpdateTimezone
+     * @return Currency
+     */
+    public function setFxRateUpdateTimezone(CurrencyFxRateUpdateTimezone $fxRateUpdateTimezone): Currency
+    {
+        $this->fxRateUpdateTimezone = $fxRateUpdateTimezone;
+        return $this;
+    }
+
+    /**
+     * @return CurrencyFxRateUpdateTimezone
+     */
+    public function getFxRateUpdateTimezone(): CurrencyFxRateUpdateTimezone
+    {
+        return $this->fxRateUpdateTimezone;
+    }
+
+    /**
+     * @param bool $inclInFxRateUpdates
+     * @return Currency
+     */
+    public function setInclInFxRateUpdates(bool $inclInFxRateUpdates): Currency
+    {
+        $this->inclInFxRateUpdates = $inclInFxRateUpdates;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getInclInFxRateUpdates(): bool
+    {
+        return $this->inclInFxRateUpdates;
+    }
+
+    /**
+     * @param CurrencyCurrencyPrecision $currencyPrecision
+     * @return Currency
+     */
+    public function setCurrencyPrecision(CurrencyCurrencyPrecision $currencyPrecision): Currency
+    {
+        $this->currencyPrecision = $currencyPrecision;
+        return $this;
+    }
+
+    /**
+     * @return CurrencyCurrencyPrecision
+     */
+    public function getCurrencyPrecision(): CurrencyCurrencyPrecision
+    {
+        return $this->currencyPrecision;
+    }
+
+    /**
+     * @param string $internalId
+     * @return Currency
+     */
+    public function setInternalId(string $internalId): Currency
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return Currency
+     */
+    public function setExternalId(string $externalId): Currency
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
 }

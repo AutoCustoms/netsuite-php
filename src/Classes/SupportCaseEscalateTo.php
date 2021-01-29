@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SupportCaseEscalateTo {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $escalatee;
+    protected RecordRef $escalatee;
+
     /**
      * @var string
      */
-    public $email;
+    protected string $email;
+
     /**
      * @var string
      */
-    public $phone;
+    protected string $phone;
+
     static $paramtypesmap = array(
         "escalatee" => "RecordRef",
         "email" => "string",
         "phone" => "string",
     );
+
+    /**
+     * @param RecordRef $escalatee
+     * @return SupportCaseEscalateTo
+     */
+    public function setEscalatee(RecordRef $escalatee): SupportCaseEscalateTo
+    {
+        $this->escalatee = $escalatee;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEscalatee(): RecordRef
+    {
+        return $this->escalatee;
+    }
+
+    /**
+     * @param string $email
+     * @return SupportCaseEscalateTo
+     */
+    public function setEmail(string $email): SupportCaseEscalateTo
+    {
+        $this->email = $email;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $phone
+     * @return SupportCaseEscalateTo
+     */
+    public function setPhone(string $phone): SupportCaseEscalateTo
+    {
+        $this->phone = $phone;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPhone(): string
+    {
+        return $this->phone;
+    }
+
 }

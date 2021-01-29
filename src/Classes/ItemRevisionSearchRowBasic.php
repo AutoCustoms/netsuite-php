@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemRevisionSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $effectiveDate;
+    protected array $effectiveDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $memo;
+    protected array $memo;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $obsoleteDate;
+    protected array $obsoleteDate;
+
     static $paramtypesmap = array(
         "effectiveDate" => "SearchColumnDateField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -62,4 +70,149 @@ class ItemRevisionSearchRowBasic extends SearchRowBasic {
         "name" => "SearchColumnStringField[]",
         "obsoleteDate" => "SearchColumnDateField[]",
     );
+
+    /**
+     * @param SearchColumnDateField[] $effectiveDate
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function setEffectiveDate(SearchColumnDateField $effectiveDate): ItemRevisionSearchRowBasic
+    {
+        $this->effectiveDate[] = $effectiveDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getEffectiveDate(): array
+    {
+        return $this->effectiveDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): ItemRevisionSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): ItemRevisionSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): ItemRevisionSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $item
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function setItem(SearchColumnSelectField $item): ItemRevisionSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $memo
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function setMemo(SearchColumnStringField $memo): ItemRevisionSearchRowBasic
+    {
+        $this->memo[] = $memo;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMemo(): array
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): ItemRevisionSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $obsoleteDate
+     * @return ItemRevisionSearchRowBasic
+     */
+    public function setObsoleteDate(SearchColumnDateField $obsoleteDate): ItemRevisionSearchRowBasic
+    {
+        $this->obsoleteDate[] = $obsoleteDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getObsoleteDate(): array
+    {
+        return $this->obsoleteDate;
+    }
+
 }

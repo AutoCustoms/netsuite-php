@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckPayDeductList {
     /**
-     * @var \NetSuite\Classes\PaycheckPayDeduct[]
+     * @var PaycheckPayDeduct[]
      */
-    public $paycheckPayDeduct;
+    protected array $paycheckPayDeduct;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "paycheckPayDeduct" => "PaycheckPayDeduct[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param PaycheckPayDeduct[] $paycheckPayDeduct
+     * @return PaycheckPayDeductList
+     */
+    public function setPaycheckPayDeduct(PaycheckPayDeduct $paycheckPayDeduct): PaycheckPayDeductList
+    {
+        $this->paycheckPayDeduct[] = $paycheckPayDeduct;
+        return $this;
+    }
+
+    /**
+     * @return PaycheckPayDeduct[]
+     */
+    public function getPaycheckPayDeduct(): array
+    {
+        return $this->paycheckPayDeduct;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return PaycheckPayDeductList
+     */
+    public function setReplaceAll(bool $replaceAll): PaycheckPayDeductList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

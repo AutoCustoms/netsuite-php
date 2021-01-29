@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetIntegrationGovernanceInfoResult {
     /**
-     * @var \NetSuite\Classes\Status
+     * @var Status
      */
-    public $status;
+    protected Status $status;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $integrationConcurrencyLimit;
+    protected int $integrationConcurrencyLimit;
+
     /**
-     * @var \NetSuite\Classes\GetIntegrationGovernanceInfoLimitType
+     * @var GetIntegrationGovernanceInfoLimitType
      */
-    public $limitType;
+    protected GetIntegrationGovernanceInfoLimitType $limitType;
+
     static $paramtypesmap = array(
         "status" => "Status",
         "integrationConcurrencyLimit" => "integer",
         "limitType" => "GetIntegrationGovernanceInfoLimitType",
     );
+
+    /**
+     * @param Status $status
+     * @return GetIntegrationGovernanceInfoResult
+     */
+    public function setStatus(Status $status): GetIntegrationGovernanceInfoResult
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param int $integrationConcurrencyLimit
+     * @return GetIntegrationGovernanceInfoResult
+     */
+    public function setIntegrationConcurrencyLimit(int $integrationConcurrencyLimit): GetIntegrationGovernanceInfoResult
+    {
+        $this->integrationConcurrencyLimit = $integrationConcurrencyLimit;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIntegrationConcurrencyLimit(): int
+    {
+        return $this->integrationConcurrencyLimit;
+    }
+
+    /**
+     * @param GetIntegrationGovernanceInfoLimitType $limitType
+     * @return GetIntegrationGovernanceInfoResult
+     */
+    public function setLimitType(GetIntegrationGovernanceInfoLimitType $limitType): GetIntegrationGovernanceInfoResult
+    {
+        $this->limitType = $limitType;
+        return $this;
+    }
+
+    /**
+     * @return GetIntegrationGovernanceInfoLimitType
+     */
+    public function getLimitType(): GetIntegrationGovernanceInfoLimitType
+    {
+        return $this->limitType;
+    }
+
 }

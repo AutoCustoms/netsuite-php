@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class RevRecScheduleSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\RevRecScheduleSearch
+     * @var RevRecScheduleSearch
      */
-    public $criteria;
+    protected RevRecScheduleSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\RevRecScheduleSearchRow
+     * @var RevRecScheduleSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected RevRecScheduleSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "RevRecScheduleSearch",
         "columns" => "RevRecScheduleSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param RevRecScheduleSearch $criteria
+     * @return RevRecScheduleSearchAdvanced
+     */
+    public function setCriteria(RevRecScheduleSearch $criteria): RevRecScheduleSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return RevRecScheduleSearch
+     */
+    public function getCriteria(): RevRecScheduleSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param RevRecScheduleSearchRow $columns
+     * @return RevRecScheduleSearchAdvanced
+     */
+    public function setColumns(RevRecScheduleSearchRow $columns): RevRecScheduleSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return RevRecScheduleSearchRow
+     */
+    public function getColumns(): RevRecScheduleSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return RevRecScheduleSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): RevRecScheduleSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return RevRecScheduleSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): RevRecScheduleSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

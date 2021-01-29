@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SubsidiaryAccountingBookDetail {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $accountingBook;
+    protected RecordRef $accountingBook;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $currency;
+    protected RecordRef $currency;
+
     /**
-     * @var \NetSuite\Classes\AccountingBookStatus
+     * @var AccountingBookStatus
      */
-    public $bookStatus;
+    protected AccountingBookStatus $bookStatus;
+
     static $paramtypesmap = array(
         "accountingBook" => "RecordRef",
         "currency" => "RecordRef",
         "bookStatus" => "AccountingBookStatus",
     );
+
+    /**
+     * @param RecordRef $accountingBook
+     * @return SubsidiaryAccountingBookDetail
+     */
+    public function setAccountingBook(RecordRef $accountingBook): SubsidiaryAccountingBookDetail
+    {
+        $this->accountingBook = $accountingBook;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccountingBook(): RecordRef
+    {
+        return $this->accountingBook;
+    }
+
+    /**
+     * @param RecordRef $currency
+     * @return SubsidiaryAccountingBookDetail
+     */
+    public function setCurrency(RecordRef $currency): SubsidiaryAccountingBookDetail
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCurrency(): RecordRef
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param AccountingBookStatus $bookStatus
+     * @return SubsidiaryAccountingBookDetail
+     */
+    public function setBookStatus(AccountingBookStatus $bookStatus): SubsidiaryAccountingBookDetail
+    {
+        $this->bookStatus = $bookStatus;
+        return $this;
+    }
+
+    /**
+     * @return AccountingBookStatus
+     */
+    public function getBookStatus(): AccountingBookStatus
+    {
+        return $this->bookStatus;
+    }
+
 }

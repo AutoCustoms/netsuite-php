@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckPayPto {
     /**
-     * @var integer
+     * @var int
      */
-    public $payItem;
+    protected int $payItem;
+
     /**
      * @var string
      */
-    public $payItemName;
+    protected string $payItemName;
+
     /**
      * @var float
      */
-    public $hoursAccrued;
+    protected float $hoursAccrued;
+
     /**
      * @var float
      */
-    public $hoursUsed;
+    protected float $hoursUsed;
+
     /**
      * @var float
      */
-    public $hoursBalance;
+    protected float $hoursBalance;
+
     static $paramtypesmap = array(
         "payItem" => "integer",
         "payItemName" => "string",
@@ -47,4 +52,95 @@ class PaycheckPayPto {
         "hoursUsed" => "float",
         "hoursBalance" => "float",
     );
+
+    /**
+     * @param int $payItem
+     * @return PaycheckPayPto
+     */
+    public function setPayItem(int $payItem): PaycheckPayPto
+    {
+        $this->payItem = $payItem;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPayItem(): int
+    {
+        return $this->payItem;
+    }
+
+    /**
+     * @param string $payItemName
+     * @return PaycheckPayPto
+     */
+    public function setPayItemName(string $payItemName): PaycheckPayPto
+    {
+        $this->payItemName = $payItemName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPayItemName(): string
+    {
+        return $this->payItemName;
+    }
+
+    /**
+     * @param float $hoursAccrued
+     * @return PaycheckPayPto
+     */
+    public function setHoursAccrued(float $hoursAccrued): PaycheckPayPto
+    {
+        $this->hoursAccrued = $hoursAccrued;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getHoursAccrued(): float
+    {
+        return $this->hoursAccrued;
+    }
+
+    /**
+     * @param float $hoursUsed
+     * @return PaycheckPayPto
+     */
+    public function setHoursUsed(float $hoursUsed): PaycheckPayPto
+    {
+        $this->hoursUsed = $hoursUsed;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getHoursUsed(): float
+    {
+        return $this->hoursUsed;
+    }
+
+    /**
+     * @param float $hoursBalance
+     * @return PaycheckPayPto
+     */
+    public function setHoursBalance(float $hoursBalance): PaycheckPayPto
+    {
+        $this->hoursBalance = $hoursBalance;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getHoursBalance(): float
+    {
+        return $this->hoursBalance;
+    }
+
 }

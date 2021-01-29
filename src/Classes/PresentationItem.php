@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PresentationItem {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var \NetSuite\Classes\PresentationItemType
+     * @var PresentationItemType
      */
-    public $itemType;
+    protected PresentationItemType $itemType;
+
     /**
      * @var string
      */
-    public $description;
+    protected string $description;
+
     /**
      * @var float
      */
-    public $onlinePrice;
+    protected float $onlinePrice;
+
     /**
      * @var float
      */
-    public $basePrice;
+    protected float $basePrice;
+
     static $paramtypesmap = array(
         "item" => "RecordRef",
         "itemType" => "PresentationItemType",
@@ -47,4 +52,95 @@ class PresentationItem {
         "onlinePrice" => "float",
         "basePrice" => "float",
     );
+
+    /**
+     * @param RecordRef $item
+     * @return PresentationItem
+     */
+    public function setItem(RecordRef $item): PresentationItem
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param PresentationItemType $itemType
+     * @return PresentationItem
+     */
+    public function setItemType(PresentationItemType $itemType): PresentationItem
+    {
+        $this->itemType = $itemType;
+        return $this;
+    }
+
+    /**
+     * @return PresentationItemType
+     */
+    public function getItemType(): PresentationItemType
+    {
+        return $this->itemType;
+    }
+
+    /**
+     * @param string $description
+     * @return PresentationItem
+     */
+    public function setDescription(string $description): PresentationItem
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param float $onlinePrice
+     * @return PresentationItem
+     */
+    public function setOnlinePrice(float $onlinePrice): PresentationItem
+    {
+        $this->onlinePrice = $onlinePrice;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getOnlinePrice(): float
+    {
+        return $this->onlinePrice;
+    }
+
+    /**
+     * @param float $basePrice
+     * @return PresentationItem
+     */
+    public function setBasePrice(float $basePrice): PresentationItem
+    {
+        $this->basePrice = $basePrice;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBasePrice(): float
+    {
+        return $this->basePrice;
+    }
+
 }

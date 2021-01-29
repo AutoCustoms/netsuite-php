@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TopicSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\TopicSearchBasic
+     * @var TopicSearchBasic
      */
-    public $basic;
+    protected TopicSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\SolutionSearchBasic
+     * @var SolutionSearchBasic
      */
-    public $solutionJoin;
+    protected SolutionSearchBasic $solutionJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $userJoin;
+    protected EmployeeSearchBasic $userJoin;
+
     static $paramtypesmap = array(
         "basic" => "TopicSearchBasic",
         "solutionJoin" => "SolutionSearchBasic",
         "userJoin" => "EmployeeSearchBasic",
     );
+
+    /**
+     * @param TopicSearchBasic $basic
+     * @return TopicSearch
+     */
+    public function setBasic(TopicSearchBasic $basic): TopicSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return TopicSearchBasic
+     */
+    public function getBasic(): TopicSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param SolutionSearchBasic $solutionJoin
+     * @return TopicSearch
+     */
+    public function setSolutionJoin(SolutionSearchBasic $solutionJoin): TopicSearch
+    {
+        $this->solutionJoin = $solutionJoin;
+        return $this;
+    }
+
+    /**
+     * @return SolutionSearchBasic
+     */
+    public function getSolutionJoin(): SolutionSearchBasic
+    {
+        return $this->solutionJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $userJoin
+     * @return TopicSearch
+     */
+    public function setUserJoin(EmployeeSearchBasic $userJoin): TopicSearch
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getUserJoin(): EmployeeSearchBasic
+    {
+        return $this->userJoin;
+    }
+
 }

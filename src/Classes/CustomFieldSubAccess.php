@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomFieldSubAccess {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $sub;
+    protected RecordRef $sub;
+
     /**
-     * @var \NetSuite\Classes\CustomizationAccessLevel
+     * @var CustomizationAccessLevel
      */
-    public $accessLevel;
+    protected CustomizationAccessLevel $accessLevel;
+
     /**
-     * @var \NetSuite\Classes\CustomizationSearchLevel
+     * @var CustomizationSearchLevel
      */
-    public $searchLevel;
+    protected CustomizationSearchLevel $searchLevel;
+
     static $paramtypesmap = array(
         "sub" => "RecordRef",
         "accessLevel" => "CustomizationAccessLevel",
         "searchLevel" => "CustomizationSearchLevel",
     );
+
+    /**
+     * @param RecordRef $sub
+     * @return CustomFieldSubAccess
+     */
+    public function setSub(RecordRef $sub): CustomFieldSubAccess
+    {
+        $this->sub = $sub;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getSub(): RecordRef
+    {
+        return $this->sub;
+    }
+
+    /**
+     * @param CustomizationAccessLevel $accessLevel
+     * @return CustomFieldSubAccess
+     */
+    public function setAccessLevel(CustomizationAccessLevel $accessLevel): CustomFieldSubAccess
+    {
+        $this->accessLevel = $accessLevel;
+        return $this;
+    }
+
+    /**
+     * @return CustomizationAccessLevel
+     */
+    public function getAccessLevel(): CustomizationAccessLevel
+    {
+        return $this->accessLevel;
+    }
+
+    /**
+     * @param CustomizationSearchLevel $searchLevel
+     * @return CustomFieldSubAccess
+     */
+    public function setSearchLevel(CustomizationSearchLevel $searchLevel): CustomFieldSubAccess
+    {
+        $this->searchLevel = $searchLevel;
+        return $this;
+    }
+
+    /**
+     * @return CustomizationSearchLevel
+     */
+    public function getSearchLevel(): CustomizationSearchLevel
+    {
+        return $this->searchLevel;
+    }
+
 }

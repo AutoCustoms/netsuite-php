@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemAccountMappingSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\ItemAccountMappingSearch
+     * @var ItemAccountMappingSearch
      */
-    public $criteria;
+    protected ItemAccountMappingSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\ItemAccountMappingSearchRow
+     * @var ItemAccountMappingSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected ItemAccountMappingSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "ItemAccountMappingSearch",
         "columns" => "ItemAccountMappingSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param ItemAccountMappingSearch $criteria
+     * @return ItemAccountMappingSearchAdvanced
+     */
+    public function setCriteria(ItemAccountMappingSearch $criteria): ItemAccountMappingSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return ItemAccountMappingSearch
+     */
+    public function getCriteria(): ItemAccountMappingSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param ItemAccountMappingSearchRow $columns
+     * @return ItemAccountMappingSearchAdvanced
+     */
+    public function setColumns(ItemAccountMappingSearchRow $columns): ItemAccountMappingSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return ItemAccountMappingSearchRow
+     */
+    public function getColumns(): ItemAccountMappingSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return ItemAccountMappingSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): ItemAccountMappingSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return ItemAccountMappingSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): ItemAccountMappingSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

@@ -14,36 +14,42 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomerAddressbook {
     /**
-     * @var boolean
+     * @var bool
      */
-    public $defaultShipping;
+    protected bool $defaultShipping;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $defaultBilling;
+    protected bool $defaultBilling;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isResidential;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var \NetSuite\Classes\Address
-     */
-    public $addressbookAddress;
+    protected bool $isResidential;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $label;
+
+    /**
+     * @var Address
+     */
+    protected Address $addressbookAddress;
+
+    /**
+     * @var string
+     */
+    protected string $internalId;
+
     static $paramtypesmap = array(
         "defaultShipping" => "boolean",
         "defaultBilling" => "boolean",
@@ -52,4 +58,113 @@ class CustomerAddressbook {
         "addressbookAddress" => "Address",
         "internalId" => "string",
     );
+
+    /**
+     * @param bool $defaultShipping
+     * @return CustomerAddressbook
+     */
+    public function setDefaultShipping(bool $defaultShipping): CustomerAddressbook
+    {
+        $this->defaultShipping = $defaultShipping;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getDefaultShipping(): bool
+    {
+        return $this->defaultShipping;
+    }
+
+    /**
+     * @param bool $defaultBilling
+     * @return CustomerAddressbook
+     */
+    public function setDefaultBilling(bool $defaultBilling): CustomerAddressbook
+    {
+        $this->defaultBilling = $defaultBilling;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getDefaultBilling(): bool
+    {
+        return $this->defaultBilling;
+    }
+
+    /**
+     * @param bool $isResidential
+     * @return CustomerAddressbook
+     */
+    public function setIsResidential(bool $isResidential): CustomerAddressbook
+    {
+        $this->isResidential = $isResidential;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsResidential(): bool
+    {
+        return $this->isResidential;
+    }
+
+    /**
+     * @param string $label
+     * @return CustomerAddressbook
+     */
+    public function setLabel(string $label): CustomerAddressbook
+    {
+        $this->label = $label;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLabel(): string
+    {
+        return $this->label;
+    }
+
+    /**
+     * @param Address $addressbookAddress
+     * @return CustomerAddressbook
+     */
+    public function setAddressbookAddress(Address $addressbookAddress): CustomerAddressbook
+    {
+        $this->addressbookAddress = $addressbookAddress;
+        return $this;
+    }
+
+    /**
+     * @return Address
+     */
+    public function getAddressbookAddress(): Address
+    {
+        return $this->addressbookAddress;
+    }
+
+    /**
+     * @param string $internalId
+     * @return CustomerAddressbook
+     */
+    public function setInternalId(string $internalId): CustomerAddressbook
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
 }

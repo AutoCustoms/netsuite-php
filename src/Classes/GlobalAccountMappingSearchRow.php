@@ -14,44 +14,52 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GlobalAccountMappingSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\GlobalAccountMappingSearchRowBasic
+     * @var GlobalAccountMappingSearchRowBasic
      */
-    public $basic;
+    protected GlobalAccountMappingSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ClassificationSearchRowBasic
+     * @var ClassificationSearchRowBasic
      */
-    public $classJoin;
+    protected ClassificationSearchRowBasic $classJoin;
+
     /**
-     * @var \NetSuite\Classes\DepartmentSearchRowBasic
+     * @var DepartmentSearchRowBasic
      */
-    public $departmentJoin;
+    protected DepartmentSearchRowBasic $departmentJoin;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchRowBasic
+     * @var AccountSearchRowBasic
      */
-    public $destinationAccountJoin;
+    protected AccountSearchRowBasic $destinationAccountJoin;
+
     /**
-     * @var \NetSuite\Classes\LocationSearchRowBasic
+     * @var LocationSearchRowBasic
      */
-    public $locationJoin;
+    protected LocationSearchRowBasic $locationJoin;
+
     /**
-     * @var \NetSuite\Classes\AccountSearchRowBasic
+     * @var AccountSearchRowBasic
      */
-    public $sourceAccountJoin;
+    protected AccountSearchRowBasic $sourceAccountJoin;
+
     /**
-     * @var \NetSuite\Classes\SubsidiarySearchRowBasic
+     * @var SubsidiarySearchRowBasic
      */
-    public $subsidiaryJoin;
+    protected SubsidiarySearchRowBasic $subsidiaryJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "GlobalAccountMappingSearchRowBasic",
         "classJoin" => "ClassificationSearchRowBasic",
@@ -62,4 +70,149 @@ class GlobalAccountMappingSearchRow extends SearchRow {
         "subsidiaryJoin" => "SubsidiarySearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param GlobalAccountMappingSearchRowBasic $basic
+     * @return GlobalAccountMappingSearchRow
+     */
+    public function setBasic(GlobalAccountMappingSearchRowBasic $basic): GlobalAccountMappingSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return GlobalAccountMappingSearchRowBasic
+     */
+    public function getBasic(): GlobalAccountMappingSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ClassificationSearchRowBasic $classJoin
+     * @return GlobalAccountMappingSearchRow
+     */
+    public function setClassJoin(ClassificationSearchRowBasic $classJoin): GlobalAccountMappingSearchRow
+    {
+        $this->classJoin = $classJoin;
+        return $this;
+    }
+
+    /**
+     * @return ClassificationSearchRowBasic
+     */
+    public function getClassJoin(): ClassificationSearchRowBasic
+    {
+        return $this->classJoin;
+    }
+
+    /**
+     * @param DepartmentSearchRowBasic $departmentJoin
+     * @return GlobalAccountMappingSearchRow
+     */
+    public function setDepartmentJoin(DepartmentSearchRowBasic $departmentJoin): GlobalAccountMappingSearchRow
+    {
+        $this->departmentJoin = $departmentJoin;
+        return $this;
+    }
+
+    /**
+     * @return DepartmentSearchRowBasic
+     */
+    public function getDepartmentJoin(): DepartmentSearchRowBasic
+    {
+        return $this->departmentJoin;
+    }
+
+    /**
+     * @param AccountSearchRowBasic $destinationAccountJoin
+     * @return GlobalAccountMappingSearchRow
+     */
+    public function setDestinationAccountJoin(AccountSearchRowBasic $destinationAccountJoin): GlobalAccountMappingSearchRow
+    {
+        $this->destinationAccountJoin = $destinationAccountJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchRowBasic
+     */
+    public function getDestinationAccountJoin(): AccountSearchRowBasic
+    {
+        return $this->destinationAccountJoin;
+    }
+
+    /**
+     * @param LocationSearchRowBasic $locationJoin
+     * @return GlobalAccountMappingSearchRow
+     */
+    public function setLocationJoin(LocationSearchRowBasic $locationJoin): GlobalAccountMappingSearchRow
+    {
+        $this->locationJoin = $locationJoin;
+        return $this;
+    }
+
+    /**
+     * @return LocationSearchRowBasic
+     */
+    public function getLocationJoin(): LocationSearchRowBasic
+    {
+        return $this->locationJoin;
+    }
+
+    /**
+     * @param AccountSearchRowBasic $sourceAccountJoin
+     * @return GlobalAccountMappingSearchRow
+     */
+    public function setSourceAccountJoin(AccountSearchRowBasic $sourceAccountJoin): GlobalAccountMappingSearchRow
+    {
+        $this->sourceAccountJoin = $sourceAccountJoin;
+        return $this;
+    }
+
+    /**
+     * @return AccountSearchRowBasic
+     */
+    public function getSourceAccountJoin(): AccountSearchRowBasic
+    {
+        return $this->sourceAccountJoin;
+    }
+
+    /**
+     * @param SubsidiarySearchRowBasic $subsidiaryJoin
+     * @return GlobalAccountMappingSearchRow
+     */
+    public function setSubsidiaryJoin(SubsidiarySearchRowBasic $subsidiaryJoin): GlobalAccountMappingSearchRow
+    {
+        $this->subsidiaryJoin = $subsidiaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return SubsidiarySearchRowBasic
+     */
+    public function getSubsidiaryJoin(): SubsidiarySearchRowBasic
+    {
+        return $this->subsidiaryJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return GlobalAccountMappingSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): GlobalAccountMappingSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PriceList {
     /**
-     * @var \NetSuite\Classes\Price[]
+     * @var Price[]
      */
-    public $price;
+    protected array $price;
+
     static $paramtypesmap = array(
         "price" => "Price[]",
     );
+
+    /**
+     * @param Price[] $price
+     * @return PriceList
+     */
+    public function setPrice(Price $price): PriceList
+    {
+        $this->price[] = $price;
+        return $this;
+    }
+
+    /**
+     * @return Price[]
+     */
+    public function getPrice(): array
+    {
+        return $this->price;
+    }
+
 }

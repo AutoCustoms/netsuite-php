@@ -14,204 +14,240 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CashRefundItem {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $job;
+    protected RecordRef $job;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $orderLine;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $units;
-    /**
-     * @var \NetSuite\Classes\InventoryDetail
-     */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $binNumbers;
-    /**
-     * @var string
-     */
-    public $serialNumbers;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $price;
-    /**
-     * @var string
-     */
-    public $rate;
+    protected int $orderLine;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $quantity;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxCode;
+    protected RecordRef $units;
+
+    /**
+     * @var InventoryDetail
+     */
+    protected InventoryDetail $inventoryDetail;
+
     /**
      * @var string
      */
-    public $taxRate1;
+    protected string $binNumbers;
+
     /**
      * @var string
      */
-    public $taxRate2;
+    protected string $serialNumbers;
+
+    /**
+     * @var string
+     */
+    protected string $description;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $price;
+
+    /**
+     * @var string
+     */
+    protected string $rate;
+
     /**
      * @var float
      */
-    public $tax1Amt;
+    protected float $amount;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $taxCode;
+
+    protected $taxRate1;
+    protected $taxRate2;
+    protected $tax1Amt;
     /**
      * @var float
      */
-    public $grossAmt;
+    protected float $grossAmt;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isTaxable;
+    protected bool $isTaxable;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var CustomFieldList
      */
-    public $options;
+    protected CustomFieldList $options;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $revRecSchedule;
-    /**
-     * @var string
-     */
-    public $revRecStartDate;
-    /**
-     * @var string
-     */
-    public $revRecEndDate;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $catchUpPeriod;
-    /**
-     * @var boolean
-     */
-    public $deferRevRec;
+    protected RecordRef $revRecSchedule;
+
     /**
      * @var string
      */
-    public $giftCertFrom;
+    protected string $revRecStartDate;
+
     /**
-     * @var \NetSuite\Classes\ItemCostEstimateType
+     * @var string
      */
-    public $costEstimateType;
+    protected string $revRecEndDate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $catchUpPeriod;
+
+    /**
+     * @var bool
+     */
+    protected bool $deferRevRec;
+
+    /**
+     * @var string
+     */
+    protected string $giftCertFrom;
+
+    /**
+     * @var ItemCostEstimateType
+     */
+    protected ItemCostEstimateType $costEstimateType;
+
     /**
      * @var float
      */
-    public $costEstimate;
+    protected float $costEstimate;
+
     /**
      * @var string
      */
-    public $taxDetailsReference;
+    protected string $taxDetailsReference;
+
     /**
      * @var string
      */
-    public $giftCertRecipientName;
+    protected string $giftCertRecipientName;
+
     /**
      * @var string
      */
-    public $giftCertRecipientEmail;
+    protected string $giftCertRecipientEmail;
+
     /**
      * @var string
      */
-    public $giftCertMessage;
+    protected string $giftCertMessage;
+
     /**
      * @var float
      */
-    public $taxAmount;
+    protected float $taxAmount;
+
     /**
      * @var string
      */
-    public $giftCertNumber;
+    protected string $giftCertNumber;
+
     /**
-     * @var \NetSuite\Classes\VsoeSopGroup
+     * @var VsoeSopGroup
      */
-    public $vsoeSopGroup;
+    protected VsoeSopGroup $vsoeSopGroup;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $vsoeIsEstimate;
-    /**
-     * @var float
-     */
-    public $vsoePrice;
-    /**
-     * @var float
-     */
-    public $vsoeAmount;
+    protected bool $vsoeIsEstimate;
+
     /**
      * @var float
      */
-    public $vsoeAllocation;
+    protected float $vsoePrice;
+
     /**
-     * @var \NetSuite\Classes\VsoeDeferral
+     * @var float
      */
-    public $vsoeDeferral;
+    protected float $vsoeAmount;
+
     /**
-     * @var \NetSuite\Classes\VsoePermitDiscount
+     * @var float
      */
-    public $vsoePermitDiscount;
+    protected float $vsoeAllocation;
+
     /**
-     * @var boolean
+     * @var VsoeDeferral
      */
-    public $vsoeDelivered;
+    protected VsoeDeferral $vsoeDeferral;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var VsoePermitDiscount
      */
-    public $chargeType;
+    protected VsoePermitDiscount $vsoePermitDiscount;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var bool
      */
-    public $chargesList;
+    protected bool $vsoeDelivered;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var RecordRef
      */
-    public $customFieldList;
+    protected RecordRef $chargeType;
+
+    /**
+     * @var RecordRefList
+     */
+    protected RecordRefList $chargesList;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "job" => "RecordRef",
         "item" => "RecordRef",
@@ -262,4 +298,815 @@ class CashRefundItem {
         "chargesList" => "RecordRefList",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param RecordRef $job
+     * @return CashRefundItem
+     */
+    public function setJob(RecordRef $job): CashRefundItem
+    {
+        $this->job = $job;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getJob(): RecordRef
+    {
+        return $this->job;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return CashRefundItem
+     */
+    public function setItem(RecordRef $item): CashRefundItem
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param int $line
+     * @return CashRefundItem
+     */
+    public function setLine(int $line): CashRefundItem
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param int $orderLine
+     * @return CashRefundItem
+     */
+    public function setOrderLine(int $orderLine): CashRefundItem
+    {
+        $this->orderLine = $orderLine;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOrderLine(): int
+    {
+        return $this->orderLine;
+    }
+
+    /**
+     * @param float $quantity
+     * @return CashRefundItem
+     */
+    public function setQuantity(float $quantity): CashRefundItem
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param RecordRef $units
+     * @return CashRefundItem
+     */
+    public function setUnits(RecordRef $units): CashRefundItem
+    {
+        $this->units = $units;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getUnits(): RecordRef
+    {
+        return $this->units;
+    }
+
+    /**
+     * @param InventoryDetail $inventoryDetail
+     * @return CashRefundItem
+     */
+    public function setInventoryDetail(InventoryDetail $inventoryDetail): CashRefundItem
+    {
+        $this->inventoryDetail = $inventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getInventoryDetail(): InventoryDetail
+    {
+        return $this->inventoryDetail;
+    }
+
+    /**
+     * @param string $binNumbers
+     * @return CashRefundItem
+     */
+    public function setBinNumbers(string $binNumbers): CashRefundItem
+    {
+        $this->binNumbers = $binNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBinNumbers(): string
+    {
+        return $this->binNumbers;
+    }
+
+    /**
+     * @param string $serialNumbers
+     * @return CashRefundItem
+     */
+    public function setSerialNumbers(string $serialNumbers): CashRefundItem
+    {
+        $this->serialNumbers = $serialNumbers;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSerialNumbers(): string
+    {
+        return $this->serialNumbers;
+    }
+
+    /**
+     * @param string $description
+     * @return CashRefundItem
+     */
+    public function setDescription(string $description): CashRefundItem
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param RecordRef $price
+     * @return CashRefundItem
+     */
+    public function setPrice(RecordRef $price): CashRefundItem
+    {
+        $this->price = $price;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPrice(): RecordRef
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param string $rate
+     * @return CashRefundItem
+     */
+    public function setRate(string $rate): CashRefundItem
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRate(): string
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param float $amount
+     * @return CashRefundItem
+     */
+    public function setAmount(float $amount): CashRefundItem
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param RecordRef $taxCode
+     * @return CashRefundItem
+     */
+    public function setTaxCode(RecordRef $taxCode): CashRefundItem
+    {
+        $this->taxCode = $taxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxCode(): RecordRef
+    {
+        return $this->taxCode;
+    }
+
+    /**
+     * @param float $grossAmt
+     * @return CashRefundItem
+     */
+    public function setGrossAmt(float $grossAmt): CashRefundItem
+    {
+        $this->grossAmt = $grossAmt;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getGrossAmt(): float
+    {
+        return $this->grossAmt;
+    }
+
+    /**
+     * @param bool $isTaxable
+     * @return CashRefundItem
+     */
+    public function setIsTaxable(bool $isTaxable): CashRefundItem
+    {
+        $this->isTaxable = $isTaxable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsTaxable(): bool
+    {
+        return $this->isTaxable;
+    }
+
+    /**
+     * @param CustomFieldList $options
+     * @return CashRefundItem
+     */
+    public function setOptions(CustomFieldList $options): CashRefundItem
+    {
+        $this->options = $options;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getOptions(): CustomFieldList
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return CashRefundItem
+     */
+    public function setDepartment(RecordRef $department): CashRefundItem
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return CashRefundItem
+     */
+    public function setClass(RecordRef $class): CashRefundItem
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return CashRefundItem
+     */
+    public function setLocation(RecordRef $location): CashRefundItem
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $revRecSchedule
+     * @return CashRefundItem
+     */
+    public function setRevRecSchedule(RecordRef $revRecSchedule): CashRefundItem
+    {
+        $this->revRecSchedule = $revRecSchedule;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRevRecSchedule(): RecordRef
+    {
+        return $this->revRecSchedule;
+    }
+
+    /**
+     * @param string $revRecStartDate
+     * @return CashRefundItem
+     */
+    public function setRevRecStartDate(string $revRecStartDate): CashRefundItem
+    {
+        $this->revRecStartDate = $revRecStartDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRevRecStartDate(): string
+    {
+        return $this->revRecStartDate;
+    }
+
+    /**
+     * @param string $revRecEndDate
+     * @return CashRefundItem
+     */
+    public function setRevRecEndDate(string $revRecEndDate): CashRefundItem
+    {
+        $this->revRecEndDate = $revRecEndDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRevRecEndDate(): string
+    {
+        return $this->revRecEndDate;
+    }
+
+    /**
+     * @param RecordRef $catchUpPeriod
+     * @return CashRefundItem
+     */
+    public function setCatchUpPeriod(RecordRef $catchUpPeriod): CashRefundItem
+    {
+        $this->catchUpPeriod = $catchUpPeriod;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCatchUpPeriod(): RecordRef
+    {
+        return $this->catchUpPeriod;
+    }
+
+    /**
+     * @param bool $deferRevRec
+     * @return CashRefundItem
+     */
+    public function setDeferRevRec(bool $deferRevRec): CashRefundItem
+    {
+        $this->deferRevRec = $deferRevRec;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getDeferRevRec(): bool
+    {
+        return $this->deferRevRec;
+    }
+
+    /**
+     * @param string $giftCertFrom
+     * @return CashRefundItem
+     */
+    public function setGiftCertFrom(string $giftCertFrom): CashRefundItem
+    {
+        $this->giftCertFrom = $giftCertFrom;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGiftCertFrom(): string
+    {
+        return $this->giftCertFrom;
+    }
+
+    /**
+     * @param ItemCostEstimateType $costEstimateType
+     * @return CashRefundItem
+     */
+    public function setCostEstimateType(ItemCostEstimateType $costEstimateType): CashRefundItem
+    {
+        $this->costEstimateType = $costEstimateType;
+        return $this;
+    }
+
+    /**
+     * @return ItemCostEstimateType
+     */
+    public function getCostEstimateType(): ItemCostEstimateType
+    {
+        return $this->costEstimateType;
+    }
+
+    /**
+     * @param float $costEstimate
+     * @return CashRefundItem
+     */
+    public function setCostEstimate(float $costEstimate): CashRefundItem
+    {
+        $this->costEstimate = $costEstimate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCostEstimate(): float
+    {
+        return $this->costEstimate;
+    }
+
+    /**
+     * @param string $taxDetailsReference
+     * @return CashRefundItem
+     */
+    public function setTaxDetailsReference(string $taxDetailsReference): CashRefundItem
+    {
+        $this->taxDetailsReference = $taxDetailsReference;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxDetailsReference(): string
+    {
+        return $this->taxDetailsReference;
+    }
+
+    /**
+     * @param string $giftCertRecipientName
+     * @return CashRefundItem
+     */
+    public function setGiftCertRecipientName(string $giftCertRecipientName): CashRefundItem
+    {
+        $this->giftCertRecipientName = $giftCertRecipientName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGiftCertRecipientName(): string
+    {
+        return $this->giftCertRecipientName;
+    }
+
+    /**
+     * @param string $giftCertRecipientEmail
+     * @return CashRefundItem
+     */
+    public function setGiftCertRecipientEmail(string $giftCertRecipientEmail): CashRefundItem
+    {
+        $this->giftCertRecipientEmail = $giftCertRecipientEmail;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGiftCertRecipientEmail(): string
+    {
+        return $this->giftCertRecipientEmail;
+    }
+
+    /**
+     * @param string $giftCertMessage
+     * @return CashRefundItem
+     */
+    public function setGiftCertMessage(string $giftCertMessage): CashRefundItem
+    {
+        $this->giftCertMessage = $giftCertMessage;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGiftCertMessage(): string
+    {
+        return $this->giftCertMessage;
+    }
+
+    /**
+     * @param float $taxAmount
+     * @return CashRefundItem
+     */
+    public function setTaxAmount(float $taxAmount): CashRefundItem
+    {
+        $this->taxAmount = $taxAmount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTaxAmount(): float
+    {
+        return $this->taxAmount;
+    }
+
+    /**
+     * @param string $giftCertNumber
+     * @return CashRefundItem
+     */
+    public function setGiftCertNumber(string $giftCertNumber): CashRefundItem
+    {
+        $this->giftCertNumber = $giftCertNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGiftCertNumber(): string
+    {
+        return $this->giftCertNumber;
+    }
+
+    /**
+     * @param VsoeSopGroup $vsoeSopGroup
+     * @return CashRefundItem
+     */
+    public function setVsoeSopGroup(VsoeSopGroup $vsoeSopGroup): CashRefundItem
+    {
+        $this->vsoeSopGroup = $vsoeSopGroup;
+        return $this;
+    }
+
+    /**
+     * @return VsoeSopGroup
+     */
+    public function getVsoeSopGroup(): VsoeSopGroup
+    {
+        return $this->vsoeSopGroup;
+    }
+
+    /**
+     * @param bool $vsoeIsEstimate
+     * @return CashRefundItem
+     */
+    public function setVsoeIsEstimate(bool $vsoeIsEstimate): CashRefundItem
+    {
+        $this->vsoeIsEstimate = $vsoeIsEstimate;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getVsoeIsEstimate(): bool
+    {
+        return $this->vsoeIsEstimate;
+    }
+
+    /**
+     * @param float $vsoePrice
+     * @return CashRefundItem
+     */
+    public function setVsoePrice(float $vsoePrice): CashRefundItem
+    {
+        $this->vsoePrice = $vsoePrice;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getVsoePrice(): float
+    {
+        return $this->vsoePrice;
+    }
+
+    /**
+     * @param float $vsoeAmount
+     * @return CashRefundItem
+     */
+    public function setVsoeAmount(float $vsoeAmount): CashRefundItem
+    {
+        $this->vsoeAmount = $vsoeAmount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getVsoeAmount(): float
+    {
+        return $this->vsoeAmount;
+    }
+
+    /**
+     * @param float $vsoeAllocation
+     * @return CashRefundItem
+     */
+    public function setVsoeAllocation(float $vsoeAllocation): CashRefundItem
+    {
+        $this->vsoeAllocation = $vsoeAllocation;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getVsoeAllocation(): float
+    {
+        return $this->vsoeAllocation;
+    }
+
+    /**
+     * @param VsoeDeferral $vsoeDeferral
+     * @return CashRefundItem
+     */
+    public function setVsoeDeferral(VsoeDeferral $vsoeDeferral): CashRefundItem
+    {
+        $this->vsoeDeferral = $vsoeDeferral;
+        return $this;
+    }
+
+    /**
+     * @return VsoeDeferral
+     */
+    public function getVsoeDeferral(): VsoeDeferral
+    {
+        return $this->vsoeDeferral;
+    }
+
+    /**
+     * @param VsoePermitDiscount $vsoePermitDiscount
+     * @return CashRefundItem
+     */
+    public function setVsoePermitDiscount(VsoePermitDiscount $vsoePermitDiscount): CashRefundItem
+    {
+        $this->vsoePermitDiscount = $vsoePermitDiscount;
+        return $this;
+    }
+
+    /**
+     * @return VsoePermitDiscount
+     */
+    public function getVsoePermitDiscount(): VsoePermitDiscount
+    {
+        return $this->vsoePermitDiscount;
+    }
+
+    /**
+     * @param bool $vsoeDelivered
+     * @return CashRefundItem
+     */
+    public function setVsoeDelivered(bool $vsoeDelivered): CashRefundItem
+    {
+        $this->vsoeDelivered = $vsoeDelivered;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getVsoeDelivered(): bool
+    {
+        return $this->vsoeDelivered;
+    }
+
+    /**
+     * @param RecordRef $chargeType
+     * @return CashRefundItem
+     */
+    public function setChargeType(RecordRef $chargeType): CashRefundItem
+    {
+        $this->chargeType = $chargeType;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getChargeType(): RecordRef
+    {
+        return $this->chargeType;
+    }
+
+    /**
+     * @param RecordRefList $chargesList
+     * @return CashRefundItem
+     */
+    public function setChargesList(RecordRefList $chargesList): CashRefundItem
+    {
+        $this->chargesList = $chargesList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getChargesList(): RecordRefList
+    {
+        return $this->chargesList;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return CashRefundItem
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): CashRefundItem
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

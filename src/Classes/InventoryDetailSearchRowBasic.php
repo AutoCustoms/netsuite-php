@@ -14,36 +14,42 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InventoryDetailSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $binNumber;
+    protected array $binNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $inventoryNumber;
+    protected array $inventoryNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $quantity;
+    protected array $quantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $status;
+    protected array $status;
+
     static $paramtypesmap = array(
         "binNumber" => "SearchColumnSelectField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -52,4 +58,113 @@ class InventoryDetailSearchRowBasic extends SearchRowBasic {
         "quantity" => "SearchColumnDoubleField[]",
         "status" => "SearchColumnSelectField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $binNumber
+     * @return InventoryDetailSearchRowBasic
+     */
+    public function setBinNumber(SearchColumnSelectField $binNumber): InventoryDetailSearchRowBasic
+    {
+        $this->binNumber[] = $binNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getBinNumber(): array
+    {
+        return $this->binNumber;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return InventoryDetailSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): InventoryDetailSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return InventoryDetailSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): InventoryDetailSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $inventoryNumber
+     * @return InventoryDetailSearchRowBasic
+     */
+    public function setInventoryNumber(SearchColumnSelectField $inventoryNumber): InventoryDetailSearchRowBasic
+    {
+        $this->inventoryNumber[] = $inventoryNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInventoryNumber(): array
+    {
+        return $this->inventoryNumber;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $quantity
+     * @return InventoryDetailSearchRowBasic
+     */
+    public function setQuantity(SearchColumnDoubleField $quantity): InventoryDetailSearchRowBasic
+    {
+        $this->quantity[] = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getQuantity(): array
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $status
+     * @return InventoryDetailSearchRowBasic
+     */
+    public function setStatus(SearchColumnSelectField $status): InventoryDetailSearchRowBasic
+    {
+        $this->status[] = $status;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getStatus(): array
+    {
+        return $this->status;
+    }
+
 }

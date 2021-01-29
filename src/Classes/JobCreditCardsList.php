@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class JobCreditCardsList {
     /**
-     * @var \NetSuite\Classes\JobCreditCards[]
+     * @var JobCreditCards[]
      */
-    public $creditCards;
+    protected array $creditCards;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "creditCards" => "JobCreditCards[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param JobCreditCards[] $creditCards
+     * @return JobCreditCardsList
+     */
+    public function setCreditCards(JobCreditCards $creditCards): JobCreditCardsList
+    {
+        $this->creditCards[] = $creditCards;
+        return $this;
+    }
+
+    /**
+     * @return JobCreditCards[]
+     */
+    public function getCreditCards(): array
+    {
+        return $this->creditCards;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return JobCreditCardsList
+     */
+    public function setReplaceAll(bool $replaceAll): JobCreditCardsList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

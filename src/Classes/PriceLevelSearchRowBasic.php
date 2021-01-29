@@ -14,36 +14,42 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PriceLevelSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $discountPct;
+    protected array $discountPct;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isOnline;
+    protected array $isOnline;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     static $paramtypesmap = array(
         "discountPct" => "SearchColumnDoubleField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -52,4 +58,113 @@ class PriceLevelSearchRowBasic extends SearchRowBasic {
         "isOnline" => "SearchColumnBooleanField[]",
         "name" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnDoubleField[] $discountPct
+     * @return PriceLevelSearchRowBasic
+     */
+    public function setDiscountPct(SearchColumnDoubleField $discountPct): PriceLevelSearchRowBasic
+    {
+        $this->discountPct[] = $discountPct;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getDiscountPct(): array
+    {
+        return $this->discountPct;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return PriceLevelSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): PriceLevelSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return PriceLevelSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): PriceLevelSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return PriceLevelSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): PriceLevelSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isOnline
+     * @return PriceLevelSearchRowBasic
+     */
+    public function setIsOnline(SearchColumnBooleanField $isOnline): PriceLevelSearchRowBasic
+    {
+        $this->isOnline[] = $isOnline;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsOnline(): array
+    {
+        return $this->isOnline;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return PriceLevelSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): PriceLevelSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
 }

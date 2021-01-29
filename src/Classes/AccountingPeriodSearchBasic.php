@@ -14,80 +14,97 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingPeriodSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $allLocked;
+    protected SearchBooleanField $allLocked;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $allowNonGlChanges;
+    protected SearchBooleanField $allowNonGlChanges;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $apLocked;
+    protected SearchBooleanField $apLocked;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $arLocked;
+    protected SearchBooleanField $arLocked;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $closed;
+    protected SearchBooleanField $closed;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $closedOnDate;
+    protected SearchDateField $closedOnDate;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $endDate;
+    protected SearchDateField $endDate;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isAdjust;
+    protected SearchBooleanField $isAdjust;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isInactive;
+    protected SearchBooleanField $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isQuarter;
+    protected SearchBooleanField $isQuarter;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $isYear;
+    protected SearchBooleanField $isYear;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $parent;
+    protected SearchMultiSelectField $parent;
+
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $payrollLocked;
+    protected SearchBooleanField $payrollLocked;
+
     /**
-     * @var \NetSuite\Classes\SearchStringField
+     * @var SearchStringField
      */
-    public $periodName;
+    protected SearchStringField $periodName;
+
     /**
-     * @var \NetSuite\Classes\SearchDateField
+     * @var SearchDateField
      */
-    public $startDate;
+    protected SearchDateField $startDate;
+
     static $paramtypesmap = array(
         "allLocked" => "SearchBooleanField",
         "allowNonGlChanges" => "SearchBooleanField",
@@ -107,4 +124,311 @@ class AccountingPeriodSearchBasic extends SearchRecordBasic {
         "periodName" => "SearchStringField",
         "startDate" => "SearchDateField",
     );
+
+    /**
+     * @param SearchBooleanField $allLocked
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setAllLocked(SearchBooleanField $allLocked): AccountingPeriodSearchBasic
+    {
+        $this->allLocked = $allLocked;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getAllLocked(): SearchBooleanField
+    {
+        return $this->allLocked;
+    }
+
+    /**
+     * @param SearchBooleanField $allowNonGlChanges
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setAllowNonGlChanges(SearchBooleanField $allowNonGlChanges): AccountingPeriodSearchBasic
+    {
+        $this->allowNonGlChanges = $allowNonGlChanges;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getAllowNonGlChanges(): SearchBooleanField
+    {
+        return $this->allowNonGlChanges;
+    }
+
+    /**
+     * @param SearchBooleanField $apLocked
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setApLocked(SearchBooleanField $apLocked): AccountingPeriodSearchBasic
+    {
+        $this->apLocked = $apLocked;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getApLocked(): SearchBooleanField
+    {
+        return $this->apLocked;
+    }
+
+    /**
+     * @param SearchBooleanField $arLocked
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setArLocked(SearchBooleanField $arLocked): AccountingPeriodSearchBasic
+    {
+        $this->arLocked = $arLocked;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getArLocked(): SearchBooleanField
+    {
+        return $this->arLocked;
+    }
+
+    /**
+     * @param SearchBooleanField $closed
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setClosed(SearchBooleanField $closed): AccountingPeriodSearchBasic
+    {
+        $this->closed = $closed;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getClosed(): SearchBooleanField
+    {
+        return $this->closed;
+    }
+
+    /**
+     * @param SearchDateField $closedOnDate
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setClosedOnDate(SearchDateField $closedOnDate): AccountingPeriodSearchBasic
+    {
+        $this->closedOnDate = $closedOnDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getClosedOnDate(): SearchDateField
+    {
+        return $this->closedOnDate;
+    }
+
+    /**
+     * @param SearchDateField $endDate
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setEndDate(SearchDateField $endDate): AccountingPeriodSearchBasic
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getEndDate(): SearchDateField
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): AccountingPeriodSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): AccountingPeriodSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchBooleanField $isAdjust
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setIsAdjust(SearchBooleanField $isAdjust): AccountingPeriodSearchBasic
+    {
+        $this->isAdjust = $isAdjust;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsAdjust(): SearchBooleanField
+    {
+        return $this->isAdjust;
+    }
+
+    /**
+     * @param SearchBooleanField $isInactive
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setIsInactive(SearchBooleanField $isInactive): AccountingPeriodSearchBasic
+    {
+        $this->isInactive = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsInactive(): SearchBooleanField
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchBooleanField $isQuarter
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setIsQuarter(SearchBooleanField $isQuarter): AccountingPeriodSearchBasic
+    {
+        $this->isQuarter = $isQuarter;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsQuarter(): SearchBooleanField
+    {
+        return $this->isQuarter;
+    }
+
+    /**
+     * @param SearchBooleanField $isYear
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setIsYear(SearchBooleanField $isYear): AccountingPeriodSearchBasic
+    {
+        $this->isYear = $isYear;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getIsYear(): SearchBooleanField
+    {
+        return $this->isYear;
+    }
+
+    /**
+     * @param SearchMultiSelectField $parent
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setParent(SearchMultiSelectField $parent): AccountingPeriodSearchBasic
+    {
+        $this->parent = $parent;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getParent(): SearchMultiSelectField
+    {
+        return $this->parent;
+    }
+
+    /**
+     * @param SearchBooleanField $payrollLocked
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setPayrollLocked(SearchBooleanField $payrollLocked): AccountingPeriodSearchBasic
+    {
+        $this->payrollLocked = $payrollLocked;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getPayrollLocked(): SearchBooleanField
+    {
+        return $this->payrollLocked;
+    }
+
+    /**
+     * @param SearchStringField $periodName
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setPeriodName(SearchStringField $periodName): AccountingPeriodSearchBasic
+    {
+        $this->periodName = $periodName;
+        return $this;
+    }
+
+    /**
+     * @return SearchStringField
+     */
+    public function getPeriodName(): SearchStringField
+    {
+        return $this->periodName;
+    }
+
+    /**
+     * @param SearchDateField $startDate
+     * @return AccountingPeriodSearchBasic
+     */
+    public function setStartDate(SearchDateField $startDate): AccountingPeriodSearchBasic
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDateField
+     */
+    public function getStartDate(): SearchDateField
+    {
+        return $this->startDate;
+    }
+
 }

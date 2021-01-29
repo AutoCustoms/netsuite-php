@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemReceiptItemList {
     /**
-     * @var \NetSuite\Classes\ItemReceiptItem[]
+     * @var ItemReceiptItem[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "item" => "ItemReceiptItem[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param ItemReceiptItem[] $item
+     * @return ItemReceiptItemList
+     */
+    public function setItem(ItemReceiptItem $item): ItemReceiptItemList
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return ItemReceiptItem[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return ItemReceiptItemList
+     */
+    public function setReplaceAll(bool $replaceAll): ItemReceiptItemList
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

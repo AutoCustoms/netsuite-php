@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AccountingTransactionSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\AccountingTransactionSearch
+     * @var AccountingTransactionSearch
      */
-    public $criteria;
+    protected AccountingTransactionSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\AccountingTransactionSearchRow
+     * @var AccountingTransactionSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected AccountingTransactionSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "AccountingTransactionSearch",
         "columns" => "AccountingTransactionSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param AccountingTransactionSearch $criteria
+     * @return AccountingTransactionSearchAdvanced
+     */
+    public function setCriteria(AccountingTransactionSearch $criteria): AccountingTransactionSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return AccountingTransactionSearch
+     */
+    public function getCriteria(): AccountingTransactionSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param AccountingTransactionSearchRow $columns
+     * @return AccountingTransactionSearchAdvanced
+     */
+    public function setColumns(AccountingTransactionSearchRow $columns): AccountingTransactionSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return AccountingTransactionSearchRow
+     */
+    public function getColumns(): AccountingTransactionSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return AccountingTransactionSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): AccountingTransactionSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return AccountingTransactionSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): AccountingTransactionSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

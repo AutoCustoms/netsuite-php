@@ -14,68 +14,82 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaycheckSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $account;
+    protected array $account;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $amendedDate;
+    protected array $amendedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amount;
+    protected array $amount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $batchNumber;
+    protected array $batchNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $checkDate;
+    protected array $checkDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $employee;
+    protected array $employee;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $hasGLImpact;
+    protected array $hasGLImpact;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $hours;
+    protected array $hours;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $payrollItem;
+    protected array $payrollItem;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $payrollItemType;
+    protected array $payrollItemType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $subjectWages;
+    protected array $subjectWages;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $taxableWages;
+    protected array $taxableWages;
+
     static $paramtypesmap = array(
         "account" => "SearchColumnSelectField[]",
         "amendedDate" => "SearchColumnDateField[]",
@@ -92,4 +106,257 @@ class PaycheckSearchRowBasic extends SearchRowBasic {
         "subjectWages" => "SearchColumnDoubleField[]",
         "taxableWages" => "SearchColumnDoubleField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $account
+     * @return PaycheckSearchRowBasic
+     */
+    public function setAccount(SearchColumnSelectField $account): PaycheckSearchRowBasic
+    {
+        $this->account[] = $account;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getAccount(): array
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $amendedDate
+     * @return PaycheckSearchRowBasic
+     */
+    public function setAmendedDate(SearchColumnDateField $amendedDate): PaycheckSearchRowBasic
+    {
+        $this->amendedDate[] = $amendedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getAmendedDate(): array
+    {
+        return $this->amendedDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amount
+     * @return PaycheckSearchRowBasic
+     */
+    public function setAmount(SearchColumnDoubleField $amount): PaycheckSearchRowBasic
+    {
+        $this->amount[] = $amount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmount(): array
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $batchNumber
+     * @return PaycheckSearchRowBasic
+     */
+    public function setBatchNumber(SearchColumnLongField $batchNumber): PaycheckSearchRowBasic
+    {
+        $this->batchNumber[] = $batchNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getBatchNumber(): array
+    {
+        return $this->batchNumber;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $checkDate
+     * @return PaycheckSearchRowBasic
+     */
+    public function setCheckDate(SearchColumnDateField $checkDate): PaycheckSearchRowBasic
+    {
+        $this->checkDate[] = $checkDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCheckDate(): array
+    {
+        return $this->checkDate;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $employee
+     * @return PaycheckSearchRowBasic
+     */
+    public function setEmployee(SearchColumnSelectField $employee): PaycheckSearchRowBasic
+    {
+        $this->employee[] = $employee;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getEmployee(): array
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return PaycheckSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): PaycheckSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $hasGLImpact
+     * @return PaycheckSearchRowBasic
+     */
+    public function setHasGLImpact(SearchColumnBooleanField $hasGLImpact): PaycheckSearchRowBasic
+    {
+        $this->hasGLImpact[] = $hasGLImpact;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getHasGLImpact(): array
+    {
+        return $this->hasGLImpact;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $hours
+     * @return PaycheckSearchRowBasic
+     */
+    public function setHours(SearchColumnDoubleField $hours): PaycheckSearchRowBasic
+    {
+        $this->hours[] = $hours;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getHours(): array
+    {
+        return $this->hours;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return PaycheckSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): PaycheckSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $payrollItem
+     * @return PaycheckSearchRowBasic
+     */
+    public function setPayrollItem(SearchColumnSelectField $payrollItem): PaycheckSearchRowBasic
+    {
+        $this->payrollItem[] = $payrollItem;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPayrollItem(): array
+    {
+        return $this->payrollItem;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $payrollItemType
+     * @return PaycheckSearchRowBasic
+     */
+    public function setPayrollItemType(SearchColumnSelectField $payrollItemType): PaycheckSearchRowBasic
+    {
+        $this->payrollItemType[] = $payrollItemType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPayrollItemType(): array
+    {
+        return $this->payrollItemType;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $subjectWages
+     * @return PaycheckSearchRowBasic
+     */
+    public function setSubjectWages(SearchColumnDoubleField $subjectWages): PaycheckSearchRowBasic
+    {
+        $this->subjectWages[] = $subjectWages;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getSubjectWages(): array
+    {
+        return $this->subjectWages;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $taxableWages
+     * @return PaycheckSearchRowBasic
+     */
+    public function setTaxableWages(SearchColumnDoubleField $taxableWages): PaycheckSearchRowBasic
+    {
+        $this->taxableWages[] = $taxableWages;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getTaxableWages(): array
+    {
+        return $this->taxableWages;
+    }
+
 }

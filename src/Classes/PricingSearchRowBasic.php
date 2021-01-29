@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PricingSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $currency;
+    protected array $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $customer;
+    protected array $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $maximumQuantity;
+    protected array $maximumQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $minimumQuantity;
+    protected array $minimumQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $priceLevel;
+    protected array $priceLevel;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $quantityRange;
+    protected array $quantityRange;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $saleUnit;
+    protected array $saleUnit;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $unitPrice;
+    protected array $unitPrice;
+
     static $paramtypesmap = array(
         "currency" => "SearchColumnSelectField[]",
         "customer" => "SearchColumnSelectField[]",
@@ -72,4 +82,185 @@ class PricingSearchRowBasic extends SearchRowBasic {
         "saleUnit" => "SearchColumnSelectField[]",
         "unitPrice" => "SearchColumnDoubleField[]",
     );
+
+    /**
+     * @param SearchColumnSelectField[] $currency
+     * @return PricingSearchRowBasic
+     */
+    public function setCurrency(SearchColumnSelectField $currency): PricingSearchRowBasic
+    {
+        $this->currency[] = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCurrency(): array
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $customer
+     * @return PricingSearchRowBasic
+     */
+    public function setCustomer(SearchColumnSelectField $customer): PricingSearchRowBasic
+    {
+        $this->customer[] = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getCustomer(): array
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return PricingSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): PricingSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $item
+     * @return PricingSearchRowBasic
+     */
+    public function setItem(SearchColumnSelectField $item): PricingSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $maximumQuantity
+     * @return PricingSearchRowBasic
+     */
+    public function setMaximumQuantity(SearchColumnDoubleField $maximumQuantity): PricingSearchRowBasic
+    {
+        $this->maximumQuantity[] = $maximumQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getMaximumQuantity(): array
+    {
+        return $this->maximumQuantity;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $minimumQuantity
+     * @return PricingSearchRowBasic
+     */
+    public function setMinimumQuantity(SearchColumnDoubleField $minimumQuantity): PricingSearchRowBasic
+    {
+        $this->minimumQuantity[] = $minimumQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getMinimumQuantity(): array
+    {
+        return $this->minimumQuantity;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $priceLevel
+     * @return PricingSearchRowBasic
+     */
+    public function setPriceLevel(SearchColumnSelectField $priceLevel): PricingSearchRowBasic
+    {
+        $this->priceLevel[] = $priceLevel;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPriceLevel(): array
+    {
+        return $this->priceLevel;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $quantityRange
+     * @return PricingSearchRowBasic
+     */
+    public function setQuantityRange(SearchColumnStringField $quantityRange): PricingSearchRowBasic
+    {
+        $this->quantityRange[] = $quantityRange;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getQuantityRange(): array
+    {
+        return $this->quantityRange;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $saleUnit
+     * @return PricingSearchRowBasic
+     */
+    public function setSaleUnit(SearchColumnSelectField $saleUnit): PricingSearchRowBasic
+    {
+        $this->saleUnit[] = $saleUnit;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSaleUnit(): array
+    {
+        return $this->saleUnit;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $unitPrice
+     * @return PricingSearchRowBasic
+     */
+    public function setUnitPrice(SearchColumnDoubleField $unitPrice): PricingSearchRowBasic
+    {
+        $this->unitPrice[] = $unitPrice;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getUnitPrice(): array
+    {
+        return $this->unitPrice;
+    }
+
 }

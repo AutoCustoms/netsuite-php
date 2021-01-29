@@ -14,84 +14,102 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class EntityGroupSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $email;
+    protected array $email;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $groupName;
+    protected array $groupName;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $groupType;
+    protected array $groupType;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isDynamic;
+    protected array $isDynamic;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isManufacturingWorkCenter;
+    protected array $isManufacturingWorkCenter;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isPrivate;
+    protected array $isPrivate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $laborResources;
+    protected array $laborResources;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $lastModifiedDate;
+    protected array $lastModifiedDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $machineResources;
+    protected array $machineResources;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $owner;
+    protected array $owner;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $savedSearch;
+    protected array $savedSearch;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $size;
+    protected array $size;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $subsidiary;
+    protected array $subsidiary;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $workCalendar;
+    protected array $workCalendar;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "email" => "SearchColumnStringField[]",
         "externalId" => "SearchColumnSelectField[]",
@@ -112,4 +130,329 @@ class EntityGroupSearchRowBasic extends SearchRowBasic {
         "workCalendar" => "SearchColumnSelectField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnStringField[] $email
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setEmail(SearchColumnStringField $email): EntityGroupSearchRowBasic
+    {
+        $this->email[] = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEmail(): array
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): EntityGroupSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $groupName
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setGroupName(SearchColumnStringField $groupName): EntityGroupSearchRowBasic
+    {
+        $this->groupName[] = $groupName;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGroupName(): array
+    {
+        return $this->groupName;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $groupType
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setGroupType(SearchColumnStringField $groupType): EntityGroupSearchRowBasic
+    {
+        $this->groupType[] = $groupType;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGroupType(): array
+    {
+        return $this->groupType;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): EntityGroupSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isDynamic
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setIsDynamic(SearchColumnBooleanField $isDynamic): EntityGroupSearchRowBasic
+    {
+        $this->isDynamic[] = $isDynamic;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsDynamic(): array
+    {
+        return $this->isDynamic;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): EntityGroupSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isManufacturingWorkCenter
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setIsManufacturingWorkCenter(SearchColumnBooleanField $isManufacturingWorkCenter): EntityGroupSearchRowBasic
+    {
+        $this->isManufacturingWorkCenter[] = $isManufacturingWorkCenter;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsManufacturingWorkCenter(): array
+    {
+        return $this->isManufacturingWorkCenter;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isPrivate
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setIsPrivate(SearchColumnBooleanField $isPrivate): EntityGroupSearchRowBasic
+    {
+        $this->isPrivate[] = $isPrivate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsPrivate(): array
+    {
+        return $this->isPrivate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $laborResources
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setLaborResources(SearchColumnDoubleField $laborResources): EntityGroupSearchRowBasic
+    {
+        $this->laborResources[] = $laborResources;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getLaborResources(): array
+    {
+        return $this->laborResources;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $lastModifiedDate
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setLastModifiedDate(SearchColumnDateField $lastModifiedDate): EntityGroupSearchRowBasic
+    {
+        $this->lastModifiedDate[] = $lastModifiedDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getLastModifiedDate(): array
+    {
+        return $this->lastModifiedDate;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $machineResources
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setMachineResources(SearchColumnDoubleField $machineResources): EntityGroupSearchRowBasic
+    {
+        $this->machineResources[] = $machineResources;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getMachineResources(): array
+    {
+        return $this->machineResources;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $owner
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setOwner(SearchColumnSelectField $owner): EntityGroupSearchRowBasic
+    {
+        $this->owner[] = $owner;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOwner(): array
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $savedSearch
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setSavedSearch(SearchColumnStringField $savedSearch): EntityGroupSearchRowBasic
+    {
+        $this->savedSearch[] = $savedSearch;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSavedSearch(): array
+    {
+        return $this->savedSearch;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $size
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setSize(SearchColumnLongField $size): EntityGroupSearchRowBasic
+    {
+        $this->size[] = $size;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getSize(): array
+    {
+        return $this->size;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $subsidiary
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setSubsidiary(SearchColumnSelectField $subsidiary): EntityGroupSearchRowBasic
+    {
+        $this->subsidiary[] = $subsidiary;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getSubsidiary(): array
+    {
+        return $this->subsidiary;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $workCalendar
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setWorkCalendar(SearchColumnSelectField $workCalendar): EntityGroupSearchRowBasic
+    {
+        $this->workCalendar[] = $workCalendar;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getWorkCalendar(): array
+    {
+        return $this->workCalendar;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return EntityGroupSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): EntityGroupSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,23 +23,100 @@ class ListOrRecordRef {
     /**
      * @var string
      */
-    public $name;
+    protected string $name;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     /**
      * @var string
      */
-    public $externalId;
+    protected string $externalId;
+
     /**
      * @var string
      */
-    public $typeId;
+    protected string $typeId;
+
     static $paramtypesmap = array(
         "name" => "string",
         "internalId" => "string",
         "externalId" => "string",
         "typeId" => "string",
     );
+
+    /**
+     * @param string $name
+     * @return ListOrRecordRef
+     */
+    public function setName(string $name): ListOrRecordRef
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $internalId
+     * @return ListOrRecordRef
+     */
+    public function setInternalId(string $internalId): ListOrRecordRef
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param string $externalId
+     * @return ListOrRecordRef
+     */
+    public function setExternalId(string $externalId): ListOrRecordRef
+    {
+        $this->externalId = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalId(): string
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param string $typeId
+     * @return ListOrRecordRef
+     */
+    public function setTypeId(string $typeId): ListOrRecordRef
+    {
+        $this->typeId = $typeId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTypeId(): string
+    {
+        return $this->typeId;
+    }
+
 }

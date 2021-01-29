@@ -14,48 +14,57 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CouponCodeSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $code;
+    protected array $code;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $dateSent;
+    protected array $dateSent;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $id;
+    protected array $id;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $promotion;
+    protected array $promotion;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $recipient;
+    protected array $recipient;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
+     * @var SearchColumnLongField[]
      */
-    public $useCount;
+    protected array $useCount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $used;
+    protected array $used;
+
     static $paramtypesmap = array(
         "code" => "SearchColumnStringField[]",
         "dateSent" => "SearchColumnDateField[]",
@@ -67,4 +76,167 @@ class CouponCodeSearchRowBasic extends SearchRowBasic {
         "useCount" => "SearchColumnLongField[]",
         "used" => "SearchColumnBooleanField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $code
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setCode(SearchColumnStringField $code): CouponCodeSearchRowBasic
+    {
+        $this->code[] = $code;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getCode(): array
+    {
+        return $this->code;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $dateSent
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setDateSent(SearchColumnDateField $dateSent): CouponCodeSearchRowBasic
+    {
+        $this->dateSent[] = $dateSent;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getDateSent(): array
+    {
+        return $this->dateSent;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): CouponCodeSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $id
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setId(SearchColumnLongField $id): CouponCodeSearchRowBasic
+    {
+        $this->id[] = $id;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getId(): array
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): CouponCodeSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $promotion
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setPromotion(SearchColumnStringField $promotion): CouponCodeSearchRowBasic
+    {
+        $this->promotion[] = $promotion;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getPromotion(): array
+    {
+        return $this->promotion;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $recipient
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setRecipient(SearchColumnStringField $recipient): CouponCodeSearchRowBasic
+    {
+        $this->recipient[] = $recipient;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getRecipient(): array
+    {
+        return $this->recipient;
+    }
+
+    /**
+     * @param SearchColumnLongField[] $useCount
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setUseCount(SearchColumnLongField $useCount): CouponCodeSearchRowBasic
+    {
+        $this->useCount[] = $useCount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnLongField[]
+     */
+    public function getUseCount(): array
+    {
+        return $this->useCount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $used
+     * @return CouponCodeSearchRowBasic
+     */
+    public function setUsed(SearchColumnBooleanField $used): CouponCodeSearchRowBasic
+    {
+        $this->used[] = $used;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getUsed(): array
+    {
+        return $this->used;
+    }
+
 }

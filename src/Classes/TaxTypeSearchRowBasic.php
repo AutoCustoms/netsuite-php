@@ -14,64 +14,77 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TaxTypeSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
+     * @var SearchColumnEnumSelectField[]
      */
-    public $country;
+    protected array $country;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $description;
+    protected array $description;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $doesNotAddToTotal;
+    protected array $doesNotAddToTotal;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $externalId;
+    protected array $externalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $nexus;
+    protected array $nexus;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $payablesAccount;
+    protected array $payablesAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $postToItemCost;
+    protected array $postToItemCost;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $receivablesAccount;
+    protected array $receivablesAccount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $reverseCharge;
+    protected array $reverseCharge;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $taxInNetAmount;
+    protected array $taxInNetAmount;
+
     static $paramtypesmap = array(
         "country" => "SearchColumnEnumSelectField[]",
         "description" => "SearchColumnStringField[]",
@@ -87,4 +100,239 @@ class TaxTypeSearchRowBasic extends SearchRowBasic {
         "reverseCharge" => "SearchColumnBooleanField[]",
         "taxInNetAmount" => "SearchColumnBooleanField[]",
     );
+
+    /**
+     * @param SearchColumnEnumSelectField[] $country
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setCountry(SearchColumnEnumSelectField $country): TaxTypeSearchRowBasic
+    {
+        $this->country[] = $country;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnEnumSelectField[]
+     */
+    public function getCountry(): array
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $description
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setDescription(SearchColumnStringField $description): TaxTypeSearchRowBasic
+    {
+        $this->description[] = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDescription(): array
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $doesNotAddToTotal
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setDoesNotAddToTotal(SearchColumnBooleanField $doesNotAddToTotal): TaxTypeSearchRowBasic
+    {
+        $this->doesNotAddToTotal[] = $doesNotAddToTotal;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getDoesNotAddToTotal(): array
+    {
+        return $this->doesNotAddToTotal;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $externalId
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setExternalId(SearchColumnSelectField $externalId): TaxTypeSearchRowBasic
+    {
+        $this->externalId[] = $externalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getExternalId(): array
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): TaxTypeSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): TaxTypeSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): TaxTypeSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $nexus
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setNexus(SearchColumnSelectField $nexus): TaxTypeSearchRowBasic
+    {
+        $this->nexus[] = $nexus;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getNexus(): array
+    {
+        return $this->nexus;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $payablesAccount
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setPayablesAccount(SearchColumnSelectField $payablesAccount): TaxTypeSearchRowBasic
+    {
+        $this->payablesAccount[] = $payablesAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getPayablesAccount(): array
+    {
+        return $this->payablesAccount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $postToItemCost
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setPostToItemCost(SearchColumnBooleanField $postToItemCost): TaxTypeSearchRowBasic
+    {
+        $this->postToItemCost[] = $postToItemCost;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getPostToItemCost(): array
+    {
+        return $this->postToItemCost;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $receivablesAccount
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setReceivablesAccount(SearchColumnSelectField $receivablesAccount): TaxTypeSearchRowBasic
+    {
+        $this->receivablesAccount[] = $receivablesAccount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getReceivablesAccount(): array
+    {
+        return $this->receivablesAccount;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $reverseCharge
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setReverseCharge(SearchColumnBooleanField $reverseCharge): TaxTypeSearchRowBasic
+    {
+        $this->reverseCharge[] = $reverseCharge;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getReverseCharge(): array
+    {
+        return $this->reverseCharge;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $taxInNetAmount
+     * @return TaxTypeSearchRowBasic
+     */
+    public function setTaxInNetAmount(SearchColumnBooleanField $taxInNetAmount): TaxTypeSearchRowBasic
+    {
+        $this->taxInNetAmount[] = $taxInNetAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getTaxInNetAmount(): array
+    {
+        return $this->taxInNetAmount;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class Promotions {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $promoCode;
+    protected RecordRef $promoCode;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $couponCode;
+    protected RecordRef $couponCode;
+
     static $paramtypesmap = array(
         "promoCode" => "RecordRef",
         "couponCode" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $promoCode
+     * @return Promotions
+     */
+    public function setPromoCode(RecordRef $promoCode): Promotions
+    {
+        $this->promoCode = $promoCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPromoCode(): RecordRef
+    {
+        return $this->promoCode;
+    }
+
+    /**
+     * @param RecordRef $couponCode
+     * @return Promotions
+     */
+    public function setCouponCode(RecordRef $couponCode): Promotions
+    {
+        $this->couponCode = $couponCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCouponCode(): RecordRef
+    {
+        return $this->couponCode;
+    }
+
 }

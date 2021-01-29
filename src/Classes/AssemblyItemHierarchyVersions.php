@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class AssemblyItemHierarchyVersions {
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isIncluded;
+    protected bool $isIncluded;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $hierarchyVersion;
-    /**
-     * @var string
-     */
-    public $startDate;
+    protected RecordRef $hierarchyVersion;
+
     /**
      * @var string
      */
-    public $endDate;
+    protected string $startDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var string
      */
-    public $hierarchyNode;
+    protected string $endDate;
+
+    /**
+     * @var RecordRef
+     */
+    protected RecordRef $hierarchyNode;
+
     static $paramtypesmap = array(
         "isIncluded" => "boolean",
         "hierarchyVersion" => "RecordRef",
@@ -47,4 +52,95 @@ class AssemblyItemHierarchyVersions {
         "endDate" => "dateTime",
         "hierarchyNode" => "RecordRef",
     );
+
+    /**
+     * @param bool $isIncluded
+     * @return AssemblyItemHierarchyVersions
+     */
+    public function setIsIncluded(bool $isIncluded): AssemblyItemHierarchyVersions
+    {
+        $this->isIncluded = $isIncluded;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsIncluded(): bool
+    {
+        return $this->isIncluded;
+    }
+
+    /**
+     * @param RecordRef $hierarchyVersion
+     * @return AssemblyItemHierarchyVersions
+     */
+    public function setHierarchyVersion(RecordRef $hierarchyVersion): AssemblyItemHierarchyVersions
+    {
+        $this->hierarchyVersion = $hierarchyVersion;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getHierarchyVersion(): RecordRef
+    {
+        return $this->hierarchyVersion;
+    }
+
+    /**
+     * @param string $startDate
+     * @return AssemblyItemHierarchyVersions
+     */
+    public function setStartDate(string $startDate): AssemblyItemHierarchyVersions
+    {
+        $this->startDate = $startDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStartDate(): string
+    {
+        return $this->startDate;
+    }
+
+    /**
+     * @param string $endDate
+     * @return AssemblyItemHierarchyVersions
+     */
+    public function setEndDate(string $endDate): AssemblyItemHierarchyVersions
+    {
+        $this->endDate = $endDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndDate(): string
+    {
+        return $this->endDate;
+    }
+
+    /**
+     * @param RecordRef $hierarchyNode
+     * @return AssemblyItemHierarchyVersions
+     */
+    public function setHierarchyNode(RecordRef $hierarchyNode): AssemblyItemHierarchyVersions
+    {
+        $this->hierarchyNode = $hierarchyNode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getHierarchyNode(): RecordRef
+    {
+        return $this->hierarchyNode;
+    }
+
 }

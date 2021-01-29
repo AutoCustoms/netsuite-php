@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BillingRatesMatrix {
     /**
-     * @var \NetSuite\Classes\BillingRates[]
+     * @var BillingRates[]
      */
-    public $billingRates;
+    protected array $billingRates;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $replaceAll;
+    protected bool $replaceAll;
+
     static $paramtypesmap = array(
         "billingRates" => "BillingRates[]",
         "replaceAll" => "boolean",
     );
+
+    /**
+     * @param BillingRates[] $billingRates
+     * @return BillingRatesMatrix
+     */
+    public function setBillingRates(BillingRates $billingRates): BillingRatesMatrix
+    {
+        $this->billingRates[] = $billingRates;
+        return $this;
+    }
+
+    /**
+     * @return BillingRates[]
+     */
+    public function getBillingRates(): array
+    {
+        return $this->billingRates;
+    }
+
+    /**
+     * @param bool $replaceAll
+     * @return BillingRatesMatrix
+     */
+    public function setReplaceAll(bool $replaceAll): BillingRatesMatrix
+    {
+        $this->replaceAll = $replaceAll;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getReplaceAll(): bool
+    {
+        return $this->replaceAll;
+    }
+
 }

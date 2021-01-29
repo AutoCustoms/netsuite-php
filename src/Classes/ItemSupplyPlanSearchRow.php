@@ -14,32 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemSupplyPlanSearchRow extends SearchRow {
     /**
-     * @var \NetSuite\Classes\ItemSupplyPlanSearchRowBasic
+     * @var ItemSupplyPlanSearchRowBasic
      */
-    public $basic;
+    protected ItemSupplyPlanSearchRowBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\ItemSearchRowBasic
+     * @var ItemSearchRowBasic
      */
-    public $itemJoin;
+    protected ItemSearchRowBasic $itemJoin;
+
     /**
-     * @var \NetSuite\Classes\LocationSearchRowBasic
+     * @var LocationSearchRowBasic
      */
-    public $locationJoin;
+    protected LocationSearchRowBasic $locationJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchRowBasic
+     * @var EmployeeSearchRowBasic
      */
-    public $userJoin;
+    protected EmployeeSearchRowBasic $userJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchRowBasic[]
+     * @var CustomSearchRowBasic[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "ItemSupplyPlanSearchRowBasic",
         "itemJoin" => "ItemSearchRowBasic",
@@ -47,4 +52,95 @@ class ItemSupplyPlanSearchRow extends SearchRow {
         "userJoin" => "EmployeeSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );
+
+    /**
+     * @param ItemSupplyPlanSearchRowBasic $basic
+     * @return ItemSupplyPlanSearchRow
+     */
+    public function setBasic(ItemSupplyPlanSearchRowBasic $basic): ItemSupplyPlanSearchRow
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return ItemSupplyPlanSearchRowBasic
+     */
+    public function getBasic(): ItemSupplyPlanSearchRowBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param ItemSearchRowBasic $itemJoin
+     * @return ItemSupplyPlanSearchRow
+     */
+    public function setItemJoin(ItemSearchRowBasic $itemJoin): ItemSupplyPlanSearchRow
+    {
+        $this->itemJoin = $itemJoin;
+        return $this;
+    }
+
+    /**
+     * @return ItemSearchRowBasic
+     */
+    public function getItemJoin(): ItemSearchRowBasic
+    {
+        return $this->itemJoin;
+    }
+
+    /**
+     * @param LocationSearchRowBasic $locationJoin
+     * @return ItemSupplyPlanSearchRow
+     */
+    public function setLocationJoin(LocationSearchRowBasic $locationJoin): ItemSupplyPlanSearchRow
+    {
+        $this->locationJoin = $locationJoin;
+        return $this;
+    }
+
+    /**
+     * @return LocationSearchRowBasic
+     */
+    public function getLocationJoin(): LocationSearchRowBasic
+    {
+        return $this->locationJoin;
+    }
+
+    /**
+     * @param EmployeeSearchRowBasic $userJoin
+     * @return ItemSupplyPlanSearchRow
+     */
+    public function setUserJoin(EmployeeSearchRowBasic $userJoin): ItemSupplyPlanSearchRow
+    {
+        $this->userJoin = $userJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchRowBasic
+     */
+    public function getUserJoin(): EmployeeSearchRowBasic
+    {
+        return $this->userJoin;
+    }
+
+    /**
+     * @param CustomSearchRowBasic[] $customSearchJoin
+     * @return ItemSupplyPlanSearchRow
+     */
+    public function setCustomSearchJoin(CustomSearchRowBasic $customSearchJoin): ItemSupplyPlanSearchRow
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchRowBasic[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

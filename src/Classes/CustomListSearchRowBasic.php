@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomListSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $description;
+    protected array $description;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isInactive;
+    protected array $isInactive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $isOrdered;
+    protected array $isOrdered;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $owner;
+    protected array $owner;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $scriptId;
+    protected array $scriptId;
+
     static $paramtypesmap = array(
         "description" => "SearchColumnStringField[]",
         "internalId" => "SearchColumnSelectField[]",
@@ -57,4 +64,131 @@ class CustomListSearchRowBasic extends SearchRowBasic {
         "owner" => "SearchColumnSelectField[]",
         "scriptId" => "SearchColumnStringField[]",
     );
+
+    /**
+     * @param SearchColumnStringField[] $description
+     * @return CustomListSearchRowBasic
+     */
+    public function setDescription(SearchColumnStringField $description): CustomListSearchRowBasic
+    {
+        $this->description[] = $description;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getDescription(): array
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return CustomListSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): CustomListSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isInactive
+     * @return CustomListSearchRowBasic
+     */
+    public function setIsInactive(SearchColumnBooleanField $isInactive): CustomListSearchRowBasic
+    {
+        $this->isInactive[] = $isInactive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsInactive(): array
+    {
+        return $this->isInactive;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $isOrdered
+     * @return CustomListSearchRowBasic
+     */
+    public function setIsOrdered(SearchColumnBooleanField $isOrdered): CustomListSearchRowBasic
+    {
+        $this->isOrdered[] = $isOrdered;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getIsOrdered(): array
+    {
+        return $this->isOrdered;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return CustomListSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): CustomListSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $owner
+     * @return CustomListSearchRowBasic
+     */
+    public function setOwner(SearchColumnSelectField $owner): CustomListSearchRowBasic
+    {
+        $this->owner[] = $owner;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getOwner(): array
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $scriptId
+     * @return CustomListSearchRowBasic
+     */
+    public function setScriptId(SearchColumnStringField $scriptId): CustomListSearchRowBasic
+    {
+        $this->scriptId[] = $scriptId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getScriptId(): array
+    {
+        return $this->scriptId;
+    }
+
 }

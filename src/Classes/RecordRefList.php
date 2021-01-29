@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class RecordRefList {
     /**
-     * @var \NetSuite\Classes\RecordRef[]
+     * @var RecordRef[]
      */
-    public $recordRef;
+    protected array $recordRef;
+
     static $paramtypesmap = array(
         "recordRef" => "RecordRef[]",
     );
+
+    /**
+     * @param RecordRef[] $recordRef
+     * @return RecordRefList
+     */
+    public function setRecordRef(RecordRef $recordRef): RecordRefList
+    {
+        $this->recordRef[] = $recordRef;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef[]
+     */
+    public function getRecordRef(): array
+    {
+        return $this->recordRef;
+    }
+
 }

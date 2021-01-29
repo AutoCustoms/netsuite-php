@@ -14,40 +14,47 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ItemNumberCustomFieldFilter {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $fldFilter;
+    protected RecordRef $fldFilter;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $fldFilterChecked;
+    protected bool $fldFilterChecked;
+
     /**
-     * @var \NetSuite\Classes\CustomizationFilterCompareType
+     * @var CustomizationFilterCompareType
      */
-    public $fldFilterCompareType;
+    protected CustomizationFilterCompareType $fldFilterCompareType;
+
     /**
      * @var string
      */
-    public $fldFilterVal;
+    protected string $fldFilterVal;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $fldFilterNotNull;
+    protected bool $fldFilterNotNull;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $fldfilterNull;
+    protected bool $fldfilterNull;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $fldCompareField;
+    protected RecordRef $fldCompareField;
+
     static $paramtypesmap = array(
         "fldFilter" => "RecordRef",
         "fldFilterChecked" => "boolean",
@@ -57,4 +64,131 @@ class ItemNumberCustomFieldFilter {
         "fldfilterNull" => "boolean",
         "fldCompareField" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $fldFilter
+     * @return ItemNumberCustomFieldFilter
+     */
+    public function setFldFilter(RecordRef $fldFilter): ItemNumberCustomFieldFilter
+    {
+        $this->fldFilter = $fldFilter;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getFldFilter(): RecordRef
+    {
+        return $this->fldFilter;
+    }
+
+    /**
+     * @param bool $fldFilterChecked
+     * @return ItemNumberCustomFieldFilter
+     */
+    public function setFldFilterChecked(bool $fldFilterChecked): ItemNumberCustomFieldFilter
+    {
+        $this->fldFilterChecked = $fldFilterChecked;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getFldFilterChecked(): bool
+    {
+        return $this->fldFilterChecked;
+    }
+
+    /**
+     * @param CustomizationFilterCompareType $fldFilterCompareType
+     * @return ItemNumberCustomFieldFilter
+     */
+    public function setFldFilterCompareType(CustomizationFilterCompareType $fldFilterCompareType): ItemNumberCustomFieldFilter
+    {
+        $this->fldFilterCompareType = $fldFilterCompareType;
+        return $this;
+    }
+
+    /**
+     * @return CustomizationFilterCompareType
+     */
+    public function getFldFilterCompareType(): CustomizationFilterCompareType
+    {
+        return $this->fldFilterCompareType;
+    }
+
+    /**
+     * @param string $fldFilterVal
+     * @return ItemNumberCustomFieldFilter
+     */
+    public function setFldFilterVal(string $fldFilterVal): ItemNumberCustomFieldFilter
+    {
+        $this->fldFilterVal = $fldFilterVal;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFldFilterVal(): string
+    {
+        return $this->fldFilterVal;
+    }
+
+    /**
+     * @param bool $fldFilterNotNull
+     * @return ItemNumberCustomFieldFilter
+     */
+    public function setFldFilterNotNull(bool $fldFilterNotNull): ItemNumberCustomFieldFilter
+    {
+        $this->fldFilterNotNull = $fldFilterNotNull;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getFldFilterNotNull(): bool
+    {
+        return $this->fldFilterNotNull;
+    }
+
+    /**
+     * @param bool $fldfilterNull
+     * @return ItemNumberCustomFieldFilter
+     */
+    public function setFldfilterNull(bool $fldfilterNull): ItemNumberCustomFieldFilter
+    {
+        $this->fldfilterNull = $fldfilterNull;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getFldfilterNull(): bool
+    {
+        return $this->fldfilterNull;
+    }
+
+    /**
+     * @param RecordRef $fldCompareField
+     * @return ItemNumberCustomFieldFilter
+     */
+    public function setFldCompareField(RecordRef $fldCompareField): ItemNumberCustomFieldFilter
+    {
+        $this->fldCompareField = $fldCompareField;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getFldCompareField(): RecordRef
+    {
+        return $this->fldCompareField;
+    }
+
 }

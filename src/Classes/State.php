@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class State extends Record {
     /**
-     * @var \NetSuite\Classes\Country
+     * @var Country
      */
-    public $country;
+    protected Country $country;
+
     /**
      * @var string
      */
-    public $fullName;
+    protected string $fullName;
+
     /**
      * @var string
      */
-    public $shortname;
+    protected string $shortname;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     static $paramtypesmap = array(
         "country" => "Country",
         "fullName" => "string",
         "shortname" => "string",
         "internalId" => "string",
     );
+
+    /**
+     * @param Country $country
+     * @return State
+     */
+    public function setCountry(Country $country): State
+    {
+        $this->country = $country;
+        return $this;
+    }
+
+    /**
+     * @return Country
+     */
+    public function getCountry(): Country
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param string $fullName
+     * @return State
+     */
+    public function setFullName(string $fullName): State
+    {
+        $this->fullName = $fullName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFullName(): string
+    {
+        return $this->fullName;
+    }
+
+    /**
+     * @param string $shortname
+     * @return State
+     */
+    public function setShortname(string $shortname): State
+    {
+        $this->shortname = $shortname;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getShortname(): string
+    {
+        return $this->shortname;
+    }
+
+    /**
+     * @param string $internalId
+     * @return State
+     */
+    public function setInternalId(string $internalId): State
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
 }

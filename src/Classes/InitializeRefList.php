@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class InitializeRefList {
     /**
-     * @var \NetSuite\Classes\InitializeRef[]
+     * @var InitializeRef[]
      */
-    public $initializeRef;
+    protected array $initializeRef;
+
     static $paramtypesmap = array(
         "initializeRef" => "InitializeRef[]",
     );
+
+    /**
+     * @param InitializeRef[] $initializeRef
+     * @return InitializeRefList
+     */
+    public function setInitializeRef(InitializeRef $initializeRef): InitializeRefList
+    {
+        $this->initializeRef[] = $initializeRef;
+        return $this;
+    }
+
+    /**
+     * @return InitializeRef[]
+     */
+    public function getInitializeRef(): array
+    {
+        return $this->initializeRef;
+    }
+
 }

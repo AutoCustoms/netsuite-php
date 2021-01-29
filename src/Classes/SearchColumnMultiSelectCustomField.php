@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class SearchColumnMultiSelectCustomField extends SearchColumnCustomField {
     /**
-     * @var \NetSuite\Classes\ListOrRecordRef[]
+     * @var ListOrRecordRef[]
      */
-    public $searchValue;
+    protected array $searchValue;
+
     static $paramtypesmap = array(
         "searchValue" => "ListOrRecordRef[]",
     );
+
+    /**
+     * @param ListOrRecordRef[] $searchValue
+     * @return SearchColumnMultiSelectCustomField
+     */
+    public function setSearchValue(ListOrRecordRef $searchValue): SearchColumnMultiSelectCustomField
+    {
+        $this->searchValue[] = $searchValue;
+        return $this;
+    }
+
+    /**
+     * @return ListOrRecordRef[]
+     */
+    public function getSearchValue(): array
+    {
+        return $this->searchValue;
+    }
+
 }

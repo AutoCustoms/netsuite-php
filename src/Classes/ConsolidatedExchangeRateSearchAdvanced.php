@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class ConsolidatedExchangeRateSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\ConsolidatedExchangeRateSearch
+     * @var ConsolidatedExchangeRateSearch
      */
-    public $criteria;
+    protected ConsolidatedExchangeRateSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\ConsolidatedExchangeRateSearchRow
+     * @var ConsolidatedExchangeRateSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected ConsolidatedExchangeRateSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "ConsolidatedExchangeRateSearch",
         "columns" => "ConsolidatedExchangeRateSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param ConsolidatedExchangeRateSearch $criteria
+     * @return ConsolidatedExchangeRateSearchAdvanced
+     */
+    public function setCriteria(ConsolidatedExchangeRateSearch $criteria): ConsolidatedExchangeRateSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return ConsolidatedExchangeRateSearch
+     */
+    public function getCriteria(): ConsolidatedExchangeRateSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param ConsolidatedExchangeRateSearchRow $columns
+     * @return ConsolidatedExchangeRateSearchAdvanced
+     */
+    public function setColumns(ConsolidatedExchangeRateSearchRow $columns): ConsolidatedExchangeRateSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return ConsolidatedExchangeRateSearchRow
+     */
+    public function getColumns(): ConsolidatedExchangeRateSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return ConsolidatedExchangeRateSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): ConsolidatedExchangeRateSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return ConsolidatedExchangeRateSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): ConsolidatedExchangeRateSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

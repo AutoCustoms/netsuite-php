@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class LandedCostSummary {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $category;
+    protected RecordRef $category;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     /**
-     * @var \NetSuite\Classes\LandedCostSource
+     * @var LandedCostSource
      */
-    public $source;
+    protected LandedCostSource $source;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $transaction;
+    protected RecordRef $transaction;
+
     static $paramtypesmap = array(
         "category" => "RecordRef",
         "amount" => "float",
         "source" => "LandedCostSource",
         "transaction" => "RecordRef",
     );
+
+    /**
+     * @param RecordRef $category
+     * @return LandedCostSummary
+     */
+    public function setCategory(RecordRef $category): LandedCostSummary
+    {
+        $this->category = $category;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCategory(): RecordRef
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param float $amount
+     * @return LandedCostSummary
+     */
+    public function setAmount(float $amount): LandedCostSummary
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param LandedCostSource $source
+     * @return LandedCostSummary
+     */
+    public function setSource(LandedCostSource $source): LandedCostSummary
+    {
+        $this->source = $source;
+        return $this;
+    }
+
+    /**
+     * @return LandedCostSource
+     */
+    public function getSource(): LandedCostSource
+    {
+        return $this->source;
+    }
+
+    /**
+     * @param RecordRef $transaction
+     * @return LandedCostSummary
+     */
+    public function setTransaction(RecordRef $transaction): LandedCostSummary
+    {
+        $this->transaction = $transaction;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTransaction(): RecordRef
+    {
+        return $this->transaction;
+    }
+
 }

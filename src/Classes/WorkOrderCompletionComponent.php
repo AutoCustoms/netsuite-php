@@ -14,36 +14,42 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class WorkOrderCompletionComponent {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $operationSequenceNumber;
-    /**
-     * @var float
-     */
-    public $quantityPer;
+    protected int $operationSequenceNumber;
+
     /**
      * @var float
      */
-    public $quantity;
+    protected float $quantityPer;
+
     /**
-     * @var \NetSuite\Classes\InventoryDetail
+     * @var float
      */
-    public $componentInventoryDetail;
+    protected float $quantity;
+
     /**
-     * @var integer
+     * @var InventoryDetail
      */
-    public $lineNumber;
+    protected InventoryDetail $componentInventoryDetail;
+
+    /**
+     * @var int
+     */
+    protected int $lineNumber;
+
     static $paramtypesmap = array(
         "item" => "RecordRef",
         "operationSequenceNumber" => "integer",
@@ -52,4 +58,113 @@ class WorkOrderCompletionComponent {
         "componentInventoryDetail" => "InventoryDetail",
         "lineNumber" => "integer",
     );
+
+    /**
+     * @param RecordRef $item
+     * @return WorkOrderCompletionComponent
+     */
+    public function setItem(RecordRef $item): WorkOrderCompletionComponent
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param int $operationSequenceNumber
+     * @return WorkOrderCompletionComponent
+     */
+    public function setOperationSequenceNumber(int $operationSequenceNumber): WorkOrderCompletionComponent
+    {
+        $this->operationSequenceNumber = $operationSequenceNumber;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOperationSequenceNumber(): int
+    {
+        return $this->operationSequenceNumber;
+    }
+
+    /**
+     * @param float $quantityPer
+     * @return WorkOrderCompletionComponent
+     */
+    public function setQuantityPer(float $quantityPer): WorkOrderCompletionComponent
+    {
+        $this->quantityPer = $quantityPer;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantityPer(): float
+    {
+        return $this->quantityPer;
+    }
+
+    /**
+     * @param float $quantity
+     * @return WorkOrderCompletionComponent
+     */
+    public function setQuantity(float $quantity): WorkOrderCompletionComponent
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param InventoryDetail $componentInventoryDetail
+     * @return WorkOrderCompletionComponent
+     */
+    public function setComponentInventoryDetail(InventoryDetail $componentInventoryDetail): WorkOrderCompletionComponent
+    {
+        $this->componentInventoryDetail = $componentInventoryDetail;
+        return $this;
+    }
+
+    /**
+     * @return InventoryDetail
+     */
+    public function getComponentInventoryDetail(): InventoryDetail
+    {
+        return $this->componentInventoryDetail;
+    }
+
+    /**
+     * @param int $lineNumber
+     * @return WorkOrderCompletionComponent
+     */
+    public function setLineNumber(int $lineNumber): WorkOrderCompletionComponent
+    {
+        $this->lineNumber = $lineNumber;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLineNumber(): int
+    {
+        return $this->lineNumber;
+    }
+
 }

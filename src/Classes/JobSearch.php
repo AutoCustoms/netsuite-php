@@ -14,56 +14,67 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class JobSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\JobSearchBasic
+     * @var JobSearchBasic
      */
-    public $basic;
+    protected JobSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\BillingAccountSearchBasic
+     * @var BillingAccountSearchBasic
      */
-    public $billingAccountJoin;
+    protected BillingAccountSearchBasic $billingAccountJoin;
+
     /**
-     * @var \NetSuite\Classes\BillingScheduleSearchBasic
+     * @var BillingScheduleSearchBasic
      */
-    public $billingScheduleJoin;
+    protected BillingScheduleSearchBasic $billingScheduleJoin;
+
     /**
-     * @var \NetSuite\Classes\ContactSearchBasic
+     * @var ContactSearchBasic
      */
-    public $contactPrimaryJoin;
+    protected ContactSearchBasic $contactPrimaryJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomerSearchBasic
+     * @var CustomerSearchBasic
      */
-    public $customerJoin;
+    protected CustomerSearchBasic $customerJoin;
+
     /**
-     * @var \NetSuite\Classes\EmployeeSearchBasic
+     * @var EmployeeSearchBasic
      */
-    public $projectManagerJoin;
+    protected EmployeeSearchBasic $projectManagerJoin;
+
     /**
-     * @var \NetSuite\Classes\ProjectTaskSearchBasic
+     * @var ProjectTaskSearchBasic
      */
-    public $projectTaskJoin;
+    protected ProjectTaskSearchBasic $projectTaskJoin;
+
     /**
-     * @var \NetSuite\Classes\ResourceAllocationSearchBasic
+     * @var ResourceAllocationSearchBasic
      */
-    public $resourceAllocationJoin;
+    protected ResourceAllocationSearchBasic $resourceAllocationJoin;
+
     /**
-     * @var \NetSuite\Classes\TaskSearchBasic
+     * @var TaskSearchBasic
      */
-    public $taskJoin;
+    protected TaskSearchBasic $taskJoin;
+
     /**
-     * @var \NetSuite\Classes\TimeBillSearchBasic
+     * @var TimeBillSearchBasic
      */
-    public $timeJoin;
+    protected TimeBillSearchBasic $timeJoin;
+
     /**
-     * @var \NetSuite\Classes\CustomSearchJoin[]
+     * @var CustomSearchJoin[]
      */
-    public $customSearchJoin;
+    protected array $customSearchJoin;
+
     static $paramtypesmap = array(
         "basic" => "JobSearchBasic",
         "billingAccountJoin" => "BillingAccountSearchBasic",
@@ -77,4 +88,203 @@ class JobSearch extends SearchRecord {
         "timeJoin" => "TimeBillSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );
+
+    /**
+     * @param JobSearchBasic $basic
+     * @return JobSearch
+     */
+    public function setBasic(JobSearchBasic $basic): JobSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return JobSearchBasic
+     */
+    public function getBasic(): JobSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param BillingAccountSearchBasic $billingAccountJoin
+     * @return JobSearch
+     */
+    public function setBillingAccountJoin(BillingAccountSearchBasic $billingAccountJoin): JobSearch
+    {
+        $this->billingAccountJoin = $billingAccountJoin;
+        return $this;
+    }
+
+    /**
+     * @return BillingAccountSearchBasic
+     */
+    public function getBillingAccountJoin(): BillingAccountSearchBasic
+    {
+        return $this->billingAccountJoin;
+    }
+
+    /**
+     * @param BillingScheduleSearchBasic $billingScheduleJoin
+     * @return JobSearch
+     */
+    public function setBillingScheduleJoin(BillingScheduleSearchBasic $billingScheduleJoin): JobSearch
+    {
+        $this->billingScheduleJoin = $billingScheduleJoin;
+        return $this;
+    }
+
+    /**
+     * @return BillingScheduleSearchBasic
+     */
+    public function getBillingScheduleJoin(): BillingScheduleSearchBasic
+    {
+        return $this->billingScheduleJoin;
+    }
+
+    /**
+     * @param ContactSearchBasic $contactPrimaryJoin
+     * @return JobSearch
+     */
+    public function setContactPrimaryJoin(ContactSearchBasic $contactPrimaryJoin): JobSearch
+    {
+        $this->contactPrimaryJoin = $contactPrimaryJoin;
+        return $this;
+    }
+
+    /**
+     * @return ContactSearchBasic
+     */
+    public function getContactPrimaryJoin(): ContactSearchBasic
+    {
+        return $this->contactPrimaryJoin;
+    }
+
+    /**
+     * @param CustomerSearchBasic $customerJoin
+     * @return JobSearch
+     */
+    public function setCustomerJoin(CustomerSearchBasic $customerJoin): JobSearch
+    {
+        $this->customerJoin = $customerJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomerSearchBasic
+     */
+    public function getCustomerJoin(): CustomerSearchBasic
+    {
+        return $this->customerJoin;
+    }
+
+    /**
+     * @param EmployeeSearchBasic $projectManagerJoin
+     * @return JobSearch
+     */
+    public function setProjectManagerJoin(EmployeeSearchBasic $projectManagerJoin): JobSearch
+    {
+        $this->projectManagerJoin = $projectManagerJoin;
+        return $this;
+    }
+
+    /**
+     * @return EmployeeSearchBasic
+     */
+    public function getProjectManagerJoin(): EmployeeSearchBasic
+    {
+        return $this->projectManagerJoin;
+    }
+
+    /**
+     * @param ProjectTaskSearchBasic $projectTaskJoin
+     * @return JobSearch
+     */
+    public function setProjectTaskJoin(ProjectTaskSearchBasic $projectTaskJoin): JobSearch
+    {
+        $this->projectTaskJoin = $projectTaskJoin;
+        return $this;
+    }
+
+    /**
+     * @return ProjectTaskSearchBasic
+     */
+    public function getProjectTaskJoin(): ProjectTaskSearchBasic
+    {
+        return $this->projectTaskJoin;
+    }
+
+    /**
+     * @param ResourceAllocationSearchBasic $resourceAllocationJoin
+     * @return JobSearch
+     */
+    public function setResourceAllocationJoin(ResourceAllocationSearchBasic $resourceAllocationJoin): JobSearch
+    {
+        $this->resourceAllocationJoin = $resourceAllocationJoin;
+        return $this;
+    }
+
+    /**
+     * @return ResourceAllocationSearchBasic
+     */
+    public function getResourceAllocationJoin(): ResourceAllocationSearchBasic
+    {
+        return $this->resourceAllocationJoin;
+    }
+
+    /**
+     * @param TaskSearchBasic $taskJoin
+     * @return JobSearch
+     */
+    public function setTaskJoin(TaskSearchBasic $taskJoin): JobSearch
+    {
+        $this->taskJoin = $taskJoin;
+        return $this;
+    }
+
+    /**
+     * @return TaskSearchBasic
+     */
+    public function getTaskJoin(): TaskSearchBasic
+    {
+        return $this->taskJoin;
+    }
+
+    /**
+     * @param TimeBillSearchBasic $timeJoin
+     * @return JobSearch
+     */
+    public function setTimeJoin(TimeBillSearchBasic $timeJoin): JobSearch
+    {
+        $this->timeJoin = $timeJoin;
+        return $this;
+    }
+
+    /**
+     * @return TimeBillSearchBasic
+     */
+    public function getTimeJoin(): TimeBillSearchBasic
+    {
+        return $this->timeJoin;
+    }
+
+    /**
+     * @param CustomSearchJoin[] $customSearchJoin
+     * @return JobSearch
+     */
+    public function setCustomSearchJoin(CustomSearchJoin $customSearchJoin): JobSearch
+    {
+        $this->customSearchJoin[] = $customSearchJoin;
+        return $this;
+    }
+
+    /**
+     * @return CustomSearchJoin[]
+     */
+    public function getCustomSearchJoin(): array
+    {
+        return $this->customSearchJoin;
+    }
+
 }

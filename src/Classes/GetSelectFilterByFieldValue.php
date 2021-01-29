@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,76 @@ class GetSelectFilterByFieldValue {
     /**
      * @var string
      */
-    public $sublist;
+    protected string $sublist;
+
     /**
      * @var string
      */
-    public $field;
+    protected string $field;
+
     /**
      * @var string
      */
-    public $internalId;
+    protected string $internalId;
+
     static $paramtypesmap = array(
         "sublist" => "string",
         "field" => "string",
         "internalId" => "string",
     );
+
+    /**
+     * @param string $sublist
+     * @return GetSelectFilterByFieldValue
+     */
+    public function setSublist(string $sublist): GetSelectFilterByFieldValue
+    {
+        $this->sublist = $sublist;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSublist(): string
+    {
+        return $this->sublist;
+    }
+
+    /**
+     * @param string $field
+     * @return GetSelectFilterByFieldValue
+     */
+    public function setField(string $field): GetSelectFilterByFieldValue
+    {
+        $this->field = $field;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getField(): string
+    {
+        return $this->field;
+    }
+
+    /**
+     * @param string $internalId
+     * @return GetSelectFilterByFieldValue
+     */
+    public function setInternalId(string $internalId): GetSelectFilterByFieldValue
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInternalId(): string
+    {
+        return $this->internalId;
+    }
+
 }

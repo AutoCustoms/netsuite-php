@@ -14,104 +14,127 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class TimeItem {
     /**
-     * @var integer
+     * @var int
      */
-    public $id;
+    protected int $id;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $employee;
+    protected RecordRef $employee;
+
     /**
-     * @var \NetSuite\Classes\TimeItemTimeType
+     * @var TimeItemTimeType
      */
-    public $timeType;
+    protected TimeItemTimeType $timeType;
+
     /**
      * @var string
      */
-    public $tranDate;
+    protected string $tranDate;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customer;
+    protected RecordRef $customer;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isBillable;
+    protected bool $isBillable;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $payrollItem;
+    protected RecordRef $payrollItem;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $item;
+    protected RecordRef $item;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $temporaryLocalJurisdiction;
+    protected RecordRef $temporaryLocalJurisdiction;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $temporaryStateJurisdiction;
+    protected RecordRef $temporaryStateJurisdiction;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\Duration
+     * @var Duration
      */
-    public $hours;
+    protected Duration $hours;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $price;
+    protected RecordRef $price;
+
     /**
      * @var float
      */
-    public $rate;
+    protected float $rate;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $overrideRate;
+    protected bool $overrideRate;
+
     /**
-     * @var \NetSuite\Classes\Duration
+     * @var Duration
      */
-    public $hoursTotal;
+    protected Duration $hoursTotal;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $caseTaskEvent;
+    protected RecordRef $caseTaskEvent;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $memo;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isUtilized;
+    protected bool $isUtilized;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isProductive;
+    protected bool $isProductive;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isExempt;
+    protected bool $isExempt;
+
     static $paramtypesmap = array(
         "id" => "integer",
         "employee" => "RecordRef",
@@ -137,4 +160,419 @@ class TimeItem {
         "isProductive" => "boolean",
         "isExempt" => "boolean",
     );
+
+    /**
+     * @param int $id
+     * @return TimeItem
+     */
+    public function setId(int $id): TimeItem
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param RecordRef $employee
+     * @return TimeItem
+     */
+    public function setEmployee(RecordRef $employee): TimeItem
+    {
+        $this->employee = $employee;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getEmployee(): RecordRef
+    {
+        return $this->employee;
+    }
+
+    /**
+     * @param TimeItemTimeType $timeType
+     * @return TimeItem
+     */
+    public function setTimeType(TimeItemTimeType $timeType): TimeItem
+    {
+        $this->timeType = $timeType;
+        return $this;
+    }
+
+    /**
+     * @return TimeItemTimeType
+     */
+    public function getTimeType(): TimeItemTimeType
+    {
+        return $this->timeType;
+    }
+
+    /**
+     * @param string $tranDate
+     * @return TimeItem
+     */
+    public function setTranDate(string $tranDate): TimeItem
+    {
+        $this->tranDate = $tranDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTranDate(): string
+    {
+        return $this->tranDate;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return TimeItem
+     */
+    public function setCustomer(RecordRef $customer): TimeItem
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param bool $isBillable
+     * @return TimeItem
+     */
+    public function setIsBillable(bool $isBillable): TimeItem
+    {
+        $this->isBillable = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBillable(): bool
+    {
+        return $this->isBillable;
+    }
+
+    /**
+     * @param RecordRef $payrollItem
+     * @return TimeItem
+     */
+    public function setPayrollItem(RecordRef $payrollItem): TimeItem
+    {
+        $this->payrollItem = $payrollItem;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPayrollItem(): RecordRef
+    {
+        return $this->payrollItem;
+    }
+
+    /**
+     * @param RecordRef $item
+     * @return TimeItem
+     */
+    public function setItem(RecordRef $item): TimeItem
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getItem(): RecordRef
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param RecordRef $temporaryLocalJurisdiction
+     * @return TimeItem
+     */
+    public function setTemporaryLocalJurisdiction(RecordRef $temporaryLocalJurisdiction): TimeItem
+    {
+        $this->temporaryLocalJurisdiction = $temporaryLocalJurisdiction;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTemporaryLocalJurisdiction(): RecordRef
+    {
+        return $this->temporaryLocalJurisdiction;
+    }
+
+    /**
+     * @param RecordRef $temporaryStateJurisdiction
+     * @return TimeItem
+     */
+    public function setTemporaryStateJurisdiction(RecordRef $temporaryStateJurisdiction): TimeItem
+    {
+        $this->temporaryStateJurisdiction = $temporaryStateJurisdiction;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTemporaryStateJurisdiction(): RecordRef
+    {
+        return $this->temporaryStateJurisdiction;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return TimeItem
+     */
+    public function setDepartment(RecordRef $department): TimeItem
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return TimeItem
+     */
+    public function setClass(RecordRef $class): TimeItem
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return TimeItem
+     */
+    public function setLocation(RecordRef $location): TimeItem
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param Duration $hours
+     * @return TimeItem
+     */
+    public function setHours(Duration $hours): TimeItem
+    {
+        $this->hours = $hours;
+        return $this;
+    }
+
+    /**
+     * @return Duration
+     */
+    public function getHours(): Duration
+    {
+        return $this->hours;
+    }
+
+    /**
+     * @param RecordRef $price
+     * @return TimeItem
+     */
+    public function setPrice(RecordRef $price): TimeItem
+    {
+        $this->price = $price;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getPrice(): RecordRef
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param float $rate
+     * @return TimeItem
+     */
+    public function setRate(float $rate): TimeItem
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRate(): float
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param bool $overrideRate
+     * @return TimeItem
+     */
+    public function setOverrideRate(bool $overrideRate): TimeItem
+    {
+        $this->overrideRate = $overrideRate;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getOverrideRate(): bool
+    {
+        return $this->overrideRate;
+    }
+
+    /**
+     * @param Duration $hoursTotal
+     * @return TimeItem
+     */
+    public function setHoursTotal(Duration $hoursTotal): TimeItem
+    {
+        $this->hoursTotal = $hoursTotal;
+        return $this;
+    }
+
+    /**
+     * @return Duration
+     */
+    public function getHoursTotal(): Duration
+    {
+        return $this->hoursTotal;
+    }
+
+    /**
+     * @param RecordRef $caseTaskEvent
+     * @return TimeItem
+     */
+    public function setCaseTaskEvent(RecordRef $caseTaskEvent): TimeItem
+    {
+        $this->caseTaskEvent = $caseTaskEvent;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCaseTaskEvent(): RecordRef
+    {
+        return $this->caseTaskEvent;
+    }
+
+    /**
+     * @param string $memo
+     * @return TimeItem
+     */
+    public function setMemo(string $memo): TimeItem
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param bool $isUtilized
+     * @return TimeItem
+     */
+    public function setIsUtilized(bool $isUtilized): TimeItem
+    {
+        $this->isUtilized = $isUtilized;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsUtilized(): bool
+    {
+        return $this->isUtilized;
+    }
+
+    /**
+     * @param bool $isProductive
+     * @return TimeItem
+     */
+    public function setIsProductive(bool $isProductive): TimeItem
+    {
+        $this->isProductive = $isProductive;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsProductive(): bool
+    {
+        return $this->isProductive;
+    }
+
+    /**
+     * @param bool $isExempt
+     * @return TimeItem
+     */
+    public function setIsExempt(bool $isExempt): TimeItem
+    {
+        $this->isExempt = $isExempt;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsExempt(): bool
+    {
+        return $this->isExempt;
+    }
+
 }

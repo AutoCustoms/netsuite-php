@@ -14,80 +14,97 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GiftCertificateSearchRowBasic extends SearchRowBasic {
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amountRemaining;
+    protected array $amountRemaining;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $amtAvailBilled;
+    protected array $amtAvailBilled;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $createdDate;
+    protected array $createdDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $email;
+    protected array $email;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $expirationDate;
+    protected array $expirationDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnBooleanField[]
+     * @var SearchColumnBooleanField[]
      */
-    public $gcActive;
+    protected array $gcActive;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $giftCertCode;
+    protected array $giftCertCode;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $incomeAcct;
+    protected array $incomeAcct;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $internalId;
+    protected array $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
+     * @var SearchColumnSelectField[]
      */
-    public $item;
+    protected array $item;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $liabilityAcct;
+    protected array $liabilityAcct;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $message;
+    protected array $message;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $name;
+    protected array $name;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
+     * @var SearchColumnDoubleField[]
      */
-    public $originalAmount;
+    protected array $originalAmount;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
+     * @var SearchColumnDateField[]
      */
-    public $purchaseDate;
+    protected array $purchaseDate;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
+     * @var SearchColumnStringField[]
      */
-    public $sender;
+    protected array $sender;
+
     /**
-     * @var \NetSuite\Classes\SearchColumnCustomFieldList
+     * @var SearchColumnCustomFieldList
      */
-    public $customFieldList;
+    protected SearchColumnCustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "amountRemaining" => "SearchColumnDoubleField[]",
         "amtAvailBilled" => "SearchColumnDoubleField[]",
@@ -107,4 +124,311 @@ class GiftCertificateSearchRowBasic extends SearchRowBasic {
         "sender" => "SearchColumnStringField[]",
         "customFieldList" => "SearchColumnCustomFieldList",
     );
+
+    /**
+     * @param SearchColumnDoubleField[] $amountRemaining
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setAmountRemaining(SearchColumnDoubleField $amountRemaining): GiftCertificateSearchRowBasic
+    {
+        $this->amountRemaining[] = $amountRemaining;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmountRemaining(): array
+    {
+        return $this->amountRemaining;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $amtAvailBilled
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setAmtAvailBilled(SearchColumnDoubleField $amtAvailBilled): GiftCertificateSearchRowBasic
+    {
+        $this->amtAvailBilled[] = $amtAvailBilled;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getAmtAvailBilled(): array
+    {
+        return $this->amtAvailBilled;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $createdDate
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setCreatedDate(SearchColumnDateField $createdDate): GiftCertificateSearchRowBasic
+    {
+        $this->createdDate[] = $createdDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getCreatedDate(): array
+    {
+        return $this->createdDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $email
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setEmail(SearchColumnStringField $email): GiftCertificateSearchRowBasic
+    {
+        $this->email[] = $email;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getEmail(): array
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $expirationDate
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setExpirationDate(SearchColumnDateField $expirationDate): GiftCertificateSearchRowBasic
+    {
+        $this->expirationDate[] = $expirationDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getExpirationDate(): array
+    {
+        return $this->expirationDate;
+    }
+
+    /**
+     * @param SearchColumnBooleanField[] $gcActive
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setGcActive(SearchColumnBooleanField $gcActive): GiftCertificateSearchRowBasic
+    {
+        $this->gcActive[] = $gcActive;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnBooleanField[]
+     */
+    public function getGcActive(): array
+    {
+        return $this->gcActive;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $giftCertCode
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setGiftCertCode(SearchColumnStringField $giftCertCode): GiftCertificateSearchRowBasic
+    {
+        $this->giftCertCode[] = $giftCertCode;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getGiftCertCode(): array
+    {
+        return $this->giftCertCode;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $incomeAcct
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setIncomeAcct(SearchColumnStringField $incomeAcct): GiftCertificateSearchRowBasic
+    {
+        $this->incomeAcct[] = $incomeAcct;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getIncomeAcct(): array
+    {
+        return $this->incomeAcct;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $internalId
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setInternalId(SearchColumnSelectField $internalId): GiftCertificateSearchRowBasic
+    {
+        $this->internalId[] = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getInternalId(): array
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchColumnSelectField[] $item
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setItem(SearchColumnSelectField $item): GiftCertificateSearchRowBasic
+    {
+        $this->item[] = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnSelectField[]
+     */
+    public function getItem(): array
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $liabilityAcct
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setLiabilityAcct(SearchColumnStringField $liabilityAcct): GiftCertificateSearchRowBasic
+    {
+        $this->liabilityAcct[] = $liabilityAcct;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getLiabilityAcct(): array
+    {
+        return $this->liabilityAcct;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $message
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setMessage(SearchColumnStringField $message): GiftCertificateSearchRowBasic
+    {
+        $this->message[] = $message;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getMessage(): array
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $name
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setName(SearchColumnStringField $name): GiftCertificateSearchRowBasic
+    {
+        $this->name[] = $name;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getName(): array
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param SearchColumnDoubleField[] $originalAmount
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setOriginalAmount(SearchColumnDoubleField $originalAmount): GiftCertificateSearchRowBasic
+    {
+        $this->originalAmount[] = $originalAmount;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDoubleField[]
+     */
+    public function getOriginalAmount(): array
+    {
+        return $this->originalAmount;
+    }
+
+    /**
+     * @param SearchColumnDateField[] $purchaseDate
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setPurchaseDate(SearchColumnDateField $purchaseDate): GiftCertificateSearchRowBasic
+    {
+        $this->purchaseDate[] = $purchaseDate;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnDateField[]
+     */
+    public function getPurchaseDate(): array
+    {
+        return $this->purchaseDate;
+    }
+
+    /**
+     * @param SearchColumnStringField[] $sender
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setSender(SearchColumnStringField $sender): GiftCertificateSearchRowBasic
+    {
+        $this->sender[] = $sender;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnStringField[]
+     */
+    public function getSender(): array
+    {
+        return $this->sender;
+    }
+
+    /**
+     * @param SearchColumnCustomFieldList $customFieldList
+     * @return GiftCertificateSearchRowBasic
+     */
+    public function setCustomFieldList(SearchColumnCustomFieldList $customFieldList): GiftCertificateSearchRowBasic
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return SearchColumnCustomFieldList
+     */
+    public function getCustomFieldList(): SearchColumnCustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

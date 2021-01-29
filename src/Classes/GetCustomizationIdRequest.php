@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetCustomizationIdRequest {
     /**
-     * @var \NetSuite\Classes\CustomizationType
+     * @var CustomizationType
      */
-    public $customizationType;
+    protected CustomizationType $customizationType;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $includeInactives;
+    protected bool $includeInactives;
+
     static $paramtypesmap = array(
         "customizationType" => "CustomizationType",
         "includeInactives" => "boolean",
     );
+
+    /**
+     * @param CustomizationType $customizationType
+     * @return GetCustomizationIdRequest
+     */
+    public function setCustomizationType(CustomizationType $customizationType): GetCustomizationIdRequest
+    {
+        $this->customizationType = $customizationType;
+        return $this;
+    }
+
+    /**
+     * @return CustomizationType
+     */
+    public function getCustomizationType(): CustomizationType
+    {
+        return $this->customizationType;
+    }
+
+    /**
+     * @param bool $includeInactives
+     * @return GetCustomizationIdRequest
+     */
+    public function setIncludeInactives(bool $includeInactives): GetCustomizationIdRequest
+    {
+        $this->includeInactives = $includeInactives;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIncludeInactives(): bool
+    {
+        return $this->includeInactives;
+    }
+
 }

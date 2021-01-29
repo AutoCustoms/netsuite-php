@@ -14,112 +14,125 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorBillExpense {
     /**
-     * @var integer
+     * @var int
      */
-    public $orderDoc;
+    protected int $orderDoc;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $orderLine;
+    protected int $orderLine;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
+    protected int $line;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $category;
+    protected RecordRef $category;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $account;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var float
-     */
-    public $taxAmount;
+    protected RecordRef $account;
+
     /**
      * @var float
      */
-    public $tax1Amt;
+    protected float $amount;
+
+    /**
+     * @var float
+     */
+    protected float $taxAmount;
+
+    protected $tax1Amt;
     /**
      * @var string
      */
-    public $memo;
+    protected string $memo;
+
     /**
      * @var float
      */
-    public $grossAmt;
+    protected float $grossAmt;
+
     /**
      * @var string
      */
-    public $taxDetailsReference;
+    protected string $taxDetailsReference;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $department;
+    protected RecordRef $department;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $class;
+    protected RecordRef $class;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $location;
+    protected RecordRef $location;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $customer;
+    protected RecordRef $customer;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $isBillable;
+    protected bool $isBillable;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $projectTask;
+    protected RecordRef $projectTask;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $taxCode;
+    protected RecordRef $taxCode;
+
+    protected $taxRate1;
+    protected $taxRate2;
     /**
-     * @var float
+     * @var RecordRef
      */
-    public $taxRate1;
-    /**
-     * @var float
-     */
-    public $taxRate2;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $amortizationSched;
-    /**
-     * @var string
-     */
-    public $amortizStartDate;
-    /**
-     * @var string
-     */
-    public $amortizationEndDate;
+    protected RecordRef $amortizationSched;
+
     /**
      * @var string
      */
-    public $amortizationResidual;
+    protected string $amortizStartDate;
+
     /**
-     * @var \NetSuite\Classes\CustomFieldList
+     * @var string
      */
-    public $customFieldList;
+    protected string $amortizationEndDate;
+
+    /**
+     * @var string
+     */
+    protected string $amortizationResidual;
+
+    /**
+     * @var CustomFieldList
+     */
+    protected CustomFieldList $customFieldList;
+
     static $paramtypesmap = array(
         "orderDoc" => "integer",
         "orderLine" => "integer",
@@ -147,4 +160,401 @@ class VendorBillExpense {
         "amortizationResidual" => "string",
         "customFieldList" => "CustomFieldList",
     );
+
+    /**
+     * @param int $orderDoc
+     * @return VendorBillExpense
+     */
+    public function setOrderDoc(int $orderDoc): VendorBillExpense
+    {
+        $this->orderDoc = $orderDoc;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOrderDoc(): int
+    {
+        return $this->orderDoc;
+    }
+
+    /**
+     * @param int $orderLine
+     * @return VendorBillExpense
+     */
+    public function setOrderLine(int $orderLine): VendorBillExpense
+    {
+        $this->orderLine = $orderLine;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOrderLine(): int
+    {
+        return $this->orderLine;
+    }
+
+    /**
+     * @param int $line
+     * @return VendorBillExpense
+     */
+    public function setLine(int $line): VendorBillExpense
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param RecordRef $category
+     * @return VendorBillExpense
+     */
+    public function setCategory(RecordRef $category): VendorBillExpense
+    {
+        $this->category = $category;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCategory(): RecordRef
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param RecordRef $account
+     * @return VendorBillExpense
+     */
+    public function setAccount(RecordRef $account): VendorBillExpense
+    {
+        $this->account = $account;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAccount(): RecordRef
+    {
+        return $this->account;
+    }
+
+    /**
+     * @param float $amount
+     * @return VendorBillExpense
+     */
+    public function setAmount(float $amount): VendorBillExpense
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param float $taxAmount
+     * @return VendorBillExpense
+     */
+    public function setTaxAmount(float $taxAmount): VendorBillExpense
+    {
+        $this->taxAmount = $taxAmount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTaxAmount(): float
+    {
+        return $this->taxAmount;
+    }
+
+    /**
+     * @param string $memo
+     * @return VendorBillExpense
+     */
+    public function setMemo(string $memo): VendorBillExpense
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param float $grossAmt
+     * @return VendorBillExpense
+     */
+    public function setGrossAmt(float $grossAmt): VendorBillExpense
+    {
+        $this->grossAmt = $grossAmt;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getGrossAmt(): float
+    {
+        return $this->grossAmt;
+    }
+
+    /**
+     * @param string $taxDetailsReference
+     * @return VendorBillExpense
+     */
+    public function setTaxDetailsReference(string $taxDetailsReference): VendorBillExpense
+    {
+        $this->taxDetailsReference = $taxDetailsReference;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxDetailsReference(): string
+    {
+        return $this->taxDetailsReference;
+    }
+
+    /**
+     * @param RecordRef $department
+     * @return VendorBillExpense
+     */
+    public function setDepartment(RecordRef $department): VendorBillExpense
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getDepartment(): RecordRef
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param RecordRef $class
+     * @return VendorBillExpense
+     */
+    public function setClass(RecordRef $class): VendorBillExpense
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getClass(): RecordRef
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param RecordRef $location
+     * @return VendorBillExpense
+     */
+    public function setLocation(RecordRef $location): VendorBillExpense
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getLocation(): RecordRef
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param RecordRef $customer
+     * @return VendorBillExpense
+     */
+    public function setCustomer(RecordRef $customer): VendorBillExpense
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCustomer(): RecordRef
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param bool $isBillable
+     * @return VendorBillExpense
+     */
+    public function setIsBillable(bool $isBillable): VendorBillExpense
+    {
+        $this->isBillable = $isBillable;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsBillable(): bool
+    {
+        return $this->isBillable;
+    }
+
+    /**
+     * @param RecordRef $projectTask
+     * @return VendorBillExpense
+     */
+    public function setProjectTask(RecordRef $projectTask): VendorBillExpense
+    {
+        $this->projectTask = $projectTask;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getProjectTask(): RecordRef
+    {
+        return $this->projectTask;
+    }
+
+    /**
+     * @param RecordRef $taxCode
+     * @return VendorBillExpense
+     */
+    public function setTaxCode(RecordRef $taxCode): VendorBillExpense
+    {
+        $this->taxCode = $taxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxCode(): RecordRef
+    {
+        return $this->taxCode;
+    }
+
+    /**
+     * @param RecordRef $amortizationSched
+     * @return VendorBillExpense
+     */
+    public function setAmortizationSched(RecordRef $amortizationSched): VendorBillExpense
+    {
+        $this->amortizationSched = $amortizationSched;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getAmortizationSched(): RecordRef
+    {
+        return $this->amortizationSched;
+    }
+
+    /**
+     * @param string $amortizStartDate
+     * @return VendorBillExpense
+     */
+    public function setAmortizStartDate(string $amortizStartDate): VendorBillExpense
+    {
+        $this->amortizStartDate = $amortizStartDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmortizStartDate(): string
+    {
+        return $this->amortizStartDate;
+    }
+
+    /**
+     * @param string $amortizationEndDate
+     * @return VendorBillExpense
+     */
+    public function setAmortizationEndDate(string $amortizationEndDate): VendorBillExpense
+    {
+        $this->amortizationEndDate = $amortizationEndDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmortizationEndDate(): string
+    {
+        return $this->amortizationEndDate;
+    }
+
+    /**
+     * @param string $amortizationResidual
+     * @return VendorBillExpense
+     */
+    public function setAmortizationResidual(string $amortizationResidual): VendorBillExpense
+    {
+        $this->amortizationResidual = $amortizationResidual;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAmortizationResidual(): string
+    {
+        return $this->amortizationResidual;
+    }
+
+    /**
+     * @param CustomFieldList $customFieldList
+     * @return VendorBillExpense
+     */
+    public function setCustomFieldList(CustomFieldList $customFieldList): VendorBillExpense
+    {
+        $this->customFieldList = $customFieldList;
+        return $this;
+    }
+
+    /**
+     * @return CustomFieldList
+     */
+    public function getCustomFieldList(): CustomFieldList
+    {
+        return $this->customFieldList;
+    }
+
 }

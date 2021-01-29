@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class RevRecScheduleRecurrence {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $incomeaccount;
+    protected RecordRef $incomeaccount;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $periodOffset;
+    protected int $periodOffset;
+
     /**
      * @var string
      */
-    public $recamount;
+    protected string $recamount;
+
     static $paramtypesmap = array(
         "incomeaccount" => "RecordRef",
         "periodOffset" => "integer",
         "recamount" => "string",
     );
+
+    /**
+     * @param RecordRef $incomeaccount
+     * @return RevRecScheduleRecurrence
+     */
+    public function setIncomeaccount(RecordRef $incomeaccount): RevRecScheduleRecurrence
+    {
+        $this->incomeaccount = $incomeaccount;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getIncomeaccount(): RecordRef
+    {
+        return $this->incomeaccount;
+    }
+
+    /**
+     * @param int $periodOffset
+     * @return RevRecScheduleRecurrence
+     */
+    public function setPeriodOffset(int $periodOffset): RevRecScheduleRecurrence
+    {
+        $this->periodOffset = $periodOffset;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPeriodOffset(): int
+    {
+        return $this->periodOffset;
+    }
+
+    /**
+     * @param string $recamount
+     * @return RevRecScheduleRecurrence
+     */
+    public function setRecamount(string $recamount): RevRecScheduleRecurrence
+    {
+        $this->recamount = $recamount;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRecamount(): string
+    {
+        return $this->recamount;
+    }
+
 }

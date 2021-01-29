@@ -14,17 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetAllRequest {
     /**
-     * @var \NetSuite\Classes\GetAllRecord
+     * @var GetAllRecord
      */
-    public $record;
+    protected GetAllRecord $record;
+
     static $paramtypesmap = array(
         "record" => "GetAllRecord",
     );
+
+    /**
+     * @param GetAllRecord $record
+     * @return GetAllRequest
+     */
+    public function setRecord(GetAllRecord $record): GetAllRequest
+    {
+        $this->record = $record;
+        return $this;
+    }
+
+    /**
+     * @return GetAllRecord
+     */
+    public function getRecord(): GetAllRecord
+    {
+        return $this->record;
+    }
+
 }

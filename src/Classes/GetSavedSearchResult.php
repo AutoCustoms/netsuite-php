@@ -14,27 +14,85 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class GetSavedSearchResult {
     /**
-     * @var \NetSuite\Classes\Status
+     * @var Status
      */
-    public $status;
+    protected Status $status;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $totalRecords;
+    protected int $totalRecords;
+
     /**
-     * @var \NetSuite\Classes\RecordRefList
+     * @var RecordRefList
      */
-    public $recordRefList;
+    protected RecordRefList $recordRefList;
+
     static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "recordRefList" => "RecordRefList",
     );
+
+    /**
+     * @param Status $status
+     * @return GetSavedSearchResult
+     */
+    public function setStatus(Status $status): GetSavedSearchResult
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param int $totalRecords
+     * @return GetSavedSearchResult
+     */
+    public function setTotalRecords(int $totalRecords): GetSavedSearchResult
+    {
+        $this->totalRecords = $totalRecords;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotalRecords(): int
+    {
+        return $this->totalRecords;
+    }
+
+    /**
+     * @param RecordRefList $recordRefList
+     * @return GetSavedSearchResult
+     */
+    public function setRecordRefList(RecordRefList $recordRefList): GetSavedSearchResult
+    {
+        $this->recordRefList = $recordRefList;
+        return $this;
+    }
+
+    /**
+     * @return RecordRefList
+     */
+    public function getRecordRefList(): RecordRefList
+    {
+        return $this->recordRefList;
+    }
+
 }

@@ -14,52 +14,62 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PricingSearchBasic extends SearchRecordBasic {
     /**
-     * @var \NetSuite\Classes\SearchBooleanField
+     * @var SearchBooleanField
      */
-    public $assignedPriceLevel;
+    protected SearchBooleanField $assignedPriceLevel;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $currency;
+    protected SearchMultiSelectField $currency;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $customer;
+    protected SearchMultiSelectField $customer;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $internalId;
+    protected SearchMultiSelectField $internalId;
+
     /**
-     * @var \NetSuite\Classes\SearchLongField
+     * @var SearchLongField
      */
-    public $internalIdNumber;
+    protected SearchLongField $internalIdNumber;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $item;
+    protected SearchMultiSelectField $item;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $maximumQuantity;
+    protected SearchDoubleField $maximumQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $minimumQuantity;
+    protected SearchDoubleField $minimumQuantity;
+
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
+     * @var SearchMultiSelectField
      */
-    public $priceLevel;
+    protected SearchMultiSelectField $priceLevel;
+
     /**
-     * @var \NetSuite\Classes\SearchDoubleField
+     * @var SearchDoubleField
      */
-    public $rate;
+    protected SearchDoubleField $rate;
+
     static $paramtypesmap = array(
         "assignedPriceLevel" => "SearchBooleanField",
         "currency" => "SearchMultiSelectField",
@@ -72,4 +82,185 @@ class PricingSearchBasic extends SearchRecordBasic {
         "priceLevel" => "SearchMultiSelectField",
         "rate" => "SearchDoubleField",
     );
+
+    /**
+     * @param SearchBooleanField $assignedPriceLevel
+     * @return PricingSearchBasic
+     */
+    public function setAssignedPriceLevel(SearchBooleanField $assignedPriceLevel): PricingSearchBasic
+    {
+        $this->assignedPriceLevel = $assignedPriceLevel;
+        return $this;
+    }
+
+    /**
+     * @return SearchBooleanField
+     */
+    public function getAssignedPriceLevel(): SearchBooleanField
+    {
+        return $this->assignedPriceLevel;
+    }
+
+    /**
+     * @param SearchMultiSelectField $currency
+     * @return PricingSearchBasic
+     */
+    public function setCurrency(SearchMultiSelectField $currency): PricingSearchBasic
+    {
+        $this->currency = $currency;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCurrency(): SearchMultiSelectField
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param SearchMultiSelectField $customer
+     * @return PricingSearchBasic
+     */
+    public function setCustomer(SearchMultiSelectField $customer): PricingSearchBasic
+    {
+        $this->customer = $customer;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getCustomer(): SearchMultiSelectField
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @param SearchMultiSelectField $internalId
+     * @return PricingSearchBasic
+     */
+    public function setInternalId(SearchMultiSelectField $internalId): PricingSearchBasic
+    {
+        $this->internalId = $internalId;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getInternalId(): SearchMultiSelectField
+    {
+        return $this->internalId;
+    }
+
+    /**
+     * @param SearchLongField $internalIdNumber
+     * @return PricingSearchBasic
+     */
+    public function setInternalIdNumber(SearchLongField $internalIdNumber): PricingSearchBasic
+    {
+        $this->internalIdNumber = $internalIdNumber;
+        return $this;
+    }
+
+    /**
+     * @return SearchLongField
+     */
+    public function getInternalIdNumber(): SearchLongField
+    {
+        return $this->internalIdNumber;
+    }
+
+    /**
+     * @param SearchMultiSelectField $item
+     * @return PricingSearchBasic
+     */
+    public function setItem(SearchMultiSelectField $item): PricingSearchBasic
+    {
+        $this->item = $item;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getItem(): SearchMultiSelectField
+    {
+        return $this->item;
+    }
+
+    /**
+     * @param SearchDoubleField $maximumQuantity
+     * @return PricingSearchBasic
+     */
+    public function setMaximumQuantity(SearchDoubleField $maximumQuantity): PricingSearchBasic
+    {
+        $this->maximumQuantity = $maximumQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getMaximumQuantity(): SearchDoubleField
+    {
+        return $this->maximumQuantity;
+    }
+
+    /**
+     * @param SearchDoubleField $minimumQuantity
+     * @return PricingSearchBasic
+     */
+    public function setMinimumQuantity(SearchDoubleField $minimumQuantity): PricingSearchBasic
+    {
+        $this->minimumQuantity = $minimumQuantity;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getMinimumQuantity(): SearchDoubleField
+    {
+        return $this->minimumQuantity;
+    }
+
+    /**
+     * @param SearchMultiSelectField $priceLevel
+     * @return PricingSearchBasic
+     */
+    public function setPriceLevel(SearchMultiSelectField $priceLevel): PricingSearchBasic
+    {
+        $this->priceLevel = $priceLevel;
+        return $this;
+    }
+
+    /**
+     * @return SearchMultiSelectField
+     */
+    public function getPriceLevel(): SearchMultiSelectField
+    {
+        return $this->priceLevel;
+    }
+
+    /**
+     * @param SearchDoubleField $rate
+     * @return PricingSearchBasic
+     */
+    public function setRate(SearchDoubleField $rate): PricingSearchBasic
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleField
+     */
+    public function getRate(): SearchDoubleField
+    {
+        return $this->rate;
+    }
+
 }

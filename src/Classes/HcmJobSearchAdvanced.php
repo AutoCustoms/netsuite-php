@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class HcmJobSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\HcmJobSearch
+     * @var HcmJobSearch
      */
-    public $criteria;
+    protected HcmJobSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\HcmJobSearchRow
+     * @var HcmJobSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected HcmJobSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "HcmJobSearch",
         "columns" => "HcmJobSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param HcmJobSearch $criteria
+     * @return HcmJobSearchAdvanced
+     */
+    public function setCriteria(HcmJobSearch $criteria): HcmJobSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return HcmJobSearch
+     */
+    public function getCriteria(): HcmJobSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param HcmJobSearchRow $columns
+     * @return HcmJobSearchAdvanced
+     */
+    public function setColumns(HcmJobSearchRow $columns): HcmJobSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return HcmJobSearchRow
+     */
+    public function getColumns(): HcmJobSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return HcmJobSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): HcmJobSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return HcmJobSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): HcmJobSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

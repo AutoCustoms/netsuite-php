@@ -14,112 +14,125 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CashSaleTime {
     /**
-     * @var boolean
+     * @var bool
      */
-    public $apply;
+    protected bool $apply;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $doc;
+    protected int $doc;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $line;
-    /**
-     * @var string
-     */
-    public $billedDate;
-    /**
-     * @var string
-     */
-    public $employeeDisp;
+    protected int $line;
+
     /**
      * @var string
      */
-    public $itemDisp;
+    protected string $billedDate;
+
     /**
      * @var string
      */
-    public $jobDisp;
+    protected string $employeeDisp;
+
     /**
      * @var string
      */
-    public $department;
+    protected string $itemDisp;
+
     /**
      * @var string
      */
-    public $class;
+    protected string $jobDisp;
+
     /**
      * @var string
      */
-    public $location;
+    protected string $department;
+
     /**
      * @var string
      */
-    public $quantity;
+    protected string $class;
+
+    /**
+     * @var string
+     */
+    protected string $location;
+
+    /**
+     * @var string
+     */
+    protected string $quantity;
+
     /**
      * @var float
      */
-    public $rate;
+    protected float $rate;
+
     /**
      * @var string
      */
-    public $unitDisp;
+    protected string $unitDisp;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     /**
      * @var string
      */
-    public $memo;
+    protected string $memo;
+
     /**
      * @var float
      */
-    public $taxAmount;
+    protected float $taxAmount;
+
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $revRecSchedule;
+    protected RecordRef $revRecSchedule;
+
     /**
      * @var string
      */
-    public $revRecStartDate;
+    protected string $revRecStartDate;
+
     /**
      * @var string
      */
-    public $revRecEndDate;
+    protected string $revRecEndDate;
+
     /**
      * @var float
      */
-    public $grossAmt;
+    protected float $grossAmt;
+
     /**
      * @var string
      */
-    public $taxDetailsReference;
+    protected string $taxDetailsReference;
+
+    protected $tax1Amt;
     /**
-     * @var float
+     * @var RecordRef
      */
-    public $tax1Amt;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $taxCode;
-    /**
-     * @var float
-     */
-    public $taxRate1;
-    /**
-     * @var float
-     */
-    public $taxRate2;
+    protected RecordRef $taxCode;
+
+    protected $taxRate1;
+    protected $taxRate2;
     static $paramtypesmap = array(
         "apply" => "boolean",
         "doc" => "integer",
@@ -147,4 +160,401 @@ class CashSaleTime {
         "taxRate1" => "float",
         "taxRate2" => "float",
     );
+
+    /**
+     * @param bool $apply
+     * @return CashSaleTime
+     */
+    public function setApply(bool $apply): CashSaleTime
+    {
+        $this->apply = $apply;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getApply(): bool
+    {
+        return $this->apply;
+    }
+
+    /**
+     * @param int $doc
+     * @return CashSaleTime
+     */
+    public function setDoc(int $doc): CashSaleTime
+    {
+        $this->doc = $doc;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDoc(): int
+    {
+        return $this->doc;
+    }
+
+    /**
+     * @param int $line
+     * @return CashSaleTime
+     */
+    public function setLine(int $line): CashSaleTime
+    {
+        $this->line = $line;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
+    /**
+     * @param string $billedDate
+     * @return CashSaleTime
+     */
+    public function setBilledDate(string $billedDate): CashSaleTime
+    {
+        $this->billedDate = $billedDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBilledDate(): string
+    {
+        return $this->billedDate;
+    }
+
+    /**
+     * @param string $employeeDisp
+     * @return CashSaleTime
+     */
+    public function setEmployeeDisp(string $employeeDisp): CashSaleTime
+    {
+        $this->employeeDisp = $employeeDisp;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmployeeDisp(): string
+    {
+        return $this->employeeDisp;
+    }
+
+    /**
+     * @param string $itemDisp
+     * @return CashSaleTime
+     */
+    public function setItemDisp(string $itemDisp): CashSaleTime
+    {
+        $this->itemDisp = $itemDisp;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemDisp(): string
+    {
+        return $this->itemDisp;
+    }
+
+    /**
+     * @param string $jobDisp
+     * @return CashSaleTime
+     */
+    public function setJobDisp(string $jobDisp): CashSaleTime
+    {
+        $this->jobDisp = $jobDisp;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getJobDisp(): string
+    {
+        return $this->jobDisp;
+    }
+
+    /**
+     * @param string $department
+     * @return CashSaleTime
+     */
+    public function setDepartment(string $department): CashSaleTime
+    {
+        $this->department = $department;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDepartment(): string
+    {
+        return $this->department;
+    }
+
+    /**
+     * @param string $class
+     * @return CashSaleTime
+     */
+    public function setClass(string $class): CashSaleTime
+    {
+        $this->class = $class;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getClass(): string
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param string $location
+     * @return CashSaleTime
+     */
+    public function setLocation(string $location): CashSaleTime
+    {
+        $this->location = $location;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLocation(): string
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param string $quantity
+     * @return CashSaleTime
+     */
+    public function setQuantity(string $quantity): CashSaleTime
+    {
+        $this->quantity = $quantity;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getQuantity(): string
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param float $rate
+     * @return CashSaleTime
+     */
+    public function setRate(float $rate): CashSaleTime
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getRate(): float
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param string $unitDisp
+     * @return CashSaleTime
+     */
+    public function setUnitDisp(string $unitDisp): CashSaleTime
+    {
+        $this->unitDisp = $unitDisp;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUnitDisp(): string
+    {
+        return $this->unitDisp;
+    }
+
+    /**
+     * @param float $amount
+     * @return CashSaleTime
+     */
+    public function setAmount(float $amount): CashSaleTime
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param string $memo
+     * @return CashSaleTime
+     */
+    public function setMemo(string $memo): CashSaleTime
+    {
+        $this->memo = $memo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param float $taxAmount
+     * @return CashSaleTime
+     */
+    public function setTaxAmount(float $taxAmount): CashSaleTime
+    {
+        $this->taxAmount = $taxAmount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTaxAmount(): float
+    {
+        return $this->taxAmount;
+    }
+
+    /**
+     * @param RecordRef $revRecSchedule
+     * @return CashSaleTime
+     */
+    public function setRevRecSchedule(RecordRef $revRecSchedule): CashSaleTime
+    {
+        $this->revRecSchedule = $revRecSchedule;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getRevRecSchedule(): RecordRef
+    {
+        return $this->revRecSchedule;
+    }
+
+    /**
+     * @param string $revRecStartDate
+     * @return CashSaleTime
+     */
+    public function setRevRecStartDate(string $revRecStartDate): CashSaleTime
+    {
+        $this->revRecStartDate = $revRecStartDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRevRecStartDate(): string
+    {
+        return $this->revRecStartDate;
+    }
+
+    /**
+     * @param string $revRecEndDate
+     * @return CashSaleTime
+     */
+    public function setRevRecEndDate(string $revRecEndDate): CashSaleTime
+    {
+        $this->revRecEndDate = $revRecEndDate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRevRecEndDate(): string
+    {
+        return $this->revRecEndDate;
+    }
+
+    /**
+     * @param float $grossAmt
+     * @return CashSaleTime
+     */
+    public function setGrossAmt(float $grossAmt): CashSaleTime
+    {
+        $this->grossAmt = $grossAmt;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getGrossAmt(): float
+    {
+        return $this->grossAmt;
+    }
+
+    /**
+     * @param string $taxDetailsReference
+     * @return CashSaleTime
+     */
+    public function setTaxDetailsReference(string $taxDetailsReference): CashSaleTime
+    {
+        $this->taxDetailsReference = $taxDetailsReference;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTaxDetailsReference(): string
+    {
+        return $this->taxDetailsReference;
+    }
+
+    /**
+     * @param RecordRef $taxCode
+     * @return CashSaleTime
+     */
+    public function setTaxCode(RecordRef $taxCode): CashSaleTime
+    {
+        $this->taxCode = $taxCode;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getTaxCode(): RecordRef
+    {
+        return $this->taxCode;
+    }
+
 }

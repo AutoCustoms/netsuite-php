@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class PaymentOptionSearch extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\PaymentOptionSearchBasic
+     * @var PaymentOptionSearchBasic
      */
-    public $basic;
+    protected PaymentOptionSearchBasic $basic;
+
     /**
-     * @var \NetSuite\Classes\TransactionSearchBasic
+     * @var TransactionSearchBasic
      */
-    public $transactionJoin;
+    protected TransactionSearchBasic $transactionJoin;
+
     static $paramtypesmap = array(
         "basic" => "PaymentOptionSearchBasic",
         "transactionJoin" => "TransactionSearchBasic",
     );
+
+    /**
+     * @param PaymentOptionSearchBasic $basic
+     * @return PaymentOptionSearch
+     */
+    public function setBasic(PaymentOptionSearchBasic $basic): PaymentOptionSearch
+    {
+        $this->basic = $basic;
+        return $this;
+    }
+
+    /**
+     * @return PaymentOptionSearchBasic
+     */
+    public function getBasic(): PaymentOptionSearchBasic
+    {
+        return $this->basic;
+    }
+
+    /**
+     * @param TransactionSearchBasic $transactionJoin
+     * @return PaymentOptionSearch
+     */
+    public function setTransactionJoin(TransactionSearchBasic $transactionJoin): PaymentOptionSearch
+    {
+        $this->transactionJoin = $transactionJoin;
+        return $this;
+    }
+
+    /**
+     * @return TransactionSearchBasic
+     */
+    public function getTransactionJoin(): TransactionSearchBasic
+    {
+        return $this->transactionJoin;
+    }
+
 }

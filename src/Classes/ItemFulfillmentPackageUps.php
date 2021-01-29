@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,67 +23,75 @@ class ItemFulfillmentPackageUps {
     /**
      * @var float
      */
-    public $packageWeightUps;
+    protected float $packageWeightUps;
+
     /**
      * @var string
      */
-    public $packageDescrUps;
+    protected string $packageDescrUps;
+
     /**
      * @var string
      */
-    public $packageTrackingNumberUps;
+    protected string $packageTrackingNumberUps;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageUpsPackagingUps
+     * @var ItemFulfillmentPackageUpsPackagingUps
      */
-    public $packagingUps;
+    protected ItemFulfillmentPackageUpsPackagingUps $packagingUps;
+
     /**
-     * @var boolean
+     * @var bool
      */
-    public $useInsuredValueUps;
+    protected bool $useInsuredValueUps;
+
     /**
      * @var float
      */
-    public $insuredValueUps;
+    protected float $insuredValueUps;
+
+    protected $reference1Ups;
+    protected $reference2Ups;
     /**
-     * @var string
+     * @var int
      */
-    public $reference1Ups;
+    protected int $packageLengthUps;
+
     /**
-     * @var string
+     * @var int
      */
-    public $reference2Ups;
+    protected int $packageWidthUps;
+
     /**
-     * @var integer
+     * @var int
      */
-    public $packageLengthUps;
+    protected int $packageHeightUps;
+
     /**
-     * @var integer
+     * @var bool
      */
-    public $packageWidthUps;
+    protected bool $additionalHandlingUps;
+
     /**
-     * @var integer
+     * @var bool
      */
-    public $packageHeightUps;
-    /**
-     * @var boolean
-     */
-    public $additionalHandlingUps;
-    /**
-     * @var boolean
-     */
-    public $useCodUps;
+    protected bool $useCodUps;
+
     /**
      * @var float
      */
-    public $codAmountUps;
+    protected float $codAmountUps;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageUpsCodMethodUps
+     * @var ItemFulfillmentPackageUpsCodMethodUps
      */
-    public $codMethodUps;
+    protected ItemFulfillmentPackageUpsCodMethodUps $codMethodUps;
+
     /**
-     * @var \NetSuite\Classes\ItemFulfillmentPackageUpsDeliveryConfUps
+     * @var ItemFulfillmentPackageUpsDeliveryConfUps
      */
-    public $deliveryConfUps;
+    protected ItemFulfillmentPackageUpsDeliveryConfUps $deliveryConfUps;
+
     static $paramtypesmap = array(
         "packageWeightUps" => "float",
         "packageDescrUps" => "string",
@@ -102,4 +110,257 @@ class ItemFulfillmentPackageUps {
         "codMethodUps" => "ItemFulfillmentPackageUpsCodMethodUps",
         "deliveryConfUps" => "ItemFulfillmentPackageUpsDeliveryConfUps",
     );
+
+    /**
+     * @param float $packageWeightUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setPackageWeightUps(float $packageWeightUps): ItemFulfillmentPackageUps
+    {
+        $this->packageWeightUps = $packageWeightUps;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPackageWeightUps(): float
+    {
+        return $this->packageWeightUps;
+    }
+
+    /**
+     * @param string $packageDescrUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setPackageDescrUps(string $packageDescrUps): ItemFulfillmentPackageUps
+    {
+        $this->packageDescrUps = $packageDescrUps;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPackageDescrUps(): string
+    {
+        return $this->packageDescrUps;
+    }
+
+    /**
+     * @param string $packageTrackingNumberUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setPackageTrackingNumberUps(string $packageTrackingNumberUps): ItemFulfillmentPackageUps
+    {
+        $this->packageTrackingNumberUps = $packageTrackingNumberUps;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPackageTrackingNumberUps(): string
+    {
+        return $this->packageTrackingNumberUps;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageUpsPackagingUps $packagingUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setPackagingUps(ItemFulfillmentPackageUpsPackagingUps $packagingUps): ItemFulfillmentPackageUps
+    {
+        $this->packagingUps = $packagingUps;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageUpsPackagingUps
+     */
+    public function getPackagingUps(): ItemFulfillmentPackageUpsPackagingUps
+    {
+        return $this->packagingUps;
+    }
+
+    /**
+     * @param bool $useInsuredValueUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setUseInsuredValueUps(bool $useInsuredValueUps): ItemFulfillmentPackageUps
+    {
+        $this->useInsuredValueUps = $useInsuredValueUps;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getUseInsuredValueUps(): bool
+    {
+        return $this->useInsuredValueUps;
+    }
+
+    /**
+     * @param float $insuredValueUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setInsuredValueUps(float $insuredValueUps): ItemFulfillmentPackageUps
+    {
+        $this->insuredValueUps = $insuredValueUps;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getInsuredValueUps(): float
+    {
+        return $this->insuredValueUps;
+    }
+
+    /**
+     * @param int $packageLengthUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setPackageLengthUps(int $packageLengthUps): ItemFulfillmentPackageUps
+    {
+        $this->packageLengthUps = $packageLengthUps;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPackageLengthUps(): int
+    {
+        return $this->packageLengthUps;
+    }
+
+    /**
+     * @param int $packageWidthUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setPackageWidthUps(int $packageWidthUps): ItemFulfillmentPackageUps
+    {
+        $this->packageWidthUps = $packageWidthUps;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPackageWidthUps(): int
+    {
+        return $this->packageWidthUps;
+    }
+
+    /**
+     * @param int $packageHeightUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setPackageHeightUps(int $packageHeightUps): ItemFulfillmentPackageUps
+    {
+        $this->packageHeightUps = $packageHeightUps;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPackageHeightUps(): int
+    {
+        return $this->packageHeightUps;
+    }
+
+    /**
+     * @param bool $additionalHandlingUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setAdditionalHandlingUps(bool $additionalHandlingUps): ItemFulfillmentPackageUps
+    {
+        $this->additionalHandlingUps = $additionalHandlingUps;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getAdditionalHandlingUps(): bool
+    {
+        return $this->additionalHandlingUps;
+    }
+
+    /**
+     * @param bool $useCodUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setUseCodUps(bool $useCodUps): ItemFulfillmentPackageUps
+    {
+        $this->useCodUps = $useCodUps;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getUseCodUps(): bool
+    {
+        return $this->useCodUps;
+    }
+
+    /**
+     * @param float $codAmountUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setCodAmountUps(float $codAmountUps): ItemFulfillmentPackageUps
+    {
+        $this->codAmountUps = $codAmountUps;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getCodAmountUps(): float
+    {
+        return $this->codAmountUps;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageUpsCodMethodUps $codMethodUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setCodMethodUps(ItemFulfillmentPackageUpsCodMethodUps $codMethodUps): ItemFulfillmentPackageUps
+    {
+        $this->codMethodUps = $codMethodUps;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageUpsCodMethodUps
+     */
+    public function getCodMethodUps(): ItemFulfillmentPackageUpsCodMethodUps
+    {
+        return $this->codMethodUps;
+    }
+
+    /**
+     * @param ItemFulfillmentPackageUpsDeliveryConfUps $deliveryConfUps
+     * @return ItemFulfillmentPackageUps
+     */
+    public function setDeliveryConfUps(ItemFulfillmentPackageUpsDeliveryConfUps $deliveryConfUps): ItemFulfillmentPackageUps
+    {
+        $this->deliveryConfUps = $deliveryConfUps;
+        return $this;
+    }
+
+    /**
+     * @return ItemFulfillmentPackageUpsDeliveryConfUps
+     */
+    public function getDeliveryConfUps(): ItemFulfillmentPackageUpsDeliveryConfUps
+    {
+        return $this->deliveryConfUps;
+    }
+
 }

@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class BomRevisionSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\BomRevisionSearch
+     * @var BomRevisionSearch
      */
-    public $criteria;
+    protected BomRevisionSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\BomRevisionSearchRow
+     * @var BomRevisionSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected BomRevisionSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "BomRevisionSearch",
         "columns" => "BomRevisionSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param BomRevisionSearch $criteria
+     * @return BomRevisionSearchAdvanced
+     */
+    public function setCriteria(BomRevisionSearch $criteria): BomRevisionSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return BomRevisionSearch
+     */
+    public function getCriteria(): BomRevisionSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param BomRevisionSearchRow $columns
+     * @return BomRevisionSearchAdvanced
+     */
+    public function setColumns(BomRevisionSearchRow $columns): BomRevisionSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return BomRevisionSearchRow
+     */
+    public function getColumns(): BomRevisionSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return BomRevisionSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): BomRevisionSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return BomRevisionSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): BomRevisionSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

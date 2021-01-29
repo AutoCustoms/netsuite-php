@@ -14,32 +14,109 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class CustomListSearchAdvanced extends SearchRecord {
     /**
-     * @var \NetSuite\Classes\CustomListSearch
+     * @var CustomListSearch
      */
-    public $criteria;
+    protected CustomListSearch $criteria;
+
     /**
-     * @var \NetSuite\Classes\CustomListSearchRow
+     * @var CustomListSearchRow
      */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+    protected CustomListSearchRow $columns;
+
     /**
      * @var string
      */
-    public $savedSearchScriptId;
+    protected string $savedSearchId;
+
+    /**
+     * @var string
+     */
+    protected string $savedSearchScriptId;
+
     static $paramtypesmap = array(
         "criteria" => "CustomListSearch",
         "columns" => "CustomListSearchRow",
         "savedSearchId" => "string",
         "savedSearchScriptId" => "string",
     );
+
+    /**
+     * @param CustomListSearch $criteria
+     * @return CustomListSearchAdvanced
+     */
+    public function setCriteria(CustomListSearch $criteria): CustomListSearchAdvanced
+    {
+        $this->criteria = $criteria;
+        return $this;
+    }
+
+    /**
+     * @return CustomListSearch
+     */
+    public function getCriteria(): CustomListSearch
+    {
+        return $this->criteria;
+    }
+
+    /**
+     * @param CustomListSearchRow $columns
+     * @return CustomListSearchAdvanced
+     */
+    public function setColumns(CustomListSearchRow $columns): CustomListSearchAdvanced
+    {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    /**
+     * @return CustomListSearchRow
+     */
+    public function getColumns(): CustomListSearchRow
+    {
+        return $this->columns;
+    }
+
+    /**
+     * @param string $savedSearchId
+     * @return CustomListSearchAdvanced
+     */
+    public function setSavedSearchId(string $savedSearchId): CustomListSearchAdvanced
+    {
+        $this->savedSearchId = $savedSearchId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchId(): string
+    {
+        return $this->savedSearchId;
+    }
+
+    /**
+     * @param string $savedSearchScriptId
+     * @return CustomListSearchAdvanced
+     */
+    public function setSavedSearchScriptId(string $savedSearchScriptId): CustomListSearchAdvanced
+    {
+        $this->savedSearchScriptId = $savedSearchScriptId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSavedSearchScriptId(): string
+    {
+        return $this->savedSearchScriptId;
+    }
+
 }

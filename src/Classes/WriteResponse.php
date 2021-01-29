@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class WriteResponse {
     /**
-     * @var \NetSuite\Classes\Status
+     * @var Status
      */
-    public $status;
+    protected Status $status;
+
     /**
-     * @var \NetSuite\Classes\BaseRef
+     * @var BaseRef
      */
-    public $baseRef;
+    protected BaseRef $baseRef;
+
     static $paramtypesmap = array(
         "status" => "Status",
         "baseRef" => "BaseRef",
     );
+
+    /**
+     * @param Status $status
+     * @return WriteResponse
+     */
+    public function setStatus(Status $status): WriteResponse
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param BaseRef $baseRef
+     * @return WriteResponse
+     */
+    public function setBaseRef(BaseRef $baseRef): WriteResponse
+    {
+        $this->baseRef = $baseRef;
+        return $this;
+    }
+
+    /**
+     * @return BaseRef
+     */
+    public function getBaseRef(): BaseRef
+    {
+        return $this->baseRef;
+    }
+
 }

@@ -14,22 +14,61 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
 
 class LandedCostData {
     /**
-     * @var \NetSuite\Classes\RecordRef
+     * @var RecordRef
      */
-    public $costCategory;
+    protected RecordRef $costCategory;
+
     /**
      * @var float
      */
-    public $amount;
+    protected float $amount;
+
     static $paramtypesmap = array(
         "costCategory" => "RecordRef",
         "amount" => "float",
     );
+
+    /**
+     * @param RecordRef $costCategory
+     * @return LandedCostData
+     */
+    public function setCostCategory(RecordRef $costCategory): LandedCostData
+    {
+        $this->costCategory = $costCategory;
+        return $this;
+    }
+
+    /**
+     * @return RecordRef
+     */
+    public function getCostCategory(): RecordRef
+    {
+        return $this->costCategory;
+    }
+
+    /**
+     * @param float $amount
+     * @return LandedCostData
+     */
+    public function setAmount(float $amount): LandedCostData
+    {
+        $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAmount(): float
+    {
+        return $this->amount;
+    }
+
 }

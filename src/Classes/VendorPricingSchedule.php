@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,13 +23,52 @@ class VendorPricingSchedule {
     /**
      * @var string
      */
-    public $scheduleName;
+    protected string $scheduleName;
+
     /**
      * @var float
      */
-    public $scheduleDiscount;
+    protected float $scheduleDiscount;
+
     static $paramtypesmap = array(
         "scheduleName" => "string",
         "scheduleDiscount" => "float",
     );
+
+    /**
+     * @param string $scheduleName
+     * @return VendorPricingSchedule
+     */
+    public function setScheduleName(string $scheduleName): VendorPricingSchedule
+    {
+        $this->scheduleName = $scheduleName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getScheduleName(): string
+    {
+        return $this->scheduleName;
+    }
+
+    /**
+     * @param float $scheduleDiscount
+     * @return VendorPricingSchedule
+     */
+    public function setScheduleDiscount(float $scheduleDiscount): VendorPricingSchedule
+    {
+        $this->scheduleDiscount = $scheduleDiscount;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getScheduleDiscount(): float
+    {
+        return $this->scheduleDiscount;
+    }
+
 }

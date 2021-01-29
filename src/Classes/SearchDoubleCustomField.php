@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2020-12-11 06:57:10 PM PST
+ * generated:  2021-01-29 05:23:50 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,18 +23,54 @@ class SearchDoubleCustomField extends SearchCustomField {
     /**
      * @var float
      */
-    public $searchValue;
+    protected float $searchValue;
+
+    protected $searchValue2;
     /**
-     * @var float
+     * @var SearchDoubleFieldOperator
      */
-    public $searchValue2;
-    /**
-     * @var \NetSuite\Classes\SearchDoubleFieldOperator
-     */
-    public $operator;
+    protected SearchDoubleFieldOperator $operator;
+
     static $paramtypesmap = array(
         "searchValue" => "float",
         "searchValue2" => "float",
         "operator" => "SearchDoubleFieldOperator",
     );
+
+    /**
+     * @param float $searchValue
+     * @return SearchDoubleCustomField
+     */
+    public function setSearchValue(float $searchValue): SearchDoubleCustomField
+    {
+        $this->searchValue = $searchValue;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSearchValue(): float
+    {
+        return $this->searchValue;
+    }
+
+    /**
+     * @param SearchDoubleFieldOperator $operator
+     * @return SearchDoubleCustomField
+     */
+    public function setOperator(SearchDoubleFieldOperator $operator): SearchDoubleCustomField
+    {
+        $this->operator = $operator;
+        return $this;
+    }
+
+    /**
+     * @return SearchDoubleFieldOperator
+     */
+    public function getOperator(): SearchDoubleFieldOperator
+    {
+        return $this->operator;
+    }
+
 }
