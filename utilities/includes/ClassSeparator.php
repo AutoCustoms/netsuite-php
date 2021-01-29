@@ -36,6 +36,10 @@ class ClassSeparator
 
         $classes = $this->classesToArray();
 
+        //Custom Processing
+        $classes = $this->publicToPrivate($classes);
+        $classes = $this->addSettersAndGetters($classes);
+
         return $this->writeClassesToFiles($classes);
     }
 
@@ -147,6 +151,73 @@ class ClassSeparator
     }
 
     /**
+     * @param $classes
+     */
+    private function publicToPrivate($classes)
+    {
+        $updatedClasses = [];
+        foreach($classes as $class){
+            $updatedClasses[] = preg_replace('/public /', 'protected ', $class);
+        }
+        return $updatedClasses;
+    }
+
+    private function addSettersAndGetters($classes)
+    {
+        $updatedClasses = [];
+        foreach($classes as $class){
+            //Get the class name for use in the templates
+            preg_match('~([^ ]+)~', $class, $name);
+            $className = $name[0];
+
+            preg_match('~\$paramtypesmap \= ([^;]+)~', $class, $paramtypesmap);
+
+            preg_match_all('/"([a-zA-z]+)" => "([a-zA-z]+)"/', $paramtypesmap[1], $properties);
+
+            $settersGetters = '';
+            if (!empty($properties[0])) {
+                foreach ($properties[0] as $key => $value)
+                {
+                    //Determine if this is an array of values. This determines which setter to use
+                    $arrayType = strpos($properties[2][$key], '[]') !== false;
+
+                    //Values used in the templates
+                    $docBlockTypeHint = $properties[2][$key];
+                    $paramTypeHint = ($arrayType)?str_replace('[]', '', $properties[2][$key]):$properties[2][$key];
+                    $functionName = ucwords($properties[1][$key]);
+                    $functionReturnType = ($arrayType)?'array':$properties[2][$key];
+                    $propertyName = $properties[1][$key];
+
+                    //Fix invalid PHP types
+                    $paramTypeHint = $docBlockTypeHint = $functionReturnType = $this->correctPhpTypeHint($functionReturnType);
+
+                    if ($arrayType) {
+                        $setTemplate = include utilities_path() . "/includes/templates/setter.array.template.php";
+                    }else{
+                        $setTemplate = include utilities_path() . "/includes/templates/setter.template.php";
+                    }
+                    $settersGetters .= $setTemplate;
+
+                    $getTemplate = include utilities_path() . "/includes/templates/getter.template.php";
+                    $settersGetters .= $getTemplate;
+
+                    $class = str_replace(
+                        'protected $' . $properties[1][$key] . ';',
+                        'protected ' . $functionReturnType . ' $' . $properties[1][$key] . ';',
+                        $class);
+                }
+            }
+
+            if (!empty($settersGetters)) {
+                $class = str_replace($paramtypesmap[0].';', $paramtypesmap[0] . ";\n" . $settersGetters, $class);
+            }
+
+            $updatedClasses[] = $class;
+        }
+        return $updatedClasses;
+    }
+
+    /**
      * @param array $classes
      * @return bool
      */
@@ -184,10 +255,12 @@ class ClassSeparator
                             $type_token = next($tokens);
                             // Store the values as the property type.
                             $property_type = trim($type_token[1], '"');
+                            //Fix invalid PHP types
+                            $property_type = $this->correctPhpTypeHint($property_type);
                             // If this is describing a scalar value, just use it.
                             if (FALSE !== array_search(
                                 str_replace(array('[',']'), '', $property_type),
-                                array('string', 'integer', 'boolean', 'float')
+                                array('string', 'int', 'bool', 'float')
                             )) {
                                 $types[$property_name] = $property_type;
                             }
@@ -197,7 +270,7 @@ class ClassSeparator
                             }
                             // This is a NetSuite value so map it to a class.
                             else {
-                                $types[$property_name] = '\\NetSuite\\Classes\\' . $property_type;
+                                $types[$property_name] = $property_type;
                             }
                         }
                         // We've fallen out of the array definition so continue.
@@ -209,14 +282,31 @@ class ClassSeparator
                 }
                 next($tokens);
             }
+
             // Add a doc comment for each property.
             foreach ($types as $variable_name => $property_type) {
-                $class = preg_replace('/public \$' . $variable_name . ';/', "/**\n     * @var $property_type\n     */\n    public \$$variable_name;", $class);
+                $class = preg_replace('/protected ([a-zA-z]+) \$' . $variable_name . ';/', "/**\n     * @var $property_type\n     */\n    protected $1 \$$variable_name;\n", $class);
             }
             // Template write the class.
             $filename = base_path() . '/src/Classes/' . $name . '.php';
             $template = include utilities_path() . '/includes/templates/class.template.php';
             file_put_contents($filename, $template);
         });
+    }
+
+    private function correctPhpTypeHint($type)
+    {
+        switch ($type){
+            case 'integer':
+                $type = 'int';
+                break;
+            case 'boolean':
+                $type = 'bool';
+                break;
+            case 'dateTime':
+                $type = 'string';
+                break;
+        }
+        return $type;
     }
 }
